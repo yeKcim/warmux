@@ -18,4 +18,4 @@ It's a dead project, website is down, code was nowhere, so I decided to clone th
 
 ## Last mockup
 
-![interface mockup](https://raw.githubusercontent.com/yeKcim/warmux/master/screenshots/warmux11.01.png)
+![interface mockup](https://raw.githubusercontent.com/yeKcim/warmux/master/last_mockup_interface.png)
