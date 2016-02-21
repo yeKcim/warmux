@@ -1,4 +1,21 @@
-# warmux
+# Warmux
+
 warmux was a worms free opensource clone project.
 
-It's a dead project, website is down, code was nowhere. So I decided to clone the project here.
+![logo](https://raw.githubusercontent.com/yeKcim/warmux/master/logo.png)
+
+It's a dead project, website is down, code was nowhere, so I decided to clone the project here.
+
+## Last screenshots
+
+![screenshot1](https://raw.githubusercontent.com/yeKcim/warmux/master/screenshots/warmux_end__A.png)
+
+![screenshot2](https://raw.githubusercontent.com/yeKcim/warmux/master/screenshots/warmux_end__B.png)
+
+![screenshot3](https://raw.githubusercontent.com/yeKcim/warmux/master/screenshots/warmux11.01.png)
+
+![characters](https://raw.githubusercontent.com/yeKcim/warmux/master/screenshots/warmux%2011.04%20characters.png)
+
+## Last mockup
+
+![interface mockup](https://raw.githubusercontent.com/yeKcim/warmux/master/screenshots/warmux11.01.png)
