@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>OOo</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+    <character name="OOo" body="ooo"/>
+    <character name="Writer" body="ooo"/>
+    <character name="Calc" body="ooo"/>
+    <character name="Impress" body="ooo"/>
+    <character name="Base" body="ooo"/>
+    <character name="Draw" body="ooo"/>
+    <character name="Math" body="ooo"/>
+    <character name="Quickstarter" body="ooo"/>
+    <character name="OpenDocument" body="ooo"/>
+    <character name="OOoConv" body="ooo"/>
+    <character name="PortableOOo" body="ooo"/>
+    <character name="OOo HG" body="ooo"/>
+    <character name="Cart'OOo" body="ooo"/>
+    <character name="Hist'OOo" body="ooo"/>
+    <character name="Gé'OOo" body="ooo"/> 
+  </team>
+</resources>

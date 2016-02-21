@@ -1,0 +1,22 @@
+K 10
+svn:ignore
+V 150
+configure
+Makefile.in
+config.log
+config.status
+stats.xml
+autom4te.cache
+aclocal.m4
+Makefile
+build-arch-stamp
+configure-stamp
+clean
+build-indep-stamp
+
+
+K 19
+svnmerge-integrated
+V 83
+/trunk:0-3232,3234-3235,3249,3254,3256,3258-3260,3263-3264,3267,3271-3272,3303,3317
+END

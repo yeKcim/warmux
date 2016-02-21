@@ -1,0 +1,152 @@
+10
+
+dir
+10371
+svn://svn.gna.org/svn/warmux/tags/wormux-0.8alpha1/data/weapon
+svn://svn.gna.org/svn/warmux
+
+
+
+2006-10-16T06:16:47.426799Z
+1443
+drayan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30ef787d-52ff-0310-b286-e08351bb7647
+
+supertux
+dir
+
+snipe_rifle
+dir
+
+airhammer
+dir
+
+baseball
+dir
+
+grenade
+dir
+
+holly_grenade
+dir
+
+syringe
+dir
+
+cluster_bomb
+dir
+
+jet_pack
+dir
+
+lowgrav
+dir
+
+suicide
+dir
+
+shotgun
+dir
+
+gun
+dir
+
+push_ico.png
+file
+
+
+
+
+2012-12-15T13:43:27.710774Z
+632181a497202285b4184c6729dbaddb
+2005-08-27T15:09:18.106969Z
+4
+lodesi
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1876
+
+air_attack
+dir
+
+m16
+dir
+
+blowtorch
+dir
+
+bounce_ball
+dir
+
+anvil
+dir
+
+dynamite
+dir
+
+riot_bomb
+dir
+
+parachute
+dir
+
+skip_turn
+dir
+
+ninja_rope
+dir
+
+construct
+dir
+
+bazooka
+dir
+
+polecat
+dir
+
+sound
+dir
+
+mine
+dir
+
+teleportation
+dir
+
+gnu
+dir
+

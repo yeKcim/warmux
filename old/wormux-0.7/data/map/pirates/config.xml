@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <author>
+    <name>Michael PRAGER</name>
+    <email>X_X_L AT gmx.net</email>
+    <country>Germany</country>
+  </author>
+
+  <surface name="sky" file="islands.png" />
+  <surface name="map" file="pirates.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Pirates</name>
+  <water>0</water>
+  <nb_mine>3</nb_mine>
+  <is_open>1</is_open>
+</resources>

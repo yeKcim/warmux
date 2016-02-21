@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<config>
+  <data_dir>./data/</data_dir>
+  <locale_dir>./locale/</locale_dir>
+  <map>Pirates</map>
+  <teams>
+    <team>pink_floyd</team>
+    <team>poulpe</team>
+  </teams>
+  <video>
+    <width>1020</width>
+    <height>695</height>
+    <full_screen>0</full_screen>
+  </video>
+  <sound>
+    <active>1</active>
+    <music>1</music>
+    <effects>1</effects>
+    <frequency>22050</frequency>
+  </sound>
+  <game_mode>classic</game_mode>
+</config>

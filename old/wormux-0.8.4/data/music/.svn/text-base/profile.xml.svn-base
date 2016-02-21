@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+  <music type="menu" playlist="menu/menu.m3u" />
+  <music type="ingame" playlist="ingame/ingame.m3u" />
+  <music type="fear" playlist="ingame/fear.m3u" />
+  <music type="sea" playlist="ingame/sea.m3u" />
+  <music type="funfair" playlist="ingame/funfair.m3u" />
+  <music type="monkey" playlist="ingame/monkey.m3u" />
+</profile>

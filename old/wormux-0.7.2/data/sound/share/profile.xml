@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ressources>
+
+  <sound sample="menu/ok" file="menu/ok.ogg" />
+  <sound sample="menu/cancel" file="menu/cancel.ogg" />
+  <sound sample="menu/clic" file="menu/clic.ogg" />
+
+  <sound sample="weapon/dynamite_exp"    file="../../weapon/sound/dynamite_exp.ogg" />
+  <sound sample="weapon/dynamite_fuze"   file="../../weapon/sound/dynamite_fuze.ogg" />
+  <sound sample="weapon/grenade_bounce"  file="../../weapon/sound/grenade_bounce.ogg" />
+  <sound sample="weapon/holly_grenade_bounce" file="../../weapon/sound/holly_grenade_bounce.ogg" />
+  <sound sample="weapon/gun" file="../../weapon/sound/gun.ogg" />
+  <sound sample="weapon/baseball" file="../../weapon/sound/baseball.ogg" />
+  <sound sample="weapon/suicide" file="../../weapon/sound/commit_suicide.ogg" />
+  <sound sample="weapon/teleport_start" file="../../weapon/sound/teleport_start.ogg" />
+  <sound sample="weapon/teleport_end" file="../../weapon/sound/teleport_land.ogg" />
+  <sound sample="weapon/mine_beep" file="../../weapon/sound/mine_beep.ogg" />
+  <sound sample="weapon/load" file="../../weapon/sound/load.ogg" />
+  <sound sample="weapon/explosion" file="explosion.ogg" />
+  <sound sample="weapon/uzi" file="../../weapon/sound/uzi.ogg" />
+  <sound sample="weapon/alleluia" file="../../weapon/sound/alleluia.ogg" />
+
+
+  <sound sample="music/grenouilles" file="frog_music.ogg" />
+
+  <sound sample="victory" file="victory.ogg" />
+  <sound sample="end_turn" file="end_turn.ogg" />
+</ressources>

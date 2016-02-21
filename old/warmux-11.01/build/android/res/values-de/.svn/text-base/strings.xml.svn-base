@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Warmux</string>
+
+    <string name="init">Initialisiere</string>
+    <string name="readme">^Bitte warte, während die Dateien heruntergeladen werden.</string>
+
+    <string name="device_config">Gerätekonfiguration</string>
+    <string name="device_change_cfg">Gerätekonfiguration bearbeiten</string>
+
+    <string name="download_unneeded">Download nicht nötig</string>
+    <string name="connecting_to">Verbinde mit %s</string>
+    <string name="failed_connecting_to">Verbindung mit %s fehlgeschlagen</string>
+    <string name="error_connecting_to">Fehler beim Verbinden mit %s</string>
+    <string name="dl_from">Lade Daten von %s</string>
+    <string name="error_dl_from">Fehler beim Download von %s</string>
+    <string name="error_write">Fehler beim schreiben auf %s</string>
+    <string name="dl_crc_error">Datei %s fehlerhaft</string>
+    <string name="dl_progress">Zu %1$d%% abgeschlossen: Datei %2$s</string>
+    <string name="dl_finished">Abgeschlossen</string>
+
+    <string name="storage_phone">Interner Speicher: %d MiB frei</string>
+    <string name="storage_sd">SD Karte: %d MiB frei</string>
+    <string name="storage_question">Wohin sollen die Dateien gespeichert werden</string>
+
+    <string name="controls_arrows">Pfeiltasten / Joystick / dpad</string>
+    <string name="controls_trackball">Trackball</string>
+    <string name="controls_none">Nichts</string>
+    <string name="controls_question">Welche Arten von Navigationstasten hat das Gerät?</string>
+
+    <string name="trackball_no_dampening">Keine Dämpfung</string>
+    <string name="trackball_fast">Schnell</string>
+    <string name="trackball_medium">Mittel</string>
+    <string name="trackball_slow">Langsam</string>
+    <string name="trackball_question">Dämpfung des Trackball</string>
+
+    <string name="accel_fast">Schnell</string>
+    <string name="accel_medium">Mittel</string>
+    <string name="accel_slow">Langsam</string>
+    <string name="accel_question">Empfindlichkeit des Beschleunigungssensors</string>
+
+    <string name="accel_floating">Fließend</string>
+    <string name="accel_fixed_start">Fixiert, wenn Anwendung startet</string>
+    <string name="accel_fixed_horiz">horizontal fixiert</string>
+    <string name="accel_question_center">Zentrierung des Beschleunigungssensors</string>
+
+    <string name="audiobuf_small">Klein (für schnelle Geräte)</string>
+    <string name="audiobuf_medium">Mittel</string>
+    <string name="audiobuf_large">Groß (Wenn Ton "hängt")</string>
+    <string name="audiobuf_question">Größe des Audiopuffers</string>
+</resources>

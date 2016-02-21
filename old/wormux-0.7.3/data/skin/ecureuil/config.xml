@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+
+<author>
+  <name>Laurent Defert Simonneau</name>
+  <email>lodesi AT wormux.org</email>
+</author>
+
+<sprite name="walking">
+  <image file="ecureuil-anim.png">
+    <grid pos="0,0" size="42,42" array="10,1" />
+  </image>
+  <collision_rect dx="15" top="3" bottom="1" />
+  <wormux repetition="2" />
+  <hand frame="1" x="27" y="32" />
+  <hand frame="2" x="28" y="29" />
+  <hand frame="3" x="29" y="26" />
+  <hand frame="4" x="30" y="24" />
+  <hand frame="5" x="28" y="29" />
+  <hand frame="6" x="27" y="32" />
+  <hand frame="7" x="26" y="29" />
+  <hand frame="8" x="25" y="26" />
+  <hand frame="9" x="24" y="24" />
+  <hand frame="10" x="25" y="29" />
+</sprite>
+
+<sprite name="helmet">
+  <image file="ecureuil-helmet.png">
+    <grid pos="0,0" size="42,44" array="10,1" />
+  </image>
+  <collision_rect dx="15" top="3" bottom="1" />
+  <wormux repetition="2" />
+  <hand frame="1" x="27" y="34" />
+  <hand frame="2" x="28" y="31" />
+  <hand frame="3" x="29" y="28" />
+  <hand frame="4" x="30" y="26" />
+  <hand frame="5" x="28" y="31" />
+  <hand frame="6" x="27" y="34" />
+  <hand frame="7" x="26" y="31" />
+  <hand frame="8" x="25" y="28" />
+  <hand frame="9" x="24" y="26" />
+  <hand frame="10" x="25" y="31" />
+</sprite>
+
+<sprite name="jump">
+  <image file="ecureuil-jump.png">
+    <grid pos="0,0" size="42,42" array="1,1" />
+  </image>
+  <collision_rect dx="15" top="3" bottom="1" />
+  <wormux repetition="2" />
+  <hand frame="*" x="15" y="26" />
+</sprite>
+
+<sprite name="jetpack">
+  <image file="ecureuil-jetpack.png">
+    <grid pos="0,0" size="34,40" array="1,1" />
+  </image>
+  <collision_rect dx="10" top="3" bottom="0" />
+</sprite>
+
+<sprite name="jetpack-up">
+  <image file="ecureuil-jetpackup.png">
+    <grid pos="0,0" size="35,43" array="3,1" />
+  </image>
+  <collision_rect dx="10" top="3" bottom="4" />
+  <animation speed="100" loop_mode="pingpong"/>
+</sprite>
+
+<sprite name="jetpack-left-right">
+  <image file="ecureuil-jetpack-leftright.png">
+    <grid pos="0,0" size="35,40" array="3,1" />
+  </image>
+  <collision_rect dx="10" top="3" bottom="1" />
+  <animation speed="100" loop_mode="pingpong"/>
+</sprite>
+
+<sprite name="dead">
+  <image file="ecu-mort.png" />
+  <collision_rect dx="3" haut="0" bas="2" />
+</sprite>
+
+</resources>

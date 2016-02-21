@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Bugzilla</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+	<character name="Bugzilla" body="bugzilla"/>
+	<character name="Bugtracker" body="bugzilla"/>
+	<character name="Zarro Boogs" body="bugzilla"/>
+	<character name="Mozilla  project" body="bugzilla"/>
+	<character name="Netscape Communications" body="bugzilla"/>
+	<character name="Testing tool" body="bugzilla"/>	
+	<character name="Arthropods" body="bugzilla"/>
+	<character name="True Bugs" body="bugzilla"/>
+	<character name="Bugs Meany" body="bugzilla"/>
+	<character name="Bug" body="bugzilla"/>
+	<character name="Hemiptera" body="bugzilla"/>
+	<character name="Hybrid Dog" body="bugzilla"/>
+  </team>
+</resources>

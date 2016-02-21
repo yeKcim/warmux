@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Spip Team</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="Spip" body="spipteam" />
+    <character name="Glaucomys volans" body="spipteam" />
+    <character name="Glaucomys sabrinus" body="spipteam" />
+    <character name="Pteromys" body="spipteam" />
+    <character name="Joe" body="spipteam" />
+    <character name="Jack" body="spipteam" />
+    <character name="Bob" body="spipteam" />
+    <character name="Toto" body="spipteam" />    
+    <character name="John" body="spipteam" />
+    <character name="Sam" body="spipteam" />
+    <character name="Marty" body="spipteam" />
+    <character name="Yann" body="spipteam" />
+    <character name="Roberto" body="spipteam" />
+    <character name="Chris" body="spipteam" />
+  </team>
+</resources>
+

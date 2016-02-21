@@ -1,0 +1,9 @@
+CURL_PATH=/home/lds/Développement/curl-7.16.0/
+include Makefile.common
+include Makefile.curl
+CXXFLAGS:=$(CXXFLAGS) -DCURL_STATICLIB
+LDFLAGS=-static -gcc-static
+
+OBJ:=$(OBJ) $(CURL_PATH)build/lib/libcurl.a
+
+bin: wormux_server

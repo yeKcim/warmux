@@ -1,0 +1,6 @@
+include Makefile.common
+CXXFLAGS:=$(CXXFLAGS) $(shell curl-config --cflags)
+LDFLAGS:=$(LDFLAGS) $(shell curl-config --libs)
+
+bin: wormux_server
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Thunderbird</name>
+  <sound_profile>flying</sound_profile>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+    <character name="Thunderbird" body="thunderbirdteam" />
+    <character name="Gibson" body="thunderbirdteam" />
+    <character name="Phorusrhacidae" body="thunderbirdteam" />
+    <character name="Dromornithidae" body="thunderbirdteam" />
+    <character name="Train" body="thunderbirdteam" />
+    <character name="Ford" body="thunderbirdteam" />
+    <character name="Triumph" body="thunderbirdteam" />
+    <character name="Royal Enfield" body="thunderbirdteam" />    
+    <character name="Albuquerque" body="thunderbirdteam" />
+    <character name="UBC" body="thunderbirdteam" />
+    <character name="Hamilton" body="thunderbirdteam" />
+    <character name="Seattle" body="thunderbirdteam" />
+    <character name="Squadron" body="thunderbirdteam" />
+    <character name="Missile" body="thunderbirdteam" />
+  </team>
+</resources>

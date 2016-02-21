@@ -1,0 +1,58 @@
+###############################################################################
+###############################################################################
+##                                                                           ##
+##                               W O R M U X                                 ##
+##                                                                           ##
+##                         Compiling under Mac Os X                          ##
+##                                                                           ##
+###############################################################################
+###############################################################################
+
+
+1) What you need :
+
+    o   You need have developer tools installed (Xcode) :
+        Get it for your Mac OS X http://developer.apple.com/tools/download/
+    
+    o   You need gettext (find it at http://www.gnu.org/software/gettext/ )
+    
+    o   You need cmake (find it at http://www.cmake.org/HTML/index.html )
+    
+    o   If you want to develop subversion (svn) http://subversion.tigris.org/
+    you can also downloaded it using fink or macports
+
+
+2) Get sources files :
+
+    o   Tarball file
+        -   Download it from as example :
+                +   http://svn.gna.org/daily/wormux-snapshot.tar.gz
+            or  +   http://wormux.org/wiki/fr/download.php
+        -   Expand it
+        -   Go into the folder
+    
+    o   SVN (recommand for working on it)
+        - install svn
+        - look at : https://gna.org/svn/?group=wormux
+        Checkout over SVN protocol (TCP 3690):
+            svn co svn://svn.gna.org/svn/wormux/trunk wormux
+        Checkout over http:
+            svn co http://svn.gna.org/svn/wormux/trunk wormux
+
+    o   Download SDL Frameworks, (file download by cmake_build script),
+    extract it and copy files into /Developer/Frameworks
+
+
+3) Compile Wormux :
+
+    o   cd mac/
+    o   ./cmake_build.sh
+    o   if your lucky you'll get a sweet .app and .dmg in your mac/ folder
+    o   copy .app into /Applications
+
+
+4) Enjoy !!
+
+Yoann Katchourine - Plorf
+
+

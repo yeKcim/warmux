@@ -1,0 +1,12 @@
+-- debian/README --
+
+This directory contains all stuff to build .debs packages.
+
+For building them:
+cd $wormux (this parent's)
+fakeroot dpkg-buildpackage -uc -b
+
+Then, as root:
+dpkg -i ../wormux*.deb 
+
+-- Jean Parpaillon <jean.parpaillon@free.fr>

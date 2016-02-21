@@ -1,0 +1,2 @@
+ADD_SUBDIRECTORY(wormux)
+ADD_SUBDIRECTORY(wormux-server)

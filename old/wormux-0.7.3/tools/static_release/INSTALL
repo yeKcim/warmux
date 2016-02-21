@@ -1,0 +1,27 @@
+Wormux CVS
+============
+
+For the rest of this file, we assume that you have extracted 
+the archive in directory /somedir/.
+So you must now have a directory named /somedir/wormux.
+
+Installation
+----------------
+Copy config.xml from directory /somedir/wormux/ to directory
+$HOME/.wormux/config.xml
+You must copy the file for each user who plays Wormux.
+
+Running the game
+----------------
+From a graphic terminal (like xterm), type "cd /somedir/wormux/". 
+On the new line, launch the game with the command "./wormux".
+
+Tweaking
+----------------
+You can edit file ~/.wormux/config.xml to suit to your needs.
+
+Feedback & Troubleshooting
+--------------------------
+Do not hesitate to contact us by email at wormux-dev@gna.org
+If you have troubleshooting running the game, please read the 
+FAQ before.

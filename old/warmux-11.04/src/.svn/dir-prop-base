@@ -1,0 +1,13 @@
+K 10
+svn:ignore
+V 65
+Makefile.in
+config.h
+.deps
+Makefile
+config.h.in
+wormux
+stamp-h1
+
+
+END

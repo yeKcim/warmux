@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 63
+Release
+wormux.vcproj.*
+wormux.ncb
+Debug
+wormux.suo
+resource.h
+
+END

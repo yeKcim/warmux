@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE skeletons [
+<!ENTITY aso "../all_skins_objects/">
+
+]>
+
+<skeletons>
+
+
+<!-- ###### Body ###### -->
+<sprite name="body" type="body">
+	<image file="body.png"/>
+	<anchor dx="9" dy="16"/>
+	<attached member_type="hoop" frame="*" dx="14" dy="22"/>
+	<attached member_type="head" frame="*" dx="6" dy="3"/>
+	<attached member_type="baseball_tshirt" frame="*" dx="9" dy="16"/>
+	<attached member_type="back" frame="*" dx="5" dy="13"/>
+	<attached member_type="arm-right" frame="*" dx="4" dy="7"/>
+	<attached member_type="arm-left" frame="*" dx="9" dy="7"/>
+	<attached member_type="foot-left" frame="*" dx="11" dy="24"/>
+	<attached member_type="foot-right" frame="*" dx="6" dy="25"/>
+	<attached member_type="belt" frame="*" dx="9" dy="20"/>
+	<attached member_type="tail" frame="*" dx="3" dy="21"/>
+	<attached member_type="hula" frame="*" dx="14" dy="20"/>
+</sprite>
+
+<!-- ###### Hoop (foreground part) ###### -->
+<sprite name="hoop" type="hoop">
+	<image file="&aso;hoop.png"/>
+	<anchor dx="18" dy="3"/>
+</sprite>
+
+<!-- ###### Hula (foreground part) ###### -->
+<sprite name="hula" type="hula">
+	<image file="&aso;hula.png"/>
+	<anchor dx="18" dy="6"/>
+</sprite>
+
+<!-- ###### Tail ###### -->
+<sprite name="tail" type="tail">
+	<image file="tail.png"/>
+	<anchor dx="19" dy="29"/>
+</sprite>
+
+<!-- ###### Back ###### -->
+<sprite name="back" type="back">
+	<image file="back.png"/>
+	<anchor dx="18" dy="15"/>
+</sprite>
+
+<!-- ###### Back ###### -->
+<sprite name="baseball_tshirt" type="baseball_tshirt">
+	<image file="&aso;baseball_tshirt.png"/>
+	<anchor dx="9" dy="16"/>
+</sprite>
+
+<!-- ###### Head ###### -->
+<sprite name="head" type="head">
+	<image file="head.png"/>
+	<anchor dx="10" dy="20"/>
+	<attached member_type="hornright" frame="*" dx="14" dy="16"/>
+	<attached member_type="hornleft" frame="*" dx="12" dy="16"/>
+	<attached member_type="hair" frame="*" dx="14" dy="15"/>
+	<attached member_type="helmet" frame="*" dx="11" dy="10"/>
+	<attached member_type="baseball_cap" frame="*" dx="15" dy="10"/>
+	<attached member_type="construct" frame="*" dx="14" dy="9"/>
+	<attached member_type="foothelmet1" frame="*" dx="10" dy="12"/>
+	<attached member_type="noze" frame="*" dx="14" dy="13"/>
+	<attached member_type="eyes" frame="*" dx="13" dy="11"/>
+</sprite>
+
+<!-- ###### Horns ###### -->
+<sprite name="hornright" type="hornright">
+	<image file="hornright.png"/>
+	<anchor dx="19" dy="17"/>
+</sprite>
+
+<sprite name="hornleft" type="hornleft">
+	<image file="hornleft.png"/>
+	<anchor dx="0" dy="17"/>
+</sprite>
+
+<!-- ###### Noze ###### -->
+<sprite name="noze" type="noze">
+	<image file="noze.png"/>
+	<anchor dx="1" dy="0"/>
+</sprite>
+
+<!-- ###### Hair ###### -->
+<sprite name="hair" type="hair">
+	<image file="hair.png"/>
+	<anchor dx="23" dy="23"/>
+</sprite>
+
+<!-- ###### eyes ###### -->
+<sprite name="eyes" type="eyes">
+	<image file="eyes.png"/>
+	<anchor dx="4" dy="3"/>
+	<attached member_type="eyelid" frame="*" dx="0" dy="1"/>
+	<attached member_type="pupil-right" frame="*" dx="3" dy="3"/>
+	<attached member_type="pupil-left" frame="*" dx="5" dy="3"/>
+	<attached member_type="hat" frame="*" dx="1" dy="-1"/>
+</sprite>
+
+<!-- ###### Hair ###### -->
+<sprite name="hat" type="hat">
+	<image file="&aso;hat.png"/>
+	<anchor dx="14" dy="12"/>
+</sprite>
+
+<sprite name="pupil-right" type="pupil-right">
+	<image file="pupil.png"/>
+	<anchor dx="-1" dy="0"/>
+</sprite>
+
+<sprite name="pupil-left" type="pupil-left">
+	<image file="pupil.png"/>
+	<anchor dx="-1" dy="0"/>
+</sprite>
+
+<sprite name="eyelid" type="eyelid">
+	<image file="eyelid.png">
+		<grid pos="0,0" size="9,7" array="7,1"/>
+	</image>
+	<anchor dx="0" dy="0"/>
+	<animation speed="200" loop_mode="pingpong" loop_wait="500" loop_wait_random="200"/>
+</sprite>
+
+<!-- ###### Arm left ###### -->
+<sprite name="arm-left" type="arm-left">
+	<image file="arm1left.png"/>
+	<anchor dx="5" dy="0"/>
+	<attached member_type="arm2-left" frame="*" dx="5" dy="7"/>
+</sprite>
+
+<sprite name="arm2-left" type="arm2-left">
+	<image file="arm2left.png"/>
+	<anchor dx="5" dy="0"/>
+	<attached member_type="arm3-left" frame="*" dx="5" dy="6"/>
+</sprite>
+
+<sprite name="arm3-left-L" type="arm3-left">
+	<image file="arm3left.png"/>
+	<anchor dx="5" dy="0"/>
+	<attached member_type="weapon" frame="*" dx="5" dy="5"/>
+	<attached member_type="yoyo" frame="*" dx="-18" dy="0"/>
+</sprite>
+
+<sprite name="arm3-left-R" type="arm3-left">
+	<image file="arm3left.png"/>
+	<anchor dx="5" dy="0"/>
+</sprite>
+
+<!-- ###### Arm right ###### -->
+<sprite name="arm-right" type="arm-right">
+	<image file="arm1right.png"/>
+	<anchor dx="5" dy="0"/>
+	<attached member_type="arm2-right" frame="*" dx="5" dy="7"/>
+</sprite>
+
+<sprite name="arm2-right" type="arm2-right">
+	<image file="arm2right.png"/>
+	<anchor dx="5" dy="0"/>
+	<attached member_type="arm3-right" frame="*" dx="5" dy="6"/>
+</sprite>
+
+<sprite name="arm3-right-R" type="arm3-right">
+	<image file="arm3left.png"/>
+	<anchor dx="5" dy="0"/>
+	<attached member_type="weapon" frame="*" dx="5" dy="5"/>
+	<attached member_type="yoyo" frame="*" dx="-18" dy="0"/>
+</sprite>
+
+<sprite name="arm3-right-L" type="arm3-right">
+	<image file="arm3right.png"/>
+	<anchor dx="5" dy="0"/>
+</sprite>
+
+<!-- ###### Legs ###### -->
+<sprite name="foot-left" type="foot-left">
+	<image file="footleft.png"/>
+	<anchor dx="4" dy="3"/>
+</sprite>
+<sprite name="foot-right" type="foot-right">
+	<image file="footright.png"/>
+	<anchor dx="4" dy="3"/>
+</sprite>
+
+<!-- ###### Helmet ###### -->
+<sprite name="helmet" type="helmet">
+	<image file="&aso;helmet.png"/>
+	<anchor dx="15" dy="15"/>
+</sprite>
+
+<!-- ###### baseball_cap ###### -->
+<sprite name="baseball_cap" type="baseball_cap">
+	<image file="&aso;baseball_cap.png"/>
+	<anchor dx="13" dy="12"/>
+</sprite>
+
+<!-- ###### Yoyo ###### -->
+<sprite name="yoyo" type="yoyo" go_through_ground="true">
+	<image file="&aso;yoyo.png">
+		<grid pos="0,0" size="32,42" array="36,1"/>
+	</image>
+	<anchor dx="29" dy="25"/>
+	<animation speed="150"/>
+</sprite>
+
+<!-- ###### Dead ###### -->
+<sprite name="body-dead" type="body">
+	<image file="dead.png"/>
+	<anchor dx="12" dy="15"/>
+</sprite>
+
+<!-- ###### Black ###### -->
+<!-- ###### Body ###### -->
+<sprite name="body-black" type="body">
+	<image file="black_body.png"/>
+	<anchor dx="9" dy="16"/>
+	<attached member_type="hoop" frame="*" dx="14" dy="22"/>
+	<attached member_type="head" frame="*" dx="4" dy="2"/>
+	<attached member_type="baseball_tshirt" frame="*" dx="0" dy="0"/>
+	<attached member_type="back" frame="*" dx="5" dy="13"/>
+	<attached member_type="arm-right" frame="*" dx="5" dy="8"/>
+	<attached member_type="arm-left" frame="*" dx="10" dy="7"/>
+	<attached member_type="foot-left" frame="*" dx="9" dy="22"/>
+	<attached member_type="foot-right" frame="*" dx="4" dy="24"/>
+	<attached member_type="belt" frame="*" dx="9" dy="20"/>
+	<attached member_type="tail" frame="*" dx="1" dy="21"/>
+	<attached member_type="hula" frame="*" dx="14" dy="20"/>
+</sprite>
+
+<!-- ###### Tail ###### -->
+<sprite name="tail-black" type="tail">
+	<image file="black_tail.png"/>
+	<anchor dx="19" dy="29"/>
+</sprite>
+
+<!-- ###### Back ###### -->
+<sprite name="back-black" type="back">
+	<image file="black_back.png"/>
+	<anchor dx="18" dy="15"/>
+</sprite>
+
+<!-- ###### Head ###### -->
+<sprite name="head-black" type="head">
+	<image file="black_head.png"/>
+	<anchor dx="10" dy="20"/>
+	<attached member_type="hornright" frame="*" dx="14" dy="16"/>
+	<attached member_type="hornleft" frame="*" dx="12" dy="16"/>
+	<attached member_type="hair" frame="*" dx="14" dy="15"/>
+	<attached member_type="helmet" frame="*" dx="11" dy="10"/>
+	<attached member_type="construct" frame="*" dx="13" dy="9"/>
+	<attached member_type="baseball_cap" frame="*" dx="15" dy="10"/>
+	<attached member_type="foothelmet1" frame="*" dx="10" dy="12"/>
+	<attached member_type="noze" frame="*" dx="16" dy="13"/>
+	<attached member_type="eyes" frame="*" dx="15" dy="11"/>
+</sprite>
+
+<!-- ###### Horns ###### -->
+<sprite name="hornright-black" type="hornright">
+	<image file="black_hornright.png"/>
+	<anchor dx="19" dy="17"/>
+</sprite>
+
+<sprite name="hornleft-black" type="hornleft">
+	<image file="black_hornleft.png"/>
+	<anchor dx="0" dy="17"/>
+</sprite>
+
+<!-- ###### Hair ###### -->
+<sprite name="hair-black" type="hair">
+	<image file="black_hair.png"/>
+	<anchor dx="23" dy="23"/>
+</sprite>
+
+<!-- ###### Noze ###### -->
+<sprite name="noze-black" type="noze">
+	<image file="black_noze.png"/>
+	<anchor dx="1" dy="0"/>
+</sprite>
+
+<!-- ###### eyes ###### -->
+<sprite name="eyes-black" type="eyes">
+	<image file="black_eyes.png"/>
+	<anchor dx="4" dy="3"/>
+	<attached member_type="eyelid" frame="*" dx="0" dy="1"/>
+	<attached member_type="pupil-right" frame="*" dx="4" dy="3"/>
+	<attached member_type="pupil-left" frame="*" dx="6" dy="3"/>
+</sprite>
+
+<sprite name="pupil-right-black" type="pupil-right">
+	<image file="black_pupil.png"/>
+	<anchor dx="-1" dy="0"/>
+</sprite>
+
+<sprite name="pupil-left-black" type="pupil-left">
+	<image file="black_pupil.png"/>
+	<anchor dx="-1" dy="0"/>
+</sprite>
+
+<sprite name="eyelid-black" type="eyelid">
+	<image file="black_eyelid.png">
+		<grid pos="0,0" size="9,7" array="7,1"/>
+	</image>
+	<anchor dx="0" dy="0"/>
+	<animation speed="200" loop_mode="pingpong" loop_wait="500" loop_wait_random="200"/>
+</sprite>
+
+<!-- ###### Arm left ###### -->
+<sprite name="arm-left-black" type="arm-left">
+	<image file="black_arm1left.png"/>
+	<anchor dx="5" dy="0"/>
+	<attached member_type="arm2-left" frame="*" dx="5" dy="7"/>
+</sprite>
+
+<sprite name="arm2-left-black" type="arm2-left">
+	<image file="black_arm2left.png"/>
+	<anchor dx="5" dy="0"/>
+	<attached member_type="arm3-left" frame="*" dx="5" dy="6"/>
+</sprite>
+
+<sprite name="arm3-left-black-L" type="arm3-left">
+	<image file="black_arm3left.png"/>
+	<anchor dx="5" dy="0"/>
+	<attached member_type="weapon" frame="*" dx="5" dy="5"/>
+	<attached member_type="yoyo" frame="*" dx="-18" dy="0"/>
+</sprite>
+
+<sprite name="arm3-left-black-R" type="arm3-left">
+	<image file="black_arm3left.png"/>
+	<anchor dx="5" dy="0"/>
+</sprite>
+
+<!-- ###### Arm right ###### -->
+<sprite name="arm-right-black" type="arm-right">
+	<image file="black_arm1right.png"/>
+	<anchor dx="5" dy="0"/>
+	<attached member_type="arm2-right" frame="*" dx="5" dy="7"/>
+</sprite>
+
+<sprite name="arm2-right-black" type="arm2-right">
+	<image file="black_arm2right.png"/>
+	<anchor dx="5" dy="0"/>
+	<attached member_type="arm3-right" frame="*" dx="5" dy="6"/>
+</sprite>
+
+<sprite name="arm3-right-black-L" type="arm3-right">
+	<image file="black_arm3right.png"/>
+	<anchor dx="5" dy="0"/>
+</sprite>
+
+<sprite name="arm3-right-black-R" type="arm3-right">
+	<image file="black_arm3right.png"/>
+	<anchor dx="5" dy="0"/>
+	<attached member_type="weapon" frame="*" dx="5" dy="5"/>
+	<attached member_type="yoyo" frame="*" dx="-18" dy="0"/>
+</sprite>
+
+<!-- ###### Legs ###### -->
+<sprite name="foot-left-black" type="foot-left">
+	<image file="black_footleft.png"/>
+	<anchor dx="1" dy="1"/>
+</sprite>
+<sprite name="foot-right-black" type="foot-right">
+	<image file="black_footright.png"/>
+	<anchor dx="1" dy="1"/>
+</sprite>
+
+<!-- ###### Construct ###### -->
+<sprite name="construct" type="construct">
+	<image file="&aso;c1.png"/>
+	<anchor dx="17" dy="12"/>
+	<attached member_type="c2" frame="*" dx="17" dy="12"/>
+</sprite>
+
+<sprite name="c2" type="c2">
+	<image file="&aso;c2.png"/>
+	<anchor dx="17" dy="12"/>
+</sprite>
+
+<!-- ###### Foothelmet ###### -->
+<sprite name="foothelmet1" type="foothelmet1">
+	<image file="&aso;foothelmet1.png"/>
+	<anchor dx="13" dy="14"/>
+	<attached member_type="foothelmet2" frame="*" dx="15" dy="15"/>
+</sprite>
+
+<sprite name="foothelmet2" type="foothelmet2">
+	<image file="&aso;foothelmet2.png"/>
+	<anchor dx="13" dy="14"/>
+</sprite>
+
+<!-- ###### Belt ###### -->
+<sprite name="belt" type="belt">
+	<image file="&aso;belt.png"/>
+	<anchor dx="10" dy="4"/>
+	<attached member_type="jetpack-left" frame="*" dx="9" dy="-5"/>
+	<attached member_type="jetpack-right" frame="*" dx="-1" dy="-3"/>
+</sprite>
+
+<sprite name="jetpack-left" type="jetpack-left">
+	<image file="&aso;jetpack.png"/>
+	<anchor dx="5" dy="11"/>
+	<attached member_type="jetpack-left-fire" frame="*" dx="4" dy="5"/>
+</sprite>
+
+<sprite name="jetpack-left-fire" type="jetpack-left-fire">
+	<image file="&aso;jetpack-fire.png"/>
+	<anchor dx="5" dy="1"/>
+</sprite>
+
+<sprite name="jetpack-right" type="jetpack-right">
+	<image file="&aso;jetpack.png"/>
+	<anchor dx="5" dy="11"/>
+	<attached member_type="jetpack-right-fire" frame="*" dx="4" dy="5"/>
+</sprite>
+
+<sprite name="jetpack-right-fire" type="jetpack-right-fire">
+	<image file="&aso;jetpack-fire.png"/>
+	<anchor dx="5" dy="1"/>
+</sprite>
+
+</skeletons>

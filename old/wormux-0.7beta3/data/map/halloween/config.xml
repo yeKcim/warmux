@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <author>
+    <name>Lawrence AZZOUG</name>
+    <nickname>Lami</nickname>
+    <country>France</country>
+    <email>lawrenceazzoug AT wanadoo.fr</email>
+  </author>
+
+  <surface name="sky" file="noir_lune.png" />
+  <surface name="map" file="halloween.png" />
+  <surface name="preview" file="preview.jpg" />
+
+    <sprite name="wind_particle">
+      <image file="confetis.png">
+        <grid pos="0,0" size="48,36" array="48,1"/>
+      </image>
+      <animation speed="100" />
+    </sprite>
+
+  <name>Halloween</name>
+  <water>0</water>
+  <nb_mine>3</nb_mine>
+  <is_open>1</is_open>
+
+  <wind>
+    <nbr_sprite>30</nbr_sprite>
+    <mass>0.3</mass>
+    <wind_factor>4</wind_factor>
+  </wind>
+
+</resources>

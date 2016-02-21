@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <equipe>
+    <nom>Wilber Team</nom>
+    <ver nom="Pablo Picasso" avatar="wilberteam" />
+	 <ver nom="Keith Haring" avatar="wilberteam" />
+    <ver nom="Leonard Da Vinci" avatar="wilberteam" />
+    <ver nom="Francisco Goya" avatar="wilberteam" />
+    <ver nom="Salvador Dali" avatar="wilberteam" />
+    <ver nom="Paul Gauguin" avatar="wilberteam" />
+    <ver nom="Edouard Manet" avatar="wilberteam" />
+    <ver nom="Claude Monet" avatar="wilberteam" />
+    <ver nom="Rembrandt Harmenszoon van Rijn" avatar="wilberteam" />
+    <ver nom="Pierre-Auguste Renoir" avatar="wilberteam" />
+    <ver nom="Vincent Van Gogh" avatar="wilberteam" />
+	 <ver nom="Raffaello Sanzio" avatar="wilberteam" />
+	 <ver nom="Jean-Baptiste Oudry" avatar="wilberteam" />
+	 <ver nom="Alessandro Botticelli" avatar="wilberteam" />    
+  </equipe>
+  <surface name="flag" file="flag.png" />
+</resources>
+

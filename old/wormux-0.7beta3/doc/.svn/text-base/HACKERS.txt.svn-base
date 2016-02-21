@@ -1,0 +1,65 @@
+Wormux 0.7
+Wormux developers guide (English)
+---------------------------------
+
+If you feel able to help us, please send us an email at:
+
+wormux-dev _AT_ gna.org (don't forget to replace "_AT_" by "@")
+
+Or, speak to us in #wormux, on IRC (irc.freenode.net).
+
+Any contribution is welcome :
+- Code
+- Graphics
+- Feedback (Opinions/Features/etc.)
+- Bug reports (see BUGS.txt)
+
+
+=============
+* Development
+=============
+
+The correction of bugs represents a large part of the development of Wormux.
+Many tools can be used to track down bugs...
+
+* Debugging messages
+--------------------
+
+To enable better debugging of the source code, many source files have "debug switches" like:
+	#define DEBUG_...
+
+Example of obj_physique.cpp :
+	#ifdef DEBUG
+
+	//# define DEBUG_CHG_ETAT
+	//# define DEBUG_MSG_PHYSIQUE
+	[...]
+	#endif
+
+By uncommenting "#define DEBUG_CHG_ETAT", debug messages
+will be written to the console. These are really useful if something
+goes wrong.
+
+* GDB
+-----
+
+At the lowest level, there is the GDB tool (the GNU Debugger). 
+For more documentation, see their website.
+
+To run Wormux in GDB, type "gdb ./wormux" in the Wormux directory.
+Then, to start Wormux in the debugger, type "run"
+
+When a part of Wormux fails (crashes), an "ABORT" signal is emitted, which is detected by gdb.
+At this moment, simply type "backtrace" in gdb to see where the program froze.
+
+If GDB gets frozen on a "SIGTTOU" signal, it is almost certainly because of the sound. The most simple
+way to solve this is to disable signal catching:
+	
+	"handle SIGTTOU noprint nostop"
+
+
+==========
+* Graphics
+==========
+
+All images must be in the PNG format. Pictures have to be either 24 bits/pixel or 32 bits/pixel.

@@ -1,0 +1,1 @@
+gdb -x gdb_script ./warmux_server

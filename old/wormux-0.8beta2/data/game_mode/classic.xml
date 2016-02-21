@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE game_mode SYSTEM "game_mode.dtd" []>
+<game_mode>
+
+
+  <allow_character_selection>before_first_action_and_end_turn</allow_character_selection>
+  <!-- either 'always','never','before_first_action','change_on_end_turn','before_first_action_and_end_turn'-->
+
+  <duration_turn>60</duration_turn>
+  <duration_move_player>2</duration_move_player>
+  <duration_exchange_player>1</duration_exchange_player>
+  <duration_before_death_mode>600</duration_before_death_mode>
+  <damage_per_turn_during_death_mode>5</damage_per_turn_during_death_mode>
+
+  <gravity>30</gravity>
+  <safe_fall>15</safe_fall>
+  <damage_per_fall_unit>2</damage_per_fall_unit>
+
+  <max_teams>4</max_teams>
+  <nb_characters>6</nb_characters>
+
+  <character>
+    <energy initial="100" maximum="200" />
+    <jump strength="8" angle="-60" />
+    <super_jump strength="11" angle="-80" />
+    <back_jump strength="9" angle="-100" />
+    <death_explosion>
+      <damage>10</damage>
+      <explosion_range>50</explosion_range>
+      <particle_range>55</particle_range>
+      <blast_force>1500</blast_force>
+      <blast_range>50</blast_range>
+    </death_explosion>
+  </character>
+
+  <barrel>
+    <explosion>
+      <damage>50</damage>
+      <explosion_range>100</explosion_range>
+      <particle_range>105</particle_range>
+      <blast_force>1500</blast_force>
+      <blast_range>100</blast_range>
+    </explosion>
+  </barrel>
+
+  <bonus_box>
+    <explosion>
+      <damage>50</damage>
+      <explosion_range>50</explosion_range>
+      <particle_range>50</particle_range>
+      <blast_force>500</blast_force>
+      <blast_range>50</blast_range>
+    </explosion>
+    <probability>
+      <air_attack ammo="1">1</air_attack>
+      <anvil_launcher ammo="1">1</anvil_launcher>
+      <airhammer ammo="2">1</airhammer>
+      <automatic_bazooka ammo="2">1</automatic_bazooka>
+      <baseball ammo="2">1</baseball>
+      <bazooka ammo="3">1</bazooka>
+      <blowtorch ammo="2">1</blowtorch>
+      <bounce_ball ammo="1">1</bounce_ball>
+      <construct ammo="3">1</construct>
+      <cluster_bomb ammo="1">1</cluster_bomb>
+      <dynamite ammo="2">1</dynamite>
+      <gnulauncher ammo="1">1</gnulauncher>
+      <grenade ammo="3">1</grenade>
+      <gun ammo="2">1</gun>
+      <jetpack ammo="1">1</jetpack>
+      <disco_grenade ammo="1">1</disco_grenade>
+      <lowgrav ammo="1">1</lowgrav>
+      <m16 ammo="1">1</m16>
+      <minelauncher ammo="2">1</minelauncher>
+      <grapple ammo="2">1</grapple>
+      <parachute ammo="2">1</parachute>
+      <polecatlauncher ammo="1">1</polecatlauncher>
+      <riot_bomb ammo="1">1</riot_bomb>
+      <shotgun ammo="1">1</shotgun>
+      <snipe_rifle ammo="1">1</snipe_rifle>
+      <skip_turn ammo="3">1</skip_turn>
+      <teleportation ammo="2">1</teleportation>
+      <tux ammo="1">1</tux>
+      <syringe ammo="2">1</syringe>
+      <suicide ammo="1">1</suicide>
+    </probability>
+    <life_points>40</life_points>
+  </bonus_box>
+
+  <medkit>
+    <life_points>40</life_points>
+    <energy_boost>25</energy_boost>
+  </medkit>
+
+  <weapons>
+    <air_attack>
+      <nb_ammo>1</nb_ammo>
+      <nbr_obus>3</nbr_obus>
+      <damage>30</damage>
+      <mass>300</mass>
+      <speed>10</speed>
+      <explosion_range>80</explosion_range>
+      <particle_range>80</particle_range>
+      <blast_range>75</blast_range>
+      <blast_force>2500</blast_force>
+    </air_attack>
+
+    <anvil_launcher>
+      <nb_ammo>1</nb_ammo>
+      <damage>200</damage>
+      <mass>1000</mass>
+      <speed>0</speed>
+    </anvil_launcher>
+
+    <airhammer>
+      <min_angle>0</min_angle>
+      <max_angle>0</max_angle>
+      <nb_ammo>5</nb_ammo>
+      <unit_per_ammo>20</unit_per_ammo>
+      <damage>2</damage>
+      <range>30</range>
+    </airhammer>
+
+    <automatic_bazooka>
+      <max_strength>75</max_strength>
+      <nb_ammo>3</nb_ammo>
+      <damage>50</damage>
+      <min_angle>-89</min_angle>
+      <max_angle>89</max_angle>
+      <explosion_range>80</explosion_range>
+      <particle_range>80</particle_range>
+      <blast_range>75</blast_range>
+      <blast_force>2500</blast_force>
+      <timeout>1</timeout>
+      <uncontrolled_turn_speed>25</uncontrolled_turn_speed>
+      <max_controlled_turn_speed>10</max_controlled_turn_speed>
+      <fuel_time>10</fuel_time>
+      <rocket_force>2500</rocket_force>
+	  <allow_change_timeout>1</allow_change_timeout>
+    </automatic_bazooka>
+
+    <baseball>
+      <min_angle>-30</min_angle>
+      <max_angle>75</max_angle>
+      <nb_ammo>2</nb_ammo>
+      <damage>25</damage>
+      <strength>2500</strength>
+      <range>45</range>
+    </baseball>
+
+    <bazooka>
+      <max_strength>75</max_strength>
+      <nb_ammo>-1</nb_ammo>
+      <damage>50</damage>
+      <min_angle>-89</min_angle>
+      <max_angle>89</max_angle>
+      <explosion_range>80</explosion_range>
+      <particle_range>80</particle_range>
+      <blast_range>75</blast_range>
+      <blast_force>2500</blast_force>
+    </bazooka>
+
+    <blowtorch>
+      <nb_ammo>4</nb_ammo>
+      <min_angle>-45</min_angle>
+      <max_angle>45</max_angle>
+      <unit_per_ammo>20</unit_per_ammo>
+      <range>2</range>
+    </blowtorch>
+
+    <bounce_ball>
+      <max_strength>0</max_strength>
+      <nb_ammo>1</nb_ammo>
+      <damage>50</damage>
+      <min_angle>45</min_angle>
+      <max_angle>45</max_angle>
+      <explosion_range>50</explosion_range>
+      <particle_range>55</particle_range>
+      <blast_range>4</blast_range>
+      <blast_force>8</blast_force>
+      <timeout>10</timeout>
+      <allow_change_timeout>1</allow_change_timeout>
+    </bounce_ball>
+
+    <construct>
+      <nb_ammo>3</nb_ammo>
+    </construct>
+
+    <cluster_bomb>
+      <max_strength>75</max_strength>
+      <nb_ammo>-1</nb_ammo>
+      <damage>20</damage>
+      <min_angle>-89</min_angle>
+      <max_angle>89</max_angle>
+      <explosion_range>50</explosion_range>
+      <particle_range>55</particle_range>
+      <blast_range>50</blast_range>
+      <blast_force>250</blast_force>
+      <timeout>3</timeout>
+      <nb_fragments>5</nb_fragments>
+      <allow_change_timeout>1</allow_change_timeout>
+    </cluster_bomb>
+
+    <dynamite>
+      <nb_ammo>3</nb_ammo>
+      <damage>75</damage>
+      <explosion_range>100</explosion_range>
+      <particle_range>110</particle_range>
+      <blast_force>3000</blast_force>
+      <blast_range>100</blast_range>
+      <timeout>3</timeout>
+      <allow_change_timeout>1</allow_change_timeout>
+    </dynamite>
+
+    <gnulauncher>
+      <max_strength>25</max_strength>
+      <nb_ammo>2</nb_ammo>
+      <damage>80</damage>
+      <min_angle>-89</min_angle>
+      <max_angle>89</max_angle>
+      <explosion_range>100</explosion_range>
+      <particle_range>110</particle_range>
+      <blast_force>3000</blast_force>
+      <blast_range>100</blast_range>
+      <timeout>6</timeout>
+      <allow_change_timeout>1</allow_change_timeout>
+    </gnulauncher>
+
+    <grenade>
+      <max_strength>75</max_strength>
+      <nb_ammo>-1</nb_ammo>
+      <damage>50</damage>
+      <min_angle>-89</min_angle>
+      <max_angle>89</max_angle>
+      <explosion_range>75</explosion_range>
+      <particle_range>80</particle_range>
+      <blast_range>75</blast_range>
+      <blast_force>1000</blast_force>
+      <timeout>3</timeout>
+      <allow_change_timeout>1</allow_change_timeout>
+    </grenade>
+
+    <gun>
+      <min_angle>-40</min_angle>
+      <max_angle>90</max_angle>
+      <nb_ammo>-1</nb_ammo>
+      <unit_per_ammo>2</unit_per_ammo>
+      <damage>25</damage>
+      <explosion_range>5</explosion_range>
+      <particle_range>5</particle_range>
+      <blast_range>2</blast_range>
+      <blast_force>5</blast_force>
+    </gun>
+
+    <jetpack>
+      <nb_ammo>3</nb_ammo>
+      <unit_per_ammo>30</unit_per_ammo>
+      <change_weapon>1</change_weapon>
+    </jetpack>
+
+    <disco_grenade>
+      <max_strength>40</max_strength>
+      <nb_ammo>1</nb_ammo>
+      <damage>80</damage>
+      <min_angle>-89</min_angle>
+      <max_angle>89</max_angle>
+      <explosion_range>125</explosion_range>
+      <particle_range>125</particle_range>
+      <blast_range>125</blast_range>
+      <blast_force>1500</blast_force>
+      <timeout>5</timeout>
+      <allow_change_timeout>1</allow_change_timeout>
+    </disco_grenade>
+
+    <lowgrav>
+      <nb_ammo>3</nb_ammo>
+      <change_weapon>1</change_weapon>
+    </lowgrav>
+
+    <m16> <!-- Aka submachine gun -->
+      <min_angle>-40</min_angle>
+      <max_angle>89</max_angle>
+      <nb_ammo>6</nb_ammo>
+      <unit_per_ammo>10</unit_per_ammo>
+      <damage>5</damage>
+      <explosion_range>15</explosion_range>
+      <particle_range>16</particle_range>
+    </m16>
+
+    <minelauncher>
+      <nb_ammo>-1</nb_ammo>
+      <damage>50</damage>
+      <explosion_range>55</explosion_range>
+      <particle_range>55</particle_range>
+      <blast_range>55</blast_range>
+      <blast_force>250</blast_force>
+      <detection_range>1</detection_range>
+      <speed_detection>2</speed_detection>
+      <timeout>1</timeout>
+      <escape_time>2</escape_time>
+    </minelauncher>
+
+    <grapple>
+      <nb_ammo>5</nb_ammo>
+      <change_weapon>1</change_weapon>
+      <min_angle>0</min_angle>
+      <max_angle>89</max_angle>
+      <max_rope_length>500</max_rope_length>
+      <automatic_growing_speed>12</automatic_growing_speed>
+      <push_force>15</push_force>
+    </grapple>
+
+    <parachute>
+      <nb_ammo>2</nb_ammo>
+      <change_weapon>1</change_weapon>
+      <wind_factor>400.0</wind_factor>
+      <air_resist_factor>40.0</air_resist_factor>
+      <force_side_displacement>2000.0</force_side_displacement>
+    </parachute>
+
+    <polecatlauncher>
+      <max_strength>25</max_strength>
+      <nb_ammo>2</nb_ammo>
+      <damage>80</damage>
+      <min_angle>-89</min_angle>
+      <max_angle>89</max_angle>
+      <explosion_range>100</explosion_range>
+      <particle_range>110</particle_range>
+      <blast_force>3000</blast_force>
+      <blast_range>100</blast_range>
+      <timeout>6</timeout>
+      <allow_change_timeout>1</allow_change_timeout>
+    </polecatlauncher>
+
+    <riot_bomb>
+      <max_strength>50</max_strength>
+      <nb_ammo>3</nb_ammo>
+      <damage>0</damage>
+      <min_angle>-89</min_angle>
+      <max_angle>89</max_angle>
+      <explosion_range>125</explosion_range>
+      <particle_range>25</particle_range>
+      <blast_range>0</blast_range>
+      <blast_force>0</blast_force>
+    </riot_bomb>
+
+    <shotgun> <!-- shotgun blues -->
+      <min_angle>-40</min_angle>
+      <max_angle>89</max_angle>
+      <nb_ammo>2</nb_ammo>
+      <unit_per_ammo>2</unit_per_ammo>
+      <damage>5</damage>
+    </shotgun>
+
+    <snipe_rifle>
+      <min_angle>-30</min_angle>
+      <max_angle>45</max_angle>
+      <nb_ammo>2</nb_ammo>
+      <unit_per_ammo>2</unit_per_ammo>
+      <damage>35</damage>
+      <explosion_range>15</explosion_range>
+      <particle_range>16</particle_range>
+    </snipe_rifle>
+
+    <skip_turn>
+      <nb_ammo>-1</nb_ammo>
+    </skip_turn>
+
+    <suicide>
+      <nb_ammo>-1</nb_ammo>
+      <damage>20</damage>
+      <explosion_range>100</explosion_range>
+      <particle_range>110</particle_range>
+      <blast_force>3000</blast_force>
+      <blast_range>100</blast_range>
+    </suicide>
+
+    <teleportation>
+      <nb_ammo>2</nb_ammo>
+    </teleportation>
+
+    <tux>
+      <nb_ammo>1</nb_ammo>
+      <damage>50</damage>
+      <min_angle>-89</min_angle>
+      <max_angle>89</max_angle>
+      <explosion_range>75</explosion_range>
+      <particle_range>80</particle_range>
+      <blast_range>75</blast_range>
+      <blast_force>1000</blast_force>
+      <speed>600</speed>
+      <timeout>20</timeout>
+    </tux>
+
+    <syringe>
+      <min_angle>-50</min_angle>
+      <max_angle>85</max_angle>
+      <nb_ammo>-1</nb_ammo>
+      <damage>10</damage>
+      <turns>10</turns>
+      <range>45</range>
+    </syringe>
+
+  </weapons>
+
+</game_mode>

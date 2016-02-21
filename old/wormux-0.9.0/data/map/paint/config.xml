@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+  <author>
+    <name>Lawrence AZZOUG</name>
+    <nickname>Lami</nickname>
+    <email>lami AT wormux.org</email>
+    <country>France</country>
+  </author>
+
+  <surface name="sky"     file="sky.png" />
+  <surface name="map"     file="map.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Paint</name>
+  <water>water</water>
+  <nb_mine>4</nb_mine>
+  <nb_barrel>2</nb_barrel>
+  <is_open>1</is_open>
+
+</resources>

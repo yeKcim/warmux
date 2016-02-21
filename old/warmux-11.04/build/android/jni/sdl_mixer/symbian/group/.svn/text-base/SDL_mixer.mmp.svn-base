@@ -1,0 +1,25 @@
+/*
+============================================================================
+ Name		: SDL_mixer.mmp
+ Author	  : 
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for SDL_mixer.
+============================================================================
+*/
+
+TARGET		  SDL_mixer.lib
+TARGETTYPE	  LIB
+UID			 0 0xE61E7A4E
+
+SYSTEMINCLUDE   \epoc32\include
+SYSTEMINCLUDE   \epoc32\include\stdapis
+USERINCLUDE   \epoc32\include\SDL
+
+MACRO OGG_MUSIC
+MACRO OGG_USE_TREMOR
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+SOURCEPATH ..\..
+SOURCE mixer.c dynamic_ogg.c load_ogg.c music.c music_cmd.c music_ogg.c wavestream.c effects_internal.c effect_position.c effect_stereoreverse.c

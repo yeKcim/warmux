@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+ 
+ <author>
+   <name>SEBASTIEN MATHIER</name>
+   <nickname>SEBASTIEN</nickname>
+   <email>mathier AT hotmail.com</email>
+   <country>Suisse</country>
+ </author>
+ 
+ <surface name="sky" file="apocalypse.jpg" />
+ <surface name="map" file="apocalypse.png" />
+ <surface name="preview" file="mini.jpg" />
+ 
+ <name>Apocalypse</name>
+ <water>lava</water>
+ <nb_mine>12</nb_mine>
+ <is_open>1</is_open>
+ 
+ <sprite name="wind_particle">
+   <image file="vent.png">
+     <grid pos="0,0" size="97,233" array="1,1"/>
+   </image>
+ </sprite>
+
+ <add_pad>1</add_pad> 
+ <point name="upper_left_pad" x="900" y="800" /> 
+ <point name="lower_right_pad" x="900" y="0" /> 
+
+ <wind>
+   <nbr_sprite>10</nbr_sprite>
+   <need_flip>1</need_flip>
+   <mass>3.0</mass>
+   <wind_factor>0.1</wind_factor>
+   <air_resist_factor>0.3</air_resist_factor>
+   <gravity_factor>3</gravity_factor>
+   <rebounding>true</rebounding>
+   <rebound_factor>1.5</rebound_factor>
+
+ </wind>
+</resources>

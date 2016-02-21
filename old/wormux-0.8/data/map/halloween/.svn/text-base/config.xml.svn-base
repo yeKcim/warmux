@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+  <author>
+    <name>Lawrence AZZOUG</name>
+    <nickname>Lami</nickname>
+    <email>lawrenceazzoug AT wanadoo.fr</email>
+    <country>France</country>
+  </author>
+
+  <surface name="sky" file="sky.jpg" />
+  <surface name="map" file="map.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Halloween 2</name>
+  <water>0</water>
+  <nb_mine>3</nb_mine>
+  <is_open>1</is_open>
+  <!-- pad is given in pixel count. -->
+  <add_pad>1</add_pad>
+  <point name="upper_left_pad" x="1100" y="600" />
+  <point name="lower_right_pad" x="1100" y="0" />
+
+
+  <sprite name="wind_particle">
+    <image file="wp.png">
+      <grid pos="0,0" size="114,36" array="1,1"/>
+    </image>
+  </sprite>
+ 
+  <wind>
+    <nbr_sprite>6</nbr_sprite>
+    <need_flip>1</need_flip>
+    <mass>4.0</mass>
+    <wind_factor>8.0</wind_factor>
+    <air_resist_factor>0.2</air_resist_factor>
+    <gravity_factor>0.3</gravity_factor>
+    <rebounding>true</rebounding>
+    <rebound_factor>1.5</rebound_factor>
+  </wind>
+
+  <music_playlist>fear</music_playlist>
+
+</resources>

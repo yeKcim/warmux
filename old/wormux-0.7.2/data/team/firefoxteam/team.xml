@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <name>Firefox Team</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="Mozilla browser" skin="firefoxteam" />
+    <character name="Phoenix" skin="firefoxteam" />
+    <character name="Firebird" skin="firefoxteam" />
+    <character name="Deer Park" skin="firefoxteam" />
+    <character name="Burning Edge" skin="firefoxteam" />
+    <character name="Firemonger" skin="firefoxteam" />
+    <character name="Funnyfox" skin="firefoxteam" />
+    <character name="Red Panda" skin="firefoxteam" />
+    <character name="Red Fox" skin="firefoxteam" />
+    <character name="Malaguti" skin="firefoxteam" />
+    <character name="Alopex" skin="firefoxteam" />
+    <character name="Star" skin="firefoxteam" />
+    <character name="Spread" skin="firefoxteam" />
+    <character name="20th Century" skin="firefoxteam" />    
+  </team>
+</resources>

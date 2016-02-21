@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+<MainMenu backgroundPicture="menu/background_main.jpg">
+
+  <GridBox width="50%" height="220px" alignType="centeredInXY" 
+           borderSize="1" borderColor="ff0102ff" 
+           backgroundColor="00FF00ff" 
+           lines="2" columns="3" margin="2">
+    <ButtonPic action="GoToLocalGameMenu"   picture="menu/i_play.png"    text="Play"         />
+    <ButtonPic action="GoToNetworkGameMenu" picture="menu/i_network.png" text="Network Game" />
+    <ButtonPic action="GoToOptionsMenu"     picture="menu/i_options.png" text="Options"      />
+    <ButtonPic action="GoToHelpMenu"        picture="menu/i_help.png"    text="Help"         />
+    <ButtonPic action="GoToCreditsMenu"     picture="menu/i_credits.png" text="Credits"      />
+    <ButtonPic action="Quit"                picture="menu/i_quit.png"    text="Quit"         />
+  </GridBox>
+
+  <Label text="Version :"  y="85%"
+         alignType="centeredInX"
+         textColor="447833FF" fontSize="16" fontStyle="bold"
+         backgroundColor="0000FF00" />
+  <Label text="%VERSION%"  
+         alignType="centeredInX" y="90%" 
+         textColor="447833FF" fontSize="17" fontStyle="bold" 
+         backgroundColor="0000FF00" />
+  <Label text="%WEB_SITE%" 
+         alignType="centeredInX" y="95%" width="215"
+         textColor="447833FF" fontSize="16" fontStyle="bold" 
+         backgroundColor="00000000"/>
+
+</MainMenu>
+
+</resources>

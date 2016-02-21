@@ -1,0 +1,22 @@
+/*
+============================================================================
+ Name		: SDL_ttf.mmp
+ Author	  : 
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for SDL_ttf.
+============================================================================
+*/
+
+TARGET		  SDL_ttf.lib
+TARGETTYPE	  LIB
+UID			 0 0xEC9AF72B
+
+SYSTEMINCLUDE   \epoc32\include
+SYSTEMINCLUDE   \epoc32\include\stdapis
+USERINCLUDE   \epoc32\include\SDL
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+SOURCEPATH ..\..
+SOURCE SDL_ttf.c

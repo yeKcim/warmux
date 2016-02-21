@@ -1,0 +1,7 @@
+
+PRJ_PLATFORMS
+DEFAULT GCCE
+
+PRJ_MMPFILES
+warmux.mmp
+warmux_lib.mmp

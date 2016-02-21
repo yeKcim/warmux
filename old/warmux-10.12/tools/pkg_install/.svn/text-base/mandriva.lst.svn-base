@@ -1,0 +1,8 @@
+gettext-devel
+automake
+libcurl4-devel
+libxml++2.6-devel
+libSDL_net1.2-devel
+libSDL_ttf2.0-devel
+libSDL_mixer1.2-devel
+libSDL_image1.2-devel

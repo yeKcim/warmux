@@ -1,0 +1,17 @@
+Extractor for Howto-play documentation of Wormux
+
+Documentation is generated using mozilla2ps downloaded here: http://michele.pupazzo.org/mozilla2ps/index.html
+
+Usage: /path/to/wormuxhelp2pdf.sh lang
+
+
+If you have errors like:
+=========================================
+Obtaining the module object from Python failed.
+
+Traceback (most recent call last):
+cant import cStringIO
+<type 'exceptions.ImportError'>: /usr/lib/python2.5/lib-dynload/time.so: undefined symbol: PyExc_ValueError
+=========================================
+
+Install xulrunner from ftp://ftp.mozilla.org/pub/mozilla.org/xulrunner/releases/1.8.1.3/contrib/linux-i686/xulrunner-1.8.1.3.en-US.linux-i686.tar.gz

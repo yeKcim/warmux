@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <author>
+    <name>C. Schalkwijk</name>
+    <nickname>Papa.Coen</nickname>
+    <country>The Netherlands</country>
+    <email>Papa.Coen@gmail.com</email>
+  </author>
+
+  <surface name="sky" file="sky.jpg" />
+  <surface name="map" file="crystal.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Crystal</name>
+  <water>1</water>
+  <nb_mine>3</nb_mine>
+  <is_open>1</is_open>
+</resources>

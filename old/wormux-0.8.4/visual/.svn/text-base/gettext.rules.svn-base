@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<VisualStudioToolFile
+	Name="Gettext"
+	Version="8,00"
+	>
+	<Rules>
+		<CustomBuildRule
+			Name="Gettext compilation"
+			DisplayName="Gettext file"
+			CommandLine="msgfmt.exe -v -c -o $(InputDir)$(InputName).gmo $(InputPath)"
+			Outputs="$(InputDir)$(InputName).gmo"
+			FileExtensions="*.po"
+            ExecutionDescription="Compiling $(InputName) translation"
+			>
+			<Properties>
+			</Properties>
+		</CustomBuildRule>
+	</Rules>
+</VisualStudioToolFile>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="init">Käynnistetään</string>
+    <string name="readme">^Odota kun tietoja ladataan</string>
+
+    <string name="device_config">Laiteasetukset</string>
+    <string name="device_change_cfg">Muuta laiteasetuksia</string>
+
+    <string name="download_unneeded">Ei tarvitse ladata</string>
+    <string name="connecting_to">Yhdistetään %s</string>
+    <string name="failed_connecting_to">Yhdistäminen epäonnistui %s</string>
+    <string name="error_connecting_to">Virhe yhdistettäessä %s</string>
+    <string name="dl_from">Ladataan kohteesta %s</string>
+    <string name="error_dl_from">Virhe ladattaessa kohteesta %s</string>
+    <string name="error_write">Virhe kirjoittaessa %s</string>
+    <string name="dl_crc_error">Tiedoston %s on vioittunut</string>
+    <string name="dl_progress">%1$d%% valmis: tiedosto %2$s</string>
+    <string name="dl_finished">Valmis</string>
+
+    <string name="storage_phone">Sisäinen muisti - %d Mt vapaana</string>
+    <string name="storage_sd">SD kortti - %d Mt vapaana</string>
+    <string name="storage_question">Minne sovelluksen data ladataan</string>
+
+    <string name="controls_arrows">Nuolinapit / joystick / dpad</string>
+    <string name="controls_trackball">Pallohiiri</string>
+    <string name="controls_none">Ei mitään</string>
+    <string name="controls_question">Millaiset navigointinapit laittessasi on?</string>
+
+    <string name="trackball_no_dampening">Ei vaimennusta</string>
+    <string name="trackball_fast">Nopea</string>
+    <string name="trackball_medium">Kohtalainen</string>
+    <string name="trackball_slow">Hidas</string>
+    <string name="trackball_question">Pallohiiren vaimennus</string>
+
+    <string name="accel_fast">Nopea</string>
+    <string name="accel_medium">Kohtalainen</string>
+    <string name="accel_slow">Hidas</string>
+    <string name="accel_question">Kiihtyvyysanturin herkkyys</string>
+
+    <string name="accel_floating">Kelluva</string>
+    <string name="accel_fixed_start">Määräytyy sovelluksen käynnistyessä</string>
+    <string name="accel_fixed_horiz">Vaakataso</string>
+    <string name="accel_question_center">Kiihtyvyysanturin keskikohta</string>
+
+    <string name="audiobuf_small">Pieni (nopeat laitteet)</string>
+    <string name="audiobuf_medium">Keskisuuri</string>
+    <string name="audiobuf_large">Suuri (jos ääni pätkii)</string>
+    <string name="audiobuf_question">Äänipuskurin koko</string>
+</resources>

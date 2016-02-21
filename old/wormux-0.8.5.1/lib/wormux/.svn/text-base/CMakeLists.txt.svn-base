@@ -1,0 +1,11 @@
+FILE(GLOB_RECURSE LIBWORMUX_SRCS *.cpp)
+
+INCLUDE_DIRECTORIES(
+	${CMAKE_CURRENT_SOURCE_DIR}/include
+	${SDL_INCLUDE_DIR}
+	${PROJECT_SOURCE_DIR}/src
+)
+
+ADD_LIBRARY(libwormux STATIC ${LIBWORMUX_SRCS})
+# change the prefix, so we don't end up with liblibwormux
+SET_TARGET_PROPERTIES(libwormux PROPERTIES PREFIX "")

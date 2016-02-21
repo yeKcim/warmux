@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+  <author>
+    <name>Lawrence AZZOUG</name>
+    <nickname>Lami</nickname>
+    <email>lami AT wormux.org</email>
+    <country>France</country>
+  </author>
+
+  <surface name="sky"     file="sky.jpg" /> 
+
+  <sky_layer>3</sky_layer>
+  <surface name="sky_layer_0" file="sky0.png" />
+  <surface name="sky_layer_1" file="sky1.png" />
+  <surface name="sky_layer_2" file="sky2.png" />
+
+  <surface name="map"     file="map.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Construction</name>
+  <water>water</water>
+  <nb_mine>4</nb_mine>
+  <nb_barrel>2</nb_barrel>
+  <is_open>1</is_open>
+  <music_playlist>construction</music_playlist>
+
+  <sprite name="wind_particle">
+     <image file="raindrop.png">
+       <grid pos="0,0" size="3,101" array="1,1"/>
+     </image>
+  </sprite>
+ 
+  <wind>
+     <nbr_sprite>20</nbr_sprite>
+     <need_flip>0</need_flip>
+     <mass>1.0</mass>
+     <wind_factor>0.7</wind_factor>
+     <air_resist_factor>0.01</air_resist_factor>
+     <gravity_factor>0.3</gravity_factor>
+     <rebounding>false</rebounding>
+     <rebound_factor>0.0</rebound_factor>
+     <auto_align_particle>true</auto_align_particle>
+  </wind>
+
+</resources>

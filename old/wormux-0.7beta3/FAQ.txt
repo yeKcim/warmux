@@ -1,0 +1,40 @@
+Wormux
+FAQ (English)
+-------------------
+Hopefully, this document provides the answer to any problems you may have encountered in Wormux.
+
+
+* I get the message "Floating point exception" as soon as I run Wormux.
+---------------------------------------------------------------------
+
+This problem is encountered mostly by laptops with
+an Intel i8xx graphic card. The solution is to edit your
+/etc/X11/xorg.conf or /etc/X11/XF86Config file and to add (or modify) 
+the line:
+
+Section "ServerFlags"
+[...]
+Option "DisableVidModeExtension" "yes"
+
+
+* Error "resource (...) not found"
+---------------------------------
+
+If you get a message like:
+
+<< UNE EXCEPTION EST INTERVENUE (pas de bol) :
+   Resource ico_arme/suicide not found. >>
+
+This is because Wormux has not been run from the correct directory. If you are working
+with the source code, go to the root wormux directory, then type ./wormux.
+Otherwise, you can specify in the file ~/.wormux/config.xml where the Wormux data
+files reside.
+
+The best method is to install Wormux by typing "make install" as root user in the wormux subdirectory
+"src/". Then delete the source code folder (unless you want to uninstall Wormux later).
+
+
+* Other errors?
+---------------
+
+See the file "BUGS.txt" which explains how to contact us about any other errors.

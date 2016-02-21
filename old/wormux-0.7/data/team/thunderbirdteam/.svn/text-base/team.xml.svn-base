@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <equipe>
+    <nom>Thunderbird Team</nom>
+    <ver nom="Thunderbird" avatar="thunderbirdteam" />
+	 <ver nom="Gibson" avatar="thunderbirdteam" />
+    <ver nom="Phorusrhacidae" avatar="thunderbirdteam" />
+    <ver nom="Dromornithidae" avatar="thunderbirdteam" />
+    <ver nom="Train" avatar="thunderbirdteam" />
+    <ver nom="Ford" avatar="thunderbirdteam" />
+    <ver nom="Triumph" avatar="thunderbirdteam" />
+    <ver nom="Royal Enfield" avatar="thunderbirdteam" />
+    <ver nom="Albuquerque" avatar="thunderbirdteam" />
+    <ver nom="UBC" avatar="thunderbirdteam" />
+    <ver nom="Hamilton" avatar="thunderbirdteam" />
+	 <ver nom="Seattle" avatar="thunderbirdteam" />
+	 <ver nom="squadron" avatar="thunderbirdteam" />
+	 <ver nom="missile" avatar="thunderbirdteam" />    
+  </equipe>
+  <surface name="flag" file="flag.png" />
+</resources>

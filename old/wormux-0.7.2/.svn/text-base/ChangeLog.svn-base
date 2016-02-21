@@ -1,0 +1,162 @@
+> 18/05/2006 - 0.7.2 release
+  - New translation: finnish
+  - New map: island, cheese
+  - Misc weapon improvements (ninja rope, uzi, air attack)
+  - Fix some memory leak
+  - Fix minor bugs
+  - Build process improvements (manpage, font path)
+  - Experimental network support
+  - New Pause screen
+
+> 24/04/2006 - 0.7.1 release
+  - New graphisms for weapons from yeKcim and ZeOlive
+  - New Bounceball weapon
+  - New map: goodandevil
+  - Added Turkish and Romanian translation
+  - Updated German and Italian translation
+  - Bug fixes
+
+> 04/04/2006 - 0.7 release
+  - Graphic enhancement in menus and loading screen
+  - Improved game graphics (explosions with smoke)
+  - New maps: Desert, Monkey Bubble, King Kong, Wild West DV, 
+  - New teams: Tux team, Nupik, Wilber, PHP, Snort, Thunderbird, WorkRave,
+  BattleNight
+  - New weapons: bounce ball
+  - Translations: Dutch, Romanian, Danish, 
+  - Code cleaning: implement some design patterns, translate some variables
+  and functions name, remove dead Clanlib code
+  - Compilation process more clean
+  - Bug fixes
+
+> 23/01/2006 - 0.7beta3 release
+  - New traduction: russian
+  - New font: manage east-european languages
+  - Handle conflict with old ~/.wormux/config.xml
+  - New map: hell
+  - PowerPC support
+  - Fix bugs
+
+> 11/01/2006 - 0.7beta1 release
+  - Switch to SDL 1.2 -> completed
+  - New graphic engine, reduced CPU cost
+  - New weapons: ninja rope, jetpack, air hammer, gnu launcher, low
+  gravity
+  - New physical engine: allows crazy things !
+  - New skins: Gnu Team, Firefox Team, Nuts Team, Tux Team, Konqui team
+  - Options menu splitted into game menu and options menu
+  - Bug fixes
+
+> 01/09/2005
+  - Switch to SDL -> beginning
+
+> 01/08/2005
+  - Version 0.6.0 released
+
+> 05/07/2005 (Lodesi)
+  - Modifications to skin handling
+  - Updated skin for Alien and Ecureuil
+
+> 29/06/2005 (Korgon)
+  - Jetpack weapon
+  - Add a secondary unit for weapons ammo. Draw a box with secondary
+    weapon units remaining when using such a weapon. 
+
+> 19/06/2005 (Gentildemon)
+  - New game loop
+
+> 16/06/2005 (Lami)
+  - Improved memory management
+
+> 11/06/2005 (Korgon)
+  - Low gavity weapon
+
+> 02/06/2005 (Gentildemon)
+  - Particle engine
+
+> 19/05/2005 (Korgon)
+  - New keyboard handling, based events
+  - Ninja rope weapon
+
+> 05/05/2005 (Lami)
+  - New gfx for weapon & weapon menu
+
+> 04/05/2005 (Korgon)
+  - New physical engine
+  - Parachute weapon
+
+> 03/05/2005 (Gentildemon)
+  - AirHammer weapon
+
+> 30/04/2005 (Lodesi)
+  - GNU weapon
+
+> 23/04/2005 (Lodesi)
+  - Skin ecureil
+
+> 22/04/2005 (Lami)
+  - New icons for weapon menu
+
+> 18/04/2005 (Korgon)
+  - New look for weapon menu
+  - Display remaining ammos in weapon menu
+
+> 14/04/2005 (Korgon)
+  - New physical engine
+
+> 07/04/2005 (Gentildemon)
+  - New interface with transparence from Renaud Lottiaux (Korgon)
+
+> 19/03/2005 (Lodesi)
+  - Move camera when is on the border of the screen
+
+> 09/02/2005 (Gentildemon)
+  - Code cleanup
+
+> 23/01/2005 (Haypo)
+  - Various BUGFIXs
+
+> 06/01/2005 (Haypo)
+  - Write fist part of a network game initialisation : server set game mode,
+    than map, then create teams, than move characters
+  - Convert old Action struct to modern C++ class : it was not possible to
+    use a string in an union
+  - Action can write into an output source, and read data from input source
+  - Teams are identified by an id
+  - Translate some team members into english
+  - BUGFIX: Don't show cursor when shown object is a ghost
+  
+> 05/01/2005 (Gentildemon)
+  - New main menu
+  - Uzi weapon (still buggy :)
+
+> 04/01/2005 (Gentildemon)
+  - Listbox listed alphabetically
+
+> 03/01/2005 (Haypo)
+  - When a character fall in water, display a message.
+  - Fix around global variables creation (time).
+  - Clean wind particle code : use n instances of CL_Sprite instead of a
+    global one.
+  - Use CL_Sprite options (<image><animation speed="...">) in map config.xml
+    file for wind particles.
+
+> 03/01/2005 (Gentildemon)
+  - Listbox get arrows
+
+> 01/01/2005 (Haypo)
+   - Clean po/Makefile.am : remove POT-Creation-time from all .po files and
+     all comands become quiet
+   - Also read skins and teams from ~/.wormux/ (skin/ and team/ subdir)
+   - Translate game mode into english
+   - When loading a game mode, try to open ~/.wormux/game_mode/<mode>.xml first
+   - Fix a lot of bugs around game mode : set default character options value,
+     character energy progress bar use initial energy instead of 100 for 
+	 maximum value, etc.
+   - gravity becomes a game option
+   - When the last character of a team die, end the current turn
+   - Fix network state when we don't use network (is a server by default)
+   - Fix auto. bazooka, air attack and teleportation : use action instead
+     of calling directly Tire() function (it had to call Shoot())
+
+(Old changes can be found in old Wormux release)

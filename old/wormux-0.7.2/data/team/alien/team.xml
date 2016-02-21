@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <name>Alien</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="Alien" skin="alien" />
+    <character name="Predator" skin="alien" />
+    <character name="Ellen Ripley" skin="alien" />
+    <character name="Bishop" skin="alien" />
+    <character name="Lucifer" skin="alien" />
+    <character name="Golic" skin="alien" />
+  </team>
+</resources>

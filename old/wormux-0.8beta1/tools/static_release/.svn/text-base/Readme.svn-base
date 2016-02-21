@@ -1,0 +1,6 @@
+*****  Quick and durty script to build Wormux static-releases *****
+
+- Before running, edit the static.sh script and adjust the CLAN_DIR variable
+  to your clanlib installation path.
+
+- Make an archive by running "./make_static_release.sh"

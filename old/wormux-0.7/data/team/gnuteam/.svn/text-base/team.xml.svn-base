@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <equipe>
+    <nom>Gnu Team</nom>
+    <ver nom="Connochaetes Taurinus" avatar="gnuteam" />
+    <ver nom="Connochaetes gnu" avatar="gnuteam" />
+    <ver nom="Not UNIX" avatar="gnuteam" />
+    <ver nom="Linux" avatar="gnuteam" />
+    <ver nom="Hurd" avatar="gnuteam" />
+	 <ver nom="Emacs" avatar="gnuteam" />
+	 <ver nom="Compiler Collection" avatar="gnuteam" />
+	 <ver nom="Arch" avatar="gnuteam" />
+	 <ver nom="Debugger" avatar="gnuteam" />
+	 <ver nom="Savannah" avatar="gnuteam" />
+  </equipe>
+  <surface name="flag" file="flag.png" />
+</resources>

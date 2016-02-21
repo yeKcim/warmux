@@ -1,0 +1,6 @@
+include Makefile.common
+CXXFLAGS:=$(CXXFLAGS)
+LDFLAGS:=$(LDFLAGS) -lcurl -lidn -lssl -lcrypto -ldl -lz
+
+bin: wormux_server
+

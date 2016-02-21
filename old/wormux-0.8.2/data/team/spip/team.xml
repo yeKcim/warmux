@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Spip</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+	<character name="ARNO*" body="spip"/>
+	<character name="Pit'" body="spip"/>
+	<character name="Fil" body="spip"/>
+	<character name="ESJ" body="spip"/>
+	<character name="Kliké" body="spip"/>
+	<character name="Cerdic" body="spip"/>	
+	<character name="Têtue" body="spip"/>
+	<character name="Renââto" body="spip"/>
+	<character name="Piif" body="spip"/>
+	<character name="bennybi" body="spip"/>
+	<character name="BoOz" body="spip"/>
+	<character name="Mortimer" body="spip"/>
+	<character name="toggg" body="spip"/>
+	<character name="Atchoum" body="spip"/>	
+	<character name="Alexandra Maison" body="spip"/>
+	<character name="izo" body="spip"/>
+  </team>
+</resources>

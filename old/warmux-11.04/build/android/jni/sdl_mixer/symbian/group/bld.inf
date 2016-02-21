@@ -1,0 +1,18 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : 
+ Copyright   : Your copyright notice
+ Description : This file provides the information required for building the
+				whole of a SDL_mixer.
+============================================================================
+*/
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_MMPFILES
+SDL_mixer.mmp
+
+PRJ_EXPORTS
+..\..\SDL_mixer.h SDL\SDL_mixer.h

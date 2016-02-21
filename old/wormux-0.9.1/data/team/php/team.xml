@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>PHP</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+    <character name="PHP" body="php" />
+    <character name="Jumbo" body="php" />
+    <character name="Dumbo" body="php" />
+    <character name="Babar" body="php" />
+    <character name="Joseph Merrick" body="php" />
+    <character name="Ganesh" body="php" />
+    <character name="Gus Van Sant" body="php" />
+    <character name="The White Stripes" body="php" />
+    <character name="Loxodonta cyclotis" body="php" />
+    <character name="Loxodonta africana" body="php" />
+    <character name="Elephas maximus" body="php" />
+    <character name="Elephas recki" body="php" />
+    <character name="Stegodon" body="php" />
+    <character name="Mammuthus" body="php" />
+
+  </team>
+</resources>
+
+

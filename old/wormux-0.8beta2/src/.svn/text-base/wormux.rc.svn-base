@@ -1,0 +1,55 @@
+// Wormux resource for win32 target
+
+#include <winver.h>
+#ifdef __MINGW32__
+#  include "config.h"
+#else
+#  include "msvc/config.h"
+#endif
+
+#if ENABLE_NLS
+#  define IS_NLS_ENABLED "yes"
+#else
+#  define IS_NLS_ENABLED "no"
+#endif
+
+1 VERSIONINFO
+FILEVERSION 0,8,1,0
+PRODUCTVERSION 0,8,1,0
+FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+FILEFLAGS VS_FF_DEBUG | VS_FF_SPECIALBUILD
+#else
+FILEFLAGS VS_FF_SPECIALBUILD
+#endif
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "000004b0"
+        {
+            VALUE "Comments","Localization support: " IS_NLS_ENABLED "."
+            VALUE "CompanyName", "\000"
+            VALUE "FileDescription", "Wormux is a convivial mass murder game."
+            VALUE "FileVersion", PACKAGE_VERSION
+            VALUE "InternalName", "wormux"
+            VALUE "LegalCopyright", "Copyright (C) 2001-2007 Lawrence Azzoug, the Wormux Project et al."
+            //VALUE "LegalTrademarks", "test"
+            VALUE "OriginalFilename", "wormux.exe"
+            VALUE "ProductName", "wormux"
+            VALUE "ProductVersion", PACKAGE_VERSION
+#ifdef __MINGW32__
+            VALUE "SpecialBuild", "$Revision$, build on " __DATE__ ", " __TIME__ " with compiler version " __VERSION__
+#else
+            VALUE "SpecialBuild", "$Revision$"
+#endif
+        }
+    }
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x0, 1200
+    }
+}
+
+IDI_ICON1 ICON DISCARDABLE "wormux.ico"

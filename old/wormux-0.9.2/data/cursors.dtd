@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT resources (section+)>
+<!ELEMENT section (mouse_cursor+)>
+<!ATTLIST section name CDATA #REQUIRED>
+
+<!ELEMENT mouse_cursor EMPTY>
+<!ATTLIST mouse_cursor name CDATA #REQUIRED>
+<!ATTLIST mouse_cursor file CDATA #REQUIRED>
+<!ATTLIST mouse_cursor x CDATA #REQUIRED>
+<!ATTLIST mouse_cursor y CDATA #REQUIRED>
+

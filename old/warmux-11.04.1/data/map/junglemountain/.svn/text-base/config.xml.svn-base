@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+ 
+ <author>
+   <name>Christopher L. Stanley</name>
+   <nickname>NinjaNumberNine</nickname>
+   <email>niftyninjanumbernine@gmail.com</email>
+   <country>USA</country>
+ </author>
+ 
+ <surface name="sky" file="drseuss.jpg" />
+ <surface name="map" file="dseuss_fg.png" />
+ <surface name="preview" file="preview.jpg" />
+ 
+ <name>Jungle Mountain</name>
+ <water>water</water>
+ <nb_mine>0</nb_mine>
+ <is_open>1</is_open>
+ 
+ <sprite name="wind_particle">
+   <image file="goo_drop.png">
+     <grid size="34,49" array="1,1"/>
+   </image>
+ </sprite>
+
+ <wind>
+   <nbr_sprite>20</nbr_sprite>
+   <need_flip>0</need_flip>
+   <mass>1.0</mass>
+   <wind_factor>0.0</wind_factor>
+   <air_resist_factor>0.005</air_resist_factor>
+   <gravity_factor>0.1</gravity_factor>
+   <rebounding>false</rebounding>
+   <rebound_factor>0.0</rebound_factor>
+ </wind>
+</resources>

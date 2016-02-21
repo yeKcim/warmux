@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+  <author>
+    <name>Alexandre NORMAN</name>
+    <nickname>Xael</nickname>
+    <email>norman AT xael.org</email>
+    <country>France</country>
+  </author>
+
+  <surface name="sky" file="fond.jpg" />
+  <surface name="map" file="prehistorik.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Prehistorik</name>
+  <water>0</water>
+  <nb_mine>3</nb_mine>
+  <is_open>1</is_open>
+  <!-- pad is given in pixel count. -->
+  <add_pad>1</add_pad>
+  <point name="upper_left_pad" x="1100" y="700" />
+  <point name="lower_right_pad" x="1000" y="0" />
+</resources>

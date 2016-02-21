@@ -1,0 +1,27 @@
+------------------------------------------------------------------------ 
+ STLport-5.1.5-symbian-r1 (SVN) 
+------------------------------------------------------------------------ 
+
+ - updated to STLport 5.1.5 
+ - added support for UIQ 3.1 and S60 3rd Edition FP2 
+ - fixed bug in _symbian_ecvt() which affected rendering of numerical 
+   values (thanks Peter Barth)
+ - fixed bug that affected the reference counting mechanism of the RFs 
+   instance in _fstream.cpp (thanks Peter Barth)
+ - improved project files and build scripts for easier installation 
+ - forced null-pointer check after every allocation through operator new,
+   because Symbian's operator new never throws std::bad_alloc 
+ - minor cleanup to remove some annoying warning messages 
+
+------------------------------------------------------------------------ 
+ STLport-5.1.3-symbian-r2 (private release) 
+------------------------------------------------------------------------ 
+
+ - added support for RTTI (typeinfo header) 
+
+------------------------------------------------------------------------ 
+ STLport-5.1.3-symbian-r1 (5/9/2007) 
+------------------------------------------------------------------------ 
+
+ This is the first release. 
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Konqi Team</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="Konqui" body="konqiteam" />
+    <character name="Quest" body="konqiteam" />
+    <character name="Sheron" body="konqiteam" />
+    <character name="Double" body="konqiteam" />
+    <character name="32/64" body="konqiteam" />
+    <character name="Ramoth" body="konqiteam" />
+    <character name="US M47" body="konqiteam" />
+    <character name="Hapan Battle" body="konqiteam" />
+    <character name="HMS" body="konqiteam" />
+    <character name="Timaeus" body="konqiteam" />
+    <character name="Idris" body="konqiteam" />
+    <character name="Man" body="konqiteam" />
+    <character name="Tales" body="konqiteam" />
+    <character name="Swamp" body="konqiteam" />
+  </team>
+</resources>

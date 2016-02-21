@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE authors SYSTEM "authors.dtd">
+<authors>
+
+  <team>
+    <section title="Active Team">
+      <author>
+	<nickname>drayan</nickname>
+	<name>Yannig PERRÉ</name>
+	<description>Programmer</description>
+	<website>http://jb.berland.free.fr/dotclear/index.php/</website>
+	<email>yannig.perre_AT_gmail_DOT_com</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>gentildemon</nickname>
+	<name>Matthieu FERTRÉ</name>
+	<description>Programmer</description>
+	<website>http://matthieu.fertre.free.fr/</website>
+	<email>matthieu.fertre_AT_free_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Kurosu</nickname>
+	<name>John DOE</name>
+	<description>Win32 port, programmer</description>
+	<email>kurosu_AT_free_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>yeKcim</nickname>
+	<name>Anthony CARRÉ</name>
+	<description>Graphic artist</description>
+	<website>http://yeknan.free.fr/</website>
+	<email>yeknan_AT_yahoo_DOT_fr</email>
+	<country>France</country>
+      </author>
+    </section>
+
+    <section title="Inactive Team">
+      <author>
+	<nickname>deki</nickname>
+	<name>Reiner HERRMANN</name>
+	<description>Programmer</description>
+	<website>http://www.reiner-h.de/</website>
+	<email>reiner_AT_reiner-h_DOT_de</email>
+	<country>Germany</country>
+      </author>
+      <author>
+	<nickname>jcduberga</nickname>
+	<name>Jean-Christophe DUBERGA</name>
+	<description>Programmer</description>
+	<email>jcduberga_AT_gmx_DOT_de</email>
+	<country>Germany</country>
+      </author>
+      <author>
+	<nickname>haypo</nickname>
+	<name>Victor STINNER</name>
+	<description>Programmer and webmaster</description>
+	<website>http://www.haypocalc.com/</website>
+	<email>victor.stinner_AT_haypocalc_DOT_com</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>lami</nickname>
+	<name>Lawrence AZZOUG</name>
+	<description>Initial programmer and graphic artist of the game</description>
+	<website>http://perso.wanadoo.fr/lami/</website>
+	<email>lami_AT_wormux_DOT_org</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>lodesi</nickname>
+	<name>Laurent DEFERT SIMONNEAU</name>
+	<description>Programmer and graphic artist</description>
+	<email>lodesi2_AT_yahoo_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>otacaon</nickname>
+	<name>Olivier SERRES</name>
+	<description>Programmer</description>
+	<email>olivier.serres_AT_gmail_DOT_com</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>OznOg</nickname>
+	<name>Sébastien GONZALVE</name>
+	<description>Programmer</description>
+	<website>http://zarb.org/%7Eoznog/</website>
+	<email>oznog_AT_zarb_DOT_org</email>
+      <country>France</country>
+      </author>
+      <author>
+	<nickname>renaud</nickname>
+	<name>Renaud LOTTIAUX</name>
+	<description>Programmer</description>
+	<email>renaud.lottiaux_AT_free_DOT_fr</email>
+	<country>France</country>
+      </author>
+    </section>
+  </team>
+
+  <contributors>
+    <section title="Translations">
+      <author>
+        <nickname>orvils</nickname>
+        <name>Raivis Dejus</name>
+	<description>Latvian translation</description>
+	<email>orvils_AT_gmail_DOT_com</email>
+	<country>Latvia</country>
+      </author>
+      <author>
+        <nickname>GG</nickname>
+        <name>Jérôme Gallard</name>
+	<description>Créole Réyoné translation</description>
+	<email>jeronimo974_AT_gmail_DOT_com</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>mabu</nickname>
+	<name>Marko Burjek</name>
+	<description>Slovenian translation</description>
+	<email>s0mebody.slo_AT_gmail_DOT_com</email>
+	<country>Slovenia</country>
+      </author>
+      <author>
+	<nickname>Emdek</nickname>
+	<name>Michal D.</name>
+	<description>Updated Polish Translation</description>
+	<country>Poland</country>
+      </author>
+      <author>
+	<nickname>Pedro Santos</nickname>
+	<description>Updated Portuguese Translation</description>
+	<country>Portugal</country>
+      </author>
+      <author>
+	<nickname>pepp</nickname>
+	<name>Pierre-eric Pelloux Prayer</name>
+	<description>Write small hack to optimize character drawing</description>
+	<email>pepp_AT_neuf_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>GArik</nickname>
+	<name>Igor MURZOV</name>
+	<description>Update Russian translation</description>
+	<email>igor_AT_gplsoft_DOT_org</email>
+	<country>Russia</country>
+      </author>
+      <author>
+	<nickname>Alexandre</nickname>
+	<name>Alexandre PROKOUDINE</name>
+	<description>Translate Wormux into Russian</description>
+	<email>alexandre.prokoudine_AT_gmail_DOT_com</email>
+	<country>Russia</country>
+      </author>
+      <author>
+	<nickname>Pierre-Marie</nickname>
+	<name>Pierre-Marie</name>
+	<description>Update translation of Wormux in Esperanto</description>
+	<email>pedrotpmx_AT_wanadoo_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Axel</nickname>
+	<name>Axel ROUSSEAU</name>
+	<description>Translate Wormux 0.8 in Esperanto</description>
+	<email>axel584_AT_axel584_DOT_org</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>basse</nickname>
+	<name>Bastian SALMELA</name>
+	<description>Translate Wormux 0.7 in Finnish</description>
+	<email>asse_AT_kulma_DOT_org</email>
+	<country>Finland</country>
+      </author>
+      <author>
+	<nickname>Binky</nickname>
+	<name>Antonio ACIÉN</name>
+	<description>Translate the website in Spanish</description>
+	<country>Spain</country>
+      </author>
+      <author>
+	<nickname>Bruno</nickname>
+	<name>Bruno PIRES</name>
+	<description>First Portuguese version of Wormux</description>
+	<email>bruno.pires_AT_utbm_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>LnxSlck</nickname>
+	<name>Bruno QUEIRÓS</name>
+	<description>Translate Wormux 0.7.3 in Portuguese</description>
+	<email>brunomiguelqueiros_AT_gmail_DOT_com</email>
+	<country>Portugal</country>
+      </author>
+      <author>
+	<nickname>Christian</nickname>
+	<name>Christian LOMSDALEN</name>
+	<description>Translated Wormux 0.8 to Norwegian</description>
+	<website>http://vindstille.net</website>
+	<email>christian_AT_vindstille_DOT_net</email>
+	<country>Norway</country>
+      </author>
+      <author>
+	<nickname>Daniel</nickname>
+	<name>Daniel NYLANDER</name>
+	<description>Translated Wormux 0.8 to Swedish</description>
+	<email>po_AT_danielnylander_DOT_se</email>
+	<country>Sweden</country>
+      </author>
+      <author>
+	<nickname>Danny</nickname>
+	<name>Danny ALLEN</name>
+	<description>English translation of Wormux</description>
+	<email>dannya40uk_AT_yahoo.co_DOT_uk</email>
+	<country>England</country>
+      </author>
+      <author>
+	<nickname>eddyp</nickname>
+	<name>Eddy PETRIȘOR </name>
+	<description>Translated Wormux in Romanian</description>
+	<email>eddy.petrisor_AT_gmail_DOT_com</email>
+	<country>Romania</country>
+      </author>
+      <author>
+	<nickname>Frank</nickname>
+	<name>Frank VAN DER LOO</name>
+	<description>First Dutch version of Wormux</description>
+	<email>frank_l_AT_linuxmail_DOT_org</email>
+	<country>Netherlands</country>
+      </author>
+      <author>
+	<nickname>Furkan</nickname>
+	<name>Furkan DUMAN</name>
+	<description>Wormux in Turkish</description>
+	<email>coderlord_AT_gmail_DOT_com</email>
+	<country>Turkey</country>
+      </author>
+      <author>
+	<nickname>gabó</nickname>
+	<name>Török GÁBOR</name>
+	<description>First Hungarian version of Wormux</description>
+	<email>gabo_AT_linuxportal_DOT_hu</email>
+	<country>Hungary</country>
+      </author>
+      <author>
+	<nickname>Gaia</nickname>
+	<name>Gaia QUERO</name>
+	<description>Updated Italian translation</description>
+	<website>http://www.abctrad.com/</website>
+	<email>gaiaquero_AT_yahoo_DOT_fr</email>
+	<country>Italia</country>
+      </author>
+      <author>
+        <nickname>Michele</nickname>
+        <name>Michele Mauri</name>
+        <description>Updated Italian translation</description>
+        <email>mikimauri_AT_gmail_DOT_com</email>
+        <country>Italia</country>
+      </author>
+      <author>
+	<nickname>Henrik</nickname>
+	<name>Henrik GEBAUER</name>
+	<description>Translated the whole website into German</description>
+	<email>henrik.gebauer_AT_web_DOT_de</email>
+	<country>Germany</country>
+      </author>
+      <author>
+	<nickname>Janus</nickname>
+	<name>Janus TROELSEN</name>
+	<description>Translate Wormux in Danish</description>
+	<email>ysangkok_AT_gmail_DOT_com</email>
+	<country>Denmark</country>
+      </author>
+      <author>
+	<nickname>lux</nickname>
+	<name>Luciano FERRARO</name>
+	<description>Translate Wormux 0.7 in Italian</description>
+	<email>rebelcoders_AT_gmail_DOT_com</email>
+	<country>Italy</country>
+      </author>
+      <author>
+	<nickname>Marc</nickname>
+	<name>Marc LANCTOT</name>
+	<description>First English version of INSTALL.en.txt</description>
+	<email>marc.lanctot_AT_mail.mcgill_DOT_ca</email>
+	<country>Canada</country>
+      </author>
+      <author>
+	<nickname>Martin</nickname>
+	<name>Martin VOJČÍK</name>
+	<description>Slovak translation of Wormux</description>
+	<email>stryco_AT_centrum_DOT_sk</email>
+	<country>Slovakia</country>
+      </author>
+      <author>
+	<nickname>Nicolas</nickname>
+	<name>Nicolas LETAVENIER</name>
+	<description>Help for English translation of the website</description>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Packo</nickname>
+	<name>Packo ASSAMITA</name>
+	<description>Translate the whole website in Spanish</description>
+	<country>Spain</country>
+      </author>
+      <author>
+	<nickname>Pohodin</nickname>
+	<name>Pohodin ALEXANDER</name>
+	<description>Translated website to Russian</description>
+	<email>admin_AT_tuxgames_DOT_ru</email>
+	<country>Russia</country>
+      </author>
+      <author>
+	<nickname>Rômulo</nickname>
+	<name>Rômulo FERNANDES</name>
+	<description>Translated Wormux to Brazilian/Portuguese</description>
+	<email>razor85_AT_users.sourceforge_DOT_net</email>
+	<country>Brazil</country>
+      </author>
+      <author>
+	<nickname>Nightz</nickname>
+	<name>Nightz</name>
+	<description>Update Brazilian translation</description>
+	<email>abra185_AT_gmail_DOT_com</email>
+	<country>Brazil</country>
+      </author>
+      <author>
+	<nickname>Stefan</nickname>
+	<name>Stefan MARTENS</name>
+	<description>German translation</description>
+	<email>info_AT_stefan1200_DOT_de</email>
+	<country>Germany</country>
+      </author>
+      <author>
+	<nickname>templer</nickname>
+	<name>Eduard BERMEJO</name>
+	<description>Add Spain AND Catalan translation in Wormux</description>
+	<country>Spain</country>
+      </author>
+      <author>
+	<nickname>willy</nickname>
+	<name>Paolo NICORELLI</name>
+	<description>First Italian version of Wormux</description>
+	<email>p.nicorelli_AT_fastwebnet_DOT_it</email>
+	<country>Italy</country>
+      </author>
+      <author>
+	<nickname>Mindless</nickname>
+	<name>Stef</name>
+	<description>Bulgarian translation</description>
+	<email>mindless_AT_data_DOT_bg</email>
+	<country>Bulgaria</country>
+      </author>
+      <author>
+	<nickname>Ignacio</nickname>
+	<name>Ignacio Casal Quinteiro</name>
+	<description>Translated Wormux in Galician</description>
+	<email>icq_AT_cvs_DOT_gnome_DOT_org</email>
+	<country>Spain</country>
+      </author>
+      <author>
+        <nickname>Varga</nickname>
+        <name>Varga Istvan</name>
+        <description>Hungarian translation updates</description>
+        <country>Hungary</country>
+      </author>
+    </section>
+
+    <section title="Package maintainers">
+      <author>
+        <nickname>AbsintheSyringe</nickname>
+	<name>Adnan Hodzic</name>
+	<description>Prepares Wormux SlackBuilds for Slackware</description>
+	<email>AbsintheSyringe_AT_gmail_DOT_com</email>
+	<country>Bosnia-Herzegovina</country>
+      </author>
+      <author>
+	<nickname>artefact</nickname>
+	<name>Jean PARPAILLON</name>
+	<description>Debian GNU/Linux and Ubuntu packages of Wormux 0.7. Also: Some scripts</description>
+	<website>http://jeanparpaillon.info/</website>
+	<email>jean.parpaillon_AT_free_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Auria</nickname>
+	<name>Marianne Gagnon</name>
+	<description>MacOSX package</description>
+	<email>fire_void_AT_hotmail_DOT_com</email>
+	<country>Canada</country>
+      </author>
+      <author>
+	<nickname>che</nickname>
+	<name>Rudolf KASTL</name>
+	<description>Prepare RPM packages for Fedora Core 3</description>
+	<email>che666_AT_uni_DOT_de</email>
+	<country>Germany</country>
+      </author>
+      <author>
+	<nickname>daja77</nickname>
+	<name>Daniel JAHRE</name>
+	<description>Package Wormux for RockLinux</description>
+	<email>daja_AT_rocklinux_DOT_org</email>
+	<country>Germany</country>
+      </author>
+      <author>
+	<nickname>Emily</nickname>
+	<name>Emily BRANTLEY</name>
+	<description>Wormux 0.7beta2 package for Fedora Core 4</description>
+	<email>koneko.em_AT_gmail_DOT_com</email>
+	<country>United States</country>
+      </author>
+      <author>
+	<nickname>fEnIo</nickname>
+	<name>Bartosz FENSKI</name>
+	<description>Debian package of Clanlib and Wormux prior to 0.7. Also: first Polish version of Wormux</description>
+	<website>http://skawina.eu.org/</website>
+	<email>fenio_AT_debian_DOT_org</email>
+	<country>Poland</country>
+      </author>
+      <author>
+	<nickname>Julien</nickname>
+	<name>Julien CATALANO</name>
+	<description>Prepare RPM packages for Mandrake</description>
+	<website>http://julien.catalano.free.fr/</website>
+	<email>julien.catalano_AT_gmail_DOT_com</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Miwi</nickname>
+	<name>Martin WILKE</name>
+	<description>Made FreeBSD package</description>
+	<website>http://unixfreunde.de/</website>
+	<email>miwi_AT_FreeBSD_DOT_org</email>
+	<country>Germany</country>
+      </author>
+      <author>
+	<nickname>Serge</nickname>
+	<name>Serge CLAUS</name>
+	<description>Wormux 0.7.4 package for Ubuntu Dapper</description>
+	<website>http://serge.claus.free.fr/</website>
+	<email>serge.claus_AT_free_DOT_fr</email>
+	<country>France</country>
+      </author>
+    </section>
+
+    <section title="Patches / Code">
+      <author>
+	<nickname>AbsintheSyringe</nickname>
+	<name>Adnan HODZIC</name>
+	<description>Physics constant for wind particles, Bug fixes, First Bosnian translation of Wormux.</description>
+	<email>AbsintheSyringe_AT_gmail_DOT_com</email>
+	<country>Bosnia-Herzegovina</country>
+      </author>
+      <author>
+	<nickname>Eric</nickname>
+	<name>Eric HOFFMANN</name>
+	<description>Wrote CPU limiter patch with Olivier SERRES</description>
+	<email>eric.hoffmann_AT_utbm_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>François</nickname>
+	<name>François BLEIBEL</name>
+	<description>Write first network patch with Jerome Glatigny</description>
+	<email>maisola_AT_gmail_DOT_com</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>funebre</nickname>
+	<name>Carlo MAISOLA</name>
+	<description>Flamethrower weapon</description>
+	<email>francois.bleibel_AT_utbm_DOT_fr</email>
+	<country>Italy</country>
+      </author>
+      <author>
+	<nickname>Hanna</nickname>
+	<name>Hanna OLLILA</name>
+	<description>Fix old bug in option menu (crash because of video mode)</description>
+	<email>hamaolli_AT_cc.jyu_DOT_fi</email>
+	<country>Finland</country>
+      </author>
+      <author>
+	<nickname>Isaac</nickname>
+	<name>Isaac CLERENCIA</name>
+	<description>Add autotools (autogen.sh, ./configure, ...) to Wormux</description>
+	<email>isaac_AT_sindominio_DOT_net</email>
+	<country>Spain</country>
+      </author>
+      <author>
+	<nickname>Jerome</nickname>
+	<name>Jerome GLATIGNY</name>
+	<description>Write first network patch with François Bleibel</description>
+	<email>jerome.glatigny_AT_utbm_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Johannes</nickname>
+	<name>Johannes KRUDE</name>
+	<description>Patch, bug report</description>
+	<website>http://johannes.krude.de</website>
+	<email>johannes_AT_koeln.ccc_DOT_de</email>
+	<country>Germany</country>
+      </author>
+      <author>
+	<nickname>Jon</nickname>
+	<name>Jon DE ANDRES</name>
+	<description>Network chat</description>
+	<email>jtbanfrj_AT_bipt106.bi.ehu_DOT_es</email>
+	<country>Spain</country>
+      </author>
+      <author>
+	<nickname>Kyle</nickname>
+	<name>Kyle SABO</name>
+	<description>Air attack bomb dropping</description>
+	<email>robo210_AT_gmail_DOT_com</email>
+	<country>United States</country>
+      </author>
+      <author>
+	<nickname>Larry</nickname>
+	<name>Larry COW</name>
+	<description>Patch for Linux</description>
+	<email>larry_AT_doubidou_DOT_net</email>
+      </author>
+      <author>
+	<nickname>lynxlynxlynx</nickname>
+	<name>Jaka KRANJC</name>
+	<description>Patch that enables cycling through characters backwards. G++ 4.2 support</description>
+	<email>svn_AT_lynxlynx_DOT_info</email>
+	<country>Slovenia</country>
+      </author>
+      <author>
+	<nickname>Mathias</nickname>
+	<name>Mathias PLICHTA</name>
+	<description>Automatic bazooka constant refresh</description>
+	<email>wrtlprnft_AT_wrtlprnft_DOT_de</email>
+	<country>Germany</country>
+      </author>
+      <author>
+	<nickname>Pascal</nickname>
+	<name>Pascal GIARD</name>
+	<description>Wrote a patch to stop configure if clanlib and/or libxml++ is missing</description>
+	<email>evilynux_AT_gmail_DOT_com</email>
+      </author>
+      <author>
+	<nickname>phh</nickname>
+	<name>Pierre-Hugues HUSSON</name>
+	<description>Ugly live cd. Made static binary</description>
+	<email>phhusson_AT_free_DOT_fr</email>
+      </author>
+      <author>
+	<nickname>paxed</nickname>
+	<name>Pasi Kallinen</name>
+	<description>Improve the ground generator</description>
+	<website>http://bilious.homelinux.org/</website>
+	<email>paxed@alt.org</email>
+	<country>Finland</country>
+      </author>
+      <author>
+	<nickname>Progs</nickname>
+	<name>Romain BIGNON</name>
+	<description>Developer</description>
+	<website>http://coderz.info</website>
+	<email>progs_AT_headfucking.net</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Riccardo</nickname>
+	<name>Riccardo TRAVERSO</name>
+	<description>Syringe weapon, bugfixes</description>
+	<email>gr3yfox.fw_AT_gmail_DOT_com</email>
+	<country>Italy</country>
+      </author>
+      <author>
+	<nickname>Rich</nickname>
+	<name>R. VIGNIEL</name>
+	<description>Progressive camera scrolling with mouse patch</description>
+	<email>rvigniel_AT_free.fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Sami</nickname>
+	<name>Sami PIETILA</name>
+	<description>Wrote a patch for using two sinus waves to have nice water effect</description>
+	<email>sampie_AT_ariana-dsl.utu_DOT_fi</email>
+      </author>
+      <author>
+	<nickname>Snark</nickname>
+	<name>Julien Puydt</name>
+	<description>Patch to compile without -Wno-unused-parameter, reworked some menu widgets, little additions to class Surface</description>
+	<email>julien.puydt_AT_laposte_DOT_net</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Timo</nickname>
+	<name>Timo HORSTSCHÄFER</name>
+	<description>Riot bomb weapon</description>
+	<email>mail_AT_timo-hortschaefer_DOT_de</email>
+	<country>Germany</country>
+      </author>
+      <author>
+	<nickname>the gritche</nickname>
+	<name>David Zysman</name>
+	<description>GUI patch</description>
+	<email>thegritche_AT_gmail_DOT_com</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>vegar</nickname>
+	<name>Vegar STORVANN</name>
+	<description>Patch for mousewheel scrolling in the gui</description>
+	<email>v_AT_sunscream_DOT_net</email>
+	<country>Norway</country>
+      </author>
+    </section>
+    <section title="Sounds">
+      <author>
+	<nickname>Gottfried</nickname>
+	<name>Gottfried HOFMANN</name>
+	<description>Sounds</description>
+	<email>toddd_AT_mypse.goracer_DOT_de</email>
+	<country>Germany</country>
+      </author>
+      <author>
+	<nickname>Grz-</nickname>
+	<name>VERNEUIL julien</name>
+	<description>Some sounds</description>
+	<website>http://garzul.tonsite.biz/</website>
+	<email>grz.zrg_AT_gmail_DOT_com</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>jeanbrut</nickname>
+	<name>Olivier MILITON</name>
+	<description>Music</description>
+	<website>http://www.soundclick.com/oliviermiliton</website>
+	<email>jeanbrut_AT_free_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Koumis</nickname>
+	<name>Koumis Production</name>
+	<description>Sounds</description>
+	<website>http://koumis.com/soundfx.htm</website>
+	<email>info_AT_koumis_DOT_com</email>
+      </author>
+      <author>
+	<nickname>Lionel</nickname>
+	<name>Lionel ALLORGE</name>
+	<description>Sounds</description>
+	<website>http://www.lunerouge.com/</website>
+	<email>lallorge_AT_april_DOT_org</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Mike</nickname>
+	<name>Mike Errecart</name>
+	<description>Monkey bubble music</description>
+	<email>mike.errecart_AT_gmail_DOT_com</email>
+	<country>France</country>
+      </author>
+    </section>
+    <section title="Graphics">
+      <author>
+	<nickname>Adriana</nickname>
+	<name>Adriana CHIRITA</name>
+	<description>Draw Japon map</description>
+	<email>adriana.chirita_AT_utbm_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Ahriman</nickname>
+	<name>Tomasz MAJBAUM</name>
+	<description>Draw the map Hell</description>
+	<email>anunnaki_AT_o2_DOT_pl</email>
+	<country>Poland</country>
+      </author>
+      <author>
+	<nickname>Alexandre</nickname>
+	<name>Alexandre NORMAN</name>
+	<description>Send us two maps (arbre and prehistorik)</description>
+	<email>norman_AT_freesurf_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Bertrand</nickname>
+	<name>Bertrand GAFFET</name>
+	<description>Author of the skin Schtroumpf</description>
+	<email>zbertrouf6111_AT_yahoo_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Colin</nickname>
+	<name>Colin DIDIER</name>
+	<description>SuperTux weapon</description>
+	<email>colin.didier_AT_utbm_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Dino</nickname>
+	<name>Dino GHILARDI</name>
+	<description>Send us a lot of beautiful graphics (like skin "ball" or map "cubism3")</description>
+	<email>dinoghi_AT_tin_DOT_it</email>
+	<country>Italy</country>
+      </author>
+      <author>
+	<nickname>Glenn</nickname>
+	<name>Glenn ROLLAND</name>
+	<description>Draw the map Battle Night</description>
+	<email>glenux_AT_gmail_DOT_com</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>JLedN</nickname>
+	<name>Jeremie LEDENTU</name>
+	<description>Draw the map EasterIsland</description>
+	<email>jledn_AT_voila_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Jeese</nickname>
+	<name>JS</name>
+	<description>Draw the map EasterIsland</description>
+	<email>jeeseverly_AT_yahoo_dot_fr</email>
+	<country>france</country>
+      </author>
+      <author>
+	<nickname>Michael</nickname>
+	<name>Michael PRAGER</name>
+	<description>Map pirates. Also: Gentoo package maintainer (prepare ebuilds), German translation of Wormux</description>
+	<email>X_X_L_AT_gmx_DOT_net</email>
+	<country>Germany</country>
+      </author>
+      <author>
+	<nickname>mmbenya</nickname>
+	<name>Matt Benya</name>
+	<description>Some maps</description>
+	<email>mmbenya_AT_primatestudios_DOT_com</email>
+	<country>Germany</country>
+      </author>
+      <author>
+	<nickname>Papa Coen</nickname>
+	<name>Coen Schalkwijk</name>
+	<description>Draw Crystal map</description>
+	<email>Papa.Coen_AT_gmail_DOT_com</email>
+	<country>The Netherlands</country>
+      </author>
+      <author>
+	<nickname>Piotr</nickname>
+	<name>Piotr POKOJOWCZYK</name>
+	<description>Draw the map Dinos and the skin Dude</description>
+	<email>rashid_AT_vp_DOT_pl</email>
+	<country>Poland</country>
+      </author>
+      <author>
+	<nickname>tgm</nickname>
+	<name>C.A</name>
+	<description>Map 'FunkyIsland'</description>
+	<email>warcraftiii-projekt_AT_gmx_DOT_de</email>
+      </author>
+      <author>
+	<nickname>Toon</nickname>
+	<name>Toon VERSTRAELEN</name>
+	<description>Map 'Leafs'</description>
+	<email>Toon.Verstraelen_AT_ugent_DOT_be</email>
+	<country>Belgium</country>
+      </author>
+      <author>
+	<nickname>Yann</nickname>
+	<name>Yann BARB</name>
+	<description>SuperTux weapon</description>
+	<email>yann.barb_AT_utbm_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>yz</nickname>
+	<name>Thomas GUITTONNEAU</name>
+	<description>Author of the skin called "Wougzy"</description>
+	<email>yz_AT_yznah_DOT_net</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Ziolive</nickname>
+	<name>Olivier BOYER</name>
+	<description>Wormux 0.7 menu graphics, some maps, some weapons</description>
+	<website>http://cakesound.free.fr/</website>
+	<email>ziolive_AT_gmail_DOT_com</email>
+	<country>France</country>
+      </author>
+    </section>
+  </contributors>
+
+  <thanks>
+    <section title="To">
+      <author>
+	<nickname>Denis</nickname>
+	<name>Denis DEVEDJIAN</name>
+	<description>CSS stylesheet for our old website</description>
+	<email>ddevedjian_AT_tema.rms_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>Mastzi team</nickname>
+	<name>Harry STORBACKA and Kenneth GANGSTOE</name>
+	<description>Thanks to share the code of your game Mastzi (dead project)</description>
+	<website>http://mastzi.sourceforge.net/</website>
+      </author>
+      <author>
+	<nickname>SDL team</nickname>
+	<name>All SDL Authors</name>
+	<description>Thanks for this nice library</description>
+	<website>http://www.libsdl.org/</website>
+      </author>
+      <author>
+	<nickname>Xavier</nickname>
+	<name>Xavier VELLO</name>
+	<description>Tester of Linux version</description>
+	<email>xavier66_AT_free_DOT_fr</email>
+	<country>France</country>
+      </author>
+      <author>
+	<nickname>xbill team</nickname>
+	<name>Brian WELLINGTON and Matias DUARTE</name>
+	<description>Authors of funny xbill game</description>
+	<website>http://www.xbill.org/</website>
+      </author>
+    </section>
+  </thanks>
+
+</authors>

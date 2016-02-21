@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <name>Thunderbird Team</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="Thunderbird" skin="thunderbirdteam" />
+    <character name="Gibson" skin="thunderbirdteam" />
+    <character name="Phorusrhacidae" skin="thunderbirdteam" />
+    <character name="Dromornithidae" skin="thunderbirdteam" />
+    <character name="Train" skin="thunderbirdteam" />
+    <character name="Ford" skin="thunderbirdteam" />
+    <character name="Triumph" skin="thunderbirdteam" />
+    <character name="Royal Enfield" skin="thunderbirdteam" />
+    <character name="Albuquerque" skin="thunderbirdteam" />
+    <character name="UBC" skin="thunderbirdteam" />
+    <character name="Hamilton" skin="thunderbirdteam" />
+    <character name="Seattle" skin="thunderbirdteam" />
+    <character name="squadron" skin="thunderbirdteam" />
+    <character name="missile" skin="thunderbirdteam" />    
+  </team>
+</resources>

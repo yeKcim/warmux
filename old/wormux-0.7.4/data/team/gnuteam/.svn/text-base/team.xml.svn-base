@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <name>Gnu Team</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="Connochaetes Taurinus" skin="gnuteam" />
+    <character name="Connochaetes gnu" skin="gnuteam" />
+    <character name="Not UNIX" skin="gnuteam" />
+    <character name="Linux" skin="gnuteam" />
+    <character name="Hurd" skin="gnuteam" />
+    <character name="Emacs" skin="gnuteam" />
+    <character name="Compiler Collection" skin="gnuteam" />
+    <character name="Arch" skin="gnuteam" />
+    <character name="Debugger" skin="gnuteam" />
+    <character name="Savannah" skin="gnuteam" />
+  </team>
+</resources>

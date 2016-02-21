@@ -1,0 +1,41 @@
+****************************************************************************************
+					RESUMO
+****************************************************************************************
+
+	  isto é información relativa á organización do código fonte do Wormux
+
+****************************************************************************************
+		    Tradución  ao GALEGO por Adrián Chaves Fernández
+			do Proxecto Trasno (http://www.trasno.net)
+****************************************************************************************
+
+O código fonte do Wormux compártese en varias partes:
+
+/cmake = para usuarios de cmake
+/data = imaxes, sons, mapas, skins...
+/doc = licenza, documentación, readme, e este ficheiro.
+/m4 = autotools
+/mac = scripts para compilalo en Mac OS (with fink or macports libraries)
+/po = traducións (todas as linguas)
+
+/src = código fonte
+/src/ai = intelixencia artificial
+/src/character = manexo das personaxes e mailos seus movementos
+/src/game = bucle do xogo, inicialización, xestión do reloxo
+/src/graphic = interface C++ entre SDL_Surface, xestión de Sprite, xestión de texto.
+/src/gui = todo o relativo ás widgets (botón, casiña, ...)
+/src/include = ficheiros para xestionar accións, paquetes, everything manage after by action handler
+/src/interface = control do teclado e do rato, pantalla de carga, bottom pad durante o xogo, menú das armas.
+/src/map = xestión dos mapas, amosar partículas, vento, auga e cámara de gravación.
+/src/menu = todos os menús
+/src/msvc = ficheiro necesario para as fiestras
+/src/network = funcións para a rede, e só a rede!
+/src/object = motor da física con clases Physics e PhysicalObj, caixa de bonificación, barrís
+/src/particles = xerador de partículas (lume, fume,...)
+/src/team = equipos
+/src/tool = xestor de recursos, módulo de debug, punto, esquina,....
+/src/sound = o jukebox, un xestor de recursos só para sons
+/src/weapon = código fonte das armas
+
+/tool = un comprobador de ficheiros para comprobar a integridade dos ficheiros xml (skins), howplay (pdf) sacado da wiki, calquera cousa necesaria para a compilación en Windows e código fonte do servidor índice.
+/visual = ficheiros do proxecto para Visual Studio (Microsoft)

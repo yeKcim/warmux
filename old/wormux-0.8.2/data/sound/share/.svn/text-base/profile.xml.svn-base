@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE profile SYSTEM "../profile.dtd">
+<profile>
+  <sound sample="box/falling" file="box_falling.ogg" />
+  <sound sample="box/hitting_ground" file="box_hitting_ground.ogg" />
+  <sound sample="box/picking_up" file="box_picking_up.ogg" />
+
+  <sound sample="change_weapon" file="menu/weapon_menu_toggled.ogg" />
+  <sound sample="character/change_in_same_team" file="character_change.ogg" />
+
+  <sound sample="countdown-end_turn" file="countdown-endturn.ogg" />
+  <sound sample="end_turn" file="end_turn.ogg" />
+  <sound sample="start_turn" file="start_turn.ogg" />
+
+  <sound sample="menu/cancel" file="menu/cancel.ogg" />
+  <sound sample="menu/clic" file="menu/clic.ogg" />
+  <sound sample="menu/error" file="menu/error.ogg" />
+  <sound sample="menu/ok" file="menu/ok.ogg" />
+  <sound sample="menu/weapon_menu_hide" file="menu/weapon_menu_toggled.ogg" />
+  <sound sample="menu/weapon_menu_show" file="menu/weapon_menu_toggled.ogg" />
+  <sound sample="menu/newcomer" file="weapon/teleport_start.ogg" />
+
+  <sound sample="music/grenouilles" file="frog_music.ogg" />
+  <sound sample="sink" file="../default/sink.ogg" />
+
+  <sound sample="victory" file="victory.ogg" />
+
+  <sound sample="weapon/aircraft_bomb_falling" file="weapon/aircraft_bomb_falling.ogg" />
+  <sound sample="weapon/aircraft_flying" file="weapon/aircraft_flying.ogg" />
+  <sound sample="weapon/airhammer" file="weapon/airhammer_used.ogg" />
+  <sound sample="weapon/airhammer_select" file="weapon/airhammer_selected.ogg" />
+  <sound sample="weapon/anvil_collision" file="weapon/anvil_collision.ogg" />
+  <sound sample="weapon/anvil_fall" file="weapon/anvil_fall.ogg" />
+  <sound sample="weapon/automatic_rocket_flying" file="weapon/supertux_flying.ogg" />
+  <sound sample="weapon/baseball" file="weapon/baseball.ogg" />
+  <sound sample="weapon/disco_grenade_bounce" file="weapon/grenade_bounce.ogg" />
+  <sound sample="weapon/disco_grenade_music" file="weapon/disco_grenade_music.ogg" />
+  <sound sample="weapon/dynamite_exp"    file="weapon/dynamite_exp.ogg" />
+  <sound sample="weapon/dynamite_fuze"   file="weapon/dynamite_fuze.ogg" />
+  <sound sample="weapon/explosion" file="explosion.ogg" />
+  <sound sample="weapon/flamethrower" file="weapon/flame.ogg" />
+  <sound sample="weapon/gnu_bounce" file="weapon/gnu_bounce.ogg" />
+  <sound sample="weapon/grapple_attaching" file="weapon/grapple_attaching.ogg" />
+  <sound sample="weapon/grapple_cable" file="weapon/grapple_cable.ogg" />
+  <sound sample="weapon/grapple_detaching" file="weapon/grapple_detaching.ogg" />
+  <sound sample="weapon/grenade_bounce"  file="weapon/grenade_bounce.ogg" />
+  <sound sample="weapon/footbomb_bounce"  file="weapon/footbomb_bounce.ogg" />
+  <sound sample="weapon/gun" file="weapon/gun.ogg" />
+  <sound sample="weapon/load" file="weapon/load.ogg" />
+  <sound sample="weapon/m16" file="weapon/m16.ogg" />
+  <sound sample="weapon/mine_beep" file="weapon/mine_beep.ogg" />
+  <sound sample="weapon/ricoche1" file="weapon/ricoche1.ogg" />
+  <sound sample="weapon/ricoche2" file="weapon/ricoche2.ogg" />
+  <sound sample="weapon/ricoche3" file="weapon/ricoche3.ogg" />
+  <sound sample="weapon/riot_bomb_exp"    file="weapon/riot_bomb_exp.ogg" />
+  <sound sample="weapon/riotbomb_rocket_flying" file="weapon/supertux_flying.ogg" />
+  <sound sample="weapon/rocket_flying" file="weapon/supertux_flying.ogg" />
+  <sound sample="weapon/shotgun" file="weapon/shotgun.ogg" />
+  <sound sample="weapon/suicide" file="weapon/commit_suicide.ogg" />
+  <sound sample="weapon/slap" file="weapon/slap.ogg" />
+  <sound sample="weapon/supertux_flying" file="weapon/supertux_flying.ogg" />
+  <sound sample="weapon/supertux_swimming" file="weapon/supertux_swimming.ogg" />
+  <sound sample="weapon/teleport_end" file="weapon/teleport_land.ogg" />
+  <sound sample="weapon/teleport_start" file="weapon/teleport_start.ogg" />
+  <sound sample="weapon/cluzooka_shot" file="weapon/cluzooka_shot.ogg" />
+  <sound sample="weapon/cluzooka_hit" file="weapon/cluzooka_hit.ogg" />
+</profile>

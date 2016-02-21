@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <equipe>
+    <nom>Poulpe</nom>
+    <ver nom="Octopus vulgaris" avatar="poulpe" />
+    <ver nom="Patrick" avatar="poulpe" />
+    <ver nom="Octopussy" avatar="poulpe" />
+    <ver nom="Jade" avatar="poulpe" />
+    <ver nom="Eledone cirrhosa" avatar="poulpe" />
+    <ver nom="Octopus dofleini" avatar="poulpe" />
+  </equipe>
+  <surface name="flag" file="flag.png" />
+</resources>

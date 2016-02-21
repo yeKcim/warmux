@@ -1,0 +1,13 @@
+TARGET          sdlmain.lib
+TARGETTYPE      lib
+
+SOURCEPATH      src 
+SOURCE          sdllib.cpp
+
+SYSTEMINCLUDE   inc
+SYSTEMINCLUDE   \epoc32\include .\inc\internal
+SYSTEMINCLUDE   \epoc32\include\platform
+SYSTEMINCLUDE   \epoc32\include\platform\app
+SYSTEMINCLUDE   \epoc32\include\platform\mw
+SYSTEMINCLUDE   \epoc32\include\mw
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT authors (team,contributors,thanks)>
+<!ELEMENT team (section+)>
+<!ELEMENT contributors (section+)>
+<!ELEMENT thanks (section+)>
+<!ELEMENT section (author+)>
+<!ATTLIST section title CDATA #REQUIRED>
+
+<!ELEMENT author (nickname,name?,description,website?,email?,country?)>
+<!ELEMENT nickname (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT website (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT country (#PCDATA)>

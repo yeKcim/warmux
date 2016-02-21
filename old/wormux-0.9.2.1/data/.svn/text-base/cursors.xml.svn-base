@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources SYSTEM "cursors.dtd" []>
+<resources>
+
+<section name="mouse">
+  <mouse_cursor name="pointer_select" file="interface/whitetheme/cursors/hand-cursor.png" x="2" y="1" />
+  <mouse_cursor name="pointer_move" file="interface/whitetheme/cursors/hand-move.png" x="3" y="5" />
+  <mouse_cursor name="pointer_aim" file="interface/whitetheme/cursors/hand-fire.png" x="7" y="10" />
+  <mouse_cursor name="pointer_arrow_up" file="interface/whitetheme/cursors/arrow-top.png" x="10" y="0" />
+  <mouse_cursor name="pointer_arrow_right" file="interface/whitetheme/cursors/arrow-right.png" x="28" y="9" />
+  <mouse_cursor name="pointer_arrow_left" file="interface/whitetheme/cursors/arrow-left.png" x="1" y="9" />
+  <mouse_cursor name="pointer_arrow_down" file="interface/whitetheme/cursors/arrow-down.png" x="10" y="29" />
+  <mouse_cursor name="pointer_arrow_up_right" file="interface/whitetheme/cursors/arrow-top.right.png" x="23" y="1" />
+  <mouse_cursor name="pointer_arrow_up_left" file="interface/whitetheme/cursors/arrow-top.left.png" x="2" y="1" />
+  <mouse_cursor name="pointer_arrow_down_right" file="interface/whitetheme/cursors/arrow-down.right.png" x="24" y="22" />
+  <mouse_cursor name="pointer_arrow_down_left" file="interface/whitetheme/cursors/arrow-down.left.png" x="2" y="24" />
+  <mouse_cursor name="pointer_attack_from_left" file="interface/whitetheme/cursors/here-from-left.png" x="30" y="14" />
+  <mouse_cursor name="pointer_attack_from_right" file="interface/whitetheme/cursors/here-from-right.png" x="29" y="14" />
+</section>
+
+</resources>

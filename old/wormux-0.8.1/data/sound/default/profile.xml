@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE profile SYSTEM "../profile.dtd">
+<profile>
+  <sound sample="step" file="step.ogg" />
+  <sound sample="jump" file="hop_01.ogg" />
+  <sound sample="superjump" file="superjump_01.ogg" />
+
+  <sound sample="death" file="death_01.ogg" />
+  <sound sample="death" file="death_02.ogg" />
+  <sound sample="suicide" file="suicide_01.ogg" />
+
+  <sound sample="injured_light" file="uuh_01.ogg" />
+  <sound sample="injured_light" file="uuh_02.ogg" />
+  <sound sample="injured_light" file="uuh_03.ogg" />
+  <sound sample="injured_light" file="uuh_04.ogg" />
+  <sound sample="injured_medium" file="uuh_05.ogg" />
+  <sound sample="injured_medium" file="uuh_06.ogg" />
+  <sound sample="injured_high" file="uuh_07.ogg" />
+  <sound sample="injured_high" file="uuh_08.ogg" />
+
+  <sound sample="sink" file="sink.ogg" />
+  <sound sample="out" file="out_01.ogg" />
+
+  <sound sample="fire" file="fire_01.ogg" />
+  <sound sample="fire" file="fire_02.ogg" />
+
+  <sound sample="friendly_fire" file="crazy_01.ogg" />
+  <sound sample="friendly_fire" file="crazy_02.ogg" />
+  <sound sample="friendly_fire" file="crazy_03.ogg" />
+  <sound sample="friendly_fire" file="crazy_04.ogg" />
+  <sound sample="friendly_fire" file="crazy_05.ogg" />
+
+  <sound sample="skip_turn" file="skip_turn.ogg" />
+
+  <sound sample="weapon/jetpack" file="../share/weapon/jetpack.ogg" />
+</profile>

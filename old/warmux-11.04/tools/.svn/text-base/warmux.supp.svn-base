@@ -1,0 +1,57 @@
+# X11 as invoked by SDL leaking
+# Following syntax doesn't work everywhere:
+#  ...
+#  fun:SDL_VideoInit
+#  ...
+#  fun:_ZN5Video7InitSDLEv
+{
+  SDL and X11 leaking
+  Memcheck:Leak
+  fun:malloc
+  obj:/usr/lib/libX11.so.*
+  fun:...
+  fun:SDL_VideoInit
+}
+
+{
+  SDL and X11 leaking v2
+  Memcheck:Leak
+  fun:realloc
+  obj:/usr/lib/libX11.so.*
+}
+
+{
+  SDL leaking on dlopen
+  Memcheck:Leak
+  fun:calloc
+  obj:/lib/ld-*.so
+}
+
+{
+  SDL leaking on dlopen v2
+  Memcheck:Leak
+  fun:malloc
+  obj:/lib/ld-*.so
+}
+
+{
+  SDL leaking on dlopen v3
+  Memcheck:Leak
+  fun:calloc
+  obj:/lib/i686/cmov/libdl-*.so
+}
+
+{
+  SDL_gfx leaking static memory
+  Memcheck:Leak
+  fun:malloc
+  fun:filledPolygonColorMT
+}
+
+{
+  SDL and X11 leaking v3
+  Memcheck:Leak
+  fun:malloc
+  fun:...
+  fun:XSetLocaleModifiers
+}

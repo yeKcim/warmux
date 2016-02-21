@@ -1,0 +1,582 @@
+# Romanian translation of the Wormux messages.
+# Copyright (C) YEAR Wormux Development Team
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Eddy Petrişor <eddy.petrisor AT gmail.com>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: ro\n"
+"Report-Msgid-Bugs-To: wormux-dev AT gna.org\n"
+"PO-Revision-Date: 2006-02-20 00:37+0200\n"
+"Last-Translator: Eddy Petrişor <eddy.petrisor AT gmail.com>\n"
+"Language-Team: Romanian <debian-l10n-romanian AT lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3;plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1))\n"
+"X-Generator: KBabel 1.11.1\n"
+
+#: src/game/game.cpp:137 src/game/game.cpp:177
+#, c-format
+msgid "  Most sold-out :  %s (%i).\n"
+msgstr "  Cel mai mare trădător :  %s (%i).\n"
+
+#: src/game/game.cpp:135 src/game/game.cpp:175
+#, c-format
+msgid "  Most usefull  :  %s (%i).\n"
+msgstr "  Cel mai folositor     :  %s (%i).\n"
+
+#: src/game/game.cpp:136 src/game/game.cpp:176
+#, c-format
+msgid "  Most useless  :  %s (%i).\n"
+msgstr "  Cel mai inutil        :  %s (%i).\n"
+
+#: src/game/game.cpp:134 src/game/game.cpp:174
+#, c-format
+msgid "  Most violent  :  %s (%i).\n"
+msgstr "  Cel mai violent       :  %s (%i).\n"
+
+#: src/map/maps_list.cpp:291
+#, c-format
+msgid "! Map %s not found :-("
+msgstr "! Harta %s nu a fost găsită :-("
+
+#: src/game/game_loop.cpp:677
+#, c-format
+msgid "%s (%s team) has died."
+msgstr "%s (echipa %s) a murit."
+
+#: src/map/maps_list.cpp:110
+#, c-format
+msgid "%s <%s> aka %s from %s"
+msgstr "%s <%s> cunoscut şi ca %s din %s"
+
+#: src/map/maps_list.cpp:117
+#, c-format
+msgid "%s <%s> from %s"
+msgstr "%s <%s> din %s"
+
+#: src/game/game_loop.cpp:655
+#, c-format
+msgid "%s commits suicide !"
+msgstr "%s se sinucide !"
+
+#: src/graphic/fps.cpp:107
+#, c-format
+msgid "%s fps"
+msgstr "%s C/S"
+
+#: src/game/game_loop.cpp:648
+#, c-format
+msgid "%s has fallen in water."
+msgstr "%s a căzut în apă."
+
+#: src/game/game_loop.cpp:659
+#, c-format
+msgid "%s has fallen off the map!"
+msgstr "%s a căzut în afara hărţii!"
+
+#: src/object/bonus_box.cpp:160
+#, c-format
+msgid "%s has lost %u point of energy."
+msgid_plural "%s has lost %u points of energy."
+msgstr[0] "%s a pierdut %u punct de energie."
+msgstr[1] "%s a pierdut %u puncte de energie."
+msgstr[2] "%s a pierdut %u de puncte de energie."
+
+#: src/object/bonus_box.cpp:151
+#, c-format
+msgid "%s has won %u point of energy!"
+msgid_plural "%s has won %u points of energy!"
+msgstr[0] "%s a câştigat %u punct de energie!"
+msgstr[1] "%s a câştigat %u puncte de energie!"
+msgstr[2] "%s a câştigat %u de puncte de energie!"
+
+#: src/game/game_loop.cpp:670
+#, c-format
+msgid "%s is a psychopath, he has killed a member of %s team!"
+msgstr "Psihopatia sălăşluieşte în %s, a omorât un membru al echipei %s!"
+
+# what about female names?
+#: src/game/game_loop.cpp:665
+#, c-format
+msgid "%s is dead because he is clumsy!"
+msgstr "%s decedat prin propria stângăcie!"
+
+#: src/weapon/mine.cpp:223
+#, c-format
+msgid "%s is next to a mine!"
+msgstr "%s e lângă o mină!"
+
+#: src/object/bonus_box.cpp:178
+#, c-format
+msgid "%s team has won %u automatic bazooka!"
+msgid_plural "%s team has won %u automatic bazookas!"
+msgstr[0] "Echipa %s a câştigat %u bazucă automată!"
+msgstr[1] "Echipa %s a câştigat %u bazuci automate!"
+msgstr[2] "Echipa %s a câştigat %u de bazuci automate!"
+
+#: src/object/bonus_box.cpp:188
+#, c-format
+msgid "%s team has won %u stick of dynamite!"
+msgid_plural "%s team has won %u sticks of dynamite!"
+msgstr[0] "Echipa %s a câştigat %u baton de dinamită!"
+msgstr[1] "Echipa %s a câştigat %u batoane de dinamită!"
+msgstr[2] "Echipa %s a câştigat %u de batoane de dinamită!"
+
+#: src/object/bonus_box.cpp:142
+#, c-format
+msgid "%s team has won %u teleportation."
+msgid_plural "%s team has won %u teleportations."
+msgstr[0] "Echipa %s a câştigat %u teleportare."
+msgstr[1] "Echipa %s a câştigat %u teleportări."
+msgstr[2] "Echipa %s a câştigat %u de teleportări."
+
+#: src/game/game.cpp:183
+#, c-format
+msgid "%s team has won.\n"
+msgstr "Echipa %s a câştigat.\n"
+
+#: src/object/bonus_box.cpp:169
+#, c-format
+msgid "'%s has won %u air attack"
+msgid_plural "'%s has won %u air attacks"
+msgstr[0] "'%s a câştigat %u atac aerian"
+msgstr[1] "'%s a câştigat %u atacuri aeriene"
+msgstr[2] "'%s a câştigat %u de atacuri aeriene"
+
+#: src/interface/interface.cpp:176
+msgid "(dead)"
+msgstr "(mort)"
+
+#: src/interface/interface.cpp:220
+msgid "(unlimited)"
+msgstr "(infinit)"
+
+#: src/map/maps_list.cpp:131
+msgid "<infinite_background> needs <is_open> to be set to work correctly!!"
+msgstr ""
+"<infinite_background> are nevoie ca <is_open> să fie activ pentru a "
+"funcţiona corect!!"
+
+#: src/object/bonus_box.cpp:173 src/weapon/air_attack.cpp:169
+msgid "Air attack"
+msgstr "Atac aerian"
+
+#: src/game/game.cpp:173
+msgid "All-Team results:\n"
+msgstr "Rezultate generale:\n"
+
+#: src/main.cpp:187
+msgid "Authors:"
+msgstr "Autori:"
+
+#: src/object/bonus_box.cpp:182 src/weapon/auto_bazooka.cpp:154
+msgid "Automatic bazooka"
+msgstr "Bazucă automată"
+
+#: src/weapon/baseball.cpp:30
+msgid "Baseball"
+msgstr "Bâtă de basebal"
+
+#: src/weapon/bazooka.cpp:101
+msgid "Bazooka"
+msgstr "Bazuca"
+
+#: src/main.cpp:92
+msgid "C++ exception caught:"
+msgstr "O excepţie C++ a fost captată:"
+
+#: src/team/teams_list.cpp:423 src/team/teams_list.cpp:448
+#, c-format
+msgid "Can't find team %s!"
+msgstr "Echipa %s nu poate fi găsită!"
+
+#: src/team/teams_list.cpp:124 src/team/teams_list.cpp:139
+#, c-format
+msgid "Cannot open teams directory (%s)!"
+msgstr "Directorul cu echipe nu poate fi deschis (%s)!"
+
+#: src/weapon/cluster_bomb.cpp:235
+msgid "ClusterBomb"
+msgstr "Bombă cu schije"
+
+#: src/weapon/suicide.cpp:38
+msgid "Commit suicide"
+msgstr "Suicid"
+
+#: src/menu/main_menu.cpp:172
+msgid "Credits"
+msgstr "Merite"
+
+#: src/menu/options_menu.cpp:87
+msgid "Display player energy?"
+msgstr "Se afişează energia jucătorului?"
+
+#: src/menu/options_menu.cpp:90
+msgid "Display player's name?"
+msgstr "Se afişează numele jucătorului?"
+
+#: src/menu/options_menu.cpp:84
+msgid "Display wind particles?"
+msgstr "Se afişează particulele de vânt?"
+
+#: src/game/game.cpp:230
+msgid "Do you really want to quit? (Y/N)"
+msgstr "Chiar doriţi să abandonaţi? (D/N)"
+
+#: src/menu/options_menu.cpp:110
+msgid "Duration of a turn:"
+msgstr "Durata unei ture:"
+
+#: src/menu/options_menu.cpp:115
+msgid "Duration of the end of a turn:"
+msgstr "Durata sfârşitului de tură:"
+
+#: src/object/bonus_box.cpp:192 src/weapon/dynamite.cpp:126
+msgid "Dynamite"
+msgstr "Dinamită"
+
+#: src/game/game.cpp:179
+msgid "End of the game!\n"
+msgstr "Jocul s-a terminat!\n"
+
+#: src/interface/interface.cpp:111
+msgid "Energy:"
+msgstr "Energie:"
+
+#: src/team/skin.cpp:119
+#, c-format
+msgid "Error during loading skin %s:"
+msgstr "Eroare în timpul încărcării aspectului %s:"
+
+#. TRANSLATORS: This marks an error in file %s at line %lu
+#: src/tool/error.cpp:69
+#, c-format
+msgid "Error in %s:%lu"
+msgstr "Eroare în %s:%lu"
+
+#: src/team/team.cpp:91
+#, c-format
+msgid "Error loading team %s:"
+msgstr "Eroare la încărcarea echipei %s:"
+
+#: src/game/config.cpp:264
+#, c-format
+msgid "Error while creating directory \"%s\": unable to store configuration file."
+msgstr ""
+"Eroare în timpul creări directorului „%s”: fişierul de configurare nu poate "
+"fi stocat."
+
+#: src/game/config.cpp:116
+#, c-format
+msgid "Error while loading configuration file: %s"
+msgstr "Eroare în timpul încărcări fişierul de configurare: %s"
+
+#: src/game/game_mode.cpp:153
+#, c-format
+msgid "Error while loading game mode %s (file %s):"
+msgstr "Eroare în timpul încărcări modului de joc %s (fişierul %s):"
+
+#: src/game/game.cpp:271
+#, c-format
+msgid ""
+"Error:\n"
+"%s"
+msgstr ""
+"Eroare:\n"
+"%s"
+
+#: src/team/team.cpp:162
+#, c-format
+msgid "Error: can't find the skin \"%s\" for the team \"%s\"."
+msgstr "Eroare: aspectul „%s” pentru echipa „%s” nu poate fi găsit."
+
+#: src/game/game_loop.cpp:186
+msgid "Find a random position for characters"
+msgstr "Se caută o pozitie aleatoare pentru personaje"
+
+#: src/menu/options_menu.cpp:81
+msgid "Fullscreen?"
+msgstr "Tot ecranul?"
+
+#: src/menu/options_menu.cpp:108
+msgid "Game options"
+msgstr "Opţiuni ale jocului"
+
+#: src/menu/options_menu.cpp:71
+msgid "Graphic options"
+msgstr "Opţiuni grafice"
+
+#: src/weapon/grenade.cpp:175
+msgid "Grenade"
+msgstr "Grenadă"
+
+#: src/map/ground.cpp:48
+msgid "Ground initialization..."
+msgstr "Iniţializare teren..."
+
+#: src/weapon/gun.cpp:79
+msgid "Gun"
+msgstr "Pistol"
+
+#: src/tool/file_tools.cpp:60
+msgid "HOME directory (environment variable $HOME) could not be found!"
+msgstr "Directorul personal (variabila de mediu $HOME) nu a putut fi găsit!"
+
+#: src/menu/options_menu.cpp:125
+msgid "Initial energy:"
+msgstr "Energie iniţială:"
+
+#: src/game/game_loop.cpp:235
+msgid "Initialisation"
+msgstr "Iniţializare"
+
+#: src/main.cpp:164
+#, c-format
+msgid "Initialisation of TTF library failed: %s"
+msgstr "Iniţializarea bibiliotecii TTF a eşuat: %s"
+
+#: src/game/game_loop.cpp:132
+msgid "Initialise data"
+msgstr "Iniţializare date"
+
+#: src/game/game_loop.cpp:192
+msgid "Initialise objects"
+msgstr "Iniţializare obiecte"
+
+#: src/game/game_loop.cpp:84
+msgid "Initialise teams"
+msgstr "Iniţializare echipe"
+
+#: src/game/game_loop.cpp:80
+msgid "Load map"
+msgstr "Încărcare hartă"
+
+#: src/map/maps_list.cpp:222
+msgid "Load maps:"
+msgstr "Încărcare hărţi:"
+
+#: src/team/skin.cpp:291
+msgid "Load skins:"
+msgstr "Încărcare aspecte:"
+
+#: src/team/teams_list.cpp:113
+msgid "Load teams:"
+msgstr "Încărcare echipe:"
+
+#: src/map/map.cpp:278
+#, c-format
+msgid "Map %s, a creation of :"
+msgstr "Harta %s, o creaţie a lui :"
+
+#: src/menu/options_menu.cpp:76
+msgid "Maximum number of FPS:"
+msgstr "Numărul maxim de C/S:"
+
+#. TRANSLATORS: mine = the weapon name
+#: src/weapon/mine.cpp:291
+msgid "Mine"
+msgstr "Mină"
+
+#: src/menu/options_menu.cpp:100
+msgid "Music?"
+msgstr "Muzică?"
+
+#: src/interface/interface.cpp:110
+msgid "Name:"
+msgstr "Nume:"
+
+#: src/menu/main_menu.cpp:157
+msgid "Network Game"
+msgstr "Joc în reţea"
+
+#: src/weapon/weapon.cpp:550
+#, c-format
+msgid "No element <%s> found in the xml config file!"
+msgstr "Nu a fost găsit nici un element <%s> în fisierul xml de configurare!"
+
+#: src/game/game.cpp:79
+msgid "Nobody"
+msgstr "Nimeni"
+
+#: src/menu/options_menu.cpp:120
+msgid "Number of players per team:"
+msgstr "Jucători per echipă:"
+
+#: src/menu/main_menu.cpp:166
+msgid "Options"
+msgstr "Opţiuni"
+
+#: src/game/game.cpp:281
+msgid "Pause"
+msgstr "Pauză"
+
+#: src/menu/main_menu.cpp:150
+msgid "Play"
+msgstr "Porneşte jocul"
+
+#: src/main.cpp:181
+msgid "Please tell us your opinion of Wormux via email:"
+msgstr "Vă rugăm să ne spuneţi părerea dvs. despre Wormux prin poştă electronică:"
+
+#: src/menu/main_menu.cpp:178
+msgid "Quit"
+msgstr "Ieşire"
+
+#: src/main.cpp:170
+msgid "Quit Wormux"
+msgstr "Ieşire din Wormux"
+
+#: src/main.cpp:217
+msgid "Run game"
+msgstr "Rulează jocul"
+
+#: src/menu/game_menu.cpp:65
+msgid "Select the teams:"
+msgstr "Selectaţi echipele:"
+
+#: src/menu/game_menu.cpp:104
+msgid "Select the world:"
+msgstr "Selectaţi lumea:"
+
+#: src/menu/options_menu.cpp:103
+msgid "Sound effects?"
+msgstr "Efecte sonore?"
+
+#: src/menu/options_menu.cpp:95
+msgid "Sound options"
+msgstr "Opţiuni sunet"
+
+#: src/game/game.cpp:73
+msgid "Starting a new game"
+msgstr "Se începe un nou joc"
+
+#: src/interface/interface.cpp:113
+msgid "Stock:"
+msgstr "Stoc:"
+
+#: src/game/game.cpp:133
+#, c-format
+msgid "Team %s results:\n"
+msgstr "Rezultatele echipei %s:\n"
+
+#: src/object/bonus_box.cpp:146 src/weapon/teleportation.cpp:40
+msgid "Teleportation"
+msgstr "Teleportare"
+
+#: src/weapon/auto_bazooka.cpp:136
+msgid "The automatic rocket has left the battlefield..."
+msgstr "Racheta automată a părăsit câmpul de luptă..."
+
+#: src/game/game.cpp:187
+msgid "The game has ended as a draw.\n"
+msgstr "Jocul s-a terminat cu scor egal.\n"
+
+#: src/weapon/bazooka.cpp:90 src/weapon/cluster_bomb.cpp:89
+msgid "The rocket left the battlefield..."
+msgstr "Racheta a părăsit câmpul de luptă..."
+
+#: src/graphic/video.cpp:121
+#, c-format
+msgid "Unable to initialize SDL library: %s"
+msgstr "Nu a fost posibilă iniţializarea bibliotecii SDL: %s"
+
+#: src/map/maps_list.cpp:233 src/map/maps_list.cpp:249
+#, c-format
+msgid "Unable to open maps directory (%s)!"
+msgstr "Nu a fost posibilă deschiderea directorului cu hărţi (%s)!"
+
+#: src/team/skin.cpp:303 src/team/skin.cpp:319
+#, c-format
+msgid "Unable to open skins directory (%s)!"
+msgstr "Nu a fost posibilă deschiderea directorului cu aspecte (%s)!"
+
+#: src/main.cpp:98
+msgid "Unexcepted exception caught..."
+msgstr "S-a captat o excepţie neaştepată..."
+
+#: src/game/game_loop.cpp:160
+msgid "Unknow action"
+msgstr "Acţiune necunoscută"
+
+#: src/main.cpp:138
+msgid "Version"
+msgstr "versiunea"
+
+#: src/game/game_loop.cpp:70
+msgid "Wait for clients"
+msgstr "Se aşteaptă clienţii"
+
+#: src/game/game_loop.cpp:154
+msgid "Wait for map"
+msgstr "Se aşteaptă harta"
+
+#: src/game/game_loop.cpp:151
+msgid "Wait for server"
+msgstr "Se aşteaptă serverul"
+
+#: src/game/game_loop.cpp:147
+msgid "Wait for server informations"
+msgstr "Se aşteaptă informaţiile serverului"
+
+#: src/game/game_loop.cpp:157
+msgid "Wait teams"
+msgstr "Se aşteaptă echipele"
+
+#: src/map/maps_list.cpp:142
+msgid "Warning! Winds particles mass is too low! Set by default to 0.3"
+msgstr "Atenţie! particulele de vânt au masa prea mică! Implicit ajustată la 0.3"
+
+#: src/game/config.cpp:133
+msgid "Warning: Don't load configuration (old version of Wormux)."
+msgstr "Atenţie: Nu încărcaţi configuraţia (versiune veche de Wormux)."
+
+#: src/interface/interface.cpp:112
+msgid "Weapon:"
+msgstr "Arma:"
+
+#: src/main.cpp:198
+msgid "Website: "
+msgstr "Situl web: "
+
+#: src/game/game_loop.cpp:673
+#, c-format
+msgid "What a shame for %s - he was killed by a simple gun!"
+msgstr "Ce umilire pentru %s - a fost ucis cu un simplu pistol!"
+
+#: src/main.cpp:148
+msgid "Wormux launching..."
+msgstr "Se lansează Wormux..."
+
+#: src/main.cpp:186
+msgid "Wormux version "
+msgstr "Versiunea Wormux "
+
+#: src/map/maps_list.cpp:77
+#, c-format
+msgid "XML error during loading map '%s' :"
+msgstr "Eroare XML în timpul încărcării hărţii '%s' :"
+
+#: src/map/maps_list.cpp:269
+msgid "You need at least one valid map !"
+msgstr "Aveţi nevoie de cel puţin o hartă validă !"
+
+#: src/game/game_loop.cpp:248
+msgid "You need at least two teams to play: change this in 'Options menu' !"
+msgstr ""
+"Aveţi nevoie de cel puţin două echipe ca să jucaţi: schimbaţi acest lucru în "
+"meniul 'Opţiuni' !"
+
+#: src/team/teams_list.cpp:158
+msgid "You need at least two valid teams !"
+msgstr "Aveţi nevoie de cel puţin două echipe valide !"
+
+#: src/weapon/gun.cpp:70
+msgid "Your shot has missed!"
+msgstr "Focul dvs. a fost tras în aer!"
+
+#: src/map/ground.cpp:64
+msgid "done"
+msgstr "finalizat"
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT profile (sound+)>
+<!ELEMENT sound EMPTY>
+<!ATTLIST sound sample CDATA #REQUIRED file CDATA #REQUIRED>
+
+

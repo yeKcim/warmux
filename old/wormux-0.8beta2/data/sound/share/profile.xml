@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ressources>
+
+  <sound sample="menu/ok" file="menu/ok.ogg" />
+  <sound sample="menu/cancel" file="menu/cancel.ogg" />
+  <sound sample="menu/clic" file="menu/clic.ogg" />
+  <sound sample="menu/error" file="menu/error.ogg" />
+
+  <sound sample="menu/weapon_menu_show" file="menu/weapon_menu_toggled.ogg" />
+  <sound sample="menu/weapon_menu_hide" file="menu/weapon_menu_toggled.ogg" />
+  <sound sample="change_weapon" file="menu/weapon_menu_toggled.ogg" />
+
+  <sound sample="weapon/dynamite_exp"    file="../../weapon/sound/dynamite_exp.ogg" />
+  <sound sample="weapon/dynamite_fuze"   file="../../weapon/sound/dynamite_fuze.ogg" />
+  <sound sample="weapon/riot_bomb_exp"    file="../../weapon/sound/riot_bomb_exp.ogg" />
+  <sound sample="weapon/grenade_bounce"  file="../../weapon/sound/grenade_bounce.ogg" />
+  <sound sample="weapon/disco_grenade_music" file="../../weapon/sound/disco_grenade_music.ogg" />
+  <sound sample="weapon/disco_grenade_bounce" file="../../weapon/sound/grenade_bounce.ogg" />
+  <sound sample="weapon/gnu_bounce" file="../../weapon/sound/gnu_bounce.ogg" />
+  <sound sample="weapon/gun" file="../../weapon/sound/gun.ogg" />
+  <sound sample="weapon/shotgun" file="../../weapon/sound/shotgun.ogg" />
+  <sound sample="weapon/ricoche1" file="../../weapon/sound/ricoche1.ogg" />
+  <sound sample="weapon/ricoche2" file="../../weapon/sound/ricoche2.ogg" />
+  <sound sample="weapon/ricoche3" file="../../weapon/sound/ricoche3.ogg" />
+  <sound sample="weapon/baseball" file="../../weapon/sound/baseball.ogg" />
+  <sound sample="weapon/suicide" file="../../weapon/sound/commit_suicide.ogg" />
+  <sound sample="weapon/teleport_start" file="../../weapon/sound/teleport_start.ogg" />
+  <sound sample="weapon/teleport_end" file="../../weapon/sound/teleport_land.ogg" />
+  <sound sample="weapon/mine_beep" file="../../weapon/sound/mine_beep.ogg" />
+  <sound sample="weapon/load" file="../../weapon/sound/load.ogg" />
+  <sound sample="weapon/explosion" file="explosion.ogg" />
+  <sound sample="weapon/m16" file="../../weapon/sound/m16.ogg" />
+  <sound sample="weapon/airhammer" file="../../weapon/sound/airhammer_used.ogg" />
+  <sound sample="weapon/airhammer_select" file="../../weapon/sound/airhammer_selected.ogg" />
+  <sound sample="weapon/anvil_fall" file="../../weapon/sound/anvil_fall.ogg" />
+  <sound sample="weapon/anvil_collision" file="../../weapon/sound/anvil_collision.ogg" />
+  <sound sample="weapon/supertux_flying" file="../../weapon/sound/supertux_flying.ogg" />
+  <sound sample="weapon/rocket_flying" file="../../weapon/sound/rocket_flying.ogg" />
+  <sound sample="weapon/aircraft_flying" file="../../weapon/sound/aircraft_flying.ogg" />
+  <sound sample="weapon/aircraft_bomb_falling" file="../../weapon/sound/aircraft_bomb_falling.ogg" />
+  <sound sample="weapon/grapple_attaching" file="../../weapon/sound/grapple_attaching.ogg" />
+  <sound sample="weapon/grapple_detaching" file="../../weapon/sound/grapple_detaching.ogg" />
+  <sound sample="weapon/grapple_balancing" file="../../weapon/sound/grapple_balancing.ogg" />
+
+  <sound sample="bonus_box/falling" file="bonus_box_falling.ogg" />
+  <sound sample="bonus_box/hitting_ground" file="bonus_box_hitting_ground.ogg" />
+  <sound sample="bonux_box/picking_up" file="bonus_box_picking_up.ogg" />
+
+  <sound sample="character/change_in_same_team" file="character_change.ogg" />
+
+  <sound sample="time/bip" file="time_bip.ogg" />
+
+  <sound sample="sink" file="sink.ogg" />
+
+  <sound sample="music/grenouilles" file="frog_music.ogg" />
+
+  <sound sample="victory" file="victory.ogg" />
+  <sound sample="end_turn" file="end_turn.ogg" />
+</ressources>

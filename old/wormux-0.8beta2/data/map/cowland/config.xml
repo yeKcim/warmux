@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+  <author>
+    <name>Alexandre NORMAN</name>
+    <nickname>Xael</nickname>
+    <email>norman AT xael.org</email>
+    <country>France</country>
+  </author>
+
+  <surface name="sky" file="cowland_bg.jpg" />
+  <surface name="map" file="cowland.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Cowland</name>
+  <water>0</water>
+  <nb_mine>3</nb_mine>
+  <nb_barrel>1</nb_barrel>
+  <is_open>1</is_open>
+
+  <sprite name="wind_particle">
+    <image file="nuage.png">
+      <grid pos="0,0" size="128,64" array="1,1"/>
+    </image>
+  </sprite>
+  <wind>
+    <nbr_sprite>10</nbr_sprite>
+    <need_flip>true</need_flip>
+
+    <mass>0.5</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>0.1</air_resist_factor>
+    <gravity_factor>0.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>1.0</rebound_factor>
+  </wind>
+</resources>

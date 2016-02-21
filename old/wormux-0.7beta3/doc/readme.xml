@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<article>
+<title>Wormux documentation</title>
+
+<section>
+<title>Introduction</title>
+
+<p>Wormux est un clone libre de Worms. Il est encore en phase de développement
+intensif, ne vous étonnez donc pas de rencontrer une "Assertion xxx failed."
+ou carrément un "segfault". Par contre, le jeu a atteint un niveau de maturité
+qui le rend complètement jouable :</p>
+
+<ul>
+  <li>10 armes implémentées : dynamite, bazooka, bazooka à tête chercheuse, 
+  pistolet, batte de baseball, grenade, téléportation, suicide, attaque 
+  aérienne, mine</li>
+  <li>Apparition de caisse bonus</li>
+  <li>Déplacement de la caméra à la souris ou avec le pavé numérique 
+  du clavier</li>
+  <li>Possibilité de jouer avec un nombre arbitraire d'équipe 
+  (après c'est plus la taille du terrain qui limite, car les vers sont 
+  séparés d'une distance minimale :-))</li>
+  <li>Les équipes sont clairement identifiées (avatars et écussons
+  différents)</li>
+  <li>Comptabilisation des munitions des armes</li>
+  <li>Compteur du temps pour chaque tour, avec 2 secondes de pause entre 
+  chaque tour</li>
+  <li>Une dizaine de type de personnages différents : alien, ball, escargot,
+  haypocampe, poule, poulpe, tortue, ver, wougzy, xbill.</li>
+  <li>Une dizaine de terrains</li>
+  <li>Présence d'un menu options (encore à compléter). Le reste est facilement
+  configurable dans les fichiers *.xml situés dans le répertoire "donnée"</li>
+  <li>Des traductions dans plusieurs langues : anglais, espagnol, allemand, 
+  catalan, polonais,...</li>
+  <li>etc.</li>
+</ul>
+
+</section>
+
+<section>
+<title>Principe du jeu</title>
+
+<p>Le principe du jeu est simple. Vous disposez en début de la partie d'une 
+équipe de 5 personnages. Votre adversaire (humain) possède lui aussi 
+5 personnages. Ils sont placés de manière aléatoire sur le terrain.</p>
+
+<p>Un premier personnage est sélectionné par le jeu. A partir de là, il ne vous reste
+plus qu'à sélectionner une arme de votre choix afin d'éliminer les "monstres" 
+adverses. La partie est terminée lorsqu'il n'y a plus qu'une équipe !</p>
+
+<p>Attention, si vous sortez de l'espace de jeu (typiquement : bords droit
+et gauche de l'écran), votre personnage va mourir !</p>
+
+<p>En cas de chute importante, vous perdez votre tour (le personnage doit 
+se remettre de ses émotions :-)).</p>
+
+<p>Pour faire défiler le plateau de jeu, restez appuyé sur la touche CTRL,
+puis déplacez la souris. Il est également possible d'utiliser le clavier 
+(voir la section 3 de ce document).</p>
+
+<p>Des caisses bonus peuvent apparaître (dans les terrains ouverts). Elles
+contiennent des bonus aléatoires : munitions pour les différentes armes,
+gain voir même perte d'énergie.</p>
+
+</section>
+
+
+<section>
+<title>Contrôle au clavier</title>
+
+<table>
+<tr>
+  <th>Touches</th>
+  <th>Description</th>
+</tr>
+<tr>
+   <td>Gauche/Droite</td>
+   <td>Se déplacer latéralement</td>
+</tr><tr>
+  <td>Entrée</td>
+  <td>Sauter</td>
+</tr><tr>
+  <td>Backspace</td>
+  <td>Super saut (vertical)</td>
+</tr><tr>
+  <td>Espace</td>
+  <td>Tirer (note: certaines armes nécessites un clic de 
+  souris préalable, en particulier le bazooka à tête chercheuse)</td>
+</tr><tr>
+  <td>Haut/Bas</td>
+  <td>Déplacer le viseur (pour le pistolet par ex.)</td>
+</tr><tr>
+  <td>F1 à F4</td>
+  <td>Changer d'arme (F1 pour les armes de classe 1, etc.)</td>
+</tr><tr>
+  <td>F9</td>
+  <td>Affiche/cache l'interface</td>
+</tr><tr>
+  <td>F10</td>
+  <td>Passer du mode plein écran au mode fenêtre.</td>
+</tr><tr>
+  <td>C</td>
+  <td>Rececentrage sur le personnage actif</td>
+</tr><tr>
+  <td>TAB</td>
+  <td>Passe au personnage suivant de son équipe (pas toujours disponnible,
+  celà dépend du mode de jeu)</td>
+</tr><tr>
+  <td>T</td>
+  <td>Passer son tour.</td>
+</tr><tr>
+  <td>P</td>
+  <td>Mettre le jeu en pause (ou reprise du jeu)</td>
+</tr><tr>
+  <td>M</td>
+  <td>Affiche le menu des armes (inactif pour l'instant)</td>
+</tr><tr>
+  <td>Page haut/bas</td>
+  <td>Accélère/ralentit la vitesse du jeu (*)</td>
+</tr><tr>
+  <td>4, 6, 8, 2 (PN.)</td>
+  <td>Déplace la caméra</td>
+</tr><tr>
+  <td>Echap</td>
+  <td>Quitter Wormux.</td>
+</tr>
+</table>
+
+<ul>
+  <li>(*) : Astuces activées uniquement en mode "débogage".</li>
+  <li>PN. : Pavé numérique.</li>
+</ul>
+
+</section>
+
+<section>
+<title>Contrôle à la souris</title>
+
+<p>Pour déplacer la caméra, restez appuyé sur la touche CTRL puis déplacez votre
+souris.</p>
+
+<ul>
+  <li>Clic gauche : Sélectionner le ver survolé, tirer avec une arme ou
+  choix d'une arme dans le menu.</li>
+  <li>Clic droit  : Affiche/cache le menu des armes.</li>
+</ul>
+
+</section>
+
+<section>
+<title>Configuration</title>
+
+<p>Pour changer de terrain et choisir vos équipes, allez dans le menu 
+Options.</p>
+
+<subsection>
+<title>Nouvelle équipe</title>
+
+<p>Pour vous créer une nouvelle équipe, allez dans le répertoire 
+data/team/. Chaque sous-répertoire est une équipe. Une équipe a un écusson
+(fichier PNG ecusson.png d'une taille de 48x48 pixels). Le nom des personnages 
+et le nom de 
+l'équipe sont définis dans team.xml. Chaque personnage peut 
+avoir une apparence différente, c'est l'attribut "avatar".</p>
+
+</subsection>
+
+<subsection>
+<title>Configuration avancée</title>
+
+<p>Pour une configuration plus avancée, voyez les fichiers XML suivants :</p>
+
+<ul>
+  <li>data/game_mode/*.xml : Les différents modes de jeu</li>
+  <li>~/.wormux/config.xml : Configuration principale</li>
+</ul>
+
+</subsection>
+</section>
+
+<section>
+<title>Bêta test du jeu</title>
+
+<p>Afin d'aider le jeu a être plus beau, plus rapide, et plus stable : je vous 
+invite à signaler tout comportement du jeu qui vous semble anormal (message
+d'erreur indiqué par le jeu, Linux, ou Windows, ...). Mais aussi à donner
+votre avis sur les graphismes, les options du jeu, etc.</p>
+
+<p>Ce jeu est un logiciel libre. Vous pouvez librement y contribuer. Il suffit
+pour ça de nous contacter.</p>
+
+</section>
+
+<section>
+<title>Contacts et liens</title>
+
+<p>Pour plus d'informations, visitez 
+<a href="http://www.wormux.org/fr/">notre site Internet</a></p>
+
+<p>Envoyez-nous vos critiques <a href="mailto:wormux-dev@gna.org">par email 
+sur notre liste de diffusion</a></p>
+
+<p style="align_right">L'équipe de Wormux</p>
+
+</section>
+</article>

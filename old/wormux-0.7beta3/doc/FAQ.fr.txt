@@ -1,0 +1,40 @@
+Wormux 0.7
+FAQ (Français)
+-------------------
+Vous trouverez peut-être dans ce document la réponse à un problème rencontré
+avec Wormux.
+
+
+* J'ai le message "Floating point exception", dès que je lance Wormux
+---------------------------------------------------------------------
+
+Ce problème a été rencontré la plupart du temps sur des odinateurs portables
+possédant une carte graphique Intel i8xx, la solution est de modifier votre
+fichier /etc/X11/xorg.conf ou /etc/X11/XF86Config.conf et de rajouter (ou
+modifier) la ligne:
+
+Section "ServerFlags"
+[...]
+Option "DisableVidModeExtension" "yes"
+
+* Erreur "resource (...) not found"
+-----------------------------------
+
+Si vous avez un message du genre :
+<< UNE EXCEPTION EST INTERVENUE (pas de bol) :
+   Resource ico_arme/suicide not found. >>
+
+C'est que Wormux n'est pas exécuté dans le bon répertoire. Si vous travaillez
+avec le code source, allez dans le répertoire racine et tapez ./wormux.
+Sinon, vous pouvez spécifier dans le fichier ~/.wormux/config.xml où sont situées
+les données utilisées par Wormux.
+
+Le mieux reste d'installer Wormux en tapant "make install" en tant 
+qu'utilisateur root dans le sous-répertoire src. Supprimez ensuite le
+répertoire du code source (à moins que vous comptiez désintaller le jeu plus
+tard).
+
+* Une autre erreur ?
+--------------------
+
+Voyez le fichier BUGS.txt qui explique comment rapporter une erreur.

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Warmux</string>
+
+    <string name="init">Inicjalizowanie</string>
+    <string name="readme">^Proszę czekać, trwa pobieranie danych</string>
+
+    <string name="device_config">Ustawienia urządzenia</string>
+    <string name="device_change_cfg">Zmień ustawienia urządzenia</string>
+
+    <string name="download_unneeded">Nie ma potrzeby pobierania</string>
+    <string name="connecting_to">Łączenie z %s</string>
+    <string name="failed_connecting_to">Nie udało się połączyć z %s</string>
+    <string name="error_connecting_to">Bład połączenia do %s</string>
+    <string name="dl_from">Pobieranie danych z %s</string>
+    <string name="error_dl_from">Błąd pobierania danych z %s</string>
+    <string name="error_write">Błąd zapisu do %s</string>
+    <string name="dl_crc_error">Plik %s jest uszkodzony</string>
+    <string name="dl_progress">%1$d%% wykonano: plik %2$s</string>
+    <string name="dl_finished">Zakończono</string>
+
+    <string name="storage_phone">Pamięć wewnętrzna - dostępne %d MB</string>
+    <string name="storage_sd">Karta SD - dostępne %d MB</string>
+    <string name="storage_question">Gdzie zapisać pobrane dane?</string>
+
+    <string name="controls_arrows">Strzałki / dżojstik / D-pad</string>
+    <string name="controls_trackball">Trackball</string>
+    <string name="controls_none">Żadnych</string>
+    <string name="controls_question">Jaki rodzaj klawiszy nawigacji ma twoje urządzenie?</string>
+
+    <string name="trackball_no_dampening">Bez ogranicznika</string>
+    <string name="trackball_fast">Szybki</string>
+    <string name="trackball_medium">Średni</string>
+    <string name="trackball_slow">Wolny</string>
+    <string name="trackball_question">Ogranicznik Trackballa</string>
+
+    <string name="accel_fast">Szybko</string>
+    <string name="accel_medium">Średnio</string>
+    <string name="accel_slow">Wolno</string>
+    <string name="accel_question">Czułość akcelerometru</string>
+
+    <string name="accel_floating">Pływająca</string>
+    <string name="accel_fixed_start">Ustalona przy starcie programu</string>
+    <string name="accel_fixed_horiz">Ustalona względem orientacji stołu</string>
+    <string name="accel_question_center">Pozycja neutralna akcelerometru</string>
+
+    <string name="audiobuf_small">Mały (szybkie urządzenia)</string>
+    <string name="audiobuf_medium">Średni</string>
+    <string name="audiobuf_large">Duży (gdy dźwięk się urywa)</string>
+    <string name="audiobuf_question">Rozmiar bufora audio</string>
+</resources>

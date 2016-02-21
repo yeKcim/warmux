@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources SYSTEM "graphism.dtd" []>
+<resources>
+
+<section name="main_menu">
+  <surface name="bg_main" file="menu/background.png" />
+
+  <sprite name="button">
+    <image file="menu/button.png">
+      <grid pos="0,0" size="402,64" array="2,1" />
+    </image>
+  </sprite>
+</section>
+
+<section name="menu">
+
+  <surface name="ico_warning" file="interface/warning.png" />
+
+  <!-- backgrounds -->
+  <surface name="bg_option" file="menu/background_options.png" />
+  <surface name="bg_play" file="menu/background_play.png" />
+  <surface name="bg_network" file="menu/background_network.png" />
+  <surface name="bg_results" file="menu/background_play.png" />
+
+  <!-- buttons to access menus -->
+  <surface name="ico_back_to_battle" file="menu/i_backtobattle.png" />
+  <surface name="ico_quit_battle" file="menu/i_quit.png" />
+
+  <surface name="ico_play" file="menu/i_play.png" />
+  <surface name="ico_options_menu" file="menu/i_options.png" />
+  <surface name="ico_network_menu" file="menu/i_network.png" />
+  <surface name="ico_credits" file="menu/i_credits.png" />
+  <surface name="ico_help" file="menu/i_help.png" />
+  <surface name="ico_quit" file="menu/i_quit.png" />
+
+  <surface name="ico_update" file="menu/i_update.png" />
+
+  <surface name="enabled" file="menu/enabled.png" />
+  <surface name="disabled_front" file="menu/disabled_front.png" />
+  <surface name="disabled_back" file="menu/disabled_back.png" />
+
+  <surface name="annulus_background" file="menu/annulus_background.png" />
+  <surface name="annulus_foreground" file="menu/annulus_foreground.png" />
+  <color name="annulus_progress_color" r="4" g="77" b="134" a="255" />
+
+  <!-- Various options -->
+  <surface name="team_number" file="menu/team_number.png" />
+
+  <!-- Sound options -->
+
+  <surface name="sound_frequency" file="menu/sound_frequency.png" />
+  <surface name="music_enable" file="menu/music_enable.png" />
+  <surface name="sound_effects_enable" file="menu/sound_effects_enable.png" />
+  <surface name="warn_on_new_player" file="menu/bip.png" />
+
+  <!-- Display options -->
+
+  <surface name="display_energy" file="menu/display_energy.png" />
+  <surface name="display_name" file="menu/display_name.png" />
+  <surface name="display_wind_particles" file="menu/display_wind_particles.png" />
+  <surface name="fullscreen" file="menu/fullscreen.png" />
+  <surface name="scroll_on_border" file="menu/scroll_on_border.png" />
+  <surface name="fps" file="menu/fps.png"/>
+  <surface name="resolution" file="menu/resolution.png"/>
+
+  <!-- Game mode options -->
+
+  <surface name="game_mode" file="menu/game_mode.png" />
+  <surface name="timing_turn" file="menu/timing_turn.png" />
+  <surface name="timing_end_of_turn" file="menu/timing_end_turn.png" />
+  <surface name="timing_death" file="menu/timing_death.png" />
+  <surface name="energy" file="menu/display_energy.png" />
+  <surface name="death_energy" file="menu/death_energy.png" />
+  <surface name="init_energy" file="menu/init_energy.png" />
+  <surface name="max_energy" file="menu/max_energy.png" />
+  <surface name="character_selection" file="menu/timing_switch.png" />
+  <surface name="gravity" file="menu/gravity.png" />
+
+  <!-- For results menu -->
+  <surface name="podium" file="menu/podium.png" />
+
+  <!-- Random map -->
+  <surface name="random_map" file="map/random_map.jpg" />
+
+  <!-- For nework menu  -->
+  <surface name="password_lock" file="menu/padlock.png" />
+
+  <!-- For team editor menu -->
+
+ <surface name="add_custom_team" file="menu/add_custom_team.png" />
+ <surface name="del_custom_team" file="menu/del_custom_team.png" />
+
+
+
+  <!-- Buttons -->
+
+  <sprite name="send_txt">
+    <image file="menu/send_txt.png">
+      <grid pos="0,0" size="16,16" array="2,1" />
+    </image>
+  </sprite>
+
+  <sprite name="valider">
+    <image file="menu/validate.png">
+      <grid pos="0,0" size="32,32" array="1,2" />
+    </image>
+  </sprite>
+  <sprite name="annuler">
+    <image file="menu/cancel.png">
+      <grid pos="0,0" size="32,32" array="1,2" />
+    </image>
+  </sprite>
+  <sprite name="check">
+    <image file="menu/check.png">
+      <grid pos="0,0" size="16,16" array="1,2" />
+    </image>
+  </sprite>
+  <sprite name="plus">
+    <image file="menu/plus.png">
+      <grid pos="0,0" size="5,10" array="2,1" />
+    </image>
+  </sprite>
+  <sprite name="big_plus">
+    <image file="menu/right.png">
+      <grid pos="0,0" size="20,20" array="2,1" />
+    </image>
+  </sprite>
+  <sprite name="really_big_plus">
+    <image file="menu/big_right.png">
+      <grid pos="0,0" size="40,40" array="2,1" />
+    </image>
+  </sprite>
+  <sprite name="minus">
+    <image file="menu/minus.png">
+      <grid pos="0,0" size="5,10" array="2,1" />
+    </image>
+  </sprite>
+  <sprite name="big_minus">
+    <image file="menu/left.png">
+      <grid pos="0,0" size="20,20" array="2,1" />
+    </image>
+  </sprite>
+  <sprite name="really_big_minus">
+    <image file="menu/big_left.png">
+      <grid pos="0,0" size="40,40" array="2,1" />
+    </image>
+  </sprite>
+  <sprite name="up">
+    <image file="menu/up.png">
+      <grid pos="0,0" size="10,5" array="1,2" />
+    </image>
+  </sprite>
+  <sprite name="down">
+    <image file="menu/down.png">
+      <grid pos="0,0" size="10,5" array="1,2" />
+    </image>
+  </sprite>
+  <sprite name="refresh_small">
+    <image file="menu/refresh.png">
+      <grid pos="0,0" size="20,20" array="1,1" />
+    </image>
+  </sprite>
+ </section>
+
+<section name="credit">
+  <surface name="background" file="menu/background_credits.png" />
+</section>
+
+<section name="help">
+  <surface name="background" file="menu/background_help.png" />
+  <surface name="shortkeys" file="menu/help_shortkeys.png" />
+</section>
+
+<section name="object">
+  <sprite name="bonus_box">
+    <image file="object/bonus_box.png">
+      <grid pos="0,0" size="65,102" array="4,1" />
+    </image>
+    <animation loop_mode="false"/>
+  </sprite>
+  <sprite name="medkit">
+    <image file="object/medkit.png">
+      <grid pos="0,0" size="65,102" array="4,1" />
+    </image>
+    <animation loop_mode="false"/>
+  </sprite>
+  <sprite name="barrel">
+    <image file="object/barrel.png">
+      <grid pos="0,0" size="32,35" array="6,1" />
+    </image>
+  </sprite>
+</section>
+
+<section name="interface">
+  <color name="weapon_strength_bar_value" r="255" g="255" b="255" a="128" />
+  <color name="weapon_strength_bar_border" r="0" g="0" b="0" a="255" />
+  <color name="weapon_strength_bar_background" r="153" g="153" b="153" a="96" />
+  <color name="text_color" r="0" g="0" b="0" a="255" />
+  <color name="energy_text_color" r="255" g="255" b="255" a="255" />
+  <color name="turn_timer_text_color" r="0" g="0" b="0" a="255" />
+  <color name="global_clock_text_color" r="128" g="128" b="128" a="255" />
+  <surface name="background_interface" file="interface/background_interface.png" />
+  <surface name="small_background_interface" file="interface/small_background_interface.png" />
+  <color name="background_color" r="255" g="255" b="255" a="128" />
+  <color name="border_color" r="43" g="53" b="108" a="255" />
+  <point name="weapons_interface_size" x="320" y="320" />
+  <point name="tools_interface_size" x="160" y="320" />
+  <surface name="cross" file="interface/cross.png"/>
+  <surface name="clock_background" file="interface/clock_background.png"/>
+  <surface name="clock" file="interface/clock.png"/>
+  <surface name="wind" file="interface/wind.png"/>
+  <surface name="wind_indicator" file="interface/wind_indicator.png"/>
+  <surface name="quit_screen" file="interface/quit.png"/>
+</section>
+
+<section name="loading_screen">
+  <surface name="map_icon" file="menu/ico_maps.png"/>
+  <surface name="team_icon" file="menu/ico_skins.png"/>
+  <surface name="sound_icon" file="menu/ico_sounds.png"/>
+  <surface name="weapon_icon" file="menu/ico_weapons.png"/>
+</section>
+
+<section name="energy_bar">
+  <color name="energy_color_16_percent" r="164" g="0" b="0" a="255" />
+  <color name="energy_color_33_percent" r="196" g="80" b="0" a="255" />
+  <color name="energy_color_50_percent" r="228" g="166" b="0" a="255" />
+  <color name="energy_color_67_percent" r="104" g="170" b="0" a="255" />
+  <color name="energy_color_84_percent" r="42" g="128" b="21" a="255" />
+  <color name="energy_color_100_percent" r="21" g="100" b="136" a="255" />
+</section>
+
+<section name="water_colors">
+  <color name="water" r="0" g="109" b="193" a="127" />
+  <color name="lava" r="255" g="148" b="0" a="224" />
+  <color name="radioactive" r="255" g="212" b="212" a="224" />
+  <color name="dirtywater" r="67" g="107" b="21" a="64" />
+</section>
+
+<section name="gfx">
+  <surface name="pointeur1" file="gfx/pointer.png" />
+
+  <sprite name="curseur">
+    <image file="gfx/arrow.png" />
+  </sprite>
+
+  <surface name="water" file="gfx/water/water.png" />
+  <surface name="water_bottom" file="gfx/water/water_bottom.png" />
+
+  <surface name="lava" file="gfx/water/lava.png" />
+  <surface name="lava_bottom" file="gfx/water/lava_bottom.png" />
+
+  <surface name="radioactive" file="gfx/water/radioactive.png" />
+  <surface name="radioactive_bottom" file="gfx/water/radioactive_bottom.png" />
+
+  <surface name="dirtywater" file="gfx/water/dirtywater.png" />
+  <surface name="dirtywater_bottom" file="gfx/water/dirtywater_bottom.png" />
+
+</section>
+
+</resources>

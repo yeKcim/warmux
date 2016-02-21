@@ -1,0 +1,5 @@
+#/bin/bash
+
+cat *hourly|tail -n 24 > hourly.csv
+cat *daily > daily.csv
+./wormux.plt

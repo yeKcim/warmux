@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT resources (name,surface,team) >
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST section title CDATA #REQUIRED>
+
+<!ELEMENT surface EMPTY>
+<!ATTLIST surface name CDATA #FIXED "flag" file CDATA #REQUIRED>
+
+<!ELEMENT team (character+)>
+
+<!ELEMENT character EMPTY>
+<!ATTLIST character name CDATA #REQUIRED body CDATA #REQUIRED>

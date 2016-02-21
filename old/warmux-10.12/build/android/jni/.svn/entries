@@ -1,0 +1,138 @@
+10
+
+dir
+10371
+svn://svn.gna.org/svn/warmux/tags/warmux-10.12/build/android/jni
+svn://svn.gna.org/svn/warmux
+
+
+
+2010-12-17T01:11:00.209110Z
+9266
+mikkov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30ef787d-52ff-0310-b286-e08351bb7647
+
+application
+dir
+
+intl
+dir
+
+tremor
+dir
+
+Application.mk
+file
+
+
+
+
+2012-12-15T13:30:02.338806Z
+fcdb767c83dff7d5b8371bf5787a6f90
+2010-12-08T11:29:19.995319Z
+9231
+kurosu
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+135
+
+xml2
+dir
+
+sdl
+dir
+
+freetype
+dir
+
+sdl_image
+dir
+
+png
+dir
+
+jpeg
+dir
+
+Android.mk
+file
+
+
+
+
+2012-12-15T13:30:02.338806Z
+b4bdf4f10965a7f1b9167f6c5404a33c
+2010-11-25T19:55:22.400674Z
+9143
+kurosu
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+767
+
+sdl_mixer
+dir
+
+sdl_main
+dir
+
+sdl_gfx
+dir
+
+sdl_net
+dir
+
+sdl_ttf
+dir
+

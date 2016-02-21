@@ -1,0 +1,94 @@
+                     Warmux
+                     ======
+
+
+1/ Présentation
+===============
+
+Faites s'affronter les mascottes de vos logiciels libres favoris dans 
+l'arène de Warmux. À grands coups de dynamite, grenades, batte de 
+baseball et autres bazookas,... exterminez votre adversaire dans un 
+décor toon 2D destructible et une ambiance bon enfant.
+
+Chaque joueur (2 minimum, sur un même PC) commande l'équipe de son 
+choix (tux, gnu, firefox, wilber,...) et doit détruire celle de 
+son adversaire à l'aide d'armes plus ou moins conventionnelles.
+
+Bien qu'un minimum de stratégie vous sera nécessaire pour vaincre, 
+Warmux est avant tout un jeu de "massacre convivial" où, tour à tour, 
+un membre de chaque équipe tente de faire un maximum de dégâts dans 
+les rangs adverses. 
+
+2/ Comment jouer ?
+==================
+
+Vous n'aurez pas à vous casser la tête pour comprendre comment jouer 
+à Warmux.
+
+2.1/ Contrôles
+==============
+Contrôles clavier/souris pour jouer à Warmux.
+
+* Touche tab : changer de personnage actif
+* Touche 'c' : recentrer sur le personnage actif
+* Touche droite/gauche : marcher vers la droite ou la gauche
+* Touche haut/bas : régler le viseur (utilisé pour le bazooka, le pistolet,
+ etc.), c'est-à-dire l'angle de tir
+* Touche espace : tirer. Exceptions : le parachute se déclenche tout seul,
+ et la téléportation se fait avec un clic de souris.
+ Attention : le bazooka automatique a besoin que l'on sélectionne la cible
+ (avec un clic gauche) avant de tirer
+* Clic droit de la souris : affiche/cache le menu des armes.
+* Clic gauche de la souris : positionner la cible pour la téléportation ou le
+ bazooka automatique.
+* Clic du milieu de la souris : déplacer la carte
+* Touche F1, F2, .. F5 : changer d'arme parmi la catégorie 1, 2, ... 5
+* Touche echap : quitter le jeu (une confirmation est nécessaire)
+* Touche 'b' : saut ("en arrière")
+* Touche entrée : saut ("horizontal")
+* Touche retour arrière (backspace, au dessus d'entrée) : saut ("vertical")
+* Déplacement de la souris dans les bordures de l'écran : se déplacer dans
+ le terrain
+ * Touche F10 : plein écran
+
+2.2/ Aide supplémentaire
+========================
+
+Sur le site web :
+* Liste des armes: http://www.warmux.org/phpboost/wiki/wiki.php
+* Liste des cartes : http://www.warmux.org/phpboost/wiki/wiki.php
+  * Comment créer votre propre carte : http://www.warmux.org/phpboost/wiki/wiki.php
+* Liste des avatars : http://www.warmux.org/phpboost/wiki/wiki.php
+* Forum: http://www.warmux.org/phpboost/forum/
+
+3/ Sur quelle système jouer sans compiler ?
+==============================================
+
+Warmux est disponible sur de nombreux systèmes  (regardez 
+http://www.warmux.org/phpboost/download pour la liste mise à jour):
+
+* Linux :
+  * Debian (Sarge/Etch/Sid)
+  * Ubuntu (Dapper/Edgy)
+  * Fedora Core (4/5)
+  * Mandriva (2006/2007)
+  * Gentoo
+  * Slackware
+  * SourceMage
+  * PLD
+  * Crux
+  * Sorcerer Grimoire
+
+* FreeBSD
+
+* Windows
+
+* Mac OS X
+
+
+4/ Liens
+========
+
+* Site officiel : http://www.warmux.org/
+* Page du projet sur Gna! : https://gna.org/projects/warmux/
+

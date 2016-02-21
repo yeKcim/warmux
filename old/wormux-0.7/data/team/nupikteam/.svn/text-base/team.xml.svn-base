@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <equipe>
+    <nom>Nupik Team</nom>
+    <ver nom="NuFW" avatar="nupikteam" />
+	 <ver nom="Sonic" avatar="nupikteam" />
+    <ver nom="Genus Atelerix" avatar="nupikteam" />
+    <ver nom="Genus Erinaceus" avatar="nupikteam" />
+    <ver nom="Genus Hemiechinus" avatar="nupikteam" />
+    <ver nom="Genus Mesechinus" avatar="nupikteam" />
+    <ver nom="Blonde hedgehogs" avatar="nupikteam" />
+    <ver nom="WIPFW" avatar="nupikteam" />
+    <ver nom="Winsock" avatar="nupikteam" />
+    <ver nom="TDI FireWall" avatar="nupikteam" />
+    <ver nom="CodeSeeker" avatar="nupikteam" />
+	 <ver nom="Ipfwadm" avatar="nupikteam" />
+	 <ver nom="Shorewall" avatar="nupikteam" />
+	 <ver nom="Zorp" avatar="nupikteam" />    
+  </equipe>
+  <surface name="flag" file="flag.png" />
+</resources>

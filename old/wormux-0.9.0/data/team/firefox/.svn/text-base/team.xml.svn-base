@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Firefox</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+    <character name="Mozilla browser" body="firefox" />
+    <character name="Phoenix" body="firefox" />
+    <character name="Firebird" body="firefox" />
+    <character name="Deer Park" body="firefox" />
+    <character name="Burning Edge" body="firefox" />
+    <character name="Firemonger" body="firefox" />
+    <character name="Funnyfox" body="firefox" />    
+    <character name="Red Panda" body="firefox" />
+    <character name="Red Fox" body="firefox" />
+    <character name="Malaguti" body="firefox" />
+    <character name="Alopex" body="firefox" />
+  </team>
+</resources>

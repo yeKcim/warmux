@@ -1,0 +1,42 @@
+COMPRESSTARGET
+TARGET stlport_s.lib
+TARGETTYPE lib
+
+SOURCEPATH ..\..\src
+SOURCE dll_main.cpp
+SOURCE fstream.cpp
+SOURCE strstream.cpp
+SOURCE sstream.cpp
+SOURCE ios.cpp
+SOURCE stdio_streambuf.cpp
+SOURCE istream.cpp
+SOURCE ostream.cpp
+SOURCE iostream.cpp
+SOURCE codecvt.cpp
+SOURCE collate.cpp
+SOURCE ctype.cpp
+SOURCE monetary.cpp
+SOURCE num_get.cpp
+SOURCE num_put.cpp
+SOURCE num_get_float.cpp
+SOURCE num_put_float.cpp
+SOURCE numpunct.cpp
+SOURCE time_facets.cpp
+SOURCE messages.cpp
+SOURCE locale_impl.cpp
+SOURCE locale_catalog.cpp
+SOURCE facets_byname.cpp
+SOURCE complex.cpp
+SOURCE complex_io.cpp
+SOURCE complex_trig.cpp
+SOURCE string.cpp
+SOURCE bitset.cpp
+SOURCE allocators.cpp
+
+SOURCE c_locale.c
+SOURCE cxa.c
+
+SYSTEMINCLUDE ..\..\stlport
+SYSTEMINCLUDE \epoc32\include
+SYSTEMINCLUDE \epoc32\include\stdapis
+

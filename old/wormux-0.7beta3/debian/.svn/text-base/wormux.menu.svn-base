@@ -1,0 +1,6 @@
+?package(wormux):
+	needs="X11" \ 
+	section="Games/Arcade"\
+	icon="/usr/share/pixmaps/wormux-32.xpm" \
+	title="Wormux" \ 
+	command="/usr/bin/wormux"

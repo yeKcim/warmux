@@ -1,0 +1,72 @@
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+// This file provides the information required for building Libxml2.
+//
+
+PRJ_EXPORTS
+../inc/libxml2/libxml2_valid.h     libxml/valid.h
+../inc/libxml2/libxml2_parser.h     libxml/parser.h
+../inc/libxml2/libxml2_sax.h     libxml/sax.h
+../inc/libxml2/libxml2_tree.h     libxml/tree.h
+../inc/libxml2/libxml2_entities.h     libxml/entities.h
+../inc/libxml2/libxml2_sax2.h     libxml/sax2.h
+../inc/libxml2/libxml2_parserinternals.h     libxml/parserinternals.h
+../inc/libxml2/xmlengxeconfig.h     libxml/xmlengxeconfig.h
+../inc/libxml2/xmlengtriodef.h     libxml/xmlengtriodef.h
+../inc/libxml2/xmlengconfig.h     libxml/xmlengconfig.h
+../inc/libxml2/libxml2_xmlstring.h     libxml/xmlstring.h
+../inc/libxml2/libxml2_list.h     libxml/list.h
+../inc/libxml2/libxml2_xmlio.h     libxml/xmlio.h
+../inc/libxml2/libxml2_xmlversion.h     libxml/xmlversion.h
+../inc/libxml2/libxml2_encoding.h     libxml/encoding.h
+../inc/libxml2/libxml2_xmlmemory.h     libxml/xmlmemory.h
+../inc/libxml2/libxml2_globals.h     libxml/globals.h
+../inc/libxml2/libxml2_xmlexports.h     libxml/xmlexports.h
+../inc/libxml2/xmlengtrionan.h     libxml/xmlengtrionan.h
+../inc/libxml2/libxml2_xmlerror.h     libxml/xmlerror.h
+../inc/libxml2/libxml2_chvalid.h     libxml/chvalid.h
+../inc/libxml2/libxml2_modules.h     libxml/modules.h
+../inc/libxml2/libxml2_dict.h     libxml/dict.h
+../inc/libxml2/libxml2_threads.h     libxml/threads.h
+../inc/libxml2/libxml2_hash.h     libxml/hash.h
+../inc/libxml2/libxml2_xlink.h     libxml/xlink.h
+../inc/libxml2/libxml2_xmlschemastypes.h     libxml/xmlschemastypes.h
+../inc/libxml2/libxml2_schemasinternals.h     libxml/schemasinternals.h
+../inc/libxml2/libxml2_xmlschemasglobals.h     libxml/xmlschemasglobals.h
+../inc/libxml2/libxml2_xmlschemas.h     libxml/xmlschemas.h
+../inc/libxml2/libxml2_xpathinternals.h     libxml/xpathinternals.h
+../inc/libxml2/libxml2_xpath.h     libxml/xpath.h
+../inc/libxml2/libxml2_c14n.h                libxml/c14n.h
+../inc/libxml2/libxml2_xpointer.h            libxml/xpointer.h
+../inc/libxml2/libxml2_uri.h                 libxml/uri.h
+../inc/libxml2/libxml2_xmlsave.h             libxml/xmlsave.h
+../inc/libxml2/libxml2_htmlparser.h          libxml/htmlparser.h
+../inc/libxml2/libxml2_htmltree.h          libxml/htmltree.h
+../inc/libxml2/libxml2_xinclude.h          libxml/xinclude.h
+../inc/libxml2/libxml2_xmlreader.h          libxml/xmlreader.h
+../inc/libxml2/libxml2_xmlwriter.h          libxml/xmlwriter.h
+
+#ifndef GCCXML
+PRJ_MMPFILES
+xmlengine.mmp
+#endif //GCCXML
+
+/*
+#include "../test/common/group/bld.inf"
+#include "../test/tef/def130695/group/bld.inf"
+#include "../test/tef/xml2/group/bld.inf"
+*/
+
+
+

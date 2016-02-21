@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <author>
+    <name>Glenn ROLLAND</name>
+    <nickname>Glenux</nickname>
+    <country>France</country>
+    <email>glenux AT gmail.com</email>
+  </author>
+
+  <surface name="sky" file="battlenight-bg.png" />
+  <surface name="map" file="battlenight-fg.png" />
+  <surface name="preview" file="battlenight-all.jpg" />
+
+  <name>Battle Night</name>
+  <water>0</water>
+  <nb_mine>3</nb_mine>
+  <is_open>1</is_open>
+</resources>

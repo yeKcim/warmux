@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <!DOCTYPE resources SYSTEM "../random.dtd" []> -->
+<resources>
+  <random>1</random>
+  <author>
+    <name>Yannig Perré</name>
+    <nickname>drayan</nickname>
+    <email>yannig DOT perre AT gmail.com</email>
+    <country>France</country>
+  </author>
+
+  <surface name="sky" file="sky.jpg" />
+  <surface name="map" file="background.png" />
+  <surface name="preview" file="preview.jpg" />
+  <surface name="texture" file="texture.png" />
+  <surface name="element" file="palm-tree.png" />
+  <color name="border_color" r="234" g="219" b="106" a="255" />
+  <name>Random Island</name>
+  <water>1</water>
+  <nb_mine>10</nb_mine>
+  <is_open>1</is_open>
+</resources>

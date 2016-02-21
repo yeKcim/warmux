@@ -1,0 +1,13 @@
+#include "warmux.rls"
+#include <appinfo.rh>
+#include <warmux.rsg>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 0xECF75E71
+
+RESOURCE APP_REGISTRATION_INFO
+	{
+	app_file = "Warmux";
+	localisable_resource_file = r_warmux_loc_resource_file_1;
+	localisable_resource_id = R_WARMUX_LOCALISABLE_APP_INFO;
+	}

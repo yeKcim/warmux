@@ -1,0 +1,22 @@
+K 10
+svn:ignore
+V 150
+configure
+Makefile.in
+config.log
+config.status
+stats.xml
+autom4te.cache
+aclocal.m4
+Makefile
+build-arch-stamp
+configure-stamp
+clean
+build-indep-stamp
+
+
+K 19
+svnmerge-integrated
+V 46
+/branches/wormux-0.8beta2:1-3322 /trunk:1-3824
+END

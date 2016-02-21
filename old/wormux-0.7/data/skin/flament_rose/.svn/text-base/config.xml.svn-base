@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+
+<author>
+  <name>Laurent Defert Simonneau</name>
+  <email>lodesi AT wormux.org</email>
+</author>
+
+<sprite name="walking">
+  <image file="flament-anim.png">
+    <grid pos="0,0" size="42,42" array="12,1" />
+  </image>
+  <collision_rect dx="18" top="0" bottom="0" />
+  <wormux repetition="2" />
+  <hand frame="*" x="16" y="20" />
+</sprite>
+
+<sprite name="helmet">
+  <image file="flament-anim-helmet.png">
+    <grid pos="0,0" size="42,43" array="12,1" />
+  </image>
+  <collision_rect dx="18" top="1" bottom="0" />
+  <wormux repetition="2" />
+  <hand frame="*" x="16" y="20" />
+</sprite>
+
+<!--
+****  Incompatible *** :(
+<sprite name="animation">
+  <image file="flament-yeux.png">
+    <grid pos="0,0" size="42,42" array="25,1" />
+  </image>
+  <animation loop="no" on_finish="blank" speed="170" />
+</sprite>
+-->
+
+<sprite name="jump">
+	<image file="flament-jump.png" />
+	<collision_rect dx="18" top="0" bottom="0" />
+	<hand frame="*" x="16" y="20" />
+</sprite>
+
+<sprite name="jetpack">
+	<image file="flament-jp.png" />
+	<collision_rect dx="18" top="0" bottom="0" />
+</sprite>
+
+<sprite name="jetpack-left-right">
+	<image file="flament-jp-lr.png">
+		<grid pos="0,0" size="43,33" array="3,1" />
+	</image>
+	<animation pingpong="yes"/>
+	<collision_rect dx="18" top="0" bottom="0" />
+</sprite>
+
+<sprite name="jetpack-up">
+	<image file="flament-jp-up.png">
+		<grid pos="0,0" size="41,33" array="4,1" />
+	</image>
+	<frame speed="10" />
+	<animation pingpong="yes"/>
+	<collision_rect dx="18" top="0" bottom="0" />
+</sprite>
+
+<sprite name="dead">
+  <image file="flament-mort.png" />
+  <collision_rect dx="5" top="0" bottom="6" />
+</sprite>
+
+</resources>

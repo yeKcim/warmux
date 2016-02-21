@@ -1,0 +1,41 @@
+****************************************************************************************
+					SUMMARY
+****************************************************************************************
+
+		you'll find explanations about organization of Wormux's sourcecode
+					In english
+
+****************************************************************************************
+					in ENGLISH
+****************************************************************************************
+
+Wormux sourcecode is share in several parts :
+
+/cmake = for cmake users
+/data = pictures, sounds (music), maps, skins,...
+/doc = license, man page, readme, and this file.
+/m4 = autotools
+/mac = scripts for compile under mac OS (with fink or macports libraries)
+/po = translations (all languages)
+
+/src = source code
+/src/ai = you get the artificial intelligence
+/src/character = manage characters and their moves
+/src/game = game loop, initialization of a game, clock management
+/src/graphic = C++ interface between SDL_Surface, Sprite management, Text management.
+/src/gui = all about widgets (button, checkbox, ...)
+/src/include = files to manage actions, packages, everything manage after by action handler
+/src/interface = manage keyboard/mouse, loading screen, bottom pad during game, weapon menu.
+/src/map = manage map, show particles, wind, water and camera recorder.
+/src/menu = all menus
+/src/msvc = file needed for windows
+/src/network = functions for network and only network !
+/src/object = physic engine with Physics and PhysicalObj classes, bonus box, barrels
+/src/particles = particles generator (fire, smoke,...)
+/src/team = teams
+/src/tool = resource manager, debug module, point, square,....
+/src/sound = you get the jukebox, a resource manager but only for sounds
+/src/weapon = sourcecode for weapons
+
+/tool = a file checker for check xml file integrity (skins), howplay (pdf) from wiki, anything need for compile under Windows and index server sourcecode.
+/visual = project files for visual studio (Microsoft)

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <author>
+    <name>CARRE Anthony</name>
+    <nickname>yeKcim</nickname>
+    <country>France</country>
+    <email>yekcim_AT_crocobox_DOT_org</email>
+  </author>
+
+  <surface name="sky" file="one_layer_sky.jpg" />
+
+  <sky_layer>4</sky_layer>
+  <surface name="sky_layer_0" file="sky_layer-0.jpg" />
+  <surface name="sky_layer_1" file="sky_layer-1.png" />
+  <surface name="sky_layer_2" file="sky_layer-2.png" />
+  <surface name="sky_layer_3" file="sky_layer-3.png" />
+
+  <surface name="map" file="map.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Farm</name>
+  <water>water</water>
+  <nb_mine>8</nb_mine>
+  <is_open>1</is_open>
+
+  <sprite name="wind_particle">
+    <image file="particule.png">
+      <grid pos="0,0" size="14,16" array="1,1"/>
+    </image>
+  </sprite>
+  <wind>
+    <nbr_sprite>50</nbr_sprite>
+    <need_flip>1</need_flip>
+    <rotation_speed>0.02</rotation_speed>
+    <mass>1.0</mass>
+    <wind_factor>22</wind_factor>
+    <air_resist_factor>0.5</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>1.3</rebound_factor>
+  </wind>
+
+  <!-- pad is given in pixel count. -->
+  <add_pad>1</add_pad>
+  <point name="upper_left_pad" x="600" y="1000" />
+  <point name="lower_right_pad" x="500" y="0" />
+</resources>

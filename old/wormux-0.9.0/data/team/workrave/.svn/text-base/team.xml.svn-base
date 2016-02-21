@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Workrave</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+<character name="Workrave" body="workrave"/>
+<character name="Yan Tan Tethera" body="workrave"/>
+<character name="Dolly" body="workrave"/>
+<character name="Scrapie" body="workrave"/>
+<character name="O. aries" body="workrave"/>
+<character name="Aries" body="workrave"/>
+<character name="Wool" body="workrave"/>
+<character name="O. canadensis" body="workrave"/>
+<character name="O. dalli" body="workrave"/>
+<character name="O. musimon" body="workrave"/>
+<character name="O. ammon musimon" body="workrave"/>
+<character name="O. nivicola" body="workrave"/>
+<character name="O. orientalis" body="workrave"/>
+<character name="O. vignei" body="workrave"/>  
+  </team>
+</resources>

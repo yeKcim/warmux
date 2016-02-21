@@ -1,0 +1,80 @@
+Wormux 0.7
+Compilation/Installation sous Linux
+-----------------------------------
+
+=============
+* Dépendences
+=============
+
+* SDL
+-----
+
+Wormux nécessite la version 1.2 de la bibliothéque SDL. 
+Elle peut être obtenu sur le site web : 
+  http://www.libsdl.org/
+
+* SDL mixer, SDL image, SDL ttf et SDL gfx
+------------------------------------------
+
+SDL est découpé en différents modules. Les modules nécessaires sont :
+  - SDL mixer : gestion du son
+  - SDL image : chargement d'images
+  - SDL ttf : affichage de textes
+  - SDL gfx (! version 2.0.13 minimum !) : graphiques 
+
+Vous pouvez télécharger ces bibliothéques sur :
+  http://www.libsdl.org/projects/SDL_ttf/
+  http://www.libsdl.org/projects/SDL_mixer/
+  http://www.libsdl.org/projects/SDL_image/
+  http://www.ferzkopp.net/Software/SDL_gfx-2.0/
+
+* libxml++
+----------
+
+Wormux utilise la librairie libxml++ version 2.6.
+
+Sous Debian, pour l'installer, utilisez la commande :
+  apt-get install libxml++2.6-dev
+
+Site web :
+  http://libxmlplusplus.sourceforge.net/
+
+============================
+* Compilation / Installation
+============================
+
+Sous Linux, il suffit de taper :
+
+$ ./autogen.sh                 # pour la version SubVersion de Wormux
+$ ./configure
+$ make
+$ su -c "make install"         
+
+Sur les systèmes Ubuntu, il faut utiliser sudo make install à la place de su -c ...
+
+
+Par défaut, le jeu est installé dans /usr/local. Mais vous pouvez spécifier un autre
+répertoire (pratique si on n'a pas accès au compte administrateur) en changeant la
+commande configure initiale:
+
+$ ./configure --prefix=/home/utilisateur/jeux
+
+=================
+* Désinstallation
+=================
+
+Dans le répertoire des sources, faites tout simplement :
+$ su -c "make uninstall"
+
+
+================
+* Autres options
+================
+
+Beaucoup d'options peuvent être utilisées avec la commande configure.
+La plus pratique étant:
+$ ./configure --enable-debug
+Permettant d'obtenir toutes les informations de débuggage nécecssaires.
+
+Pour connaitre toutes les autres options du configure, faite:
+$ ./configure --help

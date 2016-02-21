@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Warmux</string>
+
+    <string name="init">Αρχικοποίηση</string>
+    <string name="readme">^Παρακαλώ περιμένετε όσο τα δεδομένα κατεβαίνουν</string>
+
+    <string name="device_config">Ρύθμιση συσκευής</string>
+    <string name="device_change_cfg">Αλλάξτε τη ρύθμιση της  συσκευής</string>
+
+    <string name="download_unneeded">Δεν χρειάζεται κατέβασμα</string>
+    <string name="connecting_to">Σύνδεση στο %s</string>
+    <string name="failed_connecting_to">Απέτυχε η σύνδεση στο %s</string>
+    <string name="error_connecting_to">Σφάλμα κατά την σύνδεση στο %s</string>
+    <string name="dl_from">Κατεβαίνουν δεδομένα από %s</string>
+    <string name="error_dl_from">Σφάλμα κατά το κατέβασμα δεδομένων από %s</string>
+    <string name="error_write">Σφάλμα κατά το γράψιμο στο  %s</string>
+    <string name="dl_crc_error">Το αρχείο %s είναι κατεστραμμένο</string>
+    <string name="dl_progress">%1$d%% έγινε: αρχείο %2$s</string>
+    <string name="dl_finished">Τελείωσε</string>
+
+    <string name="storage_phone">Χώρος αποθήκευσης - %d MB ελεύθερα</string>
+    <string name="storage_sd">Χώρος αποθήκευσης SD κάρτας  - %d MB  ελεύθερα</string>
+    <string name="storage_question">Πού να κατέβουν  τα δεδομένα της εφαρμογής</string>
+
+    <string name="controls_arrows">Βελάκια / joystick / dpad</string>
+    <string name="controls_trackball">Trackball</string>
+    <string name="controls_none">Τίποτα</string>
+    <string name="controls_question">Τι τύπου πλήκτρα έχει η συσκευή σου;</string>
+
+    <string name="trackball_no_dampening">Χωρίς όριο</string>
+    <string name="trackball_fast">Γρήγορο</string>
+    <string name="trackball_medium">Μεσαίο</string>
+    <string name="trackball_slow">Αργό</string>
+    <string name="trackball_question">Όριο Trackball</string>
+
+    <string name="accel_fast">Γρήγορο</string>
+    <string name="accel_medium">Μεσαίο</string>
+    <string name="accel_slow">Αργό</string>
+    <string name="accel_question">Ευαισθησία επιταχυνσιόμετρου</string>
+
+    <string name="accel_floating">Ελεύθερο</string>
+    <string name="accel_fixed_start">Καθορισμένο όταν ξεκινάει η εφαρμογή</string>
+    <string name="accel_fixed_horiz">Καθορισμένο προς  τον προσανατολισμό του τραπεζιού</string>
+    <string name="accel_question_center">Κεντρική θέση επιταχυνσιόμετρου</string>
+
+    <string name="audiobuf_small">Μικρό (γρήγορες συσκευές)</string>
+    <string name="audiobuf_medium">Μεσαίο</string>
+    <string name="audiobuf_large">Μεγάλο (αν ήχος είναι διακεκομμένος)</string>
+    <string name="audiobuf_question">Μέγεθος του audio buffer</string>
+</resources>

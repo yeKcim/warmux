@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Type=Application
+Name=wormux
+GenericName=Arcade Game
+Comment=A 2D worms war
+Icon=wormux-128.xpm
+
+FilePattern=wormux
+Exec=wormux
+Terminal=false
+StartupNotify=false
+
+Categories=Application;Game;ArcadeGame;

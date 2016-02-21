@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Tux</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+    <character name="Tux" body="tux" />
+    <character name="Chilly Willy" body="tux" />
+    <character name="Pingu" body="tux" />
+    <character name="Royal" body="tux" />
+    <character name="Gorfou" body="tux" />
+    <character name="Papou" body="tux" />
+    <character name="Empereur" body="tux" />
+    <character name="Pygmée" body="tux" />
+    <character name="Antipode" body="tux" />
+    <character name="Adélie" body="tux" />
+    <character name="Pittsburgh" body="tux" />
+    <character name="Pengo" body="tux" />
+    <character name="Bandit" body="tux" />
+    <character name="Lea" body="tux" />   
+  </team>
+</resources>

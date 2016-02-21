@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Postfix</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+	<character name="Mus crociduroides" body="postfix"/>
+	<character name="Mus mayori" body="postfix"/>
+	<character name="Mus pahari" body="postfix"/>
+	<character name="Mus vulcani" body="postfix"/>
+	<character name="Mus booduga" body="postfix"/>
+	<character name="Mus caroli" body="postfix"/>	
+	<character name="Mus cervicolor" body="postfix"/>
+	<character name="Mus cookii" body="postfix"/>
+	<character name="Mus cypriacus" body="postfix"/>
+	<character name="Mus majorius" body="postfix"/>
+	<character name="Mus famulus" body="postfix"/>
+	<character name="Mus fragilicauda" body="postfix"/>
+	<character name="Mus macedonicus" body="postfix"/>
+	<character name="Mus musculus" body="postfix"/>	
+	<character name="Mus nitidulus" body="postfix"/>
+	<character name="Mus spicilegus" body="postfix"/>
+  </team>
+</resources>

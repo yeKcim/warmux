@@ -1,0 +1,12 @@
+FILE(GLOB_RECURSE LIBWARMUX_SRCS *.cpp)
+
+INCLUDE_DIRECTORIES(
+	${CMAKE_CURRENT_SOURCE_DIR}/include
+	${SDL_INCLUDE_DIR}
+	${PROJECT_SOURCE_DIR}/src
+  ${PROJECT_SOURCE_DIR}/lib/fixedpoint
+)
+
+ADD_LIBRARY(libwarmux STATIC ${LIBWARMUX_SRCS})
+# change the prefix, so we don't end up with liblibwarmux
+SET_TARGET_PROPERTIES(libwarmux PROPERTIES PREFIX "")

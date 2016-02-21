@@ -1,0 +1,77 @@
+10
+
+dir
+10371
+svn://svn.gna.org/svn/warmux/tags/warmux-10.12/build/symbian
+svn://svn.gna.org/svn/warmux
+
+
+
+2010-12-17T01:11:00.209110Z
+9266
+mikkov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30ef787d-52ff-0310-b286-e08351bb7647
+
+group
+dir
+
+bld.inf
+file
+
+
+
+
+2012-12-15T13:30:03.738806Z
+68ae10199b538714a5838a49cf88f09d
+2010-11-27T23:35:32.840553Z
+9165
+mikkov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+718
+
+sis
+dir
+
+lib
+dir
+
+src
+dir
+
+res
+dir
+

@@ -1,0 +1,43 @@
+10
+
+dir
+10371
+svn://svn.gna.org/svn/warmux/tags/wormux-0.9.1/build
+svn://svn.gna.org/svn/warmux
+
+
+
+2010-02-04T00:30:37.589004Z
+7359
+kurosu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30ef787d-52ff-0310-b286-e08351bb7647
+
+cmake
+dir
+
+m4
+dir
+
+mac
+dir
+
+win32_setup
+dir
+
+visual
+dir
+

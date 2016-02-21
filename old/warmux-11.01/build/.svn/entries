@@ -1,0 +1,49 @@
+10
+
+dir
+10371
+svn://svn.gna.org/svn/warmux/tags/warmux-11.01/build
+svn://svn.gna.org/svn/warmux
+
+
+
+2011-01-21T01:32:02.983817Z
+9352
+mikkov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30ef787d-52ff-0310-b286-e08351bb7647
+
+symbian
+dir
+
+win32_setup
+dir
+
+visual
+dir
+
+android
+dir
+
+cmake
+dir
+
+m4
+dir
+
+mac
+dir
+

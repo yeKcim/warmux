@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Warmux folder for replays, teams and maps
+Comment=Location where WarMUX stores replays, chat logs and expect custom teamps and maps
+Icon=folder
+Categories=Game;ArcadeGame;
+Exec=xdg-open ".local/share/wormux"

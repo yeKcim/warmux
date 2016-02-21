@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+  <author>
+    <name>Anthony CARRÉ</name>
+    <nickname>yeKcim</nickname>
+    <email>yeknan AT yahoo DOT fr</email>
+    <country>France</country>
+  </author>
+
+  <surface name="sky" file="sky.jpg" />
+  <surface name="map" file="island.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Island</name>
+  <water>1</water>
+  <nb_mine>5</nb_mine>
+  <is_open>1</is_open>
+
+  <music_playlist>sea</music_playlist>
+</resources>

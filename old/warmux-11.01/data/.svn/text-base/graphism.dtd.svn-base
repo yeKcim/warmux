@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT resources (section+)>
+<!ELEMENT section (surface|sprite|color|point)+>
+<!ATTLIST section name CDATA #REQUIRED>
+
+<!ELEMENT surface EMPTY>
+<!ATTLIST surface name CDATA #REQUIRED file CDATA #REQUIRED>
+
+<!ELEMENT sprite (image, animation?)>
+<!ATTLIST sprite name CDATA #REQUIRED>
+<!ELEMENT image (grid?)>
+<!ATTLIST image file CDATA #REQUIRED>
+<!ELEMENT grid EMPTY>
+<!ATTLIST grid pos CDATA #REQUIRED size CDATA #REQUIRED array CDATA #REQUIRED>
+<!ELEMENT animation EMPTY>
+<!ATTLIST animation speed CDATA #IMPLIED loop_mode CDATA #IMPLIED>
+
+<!ELEMENT color EMPTY>
+<!ATTLIST color name CDATA #REQUIRED r CDATA #REQUIRED g CDATA #REQUIRED b CDATA #REQUIRED a CDATA #REQUIRED>
+
+<!ELEMENT point EMPTY>
+<!ATTLIST point name CDATA #REQUIRED x CDATA #REQUIRED y CDATA #REQUIRED>

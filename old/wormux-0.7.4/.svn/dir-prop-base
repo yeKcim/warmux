@@ -1,0 +1,18 @@
+K 10
+svn:ignore
+V 150
+configure
+Makefile.in
+config.log
+config.status
+stats.xml
+autom4te.cache
+aclocal.m4
+Makefile
+build-arch-stamp
+configure-stamp
+clean
+build-indep-stamp
+
+
+END

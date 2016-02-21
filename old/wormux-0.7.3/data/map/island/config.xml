@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <author>
+    <name>Anthony CARRÉ</name>
+    <nickname>yeKcim</nickname>
+    <country>France</country>
+    <email>yeknan AT yahoo DOT fr</email>
+  </author>
+
+  <surface name="sky" file="sky.png" />
+  <surface name="map" file="island.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Island</name>
+  <water>1</water>
+  <nb_mine>5</nb_mine>
+  <is_open>1</is_open>
+
+</resources>

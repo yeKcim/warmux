@@ -1,0 +1,66 @@
+#!/bin/bash
+
+set -e
+
+####
+echo "Generating weapons list"
+grep 'WeaponLauncher[ ]*([^,]*,[ ]*\"[^\"]*\".*' ../../src/weapon/*.cpp|sed -e 's/.*WeaponLauncher[ ]*([^,]*,[ ]*\"\([^\"]*\)\".*/\1/' > tmp
+grep 'Weapon[ ]*([^,]*,[ ]*\"[^\"]*\".*' ../../src/weapon/*.cpp|sed -e 's/.*Weapon[ ]*([^,]*,[ ]*\"\([^\"]*\)\".*/\1/' >> tmp
+sort tmp | uniq > weapon_lst
+
+
+####
+echo "Generating clothes list"
+grep 'SetClothe[ ]*([ ]*"[^"]*"[ ]*)' $(find ../../src/ -name \*.cpp ) | sed -e 's/^.*SetClothe[ ]*([ ]*"\([^"]*\)"[ ]*).*/\1/' > tmp
+grep 'SetClotheOnce[ ]*([ ]*"[^"]*"[ ]*)' $(find ../../src/ -name \*.cpp ) | sed -e 's/^.*SetClotheOnce[ ]*([ ]*"\([^"]*\)"[ ]*).*/\1/' >> tmp
+
+for weapon in $(cat weapon_lst)
+do
+	echo "weapon-$weapon" >> tmp
+done
+
+sort tmp | uniq > clothe_lst
+
+
+
+#####
+echo "Generating movements list"
+grep 'SetMovement[ ]*([ ]*"[^"]*"[ ]*)' $(find ../../src/ -name \*.cpp ) | sed -e 's/^.*SetMovement[ ]*([ ]*"\([^"]*\)"[ ]*).*/\1/' > tmp
+grep 'SetMovementOnce[ ]*([ ]*"[^"]*"[ ]*)' $(find ../../src/ -name \*.cpp ) | sed -e 's/^.*SetMovementOnce[ ]*([ ]*"\([^"]*\)"[ ]*).*/\1/' >> tmp
+
+for weapon in $(cat weapon_lst)
+do
+	echo "weapon-$weapon-select" >> tmp
+	echo "weapon-$weapon-begin-shoot" >> tmp
+	echo "weapon-$weapon-end-shoot" >> tmp
+done
+
+sort tmp | uniq > mvt_lst
+
+for skin in $(ls -1 ../../data/body/)
+do
+	if [ -d "../../data/body/$skin" ]
+	then
+		echo "Checking skin $skin"
+		for clothe in $(cat clothe_lst)
+		do
+			if [ "$(grep "clothe[ ]*name[ ]*=[ ]*\"$clothe\"" ../../data/body/$skin/config.xml)" == "" ]
+			then
+				echo "Skin $skin doesn't defines the clothe \"$clothe\""
+			fi
+		done
+		for mvt in $(cat mvt_lst)
+		do
+			if [ "$(grep "movement[ ]*name[ ]*=[ ]*\"$mvt\"" ../../data/body/$skin/config.xml)" == "" ] \
+			&& [ "$(grep "alias[ ]*movement[ ]*=[ ]*\"$mvt\"" ../../data/body/$skin/config.xml)" == "" ]
+			then
+				echo "Skin $skin doesn't defines the movement \"$mvt\""
+			fi
+		done
+	fi
+done
+
+
+
+#clothe: weapon-ID
+

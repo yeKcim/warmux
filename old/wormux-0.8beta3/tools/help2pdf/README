@@ -1,0 +1,5 @@
+Extractor for Howto-play documentation of Wormux
+
+Documentation is generated using mozilla2ps downloaded here: http://michele.pupazzo.org/mozilla2ps/index.html
+
+Usage: /path/to/wormuxhelp2pdf.sh lang

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+	<author>
+		<name>Wilfried Dumoutier</name>
+		<nickname>Tutur</nickname>
+		<email>wiltur AT gmail.com</email>
+		<country>France</country>
+	</author>
+
+	<surface name="sky" file="sky.jpg" />
+	<surface name="map" file="map.png" />
+	<surface name="preview" file="preview.jpg" />
+
+	<name>Country</name>
+	<water>1</water>
+	<nb_mine>7</nb_mine>
+	<is_open>1</is_open>
+
+	<add_pad>1</add_pad>
+	<point name="lower_right_pad" x="0" y="0" />
+	<point name="upper_left_pad" x="0" y="500" />
+</resources>

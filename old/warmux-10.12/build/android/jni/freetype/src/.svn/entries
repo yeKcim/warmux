@@ -1,0 +1,52 @@
+10
+
+dir
+10371
+svn://svn.gna.org/svn/warmux/tags/warmux-10.12/build/android/jni/freetype/src
+svn://svn.gna.org/svn/warmux
+
+
+
+2010-10-29T22:56:41.913678Z
+8879
+kurosu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30ef787d-52ff-0310-b286-e08351bb7647
+
+raster
+dir
+
+truetype
+dir
+
+cache
+dir
+
+gzip
+dir
+
+smooth
+dir
+
+base
+dir
+
+sfnt
+dir
+
+autofit
+dir
+

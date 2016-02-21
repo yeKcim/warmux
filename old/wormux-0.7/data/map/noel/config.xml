@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <author>
+    <name>Lawrence AZZOUG</name>
+    <nickname>Lami</nickname>
+    <country>France</country>
+    <email>lawrenceazzoug AT wanadoo.fr</email>
+  </author>
+
+  <surface name="sky" file="../../sky/bleu.png" />
+  <surface name="map" file="noel.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Noel</name>
+  <water>0</water>
+  <nb_mine>3</nb_mine>
+  <is_open>1</is_open>
+
+  <sprite name="wind_particle">
+    <image file="nege-anim.png">
+      <grid pos="0,0" size="24,24" array="5,1"/>
+    </image>
+  </sprite>
+  <wind>
+    <nbr_sprite>100</nbr_sprite>
+    <mass>0.1</mass>
+    <wind_factor>1.0</wind_factor>
+  </wind>
+
+</resources>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Nupik</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="NuFW" body="nupikteam" />
+    <character name="Sonic" body="nupikteam" />
+    <character name="Genus Atelerix" body="nupikteam" />
+    <character name="Genus Erinaceus" body="nupikteam" />
+    <character name="Genus Hemiechinus" body="nupikteam" />
+    <character name="Genus Mesechinus" body="nupikteam" />
+    <character name="Blonde hedgehogs" body="nupikteam" />
+    <character name="WIPFW" body="nupikteam" />
+    <character name="Winsock" body="nupikteam" />
+    <character name="TDI FireWall" body="nupikteam" />
+    <character name="CodeSeeker" body="nupikteam" />
+    <character name="Ipfwadm" body="nupikteam" />
+    <character name="Shorewall" body="nupikteam" />
+    <character name="Zorp" body="nupikteam" />    
+  </team>
+</resources>

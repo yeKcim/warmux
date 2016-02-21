@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <name>Ver jaune</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="Bouboule" skin="ver" />
+    <character name="Gros pif" skin="ver" />
+    <character name="Raleur" skin="ver" />
+    <character name="Kiki" skin="ver" />
+    <character name="Bouffe tout" skin="ver" />
+    <character name="Haypo" skin="ver" />
+  </team>
+</resources>

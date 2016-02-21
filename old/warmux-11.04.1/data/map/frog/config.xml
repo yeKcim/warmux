@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <author>
+    <name>CARRE Anthony</name>
+    <nickname>yeKcim</nickname>
+    <country>France</country>
+    <email>yekcim_AT_crocobox_DOT_org</email>
+    <!--
+    Frogs based on :
+     - http://www.public-domain-photos.com/free-cliparts/animals/other/rana03_architetto_france_01-289.htm
+     - http://www.public-domain-photos.com/free-cliparts/animals/other/rana01_architetto_france_01-287.htm
+     - http://www.public-domain-photos.com/free-cliparts/animals/other/rana02_architetto_france_01-288.htm
+    -->    
+  </author>
+
+  <surface name="sky" file="sky.jpg" />
+  <surface name="map" file="map.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Frog</name>
+  <water>water</water>
+  <nb_mine>8</nb_mine>
+  <is_open>1</is_open>
+  <!-- pad is given in pixel count. -->
+  <add_pad>1</add_pad>
+  <point name="upper_left_pad" x="200" y="400" />
+  <point name="lower_right_pad" x="200" y="0" />
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <name>Nuts Freak</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="Squad" skin="ecureuil" />
+    <character name="Square" skin="ecureuil" />
+    <character name="Squash" skin="ecureuil" />
+    <character name="Squeeze" skin="ecureuil" />
+    <character name="Squint" skin="ecureuil" />
+    <character name="Squirt" skin="ecureuil" />
+  </team>
+</resources>

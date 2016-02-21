@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <name>Escart -- GO!</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="Escabeau" skin="escargot" />
+    <character name="Escalope" skin="escargot" />
+    <character name="Escalade" skin="escargot" />
+    <character name="Escapade" skin="escargot" />
+    <character name="Escabossage" skin="escargot" />
+    <character name="Escadrille" skin="escargot" />
+  </team>
+</resources>

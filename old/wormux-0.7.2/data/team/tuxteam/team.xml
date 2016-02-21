@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <name>Tux Team</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="Tux" skin="tuxteam" />
+    <character name="Chilly Willy" skin="tuxteam" />
+    <character name="Pingu" skin="tuxteam" />
+    <character name="Royal" skin="tuxteam" />
+    <character name="Gorfou" skin="tuxteam" />
+    <character name="Papou" skin="tuxteam" />
+    <character name="Empereur" skin="tuxteam" />
+    <character name="Pygmée" skin="tuxteam" />
+    <character name="Antipode" skin="tuxteam" />
+    <character name="Adélie" skin="tuxteam" />
+    <character name="Pittsburgh" skin="tuxteam" />
+    <character name="Pengo" skin="tuxteam" />
+    <character name="Bandit" skin="tuxteam" />
+    <character name="Lea" skin="tuxteam" />    
+  </team>
+</resources>

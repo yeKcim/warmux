@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>OOo</name>
+  <sound_profile>flying</sound_profile>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="OOo" body="oooteam" />
+    <character name="Writer" body="oooteam" />
+    <character name="Calc" body="oooteam" />
+    <character name="Impress" body="oooteam" />
+    <character name="Base" body="oooteam" />
+    <character name="Draw" body="oooteam" />
+    <character name="Math" body="oooteam" />
+    <character name="Quickstarter" body="oooteam" />    
+    <character name="OpenDocument" body="oooteam" />
+    <character name="OOoConv" body="oooteam" />
+    <character name="PortableOOo" body="oooteam" />
+    <character name="OOo HG" body="oooteam" />
+    <character name="Cart'OOo" body="oooteam" />
+    <character name="Hist'OOo" body="oooteam" />
+    <character name="Gé'OOo" body="oooteam" />
+  </team>
+</resources>

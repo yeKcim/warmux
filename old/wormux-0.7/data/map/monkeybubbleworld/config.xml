@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <author>
+    <name>Anthony CARRÉ and Olivier Boyer</name>
+    <nickname>yeKcim and Zi Olive</nickname>
+    <country>France</country>
+    <email>yeknan AT yahoo DOT fr</email>
+  </author>
+
+  <surface name="sky" file="sky.png" />
+  <surface name="map" file="monkeybubbleworld.png" />
+  <surface name="preview" file="preview.png" />
+
+  <name>Monkey-Bubble World</name>
+  <water>1</water>
+  <nb_mine>5</nb_mine>
+  <is_open>1</is_open>
+
+  <sprite name="wind_particle">
+    <image file="feuille.png">
+      <grid pos="0,0" size="50,50" array="1,1"/>
+    </image>
+  </sprite>
+  <wind>
+    <nbr_sprite>30</nbr_sprite>
+    <mass>0.2</mass>
+    <wind_factor>0.3</wind_factor>
+    <need_flip>1</need_flip>
+  </wind>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+<section name="default_video_mode">
+  <int name="number_of_resolution_available" value="0" />
+</section>
+
+<section name="default_keyboard_layout">
+  <bind key="left" action="move_left" />
+  <bind key="left" action="move_left_slowly" shift="true" />
+  <bind key="right" action="move_right" />
+  <bind key="right" action="move_right_slowly" shift="true" />
+  <bind key="up" action="up" />
+  <bind key="up" action="up_slowly" shift="true" />
+  <bind key="down" action="down" />
+  <bind key="down" action="down_slowly" shift="true" />
+  <bind key="left" action="move_camera_left" control="true" />
+  <bind key="right" action="move_camera_right" control="true" />
+  <bind key="up" action="move_camera_up" control="true" />
+  <bind key="down" action="move_camera_down" control="true" />
+  <bind key="kp_enter" action="jump" />
+  <bind key="kp_enter" action="high_jump" shift="true" />
+  <bind key="kp_enter" action="back_jump" control="true" />
+  <bind key="space" action="shoot" />
+  <bind key="tab" action="next_character" />
+  <bind key="escape" action="quit" />
+  <bind key="pause" action="pause" />
+  <bind key="f10" action="fullscreen" />
+  <bind key="f9" action="toggle_interface" />
+  <bind key="q" action="weapons1" />
+  <bind key="w" action="weapons2" />
+  <bind key="e" action="weapons3" />
+  <bind key="r" action="weapons4" />
+  <bind key="t" action="weapons5" />
+  <bind key="y" action="weapons6" />
+  <bind key="u" action="weapons7" />
+  <bind key="i" action="weapons8" />
+  <bind key="c" action="center" />
+  <bind key="1" action="weapon_1" />
+  <bind key="2" action="weapon_2" />
+  <bind key="3" action="weapon_3" />
+  <bind key="4" action="weapon_4" />
+  <bind key="5" action="weapon_5" />
+  <bind key="6" action="weapon_6" />
+  <bind key="7" action="weapon_7" />
+  <bind key="8" action="weapon_8" />
+  <bind key="9" action="weapon_9" />
+  <bind key="f" action="weapon_more" />
+  <bind key="v" action="weapon_less" />
+  <bind key="s" action="chat" />
+  <bind key="t" action="chat" />
+  <bind key="return" action="chat" alt="true" />
+  <bind key="f11" action="menu_options_from_game" />
+  <bind key="m" action="minimap_from_game" />
+  <bind key="h" action="help" />
+</section>
+
+<!-- This is how to setup per language font files -->
+<section name="default_language_fonts">
+  <language name="ja_JP" file="VL-Gothic-Regular.ttf" relative="true" />
+  <language name="zh_CN" file="wqy-microhei-lite.ttc" relative="true" />
+  <language name="zh_TW" file="wqy-microhei-lite.ttc" relative="true" />
+</section>
+
+</resources>

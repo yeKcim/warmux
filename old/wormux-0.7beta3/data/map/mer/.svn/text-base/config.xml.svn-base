@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <author>
+    <name>Laurent DEFERT</name>
+    <nickname>Lodesi</nickname>
+    <email>lodesi2 AT yahoo.fr</email>
+    <country>France</country>
+  </author>
+
+  <surface name="sky" file="mer-ciel.png" />
+  <surface name="map" file="mer.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Mer</name>
+  <water>0</water>
+  <nb_mine>3</nb_mine>
+  <is_open>1</is_open>
+</resources>

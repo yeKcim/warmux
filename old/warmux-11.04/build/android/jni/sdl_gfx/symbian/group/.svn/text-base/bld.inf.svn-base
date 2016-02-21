@@ -1,0 +1,19 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : 
+ Copyright   : Your copyright notice
+ Description : This file provides the information required for building the
+				whole of a sdl_gfx.
+============================================================================
+*/
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_MMPFILES
+sdl_gfx.mmp
+
+PRJ_EXPORTS
+../../SDL_rotozoom.h		SDL/SDL_rotozoom.h
+../../SDL_gfxPrimitives.h	SDL/SDL_gfxPrimitives.h 

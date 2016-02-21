@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT resources (author, sprite+, clothe+, alias+, movement+)>
+
+<!-- Author part -->
+<!ELEMENT author (name,nickname?,email,country?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT nickname (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+
+<!-- sprite -->
+<!ELEMENT sprite (image, anchor?, animation?, (attached+)? )>
+<!ATTLIST sprite name CDATA #REQUIRED type CDATA #REQUIRED go_through_ground CDATA #IMPLIED>
+
+<!ELEMENT image (grid?)>
+<!ATTLIST image file CDATA #REQUIRED>
+<!ELEMENT grid EMPTY>
+<!ATTLIST grid pos CDATA #REQUIRED size CDATA #REQUIRED array CDATA #REQUIRED>
+
+<!ELEMENT animation EMPTY>
+<!ATTLIST animation speed CDATA #IMPLIED loop_mode CDATA #IMPLIED >
+
+<!ELEMENT anchor EMPTY>
+<!ATTLIST anchor dx CDATA #REQUIRED dy CDATA #REQUIRED>
+
+<!ELEMENT attached EMPTY>
+<!ATTLIST attached member_type CDATA #REQUIRED dx CDATA #REQUIRED dy CDATA #REQUIRED frame CDATA #IMPLIED>
+
+<!-- clothe -->
+<!ELEMENT clothe (member+)>
+<!ATTLIST clothe name CDATA #REQUIRED layer CDATA #IMPLIED>
+
+<!ELEMENT member EMPTY>
+<!ATTLIST member
+          name CDATA #REQUIRED
+          layer CDATA #IMPLIED>
+          
+<!-- alias -->
+<!ELEMENT alias EMPTY>
+<!ATTLIST alias movement CDATA #REQUIRED correspond_to CDATA #IMPLIED>
+
+<!-- movement -->
+<!ELEMENT movement (collision_rect, frame+)>
+<!ATTLIST movement name CDATA #REQUIRED speed CDATA #REQUIRED>
+
+<!ELEMENT collision_rect EMPTY>
+<!ATTLIST collision_rect left CDATA #REQUIRED right CDATA #REQUIRED top CDATA #REQUIRED bottom CDATA #REQUIRED>
+
+<!ELEMENT frame (member+)>
+<!ATTLIST frame number CDATA #REQUIRED>
+
+<!-- WARNING member is common for clothe and frame but does not take same attributes ... !-->
+<!ELEMENT member EMPTY>
+<!ATTLIST member
+          type CDATA #REQUIRED
+          dx CDATA #IMPLIED
+          dy CDATA #IMPLIED
+          scale_x CDATA #IMPLIED
+          scale_y CDATA #IMPLIED
+          alpha CD_DATA #IMPLIED
+          angle CDATA #IMPLIED
+          follow_crosshair CDATA #IMPLIED
+          follow_half_crosshair CDATA #IMPLIED
+          follow_speed CDATA #IMPLIED
+          follow_direction CDATA #IMPLIED>

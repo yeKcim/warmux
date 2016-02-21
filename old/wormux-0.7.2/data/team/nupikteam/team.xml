@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <name>Nupik Team</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="NuFW" skin="nupikteam" />
+    <character name="Sonic" skin="nupikteam" />
+    <character name="Genus Atelerix" skin="nupikteam" />
+    <character name="Genus Erinaceus" skin="nupikteam" />
+    <character name="Genus Hemiechinus" skin="nupikteam" />
+    <character name="Genus Mesechinus" skin="nupikteam" />
+    <character name="Blonde hedgehogs" skin="nupikteam" />
+    <character name="WIPFW" skin="nupikteam" />
+    <character name="Winsock" skin="nupikteam" />
+    <character name="TDI FireWall" skin="nupikteam" />
+    <character name="CodeSeeker" skin="nupikteam" />
+    <character name="Ipfwadm" skin="nupikteam" />
+    <character name="Shorewall" skin="nupikteam" />
+    <character name="Zorp" skin="nupikteam" />    
+  </team>
+</resources>

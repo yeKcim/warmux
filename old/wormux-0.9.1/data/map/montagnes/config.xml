@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+ 
+ <author>
+   <name>Jeoire de Chassey</name>
+   <nickname>Akela NDE</nickname>
+   <email>jeoire[a]chassey.net</email>
+   <country>France</country>
+ </author>
+ 
+ <surface name="sky" file="sky.jpg" />
+ <surface name="map" file="map.png" />
+ <surface name="preview" file="preview.jpg" />
+ 
+ <name>Montagnes</name>
+ <water>water</water>
+ <nb_mine>5</nb_mine>
+ <is_open>1</is_open>
+ 
+ <sprite name="wind_particle">
+   <image file="flocon.png">
+     <grid pos="0,0" size="20,18" array="1,1"/>
+   </image>
+ </sprite>
+ 
+ <wind>
+   <nbr_sprite>6</nbr_sprite>
+   <need_flip>1</need_flip>
+   <mass>1.0</mass>
+   <wind_factor>8.5</wind_factor>
+   <air_resist_factor>0.1</air_resist_factor>
+   <gravity_factor>0.2</gravity_factor>
+   <rebounding>true</rebounding>
+   <rebound_factor>2.1</rebound_factor>
+ </wind>
+ 
+ <!--<music_playlist>NAMEOFMUSICFILE</music_playlist>-->
+ 
+</resources>

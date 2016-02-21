@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <equipe>
+    <nom>Workrave Team</nom>
+    <ver nom="Workrave" avatar="workraveteam" />
+	 <ver nom="Yan Tan Tethera" avatar="workraveteam" />
+    <ver nom="Dolly" avatar="workraveteam" />
+    <ver nom="Scrapie" avatar="workraveteam" />
+    <ver nom="O. aries" avatar="workraveteam" />
+ 	 <ver nom="Aries" avatar="workraveteam" />
+	 <ver nom="Wool" avatar="workraveteam" />    
+    <ver nom="O. canadensis" avatar="workraveteam" />
+    <ver nom="O. dalli" avatar="workraveteam" />
+    <ver nom="O. musimon" avatar="workraveteam" />
+    <ver nom="O. ammon musimon" avatar="workraveteam" />
+    <ver nom="O. nivicola" avatar="workraveteam" />
+    <ver nom="O. orientalis" avatar="workraveteam" />
+	 <ver nom="O. vignei" avatar="workraveteam" />
+  </equipe>
+  <surface name="flag" file="flag.png" />
+</resources>
+

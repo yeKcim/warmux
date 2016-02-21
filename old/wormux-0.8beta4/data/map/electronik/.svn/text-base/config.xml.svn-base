@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+	<author>
+		<name>Olivier Boyer</name>
+		<nickname>ziolive</nickname>
+		<email>ziolive AT gmail.com</email>
+		<country>France</country>
+	</author>
+
+	<surface name="sky" file="sky.jpg" />
+	<surface name="map" file="background.png" />
+	<surface name="preview" file="preview.jpg" />
+
+
+	<name>Electronik</name>
+	<water>1</water>
+	<nb_mine>7</nb_mine>
+	<is_open>1</is_open>
+	<!-- pad is given in pixel count. -->
+	<add_pad>1</add_pad>
+	<point name="upper_left_pad" x="1200" y="1000" />
+	<point name="lower_right_pad" x="1200" y="0" />
+</resources>

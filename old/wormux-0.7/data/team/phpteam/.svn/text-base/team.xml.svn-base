@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <equipe>
+    <nom>PHP Team</nom>
+    <ver nom="PHP" avatar="phpteam" />
+	 <ver nom="Jumbo" avatar="phpteam" />
+    <ver nom="Dumbo" avatar="phpteam" />
+    <ver nom="Babar" avatar="phpteam" />
+    <ver nom="Joseph Merrick" avatar="phpteam" />
+    <ver nom="Ganesh" avatar="phpteam" />
+ 	 <ver nom="Gus Van Sant" avatar="phpteam" />
+	 <ver nom="The White Stripes" avatar="phpteam" />
+    <ver nom="Loxodonta cyclotis" avatar="phpteam" />
+    <ver nom="Loxodonta africana" avatar="phpteam" />
+    <ver nom="Elephas maximus" avatar="phpteam" />
+    <ver nom="Elephas recki" avatar="phpteam" />
+    <ver nom="Stegodon" avatar="phpteam" />
+	 <ver nom="Mammuthus" avatar="phpteam" />
+  </equipe>
+  <surface name="flag" file="flag.png" />
+</resources>

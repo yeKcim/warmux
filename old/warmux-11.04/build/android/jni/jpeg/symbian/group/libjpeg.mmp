@@ -1,0 +1,72 @@
+/*
+ * Copyright (C) 2008 Nokia Corporation
+ *
+ * For conditions of distribution and use, see the accompanying README file.
+ *
+ */
+
+#include "../config/mmp.conf"
+
+TARGET          STATICLIBRARY_NAME(libjpeg-6.lib)
+TARGETTYPE      LIB
+
+//
+// CW
+//
+// variable/argument '...' is not used in function
+//
+OPTION          CW -w nounusedarg
+
+SYSTEMINCLUDE 	\epoc32\include 
+SYSTEMINCLUDE 	\epoc32\include\stdapis
+
+USERINCLUDE     \epoc32\include\jpeg-6
+USERINCLUDE     ..\..
+
+SOURCEPATH      ..\..
+SOURCE          jcapimin.c
+SOURCE          jcapistd.c
+SOURCE          jccoefct.c
+SOURCE          jccolor.c
+SOURCE          jcdctmgr.c
+SOURCE          jchuff.c
+SOURCE          jcinit.c
+SOURCE          jcmainct.c
+SOURCE          jcmarker.c
+SOURCE          jcmaster.c
+SOURCE          jcomapi.c
+SOURCE          jcparam.c
+SOURCE          jcphuff.c
+SOURCE          jcprepct.c
+SOURCE          jcsample.c
+SOURCE          jctrans.c
+SOURCE          jdapimin.c
+SOURCE          jdapistd.c
+SOURCE          jdatadst.c
+SOURCE          jdatasrc.c
+SOURCE          jdcoefct.c
+SOURCE          jdcolor.c
+SOURCE          jddctmgr.c
+SOURCE          jdhuff.c
+SOURCE          jdinput.c
+SOURCE          jdmainct.c
+SOURCE          jdmarker.c
+SOURCE          jdmaster.c
+SOURCE          jdmerge.c
+SOURCE          jdphuff.c
+SOURCE          jdpostct.c
+SOURCE          jdsample.c
+SOURCE          jdtrans.c
+SOURCE          jerror.c
+SOURCE          jfdctflt.c
+SOURCE          jfdctfst.c
+SOURCE          jfdctint.c
+SOURCE          jidctflt.c
+SOURCE          jidctfst.c
+SOURCE          jidctint.c
+SOURCE          jidctred.c
+SOURCE          jquant1.c
+SOURCE          jquant2.c
+SOURCE          jutils.c
+SOURCE          jmemmgr.c
+SOURCE          jmemansi.c

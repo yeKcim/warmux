@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE clothes [
+
+<!ENTITY complete_arm-left-righthanded "<c_member name='arm-left'/><c_member name='arm2-left'/><c_member name='arm3-left-R'/>">
+<!ENTITY complete_arm-left-lefthanded "<c_member name='arm-left'/><c_member name='arm2-left'/><c_member name='arm3-left-L'/>">
+<!ENTITY complete_arm-right-righthanded "<c_member name='arm-right'/><c_member name='arm2-right'/><c_member name='arm3-right-R'/>">
+<!ENTITY complete_arm-right-lefthanded "<c_member name='arm-right'/><c_member name='arm2-right'/><c_member name='arm3-right-L'/>">
+
+<!ENTITY standard_eyes "<c_member name='eyes'/><c_member name='pupil-right'/><c_member name='pupil-left'/><c_member name='eyelid'/>">
+<!ENTITY complete_face "<c_member name='head'/><c_member name='noze'/>&standard_eyes;">
+<!ENTITY complete_skinhead "<c_member name='hornleft'/><c_member name='hornright'/>&complete_face;">
+<!ENTITY complete_standard-head "<c_member name='hair'/>&complete_skinhead;">
+
+<!ENTITY feet "<c_member name='foot-left'/><c_member name='foot-right'/>">
+<!ENTITY complete_body-tail "<c_member name='tail'/><c_member name='back'/><c_member name='body'/>">
+
+<!ENTITY standard_lefthanded_clothe "&complete_arm-left-lefthanded;<c_member name='weapon'/>&feet;&complete_body-tail;&complete_standard-head;&complete_arm-right-lefthanded;">
+<!ENTITY standard_righthanded_clothe "&complete_arm-left-righthanded;&feet;&complete_body-tail;&complete_standard-head;<c_member name='weapon'/>&complete_arm-right-righthanded;">
+<!ENTITY standard_black "<c_member name='arm-left-black'/><c_member name='arm2-left-black'/><c_member name='arm3-left-black-L'/><c_member name='weapon'/><c_member name='foot-left-black'/><c_member name='tail-black'/><c_member name='foot-right-black'/><c_member name='back-black'/><c_member name='body-black'/><c_member name='hair-black'/><c_member name='hornleft-black'/><c_member name='head-black'/><c_member name='hornright-black'/><c_member name='noze-black'/><c_member name='eyes-black'/><c_member name='pupil-right-black'/><c_member name='pupil-left-black'/><c_member name='eyelid-black'/><c_member name='arm-right-black'/><c_member name='arm2-right-black'/><c_member name='arm3-right-black-L'/>">
+
+<!ENTITY jetpacks "<c_member name='jetpack-left'/><c_member name='jetpack-right'/>">
+
+]>
+
+<clothes>
+
+
+<!-- ###### some standard clothes ###### -->
+<clothe name="normal">&standard_lefthanded_clothe;</clothe>
+<clothe name="weapon-dynamite">&standard_righthanded_clothe;</clothe>
+<clothe name="weapon-slap">&standard_righthanded_clothe;</clothe>
+<clothe name="weapon-grenade">&standard_righthanded_clothe;</clothe>
+<clothe name="weapon-gnulauncher">&standard_righthanded_clothe;</clothe>
+<clothe name="weapon-polecatlauncher">&standard_righthanded_clothe;</clothe>
+<clothe name="weapon-minelauncher">&standard_righthanded_clothe;</clothe>
+<clothe name="weapon-syringe">&standard_righthanded_clothe;</clothe>
+<clothe name="weapon-parachute">&standard_righthanded_clothe;</clothe>
+<clothe name="weapon-bounce_ball">&standard_righthanded_clothe;</clothe>
+<clothe name="weapon-cluster_bomb">&standard_righthanded_clothe;</clothe>
+<clothe name="weapon-disco_grenade">&standard_righthanded_clothe;</clothe>
+<clothe name="black">&standard_black;</clothe>
+<clothe name="fly-black">&standard_black;</clothe>
+<clothe name="dead"><c_member name="body-dead"/></clothe>
+
+<!-- ###### Jetpack ###### -->
+<clothe name="jetpack">
+	<c_member name="tail"/>
+	&jetpacks;
+	&complete_arm-left-righthanded;
+	<c_member name="weapon"/>
+	&feet;
+	<c_member name="body"/>
+	&complete_standard-head;
+	<c_member name="belt"/>
+	&complete_arm-right-righthanded;
+</clothe>
+
+<clothe name="jetpack-fire">
+	<c_member name="tail"/>
+	<c_member name="jetpack-left-fire"/>
+	<c_member name="jetpack-right-fire"/>
+	&jetpacks;
+	&complete_arm-left-righthanded;
+	<c_member name="weapon"/>
+	&feet;
+	<c_member name="body"/>
+	&complete_standard-head;
+	<c_member name="belt"/>
+	&complete_arm-right-righthanded;
+</clothe>
+
+<!-- ###### Helmet ###### -->
+<clothe name="helmet">
+	&complete_arm-left-lefthanded;
+	<c_member name="weapon"/>
+	&feet;
+	&complete_body-tail;
+	&complete_skinhead;
+	&complete_arm-right-lefthanded;
+	<c_member name="helmet"/>
+</clothe>
+
+<!-- ###### Animation Yoyo ###### -->
+<clothe name="animation0">
+	&complete_arm-left-lefthanded;
+	&feet;
+	<c_member name="tail"/>
+	<c_member name="back"/>
+	<c_member name="body"/>
+	&complete_standard-head;
+	<c_member name="yoyo"/>
+	&complete_arm-right-lefthanded;
+</clothe>
+
+<!-- ###### Animation Hula hoop ###### -->
+<clothe name="animation2">
+	&complete_arm-left-lefthanded;
+	<c_member name="hula"/>
+	&feet;
+	&complete_body-tail;
+	&complete_standard-head;
+	&complete_arm-right-lefthanded;
+	<c_member name="hoop"/>
+</clothe>
+
+<!-- # Construct/Airhammer helmet # -->
+<clothe name="weapon-construct">
+	<c_member name="c2"/>
+	&complete_arm-left-lefthanded;
+	<c_member name="weapon"/>
+	&feet;
+	&complete_body-tail;
+	&complete_face;
+	<c_member name="construct"/>
+	&complete_arm-right-lefthanded;
+</clothe>
+
+<clothe name="weapon-airhammer">
+	<c_member name="c2"/>
+	&complete_arm-left-lefthanded;
+	<c_member name="weapon"/>
+	&feet;
+	&complete_body-tail;
+	&complete_face;
+	<c_member name="construct"/>
+	&complete_arm-right-lefthanded;
+</clothe>
+
+<!-- ###### weapon-baseball ###### -->
+<clothe name="weapon-baseball">
+	&complete_arm-left-righthanded;
+	&feet;
+	&complete_body-tail;
+	<c_member name="baseball_tshirt"/>
+	&complete_face;
+	<c_member name="baseball_cap"/>
+	<c_member name="weapon"/>
+	&complete_arm-right-righthanded;
+</clothe>
+
+<!-- ###### weapon-footbomb ###### -->
+<clothe name="weapon-footbomb">
+	<c_member name="foothelmet2"/>
+	&complete_arm-left-righthanded;
+	&feet;
+	&complete_body-tail;
+	&complete_face;
+	<c_member name="foothelmet1"/>
+	<c_member name="weapon"/>
+	&complete_arm-right-righthanded;
+</clothe>
+
+<!-- ###### Gun ###### -->
+<clothe name="weapon-gun">
+	&complete_arm-left-lefthanded;
+	<c_member name="weapon"/>
+	&feet;
+	&complete_body-tail;
+	&complete_face;
+	<c_member name="belt"/>
+	<c_member name="hat"/>
+	&complete_arm-right-lefthanded;
+</clothe>
+
+</clothes>

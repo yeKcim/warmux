@@ -1,0 +1,131 @@
+10
+
+dir
+10371
+svn://svn.gna.org/svn/warmux/tags/wormux-0.7.3/data/weapon
+svn://svn.gna.org/svn/warmux
+
+
+
+2006-05-10T12:07:39.455814Z
+733
+lodesi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30ef787d-52ff-0310-b286-e08351bb7647
+
+air_attack
+dir
+
+share
+dir
+
+grenade
+dir
+
+bounce_ball
+dir
+
+baseball
+dir
+
+airhammer
+dir
+
+uzi
+dir
+
+dynamite
+dir
+
+parachute
+dir
+
+holly_grenade
+dir
+
+skip_turn
+dir
+
+jet_pack
+dir
+
+cluster_bomb
+dir
+
+lowgrav
+dir
+
+ninja_rope
+dir
+
+suicide
+dir
+
+bazooka
+dir
+
+mine
+dir
+
+sound
+dir
+
+gun
+dir
+
+gnu
+dir
+
+teleportation
+dir
+
+push_ico.png
+file
+
+
+
+
+2012-12-15T13:52:41.782752Z
+632181a497202285b4184c6729dbaddb
+2005-08-27T15:09:18.106969Z
+4
+lodesi
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1876
+
+supertux
+dir
+

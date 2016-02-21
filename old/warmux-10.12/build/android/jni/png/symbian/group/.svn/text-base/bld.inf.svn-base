@@ -1,0 +1,12 @@
+/*
+ * Copyright (C) 2008, Nokia Corporation
+ *
+ * For conditions of distribution and use, see copyright notice in png.h.
+ */
+
+PRJ_MMPFILES
+libpng.mmp
+
+PRJ_EXPORTS
+..\..\png.h     libpng-1.2\png.h
+..\..\pngconf.h libpng-1.2\pngconf.h

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <name>Workrave Team</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="Workrave" skin="workraveteam" />
+    <character name="Yan Tan Tethera" skin="workraveteam" />
+    <character name="Dolly" skin="workraveteam" />
+    <character name="Scrapie" skin="workraveteam" />
+    <character name="O. aries" skin="workraveteam" />
+    <character name="Aries" skin="workraveteam" />
+    <character name="Wool" skin="workraveteam" />    
+    <character name="O. canadensis" skin="workraveteam" />
+    <character name="O. dalli" skin="workraveteam" />
+    <character name="O. musimon" skin="workraveteam" />
+    <character name="O. ammon musimon" skin="workraveteam" />
+    <character name="O. nivicola" skin="workraveteam" />
+    <character name="O. orientalis" skin="workraveteam" />
+    <character name="O. vignei" skin="workraveteam" />
+  </team>
+</resources>
+

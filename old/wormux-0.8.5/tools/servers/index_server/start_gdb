@@ -1,0 +1,1 @@
+gdb -x gdb_script ./wormux_server

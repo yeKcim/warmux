@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <equipe>
+    <nom>Ver jaune</nom>
+    <ver nom="Bouboule" avatar="ver" />
+    <ver nom="Gros pif" avatar="ver" />
+    <ver nom="Raleur" avatar="ver" />
+    <ver nom="Kiki" avatar="ver" />
+    <ver nom="Bouffe tout" avatar="ver" />
+    <ver nom="Haypo" avatar="ver" />
+  </equipe>
+  <surface name="flag" file="flag.png" />
+</resources>

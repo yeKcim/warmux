@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+
+<author>
+  <name>Laurent Defert Simonneau</name>
+  <email>lodesi2 AT yahoo.fr</email>
+</author>
+
+<sprite name="walking">
+  <image file="alien.png">
+    <grid size="40,41" array="8,1" />
+  </image>
+
+  <collision_rect dx="10" top="1" bottom="3" />
+  <wormux repetition="3" />
+
+  <hand frame="1" x="22" y="26" />
+  <hand frame="2" x="19" y="27" />
+  <hand frame="3" x="16" y="27" />
+  <hand frame="4" x="10" y="28" />
+  <hand frame="5" x="18" y="28" />
+  <hand frame="6" x="26" y="21" />
+  <hand frame="7" x="28" y="15" />
+  <hand frame="8" x="25" y="21" />
+</sprite>
+
+<sprite name="jetpack-walk">
+  <image file="alien-jet-walk.png">
+    <grid size="40,41" array="8,1" />
+  </image>
+
+  <collision_rect dx="10" top="1" bottom="3" />
+  <wormux repetition="3" />
+  <hand/>
+</sprite>
+
+<sprite name="jetpack">
+  <image file="alien-jet-fly.png">
+    <grid size="40,41" array="4,1" />
+  </image>
+
+  <collision_rect dx="10" top="1" bottom="3" />
+  <animation speed="50" />
+</sprite>
+
+<sprite name="jetpack-up">
+  <image file="alien-jet-fly-move.png">
+    <grid size="40,44" array="5,1" />
+  </image>
+  <animation speed="100" loop_mode="pingpong"/>
+  <collision_rect dx="10" top="1" bottom="6" />
+</sprite>
+
+<sprite name="jetpack-left-right">
+  <image file="alien-jet-fly-leftright.png">
+    <grid size="40,44" array="3,1" />
+  </image>
+  <animation speed="100" loop_mode="pingpong"/>
+  <collision_rect dx="10" top="1" bottom="6" />
+</sprite>
+
+<sprite name="animation">
+  <image file="alien-anim.png">
+    <grid pos="0,0" size="20,17" array="6,1" />
+  </image>
+  <translation origin="top_left" x="14" y="-23" />
+  <animation speed="80" />
+</sprite>
+
+<sprite name="helmet">
+  <image file="alien-helmet.png">
+    <grid size="40,44" array="8,1" />
+  </image>
+
+  <collision_rect dx="10" top="1" bottom="3" />
+  <wormux repetition="3" />
+
+  <hand frame="1" x="22" y="26" />
+  <hand frame="2" x="19" y="27" />
+  <hand frame="3" x="16" y="27" />
+  <hand frame="4" x="10" y="28" />
+  <hand frame="5" x="18" y="28" />
+  <hand frame="6" x="26" y="21" />
+  <hand frame="7" x="28" y="15" />
+  <hand frame="8" x="25" y="21" />
+</sprite>
+
+<sprite name="jump">
+  <image file="alien-jump.png">
+    <grid size="40,41" array="1,1" />
+  </image>
+
+  <collision_rect dx="10" top="1" bottom="3" />
+  <wormux repetition="3" />
+  <hand frame="*" x="13" y="21" />
+</sprite>
+
+<sprite name="dead">
+  <image file="alien_mort.png" />
+  <collision_rect dx="0" top="0" bottom="4" />
+</sprite>
+
+<sprite name="drowned">
+  <image file="noye.png">
+    <grid size="42,63" array="10,1" />
+  </image>
+  <animation speed="20" />
+</sprite>
+
+</resources>

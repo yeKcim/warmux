@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+
+<author>
+  <name>Lawrence AZZOUG</name>
+  <nickname>Lami</nickname>
+  <country>France</country>
+  <email>lawrenceazzoug AT wanadoo.fr</email>
+</author>
+
+<sprite name="walking">
+  <image file="marche.png">
+    <grid pos="0,0" size="30,32" array="4,1" />
+  </image>
+  <collision_rect dx="3" top="0" bottom="6" />
+  <wormux repetition="3" />
+
+  <hand frame="1" x="21" y="18" />
+  <hand frame="2" x="22" y="18" />
+  <hand frame="3" x="22" y="18" />
+  <hand frame="4" x="21" y="18" />
+</sprite>
+
+<sprite name="helmet">
+  <image file="marche.png">
+    <grid pos="0,0" size="30,32" array="4,1" />
+  </image>
+  <collision_rect dx="3" top="0" bottom="6" />
+  <wormux repetition="3" />
+
+  <hand frame="1" x="21" y="18" />
+  <hand frame="2" x="22" y="18" />
+  <hand frame="3" x="22" y="18" />
+  <hand frame="4" x="21" y="18" />
+</sprite>
+
+<sprite name="dead">
+  <image file="mort.png" />
+  <collision_rect dx="0" top="0" bottom="0" />
+</sprite>
+
+<sprite name="drowned">
+  <image file="noye.png" />
+</sprite>
+
+</resources>

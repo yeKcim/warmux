@@ -1,0 +1,14 @@
+#include <appinfo.rh>
+#include "warmux.rls"
+
+RESOURCE  LOCALISABLE_APP_INFO r_warmux_localisable_app_info
+{
+	short_caption = "";
+	caption_and_icon =
+	CAPTION_AND_ICON_INFO
+	{
+		caption = "";
+		number_of_icons = 1;
+		icon_file = "\\resource\\apps\\Warmux.mif";
+	};
+}

@@ -1,0 +1,75 @@
+﻿Wormux 0.7
+Wormux vývojárska príručka (Slovak)
+-----------------------------------
+
+Ak sa cítiš na to pomôcť nám, prosím pošli nám email na:
+
+wormux-dev _AT_ gna.org (nezabudni vymeniť "_AT_" s "@")
+
+Alebo, hovor s nami na kanáli #wormux, na IRC (irc.freenode.net).
+
+Akákoľvek prispenie je vítané :
+- Kód
+- Grafika
+- Feedback (Názory/Pohľady/atď.)
+- Hlásenie chýb (pozri BUGS.txt)
+
+
+=======
+* Vývoj
+=======
+
+Opravy chýb reprezentujú obrovskú časť vývoja Wormuxu.
+Mnoho nástrojov môže byť použitých na vystopovanie chýb...
+
+* Debugging správy
+------------------
+
+Na povolenie lepšieho ladenia zdrojového kódu, má veľa zdrojových súborov "ladiace prepínače" ako:
+#define DEBUG_...
+
+Príklad obj_physique.cpp :
+#ifdef DEBUG
+
+//# define DEBUG_CHG_ETAT
+//# define DEBUG_MSG_PHYSIQUE
+[...]
+#endif
+
+Odkomentovaním "#define DEBUG_CHG_ETAT", sa ladiace správy
+zapíšu do konzoly. Tieto sú skutočne užitočné ak niečo nefunguje.
+
+* debug.cpp
+-----------
+
+Tento súbor je navrhnutý ako prídavný nástroj na pomoc ľuďom ladiť Wormux. Čiastočne, 
+môže povoliľ zobrazovať na displeji množstvo informácií ktoré sú  aktualizované v reálnom čase. Stačí editovať 
+"Debug::Gestion()" na zobrazenie akýchkoľvek dát, ktoré vyžaduješ.
+
+* GDB
+-----
+
+Nanajnižšej úrovni je GDB nástroj (the GNU Debugger). 
+Pre ďalšiu dokumentáciu, pozri ich web stránku.
+
+na spustenie Wormuxa v GDB, zadaj "gdb ./wormux" v adresáry Wormuxu.
+Potom, na spustenie Wormuxa v debuggery, zadaj "run"
+
+Keď časť Wormuxa zlyhá (spadne), je vydaný "Prerušovací" signál, ktorý je detekovaný gdb.
+V tomto momente, jednoducho zadaj "backtrace" v gdb aby si videl kde program zmrzol.
+
+Pokiaľ GDB zmrzne po "SIGTTOU" signáli, je to najčastejšie a najpravdepodobnejšie spôsobené zvukom. Najjednoduchšia cesta na vyriešenie tohto problému je vypnúť zachytávanie signálu:
+
+"handle SIGTTOU noprint nostop"
+
+
+=========
+* Grafika
+=========
+
+Všetky obrázky musia byľ v PNG formáte. Obrázky musia byľ najmenej v 24 bitových farbách alebo 32 bitových farbách.
+
+pokiaľ chceš vidieť koordináty v hre, odkomentuj
+"#define AFFICHE_COORD_SOURIS" v debug.cpp, potom rekompiluj program.
+Koordináty kurzora sa zobrazia na obrazovke.
+

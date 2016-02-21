@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+
+<author>
+  <name>Laurent Defert Simonneau</name>
+  <email>lodesi2 AT yahoo.fr</email>
+</author>
+
+<sprite name="walking">
+  <image file="poulpe-anim.png">
+    <grid pos="0,0" size="42,42" array="10,1" />
+  </image>
+  <collision_rect dx="10" top="0" bottom="8" />
+  <animation speed="50" />
+  <full_walk>1</full_walk>
+
+  <hand frame="1" x="36" y="33" />
+  <hand frame="2" x="35" y="31" />
+  <hand frame="3" x="38" y="28" />
+  <hand frame="4" x="37" y="30" />
+  <hand frame="5" x="36" y="37" />
+  <hand frame="6" x="32" y="36" />
+  <hand frame="7" x="31" y="37" />
+  <hand frame="8" x="32" y="38" />
+  <hand frame="9" x="32" y="38" />
+  <hand frame="10" x="32" y="38" />
+</sprite>
+
+<sprite name="helmet">
+  <image file="poulpe-helmet.png">
+    <grid pos="0,0" size="42,42" array="10,1" />
+  </image>
+  <collision_rect dx="10" top="0" bottom="8" />
+  <wormux repetition="2" />
+
+  <hand frame="1" x="36" y="33" />
+  <hand frame="2" x="35" y="31" />
+  <hand frame="3" x="38" y="28" />
+  <hand frame="4" x="37" y="30" />
+  <hand frame="5" x="36" y="37" />
+  <hand frame="6" x="32" y="36" />
+  <hand frame="7" x="31" y="37" />
+  <hand frame="8" x="32" y="38" />
+  <hand frame="9" x="32" y="38" />
+  <hand frame="10" x="32" y="38" />
+</sprite>
+
+<sprite name="animation">
+  <image file="poulpe-gratte-anim.png">
+    <grid pos="0,0" size="42,42" array="20,1" />
+  </image>
+  <translation origin="top_left" x="0" y="0" />
+</sprite>
+
+<sprite name="breathe">
+  <image file="breathe.png">
+    <grid pos="0,0" size="42,42" array="20,1" />
+  </image>
+  <collision_rect dx="10" top="0" bottom="8" />
+  <animation speed="100" loop_mode="pingpong"/>
+</sprite>
+
+<sprite name="dead">
+  <image file="poulpe-mort.png" />
+  <collision_rect dx="0" top="0" bottom="6" />
+</sprite>
+
+<sprite name="drowned">
+  <image file="noye.png">
+    <grid pos="0,0" size="42,63" array="10,1"/>
+  </image>
+  <animation speed="5" />
+</sprite>
+
+<sprite name="jetpack">
+	<image file="poulpe-jp.png"/>
+	<collision_rect dx="20" top="3" bottom="8" />
+</sprite>
+
+<sprite name="jetpack-up">
+	<image file="poulpe-jp-up.png">
+		<grid size="53,46" array="4,1" />
+	</image>
+	<animation speed="30" />
+	<collision_rect dx="20" top="0" bottom="12" />
+</sprite>
+
+<sprite name="jetpack-left-right">
+	<image file="poulpe-jp-lr.png">
+		<grid size="53,46" array="4,1" />
+	</image>
+	<animation speed="30" />
+	<collision_rect dx="20" top="0" bottom="17" />
+</sprite>
+
+
+<sprite name="jump">
+	<image file="poulpe-jump.png">
+		<grid size="36,45" array="1,1" />
+	</image>
+	
+	<collision_rect dx="10" top="0" bottom="12" />
+	<hand frame="*" x="21" y="35" />
+</sprite>
+
+</resources>

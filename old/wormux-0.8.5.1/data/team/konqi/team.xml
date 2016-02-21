@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Konqi</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+    <character name="Konqui" body="konqi" />
+    <character name="Kopete" body="konqi" />
+    <character name="KDevelop" body="konqi" />
+    <character name="KMail" body="konqi" />
+    <character name="Kate" body="konqi" />
+    <character name="K3B" body="konqi" />
+    <character name="KFormula" body="konqi" />
+    <character name="KOffice" body="konqi" />
+    <character name="Kontact" body="konqi" />
+    <character name="Krita" body="konqi" />
+    <character name="digiKam" body="konqi" />
+    <character name="Kicker" body="konqi" />
+    <character name="okular" body="konqi" />
+    <character name="KPDF" body="konqi" />
+  </team>
+</resources>

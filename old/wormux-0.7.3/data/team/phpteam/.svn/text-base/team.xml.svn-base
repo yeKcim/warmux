@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <name>PHP Team</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="PHP" skin="phpteam" />
+    <character name="Jumbo" skin="phpteam" />
+    <character name="Dumbo" skin="phpteam" />
+    <character name="Babar" skin="phpteam" />
+    <character name="Joseph Merrick" skin="phpteam" />
+    <character name="Ganesh" skin="phpteam" />
+    <character name="Gus Van Sant" skin="phpteam" />
+    <character name="The White Stripes" skin="phpteam" />
+    <character name="Loxodonta cyclotis" skin="phpteam" />
+    <character name="Loxodonta africana" skin="phpteam" />
+    <character name="Elephas maximus" skin="phpteam" />
+    <character name="Elephas recki" skin="phpteam" />
+    <character name="Stegodon" skin="phpteam" />
+    <character name="Mammuthus" skin="phpteam" />
+  </team>
+</resources>

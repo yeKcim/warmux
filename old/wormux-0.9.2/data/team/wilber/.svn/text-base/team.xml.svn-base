@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Wilber</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+    <character name="Pablo Picasso" body="wilber" />
+    <character name="Keith Haring" body="wilber" />
+    <character name="Leonard Da Vinci" body="wilber" />
+    <character name="Francisco Goya" body="wilber" />
+    <character name="Salvador Dali" body="wilber" />
+    <character name="Paul Gauguin" body="wilber" />
+    <character name="Edouard Manet" body="wilber" />
+    <character name="Claude Monet" body="wilber" />    
+    <character name="Rembrandt Harmenszoon van Rijn" body="wilber" />
+    <character name="Pierre-Auguste Renoir" body="wilber" />
+    <character name="Vincent Van Gogh" body="wilber" />
+    <character name="Raffaello Sanzio" body="wilber" />
+    <character name="Jean-Baptiste Oudry" body="wilber" />
+    <character name="Alessandro Botticelli" body="wilber" />
+  </team>
+</resources>

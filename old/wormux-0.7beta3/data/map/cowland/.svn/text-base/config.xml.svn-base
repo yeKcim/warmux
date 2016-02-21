@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <author>
+    <name>Alexandre NORMAN</name>
+    <nickname>Xael</nickname>
+    <country>France</country>
+    <email>norman AT xael.org</email>
+  </author>
+
+  <surface name="sky" file="cowland_bg.png" />
+  <surface name="map" file="cowland.png" />
+  <surface name="preview" file="preview.png" />
+
+  <name>Cowland</name>
+  <water>0</water>
+  <nb_mine>3</nb_mine>
+  <is_open>1</is_open>
+
+  <sprite name="wind_particle">
+    <image file="nuage.png">
+      <grid pos="0,0" size="128,64" array="1,1"/>
+    </image>
+  </sprite>
+  <wind>
+    <nbr_sprite>15</nbr_sprite>
+    <mass>0.1</mass>
+    <wind_factor>1.0</wind_factor>
+    <need_flip>1</need_flip>
+  </wind>
+</resources>
+

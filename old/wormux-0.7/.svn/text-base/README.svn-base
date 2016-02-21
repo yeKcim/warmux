@@ -1,0 +1,252 @@
+################ Wormux ########################
+
+   Introduction
+1/ Principe du jeu
+2/ Contrôles au clavier
+3/ Contrôles à la souris
+4/ Description des armes
+5/ Configuration
+6/ Bêta test du jeu
+7/ Contacts et liens
+
+
++------------------+
+|   Introduction   |
++------------------+
+
+   Wormux est un clone libre de Worms. Il est encore en phase de développement
+intensif, ne vous étonnez donc pas de rencontrer une "Assertion xxx failed."
+ou carrément un "segfault". Par contre, le jeu a atteint un niveau de maturité
+qui le rend complètement jouable : 
+
+- 10 armes implémentées : dynamite, bazooka, bazooka à tête chercheuse, pistolet, 
+  batte de baseball, grenade, téléportation, suicide, attaque aérienne, mine
+- Apparition de caisse bonus
+- Déplacement de la caméra à la souris ou avec le pavé numérique du clavier
+- Possibilité de jouer avec un nombre arbitraire d'équipe (après c'est plus la 
+  taille du terrain qui limite, car les vers sont séparés d'une distance
+  minimale :-))
+- Les équipes sont clairement identifiées (avatars et écussons différents)
+- Comptabilisation des munitions des armes
+- Compteur du temps pour chaque tour, avec 2 secondes de pause entre chaque
+  tour
+- Une dizaine de type de personnages différents : alien, ball, escargot, 
+  haypocampe, poule, poulpe, tortue, ver, wougzy, xbill.
+- Une dizaine de terrains
+- Présence d'un menu options (encore à compléter). Le reste est facilement 
+  configurable dans les fichiers *.xml situés dans le répertoire "donnée"
+- Des traductions dans plusieurs langues : anglais, espagnol, allemand, catalan,
+  polonais,...
+- etc.
+
+
++---+---------------------+
+| 1 |   Principe du jeu   |
++---+---------------------+
+
+   Le principe du jeu est simple. Vous disposez en début de la partie d'une 
+équipe de 5 personnages. Votre adversaire (humain) possède lui aussi 5 personnages. 
+Ils sont placés de manière aléatoire sur le terrain.
+
+   Un premier personnage est sélectionné par le jeu. A partir de là, il ne vous reste
+plus qu'à sélectionner une arme de votre choix afin d'éliminer les "monstres" 
+adverses. La partie est terminée lorsqu'il n'y a plus qu'une équipe !
+
+   Attention, si vous sortez de l'espace de jeu (typiquement : bords droit
+et gauche de l'écran), votre personnage va mourir !
+
+   En cas de chute importante, vous perdez votre tour (le personnage doit se remettre
+de ses émotions :-)).
+
+   Pour faire défiler le plateau de jeu, restez appuyé sur la touche CTRL,
+puis déplacez la souris. Il est également possible d'utiliser le clavier 
+(voir la section 3 de ce document).
+
+   Des caisses bonus peuvent apparaître (dans les terrains ouverts). Elles
+contiennent des bonus aléatoires :
+- gain d'une attaque aérienne
+- gain de 5 téléportations
+- gain de 10 dynamites
+- gain de 100% d'énergie
+- perte 75% d'énergie (!!!)
+
+
++---+--------------------------+
+| 2 |   Contrôles au clavier   |
++---+--------------------------+
+
+    Touches    :   Description
+---------------+------------------------ --- -- -
+ Gauche/Droite : Se déplacer latéralement.
+ Entrée        : Sauter.
+ Backspace     : Super saut (vertical).
+ Espace        : Tirer.
+ Haut/Bas      : Déplacer le viseur (pour le pistolet par ex.).
+               :
+ F1            : Passer à l'arme Dynamite.
+ F2            : Passer à l'arme Bazooka.
+ F3            : Passer à l'arme Pistolet.
+ F4            : Passer à l'arme Batte de baseball.
+ F5            : Passer à l'arme Teleportation.
+ F6            : Passer à l'arme Suicide.
+ F7            : Passer à l'arme Attaque aérienne.
+               :
+ F9            : Affiche/cache l'interface.
+ F10           : Passer du mode plein écran au mode fenêtre.
+               :
+ C             : Recadrage automatique + recentrage sur le personnage en cours 
+               : (désactivé dès qu'un recadrage manuel est effectué)
+ TAB           : Passer d'un personnage à l'autre de son équipe.
+ T             : Passer son tour.
+ P             : Mettre le jeu en pause (ou reprise du jeu)
+ M             : Affiche le menu des armes (inactif pour l'instant)
+               :
+ Page haut     : Accélère le jeu (*)
+ Page bas      : Ralentit le jeu (*)
+               :
+ 4 (PN.)       : Déplace la caméra à gauche.
+ 6 (PN.)       : Déplace la caméra à droite.
+ 8 (PN.)       : Déplace la caméra en haut.
+ 2 (PN.)       : Déplace la caméra en bas.
+               :
+ Echap         : Quitter Wormux.
+               :
+(*) : Astuces activées uniquement en mode "débogage". Bien sûr, ces astuces 
+      disparaîtront dans la version 1.0.
+PN. : Pavé numérique.
+
++---+---------------------------+
+| 3 |   Contrôles à la souris   |
++---+---------------------------+
+
+Pour déplacer la caméra, restez appuyé sur la touche CTRL puis déplacez votre
+souris.
+
+- Clic gauche : Sélectionner le ver survolé, tirer avec une arme ou choix d'une
+                arme dans le menu.
+- Clic droit  : Affiche/cache le menu des armes.
+
+
++---+---------------------------+
+| 4 |   Description des armes   |
++---+---------------------------+
+
+
+   La plupart des armes infligent des dégâts à l'adversaire, mais peuvent
+également appliquer un "souffle" (souffle d'une explosion) aux personnages ou aux
+objets. Il est par exemple possible de dévier la trajectoire d'une caisse
+à l'aide du pistolet. Pratique pour voler une caisse à un adversaire.
+
+
+  DYNAMITE (dégât : 75)
+  --------
+
+  La dynamite est une arme qui permet de faire beaucoup de dégât en un endroit
+de la carte. Pratique pour dégommer plusieurs adversaires d'un coup. Par 
+contre, attention à ne pas vous faire toucher !
+
+
+  BAZOOKA (dégât : 50)
+  -------
+
+   Rien de tel pour déloger un adversaire caché dans un coin de la carte. Il
+faut rester appuyé sur espace pour doser la puissance de l'arme. 
+L'apprentissage de cet arme est obligatoire pour espérer en tirer profit.
+
+   Lorsque vous tirez une seconde fois avec le bazooka, une ligne jaune va
+vous indiquer la force du précédent tir. Très pratique pour affiner sa 
+trajectoire jusqu'à toucher l'adverse.
+
+   Attention à ne jamais pousser le bazooka à bout sous peine qu'il vous
+explose dans les bras (aïe) !!!
+
+
+  PISTOLET (dégât : 25, munitions illimitées)
+  --------
+
+   Une bonne arme pour narguer l'ennemie : "T'as vu, je t'ai eu avec un ridicule
+pistolet". Attention tout de même à son maniement, c'est assez difficile de
+toucher des cibles lointaines.
+
+
+  BASEBALL (dégât : 20, munitions illimitées)
+  --------
+
+   Les dégâts de cette arme sont peu importants. Il vaut mieux l'utiliser 
+lorsque son adversaire est au bord d'un ravin pour l'y pousser :-)
+
+
+  TELEPORTATION (outil)
+  -------------
+
+   Cet outil vous permet de vous placer où bon vous semble sur la carte. Le 
+gros problème est de se placer stratégiquement pour éviter que l'adversaire ne
+vous frappe au coup suivant.
+
+   Pour se téléporter à un endroit donné, il suffit de cliquer (bouton gauche)
+à l'endroit voulu avec la souris.
+
+  SUICIDE (dégât : 40, munitions illimitées)
+  -------
+
+   Étant donné qu'en explosant un ver fait perdre de l'énergie à ses voisins,
+pourquoi ne pas se donner la mort volontairement ? C'est le dernier recourt 
+quand il ne reste plus qu'un ver et qu'on sent la fin venir.
+
+  ATTAQUE AERIENNE (dégât : 50 / obus, nombre d'obus : 5, munition : 1)
+  ----------------
+
+   La plus violente de toutes les armes disponibles. Le sens dans lequel
+arrive l'avion est donné par l'orientation du ver actif. Changez-le avec les
+touches droite/gauche. Pour lancez l'attaque, visez un point de la carte avec
+la souris puis cliquez !
+
+
+
++---+-------------------+
+| 5 |   Configuration   |
++---+-------------------+
+
+   Pour changer de terrain et choisir vos équipes, allez dans le menu Options.
+
+
+Nouvelle équipe
+---------------
+
+   Pour vous créer une nouvelle équipe, allez dans le répertoire 
+donnee/equipe/. Chaque sous-répertoire est une équipe. Une équipe a un écusson
+(fichier PNG ecusson.png de taille 48x48). Le nom des personnages et le nom de 
+l'équipe sont définis dans equipes.xml. Le fichier images.scr contient simplement 
+le nom de l'écusson. Chaque personnage peut avoir une apparence différente,
+c'est l'attribut "avatar".
+
+Configuration avancée
+---------------------
+
+   Pour une configuration plus avancée, voyez les fichiers XML :
+- donnee/mode_jeu/*.xml : Les différents modes de jeu
+- config.xml : Configuration principale
+
+
++---+----------------------+
+| 6 |   Bêta test du jeu   |
++---+----------------------+
+
+   Afin d'aider le jeu a être plus beau, plus rapide, et plus stable : je vous 
+invite à signaler tout comportement du jeu qui vous semble anormal (message
+d'erreur indiqué par le jeu, Linux, ou Windows, ...). Mais aussi à donner
+votre avis sur les graphismes, les options du jeu, etc.
+
+   Ce jeu est un logiciel libre. Vous pouvez librement y contribuer. Il suffit
+pour ça de nous contacter.
+
+
++---+-----------------------+
+| 7 |   Contacts et liens   |
++---+-----------------------+
+
+   Pour plus d'informations, visitez notre site officiel :
+http://www.haypocalc.com/wormux/
+
+   Envoyez-nous vos critiques à : 
+lawrenceazzoug@wanadoo.fr (Azzoug Lawrence).

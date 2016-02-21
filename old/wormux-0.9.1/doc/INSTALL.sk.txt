@@ -1,0 +1,93 @@
+﻿Wormux 0.7
+Kompilácia/Inštalácia pod Linuxom
+-----------------------------------
+
+============
+* Závislosti
+============
+
+Ak nasledujúci software nie je v tvojom systéme, budeš si ho musieť stiahnuť
+pred pokusom o inštaláciu Wormuxu 0.5 na tvoj počítač...
+
+* SDL
+-----
+
+Wormux potrebuje SDL knižnicu verzie 1.2.
+
+Túto verziu môžeš stiahnuť z webstránky: http://www.libsdl.org/
+
+* SDL mixer, SDL image, SDL ttf and SDL gfx
+-------------------------------------------
+
+
+SDL je rozdelený do malých modulov. Wormux potrebuje mixer (zvuk), image (načítanie
+obrazového súboru), ttf (vykreslenie textu) a gfx (grafické veci).
+
+Môžeš mať problémy pri inštalácii SDL gfx: Wormux *potrebuje* verziu 2.0.13 alebo
+vyššiu. Stiahni ju a skompiluj.
+
+Tu sú ich web stránky:
+ http://www.libsdl.org/projects/SDL_ttf/
+ http://www.libsdl.org/projects/SDL_mixer/
+ http://www.libsdl.org/projects/SDL_image/
+ http://www.ferzkopp.net/Software/SDL_gfx-2.0/
+
+* libxml++
+----------
+
+Wormux používa libxml++ knižnicu verzie 2.6.
+
+Dostaneš ju tu: http://libxmlplusplus.sourceforge.net/
+
+Pod Debianom, použi príkaz:
+apt-get install libxml++2.6-dev
+
+
+=========================
+* Kompilácia / Inštalácia
+=========================
+
+Pokial používaš SubVerziu verzie Wormuxu zadáš najprv:
+
+    ./autogen.sh
+
+Pod Linuxom, zadaj Wormux adresár, potom jednoducho zadaj:
+
+./configure
+make
+
+potom, ako root, zadaj:
+
+make install
+
+Štandardne, sa hra naištaluje do /usr/local. Ale ty si môžeš vybrať
+adresár (užitočné ak nemáš prístup ku kontu roota) modifikovaním
+počiatočného konfiguraèného príkazu:
+
+./configure --prefix=/OTHER/DIRECTORY/HERE
+
+
+==============
+* Uninstalling
+==============
+
+Pre odinštalovanie Wormuxu, choï do zdrojového adresára, potom (ako root )zadaj:
+
+make uninstall
+
+
+===================
+* Ďalšie nastavenie
+===================
+
+Veľa nastavení može byť použitých s konfiguračným príkazom.
+najužitočnejšie (pre vývojárov, najmenej) býva:
+
+./configure --enable-debug
+
+Toto ti dovolí skompilovať Wormuxa s debug nastavením, povolí ti vysliediť chyby/dalšie problémy.
+
+Pre zoznam všetkých ïalších konfiguračných nastavení, zadaj:
+
+./configure --help
+

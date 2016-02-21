@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Beastie</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+    <character name="Beastie" body="beastieteam" />
+    <character name="FreeBSD" body="beastieteam" />
+
+    <character name="DragonFlyBSD" body="beastieteam" />
+    <character name="OpenBSD" body="beastieteam" />
+    <character name="NetBSD" body="beastieteam" />
+    <character name="PC-BSD" body="beastieteam" />
+    <character name="DesktopBSD" body="beastieteam" />
+    <character name="MirBSD" body="beastieteam" />
+    <character name="kFreeBSD" body="beastieteam" />
+    <character name="MidnightBSD" body="beastieteam" />
+    <character name="666" body="beastieteam" />
+  </team>
+</resources>

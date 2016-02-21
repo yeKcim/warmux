@@ -1,0 +1,92 @@
+                     Wormux
+                     ======
+
+
+1/ Présentation
+===============
+
+Faites s'affronter les mascottes de vos logiciels libres favoris dans 
+l'arène de Wormux. À grands coups de dynamite, grenades, batte de 
+baseball et autres bazookas,... exterminez votre adversaire dans un 
+décor toon 2D destructible et une ambiance bon enfant.
+
+Chaque joueur (2 minimum, sur un même PC) commande l'équipe de son 
+choix (manchot, gnou, firefox, wilber,...) et doit détruire celle de 
+son adversaire à l'aide d'armes plus ou moins conventionnelles.
+
+Bien qu'un minimum de stratégie vous sera nécessaire pour vaincre, 
+Wormux est avant tout un jeu de "massacre convivial" où, tour à tour, 
+un membre de chaque équipe tente de faire un maximum de dégâts dans 
+les rangs adverses. 
+
+2/ Comment jouer ?
+==================
+
+Vous n'aurez pas à vous casser la tête pour comprendre comment jouer 
+à Wormux.
+
+2.1/ Contrôles
+==============
+Contrôles clavier/souris pour jouer à Wormux.
+
+* Touche droite/gauche : marcher vers la droite ou la gauche
+* Touche haut/bas : Régler le viseur (utilisé pour le bazooka, le pistolet,
+ etc.), c'est-à-dire l'angle de tir
+* Touche espace : Tirer. Exceptions : le parachute se déclenche tout seul,
+ et la téléportation se fait avec un clic de souris.
+* Clic droit de souris : Affiche/cache le menu des armes.
+* Clic gauche de souris : Positionner la cible pour la téléportation ou le
+ bazooka automatique.
+* Touche F1, F2, .. F5 : Changer d'arme parmi la catégorie 1, 2, ... 5
+* Touche echappe : Quitter le jeu (une confirmation est nécessaire)
+* Touche entrée : Saut ("horizontal")
+* Touche retour (backspace, au dessus d'entrée) : Saut ("vertical")
+* Déplacement de la souris dans les bordures de l'écran : Se déplacer dans
+ le terrain 
+
+
+
+2.2/ Aide supplémentaire
+========================
+
+Sur le site web :
+* Liste des armes: http://wormux.org/wiki/fr/armes.php
+* Liste des cartes : http://wormux.org/wiki/fr/cartes.php
+  * Comment créer votre propre carte : http://wormux.org/wiki/Create_your_own_map.php
+* Liste des avatars : http://wormux.org/wiki/fr/avatars.php
+* Forum: http://www.wormux.org/forum/
+
+3/ Sur quelle système jouer sans compiler ?
+==============================================
+
+Wormux est disponible sur de nombreux systèmes  (regardez 
+http://wormux.org/wiki/packages.php pour la liste mise à jour):
+
+* Linux :
+  * Debian Sarge
+  * Debian Etch
+  * Debian Sid
+  * Ubuntu Dapper
+  * Ubuntu Edgy
+  * Fedora Core 4
+  * Fedora Core 5
+  * Mandriva 2006
+  * Mandriva 2007
+  * Gentoo
+  * Slackware
+  * SourceMage
+  * PLD
+  * Crux
+  * Sorcerer Grimoire
+
+* FreeBSD
+
+* Windows
+
+* Mac OS X
+
+
+4/ Liens
+========
+
+* Site officiel : http://wormux.org/fr/

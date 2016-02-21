@@ -1,0 +1,105 @@
+Wormux 0.8
+
+
+*** Translations of this document are available in doc/ subdirectory ***
+
+
+Compilation/Installation under Linux
+-----------------------------------
+
+==============
+* Dependencies
+==============
+
+If the following software is not presently on your system, you will need to download them
+before attempting to install Wormux 0.8 on your computer...
+
+* All dependencies in one command (Debian/Ubuntu)
+-------------------------------------------------
+
+sudo apt-get install g++ \
+   libxml++2.6-dev libsdl-ttf2.0-dev libsdl-mixer1.2-dev \
+   libsdl-image1.2-dev libsdl-gfx1.2-dev \
+   libcurl4-dev libsdl-net1.2-d
+
+* SDL
+-----
+
+Wormux needs the SDL library version 1.2.
+
+It can be downloaded of their website: http://www.libsdl.org/
+
+* SDL mixer, SDL image, SDL ttf and SDL gfx, SDL net
+----------------------------------------------------
+
+SDL is split into small modules. Wormux needs mixer (sound), image (load
+picture file), ttf (draw text), gfx (graphical things) and net (network).
+
+You may have trouble installing SDL gfx: Wormux *needs* version 2.0.13 or
+greater. Download it and compile it.
+
+Here are their website:
+ http://www.libsdl.org/projects/SDL_ttf/
+ http://www.libsdl.org/projects/SDL_mixer/
+ http://www.libsdl.org/projects/SDL_image/
+ http://www.libsdl.org/projects/SDL_net/
+ http://www.ferzkopp.net/Software/SDL_gfx-2.0/
+
+* libxml++
+----------
+
+Wormux uses the libxml++ library version 2.6.
+
+Get it here: http://libxmlplusplus.sourceforge.net/
+
+Under Debian, use the command:
+	apt-get install libxml++2.6-dev
+
+
+============================
+* Compilation / Installation
+============================
+
+If you're using the SubVersion version of Wormux, you will have to run:
+
+    ./autogen.sh
+
+Under Linux, enter the Wormux directory, then simply type:
+
+	./configure
+	make
+
+then, as root, type:
+
+	make install
+
+By default, the game is installed in /usr/local. But you can specify another
+directory (useful if you don't have access to the root account) by modifying the
+initial configure command:
+
+	./configure --prefix=/OTHER/DIRECTORY/HERE
+
+==============
+* Uninstalling
+==============
+
+To uninstall Wormux, go to the source directory, then (as root):
+
+	make uninstall
+
+
+===============
+* Other options
+===============
+
+Many options can be used with the configure command.
+The most useful (for developers, at least) being:
+
+	./configure --enable-debug
+
+This enables you to compile Wormux with debug options, allowing you to track down bugs/other problems.
+
+To get a list of all the other configuration options, type:
+
+	./configure --help
+

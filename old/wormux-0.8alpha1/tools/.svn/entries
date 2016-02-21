@@ -1,0 +1,77 @@
+10
+
+dir
+10371
+svn://svn.gna.org/svn/warmux/tags/wormux-0.8alpha1/tools
+svn://svn.gna.org/svn/warmux
+
+
+
+2006-10-21T12:25:30.819394Z
+1492
+gentildemon
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30ef787d-52ff-0310-b286-e08351bb7647
+
+check_src
+dir
+
+view_stat
+dir
+
+static_release
+dir
+
+valgrind.sh
+file
+
+
+
+
+2012-12-15T13:43:20.750775Z
+47a735ccd1a84df451fd514b41f4e2c7
+2006-10-21T12:25:30.819394Z
+1492
+gentildemon
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+252
+
+map-generator
+dir
+
+win32_setup
+dir
+

@@ -1,0 +1,623 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Wormux 0.5\n"
+"Report-Msgid-Bugs-To: wormux-dev@gna.org\n"
+"POT-Creation-Date: 2006-08-05 13:59+0200\n"
+"PO-Revision-Date: 2006-01-30 22:45+0100\n"
+"Last-Translator: Frank van der Loo <frank_l@linuxmail.org>\n"
+"Language-Team: Dutch <nl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/game/game.cpp:146 src/game/game.cpp:186
+#, c-format
+msgid "  Most sold-out :  %s (%i).\n"
+msgstr ""
+
+#: src/game/game.cpp:144 src/game/game.cpp:184
+#, c-format
+msgid "  Most usefull  :  %s (%i).\n"
+msgstr ""
+
+#: src/game/game.cpp:145 src/game/game.cpp:185
+#, c-format
+msgid "  Most useless  :  %s (%i).\n"
+msgstr ""
+
+#: src/game/game.cpp:143 src/game/game.cpp:183
+#, c-format
+msgid "  Most violent  :  %s (%i).\n"
+msgstr ""
+
+#: src/map/maps_list.cpp:277
+#, c-format
+msgid "! Map %s not found :-("
+msgstr "Kaart %s niet gevonden :-("
+
+#: src/game/game_loop.cpp:727
+#, c-format
+msgid "%s (%s team) has died."
+msgstr "%s (team %s) is overleden."
+
+#: src/map/maps_list.cpp:104
+#, c-format
+msgid "%s <%s> aka %s from %s"
+msgstr "%s <%s> aka %s van %s"
+
+#: src/map/maps_list.cpp:111
+#, c-format
+msgid "%s <%s> from %s"
+msgstr "%s <%s> van %s"
+
+#: src/game/game_loop.cpp:705
+#, c-format
+msgid "%s commits suicide !"
+msgstr "%s pleegde zelfmoord !"
+
+#: src/graphic/fps.cpp:106
+#, c-format
+msgid "%s fps"
+msgstr "%s fps"
+
+#: src/game/game_loop.cpp:698
+#, c-format
+msgid "%s has fallen in water."
+msgstr "%s is in het water gevallen."
+
+#: src/game/game_loop.cpp:709
+#, c-format
+msgid "%s has fallen off the map!"
+msgstr "%s is van de kaart gevallen!"
+
+#: src/object/bonus_box.cpp:153
+#, fuzzy, c-format
+msgid "%s has lost %u point of energy."
+msgid_plural "%s has lost %u points of energy."
+msgstr[0] "%s verloor %u punten energie"
+msgstr[1] "%s verloor %u punten energie"
+
+#: src/object/bonus_box.cpp:144
+#, fuzzy, c-format
+msgid "%s has won %u point of energy!"
+msgid_plural "%s has won %u points of energy!"
+msgstr[0] "%s heeft %u punten energie gekregen!"
+msgstr[1] "%s heeft %u punten energie gekregen!"
+
+#: src/game/game_loop.cpp:720
+#, c-format
+msgid "%s is a psychopath, he has killed a member of %s team!"
+msgstr "%s is een psychopaat, hij vermoorde een lid van team %s!"
+
+#: src/game/game_loop.cpp:715
+#, c-format
+msgid "%s is dead because he is clumsy!"
+msgstr "%s is dood door zijn onhandigheid!"
+
+#: src/weapon/mine.cpp:125
+#, c-format
+msgid "%s is next to a mine!"
+msgstr "%s staat naast een mijn!"
+
+#: src/object/bonus_box.cpp:171
+#, fuzzy, c-format
+msgid "%s team has won %u automatic bazooka!"
+msgid_plural "%s team has won %u automatic bazookas!"
+msgstr[0] "Het team %s heeft %u automatische bazooka's gekregen!"
+msgstr[1] "Het team %s heeft %u automatische bazooka's gekregen!"
+
+#: src/object/bonus_box.cpp:181
+#, fuzzy, c-format
+msgid "%s team has won %u stick of dynamite!"
+msgid_plural "%s team has won %u sticks of dynamite!"
+msgstr[0] "Het team %s heeft %u dynamiet gekregen!"
+msgstr[1] "Het team %s heeft %u dynamiet gekregen!"
+
+#: src/object/bonus_box.cpp:135
+#, fuzzy, c-format
+msgid "%s team has won %u teleportation."
+msgid_plural "%s team has won %u teleportations."
+msgstr[0] "%s heeft %u teleportaties gekregen."
+msgstr[1] "%s heeft %u teleportaties gekregen."
+
+#: src/game/game.cpp:192
+#, fuzzy, c-format
+msgid "%s team has won.\n"
+msgstr "Team %s heeft gewonnen."
+
+#: src/object/bonus_box.cpp:162
+#, fuzzy, c-format
+msgid "'%s has won %u air attack"
+msgid_plural "'%s has won %u air attacks"
+msgstr[0] "'%s heeft %u luchtaanval(len) gewonnen"
+msgstr[1] "'%s heeft %u luchtaanval(len) gewonnen"
+
+#: src/interface/interface.cpp:164
+msgid "(dead)"
+msgstr "(dood)"
+
+#: src/interface/interface.cpp:206
+msgid "(unlimited)"
+msgstr "(onbegrensd)"
+
+#: src/map/maps_list.cpp:125
+msgid "<infinite_background> needs <is_open> to be set to work correctly!!"
+msgstr ""
+"Om <infinite_background> goed te laten werken moet <is_open> ingesteld zijn!!"
+
+#: src/object/bonus_box.cpp:166 src/weapon/air_attack.cpp:182
+msgid "Air attack"
+msgstr "Luchtaanval"
+
+#: src/game/game.cpp:182
+msgid "All-Team results:\n"
+msgstr ""
+
+#: src/main.cpp:201
+msgid "Authors:"
+msgstr "Auteurs:"
+
+#: src/object/bonus_box.cpp:175 src/weapon/auto_bazooka.cpp:116
+msgid "Automatic bazooka"
+msgstr "Automatische bazooka"
+
+#: src/weapon/baseball.cpp:30
+msgid "Baseball"
+msgstr "Honkbalknuppel"
+
+#: src/weapon/bazooka.cpp:63
+msgid "Bazooka"
+msgstr "Bazooka"
+
+#: src/main.cpp:98
+msgid "C++ exception caught:"
+msgstr "C++ uitzondering gevangen:"
+
+#: src/team/teams_list.cpp:424 src/team/teams_list.cpp:449
+#, c-format
+msgid "Can't find team %s!"
+msgstr "Kan team %s niet vinden!"
+
+#: src/team/teams_list.cpp:124 src/team/teams_list.cpp:139
+#, c-format
+msgid "Cannot open teams directory (%s)!"
+msgstr "Kan teams directory niet openen (%s)!"
+
+#: src/weapon/cluster_bomb.cpp:142
+msgid "ClusterBomb"
+msgstr "ClusterBom"
+
+#: src/weapon/suicide.cpp:34
+msgid "Commit suicide"
+msgstr "Pleeg zelfmoord"
+
+#: src/menu/main_menu.cpp:194
+msgid "Credits"
+msgstr ""
+
+#: src/menu/options_menu.cpp:80
+msgid "Display player energy?"
+msgstr "Toon energie van speler?"
+
+#: src/menu/options_menu.cpp:83
+msgid "Display player's name?"
+msgstr "Toon naam van speler?"
+
+#: src/menu/options_menu.cpp:77
+msgid "Display wind particles?"
+msgstr "Toon wind deeltjes?"
+
+#: src/game/game.cpp:240
+msgid "Do you really want to quit? (Y/N)"
+msgstr "Wilt u echt afsluiten? (Y/N)"
+
+#: src/menu/options_menu.cpp:103
+msgid "Duration of a turn:"
+msgstr "Duur van een beurt:"
+
+#: src/menu/options_menu.cpp:108
+msgid "Duration of the end of a turn:"
+msgstr "Duur van einde van een beurt:"
+
+#: src/object/bonus_box.cpp:185 src/weapon/dynamite.cpp:98
+msgid "Dynamite"
+msgstr "Dynamiet"
+
+#: src/game/game.cpp:188
+#, fuzzy
+msgid "End of the game!\n"
+msgstr "Einde van het spel!\n"
+
+#: src/interface/interface.cpp:102
+msgid "Energy:"
+msgstr "Energie:"
+
+#: src/team/skin.cpp:146
+#, c-format
+msgid "Error during loading skin %s:"
+msgstr "Fout bij het laden van skin %s:"
+
+#: src/tool/error.cpp:81
+#, c-format
+msgid "Error in %s:%lu"
+msgstr "Fout in %s:%lu"
+
+#: src/team/team.cpp:92
+#, c-format
+msgid "Error loading team %s:"
+msgstr "Fout bij het laden van team %s:"
+
+#: src/game/config.cpp:248
+#, c-format
+msgid ""
+"Error while creating directory \"%s\": unable to store configuration file."
+msgstr ""
+
+#: src/game/config.cpp:128
+#, fuzzy, c-format
+msgid "Error while loading configuration file: %s"
+msgstr "Fout bij het laden van spel modus %s (bestand %s):"
+
+#: src/game/game_mode.cpp:159
+#, c-format
+msgid "Error while loading game mode %s (file %s):"
+msgstr "Fout bij het laden van spel modus %s (bestand %s):"
+
+#: src/game/game.cpp:282
+#, c-format
+msgid ""
+"Error:\n"
+"%s"
+msgstr ""
+"Fout :\n"
+"%s"
+
+#: src/team/team.cpp:147
+#, c-format
+msgid "Error: can't find the skin \"%s\" for the team \"%s\"."
+msgstr "Fout: kan de skin \"%s\" voor het team \"%s\" niet vinden."
+
+#: src/game/game_loop.cpp:221
+#, fuzzy
+msgid "Find a random position for characters"
+msgstr "Zoek een willekeurige positie voor de wormen"
+
+#: src/menu/options_menu.cpp:74
+msgid "Fullscreen?"
+msgstr "Volledig scherm?"
+
+#: src/menu/options_menu.cpp:101
+msgid "Game options"
+msgstr "Spel opties"
+
+#: src/menu/options_menu.cpp:64
+msgid "Graphic options"
+msgstr "Grafische opties"
+
+#: src/weapon/grenade.cpp:72
+msgid "Grenade"
+msgstr "Granaat"
+
+#: src/map/ground.cpp:42
+#, fuzzy
+msgid "Ground initialization..."
+msgstr "Initialisatie"
+
+#: src/weapon/gun.cpp:53
+msgid "Gun"
+msgstr "Geweer"
+
+#: src/tool/file_tools.cpp:60
+msgid "HOME directory (environment variable $HOME) could not be found!"
+msgstr "Kon HOME directory (omgevingsvariabele $HOME) niet vinden!"
+
+#: src/menu/options_menu.cpp:118
+msgid "Initial energy:"
+msgstr "Initiële energie:"
+
+#: src/game/game_loop.cpp:276
+msgid "Initialisation"
+msgstr "Initialisatie"
+
+#: src/main.cpp:177
+#, c-format
+msgid "Initialisation of TTF library failed: %s"
+msgstr ""
+
+#: src/game/game_loop.cpp:149
+msgid "Initialise data"
+msgstr "Initialiseer data"
+
+#: src/game/game_loop.cpp:227
+#, fuzzy
+msgid "Initialise objects"
+msgstr "Initialiseer teams"
+
+#: src/game/game_loop.cpp:98
+msgid "Initialise teams"
+msgstr "Initialiseer teams"
+
+#: src/object/bonus_box.cpp:231
+msgid "Is it a gift ?"
+msgstr ""
+
+#: src/game/game_loop.cpp:94
+msgid "Load map"
+msgstr "Laad kaart"
+
+#: src/map/maps_list.cpp:207
+msgid "Load maps:"
+msgstr "Kaarten worden geladen:"
+
+#: src/team/skin.cpp:322
+msgid "Load skins:"
+msgstr "Skins worden geladen:"
+
+#: src/team/teams_list.cpp:113
+msgid "Load teams:"
+msgstr "Teams worden geladen:"
+
+#: src/map/map.cpp:284
+#, c-format
+msgid "Map %s, a creation of :"
+msgstr "Kaart %s, gemaakt door :"
+
+#: src/menu/options_menu.cpp:69
+msgid "Maximum number of FPS:"
+msgstr ""
+
+#: src/weapon/mine.cpp:185
+msgid "Mine"
+msgstr "Mijn"
+
+#: src/menu/options_menu.cpp:93
+msgid "Music?"
+msgstr "Muziek?"
+
+#: src/interface/interface.cpp:101
+msgid "Name:"
+msgstr "Naam:"
+
+#: src/menu/main_menu.cpp:179
+msgid "Network Game"
+msgstr "Netwerk Spel"
+
+#: src/weapon/weapon.cpp:510
+#, c-format
+msgid "No element <%s> found in the xml config file!"
+msgstr "Element <%s> niet gevonden het xml config bestand!"
+
+#: src/game/game.cpp:88
+msgid "Nobody"
+msgstr ""
+
+#: src/menu/options_menu.cpp:113
+msgid "Number of players per team:"
+msgstr "Aantal spelers per team:"
+
+#: src/menu/main_menu.cpp:188
+msgid "Options"
+msgstr "Opties"
+
+#: src/menu/main_menu.cpp:172
+msgid "Play"
+msgstr "Spelen"
+
+#: src/main.cpp:195
+msgid "Please tell us your opinion of Wormux via email:"
+msgstr "Vertel ons a.u.b. uw mening over Wormux via e-mail:"
+
+#: src/game/game.cpp:304
+msgid "Press a key to continue."
+msgstr ""
+
+#: src/menu/main_menu.cpp:200
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: src/main.cpp:182
+msgid "Quit Wormux"
+msgstr ""
+
+#: src/main.cpp:231
+msgid "Run game"
+msgstr "Spel wordt gestart"
+
+#: src/menu/game_menu.cpp:59
+msgid "Select the teams:"
+msgstr "Selecteer de teams:"
+
+#: src/menu/game_menu.cpp:99
+msgid "Select the world:"
+msgstr "Selecteer de wereld:"
+
+#: src/menu/options_menu.cpp:96
+msgid "Sound effects?"
+msgstr "Geluidseffecten?"
+
+#: src/menu/options_menu.cpp:88
+msgid "Sound options"
+msgstr "Geluid opties"
+
+#: src/game/game.cpp:82
+msgid "Starting a new game"
+msgstr "Starten van een nieuw spel"
+
+#: src/interface/interface.cpp:104
+msgid "Stock:"
+msgstr "Voorraad:"
+
+#: src/game/game.cpp:142
+#, c-format
+msgid "Team %s results:\n"
+msgstr ""
+
+#: src/object/bonus_box.cpp:139 src/weapon/teleportation.cpp:40
+msgid "Teleportation"
+msgstr "Teleportatie"
+
+#: src/weapon/auto_bazooka.cpp:99
+msgid "The automatic rocket has left the battlefield..."
+msgstr "De automatische raket heeft het slagveld verlaten..."
+
+#: src/game/game.cpp:196
+#, fuzzy
+msgid "The game has ended as a draw.\n"
+msgstr "Het spel eindigde in een gelijkspel."
+
+#: src/weapon/bazooka.cpp:53 src/weapon/cluster_bomb.cpp:68
+msgid "The rocket left the battlefield..."
+msgstr "De raket heeft het slagveld verlaten..."
+
+#: src/graphic/video.cpp:120
+#, c-format
+msgid "Unable to initialize SDL library: %s"
+msgstr ""
+
+#: src/map/maps_list.cpp:219 src/map/maps_list.cpp:235
+#, c-format
+msgid "Unable to open maps directory (%s)!"
+msgstr "Kon kaarten directory niet openen (%s)!"
+
+#: src/team/skin.cpp:334 src/team/skin.cpp:350
+#, c-format
+msgid "Unable to open skins directory (%s)!"
+msgstr "Kon skins directory niet openen (%s)!"
+
+#: src/main.cpp:105
+msgid "Unexcepted exception caught..."
+msgstr "Onverwachte uitzondering gevangen..."
+
+#: src/game/game_loop.cpp:194
+msgid "Unknow action"
+msgstr "Onbekende actie"
+
+#: src/main.cpp:149
+msgid "Version"
+msgstr "Versie"
+
+#: src/game/game_loop.cpp:88
+msgid "Wait for clients"
+msgstr "Wacht op clients"
+
+#: src/game/game_loop.cpp:188
+msgid "Wait for map"
+msgstr "Wacht op kaart"
+
+#: src/game/game_loop.cpp:185
+msgid "Wait for server"
+msgstr "Wacht op server"
+
+#: src/game/game_loop.cpp:181
+msgid "Wait for server informations"
+msgstr "Wacht op server informatie"
+
+#: src/game/game_loop.cpp:191
+msgid "Wait teams"
+msgstr "Wacht teams"
+
+#: src/interface/interface.cpp:103
+msgid "Weapon:"
+msgstr "Wapen:"
+
+#: src/main.cpp:212
+msgid "Website: "
+msgstr "Website: "
+
+#: src/game/game_loop.cpp:723
+#, c-format
+msgid "What a shame for %s - he was killed by a simple gun!"
+msgstr "Wat een schande voor %s - hij is gedood door een simpel geweer!"
+
+#: src/main.cpp:164
+msgid "Wormux launching..."
+msgstr "Wormux wordt gestart..."
+
+#: src/main.cpp:200
+msgid "Wormux version "
+msgstr "Wormux versie "
+
+#: src/map/maps_list.cpp:73
+#, c-format
+msgid "XML error during loading map '%s' :"
+msgstr "XML fout bij het laden van kaart '%s' :"
+
+#: src/map/maps_list.cpp:255
+msgid "You need at least one valid map !"
+msgstr "U heeft minimaal één geldige kaart nodig !"
+
+#: src/game/game_loop.cpp:288
+msgid "You need at least two teams to play: change this in 'Options menu' !"
+msgstr ""
+"U heeft minimaal twee teams nodig om te spelen: verander dit in 'Opties "
+"menu' !"
+
+#: src/team/teams_list.cpp:159
+msgid "You need at least two valid teams !"
+msgstr "U heeft minimaal twee geldige teams nodig !"
+
+#: src/weapon/launcher.cpp:50
+msgid "Your shot has missed!"
+msgstr "U schoot mis!"
+
+#: src/map/ground.cpp:56
+msgid "done"
+msgstr ""
+
+#~ msgid "Pause"
+#~ msgstr "Pauze"
+
+#~ msgid "Warning! Winds particles mass is too low! Set by default to 0.3"
+#~ msgstr "Waarschuwing! Gewicht van wind deeltjes te laag ! Standaard is 0.3"
+
+#~ msgid "Authors"
+#~ msgstr "Auteurs"
+
+#~ msgid "End of game"
+#~ msgstr "Einde van het spel"
+
+#~ msgid "Info"
+#~ msgstr "Info"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#, fuzzy
+#~ msgid "Load game data..."
+#~ msgstr "Spel gegevens laden ..."
+
+#~ msgid "ClanLib error :"
+#~ msgstr "ClanLib fout :"
+
+#~ msgid "Sound error :"
+#~ msgstr "Fout met het geluid :"
+
+#, fuzzy
+#~ msgid "Use sound?"
+#~ msgstr "Gebruik geluid"
+
+#~ msgid "%s is stupidly dead because he gone out of the map ..."
+#~ msgstr "%s is stom dood gegaan, omdat hij van het terrein afging ..."
+
+#~ msgid "Dead of %s (%s)."
+#~ msgstr "Dood van %s (%s)."
+
+#~ msgid "Drawn game :-("
+#~ msgstr "Gelijkspel :-("
+
+#~ msgid "Init data"
+#~ msgstr "Initialiseren van gegevens"
+
+#~ msgid "PAUSE"
+#~ msgstr "Pause"
+
+#~ msgid "Thank you to deliver your opinion by following email :"
+#~ msgstr "Gelieve uw mening naar het volgende e-mailadres te sturen :"
+
+#~ msgid "=== Loading ==="
+#~ msgstr "=== Laden ==="

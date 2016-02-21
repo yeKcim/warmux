@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="init">Démarrage</string>
+    <string name="readme">^Veuillez patienter pendant ques les données sont téléchargées</string>
+
+    <string name="device_config">Configuration de l\'appareil</string>
+    <string name="device_change_cfg">Changer de configuration</string>
+
+    <string name="download_unneeded">Inutile de télécharger</string>
+    <string name="connecting_to">Connexion à %s</string>
+    <string name="failed_connecting_to">Echec à la connexion à %s</string>
+    <string name="error_connecting_to">Erreur durant la connection à %s</string>
+    <string name="dl_from">Téléchargement à partir de %s</string>
+    <string name="error_dl_from">Erreur lors du téléchargement à partir de %s</string>
+    <string name="error_write">Erreur d\'écriture dans %s</string>
+    <string name="dl_crc_error">Fichier %s corrompu</string>
+    <string name="dl_progress">%1$d%% fait: fichier %2$s</string>
+    <string name="dl_finished">Fini</string>
+
+    <string name="storage_phone">Stockage interne - %d Mo de libre</string>
+    <string name="storage_sd">Carte SD - %d Mo de libre</string>
+    <string name="storage_question">Où télécharger les données</string>
+
+    <string name="controls_arrows">Flèches / joystick / dpad</string>
+    <string name="controls_trackball">Trackball</string>
+    <string name="controls_none">Rien</string>
+    <string name="controls_question">Quel type de touches votre appareil a-t-il?</string>
+
+    <string name="trackball_no_dampening">Sans limite</string>
+    <string name="trackball_fast">Rapide</string>
+    <string name="trackball_medium">Moyenne</string>
+    <string name="trackball_slow">Lente</string>
+    <string name="trackball_question">Limitation du trackball</string>
+
+    <string name="accel_fast">Rapide</string>
+    <string name="accel_medium">Moyenne</string>
+    <string name="accel_slow">Slow</string>
+    <string name="accel_question">Sensibilité de l\'accéléromètre</string>
+
+    <string name="audiobuf_small">Petite (appareils rapides)</string>
+    <string name="audiobuf_medium">Moyenne</string>
+    <string name="audiobuf_large">Grande (en cas de son par saccades)</string>
+    <string name="audiobuf_question">Taille du tampon audio</string>
+</resources>

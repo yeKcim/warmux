@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT game_mode (allow_character_selection,
+                    duration_turn,
+                    duration_move_player,
+                    duration_exchange_player,
+                    duration_before_death_mode,
+                    gravity,
+                    safe_fall,
+                    damage_per_fall_unit,
+                    max_teams,
+                    max_characters,
+                    character,
+                    weapons )>
+                    
+<!ELEMENT allow_character_selection (#PCDATA)>
+<!ELEMENT duration_turn (#PCDATA)>
+<!ELEMENT duration_move_player (#PCDATA)>
+<!ELEMENT duration_exchange_player (#PCDATA)>
+<!ELEMENT duration_before_death_mode (#PCDATA)>
+<!ELEMENT gravity (#PCDATA)>
+<!ELEMENT safe_fall (#PCDATA)>
+<!ELEMENT damage_per_fall_unit (#PCDATA)>
+<!ELEMENT max_teams (#PCDATA)>
+<!ELEMENT max_characters (#PCDATA)>
+
+<!ELEMENT character (energy, jump, super_jump, back_jump)>
+<!ELEMENT energy EMPTY>
+<!ATTLIST energy initial CDATA #REQUIRED maximum CDATA #REQUIRED >
+<!ELEMENT jump EMPTY>
+<!ATTLIST jump strength CDATA #REQUIRED angle CDATA #REQUIRED >
+<!ELEMENT super_jump EMPTY>
+<!ATTLIST super_jump strength CDATA #REQUIRED angle CDATA #REQUIRED >
+<!ELEMENT back_jump EMPTY>
+<!ATTLIST back_jump strength CDATA #REQUIRED angle CDATA #REQUIRED >
+
+<!ELEMENT weapons (air_attack,airhammer,automatic_bazooka,baseball,bazooka,
+                    bounce_ball,cluster_bomb,construct,dynamite,gnulauncher,
+                    grenade,gun,jetpack,disco_grenade,lowgrav,m16,minelauncher,
+                    ninjarope,parachute,riot_bomb,skip_turn,snipe_rifle,suicide,
+                    teleportation,tux
+                    )>
+                    
+<!ELEMENT air_attack (position,nb_ammo,nbr_obus,change_weapon?,damage,mass,speed)>
+
+<!ELEMENT airhammer (position,(min_angle,max_angle)?,nb_ammo,unit_per_ammo,change_weapon?,damage)>
+
+<!ELEMENT automatic_bazooka (position,max_strength,(min_angle,max_angle)?,
+                            nb_ammo,unit_per_ammo?,change_weapon?,damage,
+                            explosion_range,particle_range,blast_range,blast_force,
+                            timeout?,allow_change_timeout?)>
+                            
+<!ELEMENT baseball (position,(min_angle,max_angle)?,
+                            nb_ammo,unit_per_ammo?,change_weapon?,damage,strength,
+                            range)>
+                            
+<!ELEMENT bazooka (position,max_strength,(min_angle,max_angle)?,
+                            nb_ammo,unit_per_ammo?,change_weapon?,damage,
+                            explosion_range,particle_range,blast_range,blast_force,
+                            timeout?,allow_change_timeout?)>
+
+<!ELEMENT bounce_ball (position,max_strength,(min_angle,max_angle)?,
+                            nb_ammo,unit_per_ammo,change_weapon?,damage,
+                            explosion_range,particle_range,blast_range,blast_force,
+                            timeout?,allow_change_timeout?)>
+
+<!ELEMENT construct (position,nb_ammo,unit_per_ammo?,change_weapon?)>
+
+<!ELEMENT cluster_bomb (position,max_strength,(min_angle,max_angle)?,
+                            nb_ammo,unit_per_ammo?,change_weapon?,damage,
+                            explosion_range,particle_range,blast_range,blast_force,
+                            timeout?,allow_change_timeout?)>
+                            
+<!ELEMENT dynamite (position,nb_ammo,unit_per_ammo?,damage,explosion_range,
+                    particle_range,blast_range,blast_force,timeout,
+                    allow_change_timeout)>
+                    
+<!ELEMENT gnulauncher (position,max_strength,(min_angle,max_angle)?,
+                            nb_ammo,unit_per_ammo?,change_weapon?,damage,
+                            explosion_range,particle_range,blast_range,blast_force,
+                            timeout?,allow_change_timeout?)>
+                            
+<!ELEMENT grenade (position,max_strength,(min_angle,max_angle)?,
+                            nb_ammo,unit_per_ammo?,change_weapon?,damage,
+                            explosion_range,particle_range,blast_range,blast_force,
+                            timeout?,allow_change_timeout?)>
+                            
+<!ELEMENT gun (position,(min_angle,max_angle)?,
+                            nb_ammo,unit_per_ammo,change_weapon?,damage,
+                            explosion_range,particle_range,blast_range,blast_force,
+                            timeout?,allow_change_timeout?)>
+                            
+<!ELEMENT jetpack (position,nb_ammo,unit_per_ammo?,change_weapon?)>
+                            
+<!ELEMENT disco_grenade (position,max_strength,(min_angle,max_angle)?,
+                            nb_ammo,unit_per_ammo?,change_weapon?,damage,
+                            explosion_range,particle_range,blast_range,blast_force,
+                            timeout?,allow_change_timeout?)>
+                            
+<!ELEMENT low_grav (position,nb_ammo,change_weapon?)>
+
+<!ELEMENT ninja_rope (position,(min_angle,max_angle)?,
+                            nb_ammo,unit_per_ammo?,change_weapon?)>
+                            
+<!ELEMENT m16 (position,(min_angle,max_angle)?,
+                            nb_ammo,unit_per_ammo,change_weapon?,damage,
+                            explosion_range,particle_range,blast_range,blast_force,
+                            timeout?,allow_change_timeout?)>
+                            
+<!ELEMENT minelauncher (position,
+                            nb_ammo,unit_per_ammo?,change_weapon?,damage,
+                            explosion_range,particle_range,blast_range,blast_force,
+                            timeout?,allow_change_timeout?,
+                            detection_range,escape_time)>
+                            
+<!ELEMENT parachute (position,nb_ammo,change_weapon,wind_factor,air_resist_factor,
+                    open_speed_limit)>
+
+<!ELEMENT riot_bomb (position,max_strength,(min_angle,max_angle)?,
+                            nb_ammo,unit_per_ammo?,change_weapon?,damage,
+                            explosion_range,particle_range,blast_range,blast_force,
+                            timeout?,allow_change_timeout?)>
+
+<!ELEMENT skip_turn (position,nb_ammo)>
+                            
+<!ELEMENT snipe_rifle (position,(min_angle,max_angle)?,
+                            nb_ammo,unit_per_ammo,change_weapon?,damage,
+                            explosion_range,particle_range,blast_range,blast_force,
+                            timeout?,allow_change_timeout?)>
+                            
+<!ELEMENT suicide (position,nb_ammo,damage,
+                            explosion_range,particle_range,blast_range,blast_force)>
+
+<!ELEMENT teleportation (position,nb_ammo)>
+                            
+
+<!ELEMENT tux (position,(min_angle,max_angle)?,
+                            nb_ammo,unit_per_ammo,change_weapon?,damage,
+                            explosion_range,particle_range,blast_range,blast_force,
+                            timeout?,allow_change_timeout?,speed)>
+
+<!-- Config parameters of weapon (integrated weapon) -->
+<!ELEMENT position (#PCDATA)>
+<!ATTLIST position origin CDATA #REQUIRED x CDATA #REQUIRED y CDATA #REQUIRED>
+<!ELEMENT min_angle (#PCDATA)>
+<!ELEMENT max_angle (#PCDATA)>
+<!ELEMENT nb_ammo (#PCDATA)>
+<!ELEMENT unit_per_ammo (#PCDATA)>
+<!ELEMENT change_weapon (#PCDATA)>
+<!ELEMENT max_strength (#PCDATA)>
+
+<!-- Weapon config -->
+<!ELEMENT damage (#PCDATA)>
+
+<!-- Explosive weapon config -->
+<!ELEMENT explosion_range (#PCDATA)>
+<!ELEMENT particle_range (#PCDATA)>
+<!ELEMENT blast_range (#PCDATA)>
+<!ELEMENT blast_force (#PCDATA)>
+<!ELEMENT timeout (#PCDATA)>
+<!ELEMENT allow_change_timeout (#PCDATA)>
+
+ <!-- For air attack -->
+<!ELEMENT nbr_obus (#PCDATA)>
+
+ <!-- For cluster bomb -->
+<!ELEMENT nb_fragments (#PCDATA)>
+
+<!-- For baseball bat -->
+<!ELEMENT strength (#PCDATA)>
+<!ELEMENT range (#PCDATA)>
+
+<!-- For parachute -->
+<!ELEMENT wind_factor (#PCDATA)>
+<!ELEMENT air_resist_factor (#PCDATA)>
+<!ELEMENT open_speed_limit (#PCDATA)>
+
+<!-- For tux and air attack -->
+<!ELEMENT speed (#PCDATA)>
+
+<!-- For mine -->
+<!ELEMENT detection_range (#PCDATA)>
+<!ELEMENT escape_time (#PCDATA)>

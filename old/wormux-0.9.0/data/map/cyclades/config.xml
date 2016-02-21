@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+ 
+ <author>
+   <name>Jeoire de Chassey</name>
+   <nickname>Akela NDE</nickname>
+   <email>jeoire[a]chassey.net</email>
+   <country>France</country>
+ </author>
+ 
+ <surface name="sky" file="sky.png" />
+ <surface name="map" file="map.png" />
+ <surface name="preview" file="preview.png" />
+ 
+ <name>Cyclades</name>
+ <water>water</water>
+ <nb_mine>7</nb_mine>
+ <is_open>1</is_open>
+ 
+ <sprite name="wind_particle">
+   <image file="rameau_dolivier.png">
+     <grid pos="0,0" size="50,64" array="1,1"/>
+   </image>
+ </sprite>
+ 
+ <wind>
+   <nbr_sprite>3</nbr_sprite>
+   <need_flip>1</need_flip>
+   <mass>1.0</mass>
+   <wind_factor>8.5</wind_factor>
+   <air_resist_factor>0.7</air_resist_factor>
+   <gravity_factor>0.5</gravity_factor>
+   <rebounding>true</rebounding>
+   <rebound_factor>1</rebound_factor>
+ </wind>
+ 
+ <!--<music_playlist>NAMEOFMUSICFILE</music_playlist>-->
+ 
+</resources>

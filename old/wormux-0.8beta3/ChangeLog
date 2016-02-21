@@ -1,0 +1,978 @@
+> 2007/09/09 - 0.8beta2 release
+  - Code improvements:
+      * A lot of network bug fixes (synchro, win32 network support,...)
+      * Fix full screen on Windows
+      * Fix memory leaks
+      * Cleaner code, with useless code deleted
+      * Add debug messages
+      * Faster compilation
+      * Simplify some calculations
+      * Made the water more beautiful
+      * Camera improvements
+  - Menu:
+      * Better widgets in menus
+      * Language selection in Options menu
+      * Small enhancement of Results menu
+      * Options menu accessible from game with F11 key
+      * Main menu can be keyboard driven
+  - Data:
+      * New maps : hive, moon-4m, pillars, tic-tac-toe, towers, funkyisland
+      * Monkey-bubble music for monkey-bubble map
+      * Some graphics improvements (map previews, skins,...)
+      * Add some skins positions
+      * Characters' eyes follow cursor
+      * Add new sounds
+      * Updated translations
+  - New features:
+      * Smaller step in angle selection when pressing Shift
+      * Joystick support
+      * Initial management of command line options
+  - Still experimental :
+      * Better AI (but still stupid)
+      * Improved random level generator
+
+> 2007/06/28 - 0.8beta1 release
+  - Better network game support (visible by default)
+  - Use 3826 as default network port. This number is registred by IANA for Wormux
+  - Music during the game
+  - Better result menu
+  - New maps: Bankiz, Christmas, Crystal, Green Hills, Halloween 2, Space 2
+  - Experimental random map generator
+  - Optimize water rendering
+  - Bug fixes
+
+> 2007/01/27 - 0.7.9 release
+  - Music for menus
+  - Some bug fixes
+  - Updated translations
+  - Improved graphism
+
+> 2006/12/31 - 0.7.9RC2 release
+  - Some bug fixes
+
+> 2006/12/22 - 0.7.9RC1 release
+  - Better Network game (hidden option)
+  - Better Artificial intelligence (hidden option)
+  - Translations&nbsp;: add brazilian and portuguese, comments 
+  - Better bonus box, air attack weapon
+  - Better camera (centered on character while using the jetpack)
+  - New interface, new icon
+  - Add some sounds
+  - Change full screen/window mode with F10
+  - Lot of bug fixes
+
+> 2006/10/22 - 0.8alpha1 release
+  - Network game support !!!
+  - Very much bug fixes
+  - Improved "Options" menu
+  - Improved "Play" menu
+  - Better character and weapon animations
+  - New weapons (Sniper rifle, Shotgun, Riot bomb, Syringe, Polecat launcher, Anvil, Airhammer, Construct, Blowtorch)
+  - New map (Easter Island) and some improvements on other maps
+  - Improved particle engine
+  - Exloding barrels
+  - Double backflip
+  - Characters are able to walk on top of other characters
+  - Cleaner code
+  - Updated German and Bosnian translations
+
+> 2006/08/18 - 0.7.4 release
+  - mostly bug fixes
+
+> 2006/08/05 - 0.7.3 release
+  - Network menu (still experimental)
+  - New quit screen
+  - New wormux menu icon
+  - New maps: Leafs, Paradis
+  - Minor bug fixes
+  - Code cleaning
+
+> 2006/05/26 - 0.7.2 release
+  - New translation: finnish
+  - New map: island, cheese
+  - Misc weapon improvements (ninja rope, uzi, air attack)
+  - Fix some memory leak
+  - Fix minor bugs
+  - Build process improvements (manpage, font path)
+  - Experimental network support
+  - New Pause screen
+
+> 2006/04/24 - 0.7.1 release
+  - New graphisms for weapons from yeKcim and ZeOlive
+  - New Bounceball weapon
+  - New map: goodandevil
+  - Added Turkish and Romanian translation
+  - Updated German and Italian translation
+  - Bug fixes
+
+> 2006/04/04 - 0.7 release
+  - Graphic enhancement in menus and loading screen
+  - Improved game graphics (explosions with smoke)
+  - New maps: Desert, Monkey Bubble, King Kong, Wild West DV, 
+  - New teams: Tux team, Nupik, Wilber, PHP, Snort, Thunderbird, WorkRave, BattleNight
+  - New weapons: bounce ball
+  - Translations: Dutch, Romanian, Danish, 
+  - Code cleaning: implement some design patterns, translate some variables and functions name, remove dead Clanlib code
+  - Compilation process more clean
+  - Bug fixes
+
+> 2006/01/23 - 0.7beta3 release
+  - New traduction: russian
+  - New font: manage east-european languages
+  - Handle conflict with old ~/.wormux/config.xml
+  - New map: hell
+  - PowerPC support
+  - Fix bugs
+
+> 2006/01/11 - 0.7beta1 release
+  - Switch to SDL 1.2 -> completed
+  - New graphic engine, reduced CPU cost
+  - New weapons: ninja rope, jetpack, air hammer, gnu launcher, low gravity
+  - New physical engine: allows crazy things !
+  - New skins: Gnu Team, Firefox Team, Nuts Team, Tux Team, Konqui team
+  - Options menu splitted into game menu and options menu
+  - Bug fixes
+
+> 2006/09/01
+  - Switch to SDL -> beginning
+
+> 2005/08/01 - 0.6 release
+  - Version 0.6.0 released
+
+> 2005/07/05 (Lodesi)
+  - Modifications to skin handling
+  - Updated skin for Alien and Ecureuil
+
+> 2005/06/29 (Korgon)
+  - Jetpack weapon
+  - Add a secondary unit for weapons ammo. Draw a box with secondary weapon units remaining when using such a weapon. 
+
+> 2005/06/19 (Gentildemon)
+  - New game loop
+
+> 2005/06/16 (Lami)
+  - Improved memory management
+
+> 2005/06/11 (Korgon)
+  - Low gavity weapon
+
+> 2005/06/02 (Gentildemon)
+  - Particle engine
+
+> 2005/05/19 (Korgon)
+  - New keyboard handling, based events
+  - Ninja rope weapon
+
+> 2005/05/05 (Lami)
+  - New gfx for weapon & weapon menu
+
+> 2005/05/04 (Korgon)
+  - New physical engine
+  - Parachute weapon
+
+> 2005/05/03 (Gentildemon)
+  - AirHammer weapon
+
+> 2005/04/30 (Lodesi)
+  - GNU weapon
+
+> 2005/04/23 (Lodesi)
+  - Skin ecureil
+
+> 2005/04/22 (Lami)
+  - New icons for weapon menu
+
+> 2005/04/18 (Korgon)
+  - New look for weapon menu
+  - Display remaining ammos in weapon menu
+
+> 2005/04/14 (Korgon)
+  - New physical engine
+
+> 2005/04/07 (Gentildemon)
+  - New interface with transparence from Renaud Lottiaux (Korgon)
+
+> 2005/03/19 (Lodesi)
+  - Move camera when is on the border of the screen
+
+> 2005/02/09 (Gentildemon)
+  - Code cleanup
+
+> 2005/01/23 (Haypo)
+  - Various BUGFIXs
+
+> 2005/01/06 (Haypo)
+  - Write fist part of a network game initialisation : server set game mode, than map, then create teams, than move characters
+  - Convert old Action struct to modern C++ class : it was not possible to use a string in an union
+  - Action can write into an output source, and read data from input source
+  - Teams are identified by an id
+  - Translate some team members into english
+  - BUGFIX: Don't show cursor when shown object is a ghost
+  
+> 2005/01/05 (Gentildemon)
+  - New main menu
+  - Uzi weapon (still buggy :)
+
+> 2005/01/04 (Gentildemon)
+  - Listbox listed alphabetically
+
+> 2005/01/03 (Haypo & Gentildemon)
+  - When a character fall in water, display a message.
+  - Fix around global variables creation (time).
+  - Clean wind particle code : use n instances of CL_Sprite instead of a global one.
+  - Use CL_Sprite options (<image><animation speed="...">) in map config.xml file for wind particles.
+  - Listbox get arrows
+
+> 2005/01/01 (Haypo)
+   - Clean po/Makefile.am : remove POT-Creation-time from all .po files and all comands become quiet
+   - Also read skins and teams from ~/.wormux/ (skin/ and team/ subdir)
+   - Translate game mode into english
+   - When loading a game mode, try to open ~/.wormux/game_mode/<mode>.xml first
+   - Fix a lot of bugs around game mode : set default character options value, character energy progress bar use initial energy instead of 100 for maximum value, etc.
+   - gravity becomes a game option
+   - When the last character of a team die, end the current turn
+   - Fix network state when we don't use network (is a server by default)
+   - Fix auto. bazooka, air attack and teleportation : use action instead of calling directly Tire() function (it had to call Shoot())
+
+> 2004/12/23 (Haypo)
+   - Max fps is configurable in config.xml file
+   - SDL mode is now a configuration option
+   - Rename Vent class to Wind
+   - Wind change is now an action
+   - Network : wait AppWormux::Init() to be created
+   - Action handler send actions to network
+   - Add first part of network layer
+   - Add ClanLib Network module to configure script
+   - Rename Arme class to Weapon
+   - Rename ProjectileArme class to WeaponProjectile
+   - Rename gst_armes global variable to weapons_list
+   - Rename interface.menu_armes global variable to interface.weapons_menu
+   - Rename ACTION_TYPE_* actions to ACTION_*
+
+> 2004/12/22 (Haypo)
+   - Apply action handler patch
+
+> 2004/12/21 (Haypo)
+   - New water from Sami Pietila
+
+> 2004/12/14 (Gentildemon)
+   - Holly-grenade weapon
+
+> 2004/12/13 (Haypo)
+   - SuperTux weapon from Yann BARB and Colin DIDIER
+
+> 2004/12/11 (Lodesi)
+   - Wind particles
+
+> 2004/12/08 (Haypo)
+   - FPS limiter from Olivier SERRES and Eric HOFFMAN
+
+> 2004/11/13 (Haypo & Lodesi)
+   - Map cowland from Alexandre Norman (Xael)
+   - English FAQ/Hackers.txt/Install files
+
+> 2004/10/27 (Haypo)
+   - Translate physical object class in english (big part, was very boring and long)
+   - Fix physical engine : characters move 1 pixel to the bottom of the map (collision test was uncorrected), and support closed maps : characters can walk on map bottom border (code was broken)
+   - Sky also use tile
+   - Use map preview instead loading all datas
+   - It's now possible to change data & locale directories in config file
+   - Fix ver_actif in Team::RAZ()
+   - Reinstall tileling code from Wormux 0.4 and convert it to ClanLib 0.7
+   - Use class for tile
+   - Install lock/unlock managment in tile
+   - Fix a bug in Pause function (more exactly in asking question)
+
+> 2004/10/16 (Lodesi)
+   - Switch to autotools, thanks to ... (mailto wormux-dev@gna.org, if you want your name here)
+
+> 2004/10/06 (Haypo)
+   - Only apply sound configuration when Config::Applique() is called
+   - Add sound frequency in configuration
+   - Add allow_character_selection in game mode. It can have three values: always, never, before_first_action
+
+> 2004/10/05 (Haypo)
+   - Move map/*/images.scr resources into map/*/config.xml
+   - Write map author name during 5 secondes at the top-left corner
+
+> 2004/10/04 (Gentildemon)
+   - Multiple uses of weapon in the same turn
+
+> 2004/10/03 (Hapyo)
+   - Loading image from Lami
+
+> 2004/10/01 (Gentildemon & Lodesi)
+   - Sink.ogg sound
+   - Weapon menu sorted by type of weapon
+
+> 2004/09/28 (Gentildemon & Haypo)
+   - Weapon skip-turn
+   - Correct Jukebox::PlayItem to correctly return session
+   - Add an option to use SDL or GL in option menu
+   - Fix scale to (direction,1) when teleportation end
+   - Remove '.xml' from game mode in config file
+   - Change the whole code of weapon config : all classes herit form the class EmptyWeaponConfig. This class has a virtual 'LoadXml' member.
+   - Question class catch mouse clic : it's action is the "default action"
+   - Merge HEAD (old ClanLib 0.6.5 code) and CL07 (new ClanLib 0.7.8 code) CVS branches
+
+> 2004/09/27 (Haypo)
+   - Part of source code of team/ subdir translated in english
+   - Skin ClanLib resources and Wormux options merged into config.xml (instead of two files)
+   - Hand position changed in skin
+   - Weapon's resources moved to data/weapons.xml
+   - Remove some weapons Dessine() ans PosArmeXY() class members
+   - Graphics resource file renamed to data/graphism.xml
+
+> 2004/09/07 (Paco)
+   - Sound for gun
+
+> 2004/09/04 (Lodesi)
+   - Map libellule
+
+> 2004/08/31 (Gentildemon)
+   - Clean weapon code
+
+> 2004/08/27 (Gentildemon)
+   - Clean weapon code
+
+> 2004/08/24 [CL 0.6.5] (Lami)
+   - New gfx for cluster-bomb & grenade
+
+> 2004/08/23 [CL 0.6.5] (Lami & Lodesi)
+   - Water level increasing with time
+   - Cursor on weapon menu icons shows info about weapon
+
+> 2004/08/22 [CL 0.6.5] (Lami)
+   - Code Cleanup
+
+> 2004/08/20 [CL 0.6.5] (Lodesi)
+   - New weapon: Cluster bombs
+   - New weapon menu (with a fonction to add new weapons to the menu "en 1 clin d'oeil") ;)
+   - Time remaining before a grenade explodes is now drawn.
+
+> 2004/08/14 [CL 0.6.5] (Lami & Gentidemon)
+   - Modification de la gestion des collisions avec l'eau.
+   - Utilisation d'une image "noye" dans la configuration des avatars pour la collision avec l'eau.
+   - Image "noye" pour l'avatar ver
+   - Modification du terrain "space" (fermeture)
+   - Correction de l'ordre d'affichage ver/eau.
+   - Translate data/* and src/* file names in english
+   - Move src/*.cpp and src/*.h into subdirectories. I use relative file name instead of "-I../include/ -I../team/ (...)" hack (which I used for my other project, HaypoCALC, for example). It's not very pratical, but doesn't break file's path. So we can use Emacs to find errors from Makefile (for example, vi should also works :))
+   - Adapt Makefile to support subdirectories : use now "build.o" files which contains all objects from a subdirectory. Each subdirectory have its own Makefile.
+   - Translate the last (?) french words in src/Makefile and src/make.env
+
+> 2004/07/03 (Gentildemon)
+   - Add sounds profile for teams. 
+   - Random choice between many that are for the same action in the same profile.
+
+> 2004/07/02 (Haypo)
+   - Translate last strings (team, map and skin loading, video mode change, a team give her turn, etc.)
+   - Translate text in the interface (use strings instead of graphics)
+   - Add bugbug skin from Dino
+   - Update spanish and catalan translations from Templer
+   - Change team player's name
+
+> 2004/06/29 (Haypo)
+   - Each map have its config.xml now ;-) 
+   - Progress bar can now have a "reference value". It's used for the wind.
+
+> 2004/06/26 (Haypo)
+   - Correct code to support map smaller than the screen resolution. Now works with map which are smaller in X and/or Y
+   - The sky now move with the camera
+
+> 2004/06/25 (Haypo)
+   - Add spanish and catalan translations from Eduard BERMEJO
+   - Translate main menu and messages from bonux boxes in english (i18n)
+   - Add alpha channel to progress bar
+
+> 2004/06/24 (Haypo)
+   - Use pkg-config _or_ clanlib-config to get "libs" and "cflags" arguments for GCC
+   - Add german translation from Michael Prager
+   - Add transparency for team energy jauge
+   - Descative ref variable in barre_prog.cpp because it's buggy
+   - Rename ".pot" files in ".po"
+   - Load sound whereas file doesn't exist (use NULL pointer). Now sound loading errors are only printed one time.
+   - BUGIX: Correction of animation.cpp : set frame to zero when animation type is changed
+
+> 2004/06/19 (Gentildemon & Matt)
+   - La grenade tourne lorsqu'elle est en mouvement 
+   - Possibilité de gérer un son de rebond différent par objet rebondissant
+   - Ajout de sons pour le lancement de la grenade, le bazooka, le bazooka à tête chercheuse, la téléportation. Ces sons ont été réalisé par Gottfried Hofmann.
+   - Changement du son pour le saut.
+
+> 2004/06/15 (Gentildemon & Matt)
+   - Gestion "manuel" du fichier de ressources pour les sons.
+   - Ajout des son de Gottfried Hofmann pour la dynamite.
+
+> 2004/06/14 (Haypo)
+   - Début de l'i18n (internationalisation)
+   - Création d'une fonction Format qui a le même prototype que le classique printf sur <stdio.h>, sauf que ça renvoie un std::string
+   - Mise en place de gettext : initialise la librairie en utilisant le domaine "wormux", et remplace les chaînes françaises "..." par _("...") où ... est le texte en anglais
+   - Le nom des armes est défini dans la fonction <arme>::Init() plutôt qu'avec le constructeur car gettext() n'est pas encore initialisé ...
+
+> 2004/06/13 (Laurent/Gentildemon/Matt)
+   - Ajout de barres d'énergie aux équipes
+   - Ajout de la gestion du rebond dans le moteur physique.
+   - Première version de l'arme "Grenade" :-) 
+
+> 2004/06/10 (Lawrence)
+   - Ajout de 2 animations d'un ver qui meurt.
+   - Sprite d'explosion pour le bazooka.
+   - Correction de l'arme "Mine", a present elles n'explosent pas sans prevenir... 
+     1- A une certaine distance elle s'active apres un temps.
+     2- Elle explose si on la touche et se desarme si on s'eloigne
+   - Correction du mini moteur de placement des caisses/mines,(problème d'assert) y'avait trop de boucle donc provocation d'un assert. A présent même le "y" est en random.
+   - Modification du code de la gestion de l'eau pour tuer un ver qui tombe dans l'eau.
+
+> 2004/06/09 (Haypo)
+   - Si le temps est écoulé et que le ver n'a pas joué, lui interdit de bouger (na!)
+   - La fin d'un tour est largement mieux gêrée :
+     o Suppresion de l'état de jeu "jeuDEBUT_TOUR"
+     o Etat jeuFIN_TOUR découpé en jeuPAUSE_FIN_TOUR et jeuANIM_FIN_TOUR
+     o Lorsqu'un ver a fini de jouer, s'il reste un ver ou un objet qui n'est pas prêt : se centre sur lui. On peut par exemple voir chuter un ver frappé par une batte de baseball ;-)
+     o Fait apparaitre les caisses uniquement à la fin de la pause de fin de tour
+   - Place correctement les caisses : évite qu'elles tombent dans le vide, ou qu'elles touchent un ver dès leur chute. Si le placement est impossible, attend la fin d'un tour pour réessayer de placer la caisse
+   - Possibilité de désactiver tout le système de son, la musique, et les effets sonores. Les options correspondantes ont été créées dans le menu Options et dans config.xml
+   - Dans liste des objets, chaque objet a maintenant un boolean qui dit si l'objet doit être retiré de la liste à la fin de la partie. Ceci évite de récréer la liste à chaque nouvelle partie.
+   - BUGFIX: Correction du clic gauche : change de ver au lieu de placer la cible du bazooka à tête chercheuse ...
+   - BUGFIX: Correction du code des boutons : sauve la largeur et hauteur plutôt que x2 et y2, avant l'appel à InitPos() ne changeait pas m_x2 et m_y2
+   - BUGFIX: Vérifie le pointeur card dans la fonction JukeBox::StopAll(). Provoquait des SEGFAULT avant ça.
+   - BUGFIX: Lorsqu'un ver meurt, il n'est pas exclu de l'explosion. Ceci évite des allers-retours énervants de la caméra
+   - BUGFIX: Retire la balle tirée de la liste des objets actifs
+   - BUGFIX: Désactive la gravité pour les objets de masse nulle. Par contre, simule la signalisation de la la fin d'une chute lors de la fin d'un mouvement pour ces même objets.
+   - BUGFIX: Remise à zéro de la barre de force pour le bazooka lorsqu'il explose directement
+   - BUGFIX: Ne sélectionne plus de ver avec la souris lorsque le ver ne joue pas
+   - BUGFIX: Limite le nombre de messages du jeu. Au passage, passe du type std::vector au type std::list
+   - BUGFIX: Utilise la copie par constructeur pour CL_SoundBuffer_Session plutôt que l'opérateur operator= qui semble bogué dans la ClanLib 0.6 ... Ceci provoquait un SEGFAULT lorsqu'on quittait le programme.
+
+> 2004/06/09 (Laurent)
+   - Ajout du bazooka à tête chercheuse (yeah baby, yeah!)
+
+> 2004/06/08 (Haypo)
+   - Ajout de sons un peu partout : menu principal, armes, fin de tour à cause du temps, passer son tour, victoire, etc.
+   - Correction du code qui efface les sons
+   - Correction du placement de l'arme mine : effectue une chute directe avant de vérifie qu'elle est dans le vide et qu'elle n'est pas un fantome
+   - La désactivation des mines se fait en mettant à zéro le nombre de mine placées sur le terrain
+   - Une mine explose après avoir été activée (avant il fallait l'activer puis marcher dessus)
+   - Change le nombre de ver min/max, ainsi que la durée du temps min/max dans le menu Options
+   - Amélioration de la classe Bouton, maintenant les deux états d'un bouton est stocké dans la même image
+   - Création de l'équipe Poulpe
+   - Correction de l'animation des vers (arrête l'animation au départ)
+
+> 2004/06/05 (Lami)
+   - Mise a jour de l'arme "Mine", maintenant elle fonctionne presque ;)
+   - Modification de l'image utilisée pour les obus de l'attaque aerienne.
+
+> 2004/06/04 (Haypo)
+   - Les dépendances *d'un* fichier source sont écrites dans ".<source>.d" (fichier caché). Ceci évite d'avoir à gênérer toutes les dépendances d'un coup
+   - Nouvelle rêgle de compilation : release, créer une release de wormux.
+   - C'est plus propre que "make RELEASE=1" ;-)
+   - Script d'installation / désinstallation revu et corrigé. Utilise maintenant un #define pour spécifier le répertoire d'installation dans constante.cpp. Affiche un avertissement si on tente une (dés)installation sans être root
+   - N'effectue la liaison du binaire qui si un des fichiers a été modifié
+   - Au final, si aucun fichier n'a été modifié, la recompilation ne fait rien du tout, alors qu'avant TOUTES les dépendances étaient calculées et le binaire était lié à chaque fois ...
+
+> 2004/06/03 (Matthieu & Haypo)
+   - Première version pour le rendu du son. Pour l'instant, il n'est pas possible de jouer un son en boucle. BUG: le fichier de ressource n'est pas pris en compte pour trouver le fichier !?
+   - Le fichier de configuration est crée dans ~/.wormux/ plutôt que dans le répertoire où est lancé wormux ...
+   - Sauvegarde les options dans le XML lorsqu'on enregistre les options dans le menu Options
+   - Ajout du nom des auteurs des avatars ball, xbill et wougzy dans leur fichier config.xml respectif. Ajout du nom des auteurs du jeu xbill et de l'avatar wougzy dans AUTHORS.txt
+   - BUGFIX: Ne remet pas les caisses à zéro si elles sont désactivées. En même temps, fait une RAZ du terrain *avant* la liste des objets, ce qui évite de faire une RAZ des caisses alors qu'elles sont en suite désactivées.
+   - BUGFIX: Correction l'ordre de traitement d'un clic gauche : teste d'abord le menu des armes, et ensuite la possibilité de tirer avec une arme
+   - BUGFIX: Remplace vers.end() par vers_fin dans la classe Equipe. Avant lorsqu'on jouait avec moins de ver que le nombre de vers dans l'équipe, la fin de partie n'arrivait jamais, même s'il y avait plus aucun ver dans l'équipe (ce qui provoquait une boucle infinie)
+   - BUGFIX: (Makefile) "make info" affiche correctement le mode DEBUG ou RELEASE
+   - BUGFIX: Détecte correctement la fin d'une partie (tournait en rond lorsqu'il ne restait plus aucun ver vivant)
+   - BUGFIX: En mode RELEASE, tire quand même avec le bazooka (avant bazooka.Tire() était écrit dans une assertion, donc zappé)
+
+> 2004/06/02 (Matthieu & Haypo) ===> Version 0.3.1
+   - Possibilité de spécifier le pas d'(in|dé)crémentation dans la classe SpinButton 
+   - Ajout des Options "Nombre d'équipiers" et "Énergie initiale" dans le menu.
+   - Modification du pas de modification pour l'option "Temps du tour"
+   - BUGFIX: Correction de la recherche d'équipes / avatars / terrains : utilise stat() plutôt que les attributs renvoyés par readdir (non conforme POSIX).
+
+> 2004/06/01 (Matthieu & Haypo)
+   - Création de la classe SpinBox permettant de modifier une valeur entière
+   - Ajout de SpinBox dans le menu Options pour changer le temps d'un tour ou la pause en fin de tour
+   - La caméra a maintenant une vitesse variable (s'accélère quand l'objet est près du bord)
+   - La classe Video liste les modes vidéos disponnibles et valides
+   - Possibilité de changer le mode graphique et le mode plein/fenêtre dans le mode option
+   - Ne change de mode vidéo que si nécessaire
+   - BUGFIX: Réinitialise correctement les vers (avant le niveau d'énergie et l'image n'était pas remise à zéro ...)
+
+> 2004/05/31 (Lawrence Haypo & Matthieu) ===> Hop, version 0.3
+   - Chaque équipe a maintenant son dossier dédié contenant les fichiers :
+     o images.scr : liste des images (l'écusson)
+     o ecusson.png : Ecusson de l'équipe
+     o equipe.xml : Liste des vers et nom de l'équipe.
+   - Sauve le terrain choisi dans config.xml   
+   - Les ListBox peuvent maintenant avoir plusieurs choix, un nombre de choix minimum, et un nombre de choix maximum
+   - Le changement d'équipe dans le menu Options est fonctionnel
+   - Code du menu des options déplacé menu_option.cpp/.h
+   - Code des ListBox déplacé dans list_box.cpp/.h
+   - Utilise les signaux pour la gestion du clic de la souris dans les classes Clavier, Question, Menu et MenuOptions.
+   - Création du menu d'informations. Pour l'instant : affiche le nom des auteurs
+   - Création d'une classe ListeTerrain qui va simplifier la gestion de tous les terrains
+   - Création d'un fichier images.scr pour chaque terrain. On peut maintenant choisir un ciel différent pour chaque terrain.
+   - Les terrains qui avaient une transparence codée par un fond rose fluo ont maintenant une couche alpha.
+   - On peut désormais quitter une question avec un clic (si un choix par défaut a été défini)
+   - Après de très nombreuses recompilations et plusieurs essais, la gestion des équipes de fait maintenant avec :
+     o std::list<uint> selection : sélection des équipes parmi la liste
+     o std::list<Equipe> liste_complete : liste de toutes les équipes
+     o std::vector<Equipe*> liste : liste des équipes actives
+   - La classe Bouton est déplace dans un nouveau fichier (.cpp + .h). Au passage un bouton est défini par x,y,larg,haut et plus x,y,x2,y2.
+   - La touche echappe est intercaptée lors de son relachement plutôt que par lecture directe de l'état du clavier (dans la boucle du jeu, le menu option)
+   - Désactive l'attaque aérienne pour les terrains fermés (normal nan ?). Se contente de mettre les munitions initiales à zéro.
+   - BUGFIX: Les caisses n'étaient pas toujours remises à zéro ...x
+   - BUGFIX: La fonction Fin() de la classe Wormux est appelée dans le try (ceci évite de l'appeler en cas d'exception)
+   - BUGFIX: Correction du chargement de config.xml (ne testait pas si elem==NULL)
+   - BUGFIX: Correction du changement de ver à la souris (la variable ver_choisi n'était pas initialisée)
+   - BUGFIX: Correction de PrepareSurfaceCopie, src_haut était mal calculé (source.get_width() remplacé par source.get_height(), les dangers du copier/coller ...)
+   - BUGFIX: Correction EcritDocXml::Cree : renvoie false si le fichier ne peut pas être écrit, et désactive la sauvegarde du fichier.
+   - Création des mines. Pour l'instant, on ne peut pas encore les utiliser en temps qu'arme, mais 3 mines sont placées aléatoirement sur le terrain.
+   - Création du menu Options qui permet de choisir une carte parmi toutes les cartes disponibles.
+   - Chaque terrain a son dossier dédié dans donnee/terrain/
+
+> 2004/05/29 (Haypo & Lami)
+   - Réorganisation des classes :
+     o Tout ce qui concerne la boucle de jeu va dans la classe BoucleJeu
+     o equipe.cpp est découpé en la classe GestionEquipes et macro_equipe.h.
+     o Tout ce qui concerne la vidéo va dans la classe Video
+     o La configuration des armes passe de la classe ModeJeu aux classes correspondantes à chaque arme
+     o Chaque arme est instanciée en variable globale, et passe dans l'espace de nom Wormux
+   - Le fichier util.cpp est éclaté en plusieurs fichiers (outils mathématique, gestion des fichiers, outils pour les chaînes de caractère, etc.)
+   - Création d'une fonction Erreur qui va lancer un signal ABRT, afficher le message d'erreur, puis lancer une exception (dérivée de std::exception). Le nom du fichier et le numéro de ligne où l'erreur est commise sont automatiquement ajoutés.
+   - Les exceptions sont affichées par la classe Question. Pour l'instant : erreur lorsqu'il y a moins de deux équipes valides.
+   - Utilise un itérateur sur le ver/l'équipe active
+   - Charge dynamiquement les avatars : parcourt le répertoire donnee/avatar/ à la recherche d'avatars valides.
+   - Ajout d'un nouveau terrain (grenouille) format 1400x1000 avec un nouveau ciel (jungle).
+
+> 2004/05/26 (Haypo)
+   - Début du support du XML : utilise la librairie libxml++ version 1.0
+   - La configuration des images des avatars est écrite dans un fichier SCR séparé
+   - La configuration d'une équipe est lue dans un fichier XML, un fichier par équipe. Note : On peut désormais utiliser des avatars différents dans une même équipe :-)
+   - La configuration du jeu est lue depuis un fichier XML
+   - Chaque avatar représente désormais un répertoire dans donnee/avatar. Ce répertoire contient les fichiers :
+     o marche.png et mort.png : images
+     o config.xml : rectangles de tests et position des armes
+     o images.scr : configuration des images
+   - La classe Config est coupée en deux, le plus gros va dans ModeJeu
+   - On peut désormais changer les options des armes, le temps d'un tour, l'énergie des vers, ... via le mode de jeu (fichier XML). Par défaut, c'est le fichier 'classique.xml'
+
+> 2004/05/24 (Haypo)
+   - Création de la classe Question qui va poser des questions. En pratique, affiche un message, puis attend la pression d'une touche. Autorise un choix par défaut, ce qui permet d'autoriser la sortie du dialogue avec n'importe quelle touche.
+   - Ajoute un état un curseur : si le ver survolé ne fait parti de l'équipe active ou que le choix du ver a déjà été fait, utilise une image "changement de ver interdit" (pour l'instant : une flêche rouge barrée)
+   - Nettoyage du code des avatars : range les paramètres dans des classes
+   - Répète les frames du ver qui marche pour éviter que l'animation ne soit trop rapide. Bien sûr, ce paramètre change selon l'avatar.
+   - Ajout des avatars Kenny et Mr. Hanky de South Park
+   - BUGFIX: Correction dans le changement d'équipe et le test "c'est la fin de partie" lorsqu'on a plus de deux équipes.
+   - BUGFIX: Ne bloque plus un ver s'il tente de se téléporter alors que c'est interdit
+   - BUGFIX: Change la direction de l'animation à l'initialisation d'un ver
+
+> 2004/05/17 (Haypo)
+   - Nouvelle arme : attaque aérienne.
+   - Réactivation du menu des armes. Il utilise maintenant les icônes des armes pour le dessin ... et est fonctionnel :)
+   - Permet aux vers (objets physiques) d'être en partie caché (quand ils marchent sur les bords)
+   - Si un ver n'est pas visible en début de tour, se recentre sur lui
+   - Interdit toute action (déplacement) une fois qu'une attaque aérienne a été lancée, que le ver s'est téléporté, ou encore après une trop grande chute
+   - Ajout d'un avertisement au lancement du jeu s'il a été compilé en mode DEBUG
+   - Lorsque le bazooka est poussé à bout, il explose directement !!!
+   - Sépare à nouveau l'écart à gauche et à droite dans un rectangle de test. Au passage tous les écarts pour ce rectangle deviennent positifs.
+   - La configuration de la batte de baseball passe dans config.baseball
+   - Makefile: Désactive les séquences d'échappement dans Emacs
+   - Création de deux nouveaux types d'objet : objet insensible et indestructible. Les objets insensibles sont des images bénéficiants des avantages des objets physiques (moteur physique). Un objet indestructible est un objet dans le terrain qui ne peut pas être détruit.
+   - Verrouillage d'un clic gauche après une action (évite par exemple de se téléporter en cliquant dans le menu des armes)
+   - DEBUG: Un clic droit permet de définir un repère quand l'affichage des coordonnées est activé dans debug.cpp
+
+> 2004/05/16 (Haypo)
+   - Anime les vers
+   - Ajout de la nouvelle image de dynamite dessinée par Dino Ghilardi
+   - On peut désormais changer la vitesse de l'animation de la dynamite
+   - Correction de la fonction de position des vers (après la chute, ne testait pas l'était fantome)
+   - (Lawrence) Remplacement de l'image et de l'icone de la batte de baseball
+   - Sauve la position de la caméra entre chaque tour (pour chaque équipe)
+   - Par défaut le niveau d'énergie des vers est caché, on peut afficher/cacher cette information en pressant sur la touche SHIFT
+   - Ajout d'une barre de progression pour afficher le niveau d'énergie dans l'interface
+   - Utilisation d'une table de hashage pour les avatars. Ceci permet de choisir son avatar par son nom plutôt que son numéro
+   - Ajout d'une icône affiché au dessus du ver pour la téléportation
+   - L'icône suicide est affiché au dessus du ver (et non plus en dessous)
+   - Pour le bazooka, une fois que la force maximale est atteinte, lance la roquette
+   - N'autorise plus le changement de ver (touche TAB ou avec la souris) une fois que le ver a bougé, à moins que l'option config.automise_multiple_chg_ver ait la valeur true.
+   - Evite les gros patés de vers en évitant qu'ils soient trop proche
+   - Sauve la force du bazooka pour chaque équipe, ce qui permet d'afficher un marqueur sur la barre de progression au prochain tir de roquette
+   - BUGFIX: Animation::RAZ() ne touche pas à la direction    
+   - BUGFIX: Cache le curseur si le ver passe son tour
+   - BUGFIX: Corrige le changement d'énergie pour les caisses (bonus gain ou perte d'énergie)
+
+> 2004/05/15 (Lami)
+   - Changement du curseur de pointage des vers par un fleche.
+   - Ajout de l'avatar "Ball" dessine par Dino Ghilardi.
+   - Changement du sprite de la roquette, le projectile n'est plus de bazooka lui meme ;)
+
+> 2004/05/10 (Haypo)
+   - Ajout du super saut (touche "backspace", "retour-arrière")
+   - Ajout des avatars "Bob l'éponge" et "xbill" ;-)
+   - La classe avatar gagne un rectangle de test
+   - Les rectangles de tests doivent être égaux horizontalement sinon en cas de rotation verticale un ver se trouve bloqué !
+   - Lorsqu'un ver meurt, le trou qu'il perce dans le terrain est retourné si nécessaire, idem pour sa tombe.
+   - La fonction de rotation horizontale supporte désormais les images en 8 bits/pixel
+
+> 2004/05/06 (Haypo)
+   - Lorsqu'un ver meurt : il explose :-) C'est Damien qui va être content !!!
+   - Ajout du terrain 'ferme.png' : terrain fermé utilisé pour les tests
+   - La fin de partie n'est déclarée que à la fin du tour, pas durant un tour
+   - Nouvelle arme : suicide ;-)
+   - Support des terrains fermés :-)
+   - Support de terrains ayant n'importe quelle dimension. Il y a des limites arbritraires dans constante.cpp pour éviter d'avoir un micro ou macro terrain.
+   - Création de classes pour gêrer le terrain et le ciel
+   - Correction de l'exécution dans le Makefile (ajoute "./")
+   - Création d'une classe Debug pour aider au débogage. Pour l'instant, affiche l'état des vers
+   - Réécriture complète de la classe Clipping. Elle supporte désormais :
+     o Des tailles variables de cellule (ce ne sont plus des constantes)
+     o Des tailles de cellule qui ne divisent pas la taille de la carte. Ex: cellule 330x330 pour une carte 1200x1200
+     o Des coordonnées négatives
+     Elle corrige automatiquement (x,y) et la taille (larg x haut) lors de chaque écriture.
+   - ObjPhysique::AjouteForce() et NouvelleForce() n'ajoutent pas de force si la force est nulle !
+   - Lorsqu'un ver est pointé à la souris, le curseur le désigne.
+   - Lorsqu'un ver est derrière le ver actif, c'est lui qui va être désigné par le curseur de la souris
+   - Utilisation d'une couche alpha plutôt que la couleur violette pour plusieurs images (explosion d'une dynamite, tombes, curseur, etc.)
+   - BUGFIX: Lorsqu'un objet devient fantome, son changement d'état est à nouveau signalé lorsqu'il était mort, mais l'info "était mort" est passée en paramètre
+   - BUGFIX: Affiche l'énergie totale perdue et non la toute dernière perte d'énergie.
+   - BUGFIX: Correction du placement des caisses et des vers au hasard (s'ils passaient fantomes ils le restaient)
+   - BUGFIX: Et tous les autres bogues erradiqués ...
+
+> 2004/05/05 (Haypo)
+   - Remise à zéro de la liste d'objet à chaque lancement d'une partie. D'ailleurs la liste des objets est recréée à chaque lancement du jeu (avant un baton de dynamite n'ayant pas explosé pouvait rester d'une partie sur l'autre). Séparation entre Init() et RAZ() pour cette liste.
+   - Ajout de l'avertissement sur l'absence de garantie au démarrage de Wormux.
+
+> 2004/05/03 (Haypo)
+   - Les caisses offrent désormais différents types de bonus : dynamite, téléportation, énergie ou piège (perte d'énergie). Reste à rêgler la fonction Random() pour pouvoir donner des pourcentages
+   - La carte est rechargée à chaque nouvelle partie. Comme ça les trous disparaissent d'une partie à l'autre.
+   - La plupard des classes gagnent les fonctions Init() et RAZ(). Au passage:
+     o Toutes les images sont chargées dans <classe>::Init() plutôt que dans Graphisme::Init()
+     o La classe ObjPhysique ne demande plus larg et haut dans son constructeur car les tailles ne sont pas toujours connues à l'avance (déduites de la taille de l'image)
+   - Lorqu'un déplacement manuel de la caméra est effectué, la caméra n'est plus recentrée automatiquement.
+   - Un baton de dynamite utilise hérite de ProjectileArme et non plus ObjPhysique, ce qui simplifit le code.
+   - ORTHO: Vain<em>qu</em>eur et Projectil<em>e</em>
+   - Utilise une fonction RandomLong(min,max) plutôt qu'un rand()%max qui donne de très mauvais résultats.
+   - Les vraies constantes passent dans constante.cpp. Ce qui peut être intéressant de modifier en cours d'exécution est déplacé dans config.cpp. Ce dernier se voit réorganisé sous forme d'une classe. Toute la configuration (classes, données, etc.) est écrite dans l'espace de nom Wormux.
+   - BUGFIX: Correction du centrage de la caméra lors d'un changement de ver (on ne changeait pas "l'objet suivi" par la caméra en fait)
+
+> 2004/04/29 (Haypo)
+   - Amélioration du makefile :
+     o Nouvelles fonctions : make install et make uninstall
+     o Présentation plus jolie
+     o Amélioration de la génération des archives
+     o En mode RELEASE, strip le binaire
+   - Correction de la vérification de ClanLib dans le makefile
+   - Le binaire est génêré dans le répertoire racine (et non plus dans src/). Le fichier donnee.scr y est également déplacé, et ce dernier est corrigé.
+   - Le bazooka n'est pas dessiné dans l'état "le ver a joué" (quand une roquette a fait un trou et que le ver est en train de tomber)
+   - (Lawrence) Support des images en 32 bits/pixel pour la conversion d'image en 32 bits (convert.cpp)
+
+> 2004/04/28 (Haypo) ===> Version 0.2
+   - Possibilité d'utiliser des résolutions autre que 800x600, ex: 1024x768. Par contre : la taille doit être égale ou supérieure à 800x600 (à cause de l'interface) !
+   - Le recadrage automatique de la caméra a été complètement revu et corrigé
+   - La caméra suit le projectil d'un arme
+   - Une balle de pistolet pousse le ver/l'objet touché, ou alors fait un trou si la balle touche le terrain
+   - Autorise le scrolling durant le mode pause :-)
+   - La roquette de bazooka explose lorsqu'elle touche un objet (avant les objets étaient traversés ...).
+   - Le souffle d'une explosion est également appliqué aux tombes et aux objets. L'effet est sympa sur les caisses ;-) Par contre, ça ouvre un bug : les caisses peuvent remonter, ce qui n'est pas très réaliste. Bon, en même temps c'est marrant de voir un bonus repartir (on se dit alors qu'on est bien con et qu'on aurait pas du)
+   - Possibilité de désactivé l'eau (d'ailleurs désactivée par défaut). Ca faisait bizzare de voir de l'eau sur le terrain "noel" :-)
+   - Le ver actif est toujours dessiné au premier plan
+   - Optimise légèrement les macros POUR_CHAQUE_*
+   - Ajoute des messages :
+     o Lorsqu'un ver tue un ver de son équipe
+     o Lorsqu'une roquette de bazooka/une balle de pistolet sort de l'écran
+   - Les projectils utilisent la zone de test et non plus la taille pour tester les impacts.
+   - Les objets doivent maintenant avoir un nom. Ceci simplifit d'autant le débogage ! Au passage, les messages de débogage sont remis en forme pour plus de clareté.
+   - BUGFIX: Correction de plusieurs partie du jeu pour permettre de changer FOND_X et FOND_Y
+   - BUGFIX: N'affiche plus les armes en fin de tour.
+   - BUGFIX: Lorsqu'un objet devient fantome, son état n'est signalé que s'il était bien vivant avant.
+
+> 2004/04/27 (Haypo)
+   - On peut désormais autoriser un objet physique a avoir une coordonnée y négative. Ce qui permet aux caisses d'apparaitre progressivement, et aux projectils de bazooka de sortir de l'écran sans disparaitre.
+   - Les dégats appliqués aux vers lors d'un explosion sont calculés depuis le centre d'un ver et non plus sa position
+   - Amélioration du compteur d'image par seconde : on ne compte pas la toute première valeur
+   - Correction du rectangle de test du projectil de bazooka et des barres de dynamite.
+   - Ajout de code pour diminuer la consommation du processeur. Exemple : pour le menu, on passe de 100% à 20% pour le menu, et de 100% à 70% pour le jeu. C'est en fait des pauses qui sont ajoutées (genre sleep) ...
+   - Demande de confirmation avant de terminer une partie
+   - Interception des signaux :
+     o WM_QUIT : Permet de quitter le jeu en cliquant sur la croix
+     o PAINT : Demande du gestionnaire de fenêtre de redessiner la fenêtre
+     o RESIZE : Demande du gestionnaire de fenêtre de redessiner la fenêtre lors d'un déplacement
+   - Ajout du mot clé *const* pour les fonctions Dessine(), PosArmeXY() et PosCanonXY() pour la classe Arme et Image.
+   - Utilisation d'une bidouille de const_cast pour Image::Dessine()
+   - Ajout d'une petite pause lors que le ver change de sens (droite/gauche)
+   - BUGFIX : Correction de CalculeHauteurBouge() pour grimper : on peut maintenant grimper sur des côtes contenant des trous
+   - BUGFIX: Les caisses sont des fantomes lorsqu'elles sont crées. Elles ne sont que "prête" lors de leur création.
+   - BUGFIX: Après une explosion, applique le moteur physique sur tous les vers pour trouver ceux qui sont en train de tomber.
+   - BUGFIX: La fonction ObjetPhysique::Pret() ne signale plus la fin d'une chute
+
+> 2004/04/26 (Haypo) ===> Version 0.1.3
+   - Création du bazooka ;-)
+   - Inversion des touches Entrée et Espace (on saute désormais avec Entrée)
+   - Si une balle du pistolet touche le décor, un trou est creusé
+   - Ajout de la fonction Pause (il était temps)
+   - Introduction de l'espace de nom Wormux. Il est utilisé pour la classe Temps et la variable globale temps pour l'instant. Ceci permet d'utiliser d'autres variables ayant le nom temps.
+   - Le code du clipping (qui venait de monde.cpp) devient une classe Clipping. Les constantes passent en variable, ce qui permettra de changer la taille de la carte sans recompiler.
+   - Les caisses sont réactivées. Pour annuler la gravité, il suffisait de mettre une masse nulle :-) Pour que la caisse descende quand même, il suffit de donner une force initiale.
+   - L'eau est réactivée. Reste à faire que les vers tombe dans l'eau ...
+   - Ajout d'un compteur du nombre d'images par seconde
+   - Création de la classe BarreProgression
+   - Le centre de l'explosion d'une dynamite est désormais au pied de la barre de TNT, et non plus en son centre. Ceci permet d'user du souffle de l'explosion :-)
+   - Nettoyage des messages écrits dans la console.
+   - Fichiers renommées et réorganisés.
+   - Ne dessine plus l'arme en fin de tour
+   - BUGFIX: Vérifie qu'un ver ou qu'une caisse n'apparaisse pas dans le décor
+   - BUGFIX: Lorsqu'une dynamite sort de l'écran, aucun calcul de dégat n'est effectué
+   - BUGFIX: La sélection d'un ver à la souris est corrigé.
+   - BUGFIX: J'ai enfin corrigé ce foutu bug de clipping ! C'était les tests pour savoir s'il fallait faire un clipping en x et/ou en y qui étaient erronés (bool clip_x, clip_y, clip_xy)
+   - BUGFIX: La classe Image vérifie le numéro de frame avant le dessin (évite un segfault)
+
+> 2004/01/04 (Haypo)
+   - Le makefile vérifie désormais que la librairie ClanLIB soit installée.
+   - Désactive les optimisations (-O0) pour la compilation en mode debug.
+
+> 2003/12/19 (Haypo)
+   - La batte de baseball a plus de force
+   - Correction de la fin d'un mouvement
+   - Correction de l'angle de la batte de baseball
+   - Le scrolling de la souris se fait maintenant avec un clic droite puis le déplacement de la souris
+   - Interdit la téléportation dans un mur :-)
+   - Rétablissement des angles dans le sens "classique" (trigonométrique). Comme ca on a la formule : x=R*cos(angle) et y=R*sin(angle) (et non plus y=-R*sin(angle)).
+   - Correction du déplacement droite/gauche : un ver ne peut sortir d'une zone fermée en grimpant (marchant vers le haut)
+   - Ajout du souffle de la dynamite (punaise ! c'est trop délirant :-D)
+   - Suppression de la fonction Ver::Harakiri() qui entrait en conflit avec ObjPhysique::Meurt()
+
+> 2003/12/18 (Haypo)
+   - Ajout de l'arme (batte de) baseball
+   - Création d'une classe Image qui encapsule CL_Surface. Elle évite de jouer avec des pointeurs, et vérifie que la surface soit valide à chaque accès. Sprite en dérive.
+   - Création de la classe Avatar qui défini l'apparence d'un ver. Chaque avatar possède des images pour les états "marche" ou "mort", ainsi que la position des armes par rapport à la position d'un ver.
+   - Calcul propre de la position de l'arme à l'intérieur du ver, ainsi que la position du canon de l'arme.
+   - Création d'un barre d'avancement pour la création des dépendances :-P
+   - La plupard des images sont déplacées dans leur classe. Ex: l'eau va dans la classe Monde.
+
+> 2003/12/15 (Haypo) ---> Version 0.1.2 (version de développement)
+   - Ajout de l'arme "Téléportation"
+   - Réécriture du moteur physique !!! On peut maintenant ajouter toutes les forces qu'on veut, et cela n'importe quand ;-) On pourrait aussi jouer avec l'accélération, mais comme je ne connais que la gravité, ce n'est pas utilisé (mais c'est possible !).
+   - Une grande chute inflige des dégats à un ver. Dans ce cas, le ver perd son tour. Ben ouais, fallait y penser avant ! On peut rêgler la chute sans dégat maximale, et le coefficient vitesse/degat.
+   - Les constantes C (#define nom valeur) deviennet des constantes C++ (const type nom = valeur;). Suppression du fichier constante.h au passage.
+   - Classe ObjetPhysique renommée en ObjPhysique (ct trop long à taper :D)
+   - Une dynamite lachée obtient la vitesse actuelle du ver :-)
+   - Cache le curseur lorsqu'un ver a bougé ou tiré
+   - Ajout d'une commande dans le Makefile pour créer la liste des dépendances. Ca évitera un bon nombre de SEGFAULT lorsqu'on touche à un .h ;-)
+   - BUGFIX: Ne dessine ni l'arme, ni le curseur si le ver est mort
+   - BUGFIX: On ne peut plus changer de ver lorsqu'on a tiré.
+   - Création de classes Sprite et Animation pour arrêter de se casser la tête :-)
+   - BUGFIX: Evite de tirer deux fois de suite.
+
+> 2003/12/13 (Haypo & Lami)
+   - Killer features : Affiche la dynamite quand on la tient en main ... Rester à corriger le placement (voir l'orientation de la dynamite lachée)
+   - Ajout de caracteres accentués (éèâàù) + ajout d'une nouvelle font pour l'affichage des noms des vers (blanc/noir).
+   - Nouveaux graphismes pour le pistolet.
+   - Il y a à present de l'eau dans les niveaux de wormux. Il est possible de regler la vitesse/pas des vagues.
+   - Affichage des noms des vers au dessus de la barre d'energie.
+
+> 2003/12/12 (Haypo)
+   - Ajout d'une fonction de rotation "flip horizontal" pour images en 32bpp.
+   - Ajout de vers en bleu, vert, jaune et violet :-) Des couleurs flashy spécial daltonien (ex: moi).
+   - Les vers n'ont plus qu'une seule image et non plus deux (droite/gauche). Idem pour le pistolet.
+
+> 2003/12/11 (Haypo)
+   - Création des classes Clavier, Souris, CurseurVer pour soulager le gros fichier jeu.cpp.
+   - Nettoyage de jeu.cpp. Ex: fonctions ChangeEquipe et ChangeVer déplacées dans equipe.cpp.
+   - Correction du bug des vers volants après explosion d'une dynamite. Maintenant le tour se termine quand l'arme n'est plus active, et que tous les vers (vivant ou mort) sont dans un état valide (pret ou bouge).
+   - Affiche un message lorsqu'une équipe passe son tour ;-)
+   - Utilise les identifiants de touche ClanLIB plutôt que les codes ASCII
+   - Chaque équipe possede son propre viseur
+   - Ajout de l'arme Pistolet
+   - Le pistolet dessine une trace de la balle et insulte le joueur s'il se loupe
+
+> 2003/12/10 (Lami & Haypo)
+   - Ajout d'un pointeur d'angle pour les futures armes. La touche F2 permet de basculer entre le viseur et le saut (touche Up). Fichier vise.cpp/h
+   - graphismes/gfx/eau.png
+   - graphismes/gfx/eau_calme.png
+   - Les armes ont maintenant leur classe Arme (ex: InfoArme) qui hérite de la classe ObjetPhysique
+   - Les caisse deviennent des armes
+   - Les armes ont tous une gravité : la dynamite tombe enfin de manière réaliste ;-)
+   - Passage des images PCX en PNG (libérez les formats d'image !!!)
+   - Un objet physique peut maintenant modifier son "rectangle de test" (zone qui contient l'objet physique, zone non transparente)
+   - BUGFIX: La gestion des touches pour le jeu est installée en début de partie, et désinstallée en fin de partie (et non simplement installée au démarrage du programme). Avant TAB plantait Wormux dans le menu :-P
+   - Un objet physique a deux états : mouvement et état de sa mort. Le mouvement peut avec les valeurs pret, saut, etc., et l'état de sa mort les valeurs vivant, mort ou fantome. Avant, à la d'une chute d'un ver mort, il redevenait vivant :-/
+   - Donne un nom aux vers. Les vers possedent desormais un pointeur vers leur equipe.
+
+> 2003/10/01 (Lami)
+   - Detection des vers qui touchent une caisse bonus avec recreation d'une nouvelle caisse.
+
+> 2003/10/24 (Lami)
+   - Ajout Gfx:*sprite d'un missile du bazooka (/armes/missile_bazooka1.png)
+   - Nouveau terrain special "Halloween" :p
+
+> 2003/10/23 (Lami)
+   - Affichage du menu des armes avec la touche "M".
+   - sprite ver qui tombe (/worms/worm_tomber1.png)
+   - ver qui regarde en haut, bas, devant (worms/worm_angle_xxx.png)
+   - sprite bazooka (armes/bazooka1.png)
+   - sprite caisses BONUS (gfx/caisse1.png)
+   - sprite ver en parachute (worms/worm_parachute1.png)
+   - Correction d'une erreur dans caisse1.png
+   - Nouvelle fonction qui permet de faire apparaitre une caisse bonus de maniere aleatoire sur le terrain avec divers reglages possibles.
+
+> 2003/10/20 (Haypo)
+   - Ajout d'un état pour le jeu : un ver joue, animation d'une arme, fin d'un tour, etc.
+   - Ne change plus de ver lors d'un changement d'équipe
+   - BUGFIX: Change la couleur de la barre d'énergie lors d'une changement du niveau d'énergie
+
+> 2003/10/16 (Haypo)
+   - DEBUG: Possibilité d'afficher les coordonnées de la souris
+   - Affichages des informations dans l'interface : nom et énergie du ver en cours, écusson de l'équipe de ce dernier, et arme et munition du ver. Si un ver est pointé à la souris, ces informations seront à relative un ver pointé.
+   - Création d'une classe InfoArme qui contient les informations sur une arme. Pour l'instant : nom et écusson.
+   - Changement dans la gestion des touches du clavier : utilise les signaux de la ClanLib pour détecter une touche relachée.
+   - Correction des touches TAB et P (changement de ver/d'équipe) : autorisées uniquement si le ver est prêt (on ne peut changer de ver s'il est en train de tomber !). Et pour le changement d'équipe : appelle NouveauTour() plutôt que ChangeEquipe() (des vers restaient en l'air :-/).
+
+> 2003/10/15 (Haypo)
+   - Correction du calcul de la trajectoire d'une parabole : la composante x vallait simplement +/-2, alors qu'il faut intégrer cos(angle_force)
+   - Reecriture de la fonction DeplaceTestCollision()
+   - Creation d'une classe ObjetPhysique pour supporte les coordonnes, la taille d'un objet, mais aussi une force qui lui est appliquee (comme dans un saut). Les fonctions de mouvement s'appliquent maintenant sur cette nouvelle classe.
+   - Le test "EstDansVide" (pour un ver) se fait se le rectangle contenant le ver et non plus un seul point. Ceci evite le pb. du choix du point, mais surtout corrige beaucoup de bugs graphiques (et vers qui restaient coinces dans des herbes).
+   - On peut tout configurer : angle et vitesse des sauts, vitesse de déplacement, etc.
+   - CTRL+clic droit = téléportation :-)
+   - Touche + (pavé numérique) remet le compteur à zéro (60 secondes)
+
+> 2003/10/14 (Haypo)
+   - Les messages du jeu sont deplaces dans la classe MessagesJeu (et donc dans un fichier a part). Correction du code (provoquait un segfault)
+   - La classe Dynamite est deplace dans les fichiers homonymes.
+   - Creation de la classe Equipe qui concentre tout ce qui gravite autour d'une equipe. En particulier, les vers sont stockes dans les differentes equipes. Correction du code (segfaultait).
+   - Creation de macro pour acceder aux vers d'une equipe, tous les vers, tous les vers vivants, etc.
+   - Correction de la suppression des messages (segfaultait avant :-p)
+   - Fait chuter tous les vers a la fin d'un tour (evite de voir un ver chuter durant un nouveau tour ...)
+   - Curseur revu et corrige : s'affiche presque tout le temps :-) Changement de ver, nouveau tour, touche C, etc.
+   - Moteur physique revu et corrige. Maintenant on a de la vrai gravite !
+   - Les vers peuvent gravir des hauteurs beaucoup plus importantes
+   - Plusieurs constantes deplacees dans config.h
+   - Correction du scrolling : le centrage est prioritaire sur tout !
+   - Correction de la chute directe : ne traite pas les vers hors du terrain!
+   - Nouvelles touches : K=tuer le ver, P=Passer son tour.
+   - Affiche le vainceur en fin de partie.
+   - Correction des messages de fin de jeu : rafraichit l'ecran durant l'attente d'une touche (et avant synchronise les buffers avec CL_Display::sync_buffers)
+
+> 2003/10/13 (Lami & Haypo)
+   - Correction d'un petit default dans une coord de l'image "quitter" du menu
+   - Modification du scrolling a la souris pour qu'on puisse avoir acces au menu des armes sans defilement du moteur
+   - Le detail qui tue : lors d'un saut, prend la premier image pour dessiner un ver.
+   - On ne peut plus bouger (droite/gauche) durant un saut. Dommage, c'etait fun :-)
+   - Possibilite de selectionner un ver en cliquant dessus (clic gauche)
+   - Possibilite de scroller a la souris
+   - Correction de la fonction BougeVer : un ver peut sortir du monde a droite ou a gauche (puis se faire Harakiri ;-)
+   - Reorganisation du scrolling : un seul mouvement de scrolling a la fois (centrage, autorecadrage, clavier ou souris), et pause entre les mouvements de scrolling.
+   - Les coordonnes d'un ver sont ecrites dans un CL_Point qui est un membre prive.
+   - Classe Worm renommee en Ver, World en Monde
+   - Fichier worm.* renommes en ver.*, et world.* en monde.*
+   - Tout le code relatif aux dynamites va dans la classe Dynamite.
+   - Debut de separation entre le dessin des armes et la gestion des armes.
+   - Si un ver sort du monde, il meure. A ce moment la, il n'a meme plus de tombe :-p
+   - Correction du code : lorsqu'un ver meure, passe le tour. Mais si tous les vers d'une equipe sont morts, signale la fin d'une partie.
+   - Correction du saut : si on ne peut plus sauter, rend la main.
+   - Creation pour afficher des messages d'information en haut de l'ecran. Ils restent affiche 5 secondes.   
+   - Revision de la fonction qui calcul les pertes du ver en cours d'utilisation en fonction de sa distance avec le centre d'explosion de la dynamite
+
+> 2003/10/12 (Haypo & Lami)
+   - Nettoyage du code du clipping : fonction Creuse de la classe World
+   - Nettoyage de la fonction Conversion_24_32bpp (ex: convert)
+   - Possibilite de changer de ver avec la touche TAB durant la partie
+   - Centrage sur un ver lorsqu'on change de ver
+   - Reecriture de la fonction de centrage automatique (en utilisant des constantes et macros)
+   - Reecriture du code pour scroller l'ecran de jeu
+   - Reecriture partielle du code pour gerer les deplacements des vers. Ca marche pas encore super :-/
+   - Nettoyage du code de moyen a pouvoir supporter plusieurs equipes
+   - Nettoyage du code du menu :
+     o Le menu renvoie l'action a faire (type menu_item).
+     o Creation d'une classe bouton
+     o Creation d'une liste de touches un item associe. Il est tres simple d'ajouter une touche
+   - Reorganisation du code de jeu.cpp. En particulier, creation des fonctions InitVer, FinVer, ChangeEquipe et ChangeVer.
+   - Tout le code relatif aux mouvements (Gravite, BougeVerDroite, Saut, etc.) est deplace dans mouvement.cpp
+   - Les donnees sont deplacees. En particulier, tout ce qui se rapporte aux sauts dans vers est deplace dans la classe Worm.
+   - Les donnees ne sont plus rechargees lorsqu'on lance une partie
+   - Suppression des "warning" de worm.cpp
+   - Correction de la variable tomber qui bloque les worms apres avoir fait un saut
+
+> 2003/10/11 => Version 0.0.9 (Haypo)
+   - Haypo est passe par la ...
+   - Reorganisation complete du programme sous forme de classe : Wormux est maintenant un programme oriente objet, ou presque ;-) C'est c'est pas encore super, mais deja beaucoup mieux qu'avant.
+   - Presque plus aucune variable globale, tout est rentre sagement dans des classes
+   - Programmation modulaire : plus de grosses fonctions de 120 lignes, mais plutot 5-6 sous-fonctions.
+   - Le menu entre dans sa propre classe (= nouveau fichier)
+   - Fichier start renommes en jeu, et tout rentre dans la classe Jeu
+   - Reorganisation du chargement des donnees :
+     o en premier lieu la police de caractere pour afficher un texte d'attente
+     o en second lieu, charge le menu
+     o enfin, le reste est charge avant la premiere partie
+   - Le numero de version est supprime du logo du menu, et il est uniquement inscrit dans constante.h (ce qui evite les incoherences)
+
+> 2003/09/01 (Lami) => versin 0.0.8pre1
+   - Refonte total de pratiquement tout le code source afin de le rendre plus modulaire et facile a modifier.
+   - Le systeme de calcul de trajectoire parabolique est a present 2 fois plus precis.
+   - Nouvelle carte style "nature" ;)
+
+> 2003/06/24 (Lami) :
+   - Changement du format des terrains en PNG. Les fichiers sont un peu plus lourd mais il n'y a plus de degradation due a compression du JPG.
+
+> 2003/06/23 (Lami) :
+   - Reinitialisation de la coord Y des worms lors d'un saut
+   - Impossibilite de poser une dynamite avec la touche 'D'.
+
+> 2003/04/22 (Lami) :
+   - Erreur "aborted" sous la version Linux répare. (merci a Larry Cow pour son patch)
+
+> 2003/03/29 (Lami) :
+   - Correction d'un bug qui pouvait faire voler un worm par reperition du cycle de saut.
+   - Detection de la direction de saut des worms.
+   - Ajout du nombre de dynamites dans le menu des armes.
+
+> 2003/04/02 (Lami) :
+   - Refonte totale de la barre de menu.
+   - Mise en place du compte Ã  rebours d'actions.
+
+> 2003/03/28 (Lami) :
+   - Corrections des gros problemes de la fonction trajectoire. Il ne reste plus qu'a regler un bug qui fait stoper un court instant le worm pendant son saut.
+
+> 2003/03/27 (Lami) :
+   - J'ai implante la fonction de trajectoire parabolique au saut du worm mais y'a encore beaucoup de travail ( c'est très buge !!! :(  )
+
+> 2003/03/26 (Lami) :
+   - Ajout d'un cadre clignotant pour reperer rapidement le worm en cours d'utilisation.
+   - Creation d'un nouveau terrain.
+
+> 2003/03/25 (Lami) :
+   - Implementation de la fonction "calcul de  trajectoire parabolique".
+   - RACINE
+     |---> trajectoire.cpp
+     +---> trajectoire.h
+
+> 2003/03/24 (Lami) :
+   - Mise en place d'une barre d'energie a  chaques worms. Cette barre reagit a  l'etat du worm de deux facons :
+     o Par sa couleur qui change selon l'energie du worm ( VERT ==> Bonne etat, JAUNE => Moyen, ROUGE => Mauvais).
+     o Par sa taille (la longueur total du worm => Bonne etat, la moitié => Moyen, inféfieur a la moitier => Mauvais).
+   - J'ai en passant supprime le fait que meme une fois mort, l'energie d'un worm continue d'etre affichee et reagissee encore avec le reste du jeu.
+
+> 2003/03/23 (Lami) :
+   - Correction d'un bug qui faisait correspondre la coord du worm en cours avec celles de la dynamite pendant l'animation de son explosion.
+   - Première etude sur la transcription des equations de trajectoires paraboliques.
+   - Petit nettoyage du code ( suppression de variables inutiles...)
+
+> 2003/02/22 (Lami) :
+   - Correction d'un bug qui laisse repositionner la dynamite meme apres l'avoir pose.
+   - Creation d'un ico pour l'exe de wormux. Ca fait plus joli que l'icone d'un .exe que windows affiche par defaut.
+
+> 2002/12/24 (Lami) => Version 0.0.5
+   - Fonction de destruction du terrain.
+   - Fonction de recadrage horizontal du worm.
+   - 1er arme disponible : La Dynamite.
+   - Calculateur du nombre d'image par seconde du jeu.
+   - Nouveau terrain special noel. ;)
+
+> 2002/12/10 (Lami) :
+   - Pour quitter le jeu vous pouvez a present vous servir de la touche Echap de votre clavier.
+   - Implementation d'un nouvelle fonction qui va permettre une fois termine de faire un centrage du worm lorsque celui-ci n'est plus visible. Deja  mise a place : recentrage gauche > à  1000. Utilisation : Maintenir la touche 'C' enfoncee.
+
+> 2002/12/09 (Lami) :
+   - Pour faire sauter le worm il ne faut plus utiliser la touche 3"# mais la fleche 'haut' de votre pavee directionnel.
+   - Ajout d'une fonction qui place le worm en X de maniere aleatoire.

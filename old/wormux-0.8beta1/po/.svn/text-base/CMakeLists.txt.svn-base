@@ -1,0 +1,73 @@
+SET(PO_FILES
+bs.po
+ca.po
+da.po
+de.po
+eo.po
+es.po
+fi.po
+fr.po
+gl.po
+hu.po
+it.po
+nl.po
+pl.po
+pt.po
+pt-BR.po
+ro.po
+ru.po
+sk.po
+sv.po
+tr.po
+)
+
+SET(COPYRIGHT_HOLDER "Wormux Development Team")
+SET(BUGS_ADDRESS "wormux-dev@gna.org")
+SET(POT_FILE ${CMAKE_CURRENT_BINARY_DIR}/wormux.pot)
+
+INCLUDE(../src/SourceFiles.cmake)
+
+# Create PO Template file 'wormux.pot'
+
+SET(_SOURCE_FILES)
+SET(_POT_DEPS)
+FOREACH(_src ${WORMUX_SRCS})
+  SET(_SOURCE_FILES ${_SOURCE_FILES} src/${_src})
+  SET(_POT_DEPS ${_POT_DEPS} ${CMAKE_SOURCE_DIR}/src/${_src})
+ENDFOREACH(_src ${WORMUX_SRCS})
+ADD_CUSTOM_COMMAND(
+  OUTPUT ${POT_FILE}
+  COMMAND ${XGETTEXT_EXECUTABLE}
+  ARGS -o ${POT_FILE} -s --directory=${CMAKE_SOURCE_DIR} --omit-header --msgid-bugs-address=${BUGS_ADDRESS} -c --keyword=_ --keyword=N_ --copyright-holder=${COPYRIGHT_HOLDER} ${_SOURCE_FILES}
+  DEPENDS ${_POT_DEPS}
+)
+
+
+# Update .po files and compile them to binary .gmo files
+
+SET(_gmofiles)
+FOREACH(_po ${PO_FILES})
+  GET_FILENAME_COMPONENT(_lang ${_po} NAME_WE)
+  IF(CMAKE_MAJOR_VERSION MATCHES "2" AND CMAKE_MINOR_VERSION MATCHES "4")
+    SET(_gmofile ${CMAKE_CURRENT_BINARY_DIR}/${_lang}.gmo)
+  ENDIF(CMAKE_MAJOR_VERSION MATCHES "2" AND CMAKE_MINOR_VERSION MATCHES "4")
+  IF(CMAKE_MAJOR_VERSION MATCHES "2" AND CMAKE_MINOR_VERSION MATCHES "2")
+    FILE(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/${_lang})
+    SET(_gmofile ${CMAKE_CURRENT_BINARY_DIR}/${_lang}/wormux.mo)
+  ENDIF(CMAKE_MAJOR_VERSION MATCHES "2" AND CMAKE_MINOR_VERSION MATCHES "2")
+  ADD_CUSTOM_COMMAND(
+    OUTPUT ${_gmofile}
+    COMMAND ${MSGMERGE_EXECUTABLE} ARGS --quiet --update -s ${CMAKE_CURRENT_SOURCE_DIR}/${_po} ${POT_FILE}
+    COMMAND ${MSGFMT_EXECUTABLE} ARGS -o ${_gmofile} ${CMAKE_CURRENT_SOURCE_DIR}/${_po}
+    DEPENDS ${POT_FILE} ${CMAKE_CURRENT_SOURCE_DIR}/${_po}
+  )
+  IF(CMAKE_MAJOR_VERSION MATCHES "2" AND CMAKE_MINOR_VERSION MATCHES "4")
+    INSTALL(FILES ${_gmofile} DESTINATION ${PO_DESTINATION}/${_lang}/LC_MESSAGES RENAME wormux.mo)
+  ENDIF(CMAKE_MAJOR_VERSION MATCHES "2" AND CMAKE_MINOR_VERSION MATCHES "4")
+  IF(CMAKE_MAJOR_VERSION MATCHES "2" AND CMAKE_MINOR_VERSION MATCHES "2")
+    INSTALL_FILES(/${PO_DESTINATION}/${_lang}/LC_MESSAGES FILES ${_gmofile})
+  ENDIF(CMAKE_MAJOR_VERSION MATCHES "2" AND CMAKE_MINOR_VERSION MATCHES "2")
+  SET(_gmofiles ${_gmofiles} ${_gmofile})
+ENDFOREACH(_po ${PO_FILES})
+
+ADD_CUSTOM_TARGET(translations ALL DEPENDS ${_gmofiles})

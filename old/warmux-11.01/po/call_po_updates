@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# with this little script calls for updates of the translations becomes a breeze
+# add "--deadline='some date' and there will be a deadline mentioned in the mails
+# sent to translators.
+# add "--call=some@mail.address" and a call for new translations will be sent to
+# that address (existing translations will be mentioned to avoid duplicate work)
+
+if [ -x /usr/bin/podebconf-report-po ]
+then
+    [ -z "$DEBEMAIL" ] && echo -n "Your (non-obfuscated) email:" && read $DEBEMAIL && export DEBEMAIL
+    podebconf-report-po --podir=. --package=wormux  --languageteam --noforce $@
+else
+    echo "Sorry, you need /usr/bin/podebconf-report-po to"
+    echo "use this script; on Debian systems is available"
+    echo "from the po-debconf package."
+    exit 1
+fi
+

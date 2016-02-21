@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<author>
+  <name>yeKcim</name>
+  <email>yeknan AT yahoo.fr</email>
+</author>
+
+<sprite name="walking">
+  <image file="walking.png">
+    <grid pos="0,0" size="31,44" array="4,1" />
+  </image>
+  <collision_rect dx="10" top="1" bottom="0" />
+  <wormux repetition="7" />
+  <hand frame="1" x="5" y="36" />
+  <hand frame="2" x="9" y="36" />
+  <hand frame="3" x="5" y="36" />
+  <hand frame="4" x="4" y="37" />
+</sprite>
+
+<sprite name="helmet">
+  <image file="helmet.png">
+    <grid pos="0,0" size="31,44" array="4,1" />
+  </image>
+  <collision_rect dx="10" top="1" bottom="0" />
+  <wormux repetition="7" />
+  <hand frame="1" x="5" y="36" />
+  <hand frame="2" x="9" y="36" />
+  <hand frame="3" x="5" y="36" />
+  <hand frame="4" x="4" y="37" /> 
+</sprite>
+
+<sprite name="jetpack">
+  <image file="jetpack-fly.png" />
+  <collision_rect dx="10" top="1" bottom="0" />
+</sprite>
+
+<sprite name="weapon-jetpack">
+  <image file="jetpack-walk.png">
+    <grid pos="0,0" size="31,44" array="4,1" />
+  </image>
+  <hand /> 
+  <collision_rect dx="10" top="1" bottom="0" />
+  <wormux repetition="7" />
+</sprite>
+
+<sprite name="jetpack-up">
+  <image file="jetpack-fly-move.png">
+     <grid size="31,44" array="2,1" />
+  </image>
+  <frame speed="100" />
+  <animation pingpong="yes"/>
+  <collision_rect dx="10" top="1" bottom="0" />
+</sprite>
+
+<sprite name="jetpack-left-right">
+  <image file="jetpack-fly-move.png">
+    <grid size="31,44" array="2,1" />
+  </image>
+  <frame speed="100" />
+  <animation pingpong="yes"/>
+  <collision_rect dx="10" top="1" bottom="0" />
+</sprite>
+
+<sprite name="animation">
+  <not_while_playing>1</not_while_playing>
+  <image file="animation.png">
+    <grid pos="0,0" size="31,44" array="4,1" />
+  </image>
+  <frame speed="600" />
+  <collision_rect dx="10" top="1" bottom="0" />
+</sprite>
+
+<sprite name="jump">
+  <image file="jump.png" />
+  <collision_rect dx="10" top="1" bottom="0" />
+</sprite>
+
+<sprite name="fall">
+  <image file="fall.png" />
+  <collision_rect dx="10" top="1" bottom="0" />
+</sprite>
+
+<sprite name="dead">
+  <image file="dead.png" />
+  <collision_rect dx="0" top="0" bottom="0" />
+</sprite>
+
+<sprite name="drowned">
+  <image file="drowned.png" />
+</sprite>
+
+</resources>

@@ -1,0 +1,77 @@
+10
+
+dir
+10371
+svn://svn.gna.org/svn/warmux/tags/warmux-11.04.1/build/symbian
+svn://svn.gna.org/svn/warmux
+
+
+
+2011-04-28T17:26:13.950108Z
+10016
+kurosu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30ef787d-52ff-0310-b286-e08351bb7647
+
+src
+dir
+
+res
+dir
+
+group
+dir
+
+bld.inf
+file
+
+
+
+
+2012-12-15T13:35:31.194793Z
+7b4dffe8413b443b95bf065fd1b17c4d
+2011-04-28T17:26:13.950108Z
+10016
+kurosu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+807
+
+sis
+dir
+
+lib
+dir
+

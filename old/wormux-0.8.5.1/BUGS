@@ -1,0 +1,32 @@
+                                [ Wormux BUGS ]
+
+
+  Wormux is a program written by humans, and so has bugs :-) But it's not
+fatal, you can help us to fix them by reporting them !
+
+
+Bug reporting
+=============
+
+If the bug appears during compilation, type :
+$ make 2>&1 | tee log.txt
+and send to us log.txt file with your comments.
+
+If the bug comes from the game, please use gdb (with debug version of Wormux) :
+$ gdb ./wormux
+(gdb) run
+Error (...)
+(gdb) where
+
+And then copy/paste the error + what gdb answer to "where".
+
+
+You can report us bugs by email (wormux-dev AT gna.org) or at our project
+management website : https://gna.org/projects/wormux/
+
+Known bugs
+==========
+
+Go to our website to check last opened bugs :
+  https://gna.org/bugs/?group=wormux
+

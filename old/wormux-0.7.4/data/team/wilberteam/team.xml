@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <name>Wilber Team</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="Pablo Picasso" skin="wilberteam" />
+    <character name="Keith Haring" skin="wilberteam" />
+    <character name="Leonard Da Vinci" skin="wilberteam" />
+    <character name="Francisco Goya" skin="wilberteam" />
+    <character name="Salvador Dali" skin="wilberteam" />
+    <character name="Paul Gauguin" skin="wilberteam" />
+    <character name="Edouard Manet" skin="wilberteam" />
+    <character name="Claude Monet" skin="wilberteam" />
+    <character name="Rembrandt Harmenszoon van Rijn" skin="wilberteam" />
+    <character name="Pierre-Auguste Renoir" skin="wilberteam" />
+    <character name="Vincent Van Gogh" skin="wilberteam" />
+    <character name="Raffaello Sanzio" skin="wilberteam" />
+    <character name="Jean-Baptiste Oudry" skin="wilberteam" />
+    <character name="Alessandro Botticelli" skin="wilberteam" />    
+  </team>
+
+</resources>
+

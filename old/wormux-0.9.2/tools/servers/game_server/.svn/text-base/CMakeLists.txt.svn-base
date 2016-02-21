@@ -1,0 +1,23 @@
+FILE(GLOB_RECURSE WORMUX_HEADLESS_SERVER_SRCS *.cpp)
+SET(EXE wormux-headless-server)
+
+INCLUDE_DIRECTORIES( ${PROJECT_SOURCE_DIR}/lib/wormux/include
+                     ${PROJECT_SOURCE_DIR}/lib/wormux-server/include
+                     ${PROJECT_SOURCE_DIR}/src
+                     ${CMAKE_CURRENT_SOURCE_DIR}
+                     ${SDLNET_INCLUDE_DIR} )
+LINK_DIRECTORIES( ${PROJECT_SOURCE_DIR}/lib/wormux
+                  ${PROJECT_SOURCE_DIR}/lib/wormux-server )
+
+ADD_EXECUTABLE(${EXE} ${WORMUX_HEADLESS_SERVER_SRCS})
+SET_TARGET_PROPERTIES(${EXE} PROPERTIES LINK_FLAGS "${WORMUX_LDFLAGS}"
+                                        COMPILE_FLAGS "${WORMUX_CFLAGS}")
+
+TARGET_LINK_LIBRARIES(${EXE} ${CURL_LIBRARIES} libwormux wormux-server ${SDLNET_LIBRARY})
+IF (FRIBIDI_FOUND)
+  TARGET_LINK_LIBRARIES( ${EXE}
+    ${FRIBIDI_LIBRARY}
+  )
+ENDIF (FRIBIDI_FOUND)
+
+INSTALL(TARGETS ${EXE} RUNTIME DESTINATION ${BIN_DESTINATION})

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+  <author>
+    <name>Anthony CARRÉ and Olivier Boyer</name>
+    <nickname>yeKcim and Zi Olive</nickname>
+    <email>yeknan AT yahoo DOT fr</email>
+    <country>France</country>
+  </author>
+
+  <surface name="sky" file="sky.jpg" />
+  <surface name="map" file="monkeybubbleworld.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Monkey-Bubble World</name>
+  <water>1</water>
+  <nb_mine>5</nb_mine>
+  <is_open>1</is_open>
+
+  <sprite name="wind_particle">
+    <image file="feuille.png">
+      <grid pos="0,0" size="50,50" array="1,1"/>
+    </image>
+  </sprite>
+  <wind>
+    <nbr_sprite>35</nbr_sprite>
+    <need_flip>1</need_flip>
+    <rotation_speed>0.02</rotation_speed>
+
+    <mass>2.0</mass>
+    <wind_factor>5.5</wind_factor>
+    <air_resist_factor>0.5</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>1.3</rebound_factor>
+  </wind>
+</resources>

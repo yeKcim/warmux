@@ -1,0 +1,102 @@
+ESTA DOCUMENTACIÓN ESTÁ ANTICUADA
+
+=========================
+Compilación en GNU/Linux
+=========================
+
+=============
+* Dependencias
+=============
+
+* SDL
+-----
+
+Wormux usa a biblioteca SDL na súa version 1.2, así que terás
+que instalala. 
+
+Sitio web: http://www.libsdl.org/
+
+* SDL mixer, SDL image, SDL ttf, SDL gfx
+----------------------------------------
+
+ http://www.libsdl.org/projects/SDL_ttf/
+ http://www.libsdl.org/projects/SDL_mixer/
+ http://www.libsdl.org/projects/SDL_image/
+ http://www.ferzkopp.net/Software/SDL_gfx-2.0/
+
+* libxml++
+----------
+
+Wormux usa tamén a biblioteca libxml++ na súa version 2.6, así
+que tamén terás que instalala. Os usuarios de debian poden
+facelo simplemente con:
+
+	apt-get install libxml++2.6-dev
+
+Sitio web : http://libxmlplusplus.sourceforge.net/
+
+=============
+* Compilación
+=============
+
+En GNU/Linux basta con executar:
+
+$ ./autogen.sh
+$ ./configure
+$ make
+
+==============================
+* Instalación / Desinstalación
+==============================
+
+Para instalar o Wormux en GNU/Linux executa:
+
+$ su -c "make install"
+
+Para executar o xogo:
+$ wormux
+
+E para desinstalalo:
+
+$ su -c "make uninstall"
+
+Por defecto, o xogo instálase en "/usr". Tamén podes instalalo
+noutro directorio (por exemplo, se non tes permisos en "/usr").
+
+$ ./configure --prefix=~/games/
+
+
+========================
+Información do Makefile
+========================
+
+Opcións :
+---------	
+
+- DIR       : especifica o directorio de instalación/desinstalación do Wormux. 
+
+
+Regras :
+--------
+
+- make all       : compila
+- make exec      : compila e executa 
+- make release   : compila en modo lanzamento (sen información
+		   nin código de depuración)
+- make qexec     : executa sen recompilar
+- make tgz-bin   : compila e crea o ficheiro que conterá o
+		   executable el binario e a documentación)
+- make tgz-src   : creación dun ficheiro que contén o código
+		   fonte
+- make info      : amosa unha pantalla de axuda sobre o
+		   ambiente e as opcións de compilación
+- make install   : compila e instala o Wormux
+- make uninstall : desinstalación
+- make clean     : limpeza de ficheiros obxecto
+- make cleanall  : limpeza de todo rastro de binario
+- make i18n_pot  : xerar un novo ficheiro .pot (necesario para
+		   a tradución)
+- make i18n_mo   : xerar un novo ficheiro .mo (necesario para a
+		   tradución)
+
+Hai outras regras pero só se utilizan de xeito interno.

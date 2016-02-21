@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Pidgin</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+    <character name="AIM" body="pidgin"/>
+    <character name="Bonjour" body="pidgin"/>
+    <character name="Gadu-Gadu" body="pidgin"/>
+    <character name="Google Talk" body="pidgin"/>
+    <character name="Groupwise" body="pidgin"/>
+    <character name="ICQ" body="pidgin"/>
+    <character name="IRC" body="pidgin"/>
+    <character name="MSN" body="pidgin"/>
+    <character name="MySpaceIM" body="pidgin"/>
+    <character name="QQ" body="pidgin"/>
+    <character name="SILC" body="pidgin"/>
+    <character name="SIMPLE" body="pidgin"/>
+    <character name="Sametime" body="pidgin"/>
+    <character name="XMPP" body="pidgin"/>
+    <character name="Yahoo!" body="pidgin"/>
+    <character name="Zephyr" body="pidgin"/>
+  </team>
+</resources>
+
+
+
+

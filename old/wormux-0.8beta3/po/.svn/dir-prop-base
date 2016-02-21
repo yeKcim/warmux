@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 52
+Makefile.in
+Makefile
+stamp-po
+wormux.pot
+*.gmo
+*.mo
+
+END

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "body.dtd">
+
+<aliases>
+
+
+<alias movement="weapon-riot_bomb-end-shoot" correspond_to="weapon-bazooka-end-shoot"/>
+<alias movement="weapon-riot_bomb-select" correspond_to="weapon-bazooka-select"/>
+<alias movement="weapon-automatic_bazooka-select" correspond_to="weapon-bazooka-select"/>
+<alias movement="weapon-automatic_bazooka-end-shoot" correspond_to="weapon-bazooka-end-shoot"/>
+<alias movement="weapon-cluzooka-select" correspond_to="weapon-bazooka-select"/>
+<alias movement="weapon-cluzooka-end-shoot" correspond_to="weapon-bazooka-end-shoot"/>
+<alias movement="weapon-cluzooka-select" correspond_to="weapon-bazooka-select"/>
+<alias movement="weapon-cluzooka-end-shoot" correspond_to="weapon-bazooka-end-shoot"/>
+<alias movement="weapon-cluster_bomb-begin-shoot" correspond_to="weapon-grenade-begin-shoot"/>
+<alias movement="weapon-cluster_bomb-end-shoot" correspond_to="weapon-grenade-end-shoot"/>
+<alias movement="weapon-disco_grenade-begin-shoot" correspond_to="weapon-grenade-begin-shoot"/>
+<alias movement="weapon-disco_grenade-end-shoot" correspond_to="weapon-grenade-end-shoot"/>
+<alias movement="weapon-snipe_rifle-begin-shoot" correspond_to="weapon-uzi-begin-shoot"/>
+<alias movement="weapon-snipe_rifle-end-shoot" correspond_to="weapon-uzi-end-shoot"/>
+<alias movement="weapon-gnulauncher-begin-shoot" correspond_to="weapon-tux-begin-shoot"/>
+<alias movement="weapon-gnulauncher-end-shoot" correspond_to="weapon-tux-end-shoot"/>
+<alias movement="weapon-m16-select" correspond_to="weapon-gun-select"/>
+<alias movement="weapon-shotgun-select" correspond_to="weapon-gun-select"/>
+<alias movement="weapon-snipe_rifle-select" correspond_to="weapon-gun-select"/>
+<alias movement="weapon-flamethrower-select" correspond_to="weapon-gun-select"/>
+<alias movement="fly-black" correspond_to="fly"/>
+<alias movement="weapon-polecatlauncher-select" correspond_to="weapon-gnulauncher-select"/>
+
+
+</aliases>

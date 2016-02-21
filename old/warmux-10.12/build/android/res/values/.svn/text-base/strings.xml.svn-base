@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Warmux</string>
+
+    <string name="init">Initializing</string>
+    <string name="readme">^Please wait while data is being downloaded</string>
+
+    <string name="device_config">Device configuration</string>
+    <string name="device_change_cfg">Change device configuration</string>
+
+    <string name="download_unneeded">No need to download</string>
+    <string name="connecting_to">Connecting to %s</string>
+    <string name="failed_connecting_to">Failed connecting to %s</string>
+    <string name="error_connecting_to">Error connecting to %s</string>
+    <string name="dl_from">Downloading data from %s</string>
+    <string name="error_dl_from">Error downloading data from %s</string>
+    <string name="error_write">Error writing to %s</string>
+    <string name="dl_crc_error">File %s corrupted</string>
+    <string name="dl_progress">%1$d%% done: file %2$s</string>
+    <string name="dl_finished">Finished</string>
+
+    <string name="storage_phone">Internal storage - %d MB free</string>
+    <string name="storage_sd">SD card storage - %d MB free</string>
+    <string name="storage_question">Where to download application data</string>
+
+    <string name="controls_arrows">Arrows / joystick / dpad</string>
+    <string name="controls_trackball">Trackball</string>
+    <string name="controls_none">Nothing</string>
+    <string name="controls_question">What kind of navigation keys does your device have?</string>
+
+    <string name="trackball_no_dampening">No dampening</string>
+    <string name="trackball_fast">Fast</string>
+    <string name="trackball_medium">Medium</string>
+    <string name="trackball_slow">Slow</string>
+    <string name="trackball_question">Trackball dampening</string>
+
+    <string name="accel_fast">Fast</string>
+    <string name="accel_medium">Medium</string>
+    <string name="accel_slow">Slow</string>
+    <string name="accel_question">Accelerometer sensitivity</string>
+
+    <string name="accel_floating">Floating</string>
+    <string name="accel_fixed_start">Fixed when application starts</string>
+    <string name="accel_fixed_horiz">Fixed to table desk orientation</string>
+    <string name="accel_question_center">Accelerometer center position</string>
+
+    <string name="audiobuf_small">Small (fast devices)</string>
+    <string name="audiobuf_medium">Medium</string>
+    <string name="audiobuf_large">Large (if sound is choppy)</string>
+    <string name="audiobuf_question">Size of audio buffer</string>
+</resources>

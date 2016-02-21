@@ -1,0 +1,25 @@
+K 10
+svn:ignore
+V 153
+Makefile.in
+eo.gmo
+es.gmo
+it.gmo
+sk.gmo
+wormux.pot
+de.gmo
+Makefile
+fr.gmo
+nl.gmo
+pl.gmo
+hu.gmo
+stamp-po
+pt.gmo
+ca.gmo
+ru.gmo
+da.gmo
+ro.gmo
+tr.gmo
+fi.gmo
+
+END

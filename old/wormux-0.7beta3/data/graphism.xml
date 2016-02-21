@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+
+<section name="intro">
+  <surface name="loading" file="menu/img/loading.png" />
+</section>
+
+<section name="main_menu">
+  <surface name="bg" file="menu/img/background.png" />
+
+  <sprite name="button">
+    <image file="menu/img/button.png">
+      <grid pos="0,0" size="402,64" array="2,1" />
+    </image>
+  </sprite>
+
+  
+</section>
+
+<section name="menu">  
+
+  <surface name="bg_option" file="menu/img/background_options.png" />
+
+  <sprite name="valider">
+    <image file="menu/img/validate.png">
+      <grid pos="0,0" size="32,32" array="1,2" />
+    </image>
+  </sprite> 
+  <sprite name="annuler">
+    <image file="menu/img/cancel.png">
+      <grid pos="0,0" size="32,32" array="1,2" />
+    </image>
+  </sprite> 
+  <sprite name="check">
+    <image file="menu/img/check.png">
+      <grid pos="0,0" size="16,16" array="1,2" />
+    </image>
+  </sprite> 
+  <sprite name="plus">
+    <image file="menu/img/plus.png">
+      <grid pos="0,0" size="5,10" array="2,1" />
+    </image>
+  </sprite> 
+  <sprite name="minus">
+    <image file="menu/img/minus.png">
+      <grid pos="0,0" size="5,10" array="2,1" />
+    </image>
+  </sprite> 
+  <sprite name="up">
+    <image file="menu/img/up.png">
+      <grid pos="0,0" size="10,5" array="1,2" />
+    </image>
+  </sprite> 
+  <sprite name="down">
+    <image file="menu/img/down.png">
+      <grid pos="0,0" size="10,5" array="1,2" />
+    </image>
+  </sprite> 
+  <sprite name="arrow-right">
+    <image file="menu/img/arrow-right.png">
+      <grid pos="0,0" size="58,48" array="2,1" />
+    </image>
+  </sprite> 
+  <sprite name="arrow-left">
+    <image file="menu/img/arrow-left.png">
+      <grid pos="0,0" size="58,48" array="2,1" />
+    </image>
+  </sprite> 
+</section>
+
+<section name="objet">
+  <sprite name="caisse">
+    <image file="object/bonus_box.png">
+      <grid pos="0,0" size="84,88" array="4,1" />
+      <animation loop="false" speed="1" />
+    </image>
+  </sprite>
+</section>
+
+<section name="interface">
+  <surface name="menu_jeu" file="interface/game_menu.png" />
+  <surface name="menu_arme" file="interface/weapons_menu.png" />
+  <surface name="button1_icon" file="interface/button1.png"/>
+  <surface name="button2_icon" file="interface/button2.png"/>
+  <surface name="button3_icon" file="interface/button3.png"/>
+  <surface name="button4_icon" file="interface/button4.png"/>
+  <surface name="button5_icon" file="interface/button5.png"/>
+  <surface name="weapon_box_button" file="interface/Grey-Button.png"/>
+  <surface name="fond_compteur" file="interface/compteur.png"/>
+</section>
+
+
+<section name="gfx">
+  <surface name="pointeur1" file="gfx/pointer.png" />
+
+  <sprite name="curseur">
+    <image file="gfx/arrow.png" />
+  </sprite>
+
+  <surface name="water" file="gfx/water.png" />
+  <surface name="fond_eau" file="gfx/water_bottom.png" />
+
+</section>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+  <author>
+    <name>Toon VERSTRAELEN</name>
+    <nickname>Toony</nickname>
+    <email>Toon.Verstraelen AT UGent.be</email>
+    <country>Belgium</country>
+  </author>
+
+  <surface name="sky" file="back.jpg" />
+  <surface name="map" file="front.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Leafs</name>
+  <water>0</water>
+  <nb_mine>3</nb_mine>
+  <is_open>1</is_open>
+
+  <sprite name="wind_particle">
+    <image file="birds.png">
+      <grid pos="0,0" size="48,18" array="14,1"/>
+    </image>
+    <animation speed="100"/>
+  </sprite>
+  <wind>
+    <nbr_sprite>30</nbr_sprite>
+    <need_flip>0</need_flip>
+
+    <mass>2.0</mass>
+    <wind_factor>4.0</wind_factor>
+    <air_resist_factor>0.3</air_resist_factor>
+    <gravity_factor>0.2</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>2.1</rebound_factor>
+  </wind>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT resources (surface|sprite)+>
+
+<!ELEMENT surface EMPTY>
+<!ATTLIST surface name CDATA #REQUIRED file CDATA #REQUIRED>
+
+<!ELEMENT sprite (image, animation?)>
+<!ATTLIST sprite name CDATA #REQUIRED>
+<!ELEMENT image (grid?)>
+<!ATTLIST image file CDATA #REQUIRED>
+<!ELEMENT grid EMPTY>
+<!ATTLIST grid pos CDATA #REQUIRED size CDATA #REQUIRED array CDATA #REQUIRED>
+<!ELEMENT animation EMPTY>
+<!ATTLIST animation speed CDATA #IMPLIED loop_mode CDATA #IMPLIED >

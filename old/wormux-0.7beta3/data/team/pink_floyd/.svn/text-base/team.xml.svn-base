@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <equipe>
+    <nom>Pink Floyd</nom>
+    <ver nom="Flambeur" avatar="flament_rose" />
+    <ver nom="Flacon" avatar="flament_rose" />
+    <ver nom="Flaireur" avatar="flament_rose" />
+    <ver nom="Flan" avatar="flament_rose" />
+    <ver nom="Flash" avatar="flament_rose" />
+    <ver nom="Flatulence" avatar="flament_rose" />
+  </equipe>
+  <surface name="flag" file="flag.png" />
+</resources>

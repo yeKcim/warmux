@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Gnu</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+    <character name="Connochaetes Taurinus" body="gnuteam" />
+    <character name="Connochaetes gnu" body="gnuteam" />
+    <character name="Not UNIX" body="gnuteam" />
+    <character name="Linux" body="gnuteam" />
+    <character name="Hurd" body="gnuteam" />
+    <character name="Emacs" body="gnuteam" />
+    <character name="Compiler Collection" body="gnuteam" />
+    <character name="Arch" body="gnuteam" />
+    <character name="Debugger" body="gnuteam" />
+    <character name="Savannah" body="gnuteam" />
+  </team>
+</resources>

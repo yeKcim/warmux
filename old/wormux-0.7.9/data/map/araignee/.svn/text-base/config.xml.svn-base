@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+  <author>
+    <name>Lawrence AZZOUG</name>
+    <nickname>Lami</nickname>
+    <email>lawrenceazzoug AT wanadoo.fr</email>
+    <country>France</country>
+  </author>
+
+  <surface name="preview" file="preview.jpg" />
+  <surface name="sky" file="fond.jpg" />
+  <surface name="map" file="araignee.png" />
+
+  <name>Araignee</name>
+  <water>0</water>
+  <nb_mine>3</nb_mine>
+  <is_open>1</is_open>
+
+  <sprite name="wind_particle">
+    <image file="abeille.png">
+      <grid pos="0,0" size="28,24" array="5,1"/>
+    </image>
+    <animation speed="30"/>
+  </sprite>
+  <wind>
+    <nbr_sprite>15</nbr_sprite>
+    <need_flip>1</need_flip>
+
+    <mass>6.0</mass>
+    <wind_factor>6.0</wind_factor>
+    <air_resist_factor>0.2</air_resist_factor>
+    <gravity_factor>0.1</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>1.5</rebound_factor>
+  </wind>
+
+</resources>

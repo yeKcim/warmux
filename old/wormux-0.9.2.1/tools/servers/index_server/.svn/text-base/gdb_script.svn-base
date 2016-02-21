@@ -1,0 +1,2 @@
+handle SIGPIPE nostop
+set follow-fork-mode child

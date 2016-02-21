@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+	<author>
+		<name>Tomasz Majbaum</name>
+		<nickname>Ahriman</nickname>
+		<email>anunnaki AT o2.pl</email>
+		<country>Poland</country>
+	</author>
+	
+	<surface name="sky" file="hellsky.jpg" />
+	<surface name="map" file="hell.png" />
+	<surface name="preview" file="preview.jpg" />
+	
+	<name>Hell</name>
+	<water>0</water>
+	<nb_mine>3</nb_mine>
+	<is_open>1</is_open>
+	
+	<sprite name="wind_particle">
+		<image file="bones.png">
+			<grid pos="0,0" size="64,64" array="8,1"/>
+		</image>
+		<animation speed="50"/>
+	</sprite>
+	<wind>
+		<nbr_sprite>10</nbr_sprite>
+		<need_flip>0</need_flip>
+
+    <mass>3.0</mass>
+    <wind_factor>10.0</wind_factor>
+    <air_resist_factor>1.0</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>1.0</rebound_factor>
+	</wind>
+</resources>

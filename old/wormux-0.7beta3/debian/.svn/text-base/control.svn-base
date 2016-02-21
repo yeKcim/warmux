@@ -1,0 +1,51 @@
+Source: wormux
+Section: games
+Priority: optional
+Maintainer: Jean Parpaillon <jean.parpaillon@free.fr>
+Build-Depends: debhelper (>= 4.0.0), build-essential, automake1.9, libsdl1.2-dev, libsdl-image1.2-dev, libsdl-mixer1.2-dev, libsdl-ttf1.2-dev | libsdl-ttf2.0-dev, libsdl-gfx1.2-dev, libxml++2.6-dev
+Standards-Version: 3.6.2
+
+Package: wormux
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, wormux-data (>= ${Source-Version})
+Description: A clone of the Worms game
+ Almost everyone has heard of the Worms(R) series of games, developed by 
+ Team17. Worms was created in 1990, the goal of the game consisting of a 
+ several teams of "worms" fighting to the death on a 2D map. Wormux is 
+ heavily influenced by all games in this genre, including Scorched Earth 
+ and Liero.
+ .
+ Wormux is free software clone of this game concept. Though currently under 
+ heavy development, it is already very playable, with lots of weapons 
+ (Dynamite, Baseball Bat, Teleportation, etc.). There are also lots of maps 
+ available for your battling pleasure! Wormux takes the genre to the next 
+ level, with great customisation options leading to great gameplay. There is 
+ a wide selection of teams, from the Aliens to the Chickens. Also, new 
+ battlefields can be downloaded from the Internet, making strategy an 
+ important part of each battle.
+ .
+ Homepage: http://wormux.org
+
+Package: wormux-data
+Architecture: all
+Recommends: wormux (>= ${Source-Version})
+Description: Data files for the game wormux
+ Almost everyone has heard of the Worms(R) series of games, developed by 
+ Team17. Worms was created in 1990, the goal of the game consisting of a 
+ several teams of "worms" fighting to the death on a 2D map. Wormux is 
+ heavily influenced by all games in this genre, including Scorched Earth 
+ and Liero.
+ .
+ Wormux is free software clone of this game concept. Though currently under 
+ heavy development, it is already very playable, with lots of weapons 
+ (Dynamite, Baseball Bat, Teleportation, etc.). There are also lots of maps 
+ available for your battling pleasure! Wormux takes the genre to the next 
+ level, with great customisation options leading to great gameplay. There is 
+ a wide selection of teams, from the Aliens to the Chickens. Also, new 
+ battlefields can be downloaded from the Internet, making strategy an 
+ important part of each battle.
+ .
+ This package contains data like maps and teams.  If you want to play the
+ game, you need to install the package wormux. 
+ .
+ Homepage: http://wormux.org/

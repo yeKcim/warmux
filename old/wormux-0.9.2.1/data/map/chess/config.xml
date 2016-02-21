@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+  <author>
+    <name>Lawrence AZZOUG</name>
+    <nickname>Lami</nickname>
+    <email>lami AT wormux.org</email>
+    <country>France</country>
+  </author>
+
+  <surface name="sky" file="sky.jpg" /> 
+
+  <sky_layer>2</sky_layer>
+  <surface name="sky_layer_0" file="sky0.png" />
+  <surface name="sky_layer_1" file="sky1.png" />
+  <surface name="map"     file="map.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <add_pad>1</add_pad>
+  <point name="upper_left_pad" x="3000" y="1000" />
+  <point name="lower_right_pad" x="3000" y="0" />
+
+  <name>Chess</name>
+  <water>water</water>
+  <nb_mine>3</nb_mine>
+  <nb_barrel>1</nb_barrel>
+  <is_open>1</is_open>
+
+</resources>

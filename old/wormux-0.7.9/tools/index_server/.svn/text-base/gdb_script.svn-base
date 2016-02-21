@@ -1,0 +1,1 @@
+handle SIGPIPE nostop

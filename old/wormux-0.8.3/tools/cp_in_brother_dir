@@ -1,0 +1,14 @@
+#!/bin/bash
+# paste this script in ~/.gnome2/nautilus-scripts
+#
+# use the script on "bodies/subdir1/file" to cp this file in all brother directories ("bodies/subdir2", "bodies/subdir3",...)
+
+mv "$1" ../
+cd ..
+for i in * ; do
+	if [ -d "$i" ]
+	then
+		cp "$1" ./"$i"
+	fi
+done
+rm -rf "$1"

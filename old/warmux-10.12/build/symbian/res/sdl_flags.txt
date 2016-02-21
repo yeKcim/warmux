@@ -1,0 +1,2 @@
+DrawModeGdi
+AutoOrientation

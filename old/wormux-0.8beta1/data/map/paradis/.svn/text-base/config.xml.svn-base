@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+	<author>
+		<name>Olivier Boyer</name>
+		<nickname>ziolive</nickname>
+		<email>ziolive AT gmail.com</email>
+		<country>France</country>
+	</author>
+
+	<surface name="sky" file="decor_paradis_BG.jpg" />
+	<surface name="map" file="decor_paradis.png" />
+	<surface name="preview" file="paradis_preview.jpg" />
+
+
+	<name>Paradis</name>
+	<water>0</water>
+	<nb_mine>7</nb_mine>
+	<is_open>1</is_open>
+
+	<music_playlist>sea</music_playlist>
+</resources>

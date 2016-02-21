@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <name>Snort Team</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="Snort" skin="snortteam" />
+    <character name="SnortSnarf" skin="snortteam" />
+    <character name="ACID" skin="snortteam" />
+    <character name="Sguil" skin="snortteam" />
+    <character name="BASE" skin="snortteam" />
+    <character name="Bearded Pig" skin="snortteam" />
+    <character name="Vietnamese Warty Pig" skin="snortteam" />
+    <character name="Visayas Warty Pig" skin="snortteam" />
+    <character name="Celebes Warty Pig" skin="snortteam" />
+    <character name="Poulter Warty Pig" skin="snortteam" />
+    <character name="Flores Warty Pig" skin="snortteam" />
+    <character name="Philippine Warty Pig" skin="snortteam" />
+    <character name="Pigmy Hog" skin="snortteam" />
+    <character name="Timor Warty Pig" skin="snortteam" />    
+  </team>
+</resources>

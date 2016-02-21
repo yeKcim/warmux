@@ -1,0 +1,159 @@
+ GNU General Public License / GNUa G^enerala Publika Permesilo
+Esperantigo de la versio 2 (Junio 1991)
+
+    Copyright © 1989, 1991, Free Software Foundation Inc.
+    59 Temple Place, Suite 330, Boston, MA 02111-1307
+    Usono
+
+    C^iu rajtas reprodukti kaj disvastigi nes^ang^itajn kopiojn de c^i tiu Permesilo; sed s^ang^i g^in oni ne rajtas.
+
+Antau(parolo
+
+La pliparto de la permesiloj pri uzo de programo celas limigi vian liberon g^in kunhavigi kaj modifi. Male, la GNUa G^enerala Publika Permesilo celas garantii vian liberon kunhavigi kaj modifi liberan programaron – certigi ke la programaro estu libera por c^iuj uzantoj. C^i tiu G^enerala Publika Permesilo validas por pliparto da programaro de Free Software Foundation (la Fondaj^o de Libera Programaro) kaj por multaj aliaj programoj kies au(toroj volas g^in uzi. (Por alia parto de la programaro de Free Software Foundation validas, anstatau(e, «GNU Library General Public License», la GNUa G^enerala Publika Permesilo Biblioteka [1].) Ankau( vi povas apliki g^in al viaj programoj.
+
+Kiam ni parolas pri liberaj programoj, ja temas pri libero, ne pri prezo. Niaj G^eneralaj Publikaj Permesiloj estas faritaj por disponigi al vi la liberon
+
+    * distribui [2] ekzemplerojn de liberaj programverkoj (kaj postuli pagon por ili, se vi volas);
+    * ricevi la fontotekstojn au( povi preni ilin, se vi deziras;
+    * modifi la programojn au( uzi pecojn el ili en novaj liberaj programoj;
+    * kaj scii ke vi rajtas fari tiojn.
+
+Por protekti viajn rajtojn ni devas enkonduki limigojn kiuj malebligu al iu ajn rifuzi al vi tiujn rajtojn au( proponi al vi cedi ilin. Tiuj limigoj esprimig^as en certaj devigoj por vi, se vi distribuas ekzemplerojn de programo au( se vi modifas ilin.
+
+Ekzemple, se vi distribuas ekzemplerojn de tia programo, c^u senpage au( kontrau( pago, vi devas pludoni al la ricevantoj c^iujn rajtojn je g^i, kiujn vi havas. Vi devas certigi ke ankau( la novaj posedantoj ricevu au( povu havigi al si la fontotekstojn. Kaj vi devas informi ilin pri la kondic^oj, por ke ili sciu siajn rajtojn.
+
+Ni protektas viajn rajtojn en du pas^oj:
+
+   1. {ni} rezervas {al ni} la au(torrajton [3] je la programoj, kaj
+   2. ni disponigas al vi c^i tiun Permesilon, kiu donas al vi juran eblon reprodukti [4], distribui kaj/au( modifi la programojn.
+
+Krome, por protekti la au(torojn kaj nin mem, ni sciigas al c^iuj ke estas nenia garantio pri la libera programaro. Personoj akirintaj programon modifitan per tria partio sciu, ke ili ricevis ne la originalon, kaj tial la problemoj kau(zitaj de triapartiaj s^ang^oj ne kompromitu la reputacion la originala au(toro.
+
+Fine, c^iun liberan programon konstante minacas programa patento [5]. Ni malvolas ke perantoj de libera programo individue akiru patenton je g^i, per tio fakte farante la programon proprieta [6]. Por malebligi tion ni klarigis, ke patento estu koncesiita al c^ies ajn libera uzo – au( tute ne estu koncesiita.
+
+Nun sekvas la precizaj kondic^oj pri reproduktado, distribuado kaj modifado.
+La kondic^oj pri reproduktado, distribuado kaj modifado
+lau( la GNUa G^enerala Publika Permesilo
+
+§0. C^i tiu Permesilo validas por ajna programo au( alia verko entenanta averton enmetitan de la posedanto de la au(torrajto, dirantan ke g^i estas distribuebla lau( la kondic^oj de c^i tiu G^enerala Publika Permesilo. C^i-sube «Programo» indikas c^ian tian programon au( verkon, kaj «verko bazita sur la Programo» estas au( la Programo mem, au( ia ajn derivita verko lau( la difino de la leg^o pri la au(torrajto [7]: t.e. verko entenata la Programon au( ties pecon, c^u modifitan au( ne, kaj/au( tradukitan en alian lingvon. (C^i tie kaj sube la termino modifo kovras, senrezerve, tradukojn lau( la plej g^enerala senco.) C^i-sube vi indikas koncesiulon de la Permesilo.
+
+C^i tiu Permesilo ne koncernas realigon de la ceteraj rajtoj, aliaj ol reproduktado, distribuado kaj modifado. Rulado de la Programo ne estas limigita, kaj ties eligaj^o estas koncernata nur se g^ia enhavo konstituas verkon bazitan sur la Programo (alie ol pro la fakto ke g^i estas rezulto de rulo de la Programo). C^u tio validas au( ne, dependas de la funkcio de la Programo.
+
+§1. Vi rajtas sens^ang^e reprodukti kaj distribui ekzemplerojn de la fontoteksto de la Programo tia kia vi g^in ricevis, sur ajna datumportilo, kondic^e ke
+
+    * c^iu ekzemplero havu klare videblan kaj tau(gan avizon pri la au(torrajto (copyright notice) kaj malgarantiilon (disclaimer of warranty);
+    * c^iuj avizoj pri c^i tiu Permesilo kaj malgarantiiloj restas netus^itaj;
+    * kun la ekzemplero de la Programo la akiranto ricevu kopion de c^i tiu Permesilo.
+
+Vi rajtas fakturi la fizikan agon por liverado de ekzemplero de la Programo, kaj lau(vole vi rajtas oferti pagajn servojn garantiajn.
+
+§2. Vi rajtas modifi vian ekzemplerojn au( viajn ekzemplerojn de la Programo, au( ajnan ties pecon, tiel kreante verkon bazitan sur la Programo. Vi rajtas reprodukti kaj distribui ekzemplerojn de tia verko lau( la reguloj de §1, se vi ankau( plenumas c^iujn sekvajn kondic^ojn:
+
+   1. la de vi modifitaj dosieroj enhavu bone videblan avizon ke vi s^ang^is ilin, kaj la datojn de c^iuj s^ang^oj;
+   2. distribuante au( publikigante ajnan verkon kiu tute au( parte entenas la Programon au( estas bazita sur la Programo au( ties parto, vi devas koncesii la rajtojn uzi tiun verkon al c^iu tria partio lau( la kondic^oj de c^i tiu Permesilo, sen ajna koncesia pago, kaj la verko estu koncesiata kiel unu tuto;
+   3. se dum la normala uzmaniero de la modifita programo g^i dialoge legas komandojn, vi devas zorgi ke g^i, lanc^ite en la plej kutima maniero por dialoga uzo, eligu anoncon kiu entenu:
+          * avizon pri la au(torrajto;
+          * malgarantiilon (au( male, informon ke vi provizas garantion);
+          * permeson al la uzantoj plu distribui la Programon sub c^i tiuj kondic^oj, kaj indikon kiel la uzanto povas vidi kopion de c^i tiu Permesilo.
+      (Escepto: se la Programo mem estas dialoga sed normale ne eligas tian anoncon, tiam ankau( por via derivita verko tia anonco ne estas deviga.)
+
+Tiuj postuloj rilatas al la modifita verko konsiderata kiel unu tuto. Se apartigeblaj komponantoj de la verko ne estas derivitaj el la Programo, kaj sencas uzi ilin kiel sendependajn kaj apartajn verkojn, tiam c^i tiu Permesilo ne koncernas tiujn komponantojn en la okazoj kiam vi distribuas ilin kiel apartajn verkojn. Sed kiam vi distribuas tiujn samajn komponantojn kiel parton de tuto estanta verko bazita sur la Programo, tiam la distribuado de tiu tuto obeu la regulojn de c^i tiu Permesilo, kaj la rajtoj akirataj de la pluaj koncesiuloj surbaze de c^i tiu Permesilo etendig^as g^is la plena tuto, inklude c^iujn ties partojn, sendepende tion, kiu au(toris ilin.
+
+Do, la motivo de c^i tiu §2 ne estas akiri au( kontesti viajn la rajtojn je verko kiun vi au(toras; la celo estas realigi la rajton determini la manieron distribui la derivitajn au( kolektivajn verkojn bazitajn sur la Programo.
+
+Simpla kunesto de alia verko, ne bazita sur la Programo, apud la Programo (au( apud verko bazita sur la Programo) sur unu sama datumportilo memora au( distribua ne etendas la kondic^ojn de c^i tiu Permesilo sur tiun alian verkon.
+
+§3. Vi rajtas reprodukti kaj distribui ekzemplerojn de la Programo (au( de verko bazita sur la Programo, lau( §2) en celkodo au( en formo de plenumebla programo lau( la reguloj de §§1 kaj 2 c^i-supre, kondic^e ke vi ankau( plenumas iun el la sekvaj postuloj:
+
+   1. la ekzempleron akompanu la responda kompleta fontoteksto en komputile legebla formo, distribuenda lau( la reguloj de §§1 kaj 2 c^i-supre, sur datumportilo kutime uzata por inters^ang^i programaron; au(
+   2. la ekzempleron akompanu skribita oferto, valida por almenau( 3 jaroj, disponigi al ajna tria partio, kontrau( pago ne pli granda ol via kosto de fizika transmeto, ekzempleron de kompleta responda komputile legebla fontoteksto distribuenda lau( la reguloj de §§1 kaj 2 c^i-supre, sur datumportilo kutime uzata por inters^ang^i programaron; au(
+   3. la ekzempleron akompanu la de vi ricevita informo pri distribuado de la responda fontoteksto. (Tiu opcio validas nur okaze de nekomerca distribuado kaj nur se vi ricevis la programon en celkodo au( en formo de plenumebla programo, akompanitan de tia oferto lau( §3.b de c^i tiu Permesilo.)
+
+La fontoteksto de verko estas tiu g^ia formo, kiu plej oportunas por modifado. La kompleta fontoteksto de plenumebla verko estas c^iuj fontotekstoj de c^iuj komponantaj moduloj, plus c^iuj dosieroj difinantaj interfacojn, plus la skriptoj uzataj por regi tradukadon kaj instaladon de la plenumebla programo. Tamen, per speciala escepto, en la distribuata fontoteksto povas foresti c^io normale kundistribuata (c^u en formo de fontoteksto au( kiel plenumebla programo) por la bazaj komponantoj (programlingva tradukilo, operaciuma kerno ktp) de la operaciumo per kiu rulig^as la plenumebla programo – krom se tia komponanto mem apartenas al la plenumebla programo.
+
+Se distribuado de la verko en formo de plenumebla programo au( celkodo okazas per atingebligo por kopiado el difinita loko, tiam disponigo de egala atingeblo por kopii fontotekston el la sama loko plenumas la postulon pri liverado de la fontoteksto, ec^ malgrau( ke la tria partio ne estas devigata kopii la fontotekston kun la celkodo.
+
+§4. Vi ne rajtas reprodukti, modifi, subkoncesii au( distribui la Programon alie ol lau( la malimplicaj reguloj de c^i tiu Permesilo. C^ia provo alimaniere reprodukti, modifi, subkoncesii au( distribui la Programon estas nevalida kaj au(tomate estingas c^iujn viajn rajtojn donitajn per c^i tiu Permesilo. Tamen la rajtoj de la partioj ricevintaj de vi ekzemplerojn de la Programo au( rajtojn lau( c^i tiu Permesilo plu validas, dum ili mem observas la kondic^ojn de la Permesilo.
+
+§5. Ne estas postulate ke vi akceptu c^i tiun Permesilon, c^ar vi g^in ne subskribis. Tamen nenio alia rajtigas vin modifi au( distribui la Programon au( verkojn el g^i derivitajn. Tiajn agojn malpermesas la leg^o, krom se vi akceptas la Permesilon. Tial, se vi modifas au( distribuas ekzemplerojn de la Programo (au( de verko bazita sur la Programo), vi per tio indikas vian akcepton de la rajtigo per la Permesilo fari tion, kaj la akcepton de c^iuj g^iaj kondic^oj kaj reguloj pri reprodukto, distribuado kaj modifado de la Programo au( de verkoj sur g^i bazitaj.
+
+§6. C^iufoje kiam vi pludistribuas la Programon (au( verkon bazitan sur la Programo), la ricevanto au(tomate ricevas permeson reprodukti, distribui au( modifi la Programon lau( la kondic^oj kaj reguloj de c^i tiu Permesilo. Vi ne rajtas aldoni iajn ajn kromajn limigojn je la rajtoj de la ricevanto provizitaj per c^i tiu Permesilo. Vi ne responsas pri obeigo de triaj partioj al c^i tiu Permesilo.
+
+§7. Se, sekve de jug^a decido, au( de plendo pri rompo de patenta rajto, au( pro alia kau(zo (ne nepre ligita al la patenta juro), vi trafas sub devigon (c^u per jug^a decido, kontrakto au( alie), kiu kontrau(as al la kondic^oj de c^i tiu Permesilo, tio ne rajtigas vin malobei la kondic^ojn de c^i tiu Permesilo. Se vi ne povas distribui plenumante kaj la kondic^ojn de c^i tiu Permesilo, kaj viajn aliajn koncernajn devigojn, tiam vi neniel povas g^in distribui. Ekzemple, se patenta permesilo malebligas al la subkoncesiuloj, akirintaj ekzemplerojn de la Programo rekte de vi au( per tria partio, g^in senhonorarie pludistribui, tiam vi nur povas rezigni pri distribuado de la Programo.
+
+Se iu postulo de c^i tiu paragrafo ig^as nevalida au( neplenumebla c^e estig^o de iuj specialaj cirkonstancoj, aplikig^u la resto de c^i tiu paragrafo sen tiu postulo. C^i tiu paragrafo aplikig^as plene {post la c^eso de tia cirkonstanco au(} [8] se malestas tiaj cirkonstancoj.
+
+Ne estas celo de c^i tiu §7 instigi vin rompi patentojn au( aliajn pretendojn je proprieto au( kontesti validon de tiaj pretendoj; la sola celo estas protekti la integron de la sistemo de distribuado de libera programaro, sistemo funkcianta per publikaj permesiloj. Multaj homoj malavare kontribuis al la kreo de ric^a gamo da programaro distribuata per tiu sistemo, fidante je g^ia konsekvenca aplikado; la rajto elekti la sistemon de distribuado de programverko apartenas al la au(toro / donanto, kaj ne koncesiulo g^in altrudu.
+
+La intenco de c^i tiu §7 estas klare prezenti, kiajn konsekvencojn celas estigi la ceteraj partoj de c^i tiu Permesilo.
+
+§8. Se distribuadon kaj/au( uzadon de la Programo en iuj landoj limigas patentoj au( interfacoj kovritaj per au(torrajto, la praposedanto de la au(torrajto, metanta la Programon sub la kondic^ojn de c^i tiu Permesilo, rajtas malimplice limigi la teritorion de distribuado de la Programo, ekskludante tiajn landojn, tiel ke la distribuado estu permesita nur en au( inter la landoj ne tus^itaj per tia limigo. En tia okazo la koncerna limigo estu rigardata kiel unu el la kondic^oj de c^i tiu Permesilo.
+
+§9. Lau(bezone «Free Software Foundation» rajtas publikigi reviziitajn kaj/au( novajn versiojn de la G^enerala Publika Permesilo. Tiaj versioj konservos la bazajn principojn de c^i tiu versio, sed povas diferenci en detaloj, responde al novaj problemoj au( situacioj.
+
+C^iu versio ricevas sian propran numeron. Se la Programo indikas, ke g^i estas submetita al c^i tiu Permesilo en ties difinita versinumero «au( ajna posta versio» («any later version»), tiam vi rajtas, lau(plac^e, sekvi au( la kondic^ojn kaj regulojn de la indikita versio, au( tiujn de ajna pli malfrua versio publikigita de «Free Software Foundation». Se la Programo ne indikas versinumeron, vi rajtas elekti iun ajn version iam ajn publikigitan de «Free Software Foundation».
+
+§10. Se vi volas uzi partojn de la Programo en aliaj programoj, kies distribuaj kondic^oj diferencas, skribe petu permeson de la au(toro. Por programaro kies au(torrajton tenas «Free Software Foundation», petu permeson de «Free Software Foundation»; iam g^i faras esceptojn pri tio. La decidojn de «Free Software Foundation» motivas du celoj: konservi la liberon de c^iu verko derivita el nia libera programaro, kaj – g^enerale – helpi kunhavigon kaj reuzon de programaro.
+Malgarantiilo
+
+§11. C^ar la Programo estas koncesiata senpage, al g^i aplikig^as nenia garantio, kiom tion permesas la koncerna leg^o. Krom se alio estas malimplice indikita en skriba formo, la tenantoj de la au(torrajto kaj/au( aliaj partioj disponigas la Programon «tia, kia g^i estas» («as is») sen ia ajn garantio, nek esprimita nek implica, interalie sen la implica garantio pri surmerkatigeblo, au( tau(geco por konkreta uzo. La tuta risko koncerne la kvaliton kaj funkcikapablon de la programo estas via. Se la programo montrig^os difekta, vi portos la kostojn de c^iuj necesaj servoj, riparo au( korekto.
+
+§12. Neniokaze, krom se alion postulas aplikebla leg^o au( skribita interkonsento, neniu tenanto de la au(torrajto au( alia partio rajtigita modifi kaj/au( pludistribui la Programon lau( la c^i-supraj permesoj, ne responsos al vi pro la damag^oj, inklude g^eneralajn, specialajn, akcidentajn au( malrektajn, rezultantaj el uzo au( maleblo uzi la Programon (interalie, perdon au( difekton de datumoj, au( perdojn suferitajn de vi au( de triaj partioj, au( nekapablo de la Programo kunlabori kun iuj ajn aliaj programoj) – ec^ se tiaj tenanto au( alia partio estis avertitaj pri la eblo de tiaj damag^oj.
+Fino de la reguloj kaj kondic^oj
+Aldono:
+Kiel apliki tiujn regulojn al viaj novaj programoj
+
+Se vi verkas novan programon kaj volas fari g^in kiel eble plej uzebla por la socio, la plej bona maniero atingi tion estas fari g^in libera, kaj tiam c^iu povos g^in pludistribui kaj modifi lau( la kondic^oj de c^i tiu Permesilo.
+
+Tiucele, aldonu al la programo la sekvajn avizojn. Plej sekure estas meti ilin komence de c^iu fonta dosiero, por plej klare averti pri malesto de garantioj; kaj c^iu dosiero enhavu almenau( la linion kun la au(torrajta signo kaj referencon al la plena teksto de la avizo:
+
+<unu linio kun la nomo de la programo kaj resumo de g^ia funkcio>
+Copyright © <jaro> <nomo la la au(toro>
+
+This program  is free software; you  C^i tiu  verko estas libera programo;
+can  redistribute it  and/or modify  vi  povas  g^in  pludistribui  kaj/au(
+it  under  the  terms  of  the  GNU  modifi  je la  kondic^oj  de la  GNUa
+General Public License as published  G^enerala Publika Permesilo, eldonita
+by  the  Free Software  Foundation;  de  «Free Software  Foundation», lau(
+either version 2 of the License, or  la versio 2  de tiu Permesilo au(, se
+(at your option) any later version.  vi preferas, ajna posta versio.
+
+This program  is distributed in the  Ni  distribuas   c^i  tiun  programon
+hope  that it  will be  useful, but  esperante  ke g^i estos  utila, tamen
+WITHOUT ANY  WARRANTY; without even  SEN  IA AJN  GARANTIO,  i.a. sen  la
+the     implied     warranty     of  implica garantio pri SURMERKATIGEBLO
+MERCHANTABILITY  or  FITNESS FOR  A  au(  TAU(GECO  POR  IU KONKRETA  CELO.
+PARTICULAR  PURPOSE.   See the  GNU  Pliajn  detalojn  vidu  en  la  GNUa
+General  Public  License  for  more  G^enerala Publika Permesilo.
+details.
+
+You should have  received a copy of  Ekzemplero  de   la  GNUa  G^enerala
+the  GNU   General  Public  License  Publika    Permesilo   devas   esti
+along  with this  program;  if not,  liverita al vi kun c^i tiu programo;
+write to the           se vi g^in ne ricevis, turnu vin al
+
+         Free SoftwareFoundation, Inc.,
+                     59 Temple Place, Suite 330,
+                     Boston, MA 02111-1307
+                     USA
+
+Krome, indiku kiel eblas vin kontakti per la reta au( papera pos^to.
+
+Se la programo estas dialoga, zorgu ke g^i eligu mallongan avizon, kiel la c^i-suba ekzemplo, c^e startigo en la interaga reg^imo:
+
+  Gnomovido, versio 69.  Au(torrajto © <jaro> <au(tornomo>
+  Gnomovido estas distribuata SEN IA AJN GARANTIO;
+  por vidigi detalojn tajpu «show w».
+  Tio estas libera programo, kaj bonvenas g^ia distribuado lau( certaj
+  kondic^oj; por vidigi detalojn tajpu «show c».
+
+La proponitaj komandoj «show w» kaj «show c» devus surekranigi la koncernajn partojn de la G^enerala Publika Permesilo. Kompreneble, ili povas havi aliajn nomojn; ili ec^ povas esti musklakoj au( menueroj – io ajn konvena al via programo.
+
+Se necesas, vi devas ankau( ricevi de via dunganto (se vi estas dungita programisto) au( eventuale de reprezentanto de via lernejo [9] skriban malpretendon je la au(torrajto. Vi povas uzi c^i-suban modelon, konvene s^ang^inte la nomojn:
+
+    La firmao «ABCC^» per c^i tio rezignas pri c^iaj proprietaj rajtoj je la programo «Gnomovido» (faranta pasaj^ojn por tradukiloj) verkita de Pro Gramisto.
+
+    <subskribo de Mag Nato>, la 1an de aprilo 3001
+    Mag Nato, Prezidanto
+
+C^i tiu G^enerala Publika Permesilo malebligas inkludigi vian programon en proprietan programaron. Se via programo estas biblioteko da subprogramoj, vi eble jug^os pli utila permesi bindi proprietajn aplikaj^ojn kun la biblioteko. Se vi volas tion, anstatau( c^i tiun Permesilon uzu la GNUan G^eneralan Publikan Permesilon Bibliotekan.

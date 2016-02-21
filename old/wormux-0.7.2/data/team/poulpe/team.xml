@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <name>Poulpe</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="Octopus vulgaris" skin="poulpe" />
+    <character name="Patrick" skin="poulpe" />
+    <character name="Octopussy" skin="poulpe" />
+    <character name="Jade" skin="poulpe" />
+    <character name="Eledone cirrhosa" skin="poulpe" />
+    <character name="Octopus dofleini" skin="poulpe" />
+  </team>
+</resources>

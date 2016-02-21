@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="init">Démarrage</string>
+    <string name="please_wait">Veuillez patienter pendant ques les données sont téléchargées</string>
+
+    <string name="device_config">Configuration de l\'appareil</string>
+    <string name="device_change_cfg">Changer la configuration</string>
+
+    <string name="download_unneeded">Inutile de télécharger</string>
+    <string name="connecting_to">Connexion à %s</string>
+    <string name="failed_connecting_to">Echec à la connexion à %s</string>
+    <string name="error_connecting_to">Erreur durant la connection à %s</string>
+    <string name="dl_from">Téléchargement à partir de %s</string>
+    <string name="error_dl_from">Erreur lors du téléchargement à partir de %s</string>
+    <string name="error_write">Erreur d\'écriture dans %s</string>
+    <string name="dl_progress">%1$.0f%% fait: fichier %2$s</string>
+    <string name="dl_finished">Fini</string>
+
+    <string name="storage_phone">Stockage interne - %d Mo de libre</string>
+    <string name="storage_sd">Carte SD - %d Mo de libre</string>
+    <string name="storage_question">Où télécharger les données</string>
+    <string name="optional_downloads">Téléchargements en option</string>
+    <string name="ok">Fait</string>
+
+    <string name="controls_arrows">Flèches / joystick / dpad</string>
+    <string name="controls_trackball">Trackball</string>
+    <string name="controls_accel">Accéléromètre</string>
+    <string name="controls_touch">Écran tactile</string>
+    <string name="controls_question">Quel type de touches votre appareil a-t-il?</string>
+
+    <string name="controls_additional">Contrôles supplémentaires</string>
+    <string name="controls_screenkb">Clavier à l\'écran</string>
+    <string name="controls_accelnav">Accéléromètre</string>
+
+    <string name="controls_screenkb_size">Taille du clavier à l\'écran</string>
+    <string name="controls_screenkb_large">Grande</string>
+    <string name="controls_screenkb_medium">Moyenne</string>
+    <string name="controls_screenkb_small">Petite</string>
+    <string name="controls_screenkb_tiny">Minuscule</string>
+    <string name="controls_screenkb_theme">Thème du clavier à l\'écran</string>
+    <string name="controls_screenkb_by">%1$s par %2$s</string>
+
+    <string name="trackball_no_dampening">Sans limite</string>
+    <string name="trackball_fast">Rapide</string>
+    <string name="trackball_medium">Moyenne</string>
+    <string name="trackball_slow">Lente</string>
+    <string name="trackball_question">Limitation du trackball</string>
+
+    <string name="accel_fast">Rapide</string>
+    <string name="accel_medium">Moyenne</string>
+    <string name="accel_slow">Slow</string>
+    <string name="accel_question">Sensibilité de l\'accéléromètre</string>
+
+    <string name="accel_floating">Flottante</string>
+    <string name="accel_fixed_start">Déterminée au démarrage de l\'application</string>
+    <string name="accel_fixed_horiz">Orientaton de la table</string>
+    <string name="accel_question_center">Position du centre de l\'accéléromètre</string>
+
+    <string name="audiobuf_verysmall">Très petite (appareils rapides, peu de délai)</string>
+    <string name="audiobuf_small">Petite (appareils rapides)</string>
+    <string name="audiobuf_medium">Moyenne</string>
+    <string name="audiobuf_large">Grande (en cas de son par saccades)</string>
+    <string name="audiobuf_question">Taille du tampon audio</string>
+<string name="rightclick_question">Faites un clic droit déclenchée par</string>
+<string name="rightclick_menu">Sur la touche Menu</string>
+<string name="rightclick_multitouch">écran tactile avec le deuxième doigt</string>
+<string name="rightclick_pressure">écran tactile avec une force</string>
+<string name="pointandclick_question">Les fonctionnalités avancées</string>
+<string name="pointandclick_keepaspectratio">Gardez format 4:3 écran</string>
+<string name="pointandclick_showcreenunderfinger">Afficher l\u0026#39;écran sous le doigt dans une fenêtre séparée</string>
+<string name="measurepressure_touchplease">S\u0026#39;il vous plaît glisser les doigts sur l\u0026#39;écran pendant deux secondes</string>
+<string name="rightclick_none">cliquez sur Désactiver droit de la souris</string>
+<string name="leftclick_question">cliquez gauche de la souris</string>
+<string name="leftclick_normal">Normal</string>
+<string name="leftclick_near_cursor">curseur de la souris près Touch</string>
+<string name="leftclick_multitouch">écran tactile avec le deuxième doigt</string>
+<string name="leftclick_pressure">écran tactile avec une force</string>
+<string name="leftclick_dpadcenter">Trackball cliquez / touche de sélection</string>
+<string name="pointandclick_joystickmouse">Déplacez la souris ou un trackball avec joystick</string>
+<string name="measurepressure_response">pression %1$03d rayon %2$03d</string>
+<string name="click_with_dpadcenter">cliquez gauche de la souris avec trackball centre du joystick /</string>
+<string name="pointandclick_joystickmousespeed">Déplacez la souris avec la vitesse joystick</string>
+<string name="pointandclick_joystickmouseaccel">Déplacez la souris avec une accélération joystick</string>
+<string name="none">Aucun</string>
+<string name="controls_screenkb_transparency">Sur la transparence du clavier à l\u0026#39;écran</string>
+<string name="controls_screenkb_trans_0">Invisible</string>
+<string name="controls_screenkb_trans_1">Presque invisible</string>
+<string name="controls_screenkb_trans_2">Transparent</string>
+<string name="controls_screenkb_trans_3">Semi-transparent</string>
+<string name="controls_screenkb_trans_4">Non-transparent</string>
+<string name="mouse_emulation">l\u0026#39;émulation de la souris</string>
+<string name="measurepressure">Calibrer la pression tactile</string>
+<string name="remap_hwkeys">Reconfigurer les touches physiques</string>
+<string name="remap_hwkeys_press">Appuyez sur n\u0026#39;importe quelle touche sauf HOME et POWER, vous pouvez utiliser les touches de volume</string>
+<string name="remap_hwkeys_select">Sélectionnez SDL keycode</string>
+<string name="remap_screenkb">Reconfigurer les contrôles à l\u0026#39;écran</string>
+<string name="remap_screenkb_joystick">Le joystick à l\u0026#39;écran</string>
+<string name="remap_screenkb_button">Le bouton à l\u0026#39;écran</string>
+<string name="remap_screenkb_button_text">Sur l\u0026#39;écran de saisie de texte bouton</string>
+<string name="remap_screenkb_button_zoomin">Zoom sur deux doigts geste</string>
+<string name="remap_screenkb_button_zoomout">Zoom sur deux doigts geste</string>
+<string name="remap_screenkb_button_rotateleft">Tournez à gauche geste de deux doigts</string>
+<string name="remap_screenkb_button_rotateright">Tournez à droite geste de deux doigts</string>
+<string name="remap_screenkb_button_gestures">Deux doigts gestes</string>
+<string name="accel_veryfast">Très rapide</string>
+<string name="remap_screenkb_button_gestures_sensitivity">Deux doigts écran gestes sensibilité</string>
+<string name="storage_custom">Spécifiez le répertoire</string>
+<string name="storage_commandline">Spécifier les paramètres de ligne de commande</string>
+<string name="calibrate_touchscreen">Calibrer écran tactile</string>
+<string name="calibrate_touchscreen_touch">Touchez les quatre bords de l\u0026#39;écran, appuyez sur MENU lorsque vous avez terminé</string>
+<string name="screenkb_custom_layout">Personnalisation de la présentation du clavier à l\u0026#39;écran</string>
+<string name="screenkb_custom_layout_help">Faites glisser l\u0026#39;écran pour ajouter le bouton, appuyez sur Menu pour annuler le dernier bouton</string>
+<string name="rightclick_key">Physique clés</string>
+<string name="pointandclick_showcreenunderfinger2">Sur l\u0026#39;écran loupe</string>
+<string name="video">Paramètres vidéo</string>
+<string name="video_smooth">Smooth la vidéo</string>
+<string name="accel_veryslow">Très lent</string>
+<string name="leftclick_timeout">Tenir au même endroit</string>
+<string name="leftclick_tap">Appuyez sur</string>
+<string name="leftclick_tap_or_timeout">Appuyez sur ou maintenez</string>
+<string name="leftclick_timeout_time">timeout Holding</string>
+<string name="leftclick_timeout_time_0">0,3 s</string>
+<string name="leftclick_timeout_time_1">0,5 sec</string>
+<string name="leftclick_timeout_time_2">0,7 sec</string>
+<string name="leftclick_timeout_time_3">1 sec</string>
+<string name="leftclick_timeout_time_4">1,5 sec</string>
+<string name="pointandclick_relative">mouvement de la souris relative (mode portable)</string>
+<string name="pointandclick_relative_speed">Relative vitesse de déplacement de la souris</string>
+<string name="pointandclick_relative_accel">Relative accélération du mouvement de la souris</string>
+<string name="downloads">Téléchargements</string>
+<string name="video_separatethread">thread séparé pour la vidéo, va augmenter FPS sur certains appareils</string>
+<string name="text_edit_click_here">Appuyez sur pour commencer à taper, appuyez sur Retour lorsque vous avez terminé</string>
+</resources>

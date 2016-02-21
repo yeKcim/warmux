@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+
+<!-- Common ressources (explosion and impact) -->
+  
+  <sprite name="explosion">
+    <image file="weapon/dynamite/explosion.png">
+      <grid pos="0,0" size="210,200" array="5,1" />
+      <animation speed="1" loop="no" />
+    </image>
+  </sprite>
+
+  <sprite name="smoke">
+    <image file="object/smoke2.png" />
+  </sprite>
+  
+  <sprite name="fire_particle">
+    <image file="object/fire.png" />
+  </sprite>
+  
+  <sprite name="star_particle">
+    <image file="object/star.png" />
+  </sprite>
+
+  <surface name="fire_impact" file="weapon/uzi_impact.png" />
+
+<!-- Air attack ressources -->
+  
+  <surface name="air_attack_ico" file="weapon/air_attack_ico.png" />
+
+  <surface name="air_attack" file="weapon/air_attack.png" />
+  <surface name="air_attack_plane" file="weapon/air_attack_plane.png" />
+  <sprite name="obus">
+    <image file="weapon/obus.png" />
+  </sprite>
+  <surface name="obus_impact" file="weapon/bazooka_impact.png" />
+
+<!-- Air Hammer ressources -->
+
+  <surface name="airhammer_ico" file="weapon/marteau_piqueur_ico.png" />
+  <surface name="airhammer" file="weapon/marteau_piqueur.png" />
+
+  <surface name="airhammer_impact" file="weapon/airhammer_impact.png" />
+
+<!-- Automatic-Bazooka ressources -->
+
+  <surface name="automatic_bazooka_ico" file="weapon/bazooka_auto_ico.png" />
+
+  <surface name="automatic_bazooka" file="weapon/bazooka.png" />
+
+<!-- Baseball ressources -->
+
+  <surface name="baseball_ico" file="weapon/baseball_ico.png" />
+
+  <surface name="baseball" file="weapon/baseball.png" />
+
+<!-- Bazooka ressources -->
+
+  <surface name="bazooka_ico" file="weapon/bazooka_ico.png" />
+
+  <surface name="bazooka" file="weapon/bazooka.png" />
+  <surface name="bazooka_impact" file="weapon/bazooka_impact.png" />
+  <surface name="baz_cible" file="weapon/baz_cible.png" />
+  <sprite name="roquette">
+    <image file="weapon/missile.png">
+      <grid pos="0,0" size="20,20" array="1,1" />
+    </image>
+  </sprite>
+
+<!-- Clusterbomb ressources -->
+
+  <surface name="cluster_bomb_ico" file="weapon/clusterbomb_ico.png" />
+  <surface name="cluster_bomb" file="weapon/clusterbomb.png" />
+
+  <sprite name="clusterbomb_sprite">
+    <image file="weapon/clusterbomb.png" />
+  </sprite>
+  <sprite name="cluster">
+    <image file="weapon/cluster.png" />
+  </sprite>
+
+<!-- Dynamite ressources -->
+
+  <surface name="dynamite_ico" file="weapon/dynamite/icon.png" />
+  <surface name="dynamite" file="weapon/dynamite/weapon.png" />
+
+  <sprite name="dynamite_anim">
+    <image file="weapon/dynamite/animation.png">
+      <grid pos="0,0" size="12,12" array="16,1" />
+    </image>
+  </sprite>
+
+  <surface name="dynamite_impact" file="weapon/dynamite/hole.png" />
+
+<!-- Grenade ressources -->
+
+  <surface name="grenade_ico" file="weapon/grenade_ico.png" />
+
+  <surface name="grenade" file="weapon/grenade.png" />
+  <sprite name="grenade_sprite">
+    <image file="weapon/grenade.png" />
+  </sprite>
+  <surface name="grenade_impact" file="weapon/grenade_hole.png" />
+
+<!-- Gun ressources -->
+
+  <surface name="gun_ico" file="weapon/gun_ico.png" />
+
+  <surface name="gun" file="weapon/gun.png" />
+  <sprite name="gun_bullet">
+    <image file="weapon/gun_bullet.png" />
+  </sprite>	
+  <surface name="gun_impact" file="weapon/gun_impact.png" />
+
+<!-- Holly Grenade ressources -->
+  
+  <surface name="holly_grenade_ico" file="weapon/holly_grenade_ico.png" />
+ 
+  <surface name="holly_grenade" file="weapon/holly_grenade.png" />
+  <sprite name="holly_grenade_sprite">
+    <image file="weapon/holly_grenade.png" />
+  </sprite>
+  <surface name="holly_grenade_impact" file="weapon/grenade_hole.png" />
+
+<!-- Gnu ressources -->
+  
+  <surface name="gnulauncher_ico" file="weapon/gnu_ico.png" />
+ 
+  <surface name="gnulauncher" file="weapon/gnulauncher.png" />
+  <surface name="gnulauncher_impact" file="weapon/grenade_hole.png" />
+
+  <sprite name="gnu">
+    <image file="weapon/gnu.png">
+      <grid pos="0,0" size="42,42" array="3,1" />
+    </image>
+    <animation play_speed="35" play_options="pingpong" />
+  </sprite>
+
+<!-- JetPack ressources -->
+
+  <surface name="jetpack" file="weapon/jet_pack.png" />
+  <surface name="jetpack_ico" file="weapon/jet_pack_ico.png" />
+
+<!-- LowGrav ressources -->
+
+  <surface name="lowgrav_ico" file="weapon/lowgrav_ico.png" />
+  <surface name="lowgrav" file="weapon/lowgrav.png" />
+
+<!-- Mine ressources --> 
+
+  <surface name="mine_ico" file="weapon/mine_ico.png" />
+
+  <surface name="mine" file="weapon/mine.png" />
+  <sprite name="mine_anim">
+    <image file="weapon/mine_anim.png">
+      <grid size="11,7" array="2,1" />
+      <animation speed="1" loop="yes" />
+    </image>
+  </sprite>
+  <surface name="mine_impact" file="weapon/mine_impact.png" />
+
+<!-- Ninja Rope ressources -->
+
+  <surface name="ninjarope_ico" file="weapon/ninjarope_ico.png" />
+  <surface name="ninjarope" file="weapon/bazooka.png" />
+  <sprite name="ninjarope">
+    <image file="weapon/bazooka.png" />
+  </sprite>
+  <sprite name="ninjahook">
+    <image file="weapon/ninjahook.png" />
+  </sprite>
+  <sprite name="ninjanode">
+    <image file="weapon/ninjanode.png" />
+  </sprite>
+
+<!-- Parachute ressources -->
+  
+  <surface name="parachute_ico" file="weapon/parachute_ico.png" />
+  <surface name="parachute" file="weapon/teleportation.png" />
+  <sprite name="parachute_sprite">
+    <image file="weapon/parachute.png">
+      <grid pos="0,0" size="84,71" array="3,1" />
+      <animation loop="false" speed="1" />
+    </image>
+  </sprite>
+
+<!-- Skip-turn ressources -->
+
+  <surface name="skip_turn_ico" file="weapon/skipturn_ico.png" />
+  <surface name="skip_turn" file="weapon/skipturn.png" />
+
+<!-- Suicide ressources -->
+
+  <surface name="suicide_ico" file="weapon/suicide_ico.png" />
+
+  <surface name="suicide" file="weapon/suicide.png" />
+  <surface name="suicide_hole" file="weapon/suicide_hole.png" />
+
+<!-- SuperTux ressources -->
+
+  <surface name="tux_ico" file="weapon/supertux_ico.png" />
+
+  <surface name="tux" file="weapon/supertux.png" />
+  <sprite name="supertux" base_angle="-85">
+    <image file="weapon/superman.png">
+      <grid pos="0,0" size="30,30" array="8,1" />
+      <animation speed="100" loop="yes" />
+    </image>
+  </sprite>
+  <surface name="tux_impact" file="weapon/bazooka_impact.png" />
+
+<!-- Teleportation ressources -->
+
+  <surface name="teleportation_ico" file="weapon/teleport_ico.png" />
+
+  <surface name="teleportation" file="weapon/teleportation.png" />
+
+<!-- Uzi ressources -->
+
+  <surface name="uzi_ico" file="weapon/uzi_ico.png" />
+
+  <sprite name="uzi_bullet">
+    <image file="weapon/gun_bullet.png" />
+  </sprite>	
+  <surface name="uzi" file="weapon/uzi.png" />
+  <surface name="uzi_impact" file="weapon/uzi_impact.png" />
+
+
+</resources>

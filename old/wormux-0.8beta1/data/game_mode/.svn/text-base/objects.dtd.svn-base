@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT objects_physics (
+          character,bonus_box,barrel,anvil,
+          wind_particle,smoke_particle,polecat_fart_particle,fire_particle,explosion_smoke_particle,
+          dark_smoke,star_particle,magic_star_particle,bullet_particle, ground_particle,
+          body_member_particle,teleport_member_particle,
+          gun_bullet,buckshot,m16_bullet,snipe_rifle_bullet,rocket,riot_rocket,grenade,disco_grenade,
+          cluster_bomb,cluster,dynamite_bullet,air_attack_plane,air_attack_projectile,supertux,
+          gnu,polecat,bounce_ball,mine
+  )>
+
+<!-- To copy-paste and modify if you want to add an object -->
+<!-- <!ELEMENT object (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)> -->
+
+<!ELEMENT character (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT bonus_box (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT barrel (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT anvil (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+
+<!ELEMENT wind_particle (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT smoke_particle (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT polecat_fart_particle (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT fire_particle (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT explosion_smoke_particle (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT dark_smoke (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT star_particle (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT magic_star_particle (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT bullet_particle (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT ground_particle (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT body_member_particle (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT teleport_member_particle (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+
+<!ELEMENT gun_bullet (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT buckshot (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT m16_bullet (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT snipe_rifle_bullet (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT rocket (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT riot_rocket (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT grenade (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT disco_grenade (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT cluster_bomb (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT cluster (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT dynamite_bullet (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT air_attack_plane (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT air_attack_projectile (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT supertux (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT gnu (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT polecat (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT bounce_ball (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+<!ELEMENT mine (mass,wind_factor, air_resist_factor,gravity_factor,rebounding,rebound_factor)>
+
+<!ELEMENT mass (#PCDATA)>
+<!ELEMENT wind_factor (#PCDATA)>
+<!ELEMENT air_resist_factor (#PCDATA)>
+<!ELEMENT gravity_factor (#PCDATA)>
+<!ELEMENT rebounding (#PCDATA)>
+<!ELEMENT rebound_factor (#PCDATA)>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <author>
+    <name>Matt Benya</name>
+    <nickname>mmbenya</nickname>
+    <country>Germany</country>
+    <email>mmbenya AT primatestudios.com</email>
+  </author>
+
+  <surface name="sky" file="BG.jpg" />
+  <surface name="map" file="FG.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Tic-Tac-Toe</name>
+  <water>1</water>
+  <nb_mine>0</nb_mine>
+  <is_open>1</is_open>
+  <!-- pad is given in pixel count. -->
+  <add_pad>1</add_pad>
+  <point name="upper_left_pad" x="1000" y="1000" />
+  <point name="lower_right_pad" x="1000" y="1000" />
+
+    <sprite name="wind_particle">
+      <image file="part_effect_strip.png">
+        <grid pos="0,0" size="64,64" array="100,1"/>
+      </image>
+      <animation speed="100" />
+    </sprite>
+
+  <wind>
+    <nbr_sprite>10</nbr_sprite>
+    <mass>4.3</mass>
+    <wind_factor>2.3</wind_factor>
+    <air_resist_factor>0.1</air_resist_factor>
+    <gravity_factor>0.1</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>1.3</rebound_factor>
+  </wind>
+
+</resources>

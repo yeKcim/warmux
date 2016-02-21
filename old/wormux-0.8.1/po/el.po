@@ -1,0 +1,1606 @@
+#
+# Victor Stinner <victor.stinner@haypocalc.com>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: Μετάφραση Σκουλίκιουξ\n"
+"Report-Msgid-Bugs-To: wormux-dev@gna.org\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2008-05-08 12:57+0200\n"
+"Last-Translator: \n"
+"Language-Team: Στέφανος <gba2211 AT gmail DOT com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Greek\n"
+"X-Poedit-Country: GREECE\n"
+"X-Poedit-Bookmarks: 168,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+
+# Ελληνικά
+#: /home/yekcim/Dev/wormux/trunk/src/map/maps_list.cpp:326
+#, c-format
+msgid "! Map %s not found :-("
+msgstr "! Ο χάρτης %s δεν βρέθηκε :-("
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_menu.cpp:122
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_menu.cpp:287
+#, c-format
+msgid "%i player connected"
+msgid_plural "%i players connected"
+msgstr[0] "%i παίκτης συνδέθηκε"
+msgstr[1] "%i παίκτες συνδέθηκαν"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_menu.cpp:126
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_menu.cpp:295
+#, c-format
+msgid "%i player ready"
+msgid_plural "%i players ready"
+msgstr[0] "%i παίκτης έτοιμος"
+msgstr[1] "%i παίκτες έτοιμοι"
+
+#: /home/yekcim/Dev/wormux/trunk/src/map/maps_list.cpp:117
+#, c-format
+msgid "%s <%s> aka %s from %s"
+msgstr "%s <%s> γνωστός και ως %s από %s"
+
+#: /home/yekcim/Dev/wormux/trunk/src/map/maps_list.cpp:124
+#, c-format
+msgid "%s <%s> from %s"
+msgstr "%s <%s> από %s"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/team_box.cpp:79
+#, c-format
+msgid "%s Team"
+msgstr "Ομάδα %s"
+
+#. translators: this is the team listing and will expand in a context like "OOo team - Remote"
+#: /home/yekcim/Dev/wormux/trunk/src/menu/team_box.cpp:77
+#, c-format
+msgid "%s Team - Remote"
+msgstr "Ομάδα %s - Απομακρυσμένη"
+
+#: /home/yekcim/Dev/wormux/trunk/src/graphic/fps.cpp:102
+#, c-format
+msgid "%s fps"
+msgstr "%s εικ./δευτ."
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game.cpp:692
+#, fuzzy, c-format
+msgid "%s from %s team commited suicide!"
+msgstr "O %s αυτοκτόνησε!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game.cpp:725
+#, fuzzy, c-format
+msgid "%s from %s team has died."
+msgstr "Ο %s (%s) πέθανε."
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game.cpp:683
+#, fuzzy, c-format
+msgid "%s from %s team has fallen into the water!"
+msgstr "O %s έπεσε στο νερό."
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game.cpp:677
+#, fuzzy, c-format
+msgid "%s from %s team has fallen off the map!"
+msgstr "O %s έπεσε εκτός χάρτη!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game.cpp:698
+#, c-format
+msgid "%s from %s team has hit the ground too hard!"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game.cpp:705
+#, fuzzy, c-format
+msgid "%s from %s team is dead because he is clumsy!"
+msgstr "O %s πέθανε από αδεξιότητα!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/object/medkit.cpp:68
+#, c-format
+msgid "%s has won %u point of energy!"
+msgid_plural "%s has won %u points of energy!"
+msgstr[0] "Ο παίκτης %s κέρδισε %u πόντο ζωής!"
+msgstr[1] "Ο παίκτης %s κέρδισε %u πόντους ζωής!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game.cpp:717
+#, c-format
+msgid "%s is a psychopath, he has killed a member of the %s team!"
+msgstr "O %s είναι ψυχοπαθής, σκότωσε ένα μέλος της ομάδας του (%s)!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/mine.cpp:121
+#, c-format
+msgid "%s is next to a mine!"
+msgstr "O %s είναι δίπλα σε νάρκη!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/object/bonus_box.cpp:97
+#, c-format
+msgid "%s team already has infinite ammo for the %s!"
+msgstr "Η ομάδα %s έχει ήδη άπειρα πυρομαχικά για  %s!"
+
+#. Show message
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/skip_turn.cpp:57
+#, c-format
+msgid "%s team has skipped its turn."
+msgstr "Η ομάδα %s παρέλειψε το γύρο της."
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/cluzooka.cpp:396
+#, fuzzy, c-format
+msgid "%s team has won %u Cluster bazookas!"
+msgid_plural "%s team has won %u Cluster bazookas!"
+msgstr[0] "Η ομάδα %s κέρδισε %u μπαζούκα!"
+msgstr[1] "Η ομάδα %s κέρδισε %u μπαζούκας!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/gnu.cpp:175
+#, c-format
+msgid "%s team has won %u Gnu! Blow them all, cowboy!"
+msgid_plural "%s team has won %u Gnus! Blow them all, cowboy!"
+msgstr[0] "Η ομάδα %s κέρδισε %u Gnu! Τα κεφάλια κάτω, καουμπόηδες!"
+msgstr[1] "Η ομάδα %s κέρδισε %u Gnus! Τα κεφάλια κάτω, καουμπόηδες!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/air_attack.cpp:260
+#, c-format
+msgid "%s team has won %u air attack!"
+msgid_plural "%s team has won %u air attacks!"
+msgstr[0] "Η ομάδα %s κέρδισε %u εναέρια επίθεση!"
+msgstr[1] "Η ομάδα %s κέρδισε %u εναέριες επιθέσεις!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/airhammer.cpp:174
+#, c-format
+msgid ""
+"%s team has won %u airhammer! Don't make too much noise with it! Thanks, "
+"your neighbours."
+msgid_plural ""
+"%s team has won %u airhammers! Don't make too much noise with them! Thanks, "
+"your neighbours."
+msgstr[0] ""
+"Η ομάδα %s κέρδισε %u τρυπάνι! Μην κάνεις πολύ φασαρία θα ξυπνήσεις τους "
+"γείτονες!"
+msgstr[1] ""
+"Η ομάδα %s κέρδισε %u τρυπάνια! Μην κάνεις πολύ φασαρία θα ξυπνήσεις τους "
+"γείτονες!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/anvil.cpp:188
+#, c-format
+msgid "%s team has won %u anvil! Splat them all!"
+msgid_plural "%s team has won %u anvils! Splat them all!"
+msgstr[0] "Η ομάδα %s κέρδισε %u αμόνι! Σπάσ' τα όλα!"
+msgstr[1] "Η ομάδα %s κέρδισε %u αμόνια! Σπάσ' τα όλα!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/auto_bazooka.cpp:329
+#, c-format
+msgid "%s team has won %u automatic bazooka!"
+msgid_plural "%s team has won %u automatic bazookas!"
+msgstr[0] "Η ομάδα %s κέρδισε %u αυτόματο μπαζούκα!"
+msgstr[1] "Η ομάδα %s κέρδισε %u αυτόματα μπαζούκας!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/baseball.cpp:116
+#, c-format
+msgid "%s team has won %u baseball bat!"
+msgid_plural "%s team has won %u baseball bats!"
+msgstr[0] "Η ομάδα %s κέρδισε %u ρόπαλο μπέιζμπολ!"
+msgstr[1] "Η ομάδα %s κέρδισε %u ρόπαλα μπέιζμπολ!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/bazooka.cpp:130
+#, c-format
+msgid "%s team has won %u bazooka!"
+msgid_plural "%s team has won %u bazookas!"
+msgstr[0] "Η ομάδα %s κέρδισε %u μπαζούκα!"
+msgstr[1] "Η ομάδα %s κέρδισε %u μπαζούκας!"
+
+#  chalumeau
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/blowtorch.cpp:137
+#, c-format
+msgid ""
+"%s team has won %u blowtorch! If you're under 18, ask your parents to use it."
+msgid_plural ""
+"%s team has won %u blowtorchs! If you're under 18, ask your parents to use "
+"it."
+msgstr[0] ""
+"Η ομάδα %s κέρδισε %u  λυχνία συγκόλλησης! Αν είσαι κάτω από 18, ζήτα από "
+"τους γονείς σου να τη χρησιμοποιήσουν!"
+msgstr[1] ""
+"Η ομάδα %s κέρδισε %u  λυχνίες συγκόλλησης! Αν είσαι κάτω από 18, ζήτα από "
+"τους γονείς σου να τις χρησιμοποιήσουν!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/bounce_ball.cpp:113
+#, c-format
+msgid "%s team has won %u bounce ball! Boing!"
+msgid_plural "%s team has won %u bounce balls! Boing!"
+msgstr[0] "Η ομάδα %s κέρδισε %u μπάλα αναπήδησης! Φσσστ Μπόινγκ!"
+msgstr[1] "Η ομάδα %s κέρδισε %u μπάλες αναπήδησης! Φσσστ Μπόινγκ!"
+
+# L'équipe %s a gagné %u bombe à fragmentation ! Attention à ne pas trop se disperser !
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/cluster_bomb.cpp:206
+#, c-format
+msgid "%s team has won %u cluster bomb!"
+msgid_plural "%s team has won %u cluster bombs!"
+msgstr[0] ""
+"Η ομάδα %s κέρδισε %u χειροβομβίδα διασποράς! Προσοχή μη διασκορπιστεί πολύ!"
+msgstr[1] ""
+"Η ομάδα %s κέρδισε %u χειροβομβίδες διασποράς! Προσοχή μη διασκορπιστούν "
+"πολύ!"
+
+#  N'oublie pas ton casque de chantier !
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/construct.cpp:81
+#, c-format
+msgid "%s team has won %u construct weapon! Don't forget your helmet."
+msgid_plural "%s team has won %u construct weapons! Don't forget your helmet."
+msgstr[0] "Η ομάδα %s κέρδισε %u κατασκευή! Μη ξεχάσεις το κράνος σου!"
+msgstr[1] "Η ομάδα %s κέρδισε %u κατασκευές! Μη ξεχάσεις το κράνος σου!"
+
+#  Bouge ton corps !
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/disco_grenade.cpp:170
+#, c-format
+msgid "%s team has won %u disco grenade! Shake your body when throwing it!"
+msgid_plural ""
+"%s team has won %u disco grenades! Shake your body when throwing them!"
+msgstr[0] "Η ομάδα %s κέρδισε %u χειροβομβίδα ντισκοτέκ! Κούνα το κορμί σου!"
+msgstr[1] "Η ομάδα %s κέρδισε %u χειροβομβίδες ντισκοτέκ! Κούνα το κορμί σου!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/dynamite.cpp:145
+#, c-format
+msgid "%s team has won %u dynamite!"
+msgid_plural "%s team has won %u dynamites!"
+msgstr[0] "Η ομάδα %s κέρδισε %u δυναμίτης!"
+msgstr[1] "Η ομάδα %s κέρδισε %u δυναμίτες!"
+
+#  Ça sent déjà le cramé...
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/flamethrower.cpp:178
+#, c-format
+msgid "%s team has won %u flame-thrower!"
+msgid_plural "%s team has won %u flame-throwers!"
+msgstr[0] "Η ομάδα %s κέρδισε %u φλογοβόλο! Μύρισε ψητό..."
+msgstr[1] "Η ομάδα %s κέρδισε %u φλογοβόλα! Μύρισε ψητό..."
+
+# bombe incendiaire
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/footbomb.cpp:176
+#, fuzzy, c-format
+msgid "%s team has won %u football bomb!"
+msgid_plural "%s team has won %u football bombs!"
+msgstr[0] "Η ομάδα %s κέρδισε %u βόμβα διατάραξης!"
+msgstr[1] "Η ομάδα %s κέρδισε %u βόμβες διατάραξης!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/grapple.cpp:809
+#, c-format
+msgid "%s team has won %u grapple!"
+msgid_plural "%s team has won %u grapples!"
+msgstr[0] "Η ομάδα %s κέρδισε %u γάντζο!"
+msgstr[1] "Η ομάδα %s κέρδισε %u γάντζους!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/grenade.cpp:90
+#, c-format
+msgid "%s team has won %u grenade!"
+msgid_plural "%s team has won %u grenades!"
+msgstr[0] "Η ομάδα %s κέρδισε %u χειροβομβίδα!"
+msgstr[1] "Η ομάδα %s κέρδισε %u χειροβομβίδες!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/gun.cpp:99
+#, c-format
+msgid "%s team has won %u gun!"
+msgid_plural "%s team has won %u guns!"
+msgstr[0] "Η ομάδα %s κέρδισε %u πιστόλι!"
+msgstr[1] "Η ομάδα %s κέρδισε %u πιστόλια!"
+
+# Ça plane pour l'équipe %s ! Elle a gagné %u jetpack !
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/jetpack.cpp:247
+#, c-format
+msgid "%s team has won %u jetpack! Groovy!"
+msgid_plural "%s team has won %u jetpacks! Groovy!"
+msgstr[0] "Πετάει η ομάδα %s! Κέρδισε %u σακίδιο τζετ! "
+msgstr[1] "Πετάει η ομάδα %s! Κέρδισε %u σακίδια τζετ! "
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/lowgrav.cpp:78
+#, c-format
+msgid "%s team has won %u lowgrav! I'm Neil Armstrong!"
+msgid_plural "%s team has won %u lowgravs! I'm Neil Armstrong!"
+msgstr[0] "Η ομάδα %s κέρδισε %u αντιβαρύτητα! Είμαι ο Neil Armstrong!"
+msgstr[1] "Η ομάδα %s κέρδισε %u  αντιβαρύτητες! Είμαι ο Neil Armstrong!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/mine.cpp:247
+#, c-format
+msgid "%s team has won %u mine!"
+msgid_plural "%s team has won %u mines!"
+msgstr[0] "Η ομάδα %s κέρδισε %u νάρκη!"
+msgstr[1] "Η ομάδα %s κέρδισε %u νάρκες!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/parachute.cpp:165
+#, c-format
+msgid "%s team has won %u parachute!"
+msgid_plural "%s team has won %u parachutes!"
+msgstr[0] "Η ομάδα %s κέρδισε %u αλεξίπτωτο!"
+msgstr[1] "Η ομάδα %s κέρδισε %u αλεξίπτωτα!"
+
+#  Sortez les masques à gaz
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/polecat.cpp:181
+#, c-format
+msgid "%s team has won %u polecat! You have you're gas mask, right ?"
+msgid_plural "%s team has won %u polecats! You have you're gas mask, right ?"
+msgstr[0] "Η ομάδα %s κέρδισε %u ασβό! Βγάλτε τις μάσκες αερίου!"
+msgstr[1] "Η ομάδα %s κέρδισε %u ασβούς! Βγάλτε τις μάσκες αερίου!"
+
+# bombe incendiaire
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/riot_bomb.cpp:133
+#, c-format
+msgid "%s team has won %u riot bomb!"
+msgid_plural "%s team has won %u riot bombs!"
+msgstr[0] "Η ομάδα %s κέρδισε %u βόμβα διατάραξης!"
+msgstr[1] "Η ομάδα %s κέρδισε %u βόμβες διατάραξης!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/shotgun.cpp:134
+#, c-format
+msgid "%s team has won %u shotgun!"
+msgid_plural "%s team has won %u shotguns!"
+msgstr[0] "Η ομάδα %s κέρδισε %u καραμπίνα!"
+msgstr[1] "Η ομάδα %s κέρδισε %u καραμπίνες!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/slap.cpp:85
+#, fuzzy, c-format
+msgid "%s team has won %u slap!"
+msgid_plural "%s team has won %u slaps! Dodge this!"
+msgstr[0] "Η ομάδα %s κέρδισε %u γάντζο!"
+msgstr[1] "Η ομάδα %s κέρδισε %u γάντζους!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/snipe_rifle.cpp:246
+#, fuzzy, c-format
+msgid "%s team has won %u sniper rifle! Aim and shoot between the eyes!"
+msgid_plural ""
+"%s team has won %u sniper rifles! Aim and shoot between the eyes!"
+msgstr[0] ""
+"Η ομάδα %s κέρδισε %u τουφέκι με σκόπευτρο! Πέτυχέ τον στο δόξα πατρί!"
+msgstr[1] ""
+"Η ομάδα %s κέρδισε %u τουφέκια με σκόπευτρο! Πέτυχέ τον στο δόξα πατρί!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/submachine_gun.cpp:144
+#, c-format
+msgid "%s team has won %u submachine gun!"
+msgid_plural "%s team has won %u submachine guns!"
+msgstr[0] "Η ομάδα %s κέρδισε %u M16!"
+msgstr[1] "Η ομάδα %s κέρδισε %u M16!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/suicide.cpp:77
+#, c-format
+msgid "%s team has won %u suicide!"
+msgid_plural "%s team has won %u suicides! Use them all for an extra bonus!"
+msgstr[0] "Η ομάδα %s κέρδισε %u αυτοκτονία!"
+msgstr[1] "Η ομάδα %s κέρδισε %u αυτοκτονίες!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/syringe.cpp:115
+#, c-format
+msgid "%s team has won %u syringe!"
+msgid_plural "%s team has won %u syringes!"
+msgstr[0] "Η ομάδα %s κέρδισε %u σύριγγα!"
+msgstr[1] "Η ομάδα %s κέρδισε %u σύριγγες!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/teleportation.cpp:120
+#, c-format
+msgid "%s team has won %u teleportation!"
+msgid_plural "%s team has won %u teleportations!"
+msgstr[0] "Η ομάδα %s κέρδισε %u τηλεμεταφορά!"
+msgstr[1] "Η ομάδα %s κέρδισε %u τηλεμεταφορές!"
+
+# L'équipe %s a gagné %u passage de tour ! Wouw, quel arme sur-puissante !
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/skip_turn.cpp:68
+#, c-format
+msgid "%s team has won %u turn skip! I know you'll love it."
+msgid_plural "%s team has won %u turn skips! I know you'll love them."
+msgstr[0] "Η ομάδα %s κέρδισε %u παράλειψη γύρου! Ωωω, τι όπλο μεγάλης ισχύος!"
+msgstr[1] ""
+"Η ομάδα %s κέρδισε %u παραλείψεις γύρου!  Ωωω, τι όπλο μεγάλης ισχύος!"
+
+# Depuis quand les pingouins savent voler ??
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/supertux.cpp:316
+#, c-format
+msgid "%s team has won %u tux launcher! Never seen a flying penguin?"
+msgid_plural "%s team has won %u tux launchers! Never seen a flying penguin?"
+msgstr[0] ""
+"Η ομάδα %s κέρδισε %u εκτόξευση Tux! Από πότε έμαθαν να πετάνε οι "
+"πιγκουΐνοι;;"
+msgstr[1] ""
+"Η ομάδα %s κέρδισε %u εκτοξεύσεις Tux! Από πότε έμαθαν να πετάνε οι "
+"πιγκουΐνοι;;"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game_blitz.cpp:70
+#, c-format
+msgid "%s team was fragged down."
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game.cpp:713
+#, c-format
+msgid "%s took a member of the %s team to the grave with him!"
+msgstr ""
+
+#. 1003.2 specifies the format of this message.
+#: /home/yekcim/Dev/wormux/trunk/src/msvc/getopt.c:794
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/msvc/getopt.c:797
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/msvc/getopt.c:717
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/msvc/getopt.c:687
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/msvc/getopt.c:735
+#: /home/yekcim/Dev/wormux/trunk/src/msvc/getopt.c:908
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/msvc/getopt.c:712
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/msvc/getopt.c:892
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/msvc/getopt.c:874
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr ""
+
+#. 1003.2 specifies the format of this message.
+#: /home/yekcim/Dev/wormux/trunk/src/msvc/getopt.c:827
+#: /home/yekcim/Dev/wormux/trunk/src/msvc/getopt.c:957
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr ""
+
+#. +option or -option
+#: /home/yekcim/Dev/wormux/trunk/src/msvc/getopt.c:768
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr ""
+
+#. --option
+#: /home/yekcim/Dev/wormux/trunk/src/msvc/getopt.c:764
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/interface/interface.cpp:165
+msgid "(dead)"
+msgstr "(πεθαμένος)"
+
+#. Setting language selection
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:201
+msgid "(system language)"
+msgstr "(γλώσσα συστήματος)"
+
+# ###################################################################
+#: /home/yekcim/Dev/wormux/trunk/src/network/chatlogger.cpp:31
+#: /home/yekcim/Dev/wormux/trunk/src/network/chatlogger.cpp:78
+msgid "(unknown time)"
+msgstr "(άγνωστο χρόνο)"
+
+#. Display number of ammo
+#: /home/yekcim/Dev/wormux/trunk/src/interface/interface.cpp:196
+msgid "(unlimited)"
+msgstr "(απεριόριστο)"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:353
+#, c-format
+msgid ""
+"A new version %s is available, while your version is %s.You may want to "
+"check whether an update is available for your OS!"
+msgstr ""
+"Μία νέα έκδοση %s είναι διαθέσιμη, ενώ η δική σας έκδοση είναι %s. Μπορεί να "
+"θέλετε να ελέγξετε εάν είναι διαθέσιμη για το λειτουργικό σας σύστημα! "
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/air_attack.cpp:209
+msgid "Air Attack"
+msgstr "Εναέρια επίθεση"
+
+# Marteau piqueur
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/airhammer.cpp:74
+msgid "Airhammer"
+msgstr "Τρυπάνι"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:421
+msgid "All teams"
+msgstr "Όλες οι ομάδες"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game_classic.cpp:56
+#: /home/yekcim/Dev/wormux/trunk/src/game/game_blitz.cpp:50
+msgid "And the winner is..."
+msgstr "Και ο νικητής είναι..."
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/baseball.cpp:58
+msgid ""
+"Angle : Up/Down\n"
+"Fire : space key\n"
+"a hit per turn"
+msgstr ""
+"Γωνία: Ψηλά/Χαμηλά\n"
+"Πυρ: πλήκτρο space\n"
+"ένα χτύπημα ανά γύρο"
+
+# Enclume
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/anvil.cpp:132
+msgid "Anvil"
+msgstr "Αμόνι"
+
+#: /home/yekcim/Dev/wormux/trunk/src/main.cpp:287
+msgid "Authors:"
+msgstr "Συγγραφείς:"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/auto_bazooka.cpp:220
+msgid "Automatic Bazooka"
+msgstr "Αυτόματο Μπαζούκα"
+
+#. #############################
+#. Automatic connection - we have nothing to display here!
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:98
+msgid "Automatically join a game"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/pause_menu.cpp:51
+msgid "Back to battle"
+msgstr "Πίσω στη μάχη"
+
+#: /home/yekcim/Dev/wormux/trunk/src/network/net_error_msg.cpp:42
+msgid "Bad socket ..."
+msgstr "Λανθασμένη θυρίδα..."
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/baseball.cpp:57
+msgid "Baseball Bat"
+msgstr "Ρόπαλο Μπέιζμπολ"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/bazooka.cpp:123
+msgid "Bazooka"
+msgstr "Μπαζούκα"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/blowtorch.cpp:62
+msgid "Blowtorch"
+msgstr "Λυχνία Συγκόλλησης"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/bounce_ball.cpp:89
+msgid "Bounce Ball"
+msgstr "Μπάλα Αναπήδησης"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/supertux.cpp:177
+msgid "Bye bye tux..."
+msgstr "Άντε γεια tux..."
+
+#: /home/yekcim/Dev/wormux/trunk/src/team/teams_list.cpp:475
+#: /home/yekcim/Dev/wormux/trunk/src/team/teams_list.cpp:497
+#: /home/yekcim/Dev/wormux/trunk/src/team/teams_list.cpp:544
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_teams_selection_box.cpp:240
+#, c-format
+msgid "Can't find team %s!"
+msgstr "Αδύνατον να βρεθεί η ομάδα %s!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/team/teams_list.cpp:160
+#, c-format
+msgid "Cannot open personal teams directory (%s)!"
+msgstr "Αδύνατον να ανοίξει ο φάκελος με τις προσωπικές ομάδες (%s)!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/team/teams_list.cpp:148
+#: /home/yekcim/Dev/wormux/trunk/src/menu/skin_menu.cpp:77
+#, c-format
+msgid "Cannot open teams directory (%s)!"
+msgstr "Αδύνατον να ανοίξει ο φάκελος με τις ομάδες (%s)!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:132
+msgid "Check updates online?"
+msgstr "Έλεγχος ενημερώσεων στο διαδίκτυο;"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/map_selection_box.cpp:229
+msgid "Choose randomly between the different maps"
+msgstr "Επέλεξε τυχαία μεταξύ των χαρτών"
+
+#. Client Mode
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_menu.cpp:104
+msgid "Client mode"
+msgstr "Σε κατάσταση πελάτη"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:169
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:171
+msgid "Clumsiest"
+msgstr "Πιο αδέξιος"
+
+# Grenade à fragmentation
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/cluster_bomb.cpp:188
+msgid "Cluster Bomb"
+msgstr "Χειροβομβίδα διασποράς"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/cluzooka.cpp:389
+#, fuzzy
+msgid "Cluzooka"
+msgstr "Μπαζούκα"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/suicide.cpp:42
+msgid "Commit Suicide"
+msgstr "Αυτοκτονία"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:214
+msgid "Connect to game"
+msgstr "Συνδεθείτε σε παιχνίδι"
+
+#: /home/yekcim/Dev/wormux/trunk/src/network/net_error_msg.cpp:33
+msgid "Connected !"
+msgstr "Συνδεδεμένος!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/construct.cpp:59
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/construct.cpp:67
+msgid "Construct"
+msgstr "Κατασκευή"
+
+# Contrôlé par :
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:387
+msgid "Controlled by: "
+msgstr "Ελεγχόμενος από:"
+
+#: /home/yekcim/Dev/wormux/trunk/src/network/download.cpp:81
+#, c-format
+msgid "Couldn't fetch last version from %s"
+msgstr "Δεν μπόρεσε να πάρει την τελευταία έκδοση από τον %s"
+
+#: /home/yekcim/Dev/wormux/trunk/src/network/download.cpp:90
+#: /home/yekcim/Dev/wormux/trunk/src/network/chatlogger.cpp:57
+#, c-format
+msgid "Couldn't open file %s"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/main_menu.cpp:72
+msgid "Credits"
+msgstr "Απόδοση Τιμών"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/game_mode_editor.cpp:69
+msgid "Damage per turn during death mode"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/disco_grenade.cpp:157
+msgid "Disco Grenade"
+msgstr "Χειροβομβίδα Ντισκοτέκ"
+
+#: /home/yekcim/Dev/wormux/trunk/src/network/admin_commands.cpp:31
+msgid "Displays this message"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/game_mode_editor.cpp:63
+msgid "Duration before death mode"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/game_mode_editor.cpp:51
+msgid "Duration of a turn"
+msgstr "Διάρκεια ενός γύρου"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/dynamite.cpp:116
+msgid "Dynamite"
+msgstr "Δυναμίτης"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game.cpp:244
+msgid "END OF GAME"
+msgstr "ΤΕΛΟΣ ΠΑΙΧΝΙΔΙΟΥ"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:156
+msgid "Effects volume"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:324
+msgid "Energy"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/tool/error.cpp:63
+#, fuzzy, c-format
+msgid "Error in %s:%lu (Wormux %s) : %s"
+msgstr "Λάθος στο %s:%lu"
+
+#: /home/yekcim/Dev/wormux/trunk/src/include/action_handler.cpp:195
+#, c-format
+msgid "Error initializing network: Client %s does not agree with you!! - %s"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/team/teams_list.cpp:124
+msgid "Error loading team :"
+msgstr "Λάθος στη φόρτωση της ομάδας:"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/config.cpp:492
+#, c-format
+msgid ""
+"Error while creating directory \"%s\": unable to store configuration file."
+msgstr ""
+"Λάθος κατά τη δημιουργία του φακέλου \"%s\": αδύνατον να αποθηκευτεί το "
+"αρχείο διαμόρφωσης."
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game.cpp:143
+#, c-format
+msgid ""
+"Error:\n"
+"%s"
+msgstr ""
+"Λάθος:\n"
+"%s"
+
+#. translators: %s:%s will expand to something like "example.org:9999"
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:368
+#, c-format
+msgid "Error: Unable to connect to %s:%s"
+msgstr "Αδύνατη η σύνδεση στο %s:%s"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:329
+#, fuzzy
+msgid "Error: Unable to contact the index server to host a game"
+msgstr ""
+"Αδύνατη η επικοινωνία με το δείκτη διακομιστή για τη δημιουργία ενός "
+"παιχνιδιού."
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:270
+#, fuzzy
+msgid ""
+"Error: Unable to contact the index server to search for an internet game"
+msgstr ""
+"Αδύνατη η επικοινωνία με το δείκτη διακομιστή για αναζήτηση παιχνιδιού στο "
+"διαδίκτυο."
+
+# Impossible de se connecter à %s : %s
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:348
+msgid "Error: Unable to start server"
+msgstr "Αδύνατη η έναρξη του διακομιστή."
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:342
+msgid ""
+"Error: Your server is not reachable from the internet. Check your firewall "
+"configuration"
+msgstr ""
+"Λάθος: Ο διακομιστής σας δεν είναι προσβάσιμος από το διαδίκτυο. Ελέγξτε τις "
+"ρυθμίσεις του τείχους προστασίας."
+
+#: /home/yekcim/Dev/wormux/trunk/src/team/team.cpp:117
+#, c-format
+msgid "Error: can't find the body \"%s\" for the team \"%s\"."
+msgstr "Λάθος: αδύνατον να βρεθεί το σώμα \"%s\" για την ομάδα \"%s\"."
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/flamethrower.cpp:134
+msgid "Flame Thrower"
+msgstr "Φλογοβόλο"
+
+# Bombe anti-émeute
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/footbomb.cpp:158
+#, fuzzy
+msgid "Football Bomb"
+msgstr "Βόμβα διατάραξης"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:91
+msgid "Fullscreen?"
+msgstr "Πλήρης οθόνη;"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/game_menu.cpp:86
+msgid "Game"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/game_mode_editor.cpp:47
+#, fuzzy
+msgid "Game mode"
+msgstr "Όνομα παιχνιδιού:"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:121
+msgid "Game name:"
+msgstr "Όνομα παιχνιδιού:"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/gnu.cpp:161
+msgid "Gnu Launcher"
+msgstr "Εκτόξευση Gnu"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:121
+msgid "Graphic"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/grapple.cpp:166
+msgid "Grapple"
+msgstr "Γάντζος"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/game_mode_editor.cpp:75
+msgid "Gravity"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/grenade.cpp:76
+msgid "Grenade"
+msgstr "Χειροβομβίδα"
+
+#: /home/yekcim/Dev/wormux/trunk/src/map/ground.cpp:44
+msgid "Ground initialization..."
+msgstr "Αρχικοποίηση εδάφους..."
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/gun.cpp:74
+msgid "Gun"
+msgstr "Πιστόλι"
+
+#: /home/yekcim/Dev/wormux/trunk/src/tool/file_tools.cpp:163
+msgid "HOME directory (environment variable $HOME) could not be found!"
+msgstr "Φάκελος HOME (μεταβλητή περιβάλλοντος $HOME) δεν μπορεί να βρεθεί!"
+
+#. Skip a line
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:239
+msgid "Have a good game!"
+msgstr "Καλό παιχνίδι!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/team_box.cpp:54
+msgid "Head commander"
+msgstr "Διοικητής"
+
+#. Display player's name
+#: /home/yekcim/Dev/wormux/trunk/src/interface/interface.cpp:156
+msgid "Head commander: "
+msgstr "Διοικητής: "
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/pause_menu.cpp:59
+#: /home/yekcim/Dev/wormux/trunk/src/menu/main_menu.cpp:69
+msgid "Help"
+msgstr "Βοήθεια"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:145
+msgid "Host a game"
+msgstr "Δημιουργήστε ένα παιχνίδι"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/blowtorch.cpp:63
+msgid ""
+"Howto use it : keep space key pressed\n"
+"Angle : Up/Down\n"
+"an ammo per turn"
+msgstr ""
+"Χρήση: κρατήστε πατημένο το space\n"
+"Γωνία: Πάνω/Κάτω\n"
+"ένα από τα πολεμοφόδια ανά γύρο"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/airhammer.cpp:75
+msgid ""
+"Howto use it : keep space key pressed\n"
+"an ammo per turn"
+msgstr ""
+"Χρήση: κρατήστε πατημένο το space\n"
+"ένα από τα πολεμοφόδια ανά γύρο"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/auto_bazooka.cpp:221
+msgid ""
+"Howto use it : left clic on target\n"
+"Initial fire angle : Up/Down\n"
+"Fire : keep space key pressed until the desired strength\n"
+"an ammo per turn"
+msgstr ""
+"Χρήση: αριστερό κλικ στο στόχο\n"
+"Αρχική γωνία πυροδότησης: Πάνω/Κάτω\n"
+"Πυρ: κρατήστε το space μέχρι την επιθυμητή δύναμη\n"
+"ένα από τα πολεμοφόδια ανά γύρο"
+
+# Usage : clic gauche sur la cible\n
+# une munition par tour
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/anvil.cpp:133
+msgid ""
+"Howto use it : left click on target\n"
+"an ammo per turn"
+msgstr ""
+"Χρήση: αριστερό κλικ στο στόχο\n"
+"ένα από τα πολεμοφόδια ανά γύρο"
+
+# Dépechez-vous, vous êtes trop lent !!
+#: /home/yekcim/Dev/wormux/trunk/src/game/game_classic.cpp:228
+msgid "Hurry up, you are too slow !!"
+msgstr "Βιάσου, είσαι πολύ αργός!!"
+
+# Si vous trouvez un bug ou si vous pensez qu'il manque quelque chose à Wormux, envoyez un mail (en anglais, svp) :
+#: /home/yekcim/Dev/wormux/trunk/src/main.cpp:279
+msgid ""
+"If you found a bug or have a feature request send us a email (in english, "
+"please):"
+msgstr ""
+"Αν βρείτε κάποιο κόλλημα ή αν έχετε κάποια πρόταση για το Σκουλίκιουξ "
+"στείλτε ένα mail (στα αγγλικά, παρακαλώ):"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/game_mode_editor.cpp:57
+msgid "Initial energy"
+msgstr "Αρχική ενέργεια"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/bazooka.cpp:124
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/cluzooka.cpp:390
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/riot_bomb.cpp:121
+msgid ""
+"Initial fire angle : Up/Down\n"
+"Fire : keep space key pressed until the desired strength\n"
+"an ammo per turn"
+msgstr ""
+"Αρχική γωνία εκτόξευσης: Ψηλά/Χαμηλά\n"
+"Πυρ: κράτησε το πλήκτρο space μέχρι την επιθυμητή δύναμη\n"
+"ένα από τα πυρομαχικά ανά γύρο"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game_init.cpp:153
+msgid "Initialisation"
+msgstr "Αρχικοποίηση"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game_init.cpp:106
+msgid "Initialise map"
+msgstr "Αρχικοποίηση χάρτη"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game_init.cpp:140
+msgid "Initialise sounds"
+msgstr "Αρχικοποίηση ήχων"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game_init.cpp:116
+msgid "Initialise teams"
+msgstr "Αρχικοποίηση ομάδων"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game.cpp:561
+msgid "It's a present!"
+msgstr "Πάρε ένα δωράκι!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/jetpack.cpp:60
+msgid "Jetpack"
+msgstr "Σακίδιο Τζετ"
+
+# Venez sur #wormux-fr sur irc.freenode.net pour trouver des adversaires.
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_menu.cpp:142
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:237
+msgid "Join #wormux on irc.freenode.net to find some opponents."
+msgstr "Μπείτε στο #wormux-fr στο irc.freenode.net για να βρείτε αντίπαλους."
+
+#: /home/yekcim/Dev/wormux/trunk/src/network/admin_commands.cpp:33
+msgid "Kicks the players designated by <nickname> out of the game"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:128
+msgid "Language"
+msgstr "Γλώσσα"
+
+#: /home/yekcim/Dev/wormux/trunk/src/map/maps_list.cpp:228
+msgid "Load maps:"
+msgstr "Φόρτωση χαρτών:"
+
+#: /home/yekcim/Dev/wormux/trunk/src/team/teams_list.cpp:136
+msgid "Load teams:"
+msgstr "Φόρτωση ομάδων:"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/teams_selection_box.cpp:42
+msgid "Local teams:"
+msgstr "Ομάδες τοπικά:"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/lowgrav.cpp:49
+msgid "LowGrav"
+msgstr "Αντιβαρύτητα"
+
+#. #############################
+#. Manual connection
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:179
+msgid "Manual connection"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/game_menu.cpp:78
+msgid "Map"
+msgstr "Χάρτης"
+
+#: /home/yekcim/Dev/wormux/trunk/src/map/map.cpp:294
+#, c-format
+msgid "Map %s, a creation of: "
+msgstr "Χάρτης %s. Δημιουργός:"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game_init.cpp:109
+msgid "Maps"
+msgstr "Χάρτες"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_menu.cpp:116
+msgid "Max number of players:"
+msgstr "Μέγιστο πλήθος παικτών:"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:95
+msgid "Maximum FPS"
+msgstr "Μέγιστο πλήθος εικόνων/δευτ."
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/mine.cpp:213
+msgid "Mine"
+msgstr "Νάρκη"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:136
+msgid "Misc"
+msgstr "Διάφορα"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:177
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:179
+msgid "Most accurate"
+msgstr "Πιο εύστοχος"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:161
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:163
+msgid "Most sold-out"
+msgstr "Πιο πουλημένος"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:145
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:147
+msgid "Most useful"
+msgstr "Πιο χρήσιμος"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:153
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:155
+msgid "Most useless"
+msgstr "Πιο άχρηστος"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:137
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:139
+msgid "Most violent"
+msgstr "Πιο βίαιος"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:146
+msgid "Music volume"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:142
+msgid "Music?"
+msgstr "Μουσική;"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/main_menu.cpp:63
+msgid "Network Game"
+msgstr "Δικτυακό Παιχνίδι"
+
+#: /home/yekcim/Dev/wormux/trunk/src/network/network.cpp:291
+msgid "Network initialization"
+msgstr "Αρχικοποίηση Δικτύου"
+
+#. TRANSLATORS: after this string there will be a time stamp or the string '(unknown time)'
+#: /home/yekcim/Dev/wormux/trunk/src/network/chatlogger.cpp:51
+msgid "New network game at "
+msgstr "Νέο δικτυακό παιχνίδι σε "
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:181
+msgid "New player warning?"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/weapon.cpp:658
+#, c-format
+msgid "No element <%s> found in the xml config file!"
+msgstr "Κανένα στοιχείο <%s> δεν βρέθηκε στο αρχείο διαμόρφωσης XML!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:443
+msgid ""
+"No public servers available and incorrect manual connection settings. Try "
+"connecting manually."
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:74
+msgid "Nobody!"
+msgstr "Κανένας!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/team_box.cpp:60
+msgid "Number of characters"
+msgstr "Πλήθος παικτών ανά ομάδα"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/teams_selection_box.cpp:48
+msgid "Number of teams:"
+msgstr "Πλήθος ομάδων:"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/main_menu.cpp:66
+msgid "Options"
+msgstr "Επιλογές"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/pause_menu.cpp:55
+msgid "Options menu"
+msgstr "Επιλογές"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/parachute.cpp:68
+msgid "Parachute"
+msgstr "Αλεξίπτωτο"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/parachute.cpp:100
+msgid "Parachute is activated automatically."
+msgstr "Το αλεξίπτωτο ενεργοποιείται αυτομάτως."
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:133
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:171
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:209
+msgid "Password:"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/main_menu.cpp:60
+msgid "Play"
+msgstr "Παίξε"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/teams_selection_box.cpp:63
+msgid "Player"
+msgstr "Παίκτης"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:76
+msgid "Player energy?"
+msgstr "Ενέργεια παικτών;"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:79
+msgid "Player's name?"
+msgstr "Ονόματα παικτών;"
+
+# Lance putois
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/polecat.cpp:167
+msgid "Polecat Launcher"
+msgstr "Εκτόξευση Ασβού"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:110
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:198
+msgid "Port:"
+msgstr "Θύρα:"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:158
+msgid "Public battles"
+msgstr "Δημόσιες μάχες"
+
+# quitter
+#: /home/yekcim/Dev/wormux/trunk/src/menu/main_menu.cpp:75
+msgid "Quit"
+msgstr "Εγκατάλειψε"
+
+#: /home/yekcim/Dev/wormux/trunk/src/main.cpp:268
+msgid "Quit Wormux"
+msgstr "Εγκατάλειψε το  Wormux"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/pause_menu.cpp:63
+msgid "Quit battle"
+msgstr "Εγκατάλειψε τη μάχη"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/map_selection_box.cpp:228
+msgid "Random map"
+msgstr "Τυχαίος χάρτης"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/config.cpp:330
+msgid "Reading default config file"
+msgstr "Ανάγνωση προκαθορισμένου αρχείου διαμόρφωσης"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/config.cpp:379
+msgid "Reading personal config file"
+msgstr "Ανάγνωση προσωπικού αρχείου διαμόρφωσης"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:117
+msgid "Resolution"
+msgstr "Ανάλυση"
+
+# Bombe anti-émeute
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/riot_bomb.cpp:120
+msgid "Riot Bomb"
+msgstr "Βόμβα διατάραξης"
+
+#: /home/yekcim/Dev/wormux/trunk/src/main.cpp:83
+msgid "Run game"
+msgstr "Έναρξη παιχνιδιού"
+
+#: /home/yekcim/Dev/wormux/trunk/src/network/chat.cpp:80
+msgid "Say: "
+msgstr "Πες: "
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:85
+msgid "Scroll border size"
+msgstr "Ξετύλιγμα μεγέθους εξωτερικού άκρου"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:82
+msgid "Scroll on border"
+msgstr "Ξετύλιγμα στα όρια"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:187
+msgid "Server address:"
+msgstr "Διεύθυνση διακομιστή:"
+
+#. Available on internet ?
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:141
+msgid "Server available on Internet"
+msgstr "Διακομιστής διαθέσιμος στο διαδίκτυο"
+
+#. Server Mode
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_menu.cpp:113
+msgid "Server mode"
+msgstr "Κατάσταση διακομιστή"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/shotgun.cpp:91
+msgid "Shotgun"
+msgstr "Καραμπίνα"
+
+# Passer son tour
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/skip_turn.cpp:47
+msgid "Skip turn"
+msgstr "Παράλειψη γύρου"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/slap.cpp:73
+msgid "Slap"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/slap.cpp:74
+msgid "Slap the enemy to make him jump a bit."
+msgstr ""
+
+# Fusil sniper
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/snipe_rifle.cpp:93
+msgid "Sniper Rifle"
+msgstr "Τουφέκι με σκόπευτρο"
+
+#: /home/yekcim/Dev/wormux/trunk/src/object/bonus_box.cpp:86
+msgid "Someone put a booby trap into the crate!"
+msgstr "Κάποιος παγίδευσε το κιβώτιο!"
+
+# Désolé, il n'y a actuellement aucun jeu en attente de joueurs
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_connection_menu.cpp:278
+msgid "Sorry, currently, no game is waiting for players"
+msgstr "Συγγνώμη, δεν υπάρχει κανένα παιχνίδι να περιμένει παίκτες"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:184
+#, fuzzy
+msgid "Sound"
+msgstr "Ηχητικές επιλογές"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:152
+msgid "Sound effects?"
+msgstr "Ηχητικά εφέ;"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:177
+msgid "Sound frequency"
+msgstr "Συχνότητα ήχου"
+
+#. Load teams' sound profiles
+#: /home/yekcim/Dev/wormux/trunk/src/game/game_init.cpp:143
+msgid "Sounds"
+msgstr "Ηχητικές επιλογές"
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game.cpp:114
+msgid "Starting a new game"
+msgstr "Έναρξη νέου παιχνιδιού"
+
+#: /home/yekcim/Dev/wormux/trunk/src/interface/interface.cpp:196
+msgid "Stock:"
+msgstr "Απόθεμα:"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/submachine_gun.cpp:99
+msgid "Submachine Gun"
+msgstr "Οπλοπολυβόλο"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/supertux.cpp:229
+msgid "SuperTux"
+msgstr "Υπέρ-Tux"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/syringe.cpp:70
+msgid "Syringe"
+msgstr "Σύριγγα"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:426
+msgid "Team graphs"
+msgstr "Γραφήματα ομάδας"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:424
+msgid "Team stats"
+msgstr "Στατιστικά ομάδας"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/game_menu.cpp:66
+#: /home/yekcim/Dev/wormux/trunk/src/game/game_init.cpp:118
+msgid "Teams"
+msgstr "Ομάδες"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/teleportation.cpp:50
+msgid "Teleportation"
+msgstr "Τηλεμεταφορά"
+
+# La grenade à fragmentation a quitté le champ de bataille avant d'exploser.
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/cluster_bomb.cpp:146
+msgid "The Cluster Bomb has left the battlefield before it could explode."
+msgstr "Η χειροβομβίδα διασποράς εγκατέλειψε το πεδίο μάχης πριν την έκρηξη."
+
+# La grenade à fragmentation a quitté le champ de bataille avant d'exploser.
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/footbomb.cpp:111
+#, fuzzy
+msgid "The Football Bomb has left the battlefield before it could explode."
+msgstr "Η χειροβομβίδα διασποράς εγκατέλειψε το πεδίο μάχης πριν την έκρηξη."
+
+# Le Gnu a déserté le champ de bataille avant d'exploser.
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/gnu.cpp:144
+msgid "The Gnu left the battlefield before exploding"
+msgstr "Ο Gnu εγκατέλειψε το πεδίο μάχης πριν ανατιναχτεί."
+
+# Le putois
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/polecat.cpp:150
+msgid "The Polecat left the battlefield before exploding"
+msgstr "Ο Ασβός εγκατέλειψε το πεδίο μάχης πριν την έκρηξη."
+
+# La roquette automatique est partie dans un autre monde...
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/auto_bazooka.cpp:175
+msgid "The automatic rocket has left the battlefield..."
+msgstr "Η αυτόματη ρουκέτα έφυγε για άλλους κόσμους..."
+
+# La balle rebondissante a quitté le champ de bataille avant d'exploser.
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/bounce_ball.cpp:72
+msgid "The ball left the battlefield before exploding"
+msgstr "Η μπάλα αναπήδησης εγκατέλειψε το πεδίο μάχης πριν την έκρηξη."
+
+#: /home/yekcim/Dev/wormux/trunk/src/network/network_client.cpp:128
+#, c-format
+msgid ""
+"The client and server versions are incompatible (local=%s, server=%s). "
+"Please try another server."
+msgstr ""
+"Οι εκδόσεις πελάτη και διακομιστή είναι ασυμβίβαστες (πελάτης=%s, "
+"διακομιστής=%s). Παρακαλώ δοκιμάστε άλλο διακομιστή."
+
+# La connexion a expiré. Vérifiez qu'il n'y a pas de firewall !
+#: /home/yekcim/Dev/wormux/trunk/src/network/net_error_msg.cpp:48
+msgid "The connection timed out. Check there is no firewall in the way!"
+msgstr "Η σύνδεση κόπηκε. Επιβεβαίωσε ότι δεν υπάρχει τείχος προστασίας!"
+
+# La grenade disco a quitté la piste de danse avant d'exploser.
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/disco_grenade.cpp:127
+msgid "The disco grenade has left the dance floor before exploding"
+msgstr "Η χειροβομβίδα ντισκοτέκ εγκατέλειψε την πίστα χορού πριν την έκρηξη."
+
+#: /home/yekcim/Dev/wormux/trunk/src/game/game.cpp:456
+msgid "The game was interrupted because you got disconnected."
+msgstr "Το παιχνίδι διακόπηκε διότι αποσυνδεθήκατε."
+
+# La grenade a quitté le champ de bataille avant d'exploser.
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/grenade.cpp:58
+msgid "The grenade left the battlefield before exploding"
+msgstr "Η χειροβομβίδα εγκατέλειψε το πεδίο μάχης πριν την έκρηξη."
+
+# Les autres t'attendent ! Réveille-toi :-)
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_menu.cpp:302
+msgid "The others are waiting for you! Wake up :-)"
+msgstr "Εσένα θα περιμένουμε; Ξύπνα :-)"
+
+# La roquette est partie dans un autre monde...
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/bazooka.cpp:83
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/cluzooka.cpp:336
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/riot_bomb.cpp:86
+msgid "The rocket has left the battlefield..."
+msgstr "Η ρουκέτα έφυγε για άλλους κόσμους..."
+
+# υπολογιστής εξυπηρέτησης δικτύου
+#: /home/yekcim/Dev/wormux/trunk/src/network/net_error_msg.cpp:45
+msgid "The server rejected the connection."
+msgstr "Ο διακομιστής απέρριψε τη σύνδεση."
+
+# υπολογιστής εξυπηρέτησης δικτύου
+#: /home/yekcim/Dev/wormux/trunk/src/network/net_error_msg.cpp:51
+#, fuzzy
+msgid "The server rejected the connection: wrong password!"
+msgstr "Ο διακομιστής απέρριψε τη σύνδεση."
+
+# Il n'y a que %i équipe.
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_menu.cpp:214
+#, c-format
+msgid "There is only %i team."
+msgid_plural "There are only %i teams."
+msgstr[0] "Υπάρχει μόνο %i ομάδα."
+msgstr[1] "Υπάρχουν μόνο %i ομάδες."
+
+#. DrawTmpBoxText(Font::GetInstance()->, Point2i(w/2, y+graph_h+8), _("Time"), 0);
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:322
+msgid "Time"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/footbomb.cpp:159
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/cluster_bomb.cpp:189
+msgid ""
+"Timeout : Wheel mouse or Page Up/Down\n"
+"Angle : Up/Down\n"
+"Fire : keep space key pressed until the desired strength\n"
+"an ammo per turn"
+msgstr ""
+"Διακοπή: τροχός ποντικιού ή Page Up/Down\n"
+"Γωνία: Πάνω/Κάτω\n"
+"Πυρ: κρατήστε το space μέχρι την επιθυμητή δύναμη\n"
+"ένα από τα πολεμοφόδια ανά γύρο"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/bounce_ball.cpp:90
+msgid ""
+"Timeout : Wheel mouse or Page Up/Down\n"
+"Angle : Up/Down\n"
+"Fire : space key\n"
+"an ammo per turn"
+msgstr ""
+"Διακοπή: τροχός ποντικιού ή Page Up/Down\n"
+"Γωνία: Πάνω/Κάτω\n"
+"Πυρ: κουμπί space\n"
+"ένα από τα πολεμοφόδια ανά γύρο"
+
+#: /home/yekcim/Dev/wormux/trunk/src/interface/weapon_menu.cpp:169
+msgid "Tools"
+msgstr "Εργαλεία"
+
+#: /home/yekcim/Dev/wormux/trunk/src/network/net_error_msg.cpp:36
+msgid "Unable to contact host."
+msgstr "Αδύνατη η σύνδεση στο διακομιστή."
+
+#: /home/yekcim/Dev/wormux/trunk/src/map/maps_list.cpp:238
+#, c-format
+msgid "Unable to open maps directory (%s)!"
+msgstr "Αδύνατον να ανοίξει ο φάκελος με τους χάρτες (%s)!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/map/maps_list.cpp:250
+#, c-format
+msgid "Unable to open personal maps directory (%s)!"
+msgstr "Αδύνατον να ανοίξει ο φάκελος με τους προσωπικούς χάρτες (%s)!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/network/net_error_msg.cpp:39
+msgid "Unable to use this port!"
+msgstr "Αδύνατον να χρησιμοποιηθεί αυτή η θύρα!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/network/admin_commands.cpp:67
+msgid "Unknown command"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/network/network.cpp:111
+msgid "Unnamed"
+msgstr "Ανώνυμος"
+
+#: /home/yekcim/Dev/wormux/trunk/src/main.cpp:200
+msgid "Version"
+msgstr "Έκδοση"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:362
+#, c-format
+msgid "Version verification failed because: %s\n"
+msgstr "Επαλήθευση έκδοσης απέτυχε διότι: %s\n"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_menu.cpp:228
+#, c-format
+msgid "Wait! %i player is not ready yet!"
+msgid_plural "Wait! %i players are not ready yet!"
+msgstr[0] "Περίμενε! %i παίκτης δεν είναι έτοιμος ακόμα!"
+msgstr[1] "Περίμενε! %i παίκτες δεν είναι έτοιμοι ακόμα!"
+
+# Attente du serveur, vous pouvez annuler ou discuter !
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_menu.cpp:369
+msgid "Waiting for server, all you can do is cancel or chat!"
+msgstr "Αναμένοντας το διακομιστή, μπορείτε να ακυρώσετε ή να συζητήσετε!"
+
+#. Adding label
+#. Initialization of teams' energy
+#: /home/yekcim/Dev/wormux/trunk/src/interface/weapon_menu.cpp:167
+#: /home/yekcim/Dev/wormux/trunk/src/game/game_init.cpp:129
+msgid "Weapons"
+msgstr "Όπλα"
+
+#: /home/yekcim/Dev/wormux/trunk/src/main.cpp:296
+msgid "Website: "
+msgstr "Ιστοσελίδα: "
+
+# Trop la honte pour %s : il a été tué par un simple pistolet !
+#: /home/yekcim/Dev/wormux/trunk/src/game/game.cpp:722
+#, c-format
+msgid "What a shame for %s - he was killed by a simple gun!"
+msgstr "Τι ντροπή για τον %s: σκοτώθηκε από ένα απλό πιστολάκι!"
+
+#. Various options
+#: /home/yekcim/Dev/wormux/trunk/src/menu/options_menu.cpp:73
+msgid "Wind particles?"
+msgstr "Σωματίδια στον άνεμο;"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/results_menu.cpp:379
+msgid "Winner"
+msgstr "Νικητής"
+
+#: /home/yekcim/Dev/wormux/trunk/src/main.cpp:212
+msgid "Wormux launching..."
+msgstr "Έναρξη του Wormux..."
+
+#: /home/yekcim/Dev/wormux/trunk/src/main.cpp:286
+msgid "Wormux version "
+msgstr "Έκδοση του Wormux"
+
+#: /home/yekcim/Dev/wormux/trunk/src/include/action_handler.cpp:169
+msgid "Wrong map CRC!"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/include/action_handler.cpp:166
+msgid "Wrong map name!"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/include/action_handler.cpp:172
+msgid "Wrong team!"
+msgstr ""
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_menu.cpp:305
+msgid "You are alone :-/"
+msgstr "Είστε μόνος :-/"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_menu.cpp:222
+msgid "You are alone..."
+msgstr "Θέλετε σίγουρα να παίξετε μόνος σας;!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/map/maps_list.cpp:259
+msgid "You need at least one valid map !"
+msgstr "Χρειάζεται τουλάχιστον ένας έγκυρος χάρτης!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/team/teams_list.cpp:168
+#: /home/yekcim/Dev/wormux/trunk/src/game/game_init.cpp:122
+msgid "You need at least two valid teams !"
+msgstr "Χρειάζονται τουλάχιστον δύο έγκυρες ομάδες!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/network_menu.cpp:202
+msgid "You won't be able to play before selecting a team !"
+msgstr "Δεν μπορείτε να παίξετε χωρίς να διαλέξετε ομάδα!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/weapon_launcher.cpp:496
+msgid "Your shot has missed!"
+msgstr "Αστόχησες..."
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/credits_menu.cpp:75
+msgid "aka"
+msgstr "ψευδώνυμο:"
+
+#: /home/yekcim/Dev/wormux/trunk/src/weapon/air_attack.cpp:210
+msgid ""
+"attack direction : Left/Right\n"
+"Bombing : left clic on target\n"
+"a bombing per turn"
+msgstr ""
+"Κατεύθυνση επίθεσης: Αριστερά/Δεξιά\n"
+"Επίθεση: αριστερό κλικ στο στόχο\n"
+"ένας βομβαρδισμός ανά γύρο"
+
+#: /home/yekcim/Dev/wormux/trunk/src/map/maps_list.cpp:78
+msgid "couldn't load config"
+msgstr "δεν φορτώθηκε το αρχείο διαμόρφωσης"
+
+#: /home/yekcim/Dev/wormux/trunk/src/map/ground.cpp:61
+msgid "done"
+msgstr "τελείωσε"
+
+#: /home/yekcim/Dev/wormux/trunk/src/map/maps_list.cpp:85
+msgid "error parsing the config file"
+msgstr "Λάθος εξαιτίας του διαβάσματος του αρχείου διαμόρφωσης"
+
+#: /home/yekcim/Dev/wormux/trunk/src/menu/credits_menu.cpp:79
+msgid "from"
+msgstr "από"
+
+#: /home/yekcim/Dev/wormux/trunk/src/map/maps_list.cpp:74
+msgid "no configuration file!"
+msgstr "δεν υπάρχει αρχείο διαμόρφωσης!"
+
+#: /home/yekcim/Dev/wormux/trunk/src/sound/jukebox.cpp:167
+msgid "o Loading music"
+msgstr "o Φόρτωση μουσικής"
+
+#: /home/yekcim/Dev/wormux/trunk/src/sound/jukebox.cpp:343
+#, c-format
+msgid "o Loading sound profile: %s"
+msgstr "o Φόρτωση ηχητικού προφίλ: %s"
+
+# o Démarrage du son à %d Hz %d bit
+#: /home/yekcim/Dev/wormux/trunk/src/sound/jukebox.cpp:89
+#, c-format
+msgid "o Opened audio at %d Hz %d bit"
+msgstr "o Άνοιγμα ήχου στα %d Hz %d bit"
+
+#~ msgid "%s tries to connect with a different version : client=%s, me=%s."
+#~ msgstr ""
+#~ "Ο/η %s προσπαθεί να συνδεθεί με διαφορετική έκδοση: πελάτης=%s, "
+#~ "διακομιστής=%s."
+
+#~ msgid "Connect !"
+#~ msgstr "Συνδεθείτε!"
+
+#~ msgid "Connect to an internet game"
+#~ msgstr "Σύνδεση σε παιχνίδι στο διαδίκτυο "
+
+#~ msgid "Do you really want to quit? (Y/N)"
+#~ msgstr "Θέλετε σίγουρα να εγκαταλείψετε; (N/O)"
+
+#~ msgid "Error loading team's data %s:"
+#~ msgstr "Λάθος κατά τη φόρτωση της ομάδας %s:"
+
+#~ msgid "Error while loading configuration file: %s"
+#~ msgstr "Λάθος κατά τη φόρτωση του αρχείου διαμόρφωσης: %s"
+
+#~ msgid "Error while loading default configuration file: %s"
+#~ msgstr "Λάθος κατά τη φόρτωση του προκαθορισμένου αρχείου διαμόρφωσης: %s"
+
+#~ msgid "Error while loading game mode %s (file %s):"
+#~ msgstr "Λάθος κατά τη φόρτωση του παιχνιδιού %s (αρχείο %s):"
+
+#~ msgid "Host a game (Windows clients only)"
+#~ msgstr "Δημιουργήστε ένα παιχνίδι (μόνο για πελάτες με Windows)"
+
+#~ msgid "Refresh"
+#~ msgstr "Ανανέωση"
+
+#~ msgid "XML error during loading map '%s': "
+#~ msgstr "Λάθος XML εξαιτίας της φόρτωσης του χάρτη  '%s':"

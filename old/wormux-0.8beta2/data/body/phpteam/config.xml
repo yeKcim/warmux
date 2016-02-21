@@ -1,0 +1,1948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources SYSTEM "../body.dtd" []>
+<resources>
+
+<!--   ###########################################
+       ###############             ###############
+       ##############    AUTHOR     ##############
+       ###############             ###############
+       ###########################################   -->
+
+<author>
+  <name>yeKcim</name>
+  <email>yekcim AT crocobox.org</email>
+</author>
+
+
+
+
+
+
+
+
+<!--   ###########################################
+       ###############             ###############
+       ##############     ALIAS     ##############
+       ###############             ###############
+       ###########################################   -->
+
+<alias movement="weapon-riot_bomb-end-shoot" correspond_to="weapon-bazooka-end-shoot" />
+<alias movement="weapon-riot_bomb-select" correspond_to="weapon-bazooka-select" />
+<alias movement="weapon-automatic_bazooka-select" correspond_to="weapon-bazooka-select" />
+<alias movement="weapon-automatic_bazooka-end-shoot" correspond_to="weapon-bazooka-end-shoot" />
+<alias movement="weapon-cluster_bomb-begin-shoot" correspond_to="weapon-grenade-begin-shoot" />
+<alias movement="weapon-cluster_bomb-end-shoot" correspond_to="weapon-grenade-end-shoot" />
+<alias movement="weapon-holly_grenade-begin-shoot" correspond_to="weapon-grenade-begin-shoot" />
+<alias movement="weapon-holly_grenade-end-shoot" correspond_to="weapon-grenade-end-shoot" />
+<alias movement="weapon-snipe_rifle-begin-shoot" correspond_to="weapon-uzi-begin-shoot" />
+<alias movement="weapon-snipe_rifle-end-shoot" correspond_to="weapon-uzi-end-shoot" />
+<alias movement="weapon-gnulauncher-begin-shoot" correspond_to="weapon-tux-begin-shoot" />
+<alias movement="weapon-gnulauncher-end-shoot" correspond_to="weapon-tux-end-shoot" />
+
+
+
+
+
+
+<!--   ###########################################
+       ###############             ###############
+       ##############   SKELETON    ##############
+       ###############             ###############
+       ###########################################   -->
+
+<!-- ###### Body ###### -->
+<sprite name="body-normal" type="body">
+	<image file="body.png"/>
+	<anchor dx="16" dy="17"/>
+	<attached member_type="hoop" frame="*" dx="12" dy="27"/>
+	<attached member_type="head" frame="*" dx="8" dy="12"/>
+	<attached member_type="arm-right" frame="*" dx="5" dy="21"/>
+	<attached member_type="arm-left" frame="*" dx="6" dy="20"/>
+	<attached member_type="foot-left" frame="*" dx="15" dy="34"/>
+	<attached member_type="foot-right" frame="*" dx="8" dy="35"/>
+	<attached member_type="jetpack-belt" frame="*" dx="1" dy="21"/>
+	<attached member_type="jetpack-right" frame="*" dx="1" dy="23"/>
+	<attached member_type="jetpack-left" frame="*" dx="9" dy="23"/>
+	<attached member_type="tail" frame="*" dx="2" dy="28"/>
+	<attached member_type="construct" frame="*" dx="8" dy="7"/>
+	<attached member_type="hula" frame="*" dx="12" dy="25"/>
+</sprite>
+
+<!-- ###### Tail ###### -->
+<sprite name="tail" type="tail">
+	<image file="tail.png"/>
+	<anchor dx="8" dy="6"/>
+</sprite>
+
+<!-- ###### Hoop (foreground part) ###### -->
+<sprite name="hoop" type="hoop" >
+	<image file="hoop.png"/>
+	<anchor dx="18" dy="3"/>
+</sprite>
+
+<!-- ###### Hula (foreground part) ###### -->
+<sprite name="hula" type="hula" >
+	<image file="hula.png"/>
+	<anchor dx="18" dy="6"/>
+</sprite>
+
+<!-- ###### Head ###### -->
+<sprite name="head" type="head">
+	<image file="nose.png"/>
+	<anchor dx="-1" dy="3"/>
+	<attached member_type="ear-left" frame="*" dx="4" dy="-8"/>
+	<attached member_type="ear-right" frame="*" dx="-6" dy="-7"/>
+	<attached member_type="eyes-normal" frame="*" dx="2" dy="-2"/>
+	<attached member_type="helmet" frame="*" dx="-3" dy="0"/>
+</sprite>
+
+<!-- ###### Ears ###### -->
+<sprite name="ear-left" type="ear-left">
+	<image file="ear-left.png"/>
+	<anchor dx="5" dy="3"/>
+</sprite>
+
+<sprite name="ear-right" type="ear-right">
+	<image file="ear-right.png"/>
+	<anchor dx="5" dy="3"/>
+</sprite>
+
+<!-- ###### Eyes ###### -->
+<sprite name="eyes-normal" type="eyes-normal">
+	<image file="eyes.png"/>
+	<anchor dx="4" dy="3"/>
+	<attached member_type="pupil-right" frame="*" dx="4" dy="3"/>
+	<attached member_type="pupil-left" frame="*" dx="6" dy="3"/>
+</sprite>
+
+<sprite name="pupil-right" type="pupil-right" >
+	<image file="pupil.png"/>
+	<anchor dx="-1" dy="0"/>
+</sprite>
+
+<sprite name="pupil-left" type="pupil-left" >
+	<image file="pupil.png"/>
+	<anchor dx="-1" dy="0"/>
+</sprite>
+
+<!-- ###### Arms ###### -->
+<sprite name="arm-left" type="arm-left">
+	<image file="arm.png"/>
+	<anchor dx="5" dy="3"/>
+</sprite>
+
+<sprite name="arm-right" type="arm-right">
+	<image file="arm.png"/>
+	<anchor dx="5" dy="3"/>
+	<attached member_type="weapon" frame="*" dx="3" dy="16"/>
+	<attached member_type="yoyo" frame="*" dx="5" dy="10"/>
+</sprite>
+
+<!-- ###### Legs ###### -->
+<sprite name="foot-left" type="foot-left" on_ground="true">
+	<image file="foot-left.png"/>
+	<anchor dx="5" dy="3"/>
+</sprite>
+
+<sprite name="foot-right" type="foot-right" on_ground="true">
+	<image file="foot-right.png"/>
+	<anchor dx="5" dy="3"/>
+</sprite>
+
+<!-- ###### Jetpack ###### -->
+<sprite name="jetpack-belt" type="jetpack-belt" on_ground="true">
+	<image file="jetpack-belt.png"/>
+	<anchor dx="0" dy="0"/>
+</sprite>
+
+<sprite name="jetpack-right" type="jetpack-right" on_ground="true">
+	<image file="jetpack.png"/>
+	<anchor dx="4" dy="10"/>
+	<attached member_type="jetpack-fire-right" frame="*" dx="3" dy="13"/>
+</sprite>
+
+<sprite name="jetpack-left" type="jetpack-left" on_ground="true">
+	<image file="jetpack.png"/>
+	<anchor dx="4" dy="10"/>
+	<attached member_type="jetpack-fire-left" frame="*" dx="3" dy="13"/>
+</sprite>
+
+<sprite name="jetpack-fire-right" type="jetpack-fire-right" on_ground="true">
+	<image file="jetpack-fire.png"/>
+	<anchor dx="2" dy="0"/>
+</sprite>
+
+<sprite name="jetpack-fire-left" type="jetpack-fire-left" on_ground="true">
+	<image file="jetpack-fire.png"/>
+	<anchor dx="2" dy="0"/>
+
+</sprite>
+
+<!-- ###### Helmet ###### -->
+<sprite name="helmet" type="helmet" on_ground="true">
+	<image file="helmet.png"/>
+	<anchor dx="9" dy="13"/>
+</sprite>
+
+<!-- ###### Yoyo ###### -->
+<sprite name="yoyo" type="yoyo" go_through_ground="true">
+	<image file="yoyo.png">
+		<grid pos="0,0" size="32,42" array="36,1"/>
+	</image>
+	<anchor dx="29" dy="0"/>
+	<animation speed="150"/>
+</sprite>
+
+<!-- ###### Dead ###### -->
+<sprite name="body-dead" type="body">
+	<image file="dead.png"/>
+	<anchor dx="12" dy="15"/>
+</sprite>
+
+<!-- ###### Black ###### -->
+<sprite name="body-black" type="body">
+	<image file="black.png"/>
+	<anchor dx="12" dy="15"/>
+</sprite>
+
+<!-- ###### Construct ###### -->
+<sprite name="construct" type="construct" >
+	<image file="c1.png"/>
+	<anchor dx="7" dy="12"/>
+	<attached member_type="c2" frame="*" dx="1" dy="8" />
+</sprite>
+
+<sprite name="c2" type="c2" >
+	<image file="c2.png"/>
+	<anchor dx="0" dy="0"/>
+</sprite>
+
+
+
+
+
+
+<!--   ###########################################
+       ###############             ###############
+       ##############    CLOTHES    ##############
+       ###############             ###############
+       ###########################################   -->
+
+<!-- ###### Normal ###### -->
+<clothe name="normal">
+	<member name="tail"/>
+	<member name="arm-left"/>
+	<member name="foot-left"/>
+	<member name="ear-left"/>
+	<member name="body-normal"/>
+	<member name="head"/>
+	<member name="eyes-normal"/>
+	<member name="pupil-right"/>
+	<member name="pupil-left"/>
+	<member name="ear-right"/>
+	<member name="foot-right"/>
+	<member name="arm-right"/>
+	<member name="weapon"/>
+</clothe>
+
+
+<!-- ###### Jetpack ###### -->
+<clothe name="jetpack"> <!-- When jetpack weapon is selected, during walk, jump movement... -->
+	<member name="tail"/>
+	<member name="arm-left"/>
+	<member name="foot-left"/>
+	<member name="jetpack-left"/>
+	<member name="jetpack-right"/>
+	<member name="ear-left"/>
+	<member name="body-normal"/>
+	<member name="head"/>
+	<member name="eyes-normal"/>
+	<member name="pupil-right"/>
+	<member name="pupil-left"/>
+	<member name="ear-right"/>
+	<member name="foot-right"/>
+	<member name="jetpack-belt"/>
+	<member name="arm-right"/>
+</clothe>
+
+<clothe name="jetpack-fire"> <!-- When jetpack weapon is selected and used -->
+	<member name="tail"/>
+	<member name="arm-left"/>
+	<member name="foot-left"/>
+	<member name="jetpack-fire-left"/>
+	<member name="jetpack-left"/>
+	<member name="jetpack-fire-right"/>
+	<member name="jetpack-right"/>
+	<member name="ear-left"/>
+	<member name="body-normal"/>
+	<member name="head"/>
+	<member name="eyes-normal"/>
+	<member name="pupil-right"/>
+	<member name="pupil-left"/>
+	<member name="ear-right"/>
+	<member name="jetpack-belt"/>
+	<member name="foot-right"/>
+	<member name="arm-right" layer="13"/>
+</clothe>
+
+<!-- ###### Helmet ###### -->
+<clothe name="helmet">
+	<member name="tail"/>
+	<member name="arm-left"/>
+	<member name="foot-left"/>
+	<member name="ear-left"/>
+	<member name="body-normal"/>
+	<member name="head"/>
+	<member name="eyes-normal"/>
+	<member name="pupil-right"/>
+	<member name="pupil-left"/>
+	<member name="ear-right"/>
+	<member name="foot-right"/>
+	<member name="arm-right"/>
+	<member name="helmet"/>
+</clothe>
+
+<!-- ###### Animation Yoyo ###### -->
+<clothe name="animation0">
+	<member name="tail"/>
+	<member name="arm-left"/>
+	<member name="foot-left"/>
+	<member name="ear-left"/>
+	<member name="body-normal"/>
+	<member name="head"/>
+	<member name="eyes-normal"/>
+	<member name="pupil-right"/>
+	<member name="pupil-left"/>
+	<member name="ear-right"/>
+	<member name="foot-right"/>
+	<member name="yoyo"/>
+	<member name="arm-right"/>
+</clothe>
+
+<!-- ###### Animation Hula hoop ###### -->
+<clothe name="animation2">
+	<member name="hula"/>
+	<member name="tail"/>
+	<member name="arm-left"/>
+	<member name="foot-left"/>
+	<member name="ear-left"/>
+	<member name="body-normal"/>
+	<member name="head"/>
+	<member name="eyes-normal"/>
+	<member name="pupil-right"/>
+	<member name="pupil-left"/>
+	<member name="ear-right"/>
+	<member name="foot-right"/>
+	<member name="arm-right"/>
+	<member name="hoop"/>
+</clothe>
+
+<!-- ###### Dead ###### -->
+<clothe name="dead">
+	<member name="body-dead"/>
+</clothe>
+
+<!-- ###### Black ###### -->
+<clothe name="black">
+	<member name="body-black"/>
+</clothe>
+
+<!-- # Construct/Airhammer helmet # -->
+<clothe name="weapon-construct">
+	<member name="c2"/>
+	<member name="tail"/>
+	<member name="arm-left"/>
+	<member name="foot-left"/>
+	<member name="body-normal"/>
+	<member name="head"/>
+	<member name="eyes-normal"/>
+	<member name="pupil-right"/>
+	<member name="pupil-left"/>
+	<member name="construct"/>
+	<member name="foot-right"/>
+	<member name="arm-right"/>
+	<member name="weapon"/>
+</clothe>
+
+<clothe name="weapon-airhammer">
+	<member name="c2"/>
+	<member name="tail"/>
+	<member name="arm-left"/>
+	<member name="foot-left"/>
+	<member name="ear-left"/>
+	<member name="body-normal"/>
+	<member name="head"/>
+	<member name="eyes-normal"/>
+	<member name="pupil-right"/>
+	<member name="pupil-left"/>
+	<member name="construct"/>
+	<member name="ear-right"/>
+	<member name="foot-right"/>
+	<member name="arm-right"/>
+	<member name="weapon"/>
+</clothe>
+
+
+
+
+
+
+
+
+<!--   ###########################################
+       ##############               ##############
+       #############    MOVEMENTS    #############
+       ##############               ##############
+       ###########################################   -->
+
+<!-- ###### Walk ###### -->
+<movement name="walk" speed="30">
+	<collision_rect left="5" right="5" top="10" bottom="2"/>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="0"/>
+		<member type="foot-left" angle="0"/>
+		<member type="foot-right" angle="0"/>
+		<member type="tail" angle="0" />	
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />			
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="-10"/>
+		<member type="arm-right" angle="10"/>
+		<member type="foot-left" angle="10"/>
+		<member type="foot-right" angle="-10"/>	
+		<member type="tail" angle="0" />	
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />		
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="-20"/>
+		<member type="arm-right" angle="20"/>
+		<member type="foot-left" angle="20"/>
+		<member type="foot-right" angle="-20"/>	
+		<member type="tail" angle="-10" />	
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />		
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="-30"/>
+		<member type="arm-right" angle="30"/>
+		<member type="foot-left" angle="30"/>
+		<member type="foot-right" angle="-30"/>
+		<member type="tail" angle="-10" />	
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />	
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="-40"/>
+		<member type="arm-right" angle="40"/>
+		<member type="foot-left" angle="40"/>
+		<member type="foot-right" angle="-40"/>
+		<member type="tail" angle="0" />	
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />	
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="-30"/>
+		<member type="arm-right" angle="30"/>
+		<member type="foot-left" angle="30"/>
+		<member type="foot-right" angle="-30"/>
+		<member type="tail" angle="0" />	
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />	
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="-20"/>
+		<member type="arm-right" angle="20"/>
+		<member type="foot-left" angle="20"/>
+		<member type="foot-right" angle="-20"/>
+		<member type="tail" angle="10" />
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="-10"/>
+		<member type="arm-right" angle="10"/>
+		<member type="foot-left" angle="10"/>
+		<member type="foot-right" angle="-10"/>
+		<member type="tail" angle="10" />	
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />	
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="0"/>
+		<member type="foot-left" angle="0"/>
+		<member type="foot-right" angle="0"/>
+		<member type="tail" angle="0" />
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="10"/>
+		<member type="arm-right" angle="-10"/>
+		<member type="foot-left" angle="-10"/>
+		<member type="foot-right" angle="10"/>	
+		<member type="tail" angle="0" />
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />	
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="20"/>
+		<member type="arm-right" angle="-20"/>
+		<member type="foot-left" angle="-20"/>
+		<member type="foot-right" angle="20"/>
+		<member type="tail" angle="-10" />	
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />	
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="30"/>
+		<member type="arm-right" angle="-30"/>
+		<member type="foot-left" angle="-30"/>
+		<member type="foot-right" angle="30"/>
+		<member type="tail" angle="-10" />
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />	
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="40"/>
+		<member type="arm-right" angle="-40"/>
+		<member type="foot-left" angle="-40"/>
+		<member type="foot-right" angle="40"/>	
+		<member type="tail" angle="0" />	
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />		
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="30"/>
+		<member type="arm-right" angle="-30"/>
+		<member type="foot-left" angle="-30"/>
+		<member type="foot-right" angle="30"/>	
+		<member type="tail" angle="0" />	
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />		
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="20"/>
+		<member type="arm-right" angle="-20"/>
+		<member type="foot-left" angle="-20"/>
+		<member type="foot-right" angle="20"/>	
+		<member type="tail" angle="10" />	
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />		
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-left" angle="10"/>
+		<member type="arm-right" angle="-10"/>
+		<member type="foot-left" angle="-10"/>
+		<member type="foot-right" angle="10"/>	
+		<member type="tail" angle="10" />	
+		<member type="pupil-right" follow_cursor="true" follow_cursor_limit="100" />
+		<member type="pupil-left" follow_cursor="true" follow_cursor_limit="100" />		
+	</frame>
+</movement>
+
+<!-- ###### Jump ###### -->
+<movement name="jump" speed="100">
+	<collision_rect left="5" right="5" top="10" bottom="2"/>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/> <!-- follow_half_crosshair : the head rotates when we move the crosshair -->
+		<member type="arm-left" angle="90" follow_speed="true"/> <!--follow_speed : rotates in the direction where the character is going -->
+		<member type="arm-right" angle="90" follow_speed="true"/>
+		<member type="foot-left" angle="0" follow_speed="true"/>
+		<member type="foot-right" angle="0" follow_speed="true"/>
+	</frame>
+</movement>
+
+<!-- ###### Fall ###### -->
+<movement name="fall" speed="100">
+	<collision_rect left="5" right="5" top="10" bottom="2"/>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/> <!-- follow_half_crosshair : the head rotates when we move the crosshair -->
+		<member type="arm-left" angle="90" follow_speed="true"/> <!--follow_speed : rotates in the direction where the character is going -->
+		<member type="arm-right" angle="90" follow_speed="true"/>
+		<member type="foot-left" angle="0" follow_speed="true"/>
+		<member type="foot-right" angle="0" follow_speed="true"/>
+	</frame>
+</movement>
+
+<!-- ###### Hard land ###### -->
+<movement name="hard-land" speed="50" play_mode="play_once" >
+	<collision_rect left="5" right="5" top="10" bottom="2"/>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" dy="-2"/>
+		<member type="arm-left" angle="5"/>
+		<member type="arm-right" angle="5"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-3"/>
+		<member type="foot-right" dy="-3"/>
+		<member type="arm-left" angle="10"/>
+		<member type="arm-right" angle="10"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-4"/>
+		<member type="foot-right" dy="-4"/>
+		<member type="arm-left" angle="15"/>
+		<member type="arm-right" angle="15"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-3"/>
+		<member type="foot-right" dy="-3"/>
+		<member type="arm-left" angle="10"/>
+		<member type="arm-right" angle="10"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" dy="-2"/>
+		<member type="arm-left" angle="5"/>
+		<member type="arm-right" angle="5"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-1"/>
+		<member type="foot-right" dy="-1"/>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="0"/>
+	</frame>
+</movement>
+
+<!-- ###### Drowned ###### -->
+<movement name="drowned" speed="150">
+	<collision_rect left="5" right="5" top="10" bottom="2"/>
+	<frame>
+		<member type="body" angle="90" follow_speed="true"/> 
+		<member type="head" angle="-140"/>
+		<member type="arm-left" angle="45"/>
+		<member type="arm-right" angle="45"/>
+		<member type="foot-left" angle="-45"/>
+		<member type="foot-right" angle="45"/>
+	</frame>
+	<frame>
+		<member type="body" angle="90" follow_speed="true"/> 
+		<member type="head" angle="-140"/>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="0"/>
+		<member type="foot-left" angle="0"/>
+		<member type="foot-right" angle="0"/>
+	</frame>
+	<frame>
+		<member type="body" angle="90" follow_speed="true"/> 
+		<member type="head" angle="-140"/>
+		<member type="arm-left" angle="-45"/>
+		<member type="arm-right" angle="-45"/>
+		<member type="foot-left" angle="45"/>
+		<member type="foot-right" angle="-45"/>
+	</frame>
+	<frame>
+		<member type="body" angle="90" follow_speed="true"/> 
+		<member type="head" angle="-140"/>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="0"/>
+		<member type="foot-left" angle="0"/>
+		<member type="foot-right" angle="0"/>
+	</frame>
+</movement>
+
+<!-- ###### Fly ###### -->
+<movement name="fly" speed="150">
+	<collision_rect left="5" right="5" top="10" bottom="2"/>
+	<frame>
+		<member type="body" angle="90" follow_speed="true"/> 
+		<member type="head" angle="-140"/>
+		<member type="arm-left" angle="45"/>
+		<member type="arm-right" angle="45"/>
+		<member type="foot-left" angle="-45"/>
+		<member type="foot-right" angle="45"/>
+	</frame>
+	<frame>
+		<member type="body" angle="90" follow_speed="true"/> 
+		<member type="head" angle="-140"/>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="0"/>
+		<member type="foot-left" angle="0"/>
+		<member type="foot-right" angle="0"/>
+	</frame>
+	<frame>
+		<member type="body" angle="90" follow_speed="true"/> 
+		<member type="head" angle="-140"/>
+		<member type="arm-left" angle="-45"/>
+		<member type="arm-right" angle="-45"/>
+		<member type="foot-left" angle="45"/>
+		<member type="foot-right" angle="-45"/>
+	</frame>
+	<frame>
+		<member type="body" angle="90" follow_speed="true"/> 
+		<member type="head" angle="-140"/>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="0"/>
+		<member type="foot-left" angle="0"/>
+		<member type="foot-right" angle="0"/>
+	</frame>
+</movement>
+
+
+
+
+
+
+<!--   ###########################################
+       #############                ##############
+       ############    ANIMATIONS    #############
+       #############                ##############
+       ###########################################   -->
+
+<!-- ###### Yoyo ###### -->
+<movement name="animation0" speed="5400" play_mode="play_once" > <!-- 5400 = 36 (frames of yoyo animation) * 150ms (speed of the yoyos animation) -->
+	<collision_rect left="5" right="5" top="10" bottom="2"/>
+	<frame>
+		<member type="arm-right" angle="-90"/>
+		<member type="yoyo" angle="90"/>
+	</frame>
+</movement>
+
+<!-- ###### Tired ###### -->
+<movement name="animation1" speed="100" play_mode="play_once" >
+	<collision_rect left="5" right="5" top="10" bottom="2"/>
+	<frame>
+		<member type="body" angle="0"/>
+		<member type="head" angle="0"/>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="0"/>
+		<member type="foot-left" angle="0"/>
+		<member type="foot-right" angle="0"/>
+	</frame>
+	<frame>
+		<member type="body" angle="-2"/>
+		<member type="head" angle="-23"/>
+		<member type="arm-left" angle="-47"/>
+		<member type="arm-right" angle="-47"/>
+		<member type="foot-left" angle="2"/>
+		<member type="foot-right" angle="2"/>
+	</frame>
+	<frame>
+		<member type="body" angle="-4"/>
+		<member type="head" angle="-46"/>
+		<member type="arm-left" angle="-94"/>
+		<member type="arm-right" angle="-94"/>
+		<member type="foot-left" angle="4"/>
+		<member type="foot-right" angle="4"/>
+	</frame>
+	<frame>
+		<member type="body" angle="-6"/>
+		<member type="head" angle="-69"/>
+		<member type="arm-left" angle="-141"/>
+		<member type="arm-right" angle="-141"/>
+		<member type="foot-left" angle="6"/>
+		<member type="foot-right" angle="6"/>
+	</frame>
+	<frame>
+		<member type="body" angle="-10"/>
+		<member type="head" angle="-95"/>
+		<member type="arm-left" angle="-190"/>
+		<member type="arm-right" angle="-190"/>
+		<member type="foot-left" angle="10"/>
+		<member type="foot-right" angle="10"/>
+	</frame>
+	<frame>
+		<member type="body" angle="-10"/>
+		<member type="head" angle="-95"/>
+		<member type="arm-left" angle="-190"/>
+		<member type="arm-right" angle="-190"/>
+		<member type="foot-left" angle="10"/>
+		<member type="foot-right" angle="10"/>
+	</frame>
+	<frame>
+		<member type="body" angle="-10"/>
+		<member type="head" angle="-95"/>
+		<member type="arm-left" angle="-190"/>
+		<member type="arm-right" angle="-190"/>
+		<member type="foot-left" angle="10"/>
+		<member type="foot-right" angle="10"/>
+	</frame>
+	<frame>
+		<member type="body" angle="-6"/>
+		<member type="head" angle="-69"/>
+		<member type="arm-left" angle="-141"/>
+		<member type="arm-right" angle="-141"/>
+		<member type="foot-left" angle="6"/>
+		<member type="foot-right" angle="6"/>
+	</frame>
+	<frame>
+		<member type="body" angle="-4"/>
+		<member type="head" angle="-46"/>
+		<member type="arm-left" angle="-94"/>
+		<member type="arm-right" angle="-94"/>
+		<member type="foot-left" angle="4"/>
+		<member type="foot-right" angle="4"/>
+	</frame>
+	<frame>
+		<member type="body" angle="-2"/>
+		<member type="head" angle="-23"/>
+		<member type="arm-left" angle="-47"/>
+		<member type="arm-right" angle="-47"/>
+		<member type="foot-left" angle="2"/>
+		<member type="foot-right" angle="2"/>
+	</frame>
+	<frame>
+		<member type="body" angle="0"/>
+		<member type="head" angle="0"/>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="0"/>
+		<member type="foot-left" angle="0"/>
+		<member type="foot-right" angle="0"/>
+	</frame>
+</movement>
+
+<!-- ###### Hula-hoop ###### -->
+<movement name="animation2" speed="50" play_mode="play_once" >
+	<collision_rect left="5" right="5" top="10" bottom="2" />
+	<!-- begining -->
+	<frame>
+		<member type="arm-left" angle="-110"/>
+		<member type="arm-right" angle="110"/>
+		<member type="body" angle="0"/>
+		<member type="hoop" angle="0" dx="-5"/>
+		<member type="hula" angle="0" dx="-5"/>
+		<member type="foot-left" angle="0"/>
+		<member type="foot-right" angle="0"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-120"/>
+		<member type="arm-right" angle="120"/>
+		<member type="body" angle="10" dx="1"/>
+		<member type="hoop" angle="-5" dx="-4"/>
+		<member type="hula" angle="-5" dx="-4"/>
+		<member type="foot-left" angle="-10" dy="-1"/>
+		<member type="foot-right" angle="-10" dy="-1"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-130"/>
+		<member type="arm-right" angle="130"/>
+		<member type="body" angle="20" dx="2"/>
+		<member type="hoop" angle="-10" dx="-2"/>
+		<member type="hula" angle="-10" dx="-2"/>
+		<member type="foot-left" angle="-20" dy="-2"/>
+		<member type="foot-right" angle="-20" dy="-2"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-140"/>
+		<member type="arm-right" angle="140"/>
+		<member type="body" angle="30" dx="3"/>
+		<member type="hoop" angle="-15" dx="0"/>
+		<member type="hula" angle="-15" dx="0"/>
+		<member type="foot-left" angle="-30" dy="-3"/>
+		<member type="foot-right" angle="-30" dy="-3"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-130"/>
+		<member type="arm-right" angle="130"/>
+		<member type="body" angle="20" dx="2"/>
+		<member type="hoop" angle="-10" dx="2"/>
+		<member type="hula" angle="-10" dx="2"/>
+		<member type="foot-left" angle="-20" dy="-2"/>
+		<member type="foot-right" angle="-20" dy="-2"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-120"/>
+		<member type="arm-right" angle="120"/>
+		<member type="body" angle="10" dx="1"/>
+		<member type="hoop" angle="-5" dx="4"/>
+		<member type="hula" angle="-5" dx="4"/>
+		<member type="foot-left" angle="-10" dy="-1"/>
+		<member type="foot-right" angle="-10" dy="-1"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-110"/>
+		<member type="arm-right" angle="110"/>
+		<member type="body" angle="0" dx="0"/>
+		<member type="hoop" angle="0" dx="5"/>
+		<member type="hula" angle="0" dx="5"/>
+		<member type="foot-left" angle="0"/>
+		<member type="foot-right" angle="0"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-105"/>
+		<member type="arm-right" angle="105"/>
+		<member type="body" angle="-10" dx="-1"/>
+		<member type="hoop" angle="5" dx="4"/>
+		<member type="hula" angle="5" dx="4"/>
+		<member type="foot-left" angle="10" dy="1"/>
+		<member type="foot-right" angle="10" dy="1"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-100"/>
+		<member type="arm-right" angle="100"/>
+		<member type="body" angle="-20" dx="-2"/>
+		<member type="hoop" angle="10" dx="2"/>
+		<member type="hula" angle="10" dx="2"/>
+		<member type="foot-left" angle="20" dy="2"/>
+		<member type="foot-right" angle="20" dy="2"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-95"/>
+		<member type="arm-right" angle="95"/>
+		<member type="body" angle="-30" dx="-3"/>
+		<member type="hoop" angle="15" dx="0"/>
+		<member type="hula" angle="15" dx="0"/>
+		<member type="foot-left" angle="30" dy="3"/>
+		<member type="foot-right" angle="30" dy="3"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-100"/>
+		<member type="arm-right" angle="100"/>
+		<member type="body" angle="-20" dx="-2"/>
+		<member type="hoop" angle="10" dx="-2"/>
+		<member type="hula" angle="10" dx="-2"/>
+		<member type="foot-left" angle="20" dy="2"/>
+		<member type="foot-right" angle="20" dy="2"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-105"/>
+		<member type="arm-right" angle="105"/>
+		<member type="body" angle="-10" dx="-1"/>
+		<member type="hoop" angle="5" dx="-4"/>
+		<member type="hula" angle="5" dx="-4"/>
+		<member type="foot-left" angle="10" dy="1"/>
+		<member type="foot-right" angle="10" dy="1"/>
+	</frame>
+	<!-- begining -->
+	<frame>
+		<member type="arm-left" angle="-110"/>
+		<member type="arm-right" angle="110"/>
+		<member type="body" angle="0"/>
+		<member type="hoop" angle="0" dx="-5"/>
+		<member type="hula" angle="0" dx="-5"/>
+		<member type="foot-left" angle="0"/>
+		<member type="foot-right" angle="0"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-120"/>
+		<member type="arm-right" angle="120"/>
+		<member type="body" angle="10" dx="1"/>
+		<member type="hoop" angle="-5" dx="-4"/>
+		<member type="hula" angle="-5" dx="-4"/>
+		<member type="foot-left" angle="-10" dy="-1"/>
+		<member type="foot-right" angle="-10" dy="-1"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-130"/>
+		<member type="arm-right" angle="130"/>
+		<member type="body" angle="20" dx="2"/>
+		<member type="hoop" angle="-10" dx="-2"/>
+		<member type="hula" angle="-10" dx="-2"/>
+		<member type="foot-left" angle="-20" dy="-2"/>
+		<member type="foot-right" angle="-20" dy="-2"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-140"/>
+		<member type="arm-right" angle="140"/>
+		<member type="body" angle="30" dx="3"/>
+		<member type="hoop" angle="-15" dx="0"/>
+		<member type="hula" angle="-15" dx="0"/>
+		<member type="foot-left" angle="-30" dy="-3"/>
+		<member type="foot-right" angle="-30" dy="-3"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-130"/>
+		<member type="arm-right" angle="130"/>
+		<member type="body" angle="20" dx="2"/>
+		<member type="hoop" angle="-10" dx="2"/>
+		<member type="hula" angle="-10" dx="2"/>
+		<member type="foot-left" angle="-20" dy="-2"/>
+		<member type="foot-right" angle="-20" dy="-2"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-120"/>
+		<member type="arm-right" angle="120"/>
+		<member type="body" angle="10" dx="1"/>
+		<member type="hoop" angle="-5" dx="4"/>
+		<member type="hula" angle="-5" dx="4"/>
+		<member type="foot-left" angle="-10" dy="-1"/>
+		<member type="foot-right" angle="-10" dy="-1"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-110"/>
+		<member type="arm-right" angle="110"/>
+		<member type="body" angle="0" dx="0"/>
+		<member type="hoop" angle="0" dx="5"/>
+		<member type="hula" angle="0" dx="5"/>
+		<member type="foot-left" angle="0"/>
+		<member type="foot-right" angle="0"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-105"/>
+		<member type="arm-right" angle="105"/>
+		<member type="body" angle="-10" dx="-1"/>
+		<member type="hoop" angle="5" dx="4"/>
+		<member type="hula" angle="5" dx="4"/>
+		<member type="foot-left" angle="10" dy="1"/>
+		<member type="foot-right" angle="10" dy="1"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-100"/>
+		<member type="arm-right" angle="100"/>
+		<member type="body" angle="-20" dx="-2"/>
+		<member type="hoop" angle="10" dx="2"/>
+		<member type="hula" angle="10" dx="2"/>
+		<member type="foot-left" angle="20" dy="2"/>
+		<member type="foot-right" angle="20" dy="2"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-95"/>
+		<member type="arm-right" angle="95"/>
+		<member type="body" angle="-30" dx="-3"/>
+		<member type="hoop" angle="15" dx="0"/>
+		<member type="hula" angle="15" dx="0"/>
+		<member type="foot-left" angle="30" dy="3"/>
+		<member type="foot-right" angle="30" dy="3"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-100"/>
+		<member type="arm-right" angle="100"/>
+		<member type="body" angle="-20" dx="-2"/>
+		<member type="hoop" angle="10" dx="-2"/>
+		<member type="hula" angle="10" dx="-2"/>
+		<member type="foot-left" angle="20" dy="2"/>
+		<member type="foot-right" angle="20" dy="2"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-105"/>
+		<member type="arm-right" angle="105"/>
+		<member type="body" angle="-10" dx="-1"/>
+		<member type="hoop" angle="5" dx="-4"/>
+		<member type="hula" angle="5" dx="-4"/>
+		<member type="foot-left" angle="10" dy="1"/>
+		<member type="foot-right" angle="10" dy="1"/>
+	</frame>
+	<!-- begining -->
+	<frame>
+		<member type="arm-left" angle="-110"/>
+		<member type="arm-right" angle="110"/>
+		<member type="body" angle="0"/>
+		<member type="hoop" angle="0" dx="-5"/>
+		<member type="hula" angle="0" dx="-5"/>
+		<member type="foot-left" angle="0"/>
+		<member type="foot-right" angle="0"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-120"/>
+		<member type="arm-right" angle="120"/>
+		<member type="body" angle="10" dx="1"/>
+		<member type="hoop" angle="-5" dx="-4"/>
+		<member type="hula" angle="-5" dx="-4"/>
+		<member type="foot-left" angle="-10" dy="-1"/>
+		<member type="foot-right" angle="-10" dy="-1"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-130"/>
+		<member type="arm-right" angle="130"/>
+		<member type="body" angle="20" dx="2"/>
+		<member type="hoop" angle="-10" dx="-2"/>
+		<member type="hula" angle="-10" dx="-2"/>
+		<member type="foot-left" angle="-20" dy="-2"/>
+		<member type="foot-right" angle="-20" dy="-2"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-140"/>
+		<member type="arm-right" angle="140"/>
+		<member type="body" angle="30" dx="3"/>
+		<member type="hoop" angle="-15" dx="0"/>
+		<member type="hula" angle="-15" dx="0"/>
+		<member type="foot-left" angle="-30" dy="-3"/>
+		<member type="foot-right" angle="-30" dy="-3"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-130"/>
+		<member type="arm-right" angle="130"/>
+		<member type="body" angle="20" dx="2"/>
+		<member type="hoop" angle="-10" dx="2"/>
+		<member type="hula" angle="-10" dx="2"/>
+		<member type="foot-left" angle="-20" dy="-2"/>
+		<member type="foot-right" angle="-20" dy="-2"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-120"/>
+		<member type="arm-right" angle="120"/>
+		<member type="body" angle="10" dx="1"/>
+		<member type="hoop" angle="-5" dx="4"/>
+		<member type="hula" angle="-5" dx="4"/>
+		<member type="foot-left" angle="-10" dy="-1"/>
+		<member type="foot-right" angle="-10" dy="-1"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-110"/>
+		<member type="arm-right" angle="110"/>
+		<member type="body" angle="0" dx="0"/>
+		<member type="hoop" angle="0" dx="5"/>
+		<member type="hula" angle="0" dx="5"/>
+		<member type="foot-left" angle="0"/>
+		<member type="foot-right" angle="0"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-105"/>
+		<member type="arm-right" angle="105"/>
+		<member type="body" angle="-10" dx="-1"/>
+		<member type="hoop" angle="5" dx="4"/>
+		<member type="hula" angle="5" dx="4"/>
+		<member type="foot-left" angle="10" dy="1"/>
+		<member type="foot-right" angle="10" dy="1"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-100"/>
+		<member type="arm-right" angle="100"/>
+		<member type="body" angle="-20" dx="-2"/>
+		<member type="hoop" angle="10" dx="2"/>
+		<member type="hula" angle="10" dx="2"/>
+		<member type="foot-left" angle="20" dy="2"/>
+		<member type="foot-right" angle="20" dy="2"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-95"/>
+		<member type="arm-right" angle="95"/>
+		<member type="body" angle="-30" dx="-3"/>
+		<member type="hoop" angle="15" dx="0"/>
+		<member type="hula" angle="15" dx="0"/>
+		<member type="foot-left" angle="30" dy="3"/>
+		<member type="foot-right" angle="30" dy="3"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-100"/>
+		<member type="arm-right" angle="100"/>
+		<member type="body" angle="-20" dx="-2"/>
+		<member type="hoop" angle="10" dx="-2"/>
+		<member type="hula" angle="10" dx="-2"/>
+		<member type="foot-left" angle="20" dy="2"/>
+		<member type="foot-right" angle="20" dy="2"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="-105"/>
+		<member type="arm-right" angle="105"/>
+		<member type="body" angle="-10" dx="-1"/>
+		<member type="hoop" angle="5" dx="-4"/>
+		<member type="hula" angle="5" dx="-4"/>
+		<member type="foot-left" angle="10" dy="1"/>
+		<member type="foot-right" angle="10" dy="1"/>
+	</frame>
+</movement>
+
+
+
+
+
+<!--   ###########################################
+       ##############               ##############
+       #############     WEAPONS     #############
+       ##############               ##############
+       ###########################################   -->
+
+<!-- ###### Ninja-rope ###### -->
+<movement name="ninja-rope" speed="100">
+	<collision_rect left="5" right="5" top="10" bottom="2"/>
+	<frame>
+		<member type="body" angle="-90" follow_speed="true" follow_direction="true"/>
+		<member type="arm-left" angle="-10"/>
+		<member type="arm-right" angle="-90"/>
+		<member type="foot-left" angle="-45"/>
+		<member type="foot-right" angle="-45"/>
+	</frame>
+</movement>
+
+<!-- ###### Parachute ###### -->
+<movement name="parachute" speed="180">
+	<collision_rect left="5" right="5" top="10" bottom="2" />
+	<frame>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="180"/>
+		<member type="foot-left" angle="45"/>
+		<member type="foot-right" angle="45"/>
+		<member type="weapon" dx="-3" dy="12"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="175"/>
+		<member type="foot-left" angle="45"/>
+		<member type="foot-right" angle="45"/>
+		<member type="body" angle="5"/>
+		<member type="weapon" dx="-3" dy="12"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="170"/>
+		<member type="foot-left" angle="45"/>
+		<member type="foot-right" angle="45"/>
+		<member type="body" angle="10"/>
+		<member type="weapon" dx="-3" dy="12"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="175"/>
+		<member type="foot-left" angle="45"/>
+		<member type="foot-right" angle="45"/>
+		<member type="body" angle="5"/>
+		<member type="weapon" dx="-3" dy="12"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="180"/>
+		<member type="foot-left" angle="45"/>
+		<member type="foot-right" angle="45"/>
+		<member type="weapon" dx="-3" dy="12"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="185"/>
+		<member type="foot-left" angle="45"/>
+		<member type="foot-right" angle="45"/>
+		<member type="body" angle="-5"/>
+		<member type="weapon" dx="-3" dy="12"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="190"/>
+		<member type="foot-left" angle="45"/>
+		<member type="foot-right" angle="45"/>
+		<member type="body" angle="-10"/>
+		<member type="weapon" dx="-3" dy="12"/>
+	</frame>
+	<frame>
+		<member type="arm-left" angle="0"/>
+		<member type="arm-right" angle="185"/>
+		<member type="foot-left" angle="45"/>
+		<member type="foot-right" angle="45"/>
+		<member type="body" angle="-5"/>
+		<member type="weapon" dx="-3" dy="12"/>
+	</frame>
+</movement>
+
+<!-- ###### Jetpack - no fire ###### -->
+<movement name="jetpack-nofire" speed="100"> <!-- When jetpack is used, but no key is pressed -->
+	<collision_rect left="5" right="5" top="10" bottom="2"/>
+	<frame>
+		<member type="arm-left" follow_speed="true"/>
+		<member type="arm-right" follow_speed="true"/>
+		<member type="foot-left" follow_speed="true"/>
+		<member type="foot-right" follow_speed="true"/>
+		<member type="jetpack-fire" dy="-5"/> <!-- hide the fire under the jetpack -->
+	</frame>
+</movement>
+
+<!-- ###### Jetpack - fire ###### -->
+<movement name="jetpack-fire" speed="100"> <!-- When jetpack is used and a key is pressed -->
+	<collision_rect left="5" right="5" top="10" bottom="2"/>
+	<frame>
+		<member type="arm-left" follow_speed="true"/>
+		<member type="arm-right" follow_speed="true"/>
+		<member type="foot-left" follow_speed="true"/>
+		<member type="foot-right" follow_speed="true"/>
+	</frame>
+	<frame>
+		<member type="jetpack-fire-right" dy="7"/>
+		<member type="jetpack-fire-left" dy="7"/>
+		<member type="arm-left" follow_speed="true"/>
+		<member type="arm-right" follow_speed="true"/>
+		<member type="foot-left" follow_speed="true"/>
+		<member type="foot-right" follow_speed="true"/>
+	</frame>
+	<frame>
+		<member type="arm-left" follow_speed="true"/>
+		<member type="arm-right" follow_speed="true"/>
+		<member type="foot-left" follow_speed="true"/>
+		<member type="foot-right" follow_speed="true"/>
+	</frame>
+	<frame>
+		<member type="jetpack-fire-right" dy="7"/>
+		<member type="jetpack-fire-left" dy="7"/>
+		<member type="arm-left" follow_speed="true"/>
+		<member type="arm-right" follow_speed="true"/>
+		<member type="foot-left" follow_speed="true"/>
+		<member type="foot-right" follow_speed="true"/>
+	</frame>
+	<frame>
+		<member type="arm-left" follow_speed="true"/>
+		<member type="arm-right" follow_speed="true"/>
+		<member type="foot-left" follow_speed="true"/>
+		<member type="foot-right" follow_speed="true"/>
+	</frame>
+</movement>
+
+<!-- ###### Airhammer ###### -->
+<movement name="weapon-airhammer-begin-shoot" speed="100" play_mode="play_once" >
+	<collision_rect left="5" right="5" top="10" bottom="2" />
+	<frame>
+		<member type="construct" angle="12" dy="-4"/>
+	</frame>
+</movement>
+
+<!-- ###### Grenade ###### -->
+<movement name="weapon-grenade-begin-shoot" speed="30" play_mode="play_once" >
+	<collision_rect left="5" right="5" top="10" bottom="2" />
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="0"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-50"/>
+		<member type="body" angle="-10"/>
+		<member type="foot-right" angle="10"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-100"/>
+		<member type="body" angle="-15"/>
+		<member type="foot-right" angle="15"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-130"/>
+		<member type="body" angle="-20"/>
+		<member type="foot-right" angle="20"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-150"/>
+		<member type="body" angle="-20"/>
+		<member type="foot-right" angle="20"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-160"/>
+		<member type="body" angle="-20"/>
+		<member type="foot-right" angle="20"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-170"/>
+		<member type="body" angle="-20"/>
+		<member type="foot-right" angle="20"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-180"/>
+		<member type="body" angle="-20"/>
+		<member type="foot-right" angle="20"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-180"/>
+		<member type="body" angle="-20"/>
+		<member type="foot-right" angle="20"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-180"/>
+		<member type="body" angle="-20"/>
+		<member type="foot-right" angle="20"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-180"/>
+		<member type="body" angle="-20"/>
+		<member type="foot-right" angle="20"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-180"/>
+		<member type="body" angle="-20"/>
+		<member type="foot-right" angle="20"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-130"/>
+		<member type="body" angle="-20"/>
+		<member type="foot-right" angle="20"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-90"/>
+		<member type="body" angle="-15"/>
+		<member type="foot-right" angle="15"/>
+	</frame>
+</movement>
+
+<movement name="weapon-grenade-end-shoot" speed="30" play_mode="play_once" >
+	<collision_rect left="5" right="5" top="10" bottom="2" />
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-90"/>
+		<member type="body" angle="-15"/>
+		<member type="foot-right" angle="15"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-45"/>
+		<member type="body" angle="-10"/>
+		<member type="foot-right" angle="10"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-10"/>
+		<member type="body" angle="-5"/>
+		<member type="foot-right" angle="5"/>
+	</frame>
+</movement>
+
+<!-- ###### Bounceball ###### -->
+<movement name="weapon-bounce_ball-begin-shoot" speed="50" play_mode="play_once" >
+	<collision_rect left="5" right="5" top="10" bottom="2" />
+	<frame>
+		<member type="head" angle="0"/>
+		<member type="arm-right" angle="0"/>
+	</frame>
+	<frame>
+		<member type="head" angle="0"/>
+		<member type="arm-right" angle="-45"/>
+	</frame>
+	<frame>
+		<member type="head" angle="0"/>
+		<member type="arm-right" angle="-70"/>
+	</frame>
+	<frame>
+		<member type="head" angle="0"/>
+		<member type="arm-right" angle="-80"/>
+	</frame>
+	<frame>
+		<member type="head" angle="-5"/>
+		<member type="arm-right" angle="-90"/>
+		<member type="weapon" dy="-4"/>
+	</frame>
+	<frame>
+		<member type="head" angle="-15"/>
+		<member type="arm-right" angle="-95"/>
+		<member type="weapon" dy="-7"/>
+	</frame>
+	<frame>
+		<member type="head" angle="-20"/>
+		<member type="arm-right" angle="-80"/>
+		<member type="weapon" dy="-11" dx="-1"/>
+		<member type="body" angle="5"/>
+		<member type="foot-left" angle="-5"/>
+		<member type="foot-right" angle="5"/>
+	</frame>
+	<frame>
+		<member type="head" angle="-30"/>
+		<member type="arm-right" angle="-40"/>
+		<member type="weapon" dy="-17" dx="1"/>
+		<member type="body" angle="15"/>
+		<member type="foot-left" angle="-15"/>
+		<member type="foot-right" angle="15"/>
+	</frame>
+	<frame>
+		<member type="head" angle="-20"/>
+		<member type="arm-right" angle="0"/>
+		<member type="weapon" dy="-17" dx="6"/>
+		<member type="body" angle="30"/>
+		<member type="foot-left" angle="-30"/>
+		<member type="foot-right" angle="30"/>
+	</frame>
+	<frame>
+		<member type="head" angle="-15"/>
+		<member type="arm-right" angle="40"/>
+		<member type="arm-left" angle="40"/>
+		<member type="weapon" dy="-9" dx="10"/>
+		<member type="body" angle="25"/>
+		<member type="foot-left" angle="-25"/>
+		<member type="foot-right" angle="25"/>
+	</frame>
+	<frame>
+		<member type="head" angle="-5"/>
+		<member type="arm-right" angle="80"/>
+		<member type="arm-left" angle="80"/>
+		<member type="weapon" dy="0" dx="12"/>
+		<member type="body" angle="20"/>
+		<member type="foot-left" angle="-20"/>
+		<member type="foot-right" angle="20"/>
+	</frame>
+	<frame>
+		<member type="head" angle="0"/>
+		<member type="arm-right" angle="120"/>
+		<member type="arm-left" angle="120"/>
+		<member type="weapon" dy="8" dx="12"/>
+		<member type="body" angle="10"/>
+		<member type="foot-left" angle="-10"/>
+		<member type="foot-right" angle="10"/>
+	</frame>
+	<frame>
+		<member type="head" angle="20"/>
+		<member type="arm-right" angle="120"/>
+		<member type="arm-left" angle="120"/>
+		<member type="weapon" dy="10" dx="14"/>
+		<member type="body" angle="0"/>
+		<member type="foot-left" angle="0"/>
+		<member type="foot-right" angle="0"/>
+	</frame>
+</movement>
+
+<movement name="weapon-bounce_ball-end-shoot" speed="50" play_mode="play_once" >
+	<collision_rect left="5" right="5" top="10" bottom="2" />
+	<frame>
+		<member type="head" angle="40"/>
+		<member type="arm-right" angle="120"/>
+		<member type="arm-left" angle="120"/>
+		<member type="body" angle="-10"/>
+		<member type="foot-left" angle="10"/>
+		<member type="foot-right" angle="-10"/>
+	</frame>
+	<frame>
+		<member type="head" angle="20"/>
+		<member type="arm-right" angle="110"/>
+		<member type="arm-left" angle="110"/>
+		<member type="body" angle="5"/>
+		<member type="foot-left" angle="-5"/>
+		<member type="foot-right" angle="5"/>
+	</frame>
+	<frame>
+		<member type="head" angle="10"/>
+		<member type="arm-right" angle="90"/>
+		<member type="arm-left" angle="90"/>
+		<member type="body" angle="10"/>
+		<member type="foot-left" angle="-10"/>
+		<member type="foot-right" angle="10"/>
+	</frame>
+	<frame>
+		<member type="head" angle="0"/>
+		<member type="arm-right" angle="60"/>
+		<member type="arm-left" angle="60"/>
+		<member type="body" angle="12"/>
+		<member type="foot-left" angle="-12"/>
+		<member type="foot-right" angle="12"/>
+	</frame>
+	<frame>
+		<member type="arm-right" angle="30"/>
+		<member type="arm-left" angle="30"/>
+		<member type="body" angle="10"/>
+		<member type="foot-left" angle="-10"/>
+		<member type="foot-right" angle="10"/>
+	</frame>
+	<frame>
+		<member type="arm-right" angle="20"/>
+		<member type="arm-left" angle="20"/>
+		<member type="body" angle="5"/>
+		<member type="foot-left" angle="-5"/>
+		<member type="foot-right" angle="5"/>
+	</frame>
+	<frame>
+		<member type="arm-right" angle="10"/>
+		<member type="arm-left" angle="10"/>
+	</frame>
+</movement>
+
+<!-- ###### Bazooka ###### -->
+<movement name="weapon-bazooka-select" speed="50" play_mode="play_once">
+	<collision_rect left="5" right="5" top="10" bottom="2" />
+	<frame>
+		<member type="foot-left" dy="0"/>
+		<member type="foot-right" angle="0"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="0"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-1"/>
+		<member type="foot-right" angle="15" dx="0"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="0"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-1"/>
+		<member type="foot-right" angle="30" dy="-1" dx="0"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-10"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="40" dy="-1" dx="1"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-30"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="50" dy="-1" dx="1"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-120"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="70" dy="-2" dx="1"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-120"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="70" dy="-2" dx="2"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-120"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="70" dy="-2" dx="2"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-120"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="70" dy="-2" dx="2"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-120"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="70" dy="-2" dx="2"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-120"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="70" dy="-2" dx="2"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-120"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="70" dy="-2" dx="2"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-120"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="70" dy="-2" dx="2"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-120"/>
+	</frame>
+</movement>
+
+<movement name="weapon-bazooka-end-shoot" speed="70" play_mode="play_once" >
+	<collision_rect left="5" right="5" top="10" bottom="2" />
+	<frame>
+		<member type="foot-left" dy="-4"/>
+		<member type="foot-right" angle="90" dy="-4" dx="4"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-200"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-3"/>
+		<member type="foot-right" angle="90" dy="-3" dx="4"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-190"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="90" dy="-2" dx="4"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-180"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="90" dy="-2" dx="4"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-180"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="90" dy="-2" dx="4"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-180"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="90" dy="-2" dx="4"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-180"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="90" dy="-2" dx="4"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-180"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="60" dy="-1" dx="3"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-120"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-2"/>
+		<member type="foot-right" angle="45" dy="-1" dx="3"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-90"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-1"/>
+		<member type="foot-right" angle="30" dy="-1" dx="2"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-60"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="-1"/>
+		<member type="foot-right" angle="15"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-30"/>
+	</frame>
+	<frame>
+		<member type="foot-left" dy="0"/>
+		<member type="foot-right" angle="0"/>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="0"/>
+	</frame>
+</movement>
+
+<!-- ###### Uzi ###### -->
+<movement name="weapon-uzi-end-shoot" speed="100" play_mode="play_once" >
+	<collision_rect left="5" right="5" top="10" bottom="2" />
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-15"/>
+	</frame>
+</movement>
+
+<!-- ###### Dynamite ###### -->
+<movement name="weapon-dynamite-begin-shoot" speed="30" play_mode="play_once" >
+	<collision_rect left="5" right="5" top="10" bottom="2" />
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="0"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="50"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="75"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="90"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="75"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="50"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="0"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-30"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-60"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-90"/>
+	</frame>
+</movement>
+
+<movement name="weapon-dynamite-end-shoot" speed="30" play_mode="play_once" >
+	<collision_rect left="5" right="5" top="10" bottom="2" />
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-110"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-90"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-60"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-30"/>
+	</frame>
+</movement>
+
+<!-- ###### Mine ###### -->
+<movement name="weapon-minelauncher-begin-shoot" speed="60" play_mode="play_once" >
+	<collision_rect left="5" right="5" top="10" bottom="2" />
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="0"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-30"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-60"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-90"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-90"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-90"/>
+	</frame>
+</movement>
+
+<movement name="weapon-minelauncher-end-shoot" speed="30" play_mode="play_once" >
+	<collision_rect left="5" right="5" top="10" bottom="2" />
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-90"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-90"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-90"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-90"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-90"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-60"/>
+	</frame>
+	<frame>
+		<member type="head" follow_half_crosshair="true"/>
+		<member type="arm-right" follow_half_crosshair="true" angle="-30"/>
+	</frame>
+</movement>
+
+<!-- ###### SuperTux ###### -->
+<movement name="weapon-tux-end-shoot" speed="50" play_mode="play_once" >
+	<collision_rect left="5" right="5" top="10" bottom="2" />
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-135" />
+		<member type="arm-left" angle="-45" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-120" />
+		<member type="arm-left" angle="-60" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-90" />
+		<member type="arm-left" angle="-90" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-120" />
+		<member type="arm-left" angle="-60" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-135" />
+		<member type="arm-left" angle="-45" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-120" />
+		<member type="arm-left" angle="-60" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-90" />
+		<member type="arm-left" angle="-90" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-120" />
+		<member type="arm-left" angle="-60" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-135" />
+		<member type="arm-left" angle="-45" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-120" />
+		<member type="arm-left" angle="-60" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-90" />
+		<member type="arm-left" angle="-90" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-120" />
+		<member type="arm-left" angle="-60" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-135" />
+		<member type="arm-left" angle="-45" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-120" />
+		<member type="arm-left" angle="-60" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-90" />
+		<member type="arm-left" angle="-90" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-120" />
+		<member type="arm-left" angle="-60" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-135" />
+		<member type="arm-left" angle="-45" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-120" />
+		<member type="arm-left" angle="-60" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-90" />
+		<member type="arm-left" angle="-90" />
+	</frame>
+	<frame>
+		<member type="head" angle="-90" />
+		<member type="arm-right" angle="-120" />
+		<member type="arm-left" angle="-60" />
+	</frame>
+</movement>
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <!DOCTYPE resources SYSTEM "../random.dtd" []> -->
+<resources>
+  <random>1</random>
+  <generator>2</generator>
+  <author>
+    <name>Pasi Kallinen</name>
+    <nickname>paxed</nickname>
+    <email>paxed AT alt DOT org</email>
+    <country>Finland</country>
+  </author>
+
+  <surface name="sky" file="sky.jpg" />
+  <surface name="map" file="background.png" />
+  <surface name="preview" file="preview.jpg" />
+  <surface name="texture" file="texture.png" />
+  <color name="border_color" r="175" g="100" b="100" a="255" />
+  <name>Random Amoebas</name>
+  <water>1</water>
+  <nb_mine>10</nb_mine>
+  <is_open>1</is_open>
+
+  <!-- pad is given in pixel count. -->
+  <add_pad>1</add_pad>
+  <point name="upper_left_pad" x="500" y="250" />
+  <point name="lower_right_pad" x="500" y="0" />
+
+</resources>
+

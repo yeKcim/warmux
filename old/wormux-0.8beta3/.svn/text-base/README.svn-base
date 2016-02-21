@@ -1,0 +1,88 @@
+                     Wormux
+                     ======
+
+These are the release notes for Wormux
+
+1/ What is Wormux ?
+===================
+
+Have the mascots of your favorite free software battle in the Wormux
+arena. Using dynamite, grenades, baseball bats and other weapons...
+exterminate your opponent in a 2D toon style scenery and
+a funny environment.
+
+Each player (2 minimum, on the same PC) controls the team of his
+choice (tux, gnu, firefox, wilber,...) and must destroy his
+adversary using more or less casual weapons.
+
+Although a minimum of strategy is required to vanquish, Wormux is
+pre-eminently a "convivial mass murder" game where, turn by turn, each
+member of each team attempts to produce a maximum of damage to his
+opponents.
+
+2/ How to play ?
+================
+
+Understanding how to play Wormux is very simple.
+
+2.1/ Controls
+=============
+
+* Key tab: Change active character
+* Key 'c': Recenter to active character
+* Key left/right: walk to the left / to the right
+* Key up/down: Move cursor (used by the bazooka, gun, etc.), ie. shoot angle
+* Key space: Shoot. Exceptions: the parachute is automaticly deployed, 
+  and teleportation is made with mouse (right) click. 
+  Warning: Automatic bazooka need a target first (select it with left click)
+* Mouse right click: Show/hide weapons menu
+* Mouse left click: Select target for teleportation or automatic bazooka
+* Mouse left click on a character: Make it active (if it's allowed)
+* Key F1, F2, .. F5: Change weapon in category 1, 2, ... 5
+* Key escape : Leave the game (confirmation necessary)
+* Key 'b' : ("Backwards") jump
+* Key enter: ("Horizontal") jump
+* Key backspace: ("Vertical") jump
+* Mouse move next to screen borders: Move the map
+* Key F10 : Toggle Fullscreen
+
+2.2/ Additional help
+====================
+
+On the website, you will find some useful help:
+* List of weapons: http://wormux.org/wiki/en/weapons.php
+* List of maps: http://wormux.org/wiki/en/maps.php
+  * How to write your own map: http://wormux.org/wiki/Create_your_own_map.php
+* List of skins: http://wormux.org/wiki/en/skins.php
+* Forum: http://www.wormux.org/forum/
+
+3/ On which system can I play out-of-the-box ?
+==============================================
+
+Wormux is available out-of-the-box on a wide variety of systems  (have 
+a look at http://wormux.org/wiki/packages.php for an up-to-date list):
+
+* Linux based systems:
+  * Debian (Sarge/Etch/Sid)
+  * Ubuntu (Dapper/Edgy)
+  * Fedora Core (4/5)
+  * Mandriva (2006/2007)
+  * Gentoo
+  * Slackware
+  * SourceMage
+  * PLD
+  * Crux
+  * Sorcerer Grimoire
+
+* FreeBSD
+
+* Windows
+
+* Mac OSX
+
+
+4/ Misc links
+=============
+
+* Official web site: http://wormux.org/
+* Project management page: https://gna.org/projects/wormux/

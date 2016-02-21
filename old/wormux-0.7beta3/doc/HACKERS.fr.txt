@@ -1,0 +1,82 @@
+Wormux 0.7
+Guide développeur de Wormux (Français)
+--------------------------------------
+
+Si vous vous sentez capable de nous aidez, envoyez-nous s'il vous plais
+un email à l'adresse :
+
+wormux-dev _AT_ gna.org (N'oubliez pas de replacer "_AT_" par "@")
+
+Ou, contactez-nous sur le canal #wormux sur IRC (irc.freenode.net).
+
+Toutes les contributions sont les bienvenues :
+- Code
+- Graphiques
+- Retours d'expériences (Opinions/Fonctionnalités/etc.)
+- Rapports de bogues (voir BUGS)
+
+
+===============
+* Développement
+===============
+
+La correction de bogues représente une large part du développement de Wormux. Un
+certains nombres d'outils peuvent être utilisé pour les trouver...
+
+* Les messages de débuggages
+----------------------------
+
+Pour mettre en place un meilleur débuggage du code source, un certain nombre de
+fichiers sources possèdent des "debug switches" (boucle de débuggage) comme :
+	#define DEBUG_...
+
+Exemple du fichier obj_physique.cpp :
+	#ifdef DEBUG
+
+	//# define DEBUG_CHG_ETAT
+	//# define DEBUG_MSG_PHYSIQUE
+	[...]
+	#endif
+
+En décommentant "#define DEBUG_CHG_ETAT", les messages de débugagges seront
+écrit sur la console. Ils sont vraiment utile si quelque chose ne fonctionne pas
+correctement.
+
+* debug.cpp
+-----------
+
+Ce fichier est conçu pour être un outil additionnel pour aider les gens à
+débuger Wormux. En particulier, il peut permettre l'affichage d'un grand nombre
+d'informations mise à jour en temps-réel. Éditez simplement "Debug::Gestion()"
+pour afficher les données dont vous avez besoin.
+
+* GDB
+-----
+
+Au niveau le plus bas, le programme GDB (the GNU Debugger) est disponible. Pour
+plus d'informations, voir le site web le concernant.
+
+Pour exécuter Wormux dans GDB, tapez "gdb ./wormux" dans le répertoire contenant
+Wormux. Après, lancez Wormux dans le débuggeur en tapant "run".
+
+Quant une partie de Wormux échoue (quant elle crash), un signal "ABORT" est
+émis et est détecté par gdb. À ce moment, tapez simplement "backtrace" dans gdb
+pour voir où le programme à échoué.
+
+Si GDB s'arrête sur un signal "SIGTTOU", cela est quasi certainement dû au son.
+La solution la plus simple pour résoudre cela est de désactiver la capture de ce
+signal avec :
+	
+	"handle SIGTTOU noprint nostop"
+
+
+============
+* Graphiques
+============
+
+Toutes les images doivent être au format PNG. Les images doivent être en 24 
+bits/pixel ou en 32 bits/pixel.
+
+Pour afficher les coordonnées dans le jeu, décommentez
+"#define AFFICHE_COORD_SOURIS" dans le fichier debug.cpp, puis recompilez le
+programme. Les coordonnées du curseur seront alors affichées sur l'écran.

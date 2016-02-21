@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE objects_physics SYSTEM "objects.dtd" []>
+<objects_physics>
+
+  <!-- Various objects configs -->
+
+  <character>
+    <mass>100.0</mass>
+    <wind_factor>0.0</wind_factor>
+    <air_resist_factor>0.1</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>true</rebounding>
+    <rebound_factor>0.25</rebound_factor>
+  </character>
+
+  <bonus_box>
+    <mass>100.0</mass>
+    <wind_factor>13.0</wind_factor>
+    <air_resist_factor>16.0</air_resist_factor>
+    <gravity_factor>1.2</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </bonus_box>
+
+  <medkit>
+    <mass>100.0</mass>
+    <wind_factor>13.0</wind_factor>
+    <air_resist_factor>16.0</air_resist_factor>
+    <gravity_factor>1.2</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </medkit>
+
+  <barrel>
+    <mass>1000.0</mass>
+    <wind_factor>0.3</wind_factor>
+    <air_resist_factor>20.0</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </barrel>
+
+  <anvil>
+    <mass>10000.0</mass>
+    <wind_factor>0.3</wind_factor>
+    <air_resist_factor>20.0</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </anvil>
+
+  <!-- Dummy value, will be overwritten by the value contained in each
+       map config file  -->
+  <wind_particle>
+    <mass>50.0</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>1.0</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </wind_particle>
+
+  <!-- Particles Configs -->
+  <smoke_particle>  <!-- Unused particle -->
+    <mass>0.5</mass>
+    <wind_factor>0.8</wind_factor>
+    <air_resist_factor>0.2</air_resist_factor>
+    <gravity_factor>-1.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </smoke_particle>
+
+  <polecat_fart_particle>  <!-- Polecat Fart -->
+    <mass>0.5</mass>
+    <wind_factor>0.8</wind_factor>
+    <air_resist_factor>0.2</air_resist_factor>
+    <gravity_factor>0.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </polecat_fart_particle>
+
+  <fire_particle>  <!-- Particle used during explosions -->
+    <mass>100.0</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>0.2</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </fire_particle>
+
+  <explosion_smoke_particle> <!-- Particle used during explosions -->
+    <mass>0.5</mass>
+    <wind_factor>10.0</wind_factor>
+    <air_resist_factor>0.2</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>  <!-- Randomly set in the code -->
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </explosion_smoke_particle>
+
+  <dark_smoke>  <!-- Particle bazooka and auto-bazooka... -->
+    <mass>0.5</mass>
+    <wind_factor>0.2</wind_factor>
+    <air_resist_factor>1.0</air_resist_factor>
+    <gravity_factor>0.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </dark_smoke>
+  
+  <star_particle>  <!-- Particle for tux weapon -->
+    <mass>0.5</mass>
+    <wind_factor>0.2</wind_factor>
+    <air_resist_factor>0.2</air_resist_factor>
+    <gravity_factor>0.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </star_particle>
+
+  <magic_star_particle> <!-- Particle for the disco grenade -->
+    <mass>0.5</mass>
+    <wind_factor>0.2</wind_factor>
+    <air_resist_factor>0.2</air_resist_factor>
+    <gravity_factor>0.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </magic_star_particle>
+
+  <bullet_particle> <!-- the gun and M16 -->
+    <mass>2.0</mass>
+    <wind_factor>0.01</wind_factor>
+    <air_resist_factor>0.01</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>true</rebounding>
+    <rebound_factor>0.7</rebound_factor>
+  </bullet_particle>
+
+  <ground_particle> <!-- with airhammer -->
+      <mass>100.0</mass>
+      <wind_factor>0.01</wind_factor>
+      <air_resist_factor>0.01</air_resist_factor>
+      <gravity_factor>1.0</gravity_factor>
+      <rebounding>false</rebounding>
+      <rebound_factor>0.7</rebound_factor>
+  </ground_particle>
+
+  <body_member_particle> <!-- during suicide -->
+    <mass>100.0</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>1.0</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>true</rebounding>
+    <rebound_factor>0.7</rebound_factor>
+  </body_member_particle>
+
+  <teleport_member_particle> <!-- during teleportation -->
+    <mass>1.0</mass>
+    <wind_factor>0.0</wind_factor>
+    <air_resist_factor>1.0</air_resist_factor>
+    <gravity_factor>0.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.7</rebound_factor>
+  </teleport_member_particle>
+
+  <!-- Weapons Configs -->
+  <!-- Weapons bullets -->
+  <gun_bullet>
+    <mass>2.0</mass>
+    <wind_factor>0.8</wind_factor>
+    <air_resist_factor>0.0</air_resist_factor>
+    <gravity_factor>0.1</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </gun_bullet>
+
+  <buckshot> <!-- shotgun ammo -->
+    <mass>1.0</mass>
+    <wind_factor>0.8</wind_factor>
+    <air_resist_factor>0.0</air_resist_factor>
+    <gravity_factor>0.1</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </buckshot>
+
+  <m16_bullet>
+    <mass>2.0</mass>
+    <wind_factor>0.8</wind_factor>
+    <air_resist_factor>0.0</air_resist_factor>
+    <gravity_factor>0.1</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </m16_bullet>
+  
+  <snipe_rifle_bullet>
+    <mass>2.0</mass>
+    <wind_factor>0.8</wind_factor>
+    <air_resist_factor>0.0</air_resist_factor>
+    <gravity_factor>0.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </snipe_rifle_bullet>
+  
+  <!-- Weapons projectiles -->
+  <!-- Bazooka and automatic bazookas rockets -->
+  <rocket>
+    <mass>20.0</mass>
+    <wind_factor>75.0</wind_factor>
+    <air_resist_factor>0.5</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </rocket>
+
+  <riot_rocket>
+    <mass>50.0</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>0.8</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </riot_rocket>
+
+  <grenade>
+    <mass>30.0</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>0.0</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>true</rebounding>
+    <rebound_factor>0.7</rebound_factor>
+  </grenade>
+
+  <disco_grenade>
+    <mass>2.0</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>0.0</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>true</rebounding>
+    <rebound_factor>0.4</rebound_factor>
+  </disco_grenade>
+
+  <cluster_bomb>
+    <mass>30.0</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>0.3</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>true</rebounding>
+    <rebound_factor>0.7</rebound_factor>
+  </cluster_bomb>
+
+  <cluster>
+    <mass>30.0</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>0.0</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </cluster>
+
+  <dynamite_bullet>
+    <mass>100.0</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>1.0</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </dynamite_bullet>
+
+  <air_attack_plane>
+    <mass>1.0</mass>
+    <wind_factor>0.0</wind_factor>
+    <air_resist_factor>0.0</air_resist_factor>
+    <gravity_factor>0.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </air_attack_plane>
+
+  <air_attack_projectile>
+    <mass>200.0</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>0.5</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </air_attack_projectile>
+
+  <supertux>
+    <mass>20.0</mass>
+    <wind_factor>0.0</wind_factor>
+    <air_resist_factor>1.0</air_resist_factor>
+    <gravity_factor>0.0</gravity_factor>
+    <rebounding>false</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </supertux>
+
+  <gnu>
+    <mass>40.0</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>0.0</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>false</rebounding>   <!-- bouncing handled in the code  -->
+    <rebound_factor>0.01</rebound_factor>
+  </gnu>
+  
+  <polecat>
+    <mass>5.0</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>0.0</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>false</rebounding>   <!-- bouncing handled in the code  -->
+    <rebound_factor>0.01</rebound_factor>
+  </polecat>
+  
+  <bounce_ball>
+    <mass>2.0</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>0.0</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>true</rebounding>
+    <rebound_factor>1.1</rebound_factor>
+  </bounce_ball>
+
+  <mine>
+    <mass>500.0</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>1.0</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>true</rebounding>
+    <rebound_factor>0.01</rebound_factor>
+  </mine>
+
+</objects_physics>

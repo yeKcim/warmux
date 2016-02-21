@@ -1,0 +1,26 @@
+This package was debianized by jparpail <jean.parpaillon@free.fr> on
+Mon,  9 Jan 2006 14:21:55 +0100.
+
+It was downloaded from http://wormux.org/
+
+Copyright Holder: Jean-Christophe DUBERGA <jcduberga@gmx.de>, Laurent DEFERT SIMONNEAU <lodesi2@yahoo.fr>, Lawrence AZZOUG <lawrenceazzoug@wanadoo.fr>, Matthieu FERTRÉ <matthieu.fertre@free.fr>, Renaud LOTTIAUX <renaud.lottiaux@free.fr>, Victor STINNER <victor.stinner@haypocalc.com>
+
+License:
+
+   This package is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+
+   This package is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this package; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+
+On Debian systems, the complete text of the GNU General
+Public License can be found in `/usr/share/common-licenses/GPL'.
+

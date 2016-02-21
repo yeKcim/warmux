@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+  <author>
+    <name>Michael PRAGER</name>
+    <email>X_X_L AT gmx.net</email>
+    <country>Germany</country>
+  </author>
+
+  <surface name="sky" file="islands.jpg" />
+  <surface name="map" file="pirates.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Pirates</name>
+  <water>1</water>
+  <nb_mine>10</nb_mine>
+  <is_open>1</is_open>
+
+  <music_playlist>sea</music_playlist>
+</resources>

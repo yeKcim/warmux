@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 51
+local.properties
+bin
+gen
+libs
+build.properties
+obj
+
+END

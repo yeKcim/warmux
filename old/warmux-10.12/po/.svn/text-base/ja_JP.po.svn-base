@@ -1,0 +1,2378 @@
+# Japanese (Japan) translation for Warmux
+# Copyright (C) 2007 Warmux Development Team
+# This file is distributed under the same license as the warmux package.
+#
+# <akicks@gmail.com>,2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: ja_JP\n"
+"Report-Msgid-Bugs-To: warmux-dev@gna.org\n"
+"POT-Creation-Date: 2010-12-10 13:28+0100\n"
+"PO-Revision-Date: 2010-02-11 03:47+0900\n"
+"Last-Translator: Akicks <akicks@gmail.com>\n"
+"Language-Team: Japanese (Japan) <akicks@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=1; plural=0 \n"
+"X-Poedit-Language: Japanese\n"
+"X-Poedit-Country: JAPAN\n"
+
+#: src/map/maps_list.cpp:376
+#, c-format
+msgid "! Map %s not found :-("
+msgstr "! マップ「%s」が見つかりません :-("
+
+#: src/graphic/fps.cpp:99
+#, c-format
+msgid "%.1f fps"
+msgstr "%.1f fps"
+
+#: src/menu/network_menu.cpp:148 src/menu/network_menu.cpp:369
+#, c-format
+msgid "%i player connected"
+msgid_plural "%i players connected"
+msgstr[0] "%i人のプレイヤーが接続しています"
+
+#: src/menu/network_menu.cpp:152 src/menu/network_menu.cpp:379
+#, c-format
+msgid "%i player ready"
+msgid_plural "%i players ready"
+msgstr[0] "%i人のプレイヤーの準備ができました"
+
+#: src/map/maps_list.cpp:138
+#, c-format
+msgid "%s <%s> aka %s from %s"
+msgstr "%s <%s> aka %s from %s"
+
+#: src/map/maps_list.cpp:145
+#, c-format
+msgid "%s <%s> from %s"
+msgstr "%s <%s> from %s"
+
+#: src/menu/team_box.cpp:260
+#, c-format
+msgid "%s Team"
+msgstr " %s チーム"
+
+#. translators: this is the team listing and will expand in a context like "OOo team - Remote"
+#: src/menu/team_box.cpp:252
+#, c-format
+msgid "%s Team - Remote"
+msgstr " %s チーム - 操作"
+
+#: src/game/game.cpp:1024
+#, fuzzy, c-format
+msgid "%s from %s team committed suicide!"
+msgstr "%s (%s) は自殺した！"
+
+#. Could be modified, but for now, save on translation
+#: src/game/game.cpp:1050 src/game/game.cpp:1069
+#, c-format
+msgid "%s from %s team has died."
+msgstr "%s (%s) は死んでしまった。"
+
+#: src/game/game.cpp:1016
+#, c-format
+msgid "%s from %s team has fallen into the water!"
+msgstr "%s (%s) は溺れてしまった。"
+
+#: src/game/game.cpp:1010
+#, c-format
+msgid "%s from %s team has fallen off the map!"
+msgstr "%s (%s) は星になった。"
+
+#: src/game/game.cpp:1030
+#, c-format
+msgid "%s from %s team has hit the ground too hard!"
+msgstr "%s (%s) は地面に叩き付けられた。"
+
+# what about female names?
+#. The playing character killed himself
+#: src/game/game.cpp:1037
+#, c-format
+msgid "%s from %s team is dead because he is clumsy!"
+msgstr "%s (%s) の死因：ヘタクソ！"
+
+#: src/network/admin_commands.cpp:66
+#, c-format
+msgid "%s has address %s"
+msgstr ""
+
+#: src/weapon/polecat.cpp:117
+#, c-format
+msgid ""
+"%s has done something for the environment, he has not ordered the polecat to "
+"fart."
+msgstr ""
+"%s は環境のために何かしたと、彼が屁をするためにスカンクに命令しませんでした。"
+
+#: src/object/medkit.cpp:74
+#, fuzzy, c-format
+msgid "%s has won %u points of energy!"
+msgstr "%s は %u ポイントのライフを獲得した！"
+
+#: src/game/game.cpp:1061
+#, c-format
+msgid "%s is a psychopath, he has killed a member of the %s team!"
+msgstr "%s は気が狂ったかのように、味方%sチームのヤツを殺った！"
+
+#: src/weapon/mine.cpp:121
+#, c-format
+msgid "%s is next to a mine!"
+msgstr "%s の近くに地雷が！"
+
+#: src/network/admin_commands.cpp:63
+#, c-format
+msgid "%s kicked from game"
+msgstr ""
+
+#: src/include/action_handler.cpp:436
+#, c-format
+msgid "%s needs a pause."
+msgstr "%s はポーズが必要です"
+
+#. Can happen if the configuration is wrong...
+#: src/object/bonus_box.cpp:88
+#, c-format
+msgid "%s team already has infinite ammo for the %s!"
+msgstr "%s チームの弾薬は %s によって無限だ！"
+
+#. Show message
+#: src/weapon/skip_turn.cpp:55
+#, c-format
+msgid "%s team has skipped its turn."
+msgstr "%s チームはターンをスキップした。"
+
+#: src/weapon/cluzooka.cpp:379
+#, c-format
+msgid "%s team has won %u Cluster bazookas!"
+msgid_plural "%s team has won %u Cluster bazookas!"
+msgstr[0] "%s チームは %u つのクラスターバズーカを手に入れた。"
+
+#: src/weapon/gnu.cpp:241
+#, c-format
+msgid "%s team has won %u Gnu! Blow them all, cowboy!"
+msgid_plural "%s team has won %u Gnus! Blow them all, cowboy!"
+msgstr[0] "%s チームは %u の Gnu! を獲得。カウボーイ！"
+
+#: src/weapon/air_attack.cpp:256
+#, c-format
+msgid "%s team has won %u air attack!"
+msgid_plural "%s team has won %u air attacks!"
+msgstr[0] "%s チームは %u つの空爆を手に入れた！"
+
+#: src/weapon/airhammer.cpp:167
+#, c-format
+msgid ""
+"%s team has won %u airhammer! Don't make too much noise with it! Thanks, "
+"your neighbours."
+msgid_plural ""
+"%s team has won %u airhammers! Don't make too much noise with them! Thanks, "
+"your neighbours."
+msgstr[0] "%s チームは %u つのドリルを獲得！工事の為ご迷惑おかけいたします。"
+
+#: src/weapon/anvil.cpp:195
+#, c-format
+msgid "%s team has won %u anvil! Splat them all!"
+msgid_plural "%s team has won %u anvils! Splat them all!"
+msgstr[0] "%s チームは %u つのハンマー台を獲得！ブッ潰してやれ！"
+
+#: src/weapon/auto_bazooka.cpp:325
+#, c-format
+msgid "%s team has won %u automatic bazooka!"
+msgid_plural "%s team has won %u automatic bazookas!"
+msgstr[0] "%s チームは %u つのオートバズーカを手にいれた！"
+
+#: src/weapon/baseball.cpp:112
+#, c-format
+msgid "%s team has won %u baseball bat!"
+msgid_plural "%s team has won %u baseball bats!"
+msgstr[0] "%s チームは %u つの野球バットを手にいれた！"
+
+#: src/weapon/bazooka.cpp:126
+#, c-format
+msgid "%s team has won %u bazooka!"
+msgid_plural "%s team has won %u bazookas!"
+msgstr[0] "%s チームは %u つのバズーカを手に入れた！"
+
+#: src/weapon/blowtorch.cpp:154
+#, c-format
+msgid ""
+"%s team has won %u blowtorch! If you're under 18, ask your parents to use it."
+msgid_plural ""
+"%s team has won %u blowtorchs! If you're under 18, ask your parents to use "
+"it."
+msgstr[0] ""
+"%s チームは %u つのバーナーを獲得！18歲未満の方は、保護者に使い方を尋ねてくだ"
+"さい。"
+
+#: src/weapon/bounce_ball.cpp:113
+#, c-format
+msgid "%s team has won %u bounce ball! Boing!"
+msgid_plural "%s team has won %u bounce balls! Boing!"
+msgstr[0] "%s チームは %u つのバウンスボールを獲得！ボイーン！"
+
+#: src/weapon/cluster_bomb.cpp:204
+#, c-format
+msgid "%s team has won %u cluster bomb!"
+msgid_plural "%s team has won %u cluster bombs!"
+msgstr[0] "%s チームは %u つのクラスターボムを手に入れた！"
+
+#: src/weapon/construct.cpp:82
+#, c-format
+msgid "%s team has won %u construct weapon! Don't forget your helmet."
+msgid_plural "%s team has won %u construct weapons! Don't forget your helmet."
+msgstr[0] "%s チームは %u つの建設資材を獲得！ ヘルメットを忘れずに。"
+
+#: src/weapon/disco_grenade.cpp:168
+#, c-format
+msgid "%s team has won %u disco grenade! Shake your body when throwing it!"
+msgid_plural ""
+"%s team has won %u disco grenades! Shake your body when throwing them!"
+msgstr[0] "%s チームは %u つのディスコグレネードを獲得！レッツダンス！"
+
+#: src/weapon/dynamite.cpp:150
+#, c-format
+msgid "%s team has won %u dynamite!"
+msgid_plural "%s team has won %u dynamites!"
+msgstr[0] "%s チームは %u つのダイナマイトを手に入れた！"
+
+#: src/weapon/flamethrower.cpp:194
+#, c-format
+msgid "%s team has won %u flame-thrower!"
+msgid_plural "%s team has won %u flame-throwers!"
+msgstr[0] "%s チームは %u つの火炎放射器を手に入れた！"
+
+#: src/weapon/footbomb.cpp:174
+#, c-format
+msgid "%s team has won %u football bomb!"
+msgid_plural "%s team has won %u football bombs!"
+msgstr[0] "%s チームは %u つのラグビーボムを手に入れた！"
+
+#: src/weapon/grapple.cpp:713
+#, c-format
+msgid "%s team has won %u grapple!"
+msgid_plural "%s team has won %u grapples!"
+msgstr[0] "%s チームは %u つの鉤縄を手に入れた！"
+
+#: src/weapon/grenade.cpp:88
+#, c-format
+msgid "%s team has won %u grenade!"
+msgid_plural "%s team has won %u grenades!"
+msgstr[0] "%s チームは %u つのグレネードを手に入れた！"
+
+#: src/weapon/gun.cpp:95
+#, c-format
+msgid "%s team has won %u gun!"
+msgid_plural "%s team has won %u guns!"
+msgstr[0] "%s チームは %u つのハンドガンを手に入れた！"
+
+#: src/weapon/jetpack.cpp:204
+#, c-format
+msgid "%s team has won %u jetpack! Groovy!"
+msgid_plural "%s team has won %u jetpacks! Groovy!"
+msgstr[0] "%s チームは %u つのジェットパックを獲得！ブッ飛べ！"
+
+#: src/weapon/lowgrav.cpp:83
+#, c-format
+msgid ""
+"%s team has won %u lowgrav! Small step for man, giant leap for free software!"
+msgid_plural ""
+"%s team has won %u lowgravs! Small step for man, giant leap for free "
+"software!"
+msgstr[0] "%s チームは %u つの低重力装置を獲得！私がアームストロング船長だ！"
+
+#: src/weapon/mine.cpp:249
+#, c-format
+msgid "%s team has won %u mine!"
+msgid_plural "%s team has won %u mines!"
+msgstr[0] "%s チームは %u つの地雷を手に入れた！"
+
+#: src/weapon/parachute.cpp:171
+#, c-format
+msgid "%s team has won %u parachute!"
+msgid_plural "%s team has won %u parachutes!"
+msgstr[0] "%s チームは %u つのパラシュートを手に入れた！"
+
+#: src/weapon/polecat.cpp:273
+#, c-format
+msgid "%s team has won %u polecat! You have your gas mask, right?"
+msgid_plural "%s team has won %u polecats! You have your gas mask, right?"
+msgstr[0] "%s チームは %u つのスカンクを獲得！ガスマスクを着用しましょう。"
+
+#: src/weapon/rail_gun.cpp:131
+#, fuzzy, c-format
+msgid "%s team has won %u rail gun! It's skewer time!"
+msgid_plural "%s team has won %u rail guns! It's skewer time!"
+msgstr[0] "%s チームは %u つのクラスターボムを手に入れた！"
+
+#: src/weapon/riot_bomb.cpp:131
+#, c-format
+msgid "%s team has won %u riot bomb!"
+msgid_plural "%s team has won %u riot bombs!"
+msgstr[0] "%s チームは %u つのライオットボムを手に入れた！"
+
+#: src/weapon/shotgun.cpp:127
+#, c-format
+msgid "%s team has won %u shotgun!"
+msgid_plural "%s team has won %u shotguns!"
+msgstr[0] "%s チームは %u つのショットガンを手に入れた！"
+
+#: src/weapon/slap.cpp:79
+#, c-format
+msgid "%s team has won %u slap!"
+msgid_plural "%s team has won %u slaps! Dodge this!"
+msgstr[0] "%s チームは %u つのビンタを手に入れた！よけてみろ！"
+
+#: src/weapon/snipe_rifle.cpp:253
+#, c-format
+msgid "%s team has won %u sniper rifle! Aim and shoot between the eyes!"
+msgid_plural ""
+"%s team has won %u sniper rifles! Aim and shoot between the eyes!"
+msgstr[0] ""
+"%s チームは %u つのスナイパーライフルを獲得！鉛玉を眉間にブチ込んでやれ！"
+
+#: src/weapon/submachine_gun.cpp:147
+#, c-format
+msgid "%s team has won %u submachine gun!"
+msgid_plural "%s team has won %u submachine guns!"
+msgstr[0] "%s チームは %u つのサブマシンガンを手に入れた！"
+
+#: src/weapon/suicide.cpp:78
+#, c-format
+msgid "%s team has won %u suicide!"
+msgid_plural "%s team has won %u suicides! Use them all for an extra bonus!"
+msgstr[0] "%s チームは %u つの自殺を獲得！追加ボーナスの為に使うんだ！"
+
+#: src/weapon/syringe.cpp:120
+#, c-format
+msgid "%s team has won %u syringe!"
+msgid_plural "%s team has won %u syringes!"
+msgstr[0] "%s チームは %u つの注射器を手に入れた！"
+
+#: src/weapon/teleportation.cpp:123
+#, c-format
+msgid "%s team has won %u teleportation!"
+msgid_plural "%s team has won %u teleportations!"
+msgstr[0] "%s チームは %u つのテレポートを手に入れた！"
+
+#: src/weapon/skip_turn.cpp:65
+#, c-format
+msgid "%s team has won %u turn skip! I know you'll love it."
+msgid_plural "%s team has won %u turn skips! I know you'll love them."
+msgstr[0] "%s チームは %u つのターンスキップを獲得！君は好きだろう？"
+
+#: src/weapon/supertux.cpp:291
+#, c-format
+msgid "%s team has won %u tux launcher! Never seen a flying penguin?"
+msgid_plural "%s team has won %u tux launchers! Never seen a flying penguin?"
+msgstr[0] ""
+"%s チームは %u つのスーパーTuxを獲得！空飛ぶペンギンを見た事あるかい？"
+
+#: src/game/game_blitz.cpp:67
+#, c-format
+msgid "%s team was fragged down."
+msgstr "%s チームは降参しました。"
+
+#: src/game/game.cpp:1045 src/game/game.cpp:1057
+#, c-format
+msgid "%s took a member of the %s team to the grave with him!"
+msgstr "%s は、%s チームのメンバーを道連れにした！"
+
+#: src/network/admin_commands.cpp:78
+#, c-format
+msgid "%s: no such nickame"
+msgstr ""
+
+#: src/interface/man_machine_interface.cpp:1149
+#, fuzzy
+msgid "'Duel' weapon category"
+msgstr "武器カテゴリを切り替える"
+
+#: src/interface/man_machine_interface.cpp:1145
+#, fuzzy
+msgid "'Heavy' weapon category"
+msgstr "武器カテゴリを切り替える"
+
+#: src/interface/man_machine_interface.cpp:1150
+#, fuzzy
+msgid "'Move' weapon category"
+msgstr "武器カテゴリを切り替える"
+
+#: src/interface/man_machine_interface.cpp:1146
+#, fuzzy
+msgid "'Rifle' weapon category"
+msgstr "武器カテゴリを切り替える"
+
+#: src/interface/man_machine_interface.cpp:1148
+#, fuzzy
+msgid "'Special' weapon category"
+msgstr "武器カテゴリを切り替える"
+
+#: src/interface/man_machine_interface.cpp:1147
+#, fuzzy
+msgid "'Throwing' weapon category"
+msgstr "武器カテゴリを切り替える"
+
+#: src/interface/man_machine_interface.cpp:1151
+#, fuzzy
+msgid "'Tool' weapon category"
+msgstr "武器カテゴリを切り替える"
+
+#: src/interface/interface.cpp:262
+msgid "(dead)"
+msgstr "(死)"
+
+#. Setting language selection
+#: src/menu/options_menu.cpp:329
+msgid "(system language)"
+msgstr "(システム言語)"
+
+#: src/network/chatlogger.cpp:28 src/network/chatlogger.cpp:67
+msgid "(unknown time)"
+msgstr "(不明な時間)"
+
+#. Display number of ammo
+#: src/interface/interface.cpp:285
+msgid "(unlimited)"
+msgstr "(無制限)"
+
+#: src/menu/options_menu.cpp:515
+#, c-format
+msgid ""
+"A new version %s is available, while your version is %s. You may want to "
+"check whether an update is available for your OS!"
+msgstr ""
+"最新版 %s が見つかりました。現在あなたがお使いのバージョンは %s です。最新版"
+"があなたの OS で使用できるか確認して下さい。"
+
+#. Action name
+#: src/gui/control_config.cpp:218
+#, fuzzy
+msgid "Action"
+msgstr "オプション"
+
+#: src/weapon/air_attack.cpp:213
+msgid "Air Attack"
+msgstr "空爆"
+
+#: src/weapon/airhammer.cpp:76
+msgid "Airhammer"
+msgstr "ドリル"
+
+#: src/menu/results_menu.cpp:301
+msgid "All teams"
+msgstr "全てのチーム"
+
+#: src/menu/game_mode_editor.cpp:56
+msgid "Always"
+msgstr "いつも"
+
+#: src/game/game_blitz.cpp:48 src/game/game_classic.cpp:54
+msgid "And the winner is..."
+msgstr "勝者は..."
+
+#: src/weapon/baseball.cpp:56
+#, fuzzy
+msgid ""
+"Angle: Up/Down\n"
+"Fire: space key\n"
+"a hit per turn"
+msgstr ""
+"角度 : 上/下\n"
+"発射 : スペースキー\n"
+"ターン毎のダメージ"
+
+#: src/weapon/anvil.cpp:141
+msgid "Anvil"
+msgstr "ハンマー台"
+
+#: src/menu/help_menu.cpp:107
+msgid "Area currently displayed"
+msgstr ""
+
+#: src/main.cpp:327
+msgid "Authors:"
+msgstr "作者:"
+
+#: src/weapon/auto_bazooka.cpp:220
+msgid "Automatic Bazooka"
+msgstr "オートバズーカ"
+
+#: src/interface/man_machine_interface.cpp:1174
+msgid "Back jump"
+msgstr ""
+
+#: src/menu/pause_menu.cpp:48
+msgid "Back to battle"
+msgstr "対戦に戻る"
+
+#: src/network/net_error_msg.cpp:32
+msgid "Bad socket ..."
+msgstr "Bad socket ..."
+
+#: src/weapon/baseball.cpp:55
+msgid "Baseball Bat"
+msgstr "野球バット"
+
+#: src/weapon/bazooka.cpp:119
+msgid "Bazooka"
+msgstr "バズーカ"
+
+#: src/menu/game_mode_editor.cpp:57
+msgid "Before action"
+msgstr "行動前"
+
+#: src/menu/main_menu.cpp:66
+msgid "Benchmark"
+msgstr ""
+
+#: src/game/game_mode.cpp:343
+msgid "Blitz"
+msgstr "弾丸"
+
+#: src/weapon/blowtorch.cpp:63
+msgid "Blowtorch"
+msgstr "バーナー"
+
+#: src/weapon/bounce_ball.cpp:90
+msgid "Bounce Ball"
+msgstr "バウンスボール"
+
+#: src/weapon/supertux.cpp:177
+msgid "Bye bye Tux..."
+msgstr "バイバイ Tux..."
+
+#: src/team/teams_list.cpp:466 src/team/teams_list.cpp:501
+#: src/team/teams_list.cpp:510 src/team/teams_list.cpp:516
+#: src/team/teams_list.cpp:574
+#, c-format
+msgid "Can't find team %s!"
+msgstr "%s! チームが見つかりません。"
+
+#: src/team/teams_list.cpp:155
+#, c-format
+msgid "Cannot open personal teams directory (%s)!"
+msgstr "個人チームのディレクトリが開けません (%s)!"
+
+#: src/team/teams_list.cpp:142
+#, c-format
+msgid "Cannot open teams directory (%s)!"
+msgstr "チームのディレクトリが開けません (%s)!"
+
+#: src/team/custom_teams_list.cpp:64
+#, c-format
+msgid "Cannot open the custom teams directory (%s)!"
+msgstr "カスタムチームのディレクトリが開けません (%s)!"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:121 src/menu/help_menu.cpp:138
+#, fuzzy
+msgid "Center camera on character"
+msgstr "カメラの中心をキャラクターにする"
+
+#: src/interface/man_machine_interface.cpp:1156
+#, fuzzy
+msgid "Center on active character"
+msgstr "行動するキャラクターを切り替える"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:137
+#, fuzzy
+msgid "Change active character"
+msgstr "行動するキャラクターを切り替える"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:128
+#, fuzzy
+msgid "Change aim angle"
+msgstr "照準角度を変更する"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:56
+#, fuzzy
+msgid "Change number of players per team"
+msgstr "最大プレイヤー数:"
+
+#: src/interface/man_machine_interface.cpp:1176
+#, fuzzy
+msgid "Change weapon"
+msgstr "武器カテゴリを切り替える"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:126
+#, fuzzy
+msgid "Change weapon category"
+msgstr "武器カテゴリを切り替える"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:127
+#, fuzzy
+msgid "Change weapon countdown"
+msgstr "武器のカウントダウンを変更する"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:88
+msgid ""
+"Character name.\n"
+"Character energy.\n"
+"Team name."
+msgstr ""
+
+#: src/menu/options_menu.cpp:183
+msgid "Character names:"
+msgstr "キャラクター名:"
+
+#: src/menu/game_mode_editor.cpp:60
+msgid "Character switching"
+msgstr "キャラクターの切り替え"
+
+#: src/interface/man_machine_interface.cpp:1158
+msgid "Chat"
+msgstr ""
+
+#: src/menu/options_menu.cpp:236
+msgid "Check updates online?"
+msgstr "アップデートをオンラインでチェックしますか？"
+
+#: src/menu/map_selection_box.cpp:225
+msgid "Choose randomly between the different maps"
+msgstr "マップの中からランダムに選択"
+
+#: src/game/game_mode.cpp:341
+msgid "Classic"
+msgstr "クラシック"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:60
+msgid ""
+"Click on either side of the central (selected) map or use wheelmouse to "
+"change the selected map."
+msgstr ""
+
+#: src/weapon/teleportation.cpp:51
+msgid ""
+"Click onto map to teleport yourself\n"
+"to a place of your choice."
+msgstr ""
+
+#: src/weapon/construct.cpp:72
+msgid ""
+"Click onto the place, where you\n"
+"want to place the construction.\n"
+"Up/down changes direction."
+msgstr ""
+
+#: src/menu/help_menu.cpp:58
+msgid "Click to let a player handle the team instead of the AI, and vice versa"
+msgstr ""
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:57
+msgid ""
+"Click/wheelmouse to change the team.\n"
+"You can't select the same team several times."
+msgstr ""
+
+#. Client Mode
+#: src/menu/network_menu.cpp:188 src/network/network.cpp:450
+msgid "Client mode"
+msgstr "クライアントモード"
+
+#: src/menu/results_menu.cpp:172 src/menu/results_menu.cpp:174
+msgid "Clumsiest"
+msgstr "不器用"
+
+#: src/weapon/cluster_bomb.cpp:187
+msgid "Cluster Bomb"
+msgstr "クラスターボム"
+
+#: src/weapon/cluzooka.cpp:373
+msgid "Cluzooka"
+msgstr "クラスターバズーカ"
+
+#: src/weapon/suicide.cpp:46
+msgid "Commit Suicide"
+msgstr "自殺"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:124
+msgid "Configuration menu"
+msgstr "オプションメニュー"
+
+#: src/menu/network_connection_menu.cpp:166
+msgid "Connect to game"
+msgstr "ゲームに接続する"
+
+#: src/network/net_error_msg.cpp:29
+msgid "Connected !"
+msgstr "接続しました！"
+
+#: src/network/admin_commands.cpp:93
+msgid "Connected players: "
+msgstr "接続しました！"
+
+#: src/weapon/construct.cpp:62 src/weapon/construct.cpp:71
+msgid "Construct"
+msgstr "建設資材"
+
+#: src/menu/results_menu.cpp:280
+msgid "Controlled by: "
+msgstr "コントロール: "
+
+#: lib/warmux/net/download.cpp:198
+#, c-format
+msgid "Couldn't fetch last version from %s"
+msgstr "%s から最新版を取得することができませんでした"
+
+#: src/network/chatlogger.cpp:52
+#, c-format
+msgid "Couldn't open file %s"
+msgstr "%s ファイルを開くことができませんでした"
+
+#: src/menu/main_menu.cpp:72
+msgid "Credits"
+msgstr "クレジット"
+
+#: src/menu/help_menu.cpp:143
+msgid "Current controls"
+msgstr ""
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:90
+msgid ""
+"Current weapon and ammo left, long click to display its help.\n"
+"Click to open selection menu."
+msgstr ""
+
+#: src/menu/game_mode_editor.cpp:88
+msgid "Damage per turn during death mode"
+msgstr "デスモード中のターン毎ダメージ"
+
+#: src/interface/man_machine_interface.cpp:1186
+msgid "Decrease explosion delay"
+msgstr ""
+
+#: src/interface/man_machine_interface.cpp:1191
+msgid "Decrease minimap size"
+msgstr ""
+
+#: src/interface/man_machine_interface.cpp:1193
+msgid "Decrease sound volume"
+msgstr ""
+
+#: src/weapon/disco_grenade.cpp:157
+msgid "Disco Grenade"
+msgstr "ディスコグレネード"
+
+#: src/network/admin_commands.cpp:31
+msgid "Displays this message"
+msgstr "メッセージを表示"
+
+#: src/menu/network_menu.cpp:190
+msgid "Don't forget to validate once you have selected your team(s)!"
+msgstr "一度あなたのチームを選択し確認することを忘れずに"
+
+#: src/interface/man_machine_interface.cpp:1165
+#, fuzzy
+msgid "Down"
+msgstr "ダウンロード"
+
+#: src/interface/man_machine_interface.cpp:1166
+#, fuzzy
+msgid "Down slowly"
+msgstr "ダウンロード"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:120
+#, fuzzy
+msgid "Drag&drop: Move camera"
+msgstr "ドラッグ&ドロップ:カメラの操作"
+
+#. some death mode options
+#: src/menu/game_mode_editor.cpp:82
+msgid "Duration before death mode"
+msgstr "デスモードに入るまで"
+
+#: src/menu/game_mode_editor.cpp:49
+msgid "Duration of a turn"
+msgstr "ターンの時間"
+
+#: src/weapon/dynamite.cpp:118
+msgid "Dynamite"
+msgstr "ダイナマイト"
+
+#: src/game/game.cpp:484
+msgid "END OF GAME"
+msgstr "ゲームを終了"
+
+#: src/menu/options_menu.cpp:281
+msgid "Effects volume"
+msgstr "効果音のボリューム"
+
+#: src/menu/results_menu.cpp:327
+msgid "Energy"
+msgstr "ライフ"
+
+#: src/include/action_handler.cpp:257
+#, c-format
+msgid "Error initializing network: Client %s does not agree with you!! - %s"
+msgstr "ネットワーク初期化エラー : クライアント %s はあなたに同意しません - %s"
+
+#: src/map/ground.cpp:65
+#, fuzzy
+msgid "Error loading ground"
+msgstr "チーム読み込みエラー :"
+
+#: src/team/custom_teams_list.cpp:91 src/team/teams_list.cpp:118
+msgid "Error loading team :"
+msgstr "チーム読み込みエラー :"
+
+#: src/game/config.cpp:563 src/team/custom_team.cpp:155
+#: src/team/custom_team.cpp:166 src/team/custom_team.cpp:177
+#, c-format
+msgid ""
+"Error while creating directory \"%s\": unable to store configuration file."
+msgstr ""
+"\"%s\" ディレクトリ作成エラー: 構成ファイルを格納することができません。"
+
+#: src/team/custom_team.cpp:134
+#, c-format
+msgid ""
+"Error while deleting the directory \"%s\". Unable to delete the custom team."
+msgstr ""
+" \"%s\" ディレクトリ削除エラー: カスタムチームを削除することができません。"
+
+#: src/team/custom_team.cpp:125
+#, c-format
+msgid "Error while deleting the file \"%s\". Unable to delete the custom team."
+msgstr " \"%s\" ファイル削除エラー: カスタムチームを削除することができません。"
+
+#. translators: %s:%s will expand to something like "example.org:9999"
+#: src/menu/network_connection_menu.cpp:526
+#, c-format
+msgid "Error: Unable to connect to %s:%s"
+msgstr "エラー: 接続できません %s:%s"
+
+#: src/menu/network_connection_menu.cpp:476
+msgid "Error: Unable to contact the index server to host a game"
+msgstr "エラー: ゲームをホストするためにインデックスサーバーに接続できません"
+
+#: src/menu/network_connection_menu.cpp:387
+msgid ""
+"Error: Unable to contact the index server to search for an internet game"
+msgstr ""
+"エラー: インターネットゲームを検索するためにインデックスサーバーに接続できま"
+"せん"
+
+#: src/menu/network_connection_menu.cpp:504
+msgid "Error: Unable to start the server"
+msgstr "エラー: サーバーが開始できません"
+
+#: src/menu/network_connection_menu.cpp:497
+#: tools/servers/game_server/server.cpp:302
+#, c-format
+msgid ""
+"Error: Your server is not reachable from the internet. Check your firewall "
+"configuration: TCP Port %s must accept connections from the outside. If you "
+"are not directly connected to the internet, check your router configuration: "
+"TCP Port %s must be forwarded on your computer."
+msgstr ""
+"エラー: あなたのサーバーはインターネットまで接続されていません。firewall 構成"
+"を確認し、TCP Port %s は外側からの接続できるようにする必要があります。もし、"
+"あなたは直接インターネットに接続していないなら、ルーターを確認してください。"
+"TCP Port %s は、あなたのコンピュータにフォワーディングする必要があります。"
+
+#: src/team/team.cpp:162
+#, c-format
+msgid "Error: can't find the body \"%s\" for the team \"%s\"."
+msgstr "エラー: 見つかりません。 ボディ\"%s\" チーム \"%s\"."
+
+#: src/menu/help_menu.cpp:67
+msgid "Experiment new game rules"
+msgstr ""
+
+#: src/interface/man_machine_interface.cpp:1177
+#: src/interface/man_machine_interface.cpp:1178
+#: src/interface/man_machine_interface.cpp:1179
+#: src/interface/man_machine_interface.cpp:1180
+#: src/interface/man_machine_interface.cpp:1181
+#: src/interface/man_machine_interface.cpp:1182
+#: src/interface/man_machine_interface.cpp:1183
+#: src/interface/man_machine_interface.cpp:1184
+#: src/interface/man_machine_interface.cpp:1185
+#, c-format
+msgid "Explosion delay of %u"
+msgstr ""
+
+#: src/menu/benchmark_menu.cpp:115
+msgid "FPS"
+msgstr ""
+
+#: lib/warmux/net/download.cpp:183 lib/warmux/net/download.cpp:224
+#, c-format
+msgid "Fail to create temporary file: %s"
+msgstr ""
+
+#: lib/warmux/net/download.cpp:190
+#, fuzzy, c-format
+msgid "Fail to open temporary file: %s"
+msgstr "マップディレクトリが開けません (%s)!"
+
+#: src/weapon/flamethrower.cpp:134
+msgid "Flame Thrower"
+msgstr "火炎放射器"
+
+#: src/weapon/footbomb.cpp:157
+msgid "Football Bomb"
+msgstr "ラグビーボム"
+
+#: src/menu/options_menu.cpp:112
+msgid "Fullscreen?"
+msgstr "フルスクリーン？"
+
+#: src/menu/game_menu.cpp:96 src/menu/network_menu.cpp:127
+msgid "Game"
+msgstr "ゲーム"
+
+#: src/menu/help_menu.cpp:61
+#, fuzzy
+msgid "Game menu"
+msgstr "ゲームモード"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/game_mode_editor.cpp:45 src/menu/help_menu.cpp:75
+#: src/menu/network_menu.cpp:123
+msgid "Game mode"
+msgstr "ゲームモード"
+
+#: src/menu/network_connection_menu.cpp:263
+msgid "Game name:"
+msgstr "ゲーム名"
+
+#: src/weapon/gnu.cpp:164
+msgid "Gnu Launcher"
+msgstr "Gnu-ランチャー"
+
+#: src/weapon/syringe.cpp:70
+msgid ""
+"Go to player\n"
+"Press space to inject\n"
+"Will cure your teammate or slowly kill your opponent"
+msgstr ""
+
+#: src/menu/benchmark_menu.cpp:114 src/menu/options_menu.cpp:148
+msgid "Graphics"
+msgstr "グラフィック"
+
+#: src/weapon/grapple.cpp:172
+msgid "Grapple"
+msgstr "鉤縄"
+
+#: src/menu/game_mode_editor.cpp:95
+msgid "Gravity"
+msgstr "重力"
+
+#: src/weapon/grenade.cpp:76
+msgid "Grenade"
+msgstr "グレネード"
+
+#: src/map/ground.cpp:43
+msgid "Ground initialization..."
+msgstr "地面を初期化中..."
+
+#: src/weapon/gun.cpp:72
+msgid "Gun"
+msgstr "ハンドガン"
+
+#: src/menu/network_connection_menu.cpp:311
+msgid "Have a good game!"
+msgstr "楽しんで！"
+
+#. *******    Names: "Head commander" + text/custom team    ******
+#: src/interface/interface.cpp:251 src/menu/options_menu.cpp:173
+#: src/menu/team_box.cpp:81
+msgid "Head commander"
+msgstr "指揮官"
+
+#: src/interface/man_machine_interface.cpp:1173 src/menu/main_menu.cpp:69
+#: src/menu/pause_menu.cpp:56
+msgid "Help"
+msgstr "ヘルプ"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/interface/man_machine_interface.cpp:1172 src/menu/help_menu.cpp:117
+msgid "High jump"
+msgstr "ハイジャンプ"
+
+#: src/menu/network_connection_menu.cpp:287
+msgid "Host a game"
+msgstr "ゲームをホストする"
+
+#: src/game/game_classic.cpp:196
+msgid "Hurry up, you are too slow !!"
+msgstr "急げ、遅すぎるぞ！！"
+
+#: src/main.cpp:261
+msgid ""
+"If you found a bug or have a feature request send us an email (in english, "
+"please):"
+msgstr "もしバグを発見したり、機能要望があればE-mailを送ってください（英語で）"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:71
+msgid ""
+"If you like medkits,\n"
+"increase this"
+msgstr ""
+
+#: src/interface/man_machine_interface.cpp:1187
+msgid "Increase explosion delay"
+msgstr ""
+
+#: src/interface/man_machine_interface.cpp:1192
+msgid "Increase minimap size"
+msgstr ""
+
+#: src/interface/man_machine_interface.cpp:1194
+msgid "Increase sound volume"
+msgstr ""
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:73
+#, fuzzy
+msgid "Increase this for faster death mode end"
+msgstr "デスモードに入るまで"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:68
+msgid "Increase this if you are a slow player"
+msgstr ""
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:72
+msgid "Increase this if you like long games"
+msgstr ""
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:82
+msgid "Ingame display"
+msgstr ""
+
+#. Characters energy
+#: src/menu/game_mode_editor.cpp:67
+msgid "Initial energy"
+msgstr "初期ライフ"
+
+#: src/weapon/bazooka.cpp:120 src/weapon/cluzooka.cpp:374
+#: src/weapon/riot_bomb.cpp:120
+#, fuzzy
+msgid ""
+"Initial fire angle: Up/Down\n"
+"Fire: Press space until desired strength is reached\n"
+"One ammo per turn"
+msgstr ""
+"初期射撃角度: 上/下\n"
+"砲撃: スペースキーを押し続けて強さを決定\n"
+"ターン毎で1つの弾薬"
+
+#: src/game/game.cpp:122
+msgid "Initialisation"
+msgstr "初期化"
+
+#. Load the map
+#: src/game/game.cpp:144
+msgid "Initialise map"
+msgstr "マップ初期化"
+
+#: src/game/game.cpp:155
+msgid "Initialise sounds"
+msgstr "サウンド初期化"
+
+#: src/game/game.cpp:151
+msgid "Initialise teams"
+msgstr "チーム初期化"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:92
+#, fuzzy
+msgid "Interface"
+msgstr "インターフェースの表示/非表示"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:81
+msgid "Interface and touch controls, more details in other tabs"
+msgstr ""
+
+#: src/game/game.cpp:900
+msgid "It's a present!"
+msgstr "プレゼントだ！"
+
+#: src/weapon/jetpack.cpp:57
+msgid "Jetpack"
+msgstr "ジェットパック"
+
+#: src/interface/man_machine_interface.cpp:1171
+msgid "Jump"
+msgstr "ジャンプ"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:118 src/menu/help_menu.cpp:119
+msgid "Jump backwards"
+msgstr "バックジャンプ"
+
+#: src/weapon/blowtorch.cpp:64
+#, fuzzy
+msgid ""
+"Keep the space key pressed\n"
+"Angle: Up/Down\n"
+"One ammo per turn"
+msgstr ""
+"使用方法: スペースキーを押し続ける\n"
+"角度: 上/下\n"
+"ターン毎で1つの弾薬"
+
+#. Actual key
+#: src/gui/control_config.cpp:230
+msgid "Key"
+msgstr ""
+
+#: src/menu/options_menu.cpp:158
+msgid "Key bindings"
+msgstr ""
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:140
+msgid "Keyboard"
+msgstr ""
+
+#: src/network/admin_commands.cpp:33
+#, fuzzy
+msgid "Kicks the player designated by <nickname> out of the game"
+msgstr "<nickname> によってゲームから Kick されました"
+
+#: src/menu/options_menu.cpp:153
+msgid "Language"
+msgstr "言語"
+
+#: src/menu/options_menu.cpp:242
+msgid "Left-handed mouse?"
+msgstr "左手マウス？"
+
+#: src/network/admin_commands.cpp:35
+#, fuzzy
+msgid "Lists the connected players"
+msgstr "接続したプレイヤーのリスト"
+
+#: src/map/maps_list.cpp:278
+msgid "Load maps:"
+msgstr "マップ読込:"
+
+#: src/team/teams_list.cpp:129
+msgid "Load teams:"
+msgstr "チーム読込:"
+
+#: src/menu/teams_selection_box.cpp:89
+msgid "Local teams:"
+msgstr "ローカルチーム:"
+
+#: src/weapon/lowgrav.cpp:49
+msgid "LowGrav"
+msgstr "低重力装置"
+
+#: src/menu/network_connection_menu.cpp:201
+#: src/menu/network_connection_menu.cpp:203
+msgid "Manual connection"
+msgstr "マニュアル接続"
+
+#: src/menu/game_menu.cpp:79 src/menu/game_menu.cpp:83
+#: src/menu/network_menu.cpp:99 src/menu/network_menu.cpp:103
+msgid "Map"
+msgstr "マップ"
+
+#: src/map/maps_list.cpp:102
+#, c-format
+msgid "Map %s in folder '%s' is invalid: %s"
+msgstr ""
+
+#: src/map/map.cpp:300
+#, c-format
+msgid "Map %s, a creation of: "
+msgstr "マップ %s, 作者 : "
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:59
+msgid "Map author information: name, email, nickname, country"
+msgstr ""
+
+#: src/game/game.cpp:145
+msgid "Maps"
+msgstr "マップ"
+
+#: src/menu/network_menu.cpp:439 src/menu/network_menu.cpp:440
+msgid "Master mode"
+msgstr "ゲームモード"
+
+#: src/menu/game_mode_editor.cpp:73
+msgid "Max energy"
+msgstr "最大ライフ"
+
+#: src/menu/options_menu.cpp:117
+msgid "Maximum FPS"
+msgstr "最大 FPS"
+
+#: src/menu/benchmark_menu.cpp:113
+msgid "Menu"
+msgstr ""
+
+#: src/weapon/mine.cpp:208
+msgid "Mine"
+msgstr "地雷"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:110
+#, fuzzy
+msgid "Minimap"
+msgstr "マップ"
+
+#: src/menu/help_menu.cpp:80
+msgid "Minimap, more details in another tab"
+msgstr ""
+
+#: src/menu/options_menu.cpp:257
+msgid "Misc"
+msgstr "その他"
+
+#. Modifiers
+#: src/gui/control_config.cpp:224
+msgid "Modifiers"
+msgstr ""
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:70
+msgid "More energy, more shots needed"
+msgstr ""
+
+#: src/menu/results_menu.cpp:180 src/menu/results_menu.cpp:182
+msgid "Most accurate"
+msgstr "最精密"
+
+#: src/menu/results_menu.cpp:164 src/menu/results_menu.cpp:166
+msgid "Most sold-out"
+msgstr "最も売れている"
+
+#: src/menu/results_menu.cpp:148 src/menu/results_menu.cpp:150
+msgid "Most useful"
+msgstr "最も使いやすい"
+
+#: src/menu/results_menu.cpp:156 src/menu/results_menu.cpp:158
+msgid "Most useless"
+msgstr "最も失敗作"
+
+#: src/menu/results_menu.cpp:140 src/menu/results_menu.cpp:142
+msgid "Most violent"
+msgstr "最も暴力的"
+
+#: src/interface/man_machine_interface.cpp:1170
+#, fuzzy
+msgid "Move camera down"
+msgstr "キャラクターの移動"
+
+#: src/interface/man_machine_interface.cpp:1167
+#, fuzzy
+msgid "Move camera left"
+msgstr "キャラクターの移動"
+
+#: src/interface/man_machine_interface.cpp:1168
+#, fuzzy
+msgid "Move camera right"
+msgstr "キャラクターの移動"
+
+#: src/interface/man_machine_interface.cpp:1169
+#, fuzzy
+msgid "Move camera up"
+msgstr "キャラクターの移動"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:134
+#, fuzzy
+msgid "Move camera with mouse or arrows"
+msgstr "カーソルやマウスにカメラを追従"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:129
+#, fuzzy
+msgid "Move character"
+msgstr "キャラクターの移動"
+
+#: src/interface/man_machine_interface.cpp:1159
+msgid "Move left"
+msgstr ""
+
+#: src/interface/man_machine_interface.cpp:1160
+msgid "Move left slowly"
+msgstr ""
+
+#: src/interface/man_machine_interface.cpp:1161
+msgid "Move right"
+msgstr ""
+
+#: src/interface/man_machine_interface.cpp:1162
+msgid "Move right slowly"
+msgstr ""
+
+#: src/menu/options_menu.cpp:98
+msgid "Multi-layer sky?"
+msgstr "空のマルチレイヤー?"
+
+#: src/menu/options_menu.cpp:269
+msgid "Music volume"
+msgstr "音楽のボリューム:"
+
+#: src/menu/options_menu.cpp:264
+msgid "Music?"
+msgstr "音楽？"
+
+#: src/game/game.cpp:168
+msgid "Network"
+msgstr "ネットワークゲーム"
+
+#: src/menu/main_menu.cpp:59
+msgid "Network Game"
+msgstr "ネットワークゲーム"
+
+#: src/menu/game_mode_editor.cpp:58
+msgid "Never"
+msgstr "しない"
+
+#. TRANSLATORS: after this string there will be a time stamp or the string '(unknown time)'
+#: src/network/chatlogger.cpp:46
+msgid "New network game at "
+msgstr "新規ネットワークゲーム"
+
+#: src/menu/options_menu.cpp:306
+msgid "New player warning?"
+msgstr "新規プレイヤーのお知らせ？"
+
+#: src/interface/man_machine_interface.cpp:1188
+#, fuzzy
+msgid "Next character"
+msgstr "キャラクターの移動"
+
+#: src/weapon/weapon.cpp:637
+#, c-format
+msgid "No element <%s> found in the xml config file!"
+msgstr "xml設定ファイル内に<%s>要素が見つかりません！"
+
+#: src/network/admin_commands.cpp:89
+msgid "No player connected"
+msgstr "%i人のプレイヤーが接続しています"
+
+#: lib/warmux/net/download.cpp:139
+msgid "No pointer"
+msgstr ""
+
+#: src/menu/results_menu.cpp:79
+msgid "Nobody!"
+msgstr "誰もいない！"
+
+#: src/gui/control_config.cpp:89 src/gui/control_config.cpp:131
+#: src/interface/man_machine_interface.cpp:1197
+#, fuzzy
+msgid "None"
+msgstr "完了"
+
+#. *********     Number of characters        *********
+#: src/menu/team_box.cpp:115
+msgid "Number of characters"
+msgstr "キャラクター数"
+
+#: src/menu/teams_selection_box.cpp:93
+msgid "Number of teams:"
+msgstr "チーム数:"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:131
+#, fuzzy
+msgid "On a character: select it"
+msgstr "キャラクターに関して:行動するキャラクターを切り替えます"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:130
+#, fuzzy
+msgid "On map: select a target"
+msgstr "マップに関して: ターゲットを選択します"
+
+#: src/interface/man_machine_interface.cpp:1189
+#, fuzzy
+msgid "Open options menu"
+msgstr "オプション メニュー"
+
+#: src/menu/main_menu.cpp:63
+msgid "Options"
+msgstr "オプション"
+
+#: src/menu/pause_menu.cpp:52
+msgid "Options menu"
+msgstr "オプション メニュー"
+
+#: src/weapon/parachute.cpp:64
+msgid "Parachute"
+msgstr "パラシュート"
+
+#: src/weapon/parachute.cpp:65
+msgid ""
+"Parachute avoids hitting the ground too hard\n"
+"Opens automatically\n"
+"Use left/right to change direction"
+msgstr ""
+
+#: src/menu/network_connection_menu.cpp:189
+#: src/menu/network_connection_menu.cpp:236
+#: src/menu/network_connection_menu.cpp:275
+msgid "Password:"
+msgstr "パスワード"
+
+#: src/interface/man_machine_interface.cpp:1153
+msgid "Pause"
+msgstr "ポーズ"
+
+#: src/weapon/mine.cpp:209
+msgid ""
+"Place mine by pressing space\n"
+"Mine explodes when someone steps onto it\n"
+"May be a fake mine by chance"
+msgstr ""
+
+#: src/menu/main_menu.cpp:55
+msgid "Play"
+msgstr "プレイ"
+
+#: src/menu/network_menu.cpp:145
+msgid "Play several times"
+msgstr "何度かプレイ"
+
+#: src/menu/teams_selection_box.cpp:114
+msgid "Player"
+msgstr "プレイヤー"
+
+#: src/menu/options_menu.cpp:103
+msgid "Player energy?"
+msgstr "プレイヤーのライフ？"
+
+#: src/menu/options_menu.cpp:107
+msgid "Player's name?"
+msgstr "プレイヤーの名前？"
+
+#: src/menu/results_menu.cpp:293
+msgid "Podium"
+msgstr ""
+
+#: src/weapon/polecat.cpp:194
+msgid "Polecat Launcher"
+msgstr "スカンクランチャー"
+
+#: src/menu/network_connection_menu.cpp:225
+#: src/menu/network_connection_menu.cpp:252
+msgid "Port:"
+msgstr "ポート:"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:109
+msgid "Position of bonus boxes or medkits"
+msgstr ""
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:108
+#, fuzzy
+msgid ""
+"Position of the characters.\n"
+"A circle surrounds the active character."
+msgstr "行動するキャラクターを切り替える"
+
+#: src/weapon/suicide.cpp:47
+#, fuzzy
+msgid "Press space to commit suicide"
+msgstr "%s (%s) は自殺した！"
+
+#: src/weapon/airhammer.cpp:77
+msgid ""
+"Press space to dig\n"
+"Ammo is used when counter reaches zero\n"
+"One ammo per turn"
+msgstr ""
+
+#: src/weapon/jetpack.cpp:58
+msgid ""
+"Press space to rise up\n"
+"Try to have a soft landing."
+msgstr ""
+
+#: src/weapon/gun.cpp:73 src/weapon/shotgun.cpp:87
+#: src/weapon/snipe_rifle.cpp:242
+msgid ""
+"Press space to shoot\n"
+"Use Up/Down to change initial angle"
+msgstr ""
+
+#: src/weapon/flamethrower.cpp:135 src/weapon/submachine_gun.cpp:97
+msgid ""
+"Press space to shoot\n"
+"Use Up/Down to change initial angle\n"
+"Change angle while shooting"
+msgstr ""
+
+#: src/weapon/grapple.cpp:173
+msgid ""
+"Press space to shoot grapple\n"
+"Use left/right to swing\n"
+"Press space to release"
+msgstr ""
+
+#: src/weapon/skip_turn.cpp:47
+msgid ""
+"Press space to skip turn.\n"
+"Please notice: No chance to undo!"
+msgstr ""
+
+#: src/weapon/lowgrav.cpp:50
+msgid ""
+"Press space to use\n"
+"Gravity is decreased\n"
+"Ends when selecting another weapon"
+msgstr ""
+
+#: src/menu/network_connection_menu.cpp:175
+msgid "Public battles"
+msgstr "パブリックバトル"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:139
+msgid "Quickly quit game with Ctrl"
+msgstr "Ctrlでクイック終了"
+
+#: src/interface/man_machine_interface.cpp:1144 src/menu/main_menu.cpp:75
+msgid "Quit"
+msgstr "終了"
+
+#: src/main.cpp:250
+#, fuzzy
+msgid "Quit Warmux"
+msgstr "Warmux を終了"
+
+#: src/menu/help_menu.cpp:116 src/menu/pause_menu.cpp:59
+msgid "Quit game"
+msgstr "ゲームを終了"
+
+#: src/weapon/rail_gun.cpp:97
+msgid "Rail Gun"
+msgstr ""
+
+#: src/menu/map_selection_box.cpp:224
+msgid "Random map"
+msgstr "ランダムマップ"
+
+#: lib/warmux/net/download.cpp:133
+#, fuzzy, c-format
+msgid "Read only %i bytes"
+msgstr "%i チームがあります。"
+
+#: src/game/config.cpp:380
+msgid "Reading the default config file"
+msgstr "デフォルト構成ファイルの読込中"
+
+#: src/game/config.cpp:437
+msgid "Reading the personal config file"
+msgstr "個人構成ファイルを読込中"
+
+#: src/menu/options_menu.cpp:143
+msgid "Resolution"
+msgstr "解像度"
+
+#: src/weapon/riot_bomb.cpp:119
+msgid "Riot Bomb"
+msgstr "ライオットボム"
+
+#: src/main.cpp:77
+msgid "Run game"
+msgstr "ゲーム開始"
+
+#: src/network/chat.cpp:83
+msgid "Say: "
+msgstr "発言: "
+
+#: src/menu/options_menu.cpp:252
+msgid "Scroll border size"
+msgstr "スクロール枠のサイズ"
+
+#: src/menu/options_menu.cpp:247
+msgid "Scroll on border"
+msgstr "スクロール枠"
+
+#: src/menu/help_menu.cpp:55
+#, fuzzy
+msgid "Select number of playing teams"
+msgstr "最大プレイヤー数:"
+
+#: src/menu/network_connection_menu.cpp:214
+msgid "Server address:"
+msgstr "サーバーアドレス"
+
+#. Available on internet ?
+#: src/menu/network_connection_menu.cpp:283
+msgid "Server available on Internet"
+msgstr "インターネットでサーバーが使用できます"
+
+#. Server Mode
+#: src/menu/network_menu.cpp:194 src/network/network.cpp:480
+msgid "Server mode"
+msgstr "サーバーモード"
+
+#: src/weapon/supertux.cpp:225
+msgid ""
+"Set initial direction with up/down\n"
+"Press space to launch\n"
+"Use Left/Right to change direction"
+msgstr ""
+
+#: src/weapon/gnu.cpp:165 src/weapon/polecat.cpp:195
+msgid ""
+"Set timer 1-6 using +/- or 1-6 keys\n"
+"Press space to shoot\n"
+"One shoot per turn"
+msgstr ""
+
+#: src/weapon/dynamite.cpp:119
+msgid ""
+"Set timer 1-6 using +/- or 1-6 keys\n"
+"Space to place dynamite"
+msgstr ""
+
+#: src/interface/man_machine_interface.cpp:1175
+#, fuzzy
+msgid "Shoot"
+msgstr "ショットガン"
+
+#: src/weapon/rail_gun.cpp:98
+msgid "Shoots all players in a straight line!"
+msgstr ""
+
+#: src/weapon/shotgun.cpp:86
+msgid "Shotgun"
+msgstr "ショットガン"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:132
+#, fuzzy
+msgid "Show weapons menu"
+msgstr "武器メニューを表示"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:122
+msgid "Show/hide the interface"
+msgstr "インターフェースの表示/非表示"
+
+#: src/network/admin_commands.cpp:37
+msgid "Shows the designated player address"
+msgstr ""
+
+#: src/weapon/skip_turn.cpp:46
+msgid "Skip turn"
+msgstr "スキップターン"
+
+#: src/weapon/slap.cpp:72
+msgid "Slap"
+msgstr "ビンタ"
+
+#: src/weapon/slap.cpp:73
+msgid "Slap the enemy to make him jump a bit."
+msgstr "ビンタでは相手を少し飛ばすことができます。"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:133
+msgid "Smaller aim angle and walk step"
+msgstr "照準角度と移動の微調整"
+
+#: src/weapon/snipe_rifle.cpp:241
+msgid "Sniper Rifle"
+msgstr "スナイパーライフル"
+
+#: src/object/bonus_box.cpp:75
+msgid "Someone put a booby trap into the crate!"
+msgstr "誰かが箱に罠を仕掛けたぞ！"
+
+#: src/menu/network_connection_menu.cpp:392
+msgid "Sorry, currently, no game is waiting for players"
+msgstr "このゲームはプレイヤーを受け付けていません"
+
+#: src/menu/network_connection_menu.cpp:446
+#: tools/servers/game_server/server.cpp:287
+#, fuzzy, c-format
+msgid ""
+"Sorry, your version is not supported anymore. Supported versions are %s. You "
+"can download an updated version from http://www.warmux.org/wiki/download.php"
+msgstr ""
+"既にこのバージョンはサポート対象外です。サポートされているバージョンは %s で"
+"す。http://www.warmux.org/wiki/download.php からダウンロードしてアップデート"
+"して下さい。"
+
+#: src/menu/options_menu.cpp:310
+msgid "Sound"
+msgstr "サウンド"
+
+#: src/menu/options_menu.cpp:275
+msgid "Sound effects?"
+msgstr "効果音？"
+
+#: src/menu/options_menu.cpp:300
+msgid "Sound frequency"
+msgstr "サウンド周波数"
+
+#. Load teams' sound profiles
+#: src/game/game.cpp:157
+msgid "Sounds"
+msgstr "サウンド"
+
+#: src/game/game.cpp:188
+msgid "Starting a new game"
+msgstr "ゲームを開始中"
+
+#: src/interface/interface.cpp:286
+msgid "Stock:"
+msgstr "残り:"
+
+#: src/weapon/submachine_gun.cpp:96
+msgid "Submachine Gun"
+msgstr "サブマシンガン"
+
+#: src/weapon/supertux.cpp:224
+msgid "SuperTux"
+msgstr "スーパーTux"
+
+#: src/weapon/syringe.cpp:69
+msgid "Syringe"
+msgstr "注射器"
+
+#: src/interface/man_machine_interface.cpp:1195
+msgid "Take screenshot"
+msgstr ""
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:125
+msgid "Talk in network battles"
+msgstr "ネットワーク対戦で話す"
+
+#: src/menu/results_menu.cpp:326
+msgid "Team graphs"
+msgstr "チームグラフ"
+
+#: src/menu/results_menu.cpp:304
+msgid "Team stats"
+msgstr "チーム統計"
+
+#: src/game/game.cpp:152 src/menu/game_menu.cpp:78 src/menu/game_menu.cpp:82
+#: src/menu/network_menu.cpp:98 src/menu/network_menu.cpp:102
+msgid "Teams"
+msgstr "チーム"
+
+#: src/menu/options_menu.cpp:220
+msgid "Teams editor"
+msgstr "チームエディタ"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:89
+msgid "Teams in decreasing order of total energy"
+msgstr ""
+
+#: src/weapon/teleportation.cpp:50
+msgid "Teleportation"
+msgstr "テレポート"
+
+#: src/weapon/cluster_bomb.cpp:145
+msgid "The Cluster Bomb has left the battlefield before it could explode."
+msgstr "クラスターボムは、爆発前に戦場から出てしまいました。"
+
+#: src/weapon/footbomb.cpp:110
+msgid "The Football Bomb has left the battlefield before it could explode."
+msgstr "ラグビーボムは、爆発前に戦場から出てしまいました。"
+
+#: src/weapon/gnu.cpp:139
+msgid "The Gnu left the battlefield before exploding!"
+msgstr "Gnu は、爆発前に戦場から出てしまいました。"
+
+#: src/weapon/polecat.cpp:172
+msgid "The Polecat left the battlefield before exploding!"
+msgstr "スカンクは、爆発前に戦場から出てしまいました。"
+
+#: src/weapon/auto_bazooka.cpp:175
+msgid "The automatic rocket has left the battlefield..."
+msgstr "オートロケットは、戦場から出てしまいました。"
+
+#: src/weapon/bounce_ball.cpp:73
+msgid "The ball left the battlefield before exploding!"
+msgstr "ボールは、爆発前に戦場から出てしまいました。"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:74
+msgid "The bigger the faster you'll fall!"
+msgstr ""
+
+#: src/menu/game_mode_editor.cpp:132
+msgid ""
+"The blitz mode does not reset the time between each team turn. A team looses "
+"when it has no players left or its time has ran out."
+msgstr ""
+
+#: src/network/network_client.cpp:96
+#, c-format
+msgid ""
+"The client and server versions are incompatible (local=%s, server=%s). "
+"Please try another server."
+msgstr ""
+"クライアントとサーバーのバージョンの互換性がありません。 (local=%s, server=%"
+"s)他のサーバーで試してください。"
+
+#: src/network/net_error_msg.cpp:34
+msgid "The connection timed out. Check there is no firewall in the way!"
+msgstr "接続がタイムアウトしました。firewall を確認してください。"
+
+#: src/weapon/disco_grenade.cpp:127
+msgid "The disco grenade has left the dance floor before exploding!"
+msgstr "ディスコグレネードは、爆発前にダンスフロアから出てしまいました。"
+
+#: src/game/game.cpp:736
+msgid "The game was interrupted because you got disconnected."
+msgstr "あなたが切断されたため、ゲームは中断されました。"
+
+#: src/weapon/grenade.cpp:58
+msgid "The grenade left the battlefield before exploding!"
+msgstr "グレネードは、爆発前に戦場から出てしまいました。"
+
+#: src/menu/network_menu.cpp:385
+msgid "The others are waiting for you! Wake up! :-)"
+msgstr "他の人が待ってるよ！起きて！ :-)"
+
+#: src/weapon/parachute.cpp:89
+msgid "The parachute is activated automatically."
+msgstr "パラシュートは自動で使用されます。"
+
+#: src/weapon/bazooka.cpp:80 src/weapon/cluzooka.cpp:323
+#: src/weapon/riot_bomb.cpp:85
+msgid "The rocket has left the battlefield..."
+msgstr "ロケットは、戦場から出てしまいました。"
+
+#: src/network/net_error_msg.cpp:33
+msgid "The server rejected the connection."
+msgstr "サーバーから接続が拒否されました。"
+
+#: src/network/net_error_msg.cpp:35
+msgid "The server rejected the connection: wrong password!"
+msgstr "サーバーから接続が拒否されました: パスワードが違います！"
+
+#: src/weapon/weapon.cpp:649
+#, c-format
+msgid ""
+"The weapon %s has infinite ammo, but bonus boxes might contain ammo for it!"
+msgstr ""
+"武器 %s は無限の弾薬を持っています。しかし、ボーナスボックスはそれのために弾"
+"薬を含むかもしれません！"
+
+#: src/menu/network_menu.cpp:286
+#, c-format
+msgid "There is only %i team."
+msgid_plural "There are only %i teams."
+msgstr[0] "%i チームがあります。"
+
+#: src/gui/control_config.cpp:153
+#, c-format
+msgid "This key has already been attributed to '%s'"
+msgstr ""
+
+#: src/menu/benchmark_menu.cpp:115 src/menu/results_menu.cpp:327
+msgid "Time"
+msgstr "タイム"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:91
+msgid ""
+"Time left in this turn and time elapsed since game start.\n"
+"Click to pause"
+msgstr ""
+
+#: src/weapon/cluster_bomb.cpp:188 src/weapon/footbomb.cpp:158
+#, fuzzy
+msgid ""
+"Timeout: Mouse wheel or Page Up/Down\n"
+"Angle: Up/Down\n"
+"Fire: Press space until desired strength is reached\n"
+"One ammo per turn"
+msgstr ""
+"時限設定: マウスホイール または、 Page Up/Down\n"
+"角度: up/Down\n"
+"投下: スペースキーを押し続けて強さを決定\n"
+"ターン毎で1つの弾薬"
+
+#: src/weapon/bounce_ball.cpp:91
+#, fuzzy
+msgid ""
+"Timeout: Mouse wheel or Page Up/Down\n"
+"Angle: Up/Down\n"
+"Fire: space key\n"
+"One ammo per turn"
+msgstr ""
+"時限設定: マウスホイール または、 Page Up/Down\n"
+"角度: up/Down\n"
+"投下: スペースキーを押し続けて強さを決定\n"
+"ターン毎で1つの弾薬"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/interface/man_machine_interface.cpp:1154 src/menu/help_menu.cpp:123
+#, fuzzy
+msgid "Toggle fullscreen"
+msgstr "フルスクリーン？"
+
+#: src/interface/man_machine_interface.cpp:1155
+#, fuzzy
+msgid "Toggle interface"
+msgstr "インターフェースの表示/非表示"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/interface/man_machine_interface.cpp:1190 src/menu/help_menu.cpp:136
+#, fuzzy
+msgid "Toggle minimap"
+msgstr "ミニマップの表示/非表示"
+
+#: src/interface/man_machine_interface.cpp:1157
+#, fuzzy
+msgid "Toggle weapons menu"
+msgstr "武器メニューを表示"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:102
+msgid "Touch controls"
+msgstr ""
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:98
+msgid "Touch/click the left or right arrows to move respectively left or right"
+msgstr ""
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:99
+msgid ""
+"Touch/click the left or right arrows to respectively raise or lower the aim"
+msgstr ""
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:101
+msgid "Touch/click to change the weapon timer"
+msgstr ""
+
+#: src/menu/help_menu.cpp:97
+msgid "Touch/click to fire / start filling weapon speed gauge"
+msgstr ""
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:100
+msgid "Touch/click to jump. Maintaining the touch/click to high jump."
+msgstr ""
+
+#: src/network/net_error_msg.cpp:30
+msgid "Unable to contact the host."
+msgstr "ホストにコンタクトできません。"
+
+#: src/map/maps_list.cpp:288
+#, c-format
+msgid "Unable to open the maps directory (%s)!"
+msgstr "マップディレクトリが開けません (%s)!"
+
+#: src/map/maps_list.cpp:300
+#, c-format
+msgid "Unable to open the personal maps directory (%s)!"
+msgstr "個人マップディレクトリが開けません (%s)!"
+
+#: src/network/net_error_msg.cpp:31
+msgid "Unable to use this port!"
+msgstr "このポートは使用できません！"
+
+#: src/network/admin_commands.cpp:120
+msgid "Unknown command"
+msgstr "不明なコマンド"
+
+#: src/network/admin_commands.cpp:69
+#, fuzzy, c-format
+msgid "Unknown command of type %i"
+msgstr "不明なコマンド"
+
+#: src/game/game_mode.cpp:342
+msgid "Unlimited"
+msgstr "無制限"
+
+#: src/interface/man_machine_interface.cpp:1163
+msgid "Up"
+msgstr ""
+
+#: src/interface/man_machine_interface.cpp:1164
+msgid "Up slowly"
+msgstr ""
+
+#: src/weapon/disco_grenade.cpp:158 src/weapon/grenade.cpp:77
+msgid ""
+"Up/Down: Set direction\n"
+"Set timer 1-6 using +/- or 1-6 keys\n"
+"Press space till desired strength"
+msgstr ""
+
+#: src/weapon/anvil.cpp:142
+#, fuzzy
+msgid ""
+"Usage: left click on the target\n"
+"Anvil kill all characters beneath.\n"
+"One ammo per turn"
+msgstr ""
+"使用方法: 目標を左クリック\n"
+"ターン毎で1つの弾薬"
+
+#: src/weapon/auto_bazooka.cpp:221
+#, fuzzy
+msgid ""
+"Usage: left click on the target\n"
+"Initial fire angle: Up/Down\n"
+"Firing: keep the space key pressed until the desired strength\n"
+"One ammo per turn"
+msgstr ""
+"使用方法: 目標を左クリック\n"
+"初期射撃角度: 上/下\n"
+"砲撃: スペースキーを押し続けて強さを決定\n"
+"ターン毎で1つの弾薬"
+
+#: src/main.cpp:179
+msgid "Version"
+msgstr "バージョン"
+
+#: src/menu/options_menu.cpp:522
+#, c-format
+msgid "Version verification failed because: %s"
+msgstr "バージョン確認は失敗しました。 理由: %s"
+
+#: src/menu/network_menu.cpp:447
+msgid "Wait until some opponent(s) connect!"
+msgstr "まだ相手の接続を待っています！"
+
+#: src/menu/network_menu.cpp:300
+#, c-format
+msgid "Wait! %i player is not ready yet!"
+msgid_plural "Wait! %i players are not ready yet!"
+msgstr[0] "待ってください！ %i はまだ準備ができていません！"
+
+#: src/game/game.cpp:635
+#, c-format
+msgid "Waiting for %s"
+msgstr "%s を待っています"
+
+#: src/game/game.cpp:167
+msgid "Waiting for remote players"
+msgstr "リモートプレイヤーを待っています"
+
+#: src/menu/network_menu.cpp:514
+msgid "Waiting for the server. All you can do is cancel or chat!"
+msgstr "サーバーを待っています。キャンセルとチャットができます！"
+
+#: src/main.cpp:190
+#, fuzzy
+msgid "Warmux launching..."
+msgstr "Warmux を起動中..."
+
+#: src/main.cpp:326
+#, fuzzy
+msgid "Warmux version "
+msgstr " Warmux バージョン"
+
+#: src/interface/man_machine_interface.cpp:1152
+#, fuzzy
+msgid "Weapon category 8"
+msgstr "武器カテゴリを切り替える"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:135
+#, fuzzy
+msgid "Weapon: Fire / Bonus box: drop"
+msgstr "武器：攻撃 / ボーナスボックス: 急落下"
+
+#: src/game/game.cpp:148
+msgid "Weapons"
+msgstr "武器"
+
+#: src/main.cpp:336
+msgid "Website: "
+msgstr "Webサイト: "
+
+#. First %s will be replaced with the name of the network game,
+#. second %s by the server hostname
+#: src/menu/network_menu.cpp:180
+#, c-format
+msgid "Welcome to %s on %s!"
+msgstr "%s (%s)へようこそ！"
+
+#: src/game/game.cpp:1003
+#, c-format
+msgid "What a beautiful homerun! %s from %s team is in another world..."
+msgstr "なんと美しいホームランだろう！%s (%s)は異世界へ..."
+
+#: src/game/game.cpp:1066
+#, c-format
+msgid "What a shame for %s - he was killed by a simple gun!"
+msgstr " %s はハンドガンごときにやられました...これは恥ずかしい！"
+
+#. TRANSLATORS: please be imaginative and keep it short!
+#: src/menu/help_menu.cpp:69
+#, fuzzy
+msgid "When a character can be switched"
+msgstr "キャラクターに関して:行動するキャラクターを切り替えます"
+
+#: src/menu/options_menu.cpp:92
+msgid "Wind particles?"
+msgstr "風の表示？"
+
+#: src/menu/help_menu.cpp:87
+msgid ""
+"Wind strength and direction.\n"
+"Click here to switch to touch controls."
+msgstr ""
+
+#
+#: src/menu/results_menu.cpp:272
+msgid "Winner"
+msgstr "勝者"
+
+#: src/weapon/rail_gun.cpp:123
+#, c-format
+msgid "Woah! Combo of %u!"
+msgstr ""
+
+#: src/include/action_handler.cpp:233
+msgid "Wrong map CRC!"
+msgstr "CRCが間違っているマップです！"
+
+#: src/include/action_handler.cpp:231
+msgid "Wrong map name!"
+msgstr "名前が間違っているマップです！"
+
+#: src/include/action_handler.cpp:235
+msgid "Wrong team!"
+msgstr "チームが間違っています！"
+
+#: lib/warmux/net/download.cpp:149
+#, c-format
+msgid "Wrote %i/%i bytes"
+msgstr ""
+
+#: src/menu/network_menu.cpp:294 src/menu/network_menu.cpp:389
+msgid "You are alone. :-/"
+msgstr "あなたは孤独・・・ :-/"
+
+#: src/menu/network_menu.cpp:446
+msgid "You are the new turn master!"
+msgstr "あなたは新しいターンマスターです！"
+
+#: src/map/maps_list.cpp:309
+msgid "You need at least one valid map!"
+msgstr "最低1つの有効なマップが必要です！"
+
+#: src/game/game.cpp:280 src/team/teams_list.cpp:163
+msgid "You need at least two valid teams!"
+msgstr "最低2つの有効なチームが必要です！"
+
+#: src/menu/network_menu.cpp:270
+msgid "You won't be able to play before selecting a team!"
+msgstr "ゲーム開始前にチームを選択してください！"
+
+#: src/weapon/weapon_launcher.cpp:554
+msgid "Your shot has missed!"
+msgstr "ミス！"
+
+#
+#: src/menu/credits_menu.cpp:72
+msgid "aka"
+msgstr "aka"
+
+#: src/weapon/air_attack.cpp:214
+#, fuzzy
+msgid ""
+"attack direction: Left/Right\n"
+"Bombing: Left click on the target\n"
+"One bombing per turn"
+msgstr ""
+"爆撃方向 : 左/右\n"
+"爆撃 : 目標を左クリック\n"
+"ターン毎で1回"
+
+#: src/map/maps_list.cpp:80
+msgid "couldn't load config"
+msgstr "構成が読み込めませんでした。"
+
+#. the default player name for custom teams
+#: src/team/custom_team.cpp:47
+msgid "custom player"
+msgstr "カスタムプレイヤー"
+
+#: src/map/ground.cpp:71
+msgid "done"
+msgstr "完了"
+
+#: src/map/maps_list.cpp:87
+msgid "error parsing the config file"
+msgstr "構成ファイルを解析しているエラー"
+
+#
+#: src/menu/credits_menu.cpp:75
+msgid "from"
+msgstr "from"
+
+#: src/interface/loading_screen.cpp:43
+msgid "loading..."
+msgstr ""
+
+#: src/map/maps_list.cpp:73
+msgid "no configuration file!"
+msgstr "構成ファイルがありません！"
+
+#: src/sound/jukebox.cpp:186
+msgid "o Loading music"
+msgstr "o 音楽を読込中"
+
+#: src/sound/jukebox.cpp:368
+#, c-format
+msgid "o Loading sound profile: %s"
+msgstr "o 音楽設定を読込中 : %s"
+
+#: src/sound/jukebox.cpp:130
+#, c-format
+msgid "o Opened audio at %d Hz %d bit"
+msgstr "o 音楽 %d Hz %d bit"
+
+#, fuzzy
+#~ msgid "Selected weapon and ammo left"
+#~ msgstr "武器カテゴリを切り替える"
+
+#, fuzzy
+#~ msgid "Change per team number of players"
+#~ msgstr "最大プレイヤー数:"
+
+#, fuzzy
+#~ msgid "Edit player name"
+#~ msgstr "プレイヤー名"
+
+#~ msgid "Fullscreen / window"
+#~ msgstr "フルスクリーン / ウインドウ"
+
+#~ msgid "Quit battle"
+#~ msgstr "バトルを終了"
+
+#~ msgid "You are alone..."
+#~ msgstr "あなたは孤独..."
+
+#~ msgid ""
+#~ "How to use it : keep the space key pressed\n"
+#~ "an ammo per turn"
+#~ msgstr ""
+#~ "使用方法: スペースキーを押し続ける\n"
+#~ "ターン毎で1つの弾薬"
+
+#
+#~ msgid "Head commander: "
+#~ msgstr "指揮官: "
+
+#~ msgid "Click: Center the camera on the character"
+#~ msgstr "クリック:カメラの中心をキャラクターにする"
+
+#~ msgid ""
+#~ "Error:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "エラー:\n"
+#~ "%s"
+
+# URM0-1: search URM0-2 for next line
+#~ msgid "Join #warmux on irc.freenode.net to find some opponents."
+#~ msgstr "Join #warmux on irc.freenode.net to find some opponents."
+
+#~ msgid "%s tries to connect with a different version : client=%s, me=%s."
+#~ msgstr "%s は異なるバージョンで接続を試みました : client=%s, me=%s."
+
+#~ msgid "Connect !"
+#~ msgstr "接続！"
+
+#~ msgid "Connect to an internet game"
+#~ msgstr "インターネットゲームに接続"
+
+#~ msgid "Do you really want to quit? (Y/N)"
+#~ msgstr "本当に終了してよろしいですか？ (\"Y\"はい or \"N\"いいえ)"
+
+#~ msgid "Error in %s:%lu (Warmux %s) : %s"
+#~ msgstr "エラー : %s:%lu (Warmux %s) : %s"
+
+#~ msgid "Error loading team's data %s:"
+#~ msgstr "チーム読込エラー %s :"
+
+#~ msgid "Error while loading configuration file: %s"
+#~ msgstr "構成ファイル読込エラー : %s"
+
+#~ msgid "Error while loading default configuration file: %s"
+#~ msgstr "デフォルト構成ファイル読込エラー: %s"
+
+#~ msgid "Error while loading game mode %s (file %s):"
+#~ msgstr "ゲームモード読込エラー %s (file %s):"
+
+#~ msgid ""
+#~ "Error: Your server is not reachable from the internet. Check your "
+#~ "firewall configuration"
+#~ msgstr ""
+#~ "エラー: あなたのサーバーはインターネットまで接続されていません。firewall "
+#~ "構成を確認してください。"
+
+#, fuzzy
+#~ msgid ""
+#~ "Error: Your server is not reachable from the internet. Check your "
+#~ "firewall configuration: TCP Port %u must accept connection from the "
+#~ "outside. If you are not directly connected to the internet, check your "
+#~ "router configuration: TCP Port %u must be forwarded on your computer."
+#~ msgstr ""
+#~ "エラー: あなたのサーバーはインターネットまで接続されていません。firewall "
+#~ "構成を確認し、TCP Port %s は外側からの接続できるようにする必要があります。"
+#~ "もし、あなたは直接インターネットに接続していないなら、ルーターを確認してく"
+#~ "ださい。TCP Port %s は、あなたのコンピュータにフォワーディングする必要があ"
+#~ "ります。"
+
+#~ msgid "HOME directory (environment variable $HOME) could not be found!"
+#~ msgstr " ホームディレクトリ (environment variable $HOME) が見つかりません！"
+
+#~ msgid "Host a game (Windows clients only)"
+#~ msgstr "ゲームをホストする（Windowsクライアント専用）"
+
+#~ msgid "Network initialization"
+#~ msgstr "ネットワーク初期化"
+
+#~ msgid "Refresh"
+#~ msgstr "リフレッシュ"
+
+#, fuzzy
+#~ msgid ""
+#~ "Sorry, your version is not supported anymore. Supported version are %s. "
+#~ "You can download a updated version on http://www.warmux.org/wiki/download."
+#~ "php"
+#~ msgstr ""
+#~ "既にこのバージョンはサポート対象外です。サポートされているバージョンは %s "
+#~ "です。http://www.warmux.org/wiki/download.php からダウンロードしてアップ"
+#~ "デートして下さい。"
+
+#~ msgid "Tools"
+#~ msgstr "ツール"
+
+#~ msgid "Unnamed"
+#~ msgstr "名無し"
+
+#~ msgid "XML error during loading map '%s': "
+#~ msgstr "マップ '%s' の読込中のXMLエラー:"

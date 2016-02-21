@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <equipe>
+    <nom>Firefox Team</nom>
+    <ver nom="Mozilla browser" avatar="firefoxteam" />
+	 <ver nom="Phoenix" avatar="firefoxteam" />
+    <ver nom="Firebird" avatar="firefoxteam" />
+    <ver nom="Deer Park" avatar="firefoxteam" />
+    <ver nom="Burning Edge" avatar="firefoxteam" />
+    <ver nom="Firemonger" avatar="firefoxteam" />
+    <ver nom="Funnyfox" avatar="firefoxteam" />
+    <ver nom="Red Panda" avatar="firefoxteam" />
+    <ver nom="Red Fox" avatar="firefoxteam" />
+    <ver nom="Malaguti" avatar="firefoxteam" />
+    <ver nom="Alopex" avatar="firefoxteam" />
+	 <ver nom="Star" avatar="firefoxteam" />
+	 <ver nom="Spread" avatar="firefoxteam" />
+	 <ver nom="20th Century" avatar="firefoxteam" />    
+  </equipe>
+  <surface name="flag" file="flag.png" />
+</resources>

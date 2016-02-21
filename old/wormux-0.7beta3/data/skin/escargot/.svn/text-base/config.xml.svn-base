@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+
+<author>
+  <name>Laurent Defert Simonneau</name>
+  <email>lodesi2 AT yahoo.fr</email>
+</author>
+
+<sprite name="walking">
+  <image file="escargot.png">
+    <grid pos="0,0" size="42,35" array="6,1" />
+  </image>
+  <collision_rect dx="10" top="0" bottom="8" />
+  <wormux repetition="3" />
+  <hand frame="1" x="9" y="21" />
+  <hand frame="2" x="9" y="17" />
+  <hand frame="3" x="15" y="13" />
+  <hand frame="4" x="15" y="16" />
+  <hand frame="5" x="14" y="18" />
+  <hand frame="6" x="11" y="21" />
+</sprite>
+
+<sprite name="helmet">
+  <image file="escargot-helmet.png">
+    <grid pos="0,0" size="45,37" array="6,1" />
+  </image>
+  <collision_rect dx="10" top="0" bottom="8" />
+  <wormux repetition="3" />
+  <hand frame="1" x="11" y="23" />
+  <hand frame="2" x="11" y="19" />
+  <hand frame="3" x="17" y="18" />
+  <hand frame="4" x="17" y="18" />
+  <hand frame="5" x="16" y="20" />
+  <hand frame="6" x="13" y="23" />
+</sprite>
+
+<sprite name="animation">
+  <image file="clope-anim.png">
+    <grid pos="0,0" size="73,42" array="17,1" />
+  </image>
+  <animation speed="150" />
+</sprite>
+
+<sprite name="jump">
+  <image file="escargot-jump.png" />
+  <collision_rect dx="12" top="0" bottom="10" />
+  <hand frame="*" x="9" y="15" />
+</sprite>
+
+<sprite name="jetpack">
+  <image file="escargot-fly.png" />
+  <collision_rect dx="12" top="0" bottom="14" />
+  <translation origin="top_left" x="0" y="-1" />
+</sprite>
+
+<sprite name="jetpack-up">
+  <image file="escargot-jetpack-up.png" >
+    <grid pos="0,0" size="45,41" array="3,1" />
+  </image>
+  <collision_rect dx="12" top="0" bottom="14" />
+  <translation origin="top_left" x="0" y="-1" />
+  <animation pingpong="yes"/>
+</sprite>
+
+<sprite name="jetpack-left-right">
+  <image file="escargot-jetpack-lr.png" >
+    <grid pos="0,0" size="45,41" array="3,1" />
+  </image>
+  <collision_rect dx="12" top="0" bottom="14" />
+  <translation origin="top_left" x="0" y="-1" />
+  <animation pingpong="yes"/>
+</sprite>
+
+<sprite name="dead">
+  <image file="escargot-mort.png" />
+  <collision_rect dx="5" top="0" bottom="6" />
+</sprite>
+
+</resources>

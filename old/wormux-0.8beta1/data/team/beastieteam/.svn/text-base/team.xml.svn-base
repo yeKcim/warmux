@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Beastie</name>
+  <surface name="flag" file="flag.png" />
+  <team>
+    <character name="Beastie" body="beastieteam" />
+    <character name="FreeBSD" body="beastieteam" />
+    <character name="OpenBSD" body="beastieteam" />
+    <character name="OpenSSH" body="beastieteam" />
+    <character name="NetBSD" body="beastieteam" />
+    <character name="PCBSD" body="beastieteam" />
+    <character name="DragonFlyBSD" body="beastieteam" />
+    <character name="MirBSD" body="beastieteam" />
+    <character name="OpenNTPD" body="beastieteam" />
+    <character name="666" body="beastieteam" />
+    <character name="Deamon" body="beastieteam" />
+  </team>
+</resources>

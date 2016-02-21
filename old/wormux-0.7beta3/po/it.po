@@ -1,0 +1,587 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Wormux 0.5\n"
+"Report-Msgid-Bugs-To: wormux-dev@gna.org\n"
+"PO-Revision-Date: 2004-12-07 22:09+0100\n"
+"Last-Translator: Victor STINNER <victor.stinner@haypocalc.com>\n"
+"Language-Team: TeMpLeR <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/map/maps_list.cpp:333
+#, c-format
+msgid "! Map %s not found :-("
+msgstr ""
+
+#: src/game/game_loop.cpp:764
+#, c-format
+msgid "%s (%s team) has died."
+msgstr ""
+
+#: src/map/maps_list.cpp:118
+#, c-format
+msgid "%s <%s> aka %s from %s"
+msgstr ""
+
+#: src/map/maps_list.cpp:125
+#, c-format
+msgid "%s <%s> from %s"
+msgstr ""
+
+#: src/game/game_loop.cpp:738
+#, c-format
+msgid "%s commits suicide !"
+msgstr "%s si è suicidato!"
+
+#: src/graphic/fps.cpp:110
+#, c-format
+msgid "%s fps"
+msgstr ""
+
+#: src/game/game_loop.cpp:731
+#, c-format
+msgid "%s has fallen in water."
+msgstr ""
+
+#: src/game/game_loop.cpp:742
+#, c-format
+msgid "%s has fallen off the map!"
+msgstr ""
+
+#: src/object/bonus_box.cpp:272
+#, fuzzy, c-format
+msgid "%s has lost %u point of energy."
+msgid_plural "%s has lost %u points of energy."
+msgstr[0] "Il giocatore '%s' ha perso %u punti di vita :-("
+msgstr[1] "Il giocatore '%s' ha perso %u punti di vita :-("
+
+#: src/object/bonus_box.cpp:263
+#, fuzzy, c-format
+msgid "%s has won %u point of energy!"
+msgid_plural "%s has won %u points of energy!"
+msgstr[0] "Il giocatore '%s' vince %u punti di vita !"
+msgstr[1] "Il giocatore '%s' vince %u punti di vita !"
+
+#: src/game/game_loop.cpp:755
+#, fuzzy, c-format
+msgid "%s is a psychopath, he has killed a member of %s team!"
+msgstr "%s è uno psicopatico!!! Ha ucciso un membro del suo team: %s !!"
+
+#: src/game/game_loop.cpp:748
+#, fuzzy, c-format
+msgid "%s is dead because he is clumsy!"
+msgstr "%s è morto da maldestro.."
+
+#: src/weapon/mine.cpp:231
+#, fuzzy, c-format
+msgid "%s is next to a mine!"
+msgstr "%s è vicino a me"
+
+#: src/object/bonus_box.cpp:290
+#, fuzzy, c-format
+msgid "%s team has won %u automatic bazooka!"
+msgid_plural "%s team has won %u automatic bazookas!"
+msgstr[0] "La squadra '%s' vince %u bazooka automatici !"
+msgstr[1] "La squadra '%s' vince %u bazooka automatici !"
+
+#: src/object/bonus_box.cpp:300
+#, fuzzy, c-format
+msgid "%s team has won %u stick of dynamite!"
+msgid_plural "%s team has won %u sticks of dynamite!"
+msgstr[0] "La squadra '%s' vince %u candelotti di dinamite !"
+msgstr[1] "La squadra '%s' vince %u candelotti di dinamite !"
+
+#: src/object/bonus_box.cpp:254
+#, fuzzy, c-format
+msgid "%s team has won %u teleportation."
+msgid_plural "%s team has won %u teleportations."
+msgstr[0] "la squadra '%s' vince %u teletrasporti."
+msgstr[1] "la squadra '%s' vince %u teletrasporti."
+
+#: src/game/game.cpp:108
+#, c-format
+msgid "%s team has won."
+msgstr ""
+
+#: src/object/bonus_box.cpp:281
+#, fuzzy, c-format
+msgid "'%s has won %u air attack"
+msgid_plural "'%s has won %u air attacks"
+msgstr[0] "Il giocatore '%s' vince %u attacchi aerei !"
+msgstr[1] "Il giocatore '%s' vince %u attacchi aerei !"
+
+#: src/interface/interface.cpp:195
+msgid "(dead)"
+msgstr "(morto)"
+
+#: src/interface/interface.cpp:243
+msgid "(unlimited)"
+msgstr "(illimitato)"
+
+#: src/map/maps_list.cpp:139
+msgid "<infinite_background> needs <is_open> to be set to work correctly!!"
+msgstr ""
+
+#: src/object/bonus_box.cpp:285 src/weapon/air_attack.cpp:203
+msgid "Air attack"
+msgstr "Attacco aereo"
+
+#: src/main.cpp:222
+msgid "Authors:"
+msgstr "Autori :"
+
+#: src/object/bonus_box.cpp:294 src/weapon/auto_bazooka.cpp:177
+msgid "Automatic bazooka"
+msgstr "Bazooka automatico"
+
+#: src/weapon/baseball.cpp:40
+msgid "Baseball"
+msgstr "Baseball"
+
+#: src/weapon/bazooka.cpp:122
+msgid "Bazooka"
+msgstr "Bazooka"
+
+#: src/main.cpp:95
+msgid "C++ exception caught:"
+msgstr "Exception C++ intercettata :"
+
+#: src/team/teams_list.cpp:423 src/team/teams_list.cpp:448
+#, c-format
+msgid "Can't find team %s!"
+msgstr ""
+
+#: src/team/teams_list.cpp:124 src/team/teams_list.cpp:139
+#, c-format
+msgid "Cannot open teams directory (%s)!"
+msgstr ""
+
+#: src/weapon/cluster_bomb.cpp:275
+msgid "ClusterBomb"
+msgstr ""
+
+#: src/weapon/suicide.cpp:41
+msgid "Commit suicide"
+msgstr "Suicidato"
+
+#: src/menu/main_menu.cpp:132
+msgid "Credits"
+msgstr ""
+
+#: src/menu/options_menu.cpp:88
+#, fuzzy
+msgid "Display player energy?"
+msgstr "Mostra l'energia del giocatore"
+
+#: src/menu/options_menu.cpp:91
+#, fuzzy
+msgid "Display player's name?"
+msgstr "Mostra il nome del giocatore"
+
+#: src/menu/options_menu.cpp:85
+msgid "Display wind particles?"
+msgstr ""
+
+#: src/game/game.cpp:157
+#, fuzzy
+msgid "Do you really want to quit? (Y/N)"
+msgstr "Sei sicuro di voler uscire (S/N) ?"
+
+#: src/menu/options_menu.cpp:111
+msgid "Duration of a turn:"
+msgstr "Durata del turno :"
+
+#: src/menu/options_menu.cpp:116
+msgid "Duration of the end of a turn:"
+msgstr "Durata della fine del turno :"
+
+#: src/object/bonus_box.cpp:304 src/weapon/dynamite.cpp:149
+msgid "Dynamite"
+msgstr "Dinamite"
+
+#: src/game/game.cpp:100
+msgid "End of the game!\n"
+msgstr "Fine della partita !\n"
+
+#: src/interface/interface.cpp:122
+#, fuzzy
+msgid "Energy:"
+msgstr "Vita"
+
+#: src/team/skin.cpp:121
+#, fuzzy, c-format
+msgid "Error during loading skin %s:"
+msgstr ""
+"Errore :\n"
+"%s"
+
+#: src/tool/error.cpp:82
+#, fuzzy, c-format
+msgid "Error in %s:%lu"
+msgstr ""
+"Errore :\n"
+"%s"
+
+#: src/team/team.cpp:78
+#, fuzzy, c-format
+msgid "Error loading team %s:"
+msgstr ""
+"Errore :\n"
+"%s"
+
+#: src/game/config.cpp:124
+#, fuzzy, c-format
+msgid "Error while loading configuration file: %s"
+msgstr ""
+"Errore :\n"
+"%s"
+
+#: src/game/game_mode.cpp:151
+#, fuzzy, c-format
+msgid "Error while loading game mode %s (file %s):"
+msgstr ""
+"Errore :\n"
+"%s"
+
+#: src/game/game.cpp:199
+#, fuzzy, c-format
+msgid ""
+"Error:\n"
+"%s"
+msgstr ""
+"Errore :\n"
+"%s"
+
+#: src/team/team.cpp:156 src/team/team.cpp:220
+#, c-format
+msgid "Error: can't find the skin \"%s\" for the team \"%s\"."
+msgstr ""
+
+#: src/game/game_loop.cpp:211
+#, fuzzy
+msgid "Find a random position for characters"
+msgstr "Trova una posizione casuale"
+
+#: src/menu/options_menu.cpp:82
+#, fuzzy
+msgid "Fullscreen?"
+msgstr "Schermo intero"
+
+#: src/menu/options_menu.cpp:109
+#, fuzzy
+msgid "Game options"
+msgstr "Opzioni"
+
+#: src/menu/options_menu.cpp:72
+msgid "Graphic options"
+msgstr ""
+
+#: src/weapon/grenade.cpp:205
+msgid "Grenade"
+msgstr "Granata"
+
+#: src/weapon/gun.cpp:100
+msgid "Gun"
+msgstr "Pistola"
+
+#: src/tool/file_tools.cpp:59
+msgid "HOME directory (environment variable $HOME) could not be found!"
+msgstr ""
+
+#: src/menu/options_menu.cpp:126
+msgid "Initial energy:"
+msgstr "Energia iniziale :"
+
+#: src/game/game_loop.cpp:264
+msgid "Initialisation"
+msgstr "Inizializzazione"
+
+#: src/main.cpp:194
+#, c-format
+msgid "Initialisation of TTF library failed: %s"
+msgstr ""
+
+#: src/game/game_loop.cpp:153
+msgid "Initialise data"
+msgstr "Inizializzazione"
+
+#: src/game/game_loop.cpp:217
+#, fuzzy
+msgid "Initialise objects"
+msgstr "Inizializzazione"
+
+#: src/game/game_loop.cpp:105
+#, fuzzy
+msgid "Initialise teams"
+msgstr "Inizializzazione"
+
+#: src/game/game_loop.cpp:101
+#, fuzzy
+msgid "Load map"
+msgstr "Caricamento mappa %s"
+
+#: src/map/maps_list.cpp:257
+#, fuzzy
+msgid "Load maps:"
+msgstr "Caricamento mappa %s"
+
+#: src/team/skin.cpp:293
+#, fuzzy
+msgid "Load skins:"
+msgstr "Caricamento skin %s"
+
+#: src/team/teams_list.cpp:113
+#, fuzzy
+msgid "Load teams:"
+msgstr "Caricamento squadra %s"
+
+#: src/map/map.cpp:317
+#, c-format
+msgid "Map %s, a creation of :"
+msgstr ""
+
+#: src/menu/options_menu.cpp:77
+msgid "Maximum number of FPS:"
+msgstr ""
+
+#: src/weapon/mine.cpp:298
+msgid "Mine"
+msgstr "Mina"
+
+#: src/menu/options_menu.cpp:101
+#, fuzzy
+msgid "Music?"
+msgstr "Musica"
+
+#: src/interface/interface.cpp:121
+#, fuzzy
+msgid "Name:"
+msgstr "Nome"
+
+#: src/menu/main_menu.cpp:117
+msgid "Network Game"
+msgstr ""
+
+#: src/weapon/weapon.cpp:635
+#, c-format
+msgid "No element <%s> found in the xml config file!"
+msgstr ""
+
+#: src/menu/options_menu.cpp:121
+#, fuzzy
+msgid "Number of players per team:"
+msgstr "Nuomero di giocatori per squadra"
+
+#: src/menu/main_menu.cpp:126
+msgid "Options"
+msgstr "Opzioni"
+
+#: src/game/game.cpp:211
+msgid "Pause"
+msgstr ""
+
+#: src/menu/main_menu.cpp:110
+msgid "Play"
+msgstr "Gioca"
+
+#: src/main.cpp:215
+msgid "Please tell us your opinion of Wormux via email:"
+msgstr ""
+
+#: src/menu/main_menu.cpp:138
+msgid "Quit"
+msgstr "esci"
+
+#: src/main.cpp:203
+msgid "Quit Wormux"
+msgstr ""
+
+#: src/main.cpp:251
+msgid "Run game"
+msgstr "Avvia il gioco"
+
+#: src/menu/game_menu.cpp:67
+msgid "Select the teams:"
+msgstr ""
+
+#: src/menu/game_menu.cpp:106
+msgid "Select the world:"
+msgstr ""
+
+#: src/menu/options_menu.cpp:104
+#, fuzzy
+msgid "Sound effects?"
+msgstr "Effetti sonori"
+
+#: src/menu/options_menu.cpp:96
+#, fuzzy
+msgid "Sound options"
+msgstr "Opzioni"
+
+#: src/game/game.cpp:90
+#, fuzzy
+msgid "Starting a new game"
+msgstr "Avvia una nuova partita"
+
+#: src/interface/interface.cpp:124
+#, fuzzy
+msgid "Stock:"
+msgstr "Munizioni"
+
+#: src/object/bonus_box.cpp:258 src/weapon/teleportation.cpp:45
+msgid "Teleportation"
+msgstr "Teletrasporto"
+
+#: src/weapon/auto_bazooka.cpp:152
+#, fuzzy
+msgid "The automatic rocket has left the battlefield..."
+msgstr "Il razzo automatico è passato in un altro mondo"
+
+#: src/game/game.cpp:115
+msgid "The game has ended as a draw."
+msgstr ""
+
+#: src/weapon/bazooka.cpp:109 src/weapon/cluster_bomb.cpp:110
+#, fuzzy
+msgid "The rocket left the battlefield..."
+msgstr "Il razzo è passato in un altro mondo"
+
+#: src/main.cpp:196
+msgid "Unable to initialise the fonts."
+msgstr ""
+
+#: src/main.cpp:146
+#, c-format
+msgid "Unable to initialize SDL library: %s"
+msgstr ""
+
+#: src/map/maps_list.cpp:268 src/map/maps_list.cpp:284
+#, c-format
+msgid "Unable to open maps directory (%s)!"
+msgstr ""
+
+#: src/team/skin.cpp:305 src/team/skin.cpp:321
+#, c-format
+msgid "Unable to open skins directory (%s)!"
+msgstr ""
+
+#: src/main.cpp:102
+#, fuzzy
+msgid "Unexcepted exception caught..."
+msgstr "Ricevuta eccezione inaspettata  ..."
+
+#: src/game/game_loop.cpp:183
+msgid "Unknow action"
+msgstr ""
+
+#: src/main.cpp:167
+msgid "Version"
+msgstr "Versione"
+
+#: src/game/game_loop.cpp:89
+msgid "Wait for clients"
+msgstr ""
+
+#: src/game/game_loop.cpp:177
+msgid "Wait for map"
+msgstr ""
+
+#: src/game/game_loop.cpp:174
+msgid "Wait for server"
+msgstr ""
+
+#: src/game/game_loop.cpp:170
+msgid "Wait for server informations"
+msgstr ""
+
+#: src/game/game_loop.cpp:180
+msgid "Wait teams"
+msgstr ""
+
+#: src/map/maps_list.cpp:150
+msgid "Warning! Winds particles mass is too low! Set by default to 0.3"
+msgstr ""
+
+#: src/game/config.cpp:143
+msgid "Warning: Don't load configuration (old version of Wormux)."
+msgstr ""
+
+#: src/interface/interface.cpp:123
+#, fuzzy
+msgid "Weapon:"
+msgstr "Armi"
+
+#: src/main.cpp:232
+msgid "Website: "
+msgstr "Sito web : "
+
+#: src/game/game_loop.cpp:759
+#, fuzzy, c-format
+msgid "What a shame for %s - he was killed by a simple gun!"
+msgstr "Che vergogna per %s : E' stato ucciso da una semplice pistola!"
+
+#: src/main.cpp:178
+#, fuzzy
+msgid "Wormux launching..."
+msgstr "Avvio di Wormux."
+
+#: src/main.cpp:221
+msgid "Wormux version "
+msgstr "Wormux Versione"
+
+#: src/map/maps_list.cpp:83
+#, c-format
+msgid "XML error during loading map '%s' :"
+msgstr ""
+
+#: src/map/maps_list.cpp:305
+msgid "You need at least one valid map !"
+msgstr ""
+
+#: src/game/game_loop.cpp:279
+#, fuzzy
+msgid "You need at least two teams to play: change this in 'Options menu' !"
+msgstr ""
+"Hai bisogno di almeno due giocatori, cambia le impostazione nel menu Opzioni!"
+
+#: src/team/teams_list.cpp:158
+msgid "You need at least two valid teams !"
+msgstr ""
+
+#: src/weapon/gun.cpp:89
+msgid "Your shot has missed!"
+msgstr ""
+
+#~ msgid "End of game"
+#~ msgstr "Fine della partita"
+
+#, fuzzy
+#~ msgid "Authors"
+#~ msgstr "Autori :"
+
+#~ msgid "Info"
+#~ msgstr "Informazione"
+
+#, fuzzy
+#~ msgid "Load game data..."
+#~ msgstr "Carico i dati di gioco  ..."
+
+#~ msgid "ClanLib error :"
+#~ msgstr "Errore ClanLib :"
+
+#~ msgid "Sound error :"
+#~ msgstr "Errore sonoro :"
+
+#, fuzzy
+#~ msgid "Use sound?"
+#~ msgstr "Usa il suono"
+
+#, fuzzy
+#~ msgid "Load weapon %s"
+#~ msgstr "Caricamento mappa %s"

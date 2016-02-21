@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+  <author>
+    <name>C. Schalkwijk</name>
+    <nickname>Papa.Coen</nickname>
+    <email>Papa.Coen@gmail.com</email>
+    <country>The Netherlands</country>
+  </author>
+
+  <surface name="sky" file="greenhills_sky.jpg" />
+  <surface name="map" file="greenhills.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Green Hills</name>
+  <water>1</water>
+  <nb_mine>3</nb_mine>
+  <is_open>1</is_open>
+  <!-- pad is given in pixel count. -->
+  <add_pad>1</add_pad>
+  <point name="upper_left_pad" x="1200" y="0" />
+  <point name="lower_right_pad" x="1200" y="0" />
+
+  <sprite name="wind_particle">
+    <image file="star.png">
+      <grid pos="0,0" size="125,127" array="1,1"/>
+    </image>
+  </sprite>
+
+   <wind>
+    <nbr_sprite>5</nbr_sprite>
+    <need_flip>0</need_flip>
+	
+    <mass>1.0</mass>
+    <wind_factor>7.5</wind_factor>
+    <air_resist_factor>0.5</air_resist_factor>
+    <gravity_factor>1.0</gravity_factor>
+    <rebounding>true</rebounding>
+    <rebound_factor>1.0</rebound_factor>
+  </wind>
+</resources>

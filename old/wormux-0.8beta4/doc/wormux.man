@@ -1,0 +1,106 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.hy
+.TH WORMUX 6 "October 28, 2007"
+.SH NAME
+Wormux \- A convivial mass murder game.
+.SH SYNOPSIS
+.B wormux [-h|--help] [-v|--version] [-p|--play] [-i|--internet] [-s|--server] [-c|--client [ip]] [-d|--debug debug_masks]
+.br
+.SH DESCRIPTION
+.PP
+Have the mascots of your favorite free software battle in the Wormux
+arena using dynamite, grenades, baseball bat and other weapons ...
+Exterminate your opponent in a funny 2D toon-style scenery.
+.PP
+Each player (2 minimum, on the same PC) controls the team of his
+choice (tux, gnu, firefox, wilber,...) and must destroy his
+adversaries using more or less casual weapons.
+.PP
+Although a minimum of strategy is required to be victorious, Wormux is
+pre-eminently a "convivial mass murder" game where, turn by turn, each
+team attempts to produce maximum damage to their opponents.
+.br
+.SH CONTROLS
+* Key left/right: walk to the left / to the right
+.br
+* Key up/down: Aim up/down
+.br
+* Key shift: Smaller aim increment/decrement when used with up or down. Smaller step while walking
+.br
+* Key 'b': ("Backwards") jump
+.br
+* Key enter: ("Horizontal") jump
+.br
+* Key backspace: ("Vertical") jump
+.br
+* Key tab: Switch to next or previous (when Ctrl is pressed too) character
+.br
+* Key 'c': Recenter to active character
+.br
+* Key space: Shoot. Exceptions: the parachute is automaticly deployed, 
+  and teleportation is made with a mouse click. 
+  Warning: The automatic bazooka and air strike first need a target to be selected (select it with a left click)
+.br
+* Mouse right click: Show/hide weapons menu
+.br
+* Mouse left click on the map: Select a target for teleportation, automatic bazooka, or air strike
+.br
+* Mouse left click on a character: Make it active (if it's allowed)
+.br
+* Mouse move next to screen borders: Move the map
+.br
+* Key F1, F2, ... F5: Change weapon in category 1, 2, ... 5
+.br
+* Key F10: Toggle Fullscreen
+.br
+* Key 'p': Pause the game
+.br
+* Key escape: Leave the game (confirmation necessary)
+.br
+.SH SEE ALSO
+.br
+Have a look at the official website http://wormux.org
+On the website, you will find some useful help:
+.br
+* List of weapons: http://wormux.org/wiki/en/weapons.php
+.br
+* List of maps: http://wormux.org/wiki/en/maps.php
+.br
+  * How to write your own map: http://wormux.org/wiki/Create_your_own_map.php
+.br
+* List of skins: http://wormux.org/wiki/en/skins.php
+.br
+* Forum: http://www.wormux.org/forum/
+.br
+.SH AUTHOR
+Wormux was written by:
+.br
+- Jean-Christophe DUBERGA <jcduberga@gmx.de>
+.br
+- Laurent DEFERT SIMONNEAU <lodesi2@yahoo.fr>
+.br
+- Lawrence AZZOUG <lawrenceazzoug@wanadoo.fr>
+.br 
+- Matthieu FERTRE <matthieu.fertre@free.fr>
+.br 
+- Renaud LOTTIAUX <renaud.lottiaux@free.fr>
+.br
+- Victor STINNER <victor.stinner@haypocalc.com>
+.PP
+This manual page was originally written by Jean Parpaillon <artefact@altern.org>,
+for the Debian project (but may be used by others). It is maintained by the Wormux team.

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Snort</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+    <character name="Snort" body="snort" />
+    <character name="SnortSnarf" body="snort" />
+    <character name="ACID" body="snort" />
+    <character name="Sguil" body="snort" />
+    <character name="BASE" body="snort" />
+    <character name="Bearded Pig" body="snort" />
+    <character name="Vietnamese Warty Pig" body="snort" />
+    <character name="Visayas Warty Pig" body="snort" />
+    <character name="Celebes Warty Pig" body="snort" />
+    <character name="Poulter Warty Pig" body="snort" />
+    <character name="Flores Warty Pig" body="snort" />
+    <character name="Philippine Warty Pig" body="snort" />
+    <character name="Pigmy Hog" body="snort" />
+    <character name="Timor Warty Pig" body="snort" />
+  </team>
+</resources>
