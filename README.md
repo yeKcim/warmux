@@ -4,7 +4,7 @@ warmux was a worms free opensource clone project.
 
 ![logo](https://raw.githubusercontent.com/yeKcim/warmux/master/logo.png)
 
-It's a dead project, website is down, code was nowhere, so I decided to clone the project here.
+It's a dead project, website is down, code was nowhere(?), so I decided to clone the project here.
 
 ## Contributors
 
