@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>godzilla</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+    <character name="Godzilla" body="godzilla" />
+    <character name="Godzilla Jr alias Minilla" body="godzilla" />
+    <character name="GINO" body="godzilla" />
+    <character name="GINO Jr" body="godzilla" />
+    <character name="Mothra" body="godzilla" />
+    <character name="Anguirius" body="godzilla" />
+    <character name="Gigan" body="godzilla" />
+    <character name="King Ghidorah" body="godzilla" />
+    <character name="Rodan" body="godzilla" />
+    <character name="Baragon" body="godzilla" />
+    <character name="Space Godzilla" body="godzilla" />
+    <character name="Destoryah" body="godzilla" />
+    <character name="Mechagodzilla" body="godzilla" />
+    <character name="Jet Jaguar" body="godzilla" /> 
+  </team>
+    <color name="teamcolor" r="14" g="232" b="232" a="255" />
+</resources>

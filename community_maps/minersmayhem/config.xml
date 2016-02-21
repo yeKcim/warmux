@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+ 
+ <author>
+   <name>Christopher L. Stanley</name>
+   <nickname>NinjaNumberNine</nickname>
+   <email>niftyninjanumbernine@gmail.com</email>
+   <country>America</country>
+ </author>
+ 
+ <surface name="sky" file="cavebackground.jpg" />
+ <surface name="map" file="cave.png" />
+ <surface name="preview" file="cavepreview.jpg" />
+ 
+ <name>Miner's Mayhem</name>
+ <water>water</water>
+ <nb_mine>0</nb_mine>
+ <is_open>0</is_open>
+ 
+ <sprite name="wind_particle">
+   <image file="gem.png">
+     <grid pos="0,0" size="55,52" array="1,1"/>
+   </image>
+ </sprite>
+
+ <add_pad>1</add_pad> 
+ <point name="upper_left_pad" x="900" y="800" /> 
+ <point name="lower_right_pad" x="900" y="0" /> 
+
+ <wind>
+   <nbr_sprite>15</nbr_sprite>
+   <need_flip>0</need_flip>
+   <mass>1.0</mass>
+   <wind_factor>0.2</wind_factor>
+   <rotation_speed>0.04</rotation_speed>
+   <air_resist_factor>0.05</air_resist_factor>
+   <gravity_factor>0.05</gravity_factor>
+   <rebounding>false</rebounding>
+   <rebound_factor>0.0</rebound_factor>
+
+ </wind>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+ 
+ <author>
+   <name>Julien Thebaud</name>
+   <nickname>Noee</nickname>
+   <email>thebaud_julien AT yahoo DOT fr</email>
+   <country>France</country>
+ </author>
+ 
+ <surface name="sky" file="cointv_fond.jpg" />
+ <surface name="map" file="cointv.png" />
+ <surface name="preview" file="cointv_preview.jpg" />
+ 
+ <name>Coin Télé</name>
+ <water>no</water>
+ <nb_mine>5</nb_mine>
+ <is_open>1</is_open>
+ 
+ <sprite name="wind_particle">
+   <image file="poussiere.png">
+     <grid pos="0,0" size="80,80" array="1,1"/>
+   </image>
+ </sprite>
+
+ 
+ <wind>
+   <nbr_sprite>6</nbr_sprite>
+   <need_flip>1</need_flip>
+   <mass>5.0</mass>
+   <wind_factor>8.5</wind_factor>
+   <air_resist_factor>0.2</air_resist_factor>
+   <gravity_factor>0.2</gravity_factor>
+   <rebounding>true</rebounding>
+   <rebound_factor>3.3</rebound_factor>
+ </wind>
+ 
+ 
+</resources>
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../body.dtd">
+<resources xmlns:xi="http://www.w3.org/2001/XInclude">
+	<xi:include href="../aliases.xml"/>
+	<xi:include href="../skeletons.xml"/>
+	<xi:include href="../clothes.xml"/>
+	<xi:include href="../movements.xml"/>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+  <author>
+    <name>Mathieu Ignacio</name>
+    <nickname>matou</nickname>
+    <email>mignacio AT april.org</email>
+    <country>France</country>
+  </author>
+
+  <surface name="sky" file="sky.png" />
+  <surface name="map" file="map.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Don't push me !</name>
+  <water>water</water>
+  <nb_mine>0</nb_mine>
+  <is_open>1</is_open>
+</resources>

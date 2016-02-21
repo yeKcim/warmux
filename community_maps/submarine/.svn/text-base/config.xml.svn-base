@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<map>
+  <author>
+      <name>Jan Potocki</name>
+      <nickname>czikenator</nickname>
+      <country>Poland</country>
+      <email>czikenator[at]gmail[dot]com</email>
+  </author>
+
+  <surface name="sky" file="back.jpg" />
+  <surface name="map" file="map.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Submarine</name>
+
+  <water>water</water>
+  <nb_mine>2</nb_mine>
+  <is_open>1</is_open>
+</map>

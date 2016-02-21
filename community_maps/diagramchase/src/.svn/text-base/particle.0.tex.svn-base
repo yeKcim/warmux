@@ -1,0 +1,16 @@
+% wormux particle
+% felix salfelder 2007
+
+\documentclass[twoside,10pt]{article}
+\usepackage{a4}
+\usepackage{amsmath, amssymb}
+\usepackage[isolatin]{inputenc}
+\usepackage{german}
+
+%%%%%%%%%%%
+\pagestyle{empty}
+
+\begin{document}
+$\bigoplus$
+
+\end{document}

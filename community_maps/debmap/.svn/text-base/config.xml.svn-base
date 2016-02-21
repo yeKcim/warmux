@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <author>
+      <name>Barbalat Olivier</name>
+      <nickname>barboulette</nickname>
+      <country>FRANCE</country>
+      <email>the_marmotte_show@hotmail.com</email>
+  </author>
+
+  <surface name="preview" file="preview.jpg" />
+  <surface name="sky" file="fond.jpg" />
+  <surface name="map" file="terraindeb.png" />
+
+  <name>Debian</name>
+  <water>no</water>
+  <nb_mine>4</nb_mine>
+  <is_open>1</is_open>
+</resources>

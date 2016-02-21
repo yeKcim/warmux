@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- version 1.0 2007-12-23 -->
+<resources>
+  <author>
+    <name>Lars-Anders Schmuhl</name>
+    <nickname>lschmuhl</nickname>
+    <country>Germany</country>
+    <email>wormux@web.de</email>
+  </author>
+  <surface name="sky" file="rgb_background.jpg"/>
+  <surface name="map" file="maxwell_equation.png"/>
+  <surface name="preview" file="preview.jpg"/>
+  <name>Maxwell</name>
+  <water>no</water>
+  <nb_mine>0</nb_mine>
+  <is_open>1</is_open>
+  <sprite name="wind_particle">
+    <image file="photon.png">
+      <grid pos="0,0" size="64,64" array="1,1"/>
+      <animation speed="0"/>
+    </image>
+  </sprite>
+  <wind>
+    <nbr_sprite>50</nbr_sprite>
+    <need_flip>false</need_flip>
+    <mass>1.0</mass>
+    <wind_factor>1.0</wind_factor>
+    <air_resist_factor>0.3</air_resist_factor>
+    <gravity_factor>0.9</gravity_factor> 
+    <rebounding>false</rebounding>
+    <rebound_factor>0.3</rebound_factor>
+  </wind>
+</resources>

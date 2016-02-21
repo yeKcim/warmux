@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <author>
+    <name>Dino Ghilardi</name>
+    <nickname>dino</nickname>
+    <country>Italy</country>
+    <email>dinoghi AT tin.it</email>
+  </author>
+
+  <surface name="sky" file="mont14.jpg" />
+  <surface name="map" file="cubism2.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Cubism2</name>
+  <water>no</water>
+  <nb_mine>0</nb_mine>
+  <is_open>1</is_open>
+</resources>

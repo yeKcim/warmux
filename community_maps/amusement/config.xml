@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+	<author>
+		<name>Bonzorius the First</name>
+		<nickname>Bonzer</nickname>
+		<email>gandalfdagraay_AT_gmail_DOT_com</email>
+		<country>USA</country>
+	</author>
+
+	<surface name="sky" file="amusement_bg.jpg" />
+	<surface name="map" file="amusement.png" />
+	<surface name="preview" file="amusement_preview.jpg" />
+
+
+	<name>Amusement Park</name>
+	<water>no</water>
+	<nb_mine>10</nb_mine>
+	<nb_barrel>5</nb_barrel>
+	<is_open>1</is_open>
+
+	<music_playlist>sea</music_playlist>
+</resources>

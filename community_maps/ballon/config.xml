@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <author>
+    <nickname>BeBeLiOuS</nickname>
+    <email>contact@bebelious.fr</email>
+    <country>France</country>
+  </author>
+  <surface name="sky" file="ballon_fond.jpg" />
+  <surface name="map" file="ballon_decor.png" />
+  <surface name="preview" file="ballon_preview.jpg" />
+  <name>Ballon</name>
+  <water>water</water>
+  <add_pad>1</add_pad>
+  <point name="upper_left_pad" x="120" y="400" />
+  <point name="lower_right_pad" x="120" y="0" />
+  <nb_mine>3</nb_mine>
+  <is_open>1</is_open>
+</resources>

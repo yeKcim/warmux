@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <author>
+    <nickname>BeBeLiOuS</nickname>
+    <email>contact@bebelious.fr</email>
+    <country>France</country>
+  </author>
+  <surface name="sky" file="alien_fond.jpg" />
+  <surface name="map" file="alien_decor.png" />
+  <surface name="preview" file="alien_preview.jpg" />
+  <name>Alien</name>
+  <water>water</water>
+  <add_pad>1</add_pad>
+  <point name="upper_left_pad" x="1200" y="1100" />
+  <point name="lower_right_pad" x="1200" y="0" />
+  <nb_mine>4</nb_mine>
+  <is_open>1</is_open>
+</resources>

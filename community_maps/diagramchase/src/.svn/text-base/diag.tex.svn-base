@@ -1,0 +1,75 @@
+% wormux level
+% felix salfelder 2007
+
+
+\documentclass[landscape]{article}
+\usepackage{amsmath, amssymb}
+\usepackage[isolatin]{inputenc}
+\usepackage{german}
+\usepackage[matrix,arrow,cmtip,curve]{xy}
+\usepackage[active]{srcltx}
+
+%%%%%%%%%%%
+\pagestyle{empty}
+
+
+\newcommand{\ox}{\otimes}
+
+\newcommand{\OA}{\operatorname{A_\star}}
+\newcommand{\OB}{\mathbb B \times \{ a,b \}}
+\newcommand{\OC}{\mathbb C}
+\newcommand{\OD}{\mathcal D_+}
+\renewcommand{\OE}{{\coprod_{p}\mathcal F_p}}
+\newcommand{\OF}{{\operatorname{coker} \varphi}}
+\newcommand{\OG}{{\operatorname{Gal}( \mathbb{C} / \overline{ \mathbb Q})}}
+\newcommand{\OH}{\operatorname{H}^1}
+\newcommand{\OI}{\mathcal I}
+\newcommand{\OJ}{{\operatorname{M}(n,\mathbb F_3)}}
+\newcommand{\OK}{\Bbbk}
+\newcommand{\OL}{\mathcal L^p(\mathbb R;\mathbb C)}
+\newcommand{\OLL}{\underset{\leftarrow}{\Omega_k}}
+\newcommand{\OM}{{\mathcal M^\bot} }
+\newcommand{\ON}{{\mathbb N_0} }
+\newcommand{\OO}{\mathcal O}
+\newcommand{\OOO}{0}
+\newcommand{\OP}{{\mathbb P_{\mathbb R}^2}}
+\newcommand{\OQ}{{\mathbb Q_p}}
+\newcommand{\OR}{{\mathbb R/ \mathbb Z}}
+\newcommand{\OS}{\bigoplus V_\alpha}
+\newcommand{\OT}{{\mathbb C \ox_\mathbb Z M}}
+\newcommand{\OU}{{\operatorname{SU}(3)}}
+\newcommand{\OW}{\mathcal W}
+\newcommand{\OV}{\mathcal U \ox_{\mathfrak b} \mathbb C_\mu}
+\newcommand{\OX}{\mathfrak X(T)}
+\newcommand{\OY}{{\mathfrak{sl}_3}}
+\newcommand{\OZ}{{\operatorname V(x^3-y^2)}}
+
+\newcommand{\MA}{x \mapsto tx}
+\newcommand{\MB}{\frac{\operatorname d}{\operatorname dt}}
+\newcommand{\MC}{{\partial}}
+\newcommand{\MD}{\iota}
+\newcommand{\ME}{{\operatorname{ext}}}
+\newcommand{\MF}{{f^\bullet}}
+
+\newcommand{\MI}{{\int_\Gamma}}
+\newcommand{\MJ}{{\cdot^j}}
+\newcommand{\MK}{{\kappa}}
+\newcommand{\ML}{{\ell}}
+\newcommand{\MM}{{\cdot m_\alpha}}
+\newcommand{\MN}{{\nabla}}
+\newcommand{\MZ}{\zeta}
+
+\begin{document}
+
+$\xymatrix{
+A  \ar[r] \ar[d]^\MC      &\OB \ar@{.>}[r] \ar[d]          &\OK \ar[r]^\ME \ar[d]      &\OS       \ar[d]^MD                   &  E \ar@{<-}[r] \ar[d]    &\OK\ar[rd]\ar@{<<-}[d]           & G \ar[r]^{P(c)}\ar[d]  &\OR \ar[d]_a \\
+\OQ\ar[r] \ar[d]          &\OU        \ar[d]^\MC           &\OP \ar@/_/[d]^\MJ	      &\OA\ar@{<-}[r] \ar@/_/[l]^\MF         &\OK \ar[r] \ar@{<--}[d]   & F \ar@{-->}[r] \ar[d]           &\OY\ar[r] \ar@{<<--}[d] & D  \ar[d]  \\
+\OF\ar[r]^\MA \ar[d]      &\OH \ar[r] \ar[dd]              &\OL \ar[r] \ar@{-->}[d]    & D \ar@{<-}[r]_\MD  \ar[d]            &  E \ar[r] \ar@/_/[u]     &\OD\ar[r] \ar@{->>}[d]           & G \ar@/_/[r] \ar[d]    &\ON \ar[d]  \\
+\OC\ar[rr] \ar[d]         &                                &\OE \ar[rd] \ar@{<-}[d]    &\OOO\ar@{^{(}->}[r]    \ar[d]          &\OO \ar@{->>}[r] \ar[d]   & F \ar[r] \ar[d]                 &\OC    \ar[d]           &\OS \ar[d]  \\
+\OJ\ar[r]^\MI \ar[d]      &\OS \ar[r] \ar@{^{(}->}[d]      &\OQ \ar[r]^\gamma \ar[d]   &\OI\ar@{<--}[r]    \ar@/^/[d]         &  E \ar[d] \ar@/_/[u]     &\OW\ar[r] \ar@{->>}[l] \ar[d]    &\OH\ar[r] \ar[d]        &\ON \ar[d]  \\
+\OI\ar[r] \ar[d]          &\OT \ar[ru]        \ar[rd]      &\OLL\ar[r] \ar[d]^\pi      & D \ar@{-->}[r] \ar[d]                &\OZ\ar[ru]\ar[d]          & F \ar[r] \ar@{<.}[d]            &\OL\ar[r] \ar[d]        &\OV \ar[d]  \\
+\OX\ar[r] \ar[d]^\varphi  &\OP        \ar@{->>}[d]         &\OG \ar[r] \ar[d]^\varrho  &\OW\ar[r]^{f_\sharp} \ar[d]           &\OX  \ar[d]               &\OG\ar[r]                        &\OX\ar[r] \ar[d]        &\OR \ar[d]  \\
+A  \ar[r]                 &\OX \ar[r] \ar@/^/@{-->}[r]^\MN & C  \ar[r]                 & D \ar@{.>}[r]                        &\OF \ar[r] \ar[ru]^\MZ    &\OH\ar[r]                        &\OI\ar[r]               &\OW   \\
+}$
+
+\end{document}

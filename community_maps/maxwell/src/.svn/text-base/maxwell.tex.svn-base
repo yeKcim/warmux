@@ -1,0 +1,52 @@
+% -----------------------------------------------------------------------
+%
+% maxwell.tex
+%
+% author: Lars-Anders Schmuhl
+% date: 2007-12-23
+% version 1.0
+%
+% compile:
+% latex maxwell.tex
+% dvipng -D 800 -O -1,-1 -bg Transparent maxwell.dvi -o maxwell.png
+%
+% -----------------------------------------------------------------------
+\documentclass[12pt]{article}
+\begin{document}
+
+% english version
+\newcommand{\textA}{And God said,}
+\newcommand{\textB}{and there was light.}
+
+% german version
+%\newcommand{\textA}{Und Gott sprach,}
+%\newcommand{\textB}{Und es ward Licht.}
+
+
+\pagestyle{empty}
+\Huge
+\hbox{}
+\hfill
+\fbox{
+ \begin{minipage}{12cm}
+  \begin{center}
+   \vspace{1cm}\textbf{\textA}
+   \[
+   \nabla\cdot\vec{D}=4\pi\varrho%
+   \]
+   \[
+   \nabla\times\vec{H}-\frac{1}{c}\frac{\partial}{\partial t}\vec{D}=\frac{4\pi}{c}\vec{J}%
+   \]
+   \[
+   \nabla\times\vec{E}+\frac{1}{c}\frac{\partial}{\partial t}\vec{B}=0%
+   \]
+   \[
+   \nabla\cdot\vec{B}=0%
+   \]
+   \textbf{\textB}\vspace{1cm}
+  \end{center}
+ \end{minipage}
+}
+\hfill
+\hbox{}
+\end{document}

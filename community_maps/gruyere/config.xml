@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<map>
+  <author>
+      <name>Max le Fou</name>
+      <nickname>ButtBadger</nickname>
+      <country>France</country>
+      <email>buttbadger at gmail.com</email>
+  </author>
+
+  <surface name="sky" file="sky.png" />
+  <surface name="map" file="map.png" />
+  <surface name="preview" file="preview.jpg" />
+
+  <name>Le Gruyere Geant</name>
+
+  <water>no</water>
+  <nb_mine>3</nb_mine>
+  <is_open>0</is_open>
+</map>

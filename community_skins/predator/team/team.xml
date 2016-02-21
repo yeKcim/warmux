@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Predator</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+	<character name="Yautja" body="Predator"/>
+	<character name="Elder" body="Predator"/>
+	<character name="Wolf" body="Predator"/>
+	<character name="Bad blood" body="Predator"/>
+	<character name="Warrior" body="Predator"/>
+	<character name="Celtic" body="Predator"/>	
+	<character name="Scar" body="Predator"/>
+	<character name="Unblooded" body="Predator"/>
+	<character name="Young Blooded" body="Predator"/>
+	<character name="Blooded" body="Predator"/>
+	<character name="Predalien" body="Predator"/>
+	<character name="Hunter" body="Predator"/>
+	<character name="Tracker" body="Predator"/>
+	<character name="Ceremonial" body="Predator"/>	
+	<character name="Mortal fighter" body="Predator"/>
+	<character name="Neo-predator" body="Predator"/>
+  </team>
+    <color name="teamcolor" r="246" g="15" b="44" a="55" />
+</resources>

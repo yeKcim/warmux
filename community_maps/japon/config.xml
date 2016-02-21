@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+  <author>
+    <name>Adriana Chirita</name>
+    <nickname>Adi</nickname>
+    <country>France</country>
+    <email>adriana.chirita AT utbm.fr</email>
+  </author>
+
+  <surface name="sky" file="map_japon_fond.png" />
+  <surface name="map" file="map_japon.png" />
+  <surface name="preview" file="map_japon_preview.jpg" />
+
+  <name>Japon</name>
+  <water>water</water>
+  <nb_mine>3</nb_mine>
+  <is_open>1</is_open>
+</resources>

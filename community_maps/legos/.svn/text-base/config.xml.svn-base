@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+	<author>
+		<name>jacob</name>
+		<nickname>meatlover</nickname>
+		<email>jb.meatlover@gmail.com</email>
+		<country>USA</country>
+	</author>
+
+	<surface name="sky" file="bg.jpg" />
+	<surface name="map" file="map.png" />
+	<surface name="preview" file="prev.jpg" />
+
+
+	<name>Legos</name>
+	<water>no</water>
+	<nb_mine>5</nb_mine>
+	<nb_barrel>0</nb_barrel>
+	<is_open>1</is_open>
+
+	<music_playlist>sea</music_playlist>
+</resources>

@@ -1,0 +1,34 @@
+
+================================================================================
+ For Linux, MacOS X, *BSD
+================================================================================
+
+** Wormux 0.8 and upper:
+Extract the archive in ~/.local/share/wormux/map/
+
+** Previous version (0.7.x, 0.8betaX)
+Extract the archive in ~/.wormux/map/
+
+
+With "~" referring to your home directory (For instance: /home/john/)
+You may need to create some of the directories.
+
+WARNING: .local is a hidden directory.
+
+================================================================================
+ For Windows XP/Vista
+================================================================================
+
+** All Wormux versions:
+Extract the archive in C:\Documents and Settings\<user>\Application Data\Wormux\map\
+
+With <user> to replace with your login name.
+
+================================================================================
+ For Windows Seven
+================================================================================
+
+** All Wormux versions:
+Extract the archive in C:\Users\<user>\AppData\Roaming\Wormux\map\
+
+With <user> to replace with your login name.

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <author>
+    <nickname>BeBeLiOuS</nickname>
+    <email>contact@bebelious.fr</email>
+    <country>France</country>
+  </author>
+  <surface name="sky" file="gears_fond.jpg" />
+  <surface name="map" file="gears_decor.png" />
+  <surface name="preview" file="gears_preview.jpg" />
+  <name>Gears</name>
+  <water>no</water>
+  <nb_mine>3</nb_mine>
+  <is_open>1</is_open>
+</resources>

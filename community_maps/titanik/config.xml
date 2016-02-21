@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+ 
+ <author>
+   <name>grospoisonaujambon</name>
+   <nickname>inkey</nickname>
+   <email>Lelitchie[AT]hotmail[DOT]fr</email>
+   <country>france</country>
+ </author>
+ 
+ <surface name="sky" file="sky.jpg" />
+ <surface name="map" file="map.png" />
+ <surface name="preview" file="preview.jpg" />
+ 
+ <name>titanik</name>
+ <water>water</water>
+ <nb_mine>5</nb_mine>
+ <is_open>1</is_open>
+ 
+
+</resources>
