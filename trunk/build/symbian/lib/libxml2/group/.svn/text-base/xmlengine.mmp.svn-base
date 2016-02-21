@@ -1,0 +1,106 @@
+/*
+* Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+
+TARGET wormux_xmlengine.lib
+TARGETTYPE LIB
+
+//Macros for performance improvement
+macro XE_ENABLE_GS_CACHING
+
+
+SOURCEPATH ../src/libxml2
+SOURCE xmlenglibxml2dll.cpp
+
+SOURCEPATH		../src/libxml2
+SOURCE      libxml2_c14n.c
+SOURCE		libxml2_chvalid.c
+SOURCE		libxml2_dict.c
+SOURCE		libxml2_encoding.c
+SOURCE		libxml2_entities.c
+SOURCE		libxml2_error.c
+SOURCE		libxml2_globals.c
+SOURCE		libxml2_hash.c
+SOURCE		libxml2_htmlparser.c 
+SOURCE		libxml2_htmltree.c   
+SOURCE      libxml2_xinclude.c
+SOURCE		libxml2_list.c
+SOURCE		libxml2_parser.c
+SOURCE		libxml2_parserinternals.c
+SOURCE		libxml2_sax2.c
+SOURCE		libxml2_sax.c
+SOURCE		libxml2_threads.c
+SOURCE		libxml2_tree.c
+SOURCE		libxml2_uri.c
+SOURCE		libxml2_valid.c
+SOURCE		libxml2_xmlio.c
+SOURCE		libxml2_xmlmemory.c
+SOURCE		libxml2_xmlreader.c
+SOURCE		libxml2_xmlsave.c		
+SOURCE		libxml2_xmlwriter.c
+SOURCE		libxml2_xmlschemas.c	
+SOURCE		libxml2_xmlschemastypes.c 
+SOURCE		libxml2_xmlstring.c
+SOURCE		libxml2_xpath.c
+SOURCE      libxml2_xpointer.c
+
+USERINCLUDE	    ../inc/libxml2_nonexport
+USERINCLUDE	    ../src/libxml2
+
+SYSTEMINCLUDE 	/epoc32/include
+SYSTEMINCLUDE 	/epoc32/include/stdapis
+SYSTEMINCLUDE  	../inc/libxml2
+
+LIBRARY libc.lib 
+LIBRARY libm.lib 
+LIBRARY euser.lib 
+
+nostrictdef
+
+CAPABILITY ALL -TCB
+VENDORID 0x70000001
+
+// RVCT compiler warning options
+// Warning: #177-D: variable "X" was declared but never referenced
+// Warning: #550-D: parameter "X" was set but never used
+// 186-D: pointless comparison of unsigned integer with zero
+// 1293-D: assignment in condition
+OPTION ARMCC --diag_suppress 177,550,186,1293
+
+// CW compiler warning options
+// warning: variable / argument 'X' is not used in function
+OPTION CW -w nounused
+
+// GCC compiler warning options
+// "-w" option suppresses all warnings!  Libxml2 does many operations on void
+// pointers and thus many spurious warnings are raised.  There is no GCC option
+// to further refine which warnings are supressed.
+OPTION GCC -w
+
+// Libxml2 assigns void pointers to other pointer types without a cast
+// The -fpermissive flag will remove this error in gccxml.  However,
+// the OPTION statement is not supported for gccxml, so the following
+// creative solution achieves the same thing.
+#if defined(GCCXML)
+MACRO "NOTAMACRO -fpermissive"
+OPTION GCCXML -fpermissive
+#endif
+
+
+SMPSAFE
+
+

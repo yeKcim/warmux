@@ -1,0 +1,55 @@
+10
+
+dir
+10371
+svn://svn.gna.org/svn/warmux/trunk/build
+svn://svn.gna.org/svn/warmux
+
+
+
+2011-12-17T16:44:34.030931Z
+10370
+kurosu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30ef787d-52ff-0310-b286-e08351bb7647
+
+linux_setup
+dir
+
+android
+dir
+
+cmake
+dir
+
+m4
+dir
+
+mac
+dir
+
+symbian
+dir
+
+win32_setup
+dir
+
+visual
+dir
+
+lib
+dir
+

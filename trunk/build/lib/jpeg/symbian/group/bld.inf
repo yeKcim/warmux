@@ -1,0 +1,15 @@
+/*
+ * Copyright (C) 2008 Nokia Corporation
+ *
+ * For conditions of distribution and use, see the accompanying README file.
+ *
+ */
+
+PRJ_MMPFILES
+libjpeg.mmp
+
+PRJ_EXPORTS
+..\..\jpeglib.h        jpeg-6\jpeglib.h
+..\..\jconfig.symbian  jpeg-6\jconfig.h
+..\..\jmorecfg.h       jpeg-6\jmorecfg.h
+..\..\jerror.h         jpeg-6\jerror.h

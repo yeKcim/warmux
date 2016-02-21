@@ -1,0 +1,37 @@
+************************************************************************ 
+* USAGE NOTES 
+************************************************************************ 
+
+1. Exceptions, leaves and the cleanup stack 
+
+Some STLport functions may throw exceptions, as defined by the ISO/IEC 
+C++ Standard. You should always protect your application's entry point 
+with a try-catch block in order to prevent exceptions from escaping and 
+crashing the program. STLport functions don't leave by themselves, but 
+the PIPS library expects a cleanup stack to be present, so you need to 
+provide one if it isn't created automatically. Read the PIPS 
+documentation for further details. 
+
+2. Writable Static Data 
+
+STLport contains non-const static data in several places. This may be an 
+issue if you're generating a DLL that links against STLport. Although 
+Writable Static Data (WSD) in DLLs is allowed in Symbian 9.1, it is 
+usually recommended to avoid it if possible, using alternative 
+approaches instead (such as Thread-Local Storage). The task of converting
+static variables to TLS data will be hopefully carried out in a future 
+release. 
+
+3. Default path for file streams 
+
+It is recommended to always specify a fully-qualified path name when 
+opening or creating files through the fstream interface. However, if the 
+path name is missing, it will be set to the application's private 
+directory (which will be created automatically if necessary). 
+
+NOTE: PIPS file-related functions (open, fopen, etc.) also use the 
+      application's private directory as the default path, but they 
+      always assume that such private directory is located on drive C:.
+      STLport, on the contrary, will try to determine where the 
+      application is installed and will try to create/use the default 
+      path on the most appropriate drive. 

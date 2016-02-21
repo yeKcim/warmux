@@ -1,0 +1,725 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Handheld|Win32">
+      <Configuration>Handheld</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1CD2A0F2-9AD5-48AD-89E1-7102811A81B8}</ProjectGuid>
+    <RootNamespace>warmux</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="gettext.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">$(SolutionDir)..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">c:\dev\AddVC\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">c:\dev\AddVC\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">c:\dev\AddVC\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">c:\dev\AddVC\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">c:\dev\AddVC\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">c:\dev\AddVC\lib;$(LibraryPath)</LibraryPath>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Message>Setting missing #defines for dumb Visual resource compiler</Message>
+      <Command>echo #define __DATE__ "%DATE%" &gt; resource.h
+echo #define __TIME__ "%TIME" &gt;&gt; resource.h
+</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+      <Outputs>%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\src;$(ProjectDir)..\..\lib\warmux\include;$(ProjectDir)..\..\lib\fixedpoint;$(ProjectDir)..\..\src\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;DEBUG;_DEBUG;WMX_LOG;FRIBIDI_STATICLIB;CURL_STATICLIB;main=SDL_main;INSTALL_DATADIR="data";INSTALL_LOCALEDIR="locale";FONT_FILE="data\\font\\Ubuntu-R.ttf";M_PI=3.14159265358979323846f;M_PI_2=1.57079632679489661923f;M_PI_4=0.78539816339744830962f;snprintf=_snprintf;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FloatingPointExceptions>true</FloatingPointExceptions>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4138;4244;4267;4355;4800;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>advapi32.lib;kernel32.lib;shell32.lib;user32.lib;Ws2_32.lib;winmm.lib;SDL.lib;SDLmain.lib;SDL_mixer.lib;SDL_image.lib;SDL_net.lib;SDL_ttf.lib;SDL_gfx.lib;intl.lib;libcurl.lib;wldap32.lib;libxml2.lib;fribidid.lib;libpng.lib;zlib.lib</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)..\..\$(ProjectName)d.exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Message>Setting missing #defines for dumb Visual resource compiler</Message>
+      <Command>echo #define __DATE__ "%DATE%" &gt; resource.h
+echo #define __TIME__ "%TIME" &gt;&gt; resource.h
+</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+      <Outputs>%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\src;$(ProjectDir)..\..\lib\warmux\include;$(ProjectDir)..\..\lib\fixedpoint;$(ProjectDir)..\..\src\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;FRIBIDI_STATICLIB;CURL_STATICLIB;main=SDL_main;INSTALL_DATADIR="data";INSTALL_LOCALEDIR="locale";FONT_FILE="data\\font\\Ubuntu-R.ttf";M_PI=3.14159265358979323846f;M_PI_2=1.57079632679489661923f;M_PI_4=0.78539816339744830962f;snprintf=_snprintf;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4138;4244;4267;4355;4800;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>advapi32.lib;kernel32.lib;shell32.lib;user32.lib;Ws2_32.lib;winmm.lib;SDL.lib;SDLmain.lib;SDL_mixer.lib;SDL_image.lib;SDL_net.lib;SDL_ttf.lib;SDL_gfx.lib;intl.lib;libcurl.lib;wldap32.lib;libpng.lib;libxml2.lib;fribidi.lib;zlib.lib</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)..\..\$(ProjectName).exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>msvcrtd.lib;libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">
+    <PreBuildEvent>
+      <Message>Setting missing #defines for dumb Visual resource compiler</Message>
+      <Command>echo #define __DATE__ "%DATE%" &gt; resource.h
+echo #define __TIME__ "%TIME" &gt;&gt; resource.h
+</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+      <Outputs>%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\src;$(ProjectDir)..\..\lib\warmux\include;$(ProjectDir)..\..\lib\fixedpoint;$(ProjectDir)..\..\src\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_HANDHELD;WIN32;DEBUG;_DEBUG;WMX_LOG;FRIBIDI_STATICLIB;CURL_STATICLIB;main=SDL_main;INSTALL_DATADIR="data";INSTALL_LOCALEDIR="locale";FONT_FILE="data\\font\\Ubuntu-R.ttf";M_PI=3.14159265358979323846f;M_PI_2=1.57079632679489661923f;M_PI_4=0.78539816339744830962f;snprintf=_snprintf;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FloatingPointExceptions>true</FloatingPointExceptions>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4138;4244;4267;4355;4800;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>advapi32.lib;kernel32.lib;shell32.lib;user32.lib;Ws2_32.lib;winmm.lib;SDL.lib;SDLmain.lib;SDL_mixer.lib;SDL_image.lib;SDL_net.lib;SDL_ttf.lib;SDL_gfx.lib;intl.lib;libcurl.lib;wldap32.lib;libxml2.lib;fribidid.lib;libpng.lib;zlib.lib</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)..\..\$(ProjectName)h.exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\gui\social_panel.cpp" />
+    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\ai\ai_command.cpp" />
+    <ClCompile Include="..\..\src\ai\ai_idea.cpp" />
+    <ClCompile Include="..\..\src\ai\ai_strategy.cpp" />
+    <ClCompile Include="..\..\src\ai\ai_stupid_player.cpp" />
+    <ClCompile Include="..\..\src\ai\ai_weapons_weighting.cpp" />
+    <ClCompile Include="..\..\src\character\body.cpp" />
+    <ClCompile Include="..\..\src\character\body_list.cpp" />
+    <ClCompile Include="..\..\src\character\character.cpp" />
+    <ClCompile Include="..\..\src\character\clothe.cpp" />
+    <ClCompile Include="..\..\src\character\damage_stats.cpp" />
+    <ClCompile Include="..\..\src\character\member.cpp" />
+    <ClCompile Include="..\..\src\character\movement.cpp" />
+    <ClCompile Include="..\..\src\game\config.cpp" />
+    <ClCompile Include="..\..\src\game\game.cpp" />
+    <ClCompile Include="..\..\src\game\game_blitz.cpp" />
+    <ClCompile Include="..\..\src\game\game_classic.cpp" />
+    <ClCompile Include="..\..\src\game\game_mode.cpp" />
+    <ClCompile Include="..\..\src\game\stopwatch.cpp" />
+    <ClCompile Include="..\..\src\game\time.cpp" />
+    <ClCompile Include="..\..\src\graphic\color.cpp" />
+    <ClCompile Include="..\..\src\graphic\composite_shape.cpp" />
+    <ClCompile Include="..\..\src\graphic\font.cpp" />
+    <ClCompile Include="..\..\src\graphic\fps.cpp" />
+    <ClCompile Include="..\..\src\graphic\polygon.cpp" />
+    <ClCompile Include="..\..\src\graphic\polygon_generator.cpp" />
+    <ClCompile Include="..\..\src\graphic\sprite.cpp" />
+    <ClCompile Include="..\..\src\graphic\spriteanimation.cpp" />
+    <ClCompile Include="..\..\src\graphic\spritecache.cpp" />
+    <ClCompile Include="..\..\src\graphic\surface.cpp" />
+    <ClCompile Include="..\..\src\graphic\text.cpp" />
+    <ClCompile Include="..\..\src\graphic\text_list.cpp" />
+    <ClCompile Include="..\..\src\graphic\video.cpp" />
+    <ClCompile Include="..\..\src\gui\abstract_spin_button.cpp" />
+    <ClCompile Include="..\..\src\gui\box.cpp" />
+    <ClCompile Include="..\..\src\gui\button.cpp" />
+    <ClCompile Include="..\..\src\gui\button_text.cpp" />
+    <ClCompile Include="..\..\src\gui\check_box.cpp" />
+    <ClCompile Include="..\..\src\gui\combo_box.cpp" />
+    <ClCompile Include="..\..\src\gui\control_config.cpp" />
+    <ClCompile Include="..\..\src\gui\energy_bar.cpp" />
+    <ClCompile Include="..\..\src\gui\figure_widget.cpp" />
+    <ClCompile Include="..\..\src\gui\file_list_box.cpp" />
+    <ClCompile Include="..\..\src\gui\graph_canvas.cpp" />
+    <ClCompile Include="..\..\src\gui\grid_box.cpp" />
+    <ClCompile Include="..\..\src\gui\horizontal_box.cpp" />
+    <ClCompile Include="..\..\src\gui\label.cpp" />
+    <ClCompile Include="..\..\src\gui\msg_box.cpp" />
+    <ClCompile Include="..\..\src\gui\picture_text_cbox.cpp" />
+    <ClCompile Include="..\..\src\gui\picture_widget.cpp" />
+    <ClCompile Include="..\..\src\gui\progress_bar.cpp" />
+    <ClCompile Include="..\..\src\gui\question.cpp" />
+    <ClCompile Include="..\..\src\gui\scroll_box.cpp" />
+    <ClCompile Include="..\..\src\gui\select_box.cpp" />
+    <ClCompile Include="..\..\src\gui\spin_button.cpp" />
+    <ClCompile Include="..\..\src\gui\spin_button_picture.cpp" />
+    <ClCompile Include="..\..\src\gui\tabs.cpp" />
+    <ClCompile Include="..\..\src\gui\talk_box.cpp" />
+    <ClCompile Include="..\..\src\gui\text_box.cpp" />
+    <ClCompile Include="..\..\src\gui\torus_cache.cpp" />
+    <ClCompile Include="..\..\src\gui\vertical_box.cpp" />
+    <ClCompile Include="..\..\src\gui\widget.cpp" />
+    <ClCompile Include="..\..\src\gui\widget_list.cpp" />
+    <ClCompile Include="..\..\src\gui\big\button_pic.cpp" />
+    <ClCompile Include="..\..\src\include\action_handler.cpp" />
+    <ClCompile Include="..\..\src\include\constant.cpp" />
+    <ClCompile Include="..\..\src\interface\cursor.cpp" />
+    <ClCompile Include="..\..\src\interface\game_msg.cpp" />
+    <ClCompile Include="..\..\src\interface\interface.cpp" />
+    <ClCompile Include="..\..\src\interface\joystick.cpp" />
+    <ClCompile Include="..\..\src\interface\keyboard.cpp" />
+    <ClCompile Include="..\..\src\interface\loading_screen.cpp" />
+    <ClCompile Include="..\..\src\interface\man_machine_interface.cpp" />
+    <ClCompile Include="..\..\src\interface\mouse.cpp" />
+    <ClCompile Include="..\..\src\interface\mouse_cursor.cpp" />
+    <ClCompile Include="..\..\src\interface\move_intention.cpp" />
+    <ClCompile Include="..\..\src\interface\weapon_help.cpp" />
+    <ClCompile Include="..\..\src\interface\weapon_menu.cpp" />
+    <ClCompile Include="..\..\src\map\camera.cpp" />
+    <ClCompile Include="..\..\src\map\ground.cpp" />
+    <ClCompile Include="..\..\src\map\map.cpp" />
+    <ClCompile Include="..\..\src\map\maps_list.cpp" />
+    <ClCompile Include="..\..\src\map\random_map.cpp" />
+    <ClCompile Include="..\..\src\map\sky.cpp" />
+    <ClCompile Include="..\..\src\map\tile.cpp" />
+    <ClCompile Include="..\..\src\map\tileitem.cpp" />
+    <ClCompile Include="..\..\src\map\water.cpp" />
+    <ClCompile Include="..\..\src\map\wind.cpp" />
+    <ClCompile Include="..\..\src\menu\benchmark_menu.cpp" />
+    <ClCompile Include="..\..\src\menu\credits_menu.cpp" />
+    <ClCompile Include="..\..\src\menu\game_menu.cpp" />
+    <ClCompile Include="..\..\src\menu\game_mode_editor.cpp" />
+    <ClCompile Include="..\..\src\menu\help_menu.cpp" />
+    <ClCompile Include="..\..\src\menu\main_menu.cpp" />
+    <ClCompile Include="..\..\src\menu\map_selection_box.cpp" />
+    <ClCompile Include="..\..\src\menu\menu.cpp" />
+    <ClCompile Include="..\..\src\menu\network_connection_menu.cpp" />
+    <ClCompile Include="..\..\src\menu\network_menu.cpp" />
+    <ClCompile Include="..\..\src\menu\network_teams_selection_box.cpp" />
+    <ClCompile Include="..\..\src\menu\options_menu.cpp" />
+    <ClCompile Include="..\..\src\menu\pause_menu.cpp" />
+    <ClCompile Include="..\..\src\menu\replay_menu.cpp" />
+    <ClCompile Include="..\..\src\menu\results_menu.cpp" />
+    <ClCompile Include="..\..\src\menu\team_box.cpp" />
+    <ClCompile Include="..\..\src\menu\teams_selection_box.cpp" />
+    <ClCompile Include="..\..\src\network\admin_commands.cpp" />
+    <ClCompile Include="..\..\src\network\chat.cpp" />
+    <ClCompile Include="..\..\src\network\chatlogger.cpp" />
+    <ClCompile Include="..\..\src\network\net_error_msg.cpp" />
+    <ClCompile Include="..\..\src\network\network.cpp" />
+    <ClCompile Include="..\..\src\network\network_client.cpp" />
+    <ClCompile Include="..\..\src\network\network_local.cpp" />
+    <ClCompile Include="..\..\src\network\network_server.cpp" />
+    <ClCompile Include="..\..\src\network\randomsync.cpp" />
+    <ClCompile Include="..\..\src\particles\body_member.cpp" />
+    <ClCompile Include="..\..\src\particles\bullet.cpp" />
+    <ClCompile Include="..\..\src\particles\dark_smoke.cpp" />
+    <ClCompile Include="..\..\src\particles\explosion_particle.cpp" />
+    <ClCompile Include="..\..\src\particles\explosion_smoke.cpp" />
+    <ClCompile Include="..\..\src\particles\fading_text.cpp" />
+    <ClCompile Include="..\..\src\particles\fire.cpp" />
+    <ClCompile Include="..\..\src\particles\ground_particles.cpp" />
+    <ClCompile Include="..\..\src\particles\ill_bubble.cpp" />
+    <ClCompile Include="..\..\src\particles\magic_star.cpp" />
+    <ClCompile Include="..\..\src\particles\particle.cpp" />
+    <ClCompile Include="..\..\src\particles\polecat_fart.cpp" />
+    <ClCompile Include="..\..\src\particles\smoke.cpp" />
+    <ClCompile Include="..\..\src\particles\star.cpp" />
+    <ClCompile Include="..\..\src\particles\teleport_member.cpp" />
+    <ClCompile Include="..\..\src\particles\water_drop.cpp" />
+    <ClCompile Include="..\..\src\object\barrel.cpp" />
+    <ClCompile Include="..\..\src\object\bonus_box.cpp" />
+    <ClCompile Include="..\..\src\object\medkit.cpp" />
+    <ClCompile Include="..\..\src\object\objbox.cpp" />
+    <ClCompile Include="..\..\src\object\object_cfg.cpp" />
+    <ClCompile Include="..\..\src\object\objects_list.cpp" />
+    <ClCompile Include="..\..\src\object\physical_obj.cpp" />
+    <ClCompile Include="..\..\src\object\physics.cpp" />
+    <ClCompile Include="..\..\src\sound\jukebox.cpp" />
+    <ClCompile Include="..\..\src\sound\sample_cache.cpp" />
+    <ClCompile Include="..\..\src\sound\sound_sample.cpp" />
+    <ClCompile Include="..\..\src\team\custom_team.cpp" />
+    <ClCompile Include="..\..\src\team\custom_teams_list.cpp" />
+    <ClCompile Include="..\..\src\team\results.cpp" />
+    <ClCompile Include="..\..\src\team\team.cpp" />
+    <ClCompile Include="..\..\src\team\team_energy.cpp" />
+    <ClCompile Include="..\..\src\team\teams_list.cpp" />
+    <ClCompile Include="..\..\src\team\team_group.cpp" />
+    <ClCompile Include="..\..\src\tool\affine_transform.cpp" />
+    <ClCompile Include="..\..\src\tool\ansi_convert.cpp" />
+    <ClCompile Include="..\..\src\tool\config_element.cpp" />
+    <ClCompile Include="..\..\src\tool\copynpaste.cpp" />
+    <ClCompile Include="..\..\src\tool\eventtimer.cpp" />
+    <ClCompile Include="..\..\src\tool\resource_manager.cpp" />
+    <ClCompile Include="..\..\src\tool\stats.cpp" />
+    <ClCompile Include="..\..\src\tool\string_tools.cpp" />
+    <ClCompile Include="..\..\src\tool\text_handling.cpp" />
+    <ClCompile Include="..\..\src\tool\xml_document.cpp" />
+    <ClCompile Include="..\..\src\weapon\air_attack.cpp" />
+    <ClCompile Include="..\..\src\weapon\airhammer.cpp" />
+    <ClCompile Include="..\..\src\weapon\anvil.cpp" />
+    <ClCompile Include="..\..\src\weapon\auto_bazooka.cpp" />
+    <ClCompile Include="..\..\src\weapon\baseball.cpp" />
+    <ClCompile Include="..\..\src\weapon\bazooka.cpp" />
+    <ClCompile Include="..\..\src\weapon\blowtorch.cpp" />
+    <ClCompile Include="..\..\src\weapon\bounce_ball.cpp" />
+    <ClCompile Include="..\..\src\weapon\cluster_bomb.cpp" />
+    <ClCompile Include="..\..\src\weapon\cluzooka.cpp" />
+    <ClCompile Include="..\..\src\weapon\construct.cpp" />
+    <ClCompile Include="..\..\src\weapon\crosshair.cpp" />
+    <ClCompile Include="..\..\src\weapon\disco_grenade.cpp" />
+    <ClCompile Include="..\..\src\weapon\dynamite.cpp" />
+    <ClCompile Include="..\..\src\weapon\explosion.cpp" />
+    <ClCompile Include="..\..\src\weapon\flamethrower.cpp" />
+    <ClCompile Include="..\..\src\weapon\footbomb.cpp" />
+    <ClCompile Include="..\..\src\weapon\gnu.cpp" />
+    <ClCompile Include="..\..\src\weapon\grapple.cpp" />
+    <ClCompile Include="..\..\src\weapon\grenade.cpp" />
+    <ClCompile Include="..\..\src\weapon\gun.cpp" />
+    <ClCompile Include="..\..\src\weapon\jetpack.cpp" />
+    <ClCompile Include="..\..\src\weapon\lowgrav.cpp" />
+    <ClCompile Include="..\..\src\weapon\mine.cpp" />
+    <ClCompile Include="..\..\src\weapon\parachute.cpp" />
+    <ClCompile Include="..\..\src\weapon\polecat.cpp" />
+    <ClCompile Include="..\..\src\weapon\rail_gun.cpp" />
+    <ClCompile Include="..\..\src\weapon\riot_bomb.cpp" />
+    <ClCompile Include="..\..\src\weapon\shotgun.cpp" />
+    <ClCompile Include="..\..\src\weapon\skip_turn.cpp" />
+    <ClCompile Include="..\..\src\weapon\slap.cpp" />
+    <ClCompile Include="..\..\src\weapon\snipe_rifle.cpp" />
+    <ClCompile Include="..\..\src\weapon\submachine_gun.cpp" />
+    <ClCompile Include="..\..\src\weapon\suicide.cpp" />
+    <ClCompile Include="..\..\src\weapon\supertux.cpp" />
+    <ClCompile Include="..\..\src\weapon\syringe.cpp" />
+    <ClCompile Include="..\..\src\weapon\target_launcher.cpp" />
+    <ClCompile Include="..\..\src\weapon\teleportation.cpp" />
+    <ClCompile Include="..\..\src\weapon\weapon.cpp" />
+    <ClCompile Include="..\..\src\weapon\weapon_cfg.cpp" />
+    <ClCompile Include="..\..\src\weapon\weapon_launcher.cpp" />
+    <ClCompile Include="..\..\src\weapon\weapon_strength_bar.cpp" />
+    <ClCompile Include="..\..\src\weapon\weapons_list.cpp" />
+    <ClCompile Include="..\..\src\msvc\getopt.c">
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\..\src\replay\replay.cpp" />
+    <ClCompile Include="..\..\src\replay\replay_info.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\src\warmux.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\ai\ai_command.h" />
+    <ClInclude Include="..\..\src\ai\ai_idea.h" />
+    <ClInclude Include="..\..\src\ai\ai_player.h" />
+    <ClInclude Include="..\..\src\ai\ai_strategy.h" />
+    <ClInclude Include="..\..\src\ai\ai_stupid_player.h" />
+    <ClInclude Include="..\..\src\ai\ai_weapons_weighting.h" />
+    <ClInclude Include="..\..\src\ai\trajectory.h" />
+    <ClInclude Include="..\..\src\character\body.h" />
+    <ClInclude Include="..\..\src\character\body_list.h" />
+    <ClInclude Include="..\..\src\character\character.h" />
+    <ClInclude Include="..\..\src\character\clothe.h" />
+    <ClInclude Include="..\..\src\character\damage_stats.h" />
+    <ClInclude Include="..\..\src\character\member.h" />
+    <ClInclude Include="..\..\src\character\member_type.h" />
+    <ClInclude Include="..\..\src\character\movement.h" />
+    <ClInclude Include="..\..\src\game\config.h" />
+    <ClInclude Include="..\..\src\game\game.h" />
+    <ClInclude Include="..\..\src\game\game_blitz.h" />
+    <ClInclude Include="..\..\src\game\game_classic.h" />
+    <ClInclude Include="..\..\src\game\game_mode.h" />
+    <ClInclude Include="..\..\src\game\game_time.h" />
+    <ClInclude Include="..\..\src\game\stopwatch.h" />
+    <ClInclude Include="..\..\src\graphic\color.h" />
+    <ClInclude Include="..\..\src\graphic\colors.h" />
+    <ClInclude Include="..\..\src\graphic\composite_shape.h" />
+    <ClInclude Include="..\..\src\graphic\fading_effect.h" />
+    <ClInclude Include="..\..\src\graphic\font.h" />
+    <ClInclude Include="..\..\src\graphic\fps.h" />
+    <ClInclude Include="..\..\src\graphic\polygon.h" />
+    <ClInclude Include="..\..\src\graphic\polygon_generator.h" />
+    <ClInclude Include="..\..\src\graphic\sprite.h" />
+    <ClInclude Include="..\..\src\graphic\spriteanimation.h" />
+    <ClInclude Include="..\..\src\graphic\spritecache.h" />
+    <ClInclude Include="..\..\src\graphic\surface.h" />
+    <ClInclude Include="..\..\src\graphic\text.h" />
+    <ClInclude Include="..\..\src\graphic\text_list.h" />
+    <ClInclude Include="..\..\src\graphic\textured_polygon.h" />
+    <ClInclude Include="..\..\src\graphic\video.h" />
+    <ClInclude Include="..\..\src\gui\abstract_spin_button.h" />
+    <ClInclude Include="..\..\src\gui\box.h" />
+    <ClInclude Include="..\..\src\gui\button.h" />
+    <ClInclude Include="..\..\src\gui\button_text.h" />
+    <ClInclude Include="..\..\src\gui\check_box.h" />
+    <ClInclude Include="..\..\src\gui\combo_box.h" />
+    <ClInclude Include="..\..\src\gui\container.h" />
+    <ClInclude Include="..\..\src\gui\control_config.h" />
+    <ClInclude Include="..\..\src\gui\energy_bar.h" />
+    <ClInclude Include="..\..\src\gui\file_list_box.h" />
+    <ClInclude Include="..\..\src\gui\graph_canvas.h" />
+    <ClInclude Include="..\..\src\gui\grid_box.h" />
+    <ClInclude Include="..\..\src\gui\horizontal_box.h" />
+    <ClInclude Include="..\..\src\gui\label.h" />
+    <ClInclude Include="..\..\src\gui\msg_box.h" />
+    <ClInclude Include="..\..\src\gui\null_widget.h" />
+    <ClInclude Include="..\..\src\gui\picture_text_cbox.h" />
+    <ClInclude Include="..\..\src\gui\picture_widget.h" />
+    <ClInclude Include="..\..\src\gui\progress_bar.h" />
+    <ClInclude Include="..\..\src\gui\question.h" />
+    <ClInclude Include="..\..\src\gui\scroll_box.h" />
+    <ClInclude Include="..\..\src\gui\select_box.h" />
+    <ClInclude Include="..\..\src\gui\social_panel.h" />
+    <ClInclude Include="..\..\src\gui\spin_button.h" />
+    <ClInclude Include="..\..\src\gui\spin_button_picture.h" />
+    <ClInclude Include="..\..\src\gui\tabs.h" />
+    <ClInclude Include="..\..\src\gui\talk_box.h" />
+    <ClInclude Include="..\..\src\gui\text_box.h" />
+    <ClInclude Include="..\..\src\gui\torus_cache.h" />
+    <ClInclude Include="..\..\src\gui\vertical_box.h" />
+    <ClInclude Include="..\..\src\gui\widget.h" />
+    <ClInclude Include="..\..\src\gui\widget_list.h" />
+    <ClInclude Include="..\..\src\gui\big\button_pic.h" />
+    <ClInclude Include="..\..\src\include\action_handler.h" />
+    <ClInclude Include="..\..\src\include\app.h" />
+    <ClInclude Include="..\..\src\include\base.h" />
+    <ClInclude Include="..\..\src\include\constant.h" />
+    <ClInclude Include="..\..\src\include\debugmasks.h" />
+    <ClInclude Include="..\..\src\interface\cursor.h" />
+    <ClInclude Include="..\..\src\interface\game_msg.h" />
+    <ClInclude Include="..\..\src\interface\interface.h" />
+    <ClInclude Include="..\..\src\interface\joystick.h" />
+    <ClInclude Include="..\..\src\interface\keyboard.h" />
+    <ClInclude Include="..\..\src\interface\loading_screen.h" />
+    <ClInclude Include="..\..\src\interface\man_machine_interface.h" />
+    <ClInclude Include="..\..\src\interface\mouse.h" />
+    <ClInclude Include="..\..\src\interface\mouse_cursor.h" />
+    <ClInclude Include="..\..\src\interface\movable_by_user.h" />
+    <ClInclude Include="..\..\src\interface\move_intention.h" />
+    <ClInclude Include="..\..\src\interface\weapon_help.h" />
+    <ClInclude Include="..\..\src\interface\weapon_menu.h" />
+    <ClInclude Include="..\..\src\map\camera.h" />
+    <ClInclude Include="..\..\src\map\ground.h" />
+    <ClInclude Include="..\..\src\map\map.h" />
+    <ClInclude Include="..\..\src\map\maps_list.h" />
+    <ClInclude Include="..\..\src\map\random_map.h" />
+    <ClInclude Include="..\..\src\map\sky.h" />
+    <ClInclude Include="..\..\src\map\tile.h" />
+    <ClInclude Include="..\..\src\map\tileitem.h" />
+    <ClInclude Include="..\..\src\map\water.h" />
+    <ClInclude Include="..\..\src\map\wind.h" />
+    <ClInclude Include="..\..\src\menu\benchmark_menu.h" />
+    <ClInclude Include="..\..\src\menu\credits_menu.h" />
+    <ClInclude Include="..\..\src\menu\game_menu.h" />
+    <ClInclude Include="..\..\src\menu\game_mode_editor.h" />
+    <ClInclude Include="..\..\src\menu\help_menu.h" />
+    <ClInclude Include="..\..\src\menu\main_menu.h" />
+    <ClInclude Include="..\..\src\menu\map_selection_box.h" />
+    <ClInclude Include="..\..\src\menu\menu.h" />
+    <ClInclude Include="..\..\src\menu\network_connection_menu.h" />
+    <ClInclude Include="..\..\src\menu\network_menu.h" />
+    <ClInclude Include="..\..\src\menu\network_teams_selection_box.h" />
+    <ClInclude Include="..\..\src\menu\options_menu.h" />
+    <ClInclude Include="..\..\src\menu\pause_menu.h" />
+    <ClInclude Include="..\..\src\menu\replay_menu.h" />
+    <ClInclude Include="..\..\src\menu\results_menu.h" />
+    <ClInclude Include="..\..\src\menu\team_box.h" />
+    <ClInclude Include="..\..\src\menu\teams_selection_box.h" />
+    <ClInclude Include="..\..\src\network\admin_commands.h" />
+    <ClInclude Include="..\..\src\network\chat.h" />
+    <ClInclude Include="..\..\src\network\chatlogger.h" />
+    <ClInclude Include="..\..\src\network\net_error_msg.h" />
+    <ClInclude Include="..\..\src\network\network.h" />
+    <ClInclude Include="..\..\src\network\network_client.h" />
+    <ClInclude Include="..\..\src\network\network_local.h" />
+    <ClInclude Include="..\..\src\network\network_server.h" />
+    <ClInclude Include="..\..\src\network\randomsync.h" />
+    <ClInclude Include="..\..\src\particles\body_member.h" />
+    <ClInclude Include="..\..\src\particles\bullet.h" />
+    <ClInclude Include="..\..\src\particles\dark_smoke.h" />
+    <ClInclude Include="..\..\src\particles\explosion_particle.h" />
+    <ClInclude Include="..\..\src\particles\explosion_smoke.h" />
+    <ClInclude Include="..\..\src\particles\fading_text.h" />
+    <ClInclude Include="..\..\src\particles\fire.h" />
+    <ClInclude Include="..\..\src\particles\ground_particles.h" />
+    <ClInclude Include="..\..\src\particles\ill_bubble.h" />
+    <ClInclude Include="..\..\src\particles\magic_star.h" />
+    <ClInclude Include="..\..\src\particles\particle.h" />
+    <ClInclude Include="..\..\src\particles\polecat_fart.h" />
+    <ClInclude Include="..\..\src\particles\smoke.h" />
+    <ClInclude Include="..\..\src\particles\star.h" />
+    <ClInclude Include="..\..\src\particles\teleport_member.h" />
+    <ClInclude Include="..\..\src\particles\water_drop.h" />
+    <ClInclude Include="..\..\src\object\barrel.h" />
+    <ClInclude Include="..\..\src\object\bonus_box.h" />
+    <ClInclude Include="..\..\src\object\medkit.h" />
+    <ClInclude Include="..\..\src\object\objbox.h" />
+    <ClInclude Include="..\..\src\object\object_cfg.h" />
+    <ClInclude Include="..\..\src\object\objects_list.h" />
+    <ClInclude Include="..\..\src\object\physical_obj.h" />
+    <ClInclude Include="..\..\src\object\physics.h" />
+    <ClInclude Include="..\..\src\sound\jukebox.h" />
+    <ClInclude Include="..\..\src\sound\sample_cache.h" />
+    <ClInclude Include="..\..\src\sound\sound_sample.h" />
+    <ClInclude Include="..\..\src\team\custom_team.h" />
+    <ClInclude Include="..\..\src\team\custom_teams_list.h" />
+    <ClInclude Include="..\..\src\team\macro.h" />
+    <ClInclude Include="..\..\src\team\results.h" />
+    <ClInclude Include="..\..\src\team\team.h" />
+    <ClInclude Include="..\..\src\team\team_energy.h" />
+    <ClInclude Include="..\..\src\team\teams_list.h" />
+    <ClInclude Include="..\..\src\team\team_group.h" />
+    <ClInclude Include="..\..\src\tool\affine_transform.h" />
+    <ClInclude Include="..\..\src\tool\ansi_convert.h" />
+    <ClInclude Include="..\..\src\tool\config_element.h" />
+    <ClInclude Include="..\..\src\tool\copynpaste.h" />
+    <ClInclude Include="..\..\src\tool\eventtimer.h" />
+    <ClInclude Include="..\..\src\tool\isnan.h" />
+    <ClInclude Include="..\..\src\tool\math_tools.h" />
+    <ClInclude Include="..\..\src\tool\resource_manager.h" />
+    <ClInclude Include="..\..\src\tool\stats.h" />
+    <ClInclude Include="..\..\src\tool\string_tools.h" />
+    <ClInclude Include="..\..\src\tool\text_handling.h" />
+    <ClInclude Include="..\..\src\tool\xml_document.h" />
+    <ClInclude Include="..\..\src\weapon\air_attack.h" />
+    <ClInclude Include="..\..\src\weapon\airhammer.h" />
+    <ClInclude Include="..\..\src\weapon\all.h" />
+    <ClInclude Include="..\..\src\weapon\anvil.h" />
+    <ClInclude Include="..\..\src\weapon\auto_bazooka.h" />
+    <ClInclude Include="..\..\src\weapon\baseball.h" />
+    <ClInclude Include="..\..\src\weapon\bazooka.h" />
+    <ClInclude Include="..\..\src\weapon\blowtorch.h" />
+    <ClInclude Include="..\..\src\weapon\bounce_ball.h" />
+    <ClInclude Include="..\..\src\weapon\cluster_bomb.h" />
+    <ClInclude Include="..\..\src\weapon\cluzooka.h" />
+    <ClInclude Include="..\..\src\weapon\construct.h" />
+    <ClInclude Include="..\..\src\weapon\crosshair.h" />
+    <ClInclude Include="..\..\src\weapon\disco_grenade.h" />
+    <ClInclude Include="..\..\src\weapon\dynamite.h" />
+    <ClInclude Include="..\..\src\weapon\explosion.h" />
+    <ClInclude Include="..\..\src\weapon\flamethrower.h" />
+    <ClInclude Include="..\..\src\weapon\footbomb.h" />
+    <ClInclude Include="..\..\src\weapon\gnu.h" />
+    <ClInclude Include="..\..\src\weapon\grapple.h" />
+    <ClInclude Include="..\..\src\weapon\grenade.h" />
+    <ClInclude Include="..\..\src\weapon\gun.h" />
+    <ClInclude Include="..\..\src\weapon\jetpack.h" />
+    <ClInclude Include="..\..\src\weapon\lowgrav.h" />
+    <ClInclude Include="..\..\src\weapon\mine.h" />
+    <ClInclude Include="..\..\src\weapon\parachute.h" />
+    <ClInclude Include="..\..\src\weapon\polecat.h" />
+    <ClInclude Include="..\..\src\weapon\rail_gun.h" />
+    <ClInclude Include="..\..\src\weapon\riot_bomb.h" />
+    <ClInclude Include="..\..\src\weapon\shotgun.h" />
+    <ClInclude Include="..\..\src\weapon\skip_turn.h" />
+    <ClInclude Include="..\..\src\weapon\slap.h" />
+    <ClInclude Include="..\..\src\weapon\snipe_rifle.h" />
+    <ClInclude Include="..\..\src\weapon\submachine_gun.h" />
+    <ClInclude Include="..\..\src\weapon\suicide.h" />
+    <ClInclude Include="..\..\src\weapon\supertux.h" />
+    <ClInclude Include="..\..\src\weapon\syringe.h" />
+    <ClInclude Include="..\..\src\weapon\target_launcher.h" />
+    <ClInclude Include="..\..\src\weapon\teleportation.h" />
+    <ClInclude Include="..\..\src\weapon\weapon.h" />
+    <ClInclude Include="..\..\src\weapon\weapon_cfg.h" />
+    <ClInclude Include="..\..\src\weapon\weapon_launcher.h" />
+    <ClInclude Include="..\..\src\weapon\weapon_strength_bar.h" />
+    <ClInclude Include="..\..\src\weapon\weapons_list.h" />
+    <ClInclude Include="..\..\src\msvc\getopt.h" />
+    <ClInclude Include="..\..\src\replay\game_mode_info.h" />
+    <ClInclude Include="..\..\src\replay\replay.h" />
+    <ClInclude Include="..\..\src\replay\replay_info.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="..\..\data\authors.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\..\..\..\..\..\Users\adm\Documents\Warmux\config.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\data\cursors.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\data\graphism.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+      <SubType>Designer</SubType>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\data\warmux_default_config.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\data\weapons.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\data\game_mode\blitz.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\data\game_mode\classic.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\data\game_mode\default_objects.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\data\game_mode\skin_viewer.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\data\game_mode\unlimited.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\data\body\aliases.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\data\body\clothes.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\data\body\movements.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\data\body\skeletons.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\data\music\profile.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\data\sound\default\profile.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Handheld|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="fixedpoint\fixedpoint.vcxproj">
+      <Project>{abb66755-b294-4794-a5b3-811ec497f94e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="libwarmux\libwarmux.vcxproj">
+      <Project>{f3d3fc9e-7445-412b-bc90-3b7f0e81fbee}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="gettext.targets" />
+  </ImportGroup>
+</Project>

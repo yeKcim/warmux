@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 43
+Makefile.in
+.deps
+Makefile
+libfixedpoint.a
+
+END

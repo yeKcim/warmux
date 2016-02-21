@@ -1,0 +1,40 @@
+10
+
+dir
+10371
+svn://svn.gna.org/svn/warmux/trunk/build/lib/sdl
+svn://svn.gna.org/svn/warmux
+
+
+
+2011-11-18T21:16:53.593903Z
+10362
+mikkov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30ef787d-52ff-0310-b286-e08351bb7647
+
+src
+dir
+
+EABI
+dir
+
+symbian
+dir
+
+include
+dir
+

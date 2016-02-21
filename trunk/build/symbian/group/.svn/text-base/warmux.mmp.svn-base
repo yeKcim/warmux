@@ -1,0 +1,126 @@
+#include "build_conf.inf"
+
+TARGET            warmux.exe
+TARGETTYPE        exe
+UID               0 0xECF75E71
+
+STDCPP
+
+MACRO __SYMBIAN_STDCPP_SUPPORT__
+
+#ifndef SYMBIAN3
+SYSTEMINCLUDE   \epoc32\include\stlport
+#else
+SYSTEMINCLUDE   \epoc32\include\stdapis\stlportv5
+#endif
+SYSTEMINCLUDE   \epoc32\include\stdapis
+SYSTEMINCLUDE   \epoc32\include
+SYSTEMINCLUDE   \epoc32\include\SDL
+SYSTEMINCLUDE   \epoc32\include\libpng-1.2
+SYSTEMINCLUDE   ..\..\..\lib\warmux\include
+SYSTEMINCLUDE   ..\..\..\lib\fixedpoint
+SYSTEMINCLUDE   ..\..\lib\curl\include
+SYSTEMINCLUDE   ..\lib\libxml2\inc\libxml2
+
+USERINCLUDE   ..\..\..\src
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+
+SOURCEPATH ..\..\..\src\ai
+SOURCE ai_command.cpp ai_idea.cpp ai_strategy.cpp ai_stupid_player.cpp ai_weapons_weighting.cpp
+SOURCEPATH ..\..\..\src\character
+SOURCE body.cpp body_list.cpp character.cpp clothe.cpp damage_stats.cpp member.cpp movement.cpp
+SOURCEPATH ..\..\..\src\game
+SOURCE config.cpp game.cpp game_blitz.cpp game_classic.cpp game_mode.cpp stopwatch.cpp time.cpp
+SOURCEPATH ..\..\..\src\graphic
+SOURCE color.cpp composite_shape.cpp font.cpp fps.cpp polygon.cpp polygon_generator.cpp sprite.cpp spriteanimation.cpp spritecache.cpp surface.cpp text.cpp text_list.cpp video.cpp
+SOURCEPATH ..\..\..\src\gui
+SOURCE abstract_spin_button.cpp
+SOURCE file_list_box.cpp
+SOURCEPATH ..\..\..\src\gui\big
+SOURCE button_pic.cpp
+SOURCEPATH ..\..\..\src\gui
+SOURCE box.cpp button.cpp button_text.cpp check_box.cpp combo_box.cpp control_config.cpp energy_bar.cpp figure_widget.cpp graph_canvas.cpp grid_box.cpp horizontal_box.cpp label.cpp msg_box.cpp social_panel.cpp picture_text_cbox.cpp picture_widget.cpp progress_bar.cpp question.cpp scroll_box.cpp select_box.cpp spin_button.cpp spin_button_picture.cpp tabs.cpp talk_box.cpp text_box.cpp torus_cache.cpp vertical_box.cpp widget.cpp widget_list.cpp
+SOURCEPATH ..\..\..\src\include
+SOURCE action_handler.cpp constant.cpp
+SOURCEPATH ..\..\..\src\interface
+SOURCE cursor.cpp game_msg.cpp interface.cpp keyboard.cpp loading_screen.cpp man_machine_interface.cpp mouse.cpp mouse_cursor.cpp move_intention.cpp weapon_help.cpp weapon_menu.cpp
+SOURCEPATH ..\..\..\src
+SOURCE main.cpp
+SOURCEPATH ..\..\..\src\map
+SOURCE camera.cpp ground.cpp map.cpp maps_list.cpp random_map.cpp sky.cpp tile.cpp tileitem.cpp water.cpp wind.cpp
+SOURCEPATH ..\..\..\src\menu
+SOURCE benchmark_menu.cpp credits_menu.cpp game_menu.cpp game_mode_editor.cpp help_menu.cpp main_menu.cpp map_selection_box.cpp menu.cpp network_connection_menu.cpp network_menu.cpp network_teams_selection_box.cpp options_menu.cpp pause_menu.cpp results_menu.cpp team_box.cpp teams_selection_box.cpp
+SOURCE replay_menu.cpp
+SOURCEPATH ..\..\..\src\msvc
+SOURCE getopt.c
+SOURCEPATH ..\..\..\src\network
+SOURCE admin_commands.cpp chat.cpp chatlogger.cpp net_error_msg.cpp network.cpp network_client.cpp network_local.cpp network_server.cpp randomsync.cpp
+SOURCEPATH ..\..\..\src\object
+SOURCE barrel.cpp bonus_box.cpp medkit.cpp objbox.cpp object_cfg.cpp objects_list.cpp physical_obj.cpp physics.cpp
+SOURCEPATH ..\..\..\src\particles
+SOURCE body_member.cpp bullet.cpp dark_smoke.cpp explosion_particle.cpp explosion_smoke.cpp fading_text.cpp fire.cpp ground_particles.cpp ill_bubble.cpp magic_star.cpp particle.cpp polecat_fart.cpp smoke.cpp star.cpp teleport_member.cpp water_drop.cpp
+SOURCEPATH ..\..\..\src\replay
+SOURCE replay_info.cpp
+SOURCE replay.cpp
+SOURCEPATH ..\..\..\src\sound
+SOURCE jukebox.cpp sample_cache.cpp sound_sample.cpp
+SOURCEPATH ..\..\..\src\team
+SOURCE custom_team.cpp custom_teams_list.cpp results.cpp team.cpp team_group.cpp team_energy.cpp teams_list.cpp
+SOURCEPATH ..\..\..\src\tool
+SOURCE affine_transform.cpp config_element.cpp copynpaste.cpp eventtimer.cpp resource_manager.cpp stats.cpp string_tools.cpp text_handling.cpp xml_document.cpp
+SOURCEPATH ..\..\..\src\tool
+SOURCE ansi_convert.cpp
+SOURCEPATH ..\..\..\src\vkeybd
+SOURCE image-map.cpp virtual-keyboard-gui.cpp virtual-keyboard-parser.cpp virtual-keyboard.cpp vkpolygon.cpp
+SOURCEPATH ..\..\..\src\weapon
+SOURCE air_attack.cpp airhammer.cpp anvil.cpp auto_bazooka.cpp baseball.cpp bazooka.cpp blowtorch.cpp bounce_ball.cpp cluster_bomb.cpp cluzooka.cpp construct.cpp crosshair.cpp disco_grenade.cpp dynamite.cpp explosion.cpp flamethrower.cpp footbomb.cpp gnu.cpp grapple.cpp grenade.cpp gun.cpp jetpack.cpp lowgrav.cpp mine.cpp parachute.cpp polecat.cpp rail_gun.cpp riot_bomb.cpp shotgun.cpp skip_turn.cpp slap.cpp snipe_rifle.cpp submachine_gun.cpp suicide.cpp supertux.cpp syringe.cpp target_launcher.cpp teleportation.cpp weapon.cpp weapon_cfg.cpp weapon_launcher.cpp weapon_strength_bar.cpp weapons_list.cpp
+SOURCEPATH ..\src
+SOURCE joystick.cpp
+
+LIBRARY         libc.lib libm.lib
+LIBRARY         libz.lib
+LIBRARY         libpthread.lib
+LIBRARY         euser.lib
+LIBRARY         warmux_sdl.lib
+
+STATICLIBRARY   sdlmain.lib
+STATICLIBRARY   SDL_mixer.lib
+STATICLIBRARY   warmux_lib.lib
+STATICLIBRARY   libcurl.lib
+STATICLIBRARY   SDL_net.lib
+STATICLIBRARY   sdl_gfx.lib
+STATICLIBRARY   sdl_image.lib
+STATICLIBRARY   SDL_ttf.lib
+STATICLIBRARY   libpng-1_2.lib
+STATICLIBRARY   abiv2_libjpeg-6.lib
+STATICLIBRARY   freetype.lib
+STATICLIBRARY   tremor.lib
+STATICLIBRARY   wormux_xmlengine.lib
+#ifndef SYMBIAN3
+STATICLIBRARY   stlport_s.lib
+#else
+LIBRARY         libstdcppv5.lib
+#endif
+
+//This is required even if the wchar type is not used.
+OPTION CW -wchar_t on
+MACRO  _WCHAR_T_DECLARED
+
+EPOCSTACKSIZE 0x14000
+EPOCHEAPSIZE 1000000 96000000
+
+START RESOURCE ../res/warmux.rss
+HEADER
+TARGETPATH \resource\apps
+END
+
+START RESOURCE ../res/warmux_reg.rss
+TARGETPATH \private\10003a3f\apps
+END
+
+CAPABILITY NetworkServices
+
+ALWAYS_BUILD_AS_ARM

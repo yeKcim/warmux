@@ -1,0 +1,128 @@
+#include "../../../symbian/group/build_conf.inf"
+
+TARGET		warmux_sdl.dll
+TARGETTYPE	dll
+UID         0x1000008d 0xE5A8B053
+CAPABILITY  WriteUserData ReadUserData NetworkServices LocalServices
+
+EPOCALLOWDLLDATA
+MACRO		OPENC
+MACRO		NO_SIGNAL_H
+MACRO		ENABLE_EPOC
+MACRO		DISABLE_JOYSTICK
+MACRO		DISABLE_CDROM
+
+SOURCEPATH      ..\src
+
+SOURCE		SDL.c
+SOURCE		SDL_error.c
+SOURCE		SDL_fatal.c
+SOURCE		audio/SDL_audio.c
+SOURCE		audio/SDL_audiocvt.c
+SOURCE		audio/SDL_audiodev.c
+SOURCE		audio/SDL_mixer.c
+SOURCE		audio/SDL_wave.c
+SOURCE		audio/symbian/SDL_epocaudio.cpp
+SOURCE		cpuinfo/SDL_cpuinfo.c
+SOURCE		events/SDL_active.c
+SOURCE		events/SDL_events.c
+SOURCE		events/SDL_keyboard.c
+SOURCE		events/SDL_mouse.c
+SOURCE		events/SDL_quit.c
+SOURCE		events/SDL_resize.c
+SOURCE		file/SDL_rwops.c
+SOURCE		main/symbian/SDL_main.cpp
+SOURCE		stdlib/SDL_getenv.c
+SOURCE		stdlib/SDL_string.c
+SOURCE		thread/generic/SDL_syscond.c
+SOURCE		thread/SDL_thread.c
+SOURCE		thread/symbian/SDL_sysmutex.cpp
+SOURCE		thread/symbian/SDL_syssem.cpp
+SOURCE		thread/symbian/SDL_systhread.cpp
+SOURCE		timer/SDL_timer.c
+SOURCE		timer/symbian/SDL_systimer.cpp
+SOURCE		video/SDL_blit_0.c
+SOURCE		video/SDL_blit_1.c
+SOURCE		video/SDL_blit_A.c
+SOURCE		video/SDL_blit.c
+SOURCE		video/SDL_blit_N.c
+SOURCE		video/SDL_bmp.c
+SOURCE		video/SDL_cursor.c
+SOURCE		video/SDL_gamma.c
+SOURCE		video/SDL_pixels.c
+SOURCE		video/SDL_RLEaccel.c
+SOURCE		video/SDL_stretch.c
+SOURCE		video/SDL_surface.c
+SOURCE		video/SDL_video.c
+SOURCE		video/SDL_yuv.c
+SOURCE		video/SDL_yuv_sw.c
+SOURCE		video/symbian/SDL_epocevents.cpp 
+SOURCE		video/symbian/SDL_epocvideo.cpp
+
+SOURCEPATH	.
+SOURCE		src/drawbitmapfilter.cpp
+SOURCE		src/dsa.cpp
+SOURCE		src/hwablitter.cpp
+SOURCE		src/sdlappsrv.cpp
+SOURCE		src/sdlenv.cpp
+SOURCE		src/sdlenvutils.cpp
+SOURCE		src/sdlexe.cpp
+SOURCE		src/streamplayer.cpp
+SOURCE		src/vectorbuffer.cpp
+SOURCE		src/zoomer.cpp
+SOURCE		src/fpsview.cpp
+SOURCE		src/virtualcursor.cpp
+
+
+
+SYSTEMINCLUDE	\epoc32\include
+SYSTEMINCLUDE	\epoc32\include\mw
+SYSTEMINCLUDE	\epoc32\include\GLES
+SYSTEMINCLUDE	\epoc32\include\platform
+SYSTEMINCLUDE	\epoc32\include\platform\mw
+SYSTEMINCLUDE	\epoc32\include\stdapis
+SYSTEMINCLUDE	\epoc32\include\stdapis\stlportv5
+SYSTEMINCLUDE	\epoc32\include\stdapis\stlportv5\stl
+SYSTEMINCLUDE	inc
+SYSTEMINCLUDE	..\include
+
+USERINCLUDE	..\src
+USERINCLUDE	..\src\video
+USERINCLUDE	..\src\events
+USERINCLUDE	..\src\audio
+USERINCLUDE	..\src\audio\symbian
+USERINCLUDE	..\src\main\symbian
+USERINCLUDE	..\src\video\symbian
+USERINCLUDE	..\src\thread
+USERINCLUDE	..\src\thread\generic
+USERINCLUDE	..\src\thread\symbian
+USERINCLUDE	..\src\timer
+USERINCLUDE	..\src\joystick
+USERINCLUDE	inc\internal
+
+LIBRARY        libc.lib
+LIBRARY        libm.lib
+
+LIBRARY        cone.lib eikcoctl.lib eikdlg.lib eikctl.lib
+LIBRARY        eikcore.lib aknnotify.lib apgrfx.lib
+LIBRARY        avkon.lib efsrv.lib bafl.lib apparc.lib
+LIBRARY        scdv.lib
+
+LIBRARY        euser.lib fbscli.lib ws32.lib
+LIBRARY        mediaclientaudiostream.lib
+
+LIBRARY        hal.lib remconinterfacebase.lib remconcoreapi.lib
+
+LIBRARY        gdi.lib
+LIBRARY        bitgdi.lib
+LIBRARY        egul.lib
+
+#ifdef SYMBIAN3
+MACRO          SYMBIAN3
+MACRO		   OPENVGSUPPORT
+LIBRARY        libgles_cm.lib
+LIBRARY        libopenvg.lib
+LIBRARY        libegl.lib
+#endif
+
+ALWAYS_BUILD_AS_ARM

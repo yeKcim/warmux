@@ -1,0 +1,18 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : 
+ Copyright   : Your copyright notice
+ Description : This file provides the information required for building the
+				whole of a SDL_ttf.
+============================================================================
+*/
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_MMPFILES
+SDL_ttf.mmp
+
+PRJ_EXPORTS
+..\..\SDL_ttf.h SDL\SDL_ttf.h

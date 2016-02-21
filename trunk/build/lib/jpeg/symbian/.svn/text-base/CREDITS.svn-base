@@ -1,0 +1,10 @@
+N: Hannu Kankaanp‰‰
+D: Initial port for Symbian port of PHP 5.1.4.
+
+N: Petteri Muilu
+E: petteri@futurice.com
+D: Initial port for Symbian port of PHP 5.2.2.
+
+N: Johan Wikman
+E: johan.wikman@nokia.com
+D: Cleanup, warning removal and build rearrangement.

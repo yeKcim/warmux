@@ -1,0 +1,36 @@
+# When debugging run
+# source /path/to/this/file
+# in order to unlock the commands specified in this file.
+
+#Gets used by printRect; can be used by it's own.
+define printLine
+  set $__x = $arg0
+  set $__x_len = $arg1
+  set $__y = $arg2
+  while $__x <= $__x_len
+  if !GetWorld().IsInVacuum($__x,$__y)
+      echo X
+    else
+      echo _
+    end
+    set $__x = $__x + 1
+  end
+  echo \n
+end
+
+# Draws a part of the map as ASCII image
+# It draws _ if at a pixel is vacuum, otherwise it draws an X.
+# For example
+# printRect 2602 2667 1300 1402
+# would draw the rows 2602 to 2667 and the collumns 1300 to 1402
+define printRect
+  set $_x_start = $arg0
+  set $_x_end = $arg1
+  set $_y_start = $arg2
+  set $_y_end = $arg3
+  set $_y = $_y_start
+  while $_y <= $_y_end
+    printLine $_x_start $_x_end $_y
+    set $_y = $_y + 1
+  end
+end

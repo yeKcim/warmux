@@ -1,0 +1,557 @@
+#!/bin/bash
+
+## Programs
+MAKE_NSIS=makensis
+
+# Path to which all others are relative
+WarmuxDIR="../.."
+
+# Root path for other dlls (oggvorbis, curse, ...)
+BINDIR=/mingw
+
+# Windows registry software path
+HKLM_PATH="SOFTWARE\Games\Warmux"
+
+# Set compression and in/out
+DEST=tmp-warmux-win32
+NSIS="$DEST/warmux.nsi"
+
+# Clean prior stuff
+rm -rf $NSIS $DEST
+
+# Prepare stuff
+@STRIP@ ../../src/warmux.exe
+if [ "$OSTYPE" == "linux-gnu" ]; then
+  WIN_WarmuxDIR="$PWD/../.."
+  LOCAL_PATH="$PWD"
+  SEP="/"
+else
+  WIN_WarmuxDIR=$(cd "$WarmuxDIR" && cmd /c cd)
+  LOCAL_PATH=$(cmd /c cd)
+  SEP="\\"
+fi
+
+if test "@PACKAGE_VERSION@" = "svn"; then VIPV="0.0"
+else VIPV="@PACKAGE_VERSION@"; fi
+
+mkdir -p $DEST
+
+if ! pkg-config --help 2>/dev/null 1>&2 ; then
+  echo "pkg-config not found, aborting..."
+  exit 1
+fi
+
+# Create head
+cat > $NSIS <<EOF
+;based on MUI Welcome/Finish Page Example Script written by Joost Verburg
+!include "MUI2.nsh"
+!include "Sections.nsh"
+!include "LogicLib.nsh"
+!include "FileFunc.nsh"
+!insertmacro GetParent
+
+
+Name "Warmux"
+;Version resource
+VIProductVersion        "0.$VIPV.0"
+VIAddVersionKey         "FileDescription"       "Warmux Installer"
+VIAddVersionKey         "ProductName"           "Warmux"
+VIAddVersionKey         "FileVersion"           "@PACKAGE_VERSION@"
+VIAddVersionKey         "ProductVersion"        "@PACKAGE_VERSION@"
+VIAddVersionKey         "LegalCopyright"        "(C) 2001-2011 The Warmux Project"
+
+;General
+OutFile "${LOCAL_PATH}\Warmux-Setup-@PACKAGE_VERSION@.exe"
+SetCompressor /SOLID lzma
+; Switching to 8 saves 40KB
+; Switching to zlib looses 4MB...
+SetCompressorDictSize 4
+ShowInstDetails show
+ShowUninstDetails show
+SetDateSave on
+RequestExecutionLevel highest
+
+!define Warmux_REG_KEY          "${HKLM_PATH}"
+!define Warmux_UNINSTALL_KEY    "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Warmux"
+!define HKLM_APP_PATHS_KEY      "SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\warmux.exe"
+!define STARTUP_RUN_KEY         "SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
+!define Warmux_VERSION          "@PACKAGE_VERSION@"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Modern UI Configuration ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  !define MUI_ICON                          "${WIN_WarmuxDIR}${SEP}data${SEP}icon${SEP}install.ico"
+  !define MUI_UNICON                        "${WIN_WarmuxDIR}${SEP}data${SEP}icon${SEP}uninstall.ico"
+  ; Alter License section
+  !define MUI_LICENSEPAGE_BUTTON            \$(Warmux_BUTTON)
+  !define MUI_LICENSEPAGE_TEXT_BOTTOM       \$(Warmux_BOTTOM_TEXT)
+  ; Language
+  !define MUI_LANGDLL_ALWAYSSHOW
+  !define MUI_LANGDLL_REGISTRY_ROOT         "HKCU"
+  !define MUI_LANGDLL_REGISTRY_KEY          "\${Warmux_REG_KEY}"
+  !define MUI_LANGDLL_REGISTRY_VALUENAME    "Installer Language"
+  ; Misc stuff
+  !define MUI_COMPONENTSPAGE_SMALLDESC
+  !define MUI_ABORTWARNING
+  ; Do not close dialogs, allow to check installation result
+  !define MUI_FINISHPAGE_NOAUTOCLOSE
+  !define MUI_UNFINISHPAGE_NOAUTOCLOSE
+  ;Finish Page config
+  !define MUI_FINISHPAGE_RUN                "\$INSTDIR\warmux.exe"
+  !define MUI_FINISHPAGE_RUN_NOTCHECKED
+  !define MUI_FINISHPAGE_LINK               \$(Warmux_VISIT)
+  !define MUI_FINISHPAGE_LINK_LOCATION      "http://www.warmux.org"
+
+  ;--------------------------------
+  ;Pages
+  ; Install
+  !insertmacro MUI_PAGE_WELCOME
+  !insertmacro MUI_PAGE_LICENSE \$(WarmuxLicense)
+  !insertmacro MUI_PAGE_COMPONENTS
+  !insertmacro MUI_PAGE_DIRECTORY
+  !insertmacro MUI_PAGE_INSTFILES
+  !insertmacro MUI_PAGE_FINISH
+  ; Uninstall
+  !insertmacro MUI_UNPAGE_WELCOME
+  !insertmacro MUI_UNPAGE_CONFIRM
+  !insertmacro MUI_UNPAGE_INSTFILES
+  !insertmacro MUI_UNPAGE_FINISH
+
+  ;--------------------------------
+  ;Languages
+  !insertmacro MUI_LANGUAGE "English"
+  LicenseLangString WarmuxLicense "English" "${WIN_WarmuxDIR}\doc\license\COPYING.en.txt"
+
+  !insertmacro MUI_LANGUAGE "French"
+  LicenseLangString WarmuxLicense "French" "${WIN_WarmuxDIR}\doc\license\COPYING.fr.txt"
+
+  !insertmacro MUI_LANGUAGE "Greek"
+  LicenseLangString WarmuxLicense "Greek" "${WIN_WarmuxDIR}\doc\license\COPYING.el.txt"
+
+  !insertmacro MUI_LANGUAGE "Polish"
+  LicenseLangString WarmuxLicense "Polish" "${WIN_WarmuxDIR}\doc\license\COPYING.pl.txt"
+
+  !insertmacro MUI_LANGUAGE "German"
+  LicenseLangString WarmuxLicense "German" "${WIN_WarmuxDIR}\doc\license\COPYING.de.txt"
+  LangString TITLE_Warmux "German" "Warmux"
+  LangString DESC_Warmux  "German" "Warmux @PACKAGE_VERSION@"
+
+  !insertmacro MUI_LANGUAGE "Spanish"
+  LicenseLangString WarmuxLicense "Spanish" "${WIN_WarmuxDIR}\doc\license\COPYING.es.txt"
+  LangString TITLE_Warmux "Spanish" "Warmux"
+  LangString DESC_Warmux  "Spanish" "Warmux @PACKAGE_VERSION@"
+
+  !insertmacro MUI_LANGUAGE "Dutch"
+  LicenseLangString WarmuxLicense "Dutch" "${WIN_WarmuxDIR}\doc\license\COPYING.nl.txt"
+  LangString TITLE_Warmux "Dutch" "Warmux"
+  LangString DESC_Warmux  "Dutch" "Warmux @PACKAGE_VERSION@"
+
+  !insertmacro MUI_LANGUAGE "Russian"
+  LicenseLangString WarmuxLicense "Russian" "${WIN_WarmuxDIR}\doc\license\COPYING.ru.txt"
+  LangString TITLE_Warmux "Russian" "Warmux"
+  LangString DESC_Warmux  "Russian" "Warmux @PACKAGE_VERSION@"
+
+  !insertmacro MUI_LANGUAGE "Slovenian"
+  LicenseLangString WarmuxLicense "Slovenian" "${WIN_WarmuxDIR}\doc\license\COPYING.sk.txt"
+  LangString TITLE_Warmux "Slovenian" "Warmux"
+  LangString DESC_Warmux  "Slovenian" "Warmux @PACKAGE_VERSION@"
+
+  ;--------------------------------
+  ;Installer translations
+  !define Warmux_DEFAULT_LANGFILE "${LOCAL_PATH}\English.nsh"
+  !include "${LOCAL_PATH}\langmacros.nsh"
+  !insertmacro Warmux_MACRO_INCLUDE_LANGFILE "ENGLISH"  "${LOCAL_PATH}\English.nsh"
+  !insertmacro Warmux_MACRO_INCLUDE_LANGFILE "FRENCH"   "${LOCAL_PATH}\French.nsh"
+  !insertmacro Warmux_MACRO_INCLUDE_LANGFILE "POLISH"   "${LOCAL_PATH}\Polish.nsh"
+  !insertmacro Warmux_MACRO_INCLUDE_LANGFILE "GREEK"    "${LOCAL_PATH}\Greek.nsh"
+
+  ;--------------------------------
+  ;Reserve Files
+  ;If you are using solid compression, files that are required before
+  ;the actual installation should be stored first in the data block,
+  ;because this will make your installer start faster.
+
+  !insertmacro MUI_RESERVEFILE_LANGDLL
+
+  ;--------------------------------
+  ;Folder-selection page
+  InstallDir "\$PROGRAMFILES\Warmux"
+  ; Registry key to check for directory (so if you install again, it will
+  ; overwrite the old one automatically)
+  InstallDirRegKey HKLM "\${Warmux_REG_KEY}" "Path"
+  AutoCloseWindow false
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Start Install Sections ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;-----------------------------------------
+;Create folder only if it doesnt exist yet
+!macro CreateDirectoryOnce FOLDER
+  IfFileExists "\${FOLDER}\\*.*" +1
+    CreateDirectory "\${FOLDER}"
+!macroend
+
+;--------------------------------
+;Check (un)install rights
+!macro CheckUserInstallRightsMacro UN
+Function \${UN}CheckUserInstallRights
+  Push \$0
+  Push \$1
+  ClearErrors
+  UserInfo::GetName
+  IfErrors Win9x
+  Pop \$0
+  UserInfo::GetAccountType
+  Pop \$1
+
+  StrCmp \$1 "Admin" 0 +3
+    StrCpy \$1 "HKLM"
+    Goto done
+  StrCmp \$1 "Power" 0 +3
+    StrCpy \$1 "HKLM"
+    Goto done
+  StrCmp \$1 "User" 0 +3
+    StrCpy \$1 "HKCU"
+    Goto done
+  StrCmp \$1 "Guest" 0 +3
+    StrCpy \$1 "NONE"
+    Goto done
+  ; Unknown error
+  StrCpy \$1 "NONE"
+  Goto done
+
+  Win9x:
+    StrCpy \$1 "HKLM"
+
+  done:
+    Exch \$1
+    Exch
+    Pop \$0
+FunctionEnd
+!macroend
+!insertmacro CheckUserInstallRightsMacro ""
+!insertmacro CheckUserInstallRightsMacro "un."
+
+;--------------------------------
+; Uninstall any old version of Warmux
+
+; Section hidden because automatically selected by the installer
+Section \$(Warmux_REMOVE_TITLE) SecUninstallOldWarmux
+  ; Check install rights..
+  StrCpy \$R3 \${Warmux_REG_KEY}
+  StrCpy \$R4 \${warmux_UNINSTALL_KEY}
+  StrCpy \$R5 "uninstall.exe"
+  Call CheckUserInstallRights
+  Pop \$R0
+  ; "NONE" case already handled at start
+  StrCmp \$R0 "HKCU" _hkcu
+    ReadRegStr \$R1 HKLM \$R3 ""
+    ReadRegStr \$R2 HKLM "\$R4" "UninstallString"
+    Goto try_uninstall
+
+  _hkcu:
+    ReadRegStr \$R1 HKCU \$R3 ""
+    ReadRegStr \$R2 HKCU "\$R4" "UninstallString"
+
+  ; If a previous version exists, remove it
+  try_uninstall:
+    ; If first string is unavailable, Warmux was probably not installed
+    StrCmp \$R1 "" done
+      ; Check if we have uninstall string..
+      IfFileExists \$R2 0 no_file
+        ; Have uninstall string, go ahead and uninstall.
+        SetOverwrite on
+        ; Need to copy uninstaller outside of the install dir
+        ClearErrors
+        CopyFiles /SILENT \$R2 "\$TEMP\\\$R5"
+        SetOverwrite off
+        IfErrors uninstall_problem
+          ; Ready to uninstall..
+          ClearErrors
+          ExecWait '"\$TEMP\\\$R5" /S _?=\$R1'
+          IfErrors exec_error
+            Delete "\$TEMP\\\$R5"
+            Goto done
+
+          exec_error:
+            Delete "\$TEMP\\\$R5"
+            Goto uninstall_problem
+
+  no_file:
+    MessageBox MB_OK "No uninstaller exe found" /SD IDOK IDOK done
+
+  uninstall_problem:
+    ; We cant uninstall. Either the user must manually uninstall or
+    ; we ignore and reinstall over it.
+    MessageBox MB_OKCANCEL \$(Warmux_PROMPT_CONTINUE) /SD IDOK IDCANCEL done
+    Quit
+
+  done:
+SectionEnd
+
+;--------------------------------
+; Installer Sections
+
+Section \$(TITLE_Warmux) Sec_Warmux
+  ; Create install and config folders
+  CreateDirectory "\$INSTDIR"
+  CreateDirectory "\$DOCUMENTS\\Warmux"
+  ; Set output path to the installation directory.
+  SetOutPath "\$INSTDIR"
+  File "${WIN_WarmuxDIR}\src\warmux.exe"
+  WriteUninstaller "uninstall.exe"
+  ; data
+  File /r /x .svn /x Makefile* /x Makefile.* /x icon /x warmux_default_*_config.xml "${WIN_WarmuxDIR}\\data"
+  ; Licenses
+  File /r /x .svn "${WIN_WarmuxDIR}\\doc\\license"
+EOF
+
+# Files that must not be stripped (all MSVC, mainly SDL and vorbis)
+# Make sure freetype, libpng and jpeg dll are matching your libs.
+SDL_PATH=$(@SDL_CONFIG@ --prefix)
+PNG_PATH=$(pkg-config --variable=prefix libpng)
+cp "$SDL_PATH/bin/"SDL{,_mixer,_ttf,_image,_net}.dll         \
+   "$PNG_PATH/bin/"{intl,iconv,freetype6,jpeg62}.dll         \
+   "$PNG_PATH/bin/"lib{png14-14,xml2-2}.dll                   \
+   "$SDL_PATH/bin/"lib{ogg-0,vorbis-0,vorbisfile-3}.dll      \
+   "$SDL_PATH/bin/zlib1.dll" "$DEST"
+
+# Continue producing installer
+cat >> $NSIS <<EOF
+  ; Dlls and co
+  File "*.dll"
+EOF
+
+## Locale
+echo -e "\n  ; Locale" >> $NSIS
+for gmo in "$WarmuxDIR"/po/*.gmo; do
+  lg=${gmo%%.gmo}
+  lg=${lg//.*\//}
+  echo "  SetOutPath \$INSTDIR\\locale\\$lg\\LC_MESSAGES" >> $NSIS
+  echo "  File /oname=warmux.mo \"${WIN_WarmuxDIR}${SEP}po${SEP}$lg.gmo\"" >> $NSIS
+done
+
+## Various files
+cat >> $NSIS <<EOF
+  Call CheckUserInstallRights
+  Pop \$R0
+  ; "NONE" case already handled at start
+  StrCmp \$R0 "HKCU" _hkcu
+    WriteRegStr HKLM "\${HKLM_APP_PATHS_KEY}" "" "\$INSTDIR\warmux.exe"
+    WriteRegStr HKLM "\${Warmux_REG_KEY}" "" "\$INSTDIR"
+    WriteRegStr HKLM "\${Warmux_REG_KEY}" "Version" "@PACKAGE_VERSION@"
+    WriteRegStr HKLM "\${Warmux_UNINSTALL_KEY}" "DisplayName" "Warmux"
+    WriteRegStr HKLM "\${Warmux_UNINSTALL_KEY}" "DisplayVersion" "@PACKAGE_VERSION@"
+    WriteRegStr HKLM "\${Warmux_UNINSTALL_KEY}" "UninstallString" "\$INSTDIR\uninstall.exe"
+    ;Write language to the registry (for the uninstaller)
+    WriteRegStr HKLM "\${Warmux_REG_KEY}" "Installer Language" \$LANGUAGE
+    ; Sets scope of the desktop and Start Menu entries for all users.
+    SetShellVarContext "all"
+    Goto _next
+
+  _hkcu:
+    WriteRegStr HKCU "\${Warmux_REG_KEY}" "" "\$INSTDIR"
+    WriteRegStr HKCU "\${Warmux_REG_KEY}" "Version" "@PACKAGE_VERSION@"
+    WriteRegStr HKCU "\${Warmux_UNINSTALL_KEY}" "DisplayName" "Pidgin"
+    WriteRegStr HKCU "\${Warmux_UNINSTALL_KEY}" "DisplayVersion" "@PACKAGE_VERSION@"
+    WriteRegStr HKCU "\${Warmux_UNINSTALL_KEY}" "UninstallString" "\$INSTDIR\\uninstall.exe"
+    ;Write language to the registry (for the uninstaller)
+    WriteRegStr HKCU "\${Warmux_REG_KEY}" "Installer Language" \$LANGUAGE
+    ;SetShellVarContext "current"
+
+  _next:
+SectionEnd ; Installer section
+
+;--------------------------------
+;Shortcuts
+SectionGroup /e \$(Warmux_SHORCUTS_TITLE) Sec_Shortcuts
+  ; Shortcut to config folder
+  Section \$(Warmux_RESET_SC_DESC) Sec_ResetShortcut
+    SetOutPath "\$INSTDIR"
+    SetOverwrite on
+    !insertmacro CreateDirectoryOnce "\$SMPROGRAMS\\Warmux"
+    CreateShortcut  "\$SMPROGRAMS\\Warmux\\Reset.lnk" \
+      "\$INSTDIR\\warmux.exe" "-r" "\$INSTDIR\\uninstall.exe" 0
+    SetOverwrite off
+  SectionEnd
+
+  ; Shortcut to config folder
+  Section \$(Warmux_CONFIG_SC_DESC) Sec_ConfigShortcut
+    SetOutPath "\$INSTDIR"
+    SetOverwrite on
+    !insertmacro CreateDirectoryOnce "\$SMPROGRAMS\\Warmux"
+    CreateShortcut  "\$SMPROGRAMS\\Warmux\\Config.lnk" "\$DOCUMENTS\\Warmux" "" "" 0
+    SetOverwrite off
+  SectionEnd
+
+  ; Warmux uninstall shortcut in start menu
+  ; Might be forced if user has no install rights, because it would be complex otherwise:
+  ; - No uninstall available in Windows "Program uninstall"
+  Section \$(Warmux_UNINST_SC_DESC) Sec_UninstallShortCut
+    SetOutPath "\$INSTDIR"
+    SetOverwrite on
+    !insertmacro CreateDirectoryOnce "\$SMPROGRAMS\\Warmux"
+    CreateShortCut  "\$SMPROGRAMS\\Warmux\\Uninstall.lnk" \
+         "\$INSTDIR\\uninstall.exe" "" "\$INSTDIR\\uninstall.exe" 0
+    SetOverwrite off
+  SectionEnd
+
+  ; Group of shortcuts for pdfs
+  SectionGroup /e \$(Warmux_PDF_SC_DESC) Sec_PdfShortcut
+EOF
+
+## PDF stuff
+lang=$(ls ../../doc/howto_play/*.pdf)
+lang=${lang//.pdf}
+lang=${lang//..\/..\/doc\/howto_play\/}
+for f in $lang; do
+  cat >> $NSIS <<EOF
+    ; PDF for language $f
+    Section $f
+      SetOutPath "\$INSTDIR"
+      SetOverwrite on
+      File "/oname=help-$f.pdf" "${WIN_WarmuxDIR}${SEP}doc${SEP}howto_play${SEP}${f}.pdf"
+      !insertmacro CreateDirectoryOnce "\$SMPROGRAMS\\Warmux"
+      CreateShortcut  "\$SMPROGRAMS\\Warmux\\howto-$f.lnk" "\$INSTDIR\\help-$f.pdf" "" "" 0
+      SetOverwrite off
+    SectionEnd
+EOF
+done
+
+cat >> $NSIS <<EOF
+  SectionGroupEnd
+
+  ; Desktop shortcut
+  Section /o \$(Warmux_DESKTOP_SC_DESC) Sec_DesktopShortcut
+    SetOverwrite on
+    CreateShortCut "\$DESKTOP\\Warmux.lnk" "\$INSTDIR\\warmux.exe" \
+      "" "\$INSTDIR\\warmux.exe" 0
+    SetOverwrite off
+  SectionEnd
+
+  ; Warmux shortcut in start menu
+  Section \$(Warmux_STARTM_SC_DESC) Sec_StartMenuShortcut
+    SetOverwrite on
+    !insertmacro CreateDirectoryOnce "\$SMPROGRAMS\\Warmux"
+    CreateShortCut "\$SMPROGRAMS\\Warmux\\Warmux.lnk" \
+      "\$INSTDIR\\warmux.exe" "" "\$INSTDIR\\warmux.exe" 0
+    SetOverwrite off
+  SectionEnd
+SectionGroupEnd
+
+;--------------------------------
+;Descriptions
+
+!insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
+  !insertmacro MUI_DESCRIPTION_TEXT     \${Sec_Warmux}             \$(Warmux_DESC)
+  !insertmacro MUI_DESCRIPTION_TEXT     \${Sec_Shortcuts}          \$(Warmux_SHORTCUTS_DESC)
+    !insertmacro MUI_DESCRIPTION_TEXT   \${Sec_DesktopShortcut}    \$(Warmux_DESKTOP_SC_DESC)
+    !insertmacro MUI_DESCRIPTION_TEXT   \${Sec_StartMenuShortcut}  \$(Warmux_STARTM_SC_DESC)
+    !insertmacro MUI_DESCRIPTION_TEXT   \${Sec_UninstallShortcut}  \$(Warmux_UNINST_SC_DESC)
+!insertmacro MUI_FUNCTION_DESCRIPTION_END
+
+
+;--------------------------------
+;Uninstaller Section
+
+Section "Uninstall"
+  ; Set install path according to user rights
+  Call un.CheckUserInstallRights
+  Pop \$R0
+  StrCmp \$R0 "HKLM" _hklm
+
+  ; Also used as fallback by HKLM case
+  _hkcu:
+    ReadRegStr \$R0 HKCU "\${Warmux_REG_KEY}" ""
+    StrCmp \$R0 "\$INSTDIR" 0 _next
+      ; HKCU install path matches our INSTDIR so uninstall
+      DeleteRegKey HKCU "\${Warmux_REG_KEY}"
+      DeleteRegKey HKCU "\${Warmux_UNINSTALL_KEY}"
+      Goto _next
+
+  _hklm:
+    ReadRegStr \$R0 HKLM "\${Warmux_REG_KEY}" ""
+    StrCmp \$R0 \$INSTDIR 0 _hkcu
+      ; HKLM install path matches our INSTDIR so uninstall
+      DeleteRegKey HKLM "\${HKLM_APP_PATHS_KEY}"
+      DeleteRegKey HKLM "\${Warmux_REG_KEY}"
+      DeleteRegKey HKLM "\${Warmux_UNINSTALL_KEY}"
+      SetShellVarContext all
+
+  _next:
+    ; Remove Language preference info
+    DeleteRegValue HKCU "\${Warmux_REG_KEY}" "Installer Language"
+    ; remove shortcuts, if any.
+    Delete "\$SMPROGRAMS\\Warmux\\*.*"
+    RMDir  "\$SMPROGRAMS\\Warmux"
+    Delete "\$SMPROGRAMS\\Warmux.lnk"
+    Delete "\$DESKTOP\\Warmux.lnk"
+    ; remove files
+    RMDir /r "\$INSTDIR"
+SectionEnd
+
+Function .onInit
+  ;Language selection
+  !insertmacro MUI_LANGDLL_DISPLAY
+
+  IntOp \$R0 \${SF_RO} | \${SF_SELECTED}
+  SectionSetFlags \${Sec_Warmux} \$R0
+  SectionSetFlags \${Sec_ConfigShortcut} \$R0
+  SectionSetFlags \${Sec_ResetShortcut} \$R0
+  SectionSetFlags \${SecUninstallOldWarmux} \$R0
+
+  ; Set install path according to user rights
+  Call CheckUserInstallRights
+  Pop \$R0
+  StrCmp \$R0 "NONE" _none
+  StrCmp \$R0 "HKLM" 0 _hkcu
+    StrCpy \$INSTDIR "\$PROGRAMFILES\\Warmux"
+    Goto _done
+
+  _hkcu:
+    Push \$SMPROGRAMS
+    \${GetParent} \$SMPROGRAMS \$R2
+    \${GetParent} \$R2 \$R2
+    StrCpy \$INSTDIR "\$R2\\Warmux"
+    ; In this case uninstall shortcut *must* be available because
+    ; the alternative are complex for the user
+    IntOp \$R0 \${SF_RO} | \${SF_SELECTED}
+    SectionSetFlags \${Sec_UninstallShortCut} \$R0
+    Goto _done
+
+  _none:
+   ; Not going to bother
+   MessageBox MB_OK \$(Warmux_PROMPT_NO_RIGHTS) /SD IDOK
+   Quit
+
+  _done:
+FunctionEnd
+
+; INSTDIR will be determined by reading a registry key
+Function un.onInit
+  !insertmacro MUI_UNGETLANGUAGE
+  ; Set install path according to user rights
+  Call un.CheckUserInstallRights
+  Pop \$R0
+  StrCmp \$R0 "NONE" _none
+    Goto _end
+
+  _none:
+   ; Not going to bother
+   MessageBox MB_OK \$(Warmux_PROMPT_NO_RIGHTS) /SD IDOK
+   Quit
+
+  _end:
+FunctionEnd
+EOF
+
+## Compile installer
+if ! $MAKE_NSIS $NSIS; then
+  echo "makensis failed, aborting..."
+  exit 1
+fi
+
+## Move executable to current directory and remove temporary directory
+mv $NSIS .
+rm -rf $DEST

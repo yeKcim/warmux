@@ -1,0 +1,147 @@
+//
+// FreeType 2 makefile for the symbian platform
+//
+
+// Copyright 2008, 2009 by
+// David Turner, Robert Wilhelm, and Werner Lemberg.
+//
+// This file is part of the FreeType project, and may only be used, modified,
+// and distributed under the terms of the FreeType project license,
+// LICENSE.TXT.  By continuing to use, modify, or distribute this file you
+// indicate that you have read the license and understand and accept it
+// fully.
+
+target 			freetype.lib
+targettype 		lib
+
+macro NDEBUG
+macro FT2_BUILD_LIBRARY
+
+sourcepath ..\..\src\autofit
+
+source afangles.c
+source afcjk.c
+source afdummy.c
+source afglobal.c
+source afhints.c
+source afindic.c
+source aflatin.c
+source afloader.c
+source afmodule.c
+source afpic.c
+source afwarp.c
+
+sourcepath ..\..\src\base
+
+source basepic.c
+source ftadvanc.c
+source ftapi.c
+source ftbbox.c
+source ftbdf.c
+source ftbitmap.c
+source ftcalc.c
+source ftcid.c
+source ftdbgmem.c
+source ftdebug.c
+source ftfstype.c
+source ftgasp.c
+source ftgloadr.c
+source ftglyph.c
+source ftgxval.c
+source ftinit.c
+source ftlcdfil.c
+source ftmm.c
+source ftobjs.c
+source ftotval.c
+source ftoutln.c
+source ftpatent.c
+source ftpfr.c
+source ftpic.c
+source ftrfork.c
+source ftsnames.c
+source ftstream.c
+source ftstroke.c
+source ftsynth.c
+source ftsystem.c
+source fttrigon.c
+source fttype1.c
+source ftutil.c
+source ftwinfnt.c
+source ftxf86.c
+
+sourcepath ..\..\src\cache
+
+source ftcbasic.c
+source ftccache.c
+source ftccmap.c
+source ftcglyph.c
+source ftcimage.c
+source ftcmanag.c
+source ftcmru.c
+source ftcsbits.c
+
+sourcepath ..\..\src\gzip
+
+source ftgzip.c
+
+sourcepath ..\..\src\raster
+
+source ftraster.c
+source ftrend1.c
+source rastpic.c
+
+sourcepath ..\..\src\sfnt
+
+source sfdriver.c
+source sfntpic.c
+source sfobjs.c
+source ttbdf.c
+source ttcmap.c
+source ttkern.c
+source ttload.c
+source ttmtx.c
+source ttpost.c
+source ttsbit.c
+source ttsbit0.c
+
+sourcepath ..\..\src\smooth
+
+source ftgrays.c
+source ftsmooth.c
+source ftspic.c
+
+sourcepath ..\..\src\truetype
+
+source ttdriver.c
+source ttgload.c
+source ttgxvar.c
+source ttinterp.c
+source ttobjs.c
+source ttpic.c
+source ttpload.c
+
+
+systeminclude		..\..\include
+systeminclude		\epoc32\include\stdapis
+systeminclude		\epoc32\include
+userinclude		..\..\src\autofit
+userinclude		..\..\src\bdf
+userinclude		..\..\src\cache
+userinclude		..\..\src\cff
+userinclude		..\..\src\cid
+userinclude		..\..\src\gxvalid
+userinclude		..\..\src\gzip
+userinclude		..\..\src\lzw
+userinclude		..\..\src\otvalid
+userinclude		..\..\src\pcf
+userinclude		..\..\src\pfr
+userinclude		..\..\src\psaux
+userinclude		..\..\src\pshinter
+userinclude		..\..\src\psnames
+userinclude		..\..\src\raster
+userinclude		..\..\src\sfnt
+userinclude		..\..\src\smooth
+userinclude		..\..\src\truetype
+userinclude		..\..\src\type1
+userinclude		..\..\src\type42
+userinclude		..\..\src\winfonts

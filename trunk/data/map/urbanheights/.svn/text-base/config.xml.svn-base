@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../map.dtd" []>
+<resources>
+ 
+ <author>
+   <name>Christopher L. Stanley</name>
+   <nickname>NinjaNumberNine</nickname>
+   <email>niftyninjanumbernine@gmail.com</email>
+   <country>USA</country>
+ </author>
+
+ <surface name="sky" file="radar_bg.jpg" />
+ <surface name="map" file="radar_fg.png" />
+ <surface name="preview" file="radar_pr.jpg" />
+ 
+ <name>Urban Heights</name>
+  <water>water</water>
+ <nb_mine>6</nb_mine>
+ <is_open>1</is_open>
+ 
+ <sprite name="wind_particle">
+   <image file="earthstrip.png">
+     <grid size="100,70" array="23,1"/>
+   </image>
+ </sprite>
+ 
+ <wind>
+   <nbr_sprite>5</nbr_sprite>
+   <need_flip>0</need_flip>
+   <rotation_speed>0.00</rotation_speed>
+   <mass>2.0</mass>
+   <wind_factor>6.5</wind_factor>
+   <air_resist_factor>0.1</air_resist_factor>
+   <gravity_factor>0.1</gravity_factor>
+   <rebounding>true</rebounding>
+   <rebound_factor>3.3</rebound_factor>
+ </wind>
+ 
+ <music_playlist>construction</music_playlist>
+ 
+</resources>

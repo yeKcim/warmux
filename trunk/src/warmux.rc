@@ -1,0 +1,54 @@
+// Warmux resource for win32 target
+
+#include <winver.h>
+#ifdef __MINGW32__
+# include <WARMUX_config.h>
+#else
+#  include "..\lib\warmux\include\config_visual.h"
+// Is build automatically by a pre-built event
+#  include "../visual/resource.h"
+#  define __VERSION__ "Visual Studio"
+#endif
+
+#if ENABLE_NLS
+#  define IS_NLS_ENABLED "yes"
+#else
+#  define IS_NLS_ENABLED "no"
+#endif
+
+1 VERSIONINFO
+FILEVERSION 0,9,3,0
+PRODUCTVERSION 0,9,3,0
+FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+FILEFLAGS VS_FF_DEBUG | VS_FF_SPECIALBUILD
+#else
+FILEFLAGS VS_FF_SPECIALBUILD
+#endif
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "000004b0"
+        {
+            VALUE "Comments","Localization support: " IS_NLS_ENABLED "."
+            VALUE "CompanyName", "\000"
+            VALUE "FileDescription", "Warmux is a convivial mass murder game."
+            VALUE "FileVersion", PACKAGE_VERSION
+            VALUE "InternalName", "warmux"
+            VALUE "LegalCopyright", "Copyright (C) 2001-2010 The Warmux Project"
+            //VALUE "LegalTrademarks", "test"
+            VALUE "OriginalFilename", "warmux.exe"
+            VALUE "ProductName", "warmux"
+            VALUE "ProductVersion", PACKAGE_VERSION
+            VALUE "SpecialBuild", "$Revision: 9750 $, build on " __DATE__ ", " __TIME__ " with compiler version " __VERSION__
+        }
+    }
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x0, 1200
+    }
+}
+
+IDI_ICON1 ICON DISCARDABLE "..\\data\\icon\\warmux.ico"

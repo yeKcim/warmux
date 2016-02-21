@@ -1,0 +1,67 @@
+10
+
+dir
+10371
+svn://svn.gna.org/svn/warmux/trunk/build/lib
+svn://svn.gna.org/svn/warmux
+
+
+
+2011-11-19T15:44:46.890586Z
+10365
+mikkov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30ef787d-52ff-0310-b286-e08351bb7647
+
+sdl_ttf
+dir
+
+sdl
+dir
+
+xml2
+dir
+
+freetype
+dir
+
+png
+dir
+
+sdl_image
+dir
+
+curl
+dir
+
+jpeg
+dir
+
+intl
+dir
+
+sdl_gfx
+dir
+
+sdl_mixer
+dir
+
+sdl_net
+dir
+
+tremor
+dir
+

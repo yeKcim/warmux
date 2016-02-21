@@ -1,0 +1,1 @@
+/*just for enable SDL interoperability in WIN builds*/

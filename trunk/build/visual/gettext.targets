@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <PropertyPageSchema
+      Include="$(MSBuildThisFileDirectory)$(MSBuildThisFileName).xml" />
+    <AvailableItemName
+      Include="Gettext_compilation">
+      <Targets>_Gettext_compilation</Targets>
+    </AvailableItemName>
+  </ItemGroup>
+  <UsingTask
+    TaskName="Gettext_compilation"
+    TaskFactory="XamlTaskFactory"
+    AssemblyName="Microsoft.Build.Tasks.v4.0">
+    <Task>$(MSBuildThisFileDirectory)$(MSBuildThisFileName).xml</Task>
+  </UsingTask>
+  <Target
+    Name="_Gettext_compilation"
+    BeforeTargets="$(Gettext_compilationBeforeTargets)"
+    AfterTargets="$(Gettext_compilationAfterTargets)"
+    Condition="'@(Gettext_compilation)' != ''"
+    DependsOnTargets="$(Gettext_compilationDependsOn);ComputeGettext_compilationOutput"
+    Outputs="%(Gettext_compilation.Outputs)"
+    Inputs="%(Gettext_compilation.Identity);%(Gettext_compilation.AdditionalDependencies);$(MSBuildProjectFile)">
+    <ItemGroup
+      Condition="'@(SelectedFiles)' != ''">
+      <Gettext_compilation
+        Remove="@(Gettext_compilation)"
+        Condition="'%(Identity)' != '@(SelectedFiles)'" />
+    </ItemGroup>
+    <ItemGroup>
+      <Gettext_compilation_tlog
+        Include="%(Gettext_compilation.Outputs)"
+        Condition="'%(Gettext_compilation.Outputs)' != '' and '%(Gettext_compilation.ExcludedFromBuild)' != 'true'">
+        <Source>@(Gettext_compilation, '|')</Source>
+      </Gettext_compilation_tlog>
+    </ItemGroup>
+    <Message
+      Importance="High"
+      Text="%(Gettext_compilation.ExecutionDescription)" />
+    <WriteLinesToFile
+      Condition="'@(Gettext_compilation_tlog)' != '' and '%(Gettext_compilation_tlog.ExcludedFromBuild)' != 'true'"
+      File="$(IntDir)$(ProjectName).write.1.tlog"
+      Lines="^%(Gettext_compilation_tlog.Source);@(Gettext_compilation_tlog-&gt;'%(Fullpath)')" />
+    <Gettext_compilation
+      Condition="'@(Gettext_compilation)' != '' and '%(Gettext_compilation.ExcludedFromBuild)' != 'true'"
+      CommandLineTemplate="%(Gettext_compilation.CommandLineTemplate)"
+      AdditionalOptions="%(Gettext_compilation.AdditionalOptions)"
+      Inputs="%(Gettext_compilation.Identity)" />
+  </Target>
+  <PropertyGroup>
+    <ComputeLinkInputsTargets>
+            $(ComputeLinkInputsTargets);
+            ComputeGettext_compilationOutput;
+          </ComputeLinkInputsTargets>
+    <ComputeLibInputsTargets>
+            $(ComputeLibInputsTargets);
+            ComputeGettext_compilationOutput;
+          </ComputeLibInputsTargets>
+  </PropertyGroup>
+  <Target
+    Name="ComputeGettext_compilationOutput"
+    Condition="'@(Gettext_compilation)' != ''">
+    <ItemGroup>
+      <Gettext_compilationDirsToMake
+        Condition="'@(Gettext_compilation)' != '' and '%(Gettext_compilation.ExcludedFromBuild)' != 'true'"
+        Include="%(Gettext_compilation.Outputs)" />
+      <Link
+        Include="%(Gettext_compilationDirsToMake.Identity)"
+        Condition="'%(Extension)'=='.obj' or '%(Extension)'=='.res' or '%(Extension)'=='.rsc' or '%(Extension)'=='.lib'" />
+      <Lib
+        Include="%(Gettext_compilationDirsToMake.Identity)"
+        Condition="'%(Extension)'=='.obj' or '%(Extension)'=='.res' or '%(Extension)'=='.rsc' or '%(Extension)'=='.lib'" />
+      <ImpLib
+        Include="%(Gettext_compilationDirsToMake.Identity)"
+        Condition="'%(Extension)'=='.obj' or '%(Extension)'=='.res' or '%(Extension)'=='.rsc' or '%(Extension)'=='.lib'" />
+    </ItemGroup>
+    <MakeDir
+      Directories="@(Gettext_compilationDirsToMake-&gt;'%(RootDir)%(Directory)')" />
+  </Target>
+</Project>

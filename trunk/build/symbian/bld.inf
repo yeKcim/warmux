@@ -1,0 +1,20 @@
+/* Master build file for Warmux and libraries */
+
+#include "group/build_conf.inf"
+
+#ifndef SYMBIAN3
+#include "lib/stlport/symbian/bld.inf"
+#endif
+#include "lib/libxml2/group/bld.inf"
+#include "../lib/curl/packages/Symbian/group/bld.inf"
+#include "../lib/jpeg/symbian/group/bld.inf"
+#include "../lib/png/symbian/group/bld.inf"
+#include "../lib/tremor/symbian/group/bld.inf"
+#include "../lib/freetype/builds/symbian/bld.inf"
+#include "../lib/sdl/symbian/bld.inf"
+#include "../lib/sdl_image/symbian/group/bld.inf"
+#include "../lib/sdl_gfx/symbian/group/bld.inf"
+#include "../lib/sdl_mixer/symbian/group/bld.inf"
+#include "../lib/sdl_net/symbian/group/bld.inf"
+#include "../lib/sdl_ttf/symbian/group/bld.inf"
+#include "group/bld.inf"

@@ -1,0 +1,69 @@
+************************************************************************ 
+* OS/PLATFORM SUPPORT 
+************************************************************************ 
+
+Operating systems: 
+    - Symbian OS 9.1 / S60 3rd Edition 
+    - Symbian OS 9.1 / UIQ 3.0 
+    - Symbian OS 9.2 / S60 3rd Edition FP1 
+    - Symbian OS 9.2 / UIQ 3.1 
+    - Symbian OS 9.3 / S60 3rd Edition FP2 
+
+Platform Development Kits: 
+    - S60 3rd Edition 1.1 (Maintenance Release) (*) 
+    - S60 3rd Edition FP1 1.0 (*) 
+    - S60 3rd Edition FP2 
+    - UIQ 3.0 (**) 
+    - UIQ 3.1 (**) 
+
+(*)  Either the Symbian PIPS 1.2 SDK or the Open C Plugin MR (which 
+     contains the PIPS library) must be installed prior to building 
+     STLport. Older versions may not work. 
+(**) The Symbian PIPS 1.2 SDK must be installed prior to building 
+     STLport. Older versions may not work. 
+
+Development Environments: 
+    - Command-line ABLD interface 
+    - Carbide.c++ 1.3 family (note: older versions may not work) 
+
+Build platforms/compilers: 
+    - WINSCW (Emulator) 
+    - GCCE 
+
+************************************************************************ 
+* KNOWN ISSUES AND LIMITATIONS 
+************************************************************************ 
+
+Limitations and disabled features: 
+    - Locales are not implemented (only "C" locale is available) 
+
+Performance considerations:
+STLport adds one more abstraction layer over OS services, so it is 
+expected to run slower than native Symbian OS calls. STLport is already 
+optimized for some platforms/architectures, but of course it's not yet 
+optimized for Symbian. Replacing generic implementations with native 
+Symbian OS code will be hopefully done in next releases. Note that file 
+I/O through fstream is already implemented in terms of native Symbian 
+calls. 
+
+
+************************************************************************ 
+* TEST RESULTS 
+************************************************************************ 
+
+Unit Test status (compile-time)
+    - can't compile test files that use the "signal.h" header because 
+      signals are not supported by PIPS 
+    - can't compile the cwchar test because WCHAR_MIN and WCHAR_MAX 
+      macros defined in Symbian headers don't expand to literal numbers 
+
+Unit Test status (run-time) 
+    - all 397 tests pass 
+
+Exception Handling Test status (compile-time) 
+    - all tests compile succesfully 
+
+Exception Handling Test status (run-time) 
+    - the Deque test fails 
+
+NOTE: runtime tests were done on following devices: Emulator, Nokia N80. 

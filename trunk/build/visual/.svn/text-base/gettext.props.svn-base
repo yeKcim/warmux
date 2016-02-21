@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup
+    Condition="'$(Gettext_compilationBeforeTargets)' == '' and '$(Gettext_compilationAfterTargets)' == '' and '$(ConfigurationType)' != 'Makefile'">
+    <Gettext_compilationBeforeTargets>Midl</Gettext_compilationBeforeTargets>
+    <Gettext_compilationAfterTargets>CustomBuild</Gettext_compilationAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Gettext_compilationDependsOn
+      Condition="'$(ConfigurationType)' != 'Makefile'">_SelectedFiles;$(Gettext_compilationDependsOn)</Gettext_compilationDependsOn>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Gettext_compilation>
+      <CommandLineTemplate>msgfmt.exe -v -c -o %(RootDir)%(Directory)%(Filename).gmo %(FullPath)</CommandLineTemplate>
+      <Outputs>%(RootDir)%(Directory)%(Filename).gmo</Outputs>
+      <ExecutionDescription>Compiling %(Filename) translation</ExecutionDescription>
+    </Gettext_compilation>
+  </ItemDefinitionGroup>
+</Project>

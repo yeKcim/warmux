@@ -1,0 +1,42 @@
+/*
+ * Copyright (C) 2008, Nokia Corporation
+ *
+ * For conditions of distribution and use, see copyright notice in png.h.
+ */
+
+#include "../config/mmp.conf"
+
+TARGET          libpng-1_2.lib
+TARGETTYPE      LIB
+
+//
+// CW
+//
+// variable/argument '...' is not used in function
+//
+OPTION          CW -w nounusedarg
+
+SYSTEMINCLUDE 	\epoc32\include 
+SYSTEMINCLUDE 	\epoc32\include\stdapis
+
+USERINCLUDE     ..
+
+SOURCEPATH      ..\..
+SOURCE          png.c
+SOURCE          pngerror.c
+SOURCE          pnggccrd.c
+SOURCE          pngget.c
+SOURCE          pngmem.c
+SOURCE          pngpread.c
+SOURCE          pngread.c
+SOURCE          pngrio.c
+SOURCE          pngrtran.c
+SOURCE          pngrutil.c
+SOURCE          pngset.c
+SOURCE          pngtrans.c
+SOURCE          pngvcrd.c
+SOURCE          pngwio.c
+SOURCE          pngwrite.c
+SOURCE          pngwtran.c
+SOURCE          pngwutil.c
+//SOURCE          pngtest.c

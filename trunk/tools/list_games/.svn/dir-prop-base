@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 45
+Makefile.in
+.deps
+Makefile
+wormux-list-games
+
+END

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F3D3FC9E-7445-412B-BC90-3B7F0E81FBEE}</ProjectGuid>
+    <RootNamespace>libwarmux</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">c:\dev\AddVC\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">c:\dev\AddVC\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">c:\dev\AddVC\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">c:\dev\AddVC\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\lib\warmux\include;$(SolutionDir)..\..\lib\fixedpoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;DEBUG;_DEBUG;WMX_LOG;FRIBIDI_STATICLIB;CURL_STATICLIB;main=SDL_main;INSTALL_DATADIR="data";INSTALL_LOCALEDIR="locale";FONT_FILE="data\\font\\Ubuntu-R.ttf";M_PI=3.14159265358979323846f;M_PI_2=1.57079632679489661923f;M_PI_4=0.78539816339744830962f;snprintf=_snprintf;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\lib\warmux\include;$(SolutionDir)..\..\lib\fixedpoint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;FRIBIDI_STATICLIB;CURL_STATICLIB;main=SDL_main;INSTALL_DATADIR="data";INSTALL_LOCALEDIR="locale";FONT_FILE="data\\font\\Ubuntu-R.ttf";M_PI=3.14159265358979323846f;M_PI_2=1.57079632679489661923f;M_PI_4=0.78539816339744830962f;snprintf=_snprintf;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\lib\warmux\action\action.cpp" />
+    <ClCompile Include="..\..\..\lib\warmux\action\action_handler.cpp" />
+    <ClCompile Include="..\..\..\lib\warmux\base\error.cpp" />
+    <ClCompile Include="..\..\..\lib\warmux\base\i18n.cpp" />
+    <ClCompile Include="..\..\..\lib\warmux\base\singleton.cpp" />
+    <ClCompile Include="..\..\..\lib\warmux\maths\euler_vector.cpp" />
+    <ClCompile Include="..\..\..\lib\warmux\net\distant_cpu.cpp" />
+    <ClCompile Include="..\..\..\lib\warmux\net\download.cpp" />
+    <ClCompile Include="..\..\..\lib\warmux\net\extSDL_net.cpp" />
+    <ClCompile Include="..\..\..\lib\warmux\net\index_server.cpp" />
+    <ClCompile Include="..\..\..\lib\warmux\net\network.cpp" />
+    <ClCompile Include="..\..\..\lib\warmux\net\player.cpp" />
+    <ClCompile Include="..\..\..\lib\warmux\net\socket.cpp" />
+    <ClCompile Include="..\..\..\lib\warmux\tools\debug.cpp" />
+    <ClCompile Include="..\..\..\lib\warmux\tools\file_tools.cpp" />
+    <ClCompile Include="..\..\..\lib\warmux\tools\random.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\lib\warmux\net\extSDL_net.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\config_visual.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_action.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_action_handler.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_base.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_config.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_debug.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_distant_cpu.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_download.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_error.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_euler_vector.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_file_tools.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_i18n.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_index_server.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_index_svr_msg.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_network.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_player.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_point.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_random.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_rectangle.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_singleton.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_socket.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_team_config.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_types.h" />
+    <ClInclude Include="..\..\..\lib\warmux\include\WARMUX_vector2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\fixedpoint\fixedpoint.vcxproj">
+      <Project>{abb66755-b294-4794-a5b3-811ec497f94e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
