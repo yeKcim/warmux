@@ -4,7 +4,7 @@ warmux was a worms free opensource clone project.
 
 ![logo](https://raw.githubusercontent.com/yeKcim/warmux/master/logo.png)
 
-It's a dead project, website is down [http://web.archive.org/web/20120304160644/http://www.wormux.org/phpboost/news/news.php](wayback machine), code was nowhere(?), so I decided to clone the project here.
+It's a dead project, website is down [wayback machine](http://web.archive.org/web/20120304160644/http://www.wormux.org/phpboost/news/news.php), code was nowhere(?), so I decided to clone the project here.
 
 ## Contributors
 
